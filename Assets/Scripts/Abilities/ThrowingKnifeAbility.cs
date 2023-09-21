@@ -11,7 +11,9 @@ public class ThrowingKnifeAbility : Ability
     {
         //TODO: Get position of nearby enemy, and throw knives at it
         //_targetPosition = Manager.GetNearestEnemy();
-        var knife = GameObject.Instantiate(_knife, _characterBehaviour.transform);
+        Debug.Log("Knife ability execute...");
+
+        var knife = GameObject.Instantiate(_knife, _characterBehaviour.transform.position, Quaternion.identity);
 
     }
 }
