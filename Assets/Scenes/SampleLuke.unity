@@ -172,6 +172,11 @@ MonoBehaviour:
   _testCharacters:
   - {fileID: 11400000, guid: 1cdb122ae66799b49a984bb95f4a8d84, type: 2}
   - {fileID: 11400000, guid: 1cdb122ae66799b49a984bb95f4a8d84, type: 2}
+  - {fileID: 11400000, guid: 1cdb122ae66799b49a984bb95f4a8d84, type: 2}
+  - {fileID: 11400000, guid: 1cdb122ae66799b49a984bb95f4a8d84, type: 2}
+  - {fileID: 11400000, guid: 1cdb122ae66799b49a984bb95f4a8d84, type: 2}
+  - {fileID: 11400000, guid: 1cdb122ae66799b49a984bb95f4a8d84, type: 2}
+  - {fileID: 11400000, guid: 1cdb122ae66799b49a984bb95f4a8d84, type: 2}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0

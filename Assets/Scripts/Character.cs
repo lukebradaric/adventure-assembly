@@ -10,5 +10,7 @@ public class Character : ScriptableObject
 
     public Sprite sprite;
 
+    [SerializeField] private List<Class> classes = new List<Class>();
+
     [SerializeReference]public List<Ability> abilties = new List<Ability>();
 }

@@ -11,15 +11,11 @@ public class CharacterBehaviour : MonoBehaviour
 
     public Vector2Int Position { get; private set; }
 
-    private void Awake()
-    {
-        Position = new Vector2Int((int)transform.position.x, (int)transform.position.y);
-    }
-
     public void Initialize(Character character)
     {
         Character = character;
         _spriteRenderer.sprite = character.sprite;
+        Position = new Vector2Int((int)transform.position.x, (int)transform.position.y);
 
         foreach (Ability ability in Character.abilties)
         {
@@ -30,8 +26,19 @@ public class CharacterBehaviour : MonoBehaviour
     public void Move(Vector2Int movement)
     {
         Position += movement;
+        Flip(movement.x);
+        transform.DOMove((Vector2)Position, TurnManager.TurnInterval).SetEase(Ease.OutCubic);
+    }
 
-        // Tween movement
-        transform.DOLocalMove((Vector2)movement, TurnManager.TurnInterval);
+    private void Flip(int x)
+    {
+        if (x == 0)
+        {
+            return;
+        }
+
+        Vector3 scale = transform.localScale;
+        scale.x = Mathf.Sign(x) * 1;
+        transform.localScale = scale;
     }
 }
