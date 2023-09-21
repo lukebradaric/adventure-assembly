@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: debf76d2a15e5ea4f9c85a72e9c569eb, type: 3}
   m_Name: ThrowingKnife
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 20
   damage: 0
   CanExplode: 0

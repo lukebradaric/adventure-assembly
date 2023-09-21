@@ -45,17 +45,8 @@ public class ProjectileBehaviour : MonoBehaviour
     {
         Vector2 moveDirection = _target.transform.position - gameObject.transform.position;
         moveDirection = moveDirection.normalized;
-        RotateTowards(_target.transform.position);
+        gameObject.transform.up = moveDirection;
         _rb.MovePosition((Vector2)gameObject.transform.position + moveDirection * Time.deltaTime * _projectileStats.speed); ;
-    }
-    public void RotateTowards(Vector2 to)
-    {
-
-        Quaternion _lookRotation =
-            Quaternion.LookRotation((to - (Vector2)transform.position).normalized);
-
-        //instant
-        transform.rotation = _lookRotation;
     }
 
     public void SetTarget(GameObject target)
@@ -75,7 +66,7 @@ public class ProjectileBehaviour : MonoBehaviour
                 //TODO: Add explosion prefab that will deal damage to enemies surrounding the area
             }
             //Spawn Particles and then destroy object after 1 second
-            var spawnParticles = Instantiate(_onContactParticles, this.transform);
+            var spawnParticles = Instantiate(_onContactParticles, _target.transform);
             _spriteRenderer.sprite = null;
             Destroy(this.gameObject, 1f);
         }
