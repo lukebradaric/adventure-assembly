@@ -34,31 +34,34 @@ public class CharacterManager : MonoBehaviour
 
     private void OnTurnUpdate()
     {
-        Debug.Log($"Moving {InputManager.Axis}");
-
         bool first = true;
-        CharacterBehaviour previousCharacter = null;
+        Vector2Int previousCharacterPosition = Vector2Int.zero;
         foreach (CharacterBehaviour characterBehaviour in _characterBehaviours)
         {
             if (first)
             {
+                previousCharacterPosition = characterBehaviour.Position;
                 characterBehaviour.Move(InputManager.Axis);
                 first = false;
-                previousCharacter = characterBehaviour;
                 continue;
             }
 
             // Move character towards previous character
-            characterBehaviour.Move(new Vector2Int(previousCharacter.Position.x - characterBehaviour.Position.x, previousCharacter.Position.y - characterBehaviour.Position.y));
-            previousCharacter = characterBehaviour;
+            Vector2Int temp = characterBehaviour.Position;
+            characterBehaviour.Move(new Vector2Int(previousCharacterPosition.x - characterBehaviour.Position.x, previousCharacterPosition.y - characterBehaviour.Position.y));
+            previousCharacterPosition = temp;
         }
     }
 
     public void AddCharacter(Character character)
     {
-        // Spawn character at end of line
-        Vector2 newCharacterPosition = _characterBehaviours.LastOrDefault() == null ? transform.position : new Vector2(_characterBehaviours.Last().Position.x, _characterBehaviours.Last().Position.y - 1);
+        // find new character position
+        CharacterBehaviour lastCharacterBehaviour = _characterBehaviours.LastOrDefault();
+        Vector2 newCharacterPosition = lastCharacterBehaviour == null ? transform.position : new Vector2(lastCharacterBehaviour.Position.x, lastCharacterBehaviour.Position.y - 1);
+
+        // instantiate character
         CharacterBehaviour newCharacterBehaviour = Instantiate(_characterPrefab, newCharacterPosition, Quaternion.identity);
+        newCharacterBehaviour.transform.SetParent(gameObject.transform);
 
         // initialize character with scriptable object
         newCharacterBehaviour.Initialize(character);
