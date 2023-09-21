@@ -12,6 +12,68 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f97a5c4cc2810d74fba7f09fa051c950, type: 3}
   m_Name: R_Thief
   m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 11400000, guid: f1ebd7f66ba40f442aa5a61e12ae2038, type: 2}
+    - {fileID: 6503755837535514479, guid: 3953a0eedfbd9554083a2f0016134753, type: 3}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: MoveTween
+      Entry: 7
+      Data: 0|WindUpCharacterTween, Assembly-CSharp
+    - Name: _startEase
+      Entry: 3
+      Data: 9
+    - Name: _ease
+      Entry: 3
+      Data: 8
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: Classes
+      Entry: 7
+      Data: 1|System.Collections.Generic.List`1[[Class, Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 10
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: Abilities
+      Entry: 7
+      Data: 2|System.Collections.Generic.List`1[[Ability, Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 3|ThrowingKnifeAbility, Assembly-CSharp
+    - Name: _turns
+      Entry: 3
+      Data: 2
+    - Name: _knife
+      Entry: 10
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
   name: Thief
   baseHealth: 10
   sprite: {fileID: 21300000, guid: 9c27ee2d7c3264e4db1db59b1223bdef, type: 3}

@@ -38,6 +38,8 @@ public class CharacterManager : MonoBehaviour
         Vector2Int previousCharacterPosition = Vector2Int.zero;
         foreach (CharacterBehaviour characterBehaviour in _characterBehaviours)
         {
+            characterBehaviour.TakeTurn();
+
             if (first)
             {
                 previousCharacterPosition = characterBehaviour.Position;
