@@ -1,7 +1,5 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class ProjectileBehaviour : MonoBehaviour
 {
@@ -21,11 +19,12 @@ public class ProjectileBehaviour : MonoBehaviour
 
     private void Awake()
     {
-        InvokeRepeating("UpdateFrames",0, _animInterval);
+        InvokeRepeating(nameof(UpdateFrames), 0, _animInterval);
     }
+
     private void UpdateFrames()
     {
-        if(_spriteIndex >= _sprites.Count)
+        if (_spriteIndex >= _sprites.Count)
         {
             _spriteIndex = 0;
             _spriteRenderer.sprite = _sprites[_spriteIndex];
@@ -36,9 +35,11 @@ public class ProjectileBehaviour : MonoBehaviour
             _spriteRenderer.sprite = _sprites[_spriteIndex];
         }
     }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.TryGetComponent<IDamageable>(out IDamageable hit)){
+        if (collision.TryGetComponent<IDamageable>(out IDamageable hit))
+        {
             hit.TakeDamage(_projectileStats.damage);
         }
     }

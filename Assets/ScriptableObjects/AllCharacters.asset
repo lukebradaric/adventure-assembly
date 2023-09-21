@@ -12,5 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ec1980309eb574397936272b8d41aa, type: 3}
   m_Name: AllCharacters
   m_EditorClassIdentifier: 
-  UniqueCharacters:
+  _value:
+  - {fileID: 11400000, guid: d0a465eba00ed97429b2d06a5ecb89dd, type: 2}
+  - {fileID: 11400000, guid: ed906ac181c10c14aace930e4681e8ad, type: 2}
+  - {fileID: 11400000, guid: bb184dfc5f8cbbd419137a3eeb2ff0ff, type: 2}
+  - {fileID: 11400000, guid: 289c0d2c8fc55614b892a6dde323830b, type: 2}
+  - {fileID: 11400000, guid: 7016c61b37cf6204cadcdd1b2bada907, type: 2}
   - {fileID: 11400000, guid: 1cdb122ae66799b49a984bb95f4a8d84, type: 2}
+  - {fileID: 11400000, guid: 983703c6cbe39dc43954ebc71c512fb2, type: 2}
+  - {fileID: 11400000, guid: bac16a07ab926cc498486dbc0fe7bbe0, type: 2}
+  - {fileID: 11400000, guid: 39989a461b154664098f3555d235e00d, type: 2}
+  - {fileID: 11400000, guid: de058943c41096544b9f2f0d9a472f4a, type: 2}
+  _readOnly: 1
+  _description: Default list of all characters.
