@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class ThrowingKnifeAbility : Ability
@@ -13,7 +11,7 @@ public class ThrowingKnifeAbility : Ability
         //_targetPosition = Manager.GetNearestEnemy();
         Debug.Log("Knife ability execute...");
 
-        var knife = GameObject.Instantiate(_knife, _characterBehaviour.transform.position, Quaternion.identity);
+        var knife = GameObject.Instantiate(_knife, _entity.transform.position, Quaternion.identity);
 
     }
 }

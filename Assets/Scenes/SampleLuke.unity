@@ -167,16 +167,56 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85f190252627dca4b9691f062e2be8b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _characterPrefab: {fileID: 7439469531039161107, guid: 39e56656161a8274db7b3fc8f565aca9, type: 3}
-  _characterBehaviours: []
-  _testCharacters:
-  - {fileID: 11400000, guid: 1cdb122ae66799b49a984bb95f4a8d84, type: 2}
-  - {fileID: 11400000, guid: 1cdb122ae66799b49a984bb95f4a8d84, type: 2}
-  - {fileID: 11400000, guid: 1cdb122ae66799b49a984bb95f4a8d84, type: 2}
-  - {fileID: 11400000, guid: 1cdb122ae66799b49a984bb95f4a8d84, type: 2}
-  - {fileID: 11400000, guid: 1cdb122ae66799b49a984bb95f4a8d84, type: 2}
-  - {fileID: 11400000, guid: 1cdb122ae66799b49a984bb95f4a8d84, type: 2}
-  - {fileID: 11400000, guid: 1cdb122ae66799b49a984bb95f4a8d84, type: 2}
+--- !u!1 &432546451
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 432546452}
+  - component: {fileID: 432546453}
+  m_Layer: 0
+  m_Name: TestAddCharacters
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &432546452
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 432546451}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &432546453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 432546451}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e57549dd886d7de4599afae93188cea7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _testCharacterPrefabs:
+  - {fileID: 5634051153549682213, guid: e6942f23037626348bd7a9cbdc8bc594, type: 3}
+  - {fileID: 5634051153549682213, guid: 122e047cb4682b548b985d4a1ac1f8dc, type: 3}
+  - {fileID: 5634051153549682213, guid: 122e047cb4682b548b985d4a1ac1f8dc, type: 3}
+  - {fileID: 5634051153549682213, guid: e6942f23037626348bd7a9cbdc8bc594, type: 3}
+  - {fileID: 5634051153549682213, guid: 122e047cb4682b548b985d4a1ac1f8dc, type: 3}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
