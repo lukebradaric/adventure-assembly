@@ -1,25 +1,40 @@
-using DG.Tweening;
+using Sirenix.OdinInspector;
+using Sirenix.Serialization;
+using System.Collections.Generic;
 using UnityEngine;
 
-public class CharacterBehaviour : MonoBehaviour
+public class CharacterBehaviour : SerializedMonoBehaviour
 {
-    [Space]
-    [Header("Components")]
-    [SerializeField] private SpriteRenderer _spriteRenderer;
+    [PropertySpace]
+    [Title("Components")]
+    [OdinSerialize] public SpriteRenderer SpriteRenderer { get; private set; }
 
     public Character Character { get; private set; }
 
     public Vector2Int Position { get; private set; }
 
+    private List<Ability> _abilities = new List<Ability>();
+
     public void Initialize(Character character)
     {
         Character = character;
-        _spriteRenderer.sprite = character.sprite;
+        SpriteRenderer.sprite = character.sprite;
         Position = new Vector2Int((int)transform.position.x, (int)transform.position.y);
 
-        foreach (Ability ability in Character.abilties)
+        // Clone each ability and add to this characters list of abilities
+        foreach (Ability ability in Character.Abilities)
         {
-            ability.Initialize(character, this);
+            Ability newAbility = ability.Clone();
+            newAbility.Initialize(character, this);
+            _abilities.Add(newAbility);
+        }
+    }
+
+    public void TakeTurn()
+    {
+        foreach (Ability ability in _abilities)
+        {
+            ability.TakeTurn();
         }
     }
 
@@ -27,7 +42,8 @@ public class CharacterBehaviour : MonoBehaviour
     {
         Position += movement;
         Flip(movement.x);
-        transform.DOMove((Vector2)Position, TurnManager.TurnInterval).SetEase(Ease.OutCubic);
+
+        Character.MoveTween.Animate(this, Position, TurnManager.TurnInterval);
     }
 
     private void Flip(int x)

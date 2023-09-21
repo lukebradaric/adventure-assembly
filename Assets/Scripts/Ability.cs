@@ -13,6 +13,23 @@ public abstract class Ability
     {
         _character = character;
         _characterBehaviour = characterBehaviour;
+        _currentTurns = _turns;
+    }
+
+    public void TakeTurn()
+    {
+        _currentTurns--;
+
+        if(_currentTurns <= 0)
+        {
+            Execute();
+            _currentTurns = _turns;
+        }
+    }
+
+    public Ability Clone()
+    {
+        return (Ability)this.MemberwiseClone();
     }
 
     public abstract void Execute();
