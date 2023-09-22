@@ -27,7 +27,6 @@ public abstract class Entity : SerializedMonoBehaviour
     public Vector2Int Position { get; private set; }
 
     public bool CanMove { get; set; } = true;
-    public bool IsDead { get; private set; } = false;
 
     public event Action Destroyed;
 
@@ -49,11 +48,6 @@ public abstract class Entity : SerializedMonoBehaviour
 
     protected virtual void OnDisable()
     {
-        if (IsDead)
-        {
-            return;
-        }
-
         EntityManager.Unregister(this);
     }
 
@@ -108,7 +102,6 @@ public abstract class Entity : SerializedMonoBehaviour
     protected virtual void Die()
     {
         Debug.Log($"Entity died: {this.Name}");
-        EntityManager.Unregister(this);
         Destroy(gameObject);
     }
 }

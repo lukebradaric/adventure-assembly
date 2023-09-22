@@ -1,4 +1,3 @@
-using System.Collections.Generic;
 using System.Linq;
 using TinyTools.AutoLoad;
 using UnityEngine;
@@ -6,8 +5,6 @@ using UnityEngine;
 [AutoLoad]
 public class CharacterManager : EntityManagerBase<Character>
 {
-    private static List<Character> _characters = new List<Character>();
-
     private void OnEnable()
     {
         TurnManager.TurnUpdate += OnTurnUpdate;
@@ -22,7 +19,7 @@ public class CharacterManager : EntityManagerBase<Character>
     {
         bool first = true;
         Vector2Int previousCharacterPosition = Vector2Int.zero;
-        foreach (Character character in _characters)
+        foreach (Character character in Entities)
         {
             character.Turn();
 
@@ -44,25 +41,22 @@ public class CharacterManager : EntityManagerBase<Character>
     public static void AddCharacter(Character characterPrefab)
     {
         // find new character position
-        Character lastCharacterBehaviour = _characters.LastOrDefault();
+        Character lastCharacterBehaviour = Entities.LastOrDefault();
         Vector2 newCharacterPosition = lastCharacterBehaviour == null ? Vector2.zero : new Vector2(lastCharacterBehaviour.Position.x, lastCharacterBehaviour.Position.y - 1);
 
         // instantiate character
-        Character newCharacter = Instantiate(characterPrefab, newCharacterPosition, Quaternion.identity);
-
-        // add character to line list
-        _characters.Add(newCharacter);
+        Instantiate(characterPrefab, newCharacterPosition, Quaternion.identity);
     }
 
     public static Vector2 GetCenter()
     {
         Vector2 total = Vector2.zero;
 
-        foreach (Character character in _characters)
+        foreach (Character character in Entities)
         {
             total += character.Position;
         }
 
-        return total / _characters.Count;
+        return total / Entities.Count;
     }
 }

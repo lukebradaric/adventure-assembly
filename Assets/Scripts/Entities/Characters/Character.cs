@@ -1,7 +1,6 @@
 using Sirenix.OdinInspector;
 using Sirenix.Serialization;
 using System.Collections.Generic;
-using UnityEngine;
 
 public class Character : Entity
 {
@@ -18,13 +17,6 @@ public class Character : Entity
     protected override void OnDisable()
     {
         base.OnDisable();
-        CharacterManager.Unregister(this);
-    }
-
-    protected override void Die()
-    {
-        base.Die();
-        Debug.Log("Character died.");
         CharacterManager.Unregister(this);
     }
 }

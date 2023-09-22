@@ -1,3 +1,4 @@
+using Sirenix.OdinInspector;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -9,8 +10,12 @@ public class EnemyController : MonoBehaviour
 
     [Space]
     [Header("Settings")]
-    [SerializeField] private float _attackDistance;
-    [SerializeField] private int _attackDamage;
+    [SerializeField] protected int _attackDamage;
+
+    [PropertySpace]
+    [Title("Animation")]
+    [SerializeReference]
+    [SerializeField] private EntityTween _attackTween = new MeleeAttackEntityTween();
 
     private void OnValidate()
     {
@@ -27,11 +32,12 @@ public class EnemyController : MonoBehaviour
         TurnManager.LateTurnUpdate -= OnTurnUpdate;
     }
 
-    private void OnTurnUpdate()
+    protected virtual void OnTurnUpdate()
     {
         if (CharacterManager.TryGet(_enemy.Position.GetAdjacents(), out Character character))
         {
             // TODO: Play attack animation
+            _attackTween.Animate(_enemy, character.Position, TurnManager.TurnInterval);
             character.Damage(_attackDamage);
             return;
         }
