@@ -11,4 +11,10 @@ public class Enemy : Entity
         base.OnDisable();
         EnemyManager.Unregister(this);
     }
+
+    protected override void Die()
+    {
+        base.Die();
+        Destroy(gameObject);
+    }
 }

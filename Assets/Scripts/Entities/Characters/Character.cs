@@ -1,6 +1,7 @@
 using Sirenix.OdinInspector;
 using Sirenix.Serialization;
 using System.Collections.Generic;
+using UnityEngine;
 
 public class Character : Entity
 {
@@ -18,5 +19,19 @@ public class Character : Entity
     {
         base.OnDisable();
         CharacterManager.Unregister(this);
+    }
+
+    protected override void Die()
+    {
+        base.Die();
+
+        Rigidbody2D rigidbody = gameObject.AddComponent<Rigidbody2D>();
+        rigidbody.interpolation = RigidbodyInterpolation2D.Interpolate;
+        rigidbody.velocity = new Vector2(Random.Range(-10, 10), Random.Range(10, 20));
+        rigidbody.angularVelocity = Random.Range(300, 600);
+        rigidbody.gravityScale = 7f;
+
+        CharacterManager.Unregister(this);
+        Destroy(gameObject, 3f);
     }
 }

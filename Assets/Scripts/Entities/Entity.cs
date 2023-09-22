@@ -102,6 +102,5 @@ public abstract class Entity : SerializedMonoBehaviour
     protected virtual void Die()
     {
         Debug.Log($"Entity died: {this.Name}");
-        Destroy(gameObject);
     }
 }

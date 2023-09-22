@@ -1,4 +1,5 @@
 using Sirenix.OdinInspector;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -24,12 +25,12 @@ public class EnemyController : MonoBehaviour
 
     private void OnEnable()
     {
-        TurnManager.LateTurnUpdate += OnTurnUpdate;
+        TurnManager.EnemyTurnUpdate += OnTurnUpdate;
     }
 
     private void OnDisable()
     {
-        TurnManager.LateTurnUpdate -= OnTurnUpdate;
+        TurnManager.EnemyTurnUpdate -= OnTurnUpdate;
     }
 
     protected virtual void OnTurnUpdate()
@@ -37,12 +38,19 @@ public class EnemyController : MonoBehaviour
         if (CharacterManager.TryGet(_enemy.Position.GetAdjacents(), out Character character))
         {
             // TODO: Play attack animation
-            _attackTween.Animate(_enemy, character.Position, TurnManager.TurnInterval);
-            character.Damage(_attackDamage);
+            _attackTween.Animate(_enemy, character.Position, TurnManager.TurnInterval / 2);
+            StartCoroutine(AttackCoroutine(character));
+            //character.Damage(_attackDamage);
             return;
         }
 
         _enemy.Move(GetMovementTowardsPlayer());
+    }
+
+    private IEnumerator AttackCoroutine(Character character)
+    {
+        yield return new WaitForSeconds(TurnManager.TurnInterval / 4);
+        character.Damage(_attackDamage);
     }
 
     protected virtual Vector2Int GetMovementTowardsPlayer()
