@@ -252,7 +252,7 @@ MonoBehaviour:
       Data: 1
     - Name: 
       Entry: 7
-      Data: 2|ThrowingKnifeAbility, Assembly-CSharp
+      Data: 2|ProjectileAbility, Assembly-CSharp
     - Name: _turns
       Entry: 3
       Data: 2

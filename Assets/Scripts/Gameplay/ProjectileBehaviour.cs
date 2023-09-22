@@ -22,6 +22,7 @@ public class ProjectileBehaviour : MonoBehaviour
     private int _spriteIndex;
     private GameObject _target;
     private Rigidbody2D _rb;
+    private Vector2 _moveDirection;
 
     private void Awake()
     {
@@ -43,12 +44,19 @@ public class ProjectileBehaviour : MonoBehaviour
             _spriteIndex++;
         }
     }
+
     private void Update()
     {
-        Vector2 moveDirection = _target.transform.position - gameObject.transform.position;
-        moveDirection = moveDirection.normalized;
-        gameObject.transform.up = moveDirection;
-        _rb.MovePosition((Vector2)gameObject.transform.position + moveDirection * Time.deltaTime * _projectileStats.speed); ;
+        //gameObject.transform.up = _moveDirection;
+        //_rb.velocity = moveDirection * Time.deltaTime * _projectileStats.speed;
+        //_rb.MovePosition((Vector2)gameObject.transform.position + moveDirection * Time.deltaTime * _projectileStats.speed); ;
+    }
+
+    private void FixedUpdate()
+    {
+        _moveDirection = (_target.transform.position - gameObject.transform.position).normalized;
+        gameObject.transform.up = _moveDirection;
+        _rb.velocity = _moveDirection * _projectileStats.speed;
     }
 
     public void SetTarget(GameObject target)
