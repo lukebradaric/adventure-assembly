@@ -148,6 +148,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _spriteRenderer: {fileID: 8628550888340814006}
   _projectileStats: {fileID: 11400000, guid: 7841c484dae57014092e9ca601be9840, type: 2}
+  _explosion: {fileID: 8503401522613717309, guid: 5bbcc21728e902444878f4c9e2c419cb, type: 3}
   _onContactParticles: {fileID: 3617836267900212508, guid: 6450b3e9c37499d4e9d257ae340d557c, type: 3}
   _sprites:
   - {fileID: 794112113, guid: 85498c23bae5dbe4db171fc7c039a791, type: 3}

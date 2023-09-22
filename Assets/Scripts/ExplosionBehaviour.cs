@@ -8,8 +8,6 @@ public class ExplosionBehaviour : MonoBehaviour
     [Header("Components")]
     [SerializeField] private SpriteRenderer _spriteRenderer;
 
-    [SerializeField] private Projectile _projectileStats;
-
     [SerializeField] private GameObject _onContactParticles;
 
     [SerializeField] private List<Sprite> _sprites;
@@ -30,9 +28,9 @@ public class ExplosionBehaviour : MonoBehaviour
     {
         if (_spriteIndex >= _sprites.Count)
         {
-            _spriteIndex = 0;
-            _spriteRenderer.sprite = _sprites[_spriteIndex];
-            _spriteIndex++;
+            _spriteRenderer.sprite = null;
+            CancelInvoke();
+            Destroy(gameObject, 1f);
         }
         else
         {

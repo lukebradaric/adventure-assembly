@@ -6,6 +6,6 @@ public class TestEnemy : MonoBehaviour, IDamageable
 {
     public void TakeDamage(int damage)
     {
-        Debug.Log("Took Damage!");
+        
     }
 }

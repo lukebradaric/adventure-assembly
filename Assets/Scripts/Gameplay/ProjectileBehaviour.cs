@@ -9,6 +9,8 @@ public class ProjectileBehaviour : MonoBehaviour
 
     [SerializeField] private Projectile _projectileStats;
 
+    [SerializeField] private GameObject _explosion;
+
     [SerializeField] private GameObject _onContactParticles;
 
     [SerializeField] private List<Sprite> _sprites;
@@ -63,12 +65,13 @@ public class ProjectileBehaviour : MonoBehaviour
             //If projectile can explode, spawn explosion. Different Projectiles can have different explosion
             if (_projectileStats.CanExplode)
             {
-                //TODO: Add explosion prefab that will deal damage to enemies surrounding the area
+                var explosion = Instantiate(_explosion, gameObject.transform.position, Quaternion.identity);
+                Debug.Log("I'm running multiple times because i'm an a hole");
             }
             //Spawn Particles and then destroy object after 1 second
             var spawnParticles = Instantiate(_onContactParticles, _target.transform);
             _spriteRenderer.sprite = null;
-            Destroy(this.gameObject, 1f);
+            Destroy(this.gameObject);
         }
     }
 }
