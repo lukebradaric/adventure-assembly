@@ -7,8 +7,10 @@ public class MeleeAttackEntityTween : EntityTween
     {
         Sequence sequence = DOTween.Sequence();
 
+        // TODO: Fix melee attack wind up tween not working
         //Vector2 directionToAttack = ((Vector2)newPosition - (Vector2)entity.Position).normalized;
         //sequence.Append(entity.SpriteRenderer.transform.DOLocalMove((-(Vector2)newPosition * 0.25f), duration * 0.2f));
+
         sequence.Append(entity.SpriteRenderer.transform.DOMove((Vector2)newPosition, duration * 0.2f));
         sequence.Append(entity.SpriteRenderer.transform.DOLocalMove(Vector2.zero, duration * 0.6f));
     }

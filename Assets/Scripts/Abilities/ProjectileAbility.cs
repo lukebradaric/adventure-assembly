@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class ProjectileAbility : Ability
 {
-    [SerializeField] private ProjectileBehaviour _projectileBehaviourPrefab;
+    [SerializeField] private Projectile _projectileBehaviourPrefab;
 
     public override void Execute()
     {

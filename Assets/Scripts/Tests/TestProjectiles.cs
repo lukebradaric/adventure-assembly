@@ -13,7 +13,7 @@ public class TestProjectiles : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             var knives = Instantiate(_knives, this.gameObject.transform);
-            knives.GetComponent<ProjectileBehaviour>().SetTarget(_target);
+            knives.GetComponent<Projectile>().SetTarget(_target);
         }
     }
 }
