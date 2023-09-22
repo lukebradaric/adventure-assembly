@@ -1,14 +1,20 @@
-using UnityEngine;
-
 public class Enemy : Entity
 {
-    private void OnEnable()
+    protected override void OnEnable()
     {
+        base.OnEnable();
         EnemyManager.Register(this);
     }
 
-    private void OnDisable()
+    protected override void OnDisable()
     {
+        base.OnDisable();
+        EnemyManager.Unregister(this);
+    }
+
+    protected override void Die()
+    {
+        base.Die();
         EnemyManager.Unregister(this);
     }
 }

@@ -9,6 +9,7 @@ public class TurnManager : MonoBehaviour
     public static float TurnInterval { get; private set; } = 0.5f;
 
     public static event Action TurnUpdate;
+    public static event Action LateTurnUpdate;
 
     private void Start()
     {
@@ -19,6 +20,8 @@ public class TurnManager : MonoBehaviour
     {
         yield return new WaitForSeconds(TurnInterval);
         TurnUpdate?.Invoke();
+        yield return null;
+        LateTurnUpdate?.Invoke();
         StartCoroutine(TurnIntervalCoroutine());
     }
 }

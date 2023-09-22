@@ -20,7 +20,7 @@ public class ProjectileBehaviour : MonoBehaviour
     [SerializeField] private float _animInterval;
 
     private int _spriteIndex;
-    private GameObject _target;
+    private Entity _targetEntity;
     private Rigidbody2D _rb;
     private Vector2 _moveDirection;
 
@@ -45,30 +45,23 @@ public class ProjectileBehaviour : MonoBehaviour
         }
     }
 
-    private void Update()
-    {
-        //gameObject.transform.up = _moveDirection;
-        //_rb.velocity = moveDirection * Time.deltaTime * _projectileStats.speed;
-        //_rb.MovePosition((Vector2)gameObject.transform.position + moveDirection * Time.deltaTime * _projectileStats.speed); ;
-    }
-
     private void FixedUpdate()
     {
-        _moveDirection = (_target.transform.position - gameObject.transform.position).normalized;
+        _moveDirection = (_targetEntity.transform.position - gameObject.transform.position).normalized;
         gameObject.transform.up = _moveDirection;
         _rb.velocity = _moveDirection * _projectileStats.speed;
     }
 
-    public void SetTarget(GameObject target)
+    public void SetTarget(Entity target)
     {
-        _target = target;
+        _targetEntity = target;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.TryGetComponent<IDamageable>(out IDamageable hit))
+        if (collision.TryGetComponent<Enemy>(out Enemy enemy))
         {
-            hit.TakeDamage(_projectileStats.damage);
+            enemy.Damage(_projectileStats.damage);
             CancelInvoke();
             //If projectile can explode, spawn explosion. Different Projectiles can have different explosion
             if (_projectileStats.CanExplode)
@@ -77,7 +70,7 @@ public class ProjectileBehaviour : MonoBehaviour
                 Debug.Log("I'm running multiple times because i'm an a hole");
             }
             //Spawn Particles and then destroy object after 1 second
-            var spawnParticles = Instantiate(_onContactParticles, _target.transform);
+            var spawnParticles = Instantiate(_onContactParticles, _targetEntity.transform);
             _spriteRenderer.sprite = null;
             Destroy(this.gameObject);
         }

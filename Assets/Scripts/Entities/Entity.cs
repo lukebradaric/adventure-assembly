@@ -1,5 +1,6 @@
 using Sirenix.OdinInspector;
 using Sirenix.Serialization;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -26,10 +27,14 @@ public abstract class Entity : SerializedMonoBehaviour
     public Vector2Int Position { get; private set; }
 
     public bool CanMove { get; set; } = true;
+    public bool IsDead { get; private set; } = false;
 
-    public virtual void Initialize()
+    public event Action Destroyed;
+
+    protected virtual void Awake()
     {
         Position = new Vector2Int((int)transform.position.x, (int)transform.position.y);
+        CurrentHealth = BaseHealth;
 
         foreach (Ability ability in Abilities)
         {
@@ -37,25 +42,24 @@ public abstract class Entity : SerializedMonoBehaviour
         }
     }
 
-    public void Turn()
+    protected virtual void OnEnable()
     {
-        foreach (Ability ability in Abilities)
-        {
-            ability.Turn();
-        }
+        EntityManager.Register(this);
     }
 
-    public void Move(Vector2Int movement)
+    protected virtual void OnDisable()
     {
-        if (!CanMove)
+        if (IsDead)
         {
             return;
         }
 
-        Position += movement;
-        Flip(movement.x);
+        EntityManager.Unregister(this);
+    }
 
-        MoveTween.Animate(this, Position, TurnManager.TurnInterval);
+    private void OnDestroy()
+    {
+        Destroyed?.Invoke();
     }
 
     protected void Flip(int x)
@@ -68,5 +72,43 @@ public abstract class Entity : SerializedMonoBehaviour
         Vector3 scale = transform.localScale;
         scale.x = Mathf.Sign(x) * 1;
         transform.localScale = scale;
+    }
+
+    public void Turn()
+    {
+        foreach (Ability ability in Abilities)
+        {
+            ability.Turn();
+        }
+    }
+
+    public void Move(Vector2Int movement)
+    {
+        if (!CanMove || movement == Vector2Int.zero)
+        {
+            return;
+        }
+
+        Position += movement;
+        Flip(movement.x);
+
+        MoveTween.Animate(this, Position, TurnManager.TurnInterval);
+    }
+
+    public virtual void Damage(int damage)
+    {
+        CurrentHealth -= damage;
+
+        if (CurrentHealth <= 0)
+        {
+            Die();
+        }
+    }
+
+    protected virtual void Die()
+    {
+        Debug.Log($"Entity died: {this.Name}");
+        EntityManager.Unregister(this);
+        Destroy(gameObject);
     }
 }

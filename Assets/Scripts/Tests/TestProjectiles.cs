@@ -6,7 +6,7 @@ public class TestProjectiles : MonoBehaviour
 {
     [SerializeField] private GameObject _knives;
 
-    [SerializeField] private GameObject _target;
+    [SerializeField] private Entity _target;
 
     private void Update()
     {

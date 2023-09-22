@@ -3,41 +3,43 @@ using TinyTools.AutoLoad;
 using UnityEngine;
 
 [AutoLoad]
-public class EnemyManager : EntityManager<Enemy>
+public class EnemyManager : EntityManagerBase<Enemy>
 {
-    public static Enemy GetNearestEnemy(Vector2Int position)
+    private static HashSet<Vector2Int> _requestedPositions = new HashSet<Vector2Int>();
+
+    private void OnEnable()
     {
-        if (Entities.Count == 0)
+        TurnManager.TurnUpdate += OnTurnUpdate;
+    }
+
+    private void OnDisable()
+    {
+        TurnManager.TurnUpdate -= OnTurnUpdate;
+    }
+
+    private void OnTurnUpdate()
+    {
+        _requestedPositions.Clear();
+    }
+
+    public static bool RequestPosition(Vector2Int position)
+    {
+        // If position already requested, return
+        if (_requestedPositions.Contains(position))
         {
-            return null;
+            return false;
         }
 
-        Enemy nearestEnemy = null;
-        float nearestDistance = float.MaxValue;
-
+        // If enemy already in position, return
         foreach (Enemy enemy in Entities)
         {
-            float distance = Vector2.Distance(position, enemy.transform.position);
-            if (distance < nearestDistance)
+            if (enemy.Position == position)
             {
-                nearestDistance = distance;
-                nearestEnemy = enemy;
+                return false;
             }
         }
 
-        return nearestEnemy;
-    }
-
-    public static List<Enemy> GetEnemiesInRadius(Vector2Int position, float radius)
-    {
-        List<Enemy> enemies = new List<Enemy>();
-
-        foreach (Enemy enemy in Entities)
-        {
-            if (Vector2.Distance(enemy.transform.position, position) <= radius)
-                enemies.Add(enemy);
-        }
-
-        return enemies;
+        _requestedPositions.Add(position);
+        return true;
     }
 }

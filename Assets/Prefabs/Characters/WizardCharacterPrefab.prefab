@@ -229,7 +229,7 @@ MonoBehaviour:
       Data: 0
     - Name: Name
       Entry: 1
-      Data: Rogue
+      Data: Wizard
     - Name: BaseHealth
       Entry: 3
       Data: 10

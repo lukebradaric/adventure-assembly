@@ -4,7 +4,7 @@ using TinyTools.AutoLoad;
 using UnityEngine;
 
 [AutoLoad]
-public class CharacterManager : EntityManager<Character>
+public class CharacterManager : EntityManagerBase<Character>
 {
     private static List<Character> _characters = new List<Character>();
 
@@ -49,12 +49,20 @@ public class CharacterManager : EntityManager<Character>
 
         // instantiate character
         Character newCharacter = Instantiate(characterPrefab, newCharacterPosition, Quaternion.identity);
-        //newCharacter.transform.SetParent(gameObject.transform);
-
-        // initialize character with scriptable object
-        newCharacter.Initialize();
 
         // add character to line list
         _characters.Add(newCharacter);
+    }
+
+    public static Vector2 GetCenter()
+    {
+        Vector2 total = Vector2.zero;
+
+        foreach (Character character in _characters)
+        {
+            total += character.Position;
+        }
+
+        return total / _characters.Count;
     }
 }
