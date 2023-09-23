@@ -16,17 +16,20 @@ public class Projectile : MonoBehaviour
     private Entity _target;
     private Vector2 _moveDirection;
 
+    private void Awake()
+    {
+        Destroy(gameObject, 5f);
+    }
+
     private void FixedUpdate()
     {
-        if (_target == null)
+        // If target exists, update move direction
+        if (_target != null)
         {
-            return;
+            _moveDirection = (_target.transform.position - gameObject.transform.position).normalized;
         }
 
-        _moveDirection = (_target.transform.position - gameObject.transform.position).normalized;
-
         gameObject.transform.up = _moveDirection;
-
         _rigidbody.velocity = _moveDirection * _speed;
     }
 
@@ -41,6 +44,7 @@ public class Projectile : MonoBehaviour
     public void SetTarget(Entity target)
     {
         _target = target;
+        _moveDirection = (_target.transform.position - gameObject.transform.position).normalized;
     }
 
     protected virtual void OnEnemyCollision(Enemy enemy)
