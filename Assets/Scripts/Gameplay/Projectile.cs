@@ -34,19 +34,24 @@ public class Projectile : MonoBehaviour
     {
         if (collision.TryGetComponent<Enemy>(out Enemy enemy))
         {
-            enemy.Damage(_damage);
-
-            if (_destroyParticlesPrefab != null)
-            {
-                Instantiate(_destroyParticlesPrefab, transform.position, Quaternion.identity);
-            }
-
-            Destroy(gameObject);
+            OnEnemyCollision(enemy);
         }
     }
 
     public void SetTarget(Entity target)
     {
         _target = target;
+    }
+
+    protected virtual void OnEnemyCollision(Enemy enemy)
+    {
+        enemy.Damage(_damage);
+
+        if (_destroyParticlesPrefab != null)
+        {
+            Instantiate(_destroyParticlesPrefab, transform.position, Quaternion.identity);
+        }
+
+        Destroy(gameObject);
     }
 }

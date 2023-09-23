@@ -45,6 +45,11 @@ public abstract class EntityManagerBase<T> : MonoBehaviour where T : Entity
 
     public static List<T> GetInRadius(Vector2Int position, float radius)
     {
+        return GetInRadius((Vector2)position, radius);
+    }
+
+    public static List<T> GetInRadius(Vector2 position, float radius)
+    {
         List<T> entities = new List<T>();
 
         foreach (T entity in Entities)
