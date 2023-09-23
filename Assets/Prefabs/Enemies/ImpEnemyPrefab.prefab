@@ -248,6 +248,7 @@ MonoBehaviour:
     ReferencedUnityObjects:
     - {fileID: 1995840274600240082}
     - {fileID: 9194954359942503896, guid: dc58edf771dc23040af8ac71817df084, type: 3}
+    - {fileID: 11400000, guid: ca99e1c930003b147b7c87b22c2a0ce6, type: 2}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -259,6 +260,9 @@ MonoBehaviour:
     - Name: DeathParticlePrefab
       Entry: 10
       Data: 1
+    - Name: HurtSound
+      Entry: 10
+      Data: 2
     - Name: Name
       Entry: 1
       Data: Imp

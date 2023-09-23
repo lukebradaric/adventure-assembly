@@ -3,6 +3,7 @@ using Sirenix.OdinInspector;
 using Sirenix.Serialization;
 using System;
 using System.Collections.Generic;
+using TinyTools.ScriptableSounds;
 using UnityEngine;
 
 public abstract class Entity : SerializedMonoBehaviour
@@ -11,6 +12,7 @@ public abstract class Entity : SerializedMonoBehaviour
     [Title("Components")]
     [OdinSerialize] public SpriteRenderer SpriteRenderer { get; private set; }
     [OdinSerialize] public GameObject DeathParticlePrefab { get; private set; }
+    [OdinSerialize] public ScriptableSound HurtSound { get; private set; }
 
     [PropertySpace]
     [Title("Settings")]
@@ -97,6 +99,7 @@ public abstract class Entity : SerializedMonoBehaviour
         CurrentHealth -= damage;
 
         HurtTween.Animate(this, Vector2Int.zero, 0.2f);
+        HurtSound?.Play();
 
         if (CurrentHealth <= 0)
         {
