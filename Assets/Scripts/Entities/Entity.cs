@@ -1,3 +1,4 @@
+using DG.Tweening;
 using Sirenix.OdinInspector;
 using Sirenix.Serialization;
 using System;
@@ -9,6 +10,7 @@ public abstract class Entity : SerializedMonoBehaviour
     [PropertySpace]
     [Title("Components")]
     [OdinSerialize] public SpriteRenderer SpriteRenderer { get; private set; }
+    [OdinSerialize] public GameObject DeathParticlePrefab { get; private set; }
 
     [PropertySpace]
     [Title("Settings")]
@@ -18,6 +20,7 @@ public abstract class Entity : SerializedMonoBehaviour
     [PropertySpace]
     [Title("Animation")]
     [OdinSerialize] public EntityTween MoveTween { get; private set; } = new BasicEntityTween();
+    [OdinSerialize] public EntityTween HurtTween { get; private set; } = new HurtEntityTween();
 
     [PropertySpace]
     [Title("Abilities")]
@@ -93,6 +96,8 @@ public abstract class Entity : SerializedMonoBehaviour
     {
         CurrentHealth -= damage;
 
+        HurtTween.Animate(this, Vector2Int.zero, 0.2f);
+
         if (CurrentHealth <= 0)
         {
             Die();
@@ -101,6 +106,9 @@ public abstract class Entity : SerializedMonoBehaviour
 
     protected virtual void Die()
     {
-        Debug.Log($"Entity died: {this.Name}");
+        if (DeathParticlePrefab != null)
+        {
+            Instantiate(DeathParticlePrefab, transform.position, Quaternion.identity);
+        }
     }
 }

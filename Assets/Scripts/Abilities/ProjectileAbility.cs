@@ -1,8 +1,12 @@
+using TinyTools.ScriptableSounds;
 using UnityEngine;
 
 public class ProjectileAbility : Ability
 {
+    [Space]
+    [Header("Components")]
     [SerializeField] private Projectile _projectileBehaviourPrefab;
+    [SerializeField] private ScriptableSound _projectileSound;
 
     public override void Execute()
     {
@@ -12,6 +16,7 @@ public class ProjectileAbility : Ability
             return;
         }
 
+        _projectileSound?.Play();
         var projectileBehaviour = GameObject.Instantiate(_projectileBehaviourPrefab, _entity.transform.position, Quaternion.identity);
         projectileBehaviour.SetTarget(nearestEnemy);
     }

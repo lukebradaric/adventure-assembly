@@ -136,7 +136,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 9ea58bda1ef3a094d99548ee7ada067c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -227,6 +227,9 @@ MonoBehaviour:
     - Name: SpriteRenderer
       Entry: 10
       Data: 0
+    - Name: DeathParticlePrefab
+      Entry: 6
+      Data: 
     - Name: Name
       Entry: 1
       Data: Rogue
@@ -245,9 +248,15 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
+    - Name: HurtTween
+      Entry: 7
+      Data: 1|HurtEntityTween, Assembly-CSharp
+    - Name: 
+      Entry: 8
+      Data: 
     - Name: Abilities
       Entry: 7
-      Data: 1|System.Collections.Generic.List`1[[Ability, Assembly-CSharp]], mscorlib
+      Data: 2|System.Collections.Generic.List`1[[Ability, Assembly-CSharp]], mscorlib
     - Name: 
       Entry: 12
       Data: 0
@@ -259,7 +268,7 @@ MonoBehaviour:
       Data: 
     - Name: Classes
       Entry: 7
-      Data: 2|System.Collections.Generic.List`1[[Class, Assembly-CSharp]], mscorlib
+      Data: 3|System.Collections.Generic.List`1[[Class, Assembly-CSharp]], mscorlib
     - Name: 
       Entry: 12
       Data: 0

@@ -136,7 +136,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 9ea58bda1ef3a094d99548ee7ada067c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -220,6 +220,7 @@ MonoBehaviour:
     ReferencedUnityObjects:
     - {fileID: 7439469529967429105}
     - {fileID: 5088088308674955922, guid: 0a541104372a3694dbbe52932a120b11, type: 3}
+    - {fileID: 11400000, guid: 26f29d838f994e04e8c84ff3a8520380, type: 2}
     - {fileID: 11400000, guid: f1ebd7f66ba40f442aa5a61e12ae2038, type: 2}
     SerializedBytesString: 
     Prefab: {fileID: 0}
@@ -229,6 +230,9 @@ MonoBehaviour:
     - Name: SpriteRenderer
       Entry: 10
       Data: 0
+    - Name: DeathParticlePrefab
+      Entry: 6
+      Data: 
     - Name: Name
       Entry: 1
       Data: Assassin
@@ -244,21 +248,30 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
+    - Name: HurtTween
+      Entry: 7
+      Data: 1|HurtEntityTween, Assembly-CSharp
+    - Name: 
+      Entry: 8
+      Data: 
     - Name: Abilities
       Entry: 7
-      Data: 1|System.Collections.Generic.List`1[[Ability, Assembly-CSharp]], mscorlib
+      Data: 2|System.Collections.Generic.List`1[[Ability, Assembly-CSharp]], mscorlib
     - Name: 
       Entry: 12
       Data: 1
     - Name: 
       Entry: 7
-      Data: 2|ProjectileAbility, Assembly-CSharp
+      Data: 3|ProjectileAbility, Assembly-CSharp
     - Name: _turns
       Entry: 3
       Data: 6
     - Name: _projectileBehaviourPrefab
       Entry: 10
       Data: 1
+    - Name: _projectileSound
+      Entry: 10
+      Data: 2
     - Name: 
       Entry: 8
       Data: 
@@ -270,13 +283,13 @@ MonoBehaviour:
       Data: 
     - Name: Classes
       Entry: 7
-      Data: 3|System.Collections.Generic.List`1[[Class, Assembly-CSharp]], mscorlib
+      Data: 4|System.Collections.Generic.List`1[[Class, Assembly-CSharp]], mscorlib
     - Name: 
       Entry: 12
       Data: 1
     - Name: 
       Entry: 10
-      Data: 2
+      Data: 3
     - Name: 
       Entry: 13
       Data: 

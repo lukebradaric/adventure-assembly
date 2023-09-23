@@ -1,3 +1,4 @@
+using TinyTools.ScriptableSounds;
 using UnityEngine;
 
 public class Projectile : MonoBehaviour
@@ -7,6 +8,7 @@ public class Projectile : MonoBehaviour
     [SerializeField] private SpriteRenderer _spriteRenderer;
     [SerializeField] private Rigidbody2D _rigidbody;
     [SerializeField] private GameObject _destroyParticlesPrefab;
+    [SerializeField] private ScriptableSound _destroySound;
 
     [Space]
     [Header("Settings")]
@@ -55,6 +57,8 @@ public class Projectile : MonoBehaviour
         {
             Instantiate(_destroyParticlesPrefab, transform.position, Quaternion.identity);
         }
+
+        _destroySound?.Play();
 
         Destroy(gameObject);
     }
