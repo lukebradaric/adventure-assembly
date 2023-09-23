@@ -5,15 +5,15 @@ public class Projectile : MonoBehaviour
 {
     [Space]
     [Header("Components")]
-    [SerializeField] private SpriteRenderer _spriteRenderer;
+    [SerializeField] protected SpriteRenderer _spriteRenderer;
     [SerializeField] private Rigidbody2D _rigidbody;
-    [SerializeField] private GameObject _destroyParticlesPrefab;
+    [SerializeField] protected GameObject _destroyParticlesPrefab;
     [SerializeField] private ScriptableSound _destroySound;
 
     [Space]
     [Header("Settings")]
     [SerializeField] private float _speed;
-    [SerializeField] private int _damage;
+    [SerializeField] protected int _damage;
 
     private Entity _target;
     private Vector2 _moveDirection;
