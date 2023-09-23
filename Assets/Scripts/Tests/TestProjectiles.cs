@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TestProjectiles : MonoBehaviour
 {
-    [SerializeField] private GameObject _knives;
+    [SerializeField] private GameObject _projectile;
 
     [SerializeField] private Entity _target;
 
@@ -12,8 +12,8 @@ public class TestProjectiles : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            var knives = Instantiate(_knives, this.gameObject.transform);
-            knives.GetComponent<Projectile>().SetTarget(_target);
+            var projectile = Instantiate(_projectile, this.gameObject.transform);
+            projectile.GetComponent<ElectricChain>().SetTarget(EnemyManager.GetNearest(this.gameObject.transform.position));
         }
     }
 }
