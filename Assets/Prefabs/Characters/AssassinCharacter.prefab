@@ -157,7 +157,7 @@ SpriteRenderer:
   m_SortingLayerID: -832573971
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 9c27ee2d7c3264e4db1db59b1223bdef, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 42c5f50a035f6864494c6c3a048572d1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -179,7 +179,7 @@ GameObject:
   - component: {fileID: 7439469531039161132}
   - component: {fileID: 5634051153549682213}
   m_Layer: 0
-  m_Name: ThiefCharacterPrefab
+  m_Name: AssassinCharacter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -219,7 +219,7 @@ MonoBehaviour:
     SerializedBytes: 
     ReferencedUnityObjects:
     - {fileID: 7439469529967429105}
-    - {fileID: 173133318, guid: 20e607e2984f75c4cb0a5cc215a0157d, type: 3}
+    - {fileID: 5088088308674955922, guid: 0a541104372a3694dbbe52932a120b11, type: 3}
     - {fileID: 11400000, guid: f1ebd7f66ba40f442aa5a61e12ae2038, type: 2}
     SerializedBytesString: 
     Prefab: {fileID: 0}
@@ -231,7 +231,7 @@ MonoBehaviour:
       Data: 0
     - Name: Name
       Entry: 1
-      Data: Thief
+      Data: Assassin
     - Name: BaseHealth
       Entry: 3
       Data: 10
@@ -255,7 +255,7 @@ MonoBehaviour:
       Data: 2|ProjectileAbility, Assembly-CSharp
     - Name: _turns
       Entry: 3
-      Data: 5
+      Data: 2
     - Name: _projectileBehaviourPrefab
       Entry: 10
       Data: 1
