@@ -21,7 +21,7 @@ public class Character : Entity
         CharacterManager.Unregister(this);
     }
 
-    protected override void Die()
+    public override void Die()
     {
         base.Die();
 

@@ -22,10 +22,15 @@ public class EnemyManager : EntityManagerBase<Enemy>
         _requestedPositions.Clear();
     }
 
+    public static bool IsPositionTaken(Vector2Int position)
+    {
+        return _requestedPositions.Contains(position);
+    }
+
     public static bool RequestPosition(Vector2Int position)
     {
         // If position already requested, return
-        if (_requestedPositions.Contains(position))
+        if (IsPositionTaken(position))
         {
             return false;
         }

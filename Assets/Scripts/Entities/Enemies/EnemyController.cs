@@ -40,7 +40,6 @@ public class EnemyController : MonoBehaviour
             // TODO: Play attack animation
             _attackTween.Animate(_enemy, character.Position, TurnManager.TurnInterval / 2);
             StartCoroutine(AttackCoroutine(character));
-            //character.Damage(_attackDamage);
             return;
         }
 
@@ -63,7 +62,7 @@ public class EnemyController : MonoBehaviour
         foreach (Vector2Int position in positions)
         {
             float distance = Vector2.Distance(playerCenterPosition, position);
-            if (distance < nearestDistance)
+            if (distance < nearestDistance && !EnemyManager.IsPositionTaken(position))
             {
                 nearestDistance = distance;
                 nearestPosition = position;

@@ -12,7 +12,7 @@ public class Enemy : Entity
         EnemyManager.Unregister(this);
     }
 
-    protected override void Die()
+    public override void Die()
     {
         base.Die();
         Destroy(gameObject);

@@ -3,7 +3,7 @@ using UnityEngine;
 
 public abstract class EntityManagerBase<T> : MonoBehaviour where T : Entity
 {
-    protected static List<T> Entities = new List<T>();
+    public static List<T> Entities { get; private set; } = new List<T>();
 
     public static void Register(T entity)
     {
