@@ -255,7 +255,7 @@ MonoBehaviour:
       Data: 2|ProjectileAbility, Assembly-CSharp
     - Name: _turns
       Entry: 3
-      Data: 2
+      Data: 6
     - Name: _projectileBehaviourPrefab
       Entry: 10
       Data: 1

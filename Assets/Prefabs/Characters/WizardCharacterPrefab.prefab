@@ -219,6 +219,7 @@ MonoBehaviour:
     SerializedBytes: 
     ReferencedUnityObjects:
     - {fileID: 7439469529967429105}
+    - {fileID: 173133318, guid: 20e607e2984f75c4cb0a5cc215a0157d, type: 3}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -247,7 +248,19 @@ MonoBehaviour:
       Data: 1|System.Collections.Generic.List`1[[Ability, Assembly-CSharp]], mscorlib
     - Name: 
       Entry: 12
-      Data: 0
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 2|ProjectileAbility, Assembly-CSharp
+    - Name: _turns
+      Entry: 3
+      Data: 5
+    - Name: _projectileBehaviourPrefab
+      Entry: 10
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
     - Name: 
       Entry: 13
       Data: 
@@ -256,7 +269,7 @@ MonoBehaviour:
       Data: 
     - Name: Classes
       Entry: 7
-      Data: 2|System.Collections.Generic.List`1[[Class, Assembly-CSharp]], mscorlib
+      Data: 3|System.Collections.Generic.List`1[[Class, Assembly-CSharp]], mscorlib
     - Name: 
       Entry: 12
       Data: 0
