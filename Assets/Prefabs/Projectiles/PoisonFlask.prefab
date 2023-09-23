@@ -133,11 +133,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 5088088308674955923}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8b590e5f76b8e445af236026c4cce3b, type: 3}
+  m_Script: {fileID: 11500000, guid: debf76d2a15e5ea4f9c85a72e9c569eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _spriteRenderer: {fileID: 5088088308674955921}
   _rigidbody: {fileID: 5088088308674955920}
-  _destroyParticlesPrefab: {fileID: 5088088308674955923}
+  _destroyParticlesPrefab: {fileID: 1726410970176189323, guid: 58da8a17be608db45aed9806f77f64eb, type: 3}
   _speed: 2
   _damage: 0
