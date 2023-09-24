@@ -1,0 +1,40 @@
+damageMultiplier
+projectileDamageMultiplier
+areaDamageRadiusMultiplier
+healMultiplier
+
+rogueAttackSpeedBonus
+
+crit chance class
+crit damage class
+
+Rogue
+- Decrease the turns per attack of all rogues [3]1 [7]2
+
+Mage
+- Increase radius of all area damage [2]10% [4]20% [6]35%
+
+Slinger
+- Projectiles have a chance to fire twice [3]5% [5]10% [8]20%
+
+Unstable
+- Increase the damage of all Unstables, but increase the chance
+of all Unstables overheating, rendering them useless for 5 turns.
+[3]100% 10% 5[250%] 20% 8[400%] 30%
+
+Divine
+- Increase all healing received [2]5% [4]15% [6]35%
+
+Guardian
+- Reduce damage taken of all allies [2]10% [4]15% [6]25%
+
+Thorned
+- Increases the chance for all Thorned characters to deflect
+damage taken back at attackers [2]30% [3]60% [4]100%
+
+Bloodlust
+- Killing an enemy increases the attack speed of your next attack
+
+Tank
+- Increase
+

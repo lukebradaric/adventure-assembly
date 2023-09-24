@@ -157,7 +157,7 @@ SpriteRenderer:
   m_SortingLayerID: -832573971
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 0e4368f5f003a284fa81711022a670cb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 42c5f50a035f6864494c6c3a048572d1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -179,7 +179,7 @@ GameObject:
   - component: {fileID: 7439469531039161132}
   - component: {fileID: 5634051153549682213}
   m_Layer: 0
-  m_Name: ShieldCharacter
+  m_Name: AssassinCharacterPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -219,7 +219,9 @@ MonoBehaviour:
     SerializedBytes: 
     ReferencedUnityObjects:
     - {fileID: 7439469529967429105}
-    - {fileID: 557050750594106617, guid: 15f25e5320c088c499ec29c2ae9191f2, type: 3}
+    - {fileID: -6407357614823022157, guid: 0a541104372a3694dbbe52932a120b11, type: 3}
+    - {fileID: 11400000, guid: 26f29d838f994e04e8c84ff3a8520380, type: 2}
+    - {fileID: 11400000, guid: f1ebd7f66ba40f442aa5a61e12ae2038, type: 2}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -236,13 +238,13 @@ MonoBehaviour:
       Data: 
     - Name: Name
       Entry: 1
-      Data: Guardian
+      Data: Assassin
     - Name: BaseHealth
       Entry: 3
       Data: 15
     - Name: Description
       Entry: 1
-      Data: Temporaryily shields friendly characters in a nearby radius.
+      Data: Throws poison flasks that explode on impact and leave lingering posion.
     - Name: MoveTween
       Entry: 7
       Data: 0|BasicEntityTween, Assembly-CSharp
@@ -266,22 +268,16 @@ MonoBehaviour:
       Data: 1
     - Name: 
       Entry: 7
-      Data: 3|ImmuneAbility, Assembly-CSharp
+      Data: 3|ProjectileAbility, Assembly-CSharp
     - Name: _turns
       Entry: 3
-      Data: 8
-    - Name: _numOfMaxShields
-      Entry: 3
-      Data: 3
-    - Name: _shieldingRadius
-      Entry: 4
-      Data: 2
-    - Name: _timeImmune
-      Entry: 3
-      Data: 2
-    - Name: _shieldParticle
+      Data: 6
+    - Name: _projectileBehaviourPrefab
       Entry: 10
       Data: 1
+    - Name: _projectileSound
+      Entry: 10
+      Data: 2
     - Name: 
       Entry: 8
       Data: 
@@ -296,7 +292,10 @@ MonoBehaviour:
       Data: 4|System.Collections.Generic.List`1[[Class, Assembly-CSharp]], mscorlib
     - Name: 
       Entry: 12
-      Data: 0
+      Data: 1
+    - Name: 
+      Entry: 10
+      Data: 3
     - Name: 
       Entry: 13
       Data: 

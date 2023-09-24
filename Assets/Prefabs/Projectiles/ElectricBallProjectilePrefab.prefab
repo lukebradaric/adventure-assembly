@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 9077593584676960688}
   - component: {fileID: 9077593584676960689}
   m_Layer: 0
-  m_Name: ElectricBall
+  m_Name: ElectricBallProjectilePrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
