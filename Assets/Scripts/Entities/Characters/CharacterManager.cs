@@ -112,7 +112,6 @@ public class CharacterManager : EntityManagerBase<Character>
         {
             Debug.Log($"Player level up:{_currentLevel}");
             _currentLevel = newLevel;
-            //AddCharacter(_characterList.Value.Random());
             LeveledUp?.Invoke();
         }
     }
