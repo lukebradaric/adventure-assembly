@@ -110,7 +110,6 @@ public class CharacterManager : EntityManagerBase<Character>
         int newLevel = (int)Mathf.Sqrt(_currentExperience);
         if (newLevel - _currentLevel > 0)
         {
-            Debug.Log($"Player level up:{_currentLevel}");
             _currentLevel = newLevel;
             LeveledUp?.Invoke();
         }

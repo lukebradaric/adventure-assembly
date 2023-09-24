@@ -15,12 +15,12 @@ public abstract class EntityManagerBase<T> : MonoBehaviour where T : Entity
         Entities.Remove(entity);
     }
 
-    public static T GetNearest(Vector2Int position)
+    public static T GetNearest(Vector2Int position, bool onScreenOnly = true)
     {
-        return GetNearest((Vector2)position);
+        return GetNearest((Vector2)position, onScreenOnly);
     }
 
-    public static T GetNearest(Vector2 position)
+    public static T GetNearest(Vector2 position, bool onScreenOnly = true)
     {
         if (Entities.Count == 0)
         {
@@ -32,6 +32,12 @@ public abstract class EntityManagerBase<T> : MonoBehaviour where T : Entity
 
         foreach (T entity in Entities)
         {
+            // Ignore enemies off screen
+            if (!entity.SpriteRenderer.isVisible)
+            {
+                continue;
+            }
+
             float distance = Vector2.Distance(position, entity.transform.position);
             if (distance < nearestDistance)
             {

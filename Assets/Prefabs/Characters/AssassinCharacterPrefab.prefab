@@ -287,6 +287,24 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
+    - Name: Color
+      Entry: 7
+      Data: UnityEngine.Color, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0.388235331
+    - Name: 
+      Entry: 4
+      Data: 0.7803922
+    - Name: 
+      Entry: 4
+      Data: 0.3019608
+    - Name: 
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
     - Name: Classes
       Entry: 7
       Data: 4|System.Collections.Generic.List`1[[Class, Assembly-CSharp]], mscorlib

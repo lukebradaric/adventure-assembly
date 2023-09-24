@@ -28,7 +28,7 @@ public class CharacterSelectionItem : MonoBehaviour, IPointerEnterHandler, IPoin
     {
         _characterPrefab = characterPrefab;
 
-        //_backgroundImage.color = characterPrefab.Color;
+        _backgroundImage.color = characterPrefab.Color;
         _characterImage.sprite = characterPrefab.SpriteRenderer.sprite;
         _nameText.text = characterPrefab.Name;
         _descriptionText.text = characterPrefab.Description;
