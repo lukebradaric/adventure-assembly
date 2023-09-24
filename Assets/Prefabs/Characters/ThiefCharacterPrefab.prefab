@@ -233,12 +233,18 @@ MonoBehaviour:
     - Name: DeathParticlePrefab
       Entry: 6
       Data: 
+    - Name: HurtSound
+      Entry: 6
+      Data: 
     - Name: Name
       Entry: 1
       Data: Thief
     - Name: BaseHealth
       Entry: 3
-      Data: 10
+      Data: 15
+    - Name: Description
+      Entry: 1
+      Data: Throws fast daggers at nearby enemies.
     - Name: MoveTween
       Entry: 7
       Data: 0|BasicEntityTween, Assembly-CSharp

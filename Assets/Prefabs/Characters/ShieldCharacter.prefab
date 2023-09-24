@@ -236,10 +236,13 @@ MonoBehaviour:
       Data: 
     - Name: Name
       Entry: 1
-      Data: Rogue
+      Data: Guardian
     - Name: BaseHealth
       Entry: 3
-      Data: 10
+      Data: 15
+    - Name: Description
+      Entry: 1
+      Data: Temporaryily shields friendly characters in a nearby radius.
     - Name: MoveTween
       Entry: 7
       Data: 0|BasicEntityTween, Assembly-CSharp

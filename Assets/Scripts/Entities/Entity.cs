@@ -17,6 +17,8 @@ public abstract class Entity : SerializedMonoBehaviour
     [Title("Settings")]
     [OdinSerialize] public string Name { get; private set; }
     [OdinSerialize] public int BaseHealth { get; private set; }
+    [MultiLineProperty(3)]
+    [OdinSerialize] public string Description { get; private set; } = string.Empty;
 
     [PropertySpace]
     [Title("Animation")]
@@ -115,7 +117,7 @@ public abstract class Entity : SerializedMonoBehaviour
 
     public virtual void Damage(int damage)
     {
-        if (IsDead)
+        if (IsDead || IsImmune)
         {
             return;
         }

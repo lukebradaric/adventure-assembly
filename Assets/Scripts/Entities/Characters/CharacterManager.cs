@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using TinyTools.AutoLoad;
@@ -6,6 +7,8 @@ using UnityEngine;
 [AutoLoad]
 public class CharacterManager : EntityManagerBase<Character>
 {
+    public static event Action LeveledUp;
+
     private static Vector2Int _lastInputAxis;
 
     private static int _currentLevel = 0;
@@ -109,7 +112,8 @@ public class CharacterManager : EntityManagerBase<Character>
         {
             Debug.Log($"Player level up:{_currentLevel}");
             _currentLevel = newLevel;
-            AddCharacter(_characterList.Value.Random());
+            //AddCharacter(_characterList.Value.Random());
+            LeveledUp?.Invoke();
         }
     }
 

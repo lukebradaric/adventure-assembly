@@ -232,12 +232,18 @@ MonoBehaviour:
     - Name: DeathParticlePrefab
       Entry: 6
       Data: 
+    - Name: HurtSound
+      Entry: 6
+      Data: 
     - Name: Name
       Entry: 1
       Data: Wizard
     - Name: BaseHealth
       Entry: 3
       Data: 10
+    - Name: Description
+      Entry: 1
+      Data: Throws a fireball at nearby enemies, exploding on impact.
     - Name: MoveTween
       Entry: 7
       Data: 0|BasicEntityTween, Assembly-CSharp

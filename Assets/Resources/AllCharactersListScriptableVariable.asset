@@ -17,5 +17,7 @@ MonoBehaviour:
   - {fileID: 5634051153549682213, guid: e6942f23037626348bd7a9cbdc8bc594, type: 3}
   - {fileID: 5634051153549682213, guid: 122e047cb4682b548b985d4a1ac1f8dc, type: 3}
   - {fileID: 5634051153549682213, guid: 7b43ffb0d032b404ab02332e0da95d4a, type: 3}
+  - {fileID: 5634051153549682213, guid: 52b814617d5933643bd5cbe8a05e586b, type: 3}
+  - {fileID: 5634051153549682213, guid: 1d8d5fcce0fcd484d81d2932ce174f13, type: 3}
   _readOnly: 1
   _description: Default list of all characters.

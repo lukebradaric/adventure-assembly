@@ -4,4 +4,6 @@ using UnityEngine;
 public class Class : ScriptableObject
 {
     new public string name;
+    [TextArea]
+    public string description;
 }

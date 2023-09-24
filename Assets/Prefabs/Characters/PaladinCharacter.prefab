@@ -239,7 +239,10 @@ MonoBehaviour:
       Data: Paladin
     - Name: BaseHealth
       Entry: 3
-      Data: 10
+      Data: 20
+    - Name: Description
+      Entry: 1
+      Data: Heals friendly characters in a small radius.
     - Name: MoveTween
       Entry: 7
       Data: 0|BasicEntityTween, Assembly-CSharp

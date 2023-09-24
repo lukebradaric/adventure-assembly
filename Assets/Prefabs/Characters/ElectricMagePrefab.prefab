@@ -241,6 +241,9 @@ MonoBehaviour:
     - Name: BaseHealth
       Entry: 3
       Data: 10
+    - Name: Description
+      Entry: 1
+      Data: Throws an electric orb that shocks nearby enemies on impact.
     - Name: MoveTween
       Entry: 7
       Data: 0|BasicEntityTween, Assembly-CSharp
