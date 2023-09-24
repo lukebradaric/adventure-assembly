@@ -34,11 +34,13 @@ public abstract class Entity : SerializedMonoBehaviour
 
     public bool CanMove { get; set; } = true;
     public bool IsDead { get; private set; } = false;
-    public bool IsImmune { get; private set; } = false;
+    public bool IsImmune => _immuneTurnsRemaining > 0;
+    public bool IsStunned => _stunTurnsRemaining > 0;
 
     public event Action Destroyed;
 
     private int _immuneTurnsRemaining;
+    private int _stunTurnsRemaining;
 
     protected virtual void Awake()
     {
@@ -88,17 +90,17 @@ public abstract class Entity : SerializedMonoBehaviour
         if (_immuneTurnsRemaining > 0)
         {
             _immuneTurnsRemaining--;
+        }
 
-            if (_immuneTurnsRemaining <= 0)
-            {
-                IsImmune = false;
-            }
+        if (_stunTurnsRemaining > 0)
+        {
+            _stunTurnsRemaining--;
         }
     }
 
     public void Move(Vector2Int movement)
     {
-        if (!CanMove || movement == Vector2Int.zero)
+        if (!CanMove || IsStunned || movement == Vector2Int.zero)
         {
             return;
         }
@@ -112,12 +114,16 @@ public abstract class Entity : SerializedMonoBehaviour
     public virtual void AddImmune(int turns)
     {
         _immuneTurnsRemaining += turns;
-        IsImmune = true;
+    }
+
+    public virtual void AddStun(int turns)
+    {
+        _stunTurnsRemaining += turns;
     }
 
     public virtual void Damage(int damage)
     {
-        if (IsDead || IsImmune)
+        if (IsDead || IsImmune || IsStunned)
         {
             return;
         }
