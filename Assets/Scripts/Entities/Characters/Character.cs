@@ -25,6 +25,16 @@ public class Character : Entity
         CharacterManager.Unregister(this);
     }
 
+    protected override void Awake()
+    {
+        base.Awake();
+
+        foreach(Class cl in Classes)
+        {
+            ClassManager.AddClass(cl);
+        }
+    }
+
     public override void Die()
     {
         base.Die();
@@ -34,6 +44,11 @@ public class Character : Entity
         rigidbody.velocity = new Vector2(Random.Range(-10, 10), Random.Range(10, 20));
         rigidbody.angularVelocity = Random.Range(300, 600);
         rigidbody.gravityScale = 7f;
+
+        foreach (Class cl in Classes)
+        {
+            ClassManager.RemoveClass(cl);
+        }
 
         CharacterManager.Unregister(this);
         Destroy(gameObject, 3f);
