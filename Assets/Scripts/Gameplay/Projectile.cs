@@ -8,7 +8,7 @@ public class Projectile : MonoBehaviour
     [SerializeField] protected SpriteRenderer _spriteRenderer;
     [SerializeField] private Rigidbody2D _rigidbody;
     [SerializeField] protected GameObject _destroyParticlesPrefab;
-    [SerializeField] private ScriptableSound _destroySound;
+    [SerializeField] protected ScriptableSound _destroySound;
 
     [Space]
     [Header("Settings")]
@@ -23,7 +23,7 @@ public class Projectile : MonoBehaviour
         Destroy(gameObject, 5f);
     }
 
-    private void FixedUpdate()
+    protected virtual void FixedUpdate()
     {
         // If target exists, update move direction
         if (_target != null)
