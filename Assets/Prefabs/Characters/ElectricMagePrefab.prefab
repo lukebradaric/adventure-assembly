@@ -228,9 +228,6 @@ MonoBehaviour:
     - Name: SpriteRenderer
       Entry: 10
       Data: 0
-    - Name: Collider
-      Entry: 6
-      Data: 
     - Name: DeathParticlePrefab
       Entry: 6
       Data: 
@@ -245,13 +242,10 @@ MonoBehaviour:
       Data: 10
     - Name: MoveTween
       Entry: 7
-      Data: 0|WindUpEntityTween, Assembly-CSharp
-    - Name: _startEase
-      Entry: 3
-      Data: 9
+      Data: 0|BasicEntityTween, Assembly-CSharp
     - Name: _ease
       Entry: 3
-      Data: 8
+      Data: 9
     - Name: 
       Entry: 8
       Data: 

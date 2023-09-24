@@ -296,6 +296,7 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
+  _killExperience: 1
 --- !u!114 &1995840275533504437
 MonoBehaviour:
   m_ObjectHideFlags: 0

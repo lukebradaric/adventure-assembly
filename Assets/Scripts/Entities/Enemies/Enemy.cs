@@ -1,5 +1,9 @@
+using UnityEngine;
+
 public class Enemy : Entity
 {
+    [SerializeField] private float _killExperience = 1;
+
     protected override void OnEnable()
     {
         base.OnEnable();
@@ -16,5 +20,6 @@ public class Enemy : Entity
     {
         base.Die();
         Destroy(gameObject);
+        CharacterManager.AddExperience(_killExperience);
     }
 }

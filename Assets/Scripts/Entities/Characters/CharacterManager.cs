@@ -8,6 +8,16 @@ public class CharacterManager : EntityManagerBase<Character>
 {
     private static Vector2Int _lastInputAxis;
 
+    private static int _currentLevel = 0;
+    private static float _currentExperience;
+
+    private static CharacterListScriptableVariable _characterList;
+
+    private void Awake()
+    {
+        _characterList = Resources.Load("AllCharactersListScriptableVariable") as CharacterListScriptableVariable;
+    }
+
     private void OnEnable()
     {
         TurnManager.TurnUpdate += OnTurnUpdate;
@@ -88,6 +98,19 @@ public class CharacterManager : EntityManagerBase<Character>
 
         // instantiate character
         Instantiate(characterPrefab, newCharacterPosition, Quaternion.identity);
+    }
+
+    public static void AddExperience(float experience)
+    {
+        _currentExperience += experience;
+
+        int newLevel = (int)Mathf.Sqrt(_currentExperience);
+        if (newLevel - _currentLevel > 0)
+        {
+            Debug.Log($"Player level up:{_currentLevel}");
+            _currentLevel = newLevel;
+            AddCharacter(_characterList.Value.Random());
+        }
     }
 
     public static Vector2 GetCenter()

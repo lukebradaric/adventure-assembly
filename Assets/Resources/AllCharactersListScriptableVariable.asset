@@ -10,11 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 55ec1980309eb574397936272b8d41aa, type: 3}
-  m_Name: All_CharacterListScriptableVariable
+  m_Name: AllCharactersListScriptableVariable
   m_EditorClassIdentifier: 
   _value:
   - {fileID: 5634051153549682213, guid: 79ad0513cd0a37646adcdab898b1c5e0, type: 3}
   - {fileID: 5634051153549682213, guid: e6942f23037626348bd7a9cbdc8bc594, type: 3}
   - {fileID: 5634051153549682213, guid: 122e047cb4682b548b985d4a1ac1f8dc, type: 3}
+  - {fileID: 5634051153549682213, guid: 7b43ffb0d032b404ab02332e0da95d4a, type: 3}
   _readOnly: 1
   _description: Default list of all characters.

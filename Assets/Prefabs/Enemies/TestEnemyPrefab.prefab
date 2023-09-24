@@ -257,9 +257,6 @@ MonoBehaviour:
     - Name: SpriteRenderer
       Entry: 10
       Data: 0
-    - Name: Collider
-      Entry: 6
-      Data: 
     - Name: DeathParticlePrefab
       Entry: 10
       Data: 1
@@ -299,6 +296,7 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
+  _killExperience: 5
 --- !u!114 &1995840275533504437
 MonoBehaviour:
   m_ObjectHideFlags: 0

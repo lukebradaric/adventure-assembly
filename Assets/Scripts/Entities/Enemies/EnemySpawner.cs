@@ -19,6 +19,11 @@ public class EnemySpawner : MonoBehaviour
     {
         List<Enemy> enemyPrefabs = _enemySpawnPattern.GetEnemiesToSpawn(TurnManager.CurrentTurn);
 
+        if (enemyPrefabs == null)
+        {
+            return;
+        }
+
         foreach (Enemy enemy in enemyPrefabs)
         {
             // If enemies reached max spawn count

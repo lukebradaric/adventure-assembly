@@ -32,8 +32,11 @@ public abstract class Entity : SerializedMonoBehaviour
 
     public bool CanMove { get; set; } = true;
     public bool IsDead { get; private set; } = false;
+    public bool IsImmune { get; private set; } = false;
 
     public event Action Destroyed;
+
+    private int _immuneTurnsRemaining;
 
     protected virtual void Awake()
     {
@@ -79,6 +82,16 @@ public abstract class Entity : SerializedMonoBehaviour
         {
             ability.Turn();
         }
+
+        if (_immuneTurnsRemaining > 0)
+        {
+            _immuneTurnsRemaining--;
+
+            if (_immuneTurnsRemaining <= 0)
+            {
+                IsImmune = false;
+            }
+        }
     }
 
     public void Move(Vector2Int movement)
@@ -92,6 +105,12 @@ public abstract class Entity : SerializedMonoBehaviour
         Flip(movement.x);
 
         MoveTween.Animate(this, Position, TurnManager.TurnInterval);
+    }
+
+    public virtual void AddImmune(int turns)
+    {
+        _immuneTurnsRemaining += turns;
+        IsImmune = true;
     }
 
     public virtual void Damage(int damage)
