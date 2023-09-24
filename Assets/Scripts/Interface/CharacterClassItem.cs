@@ -8,4 +8,10 @@ public class CharacterClassItem : MonoBehaviour
     [Header("Components")]
     public Image image;
     public TextMeshProUGUI text;
+
+    public void SetClass(Class cl)
+    {
+        image.color = cl.color;
+        text.text = cl.name;
+    }
 }

@@ -1,8 +1,11 @@
-using UnityEngine;
+using Sirenix.OdinInspector;
+using Sirenix.Serialization;
 
 public class Enemy : Entity
 {
-    [SerializeField] private float _killExperience = 1;
+    [PropertySpace]
+    [Title("Enemy Settings")]
+    [OdinSerialize] public float KillExperience { get; private set; } = 1;
 
     protected override void OnEnable()
     {
@@ -20,6 +23,6 @@ public class Enemy : Entity
     {
         base.Die();
         Destroy(gameObject);
-        CharacterManager.AddExperience(_killExperience);
+        CharacterManager.AddExperience(KillExperience);
     }
 }

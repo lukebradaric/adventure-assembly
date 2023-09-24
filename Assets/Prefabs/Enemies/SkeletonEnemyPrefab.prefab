@@ -158,7 +158,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 23bf3bb30de2a2344818c4704c5e245c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 97895b6cde1029f4aa9b93b32d1529fd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -182,7 +182,7 @@ GameObject:
   - component: {fileID: 1995840275533504438}
   - component: {fileID: 1995840275533504437}
   m_Layer: 0
-  m_Name: TestEnemyPrefab
+  m_Name: SkeletonEnemyPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -268,7 +268,10 @@ MonoBehaviour:
       Data: Imp
     - Name: BaseHealth
       Entry: 3
-      Data: 10
+      Data: 12
+    - Name: Description
+      Entry: 1
+      Data: 
     - Name: MoveTween
       Entry: 7
       Data: 0|BasicEntityTween, Assembly-CSharp
@@ -296,7 +299,9 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-  _killExperience: 5
+    - Name: KillExperience
+      Entry: 4
+      Data: 2
 --- !u!114 &1995840275533504437
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -141,7 +141,7 @@ MonoBehaviour:
   _rigidbody: {fileID: 9077593584676960693}
   _destroyParticlesPrefab: {fileID: 4539662973503894023, guid: 24b453d968775d54f830e85f73815923, type: 3}
   _destroySound: {fileID: 11400000, guid: ba91d2ec54e6ce34cae95d75d3ac57f3, type: 2}
-  _speed: 4
+  _speed: 10
   _damage: 5
   _electricLine: {fileID: 9077593584676960689}
   _collider: {fileID: 9077593584676960692}

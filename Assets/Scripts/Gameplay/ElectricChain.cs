@@ -42,6 +42,7 @@ public class ElectricChain : Projectile
         }
         _collider.enabled = false;
         DrawLightning();
+        _destroySound?.Play();
         _spriteRenderer.sprite = null;
         _electricLine.material.DOColor(new Color(1f, 1f, 1f, 0f), TurnManager.TurnInterval);
         Destroy(gameObject, TurnManager.TurnInterval);
