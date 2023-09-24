@@ -179,7 +179,7 @@ GameObject:
   - component: {fileID: 7439469531039161132}
   - component: {fileID: 5634051153549682213}
   m_Layer: 0
-  m_Name: _BaseCharacterPrefab 1
+  m_Name: PaladinCharacter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -242,13 +242,10 @@ MonoBehaviour:
       Data: 10
     - Name: MoveTween
       Entry: 7
-      Data: 0|WindUpEntityTween, Assembly-CSharp
-    - Name: _startEase
-      Entry: 3
-      Data: 9
+      Data: 0|BasicEntityTween, Assembly-CSharp
     - Name: _ease
       Entry: 3
-      Data: 8
+      Data: 9
     - Name: 
       Entry: 8
       Data: 
