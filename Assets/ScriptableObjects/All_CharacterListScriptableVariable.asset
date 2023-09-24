@@ -13,15 +13,8 @@ MonoBehaviour:
   m_Name: All_CharacterListScriptableVariable
   m_EditorClassIdentifier: 
   _value:
-  - {fileID: 11400000, guid: d0a465eba00ed97429b2d06a5ecb89dd, type: 2}
-  - {fileID: 11400000, guid: ed906ac181c10c14aace930e4681e8ad, type: 2}
-  - {fileID: 11400000, guid: bb184dfc5f8cbbd419137a3eeb2ff0ff, type: 2}
-  - {fileID: 11400000, guid: 289c0d2c8fc55614b892a6dde323830b, type: 2}
-  - {fileID: 11400000, guid: 7016c61b37cf6204cadcdd1b2bada907, type: 2}
-  - {fileID: 11400000, guid: 1cdb122ae66799b49a984bb95f4a8d84, type: 2}
-  - {fileID: 11400000, guid: 983703c6cbe39dc43954ebc71c512fb2, type: 2}
-  - {fileID: 11400000, guid: bac16a07ab926cc498486dbc0fe7bbe0, type: 2}
-  - {fileID: 11400000, guid: 39989a461b154664098f3555d235e00d, type: 2}
-  - {fileID: 11400000, guid: de058943c41096544b9f2f0d9a472f4a, type: 2}
+  - {fileID: 5634051153549682213, guid: 79ad0513cd0a37646adcdab898b1c5e0, type: 3}
+  - {fileID: 5634051153549682213, guid: e6942f23037626348bd7a9cbdc8bc594, type: 3}
+  - {fileID: 5634051153549682213, guid: 122e047cb4682b548b985d4a1ac1f8dc, type: 3}
   _readOnly: 1
   _description: Default list of all characters.

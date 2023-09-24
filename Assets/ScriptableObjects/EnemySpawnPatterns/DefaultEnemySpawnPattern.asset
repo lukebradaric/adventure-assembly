@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d73d4e19bb312b249a10535868f2e677, type: 3}
+  m_Name: DefaultEnemySpawnPattern
+  m_EditorClassIdentifier: 
+  maxConcurrentEnemies: 100
+  spawnRadiusBuffer: 16
+  spawnCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0.008333334
+      outSlope: 0.008333334
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 600
+      value: 5
+      inSlope: 0.008333334
+      outSlope: 0.008333334
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  enemySpawnData:
+  - enemyPrefab: {fileID: 1995840275533504438, guid: 0d4058314caf2be419dc2274cc3be515, type: 3}
+    minSpawnTurn: 0
+    maxSpawnTurn: 600
+    weight: 50
+  - enemyPrefab: {fileID: 1995840275533504438, guid: f133cc4832ff1b34b8bd07ee09b643af, type: 3}
+    minSpawnTurn: 0
+    maxSpawnTurn: 600
+    weight: 1

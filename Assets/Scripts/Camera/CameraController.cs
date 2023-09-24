@@ -9,6 +9,7 @@ public class CameraController : MonoBehaviour
     [Space]
     [Header("Settings")]
     [SerializeField] private float _minCameraSize = 6;
+    [SerializeField] private float _cameraSizeBuffer = 2;
     [SerializeField] private float _lerpSpeed = 3.5f;
     [SerializeField] private float _sizeLerpSpeed = 0.125f;
     [SerializeField] private float _zOffset = -10;
@@ -29,7 +30,7 @@ public class CameraController : MonoBehaviour
     private void OnTurnUpdate()
     {
         Bounds characterBounds = CharacterManager.GetBounds();
-        _desiredCameraSize = Mathf.Max(Mathf.Max(characterBounds.size.x, characterBounds.size.y), _minCameraSize);
+        _desiredCameraSize = Mathf.Max(Mathf.Max(characterBounds.size.x, characterBounds.size.y) + _cameraSizeBuffer, _minCameraSize);
 
         _desiredPosition = CharacterManager.GetCenter();
         _desiredPosition.z = _zOffset;

@@ -1,11 +1,9 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
 {
-    [Space]
-    [Header("Settings")]
-    [SerializeField] private AnimationCurve _enemySpawnCurve;
-    [SerializeField] private float _enemySpawnRadius;
+    [SerializeField] private EnemySpawnPattern _enemySpawnPattern = null;
 
     private void OnEnable()
     {
@@ -19,6 +17,22 @@ public class EnemySpawner : MonoBehaviour
 
     private void OnTurnUpdate()
     {
+        List<Enemy> enemyPrefabs = _enemySpawnPattern.GetEnemiesToSpawn(TurnManager.CurrentTurn);
 
+        foreach (Enemy enemy in enemyPrefabs)
+        {
+            // If enemies reached max spawn count
+            if (EnemyManager.Entities.Count >= _enemySpawnPattern.maxConcurrentEnemies)
+            {
+                return;
+            }
+
+            Instantiate(enemy, _enemySpawnPattern.GetEnemySpawnPosition(), Quaternion.identity);
+        }
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.DrawWireSphere(CharacterManager.GetCenter(), Camera.main.orthographicSize + _enemySpawnPattern.spawnRadiusBuffer);
     }
 }

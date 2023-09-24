@@ -113,6 +113,21 @@ public abstract class Entity : SerializedMonoBehaviour
         }
     }
 
+    public virtual void Heal(int heal)
+    {
+        if (IsDead)
+        {
+            return;
+        }
+
+        CurrentHealth = Mathf.Clamp(CurrentHealth + heal, 0, BaseHealth);
+
+        if (CurrentHealth > BaseHealth)
+        {
+            CurrentHealth = BaseHealth;
+        }
+    }
+
     public virtual void Die()
     {
         IsDead = true;
