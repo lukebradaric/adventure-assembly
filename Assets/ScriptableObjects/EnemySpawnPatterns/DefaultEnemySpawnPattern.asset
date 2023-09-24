@@ -42,8 +42,12 @@ MonoBehaviour:
   - enemyPrefab: {fileID: 1995840275533504438, guid: 0d4058314caf2be419dc2274cc3be515, type: 3}
     minSpawnTurn: 0
     maxSpawnTurn: 600
-    weight: 50
+    weight: 35
   - enemyPrefab: {fileID: 1995840275533504438, guid: f133cc4832ff1b34b8bd07ee09b643af, type: 3}
     minSpawnTurn: 0
     maxSpawnTurn: 600
-    weight: 1
+    weight: 50
+  - enemyPrefab: {fileID: 1995840275533504438, guid: 775c00b8eb732324b8548beb6168cf0b, type: 3}
+    minSpawnTurn: 0
+    maxSpawnTurn: 600
+    weight: 5

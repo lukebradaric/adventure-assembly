@@ -8,7 +8,7 @@ public class Projectile : MonoBehaviour
     [SerializeField] protected SpriteRenderer _spriteRenderer;
     [SerializeField] private Rigidbody2D _rigidbody;
     [SerializeField] protected GameObject _destroyParticlesPrefab;
-    [SerializeField] private ScriptableSound _destroySound;
+    [SerializeField] protected ScriptableSound _destroySound;
 
     [Space]
     [Header("Settings")]

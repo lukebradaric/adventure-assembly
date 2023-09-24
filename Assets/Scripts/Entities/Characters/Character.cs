@@ -6,11 +6,11 @@ using UnityEngine;
 public class Character : Entity
 {
     [PropertySpace]
-    [Title("Settings")]
+    [Title("Character Settings")]
     [OdinSerialize] public Color Color { get; private set; } = Color.magenta;
 
     [PropertySpace]
-    [Title("Class")]
+    [Title("Character Class")]
     [OdinSerialize] public List<Class> Classes { get; private set; } = new List<Class>();
 
     protected override void OnEnable()

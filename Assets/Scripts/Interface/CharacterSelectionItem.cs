@@ -32,6 +32,12 @@ public class CharacterSelectionItem : MonoBehaviour, IPointerEnterHandler, IPoin
         _characterImage.sprite = characterPrefab.SpriteRenderer.sprite;
         _nameText.text = characterPrefab.Name;
         _descriptionText.text = characterPrefab.Description;
+
+        foreach (Class cl in characterPrefab.Classes)
+        {
+            CharacterClassItem classItem = Instantiate(_classInterfacePrefab, _classTransformParent);
+            classItem.SetClass(cl);
+        }
     }
 
     public void OnClick()
