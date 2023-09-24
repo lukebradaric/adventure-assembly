@@ -10,7 +10,6 @@ public abstract class Entity : SerializedMonoBehaviour
     [PropertySpace]
     [Title("Components")]
     [OdinSerialize] public SpriteRenderer SpriteRenderer { get; private set; }
-    [OdinSerialize] public Collider2D Collider { get; private set; }
     [OdinSerialize] public GameObject DeathParticlePrefab { get; private set; }
     [OdinSerialize] public ScriptableSound HurtSound { get; private set; }
 
