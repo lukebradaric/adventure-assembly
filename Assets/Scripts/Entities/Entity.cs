@@ -121,13 +121,14 @@ public abstract class Entity : SerializedMonoBehaviour
     public virtual void AddStun(int turns)
     {
         _stunTurnsRemaining += turns;
+        Debug.Log("Stunning Multiple Times");
         var particles = GameObject.Instantiate(StunParticlePrefab, transform);
         particles.GetComponent<ParticleSystem>().startLifetime = TurnManager.TurnInterval * turns;
     }
 
     public virtual void Damage(int damage)
     {
-        if (IsDead || IsImmune || IsStunned)
+        if (IsDead || IsImmune)
         {
             return;
         }

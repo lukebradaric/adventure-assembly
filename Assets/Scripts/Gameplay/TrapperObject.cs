@@ -5,6 +5,11 @@ using UnityEngine;
 public class TrapperObject : Projectile
 {
     [SerializeField] private int _stunDuration;
+    [SerializeField] private float _timeUntilDestroy;
+    protected override void Awake()
+    {
+        Destroy(gameObject, _timeUntilDestroy);
+    }
     protected override void FixedUpdate()
     {
         //Don't do anything, just needed to override for simplicity
@@ -12,6 +17,7 @@ public class TrapperObject : Projectile
     protected override void OnEnemyCollision(Enemy enemy)
     {
         enemy.AddStun(_stunDuration);
+        enemy.Damage(_damage);
         if (_destroyParticlesPrefab != null)
         {
             var particle = Instantiate(_destroyParticlesPrefab, this.transform.position, Quaternion.identity);

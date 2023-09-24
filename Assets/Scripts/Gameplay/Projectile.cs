@@ -18,7 +18,7 @@ public class Projectile : MonoBehaviour
     private Entity _target;
     private Vector2 _moveDirection;
 
-    private void Awake()
+    protected virtual void Awake()
     {
         Destroy(gameObject, 5f);
     }

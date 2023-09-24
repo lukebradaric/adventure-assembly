@@ -35,6 +35,8 @@ public class EnemyController : MonoBehaviour
 
     protected virtual void OnTurnUpdate()
     {
+        _enemy.Turn();
+
         if (CharacterManager.TryGet(_enemy.Position.GetAdjacents(), out Character character))
         {
             // TODO: Play attack animation
