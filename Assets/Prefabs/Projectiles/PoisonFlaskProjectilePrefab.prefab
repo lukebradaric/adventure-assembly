@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5088088308674955919}
   - component: {fileID: -6407357614823022157}
   m_Layer: 0
-  m_Name: PoisonFlask
+  m_Name: PoisonFlaskProjectilePrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -140,5 +140,5 @@ MonoBehaviour:
   _rigidbody: {fileID: 5088088308674955920}
   _destroyParticlesPrefab: {fileID: 1726410970176189323, guid: 58da8a17be608db45aed9806f77f64eb, type: 3}
   _destroySound: {fileID: 11400000, guid: 14f42af6eea7b484d932774fad83406e, type: 2}
-  _speed: 3
+  _speed: 6
   _damage: 0
