@@ -179,7 +179,7 @@ GameObject:
   - component: {fileID: 7439469531039161132}
   - component: {fileID: 5634051153549682213}
   m_Layer: 0
-  m_Name: _BaseCharacterPrefab 2
+  m_Name: ShieldCharacter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
