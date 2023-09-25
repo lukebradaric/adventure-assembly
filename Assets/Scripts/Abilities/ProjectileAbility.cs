@@ -21,4 +21,5 @@ public class ProjectileAbility : Ability
         projectileBehaviour.SetDamage(_entity.Stats.GetDamage(projectileBehaviour.Damage));
         projectileBehaviour.SetTarget(nearestEnemy);
     }
+
 }

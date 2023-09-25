@@ -1468,7 +1468,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _testCharacterPrefabs:
-  - {fileID: 5634051153549682213, guid: b772e86018699fd4da864bf30475f2c9, type: 3}
+  - {fileID: 5634051153549682213, guid: deb59a2db89892846a77859bb9df49d1, type: 3}
+  - {fileID: 5634051153549682213, guid: deb59a2db89892846a77859bb9df49d1, type: 3}
+  - {fileID: 5634051153549682213, guid: deb59a2db89892846a77859bb9df49d1, type: 3}
+  - {fileID: 5634051153549682213, guid: deb59a2db89892846a77859bb9df49d1, type: 3}
 --- !u!4 &1326535864
 Transform:
   m_ObjectHideFlags: 0
