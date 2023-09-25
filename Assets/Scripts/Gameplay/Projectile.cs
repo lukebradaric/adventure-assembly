@@ -17,7 +17,7 @@ public class Projectile : MonoBehaviour
     public int Damage => _damage;
     [SerializeField] private float _maxLifetime = 5f;
 
-    private Entity _target;
+    protected Entity _target;
     private Vector2 _moveDirection;
 
     protected virtual void Awake()
@@ -39,6 +39,7 @@ public class Projectile : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        Debug.Log("colliding with something");
         if (collision.TryGetComponent<Enemy>(out Enemy enemy))
         {
             OnEnemyCollision(enemy);

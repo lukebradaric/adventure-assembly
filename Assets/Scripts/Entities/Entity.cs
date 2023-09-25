@@ -136,7 +136,6 @@ public abstract class Entity : SerializedMonoBehaviour
             return;
         }
 
-        damage = Stats.GetDamageTaken(damage);
 
         CurrentHealth -= damage;
 
