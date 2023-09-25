@@ -14,12 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   color: {r: 0.6627451, g: 0.19215688, b: 0.16470589, a: 1}
   description: 
-  modifiers:
-  - stat: {fileID: 11400000, guid: 850349d63d874244aa711afc1488cc57, type: 2}
-    modifierData:
-    - count: 2
-      value: 0.25
-    - count: 4
-      value: 0.5
-    - count: 6
-      value: 0.75
+  modifiers: []

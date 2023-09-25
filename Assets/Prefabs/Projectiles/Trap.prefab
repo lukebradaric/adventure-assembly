@@ -105,8 +105,8 @@ MonoBehaviour:
   _destroySound: {fileID: 0}
   _speed: 0
   _damage: 1
+  _maxLifetime: 10
   _stunDuration: 2
-  _timeUntilDestroy: 10
 --- !u!61 &2506831846515102428
 BoxCollider2D:
   m_ObjectHideFlags: 0

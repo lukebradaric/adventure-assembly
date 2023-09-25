@@ -4,7 +4,8 @@ using UnityEngine;
 [System.Serializable]
 public class ClassModifier
 {
-    public Stat stat;
+    //public Stat stat;
+    public string statName;
 
     public List<ClassModifierData> modifierData = new List<ClassModifierData>();
 
@@ -27,13 +28,13 @@ public class ClassModifier
         if (_currentModifierData != null)
         {
             // TODO: Implement stat manager
-            stat.AddValue(-_currentModifierData.value);
+            //stat.AddValue(-_currentModifierData.value);
         }
 
         if (newData != null)
         {
             // TODO: Implement stat manager
-            stat.AddValue(newData.value);
+            //stat.AddValue(newData.value);
         }
 
         _currentModifierData = newData;

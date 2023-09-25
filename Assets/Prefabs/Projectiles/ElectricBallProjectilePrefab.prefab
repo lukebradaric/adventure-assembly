@@ -143,6 +143,7 @@ MonoBehaviour:
   _destroySound: {fileID: 11400000, guid: ba91d2ec54e6ce34cae95d75d3ac57f3, type: 2}
   _speed: 10
   _damage: 5
+  _maxLifetime: 5
   _electricLine: {fileID: 9077593584676960689}
   _collider: {fileID: 9077593584676960692}
   _radius: 3

@@ -17,7 +17,8 @@ public class ProjectileAbility : Ability
         }
 
         _projectileSound?.Play();
-        var projectileBehaviour = GameObject.Instantiate(_projectileBehaviourPrefab, _entity.transform.position, Quaternion.identity);
+        Projectile projectileBehaviour = GameObject.Instantiate(_projectileBehaviourPrefab, _entity.transform.position, Quaternion.identity);
+        projectileBehaviour.SetDamage(_entity.Stats.GetDamage(projectileBehaviour.Damage));
         projectileBehaviour.SetTarget(nearestEnemy);
     }
 }

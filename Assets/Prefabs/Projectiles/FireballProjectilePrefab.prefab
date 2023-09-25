@@ -4955,5 +4955,6 @@ MonoBehaviour:
   _destroySound: {fileID: 11400000, guid: 9605bbcabc871664da50da0f82447348, type: 2}
   _speed: 9
   _damage: 8
+  _maxLifetime: 5
   _explosionDamage: 4
   _explosionRadius: 1.5

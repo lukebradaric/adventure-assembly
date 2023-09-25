@@ -246,9 +246,33 @@ MonoBehaviour:
     - Name: Description
       Entry: 1
       Data: Every X Turrns, Drops traps that stun enemies
+    - Name: Stats
+      Entry: 7
+      Data: 0|EntityStats, Assembly-CSharp
+    - Name: damageMultiplier
+      Entry: 4
+      Data: 1
+    - Name: criticalChance
+      Entry: 4
+      Data: 0
+    - Name: criticalDamageMultiplier
+      Entry: 4
+      Data: 2
+    - Name: healMultiplier
+      Entry: 4
+      Data: 1
+    - Name: armorMultiplier
+      Entry: 4
+      Data: 1
+    - Name: turnSpeedBonus
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
     - Name: MoveTween
       Entry: 7
-      Data: 0|BasicEntityTween, Assembly-CSharp
+      Data: 1|BasicEntityTween, Assembly-CSharp
     - Name: _ease
       Entry: 3
       Data: 9
@@ -257,19 +281,19 @@ MonoBehaviour:
       Data: 
     - Name: HurtTween
       Entry: 7
-      Data: 1|HurtEntityTween, Assembly-CSharp
+      Data: 2|HurtEntityTween, Assembly-CSharp
     - Name: 
       Entry: 8
       Data: 
     - Name: Abilities
       Entry: 7
-      Data: 2|System.Collections.Generic.List`1[[Ability, Assembly-CSharp]], mscorlib
+      Data: 3|System.Collections.Generic.List`1[[Ability, Assembly-CSharp]], mscorlib
     - Name: 
       Entry: 12
       Data: 1
     - Name: 
       Entry: 7
-      Data: 3|DropAbility, Assembly-CSharp
+      Data: 4|DropAbility, Assembly-CSharp
     - Name: _turns
       Entry: 3
       Data: 5
@@ -305,13 +329,10 @@ MonoBehaviour:
       Data: 
     - Name: Classes
       Entry: 7
-      Data: 4|System.Collections.Generic.List`1[[Class, Assembly-CSharp]], mscorlib
+      Data: 5|System.Collections.Generic.List`1[[Class, Assembly-CSharp]], mscorlib
     - Name: 
       Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 6
-      Data: 
+      Data: 0
     - Name: 
       Entry: 13
       Data: 

@@ -14,13 +14,15 @@ public class Projectile : MonoBehaviour
     [Header("Settings")]
     [SerializeField] private float _speed;
     [SerializeField] protected int _damage;
+    public int Damage => _damage;
+    [SerializeField] private float _maxLifetime = 5f;
 
     private Entity _target;
     private Vector2 _moveDirection;
 
     protected virtual void Awake()
     {
-        Destroy(gameObject, 5f);
+        Destroy(gameObject, _maxLifetime);
     }
 
     protected virtual void FixedUpdate()
@@ -41,6 +43,11 @@ public class Projectile : MonoBehaviour
         {
             OnEnemyCollision(enemy);
         }
+    }
+
+    public void SetDamage(int damage)
+    {
+        _damage = damage;
     }
 
     public void SetTarget(Entity target)

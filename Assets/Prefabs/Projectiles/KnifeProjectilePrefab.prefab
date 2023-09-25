@@ -152,3 +152,4 @@ MonoBehaviour:
   _destroySound: {fileID: 0}
   _speed: 12
   _damage: 4
+  _maxLifetime: 5

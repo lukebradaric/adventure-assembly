@@ -23,6 +23,10 @@ public abstract class Entity : SerializedMonoBehaviour
     [OdinSerialize] public string Description { get; private set; } = string.Empty;
 
     [PropertySpace]
+    [Title("Stats")]
+    [OdinSerialize] public EntityStats Stats { get; private set; }
+
+    [PropertySpace]
     [Title("Animation")]
     [OdinSerialize] public EntityTween MoveTween { get; private set; } = new BasicEntityTween();
     [OdinSerialize] public EntityTween HurtTween { get; private set; } = new HurtEntityTween();
@@ -121,7 +125,6 @@ public abstract class Entity : SerializedMonoBehaviour
     public virtual void AddStun(int turns)
     {
         _stunTurnsRemaining += turns;
-        Debug.Log("Stunning Multiple Times");
         var particles = GameObject.Instantiate(StunParticlePrefab, transform);
         particles.GetComponent<ParticleSystem>().startLifetime = TurnManager.TurnInterval * turns;
     }
@@ -132,6 +135,8 @@ public abstract class Entity : SerializedMonoBehaviour
         {
             return;
         }
+
+        damage = Stats.GetDamageTaken(damage);
 
         CurrentHealth -= damage;
 
@@ -150,6 +155,8 @@ public abstract class Entity : SerializedMonoBehaviour
         {
             return;
         }
+
+        heal = Stats.GetHeal(heal);
 
         CurrentHealth = Mathf.Clamp(CurrentHealth + heal, 0, BaseHealth);
 
