@@ -157,7 +157,7 @@ SpriteRenderer:
   m_SortingLayerID: -832573971
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 4eb8a47cca6402c4bab764f65a13a798, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3aae5177532565f47a85fd12001019d2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -179,7 +179,7 @@ GameObject:
   - component: {fileID: 7439469531039161132}
   - component: {fileID: 5634051153549682213}
   m_Layer: 0
-  m_Name: Longbowman
+  m_Name: BerserkerCharacterPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -219,8 +219,7 @@ MonoBehaviour:
     SerializedBytes: 
     ReferencedUnityObjects:
     - {fileID: 7439469529967429105}
-    - {fileID: 4420603722081993023, guid: f2757696c12a881498f19474cf3ef312, type: 3}
-    - {fileID: 11400000, guid: 25a48ac50006f1349af87063e91288d3, type: 2}
+    - {fileID: 7439469529967429107}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -240,40 +239,16 @@ MonoBehaviour:
       Data: 
     - Name: Name
       Entry: 1
-      Data: Longbowman
+      Data: Charger
     - Name: BaseHealth
       Entry: 3
       Data: 10
     - Name: Description
       Entry: 1
-      Data: Fires a piercing bolt
-    - Name: Stats
-      Entry: 7
-      Data: 0|EntityStats, Assembly-CSharp
-    - Name: damageMultiplier
-      Entry: 4
-      Data: 1
-    - Name: criticalChance
-      Entry: 4
-      Data: 0
-    - Name: criticalDamageMultiplier
-      Entry: 4
-      Data: 2
-    - Name: healMultiplier
-      Entry: 4
-      Data: 1
-    - Name: armorMultiplier
-      Entry: 4
-      Data: 1
-    - Name: turnSpeedBonus
-      Entry: 3
-      Data: 0
-    - Name: 
-      Entry: 8
       Data: 
     - Name: MoveTween
       Entry: 7
-      Data: 1|BasicEntityTween, Assembly-CSharp
+      Data: 0|BasicEntityTween, Assembly-CSharp
     - Name: _ease
       Entry: 3
       Data: 9
@@ -282,28 +257,34 @@ MonoBehaviour:
       Data: 
     - Name: HurtTween
       Entry: 7
-      Data: 2|HurtEntityTween, Assembly-CSharp
+      Data: 1|HurtEntityTween, Assembly-CSharp
     - Name: 
       Entry: 8
       Data: 
     - Name: Abilities
       Entry: 7
-      Data: 3|System.Collections.Generic.List`1[[Ability, Assembly-CSharp]], mscorlib
+      Data: 2|System.Collections.Generic.List`1[[Ability, Assembly-CSharp]], mscorlib
     - Name: 
       Entry: 12
       Data: 1
     - Name: 
       Entry: 7
-      Data: 4|ProjectileAbility, Assembly-CSharp
+      Data: 3|ChargeAbility, Assembly-CSharp
     - Name: _turns
       Entry: 3
+      Data: 3
+    - Name: _damage
+      Entry: 3
+      Data: 14
+    - Name: _stunTurns
+      Entry: 3
+      Data: 0
+    - Name: _maxRange
+      Entry: 4
       Data: 5
-    - Name: _projectileBehaviourPrefab
+    - Name: _spriteRenderTransform
       Entry: 10
       Data: 1
-    - Name: _projectileSound
-      Entry: 6
-      Data: 
     - Name: 
       Entry: 8
       Data: 
@@ -333,13 +314,10 @@ MonoBehaviour:
       Data: 
     - Name: Classes
       Entry: 7
-      Data: 5|System.Collections.Generic.List`1[[Class, Assembly-CSharp]], mscorlib
+      Data: 4|System.Collections.Generic.List`1[[Class, Assembly-CSharp]], mscorlib
     - Name: 
       Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 10
-      Data: 2
+      Data: 0
     - Name: 
       Entry: 13
       Data: 

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4420603722081993022}
   - component: {fileID: 4420603722081993023}
   m_Layer: 0
-  m_Name: Bolt
+  m_Name: BoltProjectilePrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

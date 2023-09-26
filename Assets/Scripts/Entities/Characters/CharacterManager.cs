@@ -7,6 +7,8 @@ using UnityEngine;
 [AutoLoad]
 public class CharacterManager : EntityManagerBase<Character>
 {
+    [SerializeField] private GameObject _firstCharacterIndicatorPrefab = default;
+
     public static event Action LeveledUp;
 
     private static Vector2Int _lastInputAxis;
@@ -18,10 +20,12 @@ public class CharacterManager : EntityManagerBase<Character>
     private static List<ClassModifierInstance> _globalModifiers = new List<ClassModifierInstance>();
 
     private static Transform _characterParentTransform = null;
+    private static GameObject _firstCharacterIndicator;
 
     private void Awake()
     {
         _characterParentTransform = new GameObject("CharacterParentTransform").transform;
+
     }
 
     private void OnEnable()
@@ -34,8 +38,15 @@ public class CharacterManager : EntityManagerBase<Character>
         TurnManager.TurnUpdate -= OnTurnUpdate;
     }
 
+    private void Start()
+    {
+        _firstCharacterIndicator = GameObject.Instantiate(_firstCharacterIndicatorPrefab);
+    }
+
     private static void OnTurnUpdate()
     {
+        _firstCharacterIndicator.transform.SetParent(Entities.First().transform, false);
+
         // Is this the first character in the loop
         bool first = true;
 

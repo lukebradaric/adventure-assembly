@@ -207,6 +207,7 @@ MonoBehaviour:
   _testCharacterPrefabs:
   - {fileID: 5634051153549682213, guid: deb59a2db89892846a77859bb9df49d1, type: 3}
   - {fileID: 5634051153549682213, guid: b772e86018699fd4da864bf30475f2c9, type: 3}
+  - {fileID: 5634051153549682213, guid: e6334a9519850254c9afd963d81c61d7, type: 3}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0

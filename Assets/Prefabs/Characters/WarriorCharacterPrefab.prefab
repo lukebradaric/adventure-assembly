@@ -29,8 +29,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 7439469531039161132}
-  m_RootOrder: 1
+  m_Father: {fileID: 7439469529967429106}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1137164086548120873
 SpriteRenderer:
@@ -112,7 +112,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 5616321387565058786}
   m_Father: {fileID: 7439469531039161132}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -157,7 +158,7 @@ SpriteRenderer:
   m_SortingLayerID: -832573971
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3aae5177532565f47a85fd12001019d2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 92e5492b54178be43ab9f2ddfad36afe, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -179,7 +180,7 @@ GameObject:
   - component: {fileID: 7439469531039161132}
   - component: {fileID: 5634051153549682213}
   m_Layer: 0
-  m_Name: ChargerCharacter
+  m_Name: WarriorCharacterPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -198,7 +199,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7439469529967429106}
-  - {fileID: 5616321387565058786}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -219,7 +219,8 @@ MonoBehaviour:
     SerializedBytes: 
     ReferencedUnityObjects:
     - {fileID: 7439469529967429105}
-    - {fileID: 7439469529967429107}
+    - {fileID: 1796884499739159224, guid: 8550b949e2d526141a5fd4751a1016db, type: 3}
+    - {fileID: 11400000, guid: f1ebd7f66ba40f442aa5a61e12ae2038, type: 2}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -239,7 +240,7 @@ MonoBehaviour:
       Data: 
     - Name: Name
       Entry: 1
-      Data: Charger
+      Data: AxeMan
     - Name: BaseHealth
       Entry: 3
       Data: 10
@@ -269,22 +270,16 @@ MonoBehaviour:
       Data: 1
     - Name: 
       Entry: 7
-      Data: 3|ChargeAbility, Assembly-CSharp
+      Data: 3|ProjectileAbility, Assembly-CSharp
     - Name: _turns
       Entry: 3
-      Data: 3
-    - Name: _damage
-      Entry: 3
-      Data: 14
-    - Name: _stunTurns
-      Entry: 3
-      Data: 0
-    - Name: _maxRange
-      Entry: 4
-      Data: 5
-    - Name: _spriteRenderTransform
+      Data: 2
+    - Name: _projectileBehaviourPrefab
       Entry: 10
       Data: 1
+    - Name: _projectileSound
+      Entry: 6
+      Data: 
     - Name: 
       Entry: 8
       Data: 
@@ -317,7 +312,10 @@ MonoBehaviour:
       Data: 4|System.Collections.Generic.List`1[[Class, Assembly-CSharp]], mscorlib
     - Name: 
       Entry: 12
-      Data: 0
+      Data: 1
+    - Name: 
+      Entry: 10
+      Data: 2
     - Name: 
       Entry: 13
       Data: 

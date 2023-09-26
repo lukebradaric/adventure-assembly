@@ -157,7 +157,7 @@ SpriteRenderer:
   m_SortingLayerID: -832573971
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: fc2af86f3add1594abf965844b2a2280, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4eb8a47cca6402c4bab764f65a13a798, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -179,7 +179,7 @@ GameObject:
   - component: {fileID: 7439469531039161132}
   - component: {fileID: 5634051153549682213}
   m_Layer: 0
-  m_Name: TrapperCharacter
+  m_Name: BowmanCharacterPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -219,7 +219,8 @@ MonoBehaviour:
     SerializedBytes: 
     ReferencedUnityObjects:
     - {fileID: 7439469529967429105}
-    - {fileID: 2506831846515102429, guid: d98d73c6091a0cd4fb1ed214eb053361, type: 3}
+    - {fileID: 4420603722081993023, guid: f2757696c12a881498f19474cf3ef312, type: 3}
+    - {fileID: 11400000, guid: 25a48ac50006f1349af87063e91288d3, type: 2}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -239,13 +240,13 @@ MonoBehaviour:
       Data: 
     - Name: Name
       Entry: 1
-      Data: Trapper
+      Data: Longbowman
     - Name: BaseHealth
       Entry: 3
       Data: 10
     - Name: Description
       Entry: 1
-      Data: Every X Turrns, Drops traps that stun enemies
+      Data: Fires a piercing bolt
     - Name: Stats
       Entry: 7
       Data: 0|EntityStats, Assembly-CSharp
@@ -293,13 +294,16 @@ MonoBehaviour:
       Data: 1
     - Name: 
       Entry: 7
-      Data: 4|DropAbility, Assembly-CSharp
+      Data: 4|ProjectileAbility, Assembly-CSharp
     - Name: _turns
       Entry: 3
       Data: 5
-    - Name: _dropProjectile
+    - Name: _projectileBehaviourPrefab
       Entry: 10
       Data: 1
+    - Name: _projectileSound
+      Entry: 6
+      Data: 
     - Name: 
       Entry: 8
       Data: 
@@ -332,7 +336,10 @@ MonoBehaviour:
       Data: 5|System.Collections.Generic.List`1[[Class, Assembly-CSharp]], mscorlib
     - Name: 
       Entry: 12
-      Data: 0
+      Data: 1
+    - Name: 
+      Entry: 10
+      Data: 2
     - Name: 
       Entry: 13
       Data: 
