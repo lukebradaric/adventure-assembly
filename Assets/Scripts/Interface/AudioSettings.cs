@@ -14,16 +14,11 @@ public class AudioSettings : MonoBehaviour
     [Header("Master Group")]
     public AudioMixerGroup masterGroup;
     [SerializeField] private FloatScriptableVariable _masterVolume;
-    public void UpdateMusic()
+    public void UpdateAudio()
     {
         musicGroup.audioMixer.SetFloat("musicVolume", _musicVolume.Value);
-    }
-    public void UpdateEffects()
-    {
         effectsGroup.audioMixer.SetFloat("effectsVolume", _effectsVolume.Value);
-    }
-    public void UpdateMaster()
-    {
         masterGroup.audioMixer.SetFloat("masterVolume", _masterVolume.Value);
     }
+
 }

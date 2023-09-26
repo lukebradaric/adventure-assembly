@@ -247,33 +247,9 @@ MonoBehaviour:
     - Name: Description
       Entry: 1
       Data: Fires a piercing bolt
-    - Name: Stats
-      Entry: 7
-      Data: 0|EntityStats, Assembly-CSharp
-    - Name: damageMultiplier
-      Entry: 4
-      Data: 1
-    - Name: criticalChance
-      Entry: 4
-      Data: 0
-    - Name: criticalDamageMultiplier
-      Entry: 4
-      Data: 2
-    - Name: healMultiplier
-      Entry: 4
-      Data: 1
-    - Name: armorMultiplier
-      Entry: 4
-      Data: 1
-    - Name: turnSpeedBonus
-      Entry: 3
-      Data: 0
-    - Name: 
-      Entry: 8
-      Data: 
     - Name: MoveTween
       Entry: 7
-      Data: 1|BasicEntityTween, Assembly-CSharp
+      Data: 0|BasicEntityTween, Assembly-CSharp
     - Name: _ease
       Entry: 3
       Data: 9
@@ -282,19 +258,19 @@ MonoBehaviour:
       Data: 
     - Name: HurtTween
       Entry: 7
-      Data: 2|HurtEntityTween, Assembly-CSharp
+      Data: 1|HurtEntityTween, Assembly-CSharp
     - Name: 
       Entry: 8
       Data: 
     - Name: Abilities
       Entry: 7
-      Data: 3|System.Collections.Generic.List`1[[Ability, Assembly-CSharp]], mscorlib
+      Data: 2|System.Collections.Generic.List`1[[Ability, Assembly-CSharp]], mscorlib
     - Name: 
       Entry: 12
       Data: 1
     - Name: 
       Entry: 7
-      Data: 4|ProjectileAbility, Assembly-CSharp
+      Data: 3|ProjectileAbility, Assembly-CSharp
     - Name: _turns
       Entry: 3
       Data: 5
@@ -318,13 +294,13 @@ MonoBehaviour:
       Data: UnityEngine.Color, UnityEngine.CoreModule
     - Name: 
       Entry: 4
-      Data: 1
+      Data: 0.536400855
     - Name: 
       Entry: 4
-      Data: 0
+      Data: 0.7735849
     - Name: 
       Entry: 4
-      Data: 1
+      Data: 0.76624167
     - Name: 
       Entry: 4
       Data: 1
@@ -333,7 +309,7 @@ MonoBehaviour:
       Data: 
     - Name: Classes
       Entry: 7
-      Data: 5|System.Collections.Generic.List`1[[Class, Assembly-CSharp]], mscorlib
+      Data: 4|System.Collections.Generic.List`1[[Class, Assembly-CSharp]], mscorlib
     - Name: 
       Entry: 12
       Data: 1
