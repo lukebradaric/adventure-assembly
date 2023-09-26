@@ -21,7 +21,7 @@ public abstract class Ability
         if(_currentTurns <= 0)
         {
             Execute();
-            _currentTurns = _turns;
+            _currentTurns = _entity.Stats.GetTurnSpeed(_turns);
         }
     }
 

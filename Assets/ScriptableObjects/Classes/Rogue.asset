@@ -16,11 +16,9 @@ MonoBehaviour:
   description: 
   modifiers:
   - stat: {fileID: 11400000, guid: 9f6e094a9f7e01244970be04702c40f7, type: 2}
-    isGlobal: 1
+    isGlobal: 0
     modifierData:
-    - count: 2
-      value: 0.1
-    - count: 4
+    - count: 3
       value: 0.2
     - count: 6
-      value: 0.35
+      value: 0.4

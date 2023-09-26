@@ -11,7 +11,7 @@ public class ExplodingProjectile : Projectile
     {
         foreach (var e in EnemyManager.GetInRadius(transform.position, _explosionRadius))
         {
-            e.Damage(_explosionDamage);
+            e.Damage(_entity.Stats.GetDamage(_explosionDamage));
         }
 
         base.OnEnemyCollision(enemy);

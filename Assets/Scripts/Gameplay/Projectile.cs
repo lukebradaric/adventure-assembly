@@ -17,7 +17,10 @@ public class Projectile : MonoBehaviour
     public int Damage => _damage;
     [SerializeField] private float _maxLifetime = 5f;
 
+    // the entity this projectile is targeting
     protected Entity _target;
+    // the entity this projectile came from
+    protected Entity _entity;
     private Vector2 _moveDirection;
 
     protected virtual void Awake()
@@ -46,9 +49,9 @@ public class Projectile : MonoBehaviour
         }
     }
 
-    public void SetDamage(int damage)
+    public void SetEntity(Entity entity)
     {
-        _damage = damage;
+        _entity = entity;
     }
 
     public void SetTarget(Entity target)
@@ -59,7 +62,7 @@ public class Projectile : MonoBehaviour
 
     protected virtual void OnEnemyCollision(Enemy enemy)
     {
-        enemy.Damage(_damage);
+        enemy.Damage(_entity.Stats.GetDamage(_damage));
 
         if (_destroyParticlesPrefab != null)
         {

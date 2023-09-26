@@ -124,8 +124,12 @@ public abstract class Entity : SerializedMonoBehaviour
     public virtual void AddStun(int turns)
     {
         _stunTurnsRemaining += turns;
-        var particles = GameObject.Instantiate(StunParticlePrefab, transform);
-        particles.GetComponent<ParticleSystem>().startLifetime = TurnManager.TurnInterval * turns;
+
+        if (StunParticlePrefab != null)
+        {
+            var particles = GameObject.Instantiate(StunParticlePrefab, transform);
+            particles.GetComponent<ParticleSystem>().startLifetime = TurnManager.TurnInterval * turns;
+        }
     }
 
     public virtual void Damage(int damage)
@@ -137,7 +141,14 @@ public abstract class Entity : SerializedMonoBehaviour
 
         damage = Stats.GetDamageTaken(damage);
 
+        if (damage == 0)
+        {
+            return;
+        }
+
         CurrentHealth -= damage;
+
+        Damaged?.Invoke(this, damage);
 
         HurtTween.Animate(this, Vector2Int.zero, 0.2f);
         HurtSound?.Play();

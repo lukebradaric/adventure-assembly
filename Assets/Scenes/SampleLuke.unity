@@ -205,8 +205,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _testCharacterPrefabs:
-  - {fileID: 5634051153549682213, guid: 79ad0513cd0a37646adcdab898b1c5e0, type: 3}
-  - {fileID: 5634051153549682213, guid: e6942f23037626348bd7a9cbdc8bc594, type: 3}
+  - {fileID: 5634051153549682213, guid: deb59a2db89892846a77859bb9df49d1, type: 3}
+  - {fileID: 5634051153549682213, guid: b772e86018699fd4da864bf30475f2c9, type: 3}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -386,7 +386,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
