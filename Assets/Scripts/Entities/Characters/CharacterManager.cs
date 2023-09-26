@@ -76,6 +76,22 @@ public class CharacterManager : EntityManagerBase<Character>
             {
                 previousCharacterPosition = character.Position;
 
+                // This will probably turbo break the game
+                // If you run into a wall, Kill YA ENTIRE GENERATION & Yaself
+                Collider2D hitCollider = Physics2D.OverlapPoint(character.Position + moveAxis);
+                if (hitCollider != null)
+                {
+                    if (hitCollider.CompareTag("Border"))
+                    {
+                        Debug.Log("Destroying worlds.");
+                        foreach (Character doomed in Entities)
+                        {
+                            killCharacters.Add(doomed);
+                        }
+                        break;
+                    }
+                }
+
                 // If you run into yourself, KILL YOUSELF
                 if (TryGet(character.Position + moveAxis, out Character c2))
                 {
@@ -96,6 +112,7 @@ public class CharacterManager : EntityManagerBase<Character>
             character.Move(new Vector2Int(previousCharacterPosition.x - character.Position.x, previousCharacterPosition.y - character.Position.y));
             previousCharacterPosition = temp;
         }
+        
 
         // Kill all characters in the kill list (collision death)
         foreach (Character character in killCharacters)

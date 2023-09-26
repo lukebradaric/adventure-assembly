@@ -6,7 +6,7 @@ using UnityEngine;
 [AutoLoad]
 public class TurnManager : MonoBehaviour
 {
-    public const float TurnInterval = 0.5f;
+    public const float TurnInterval = 0.25f;
 
     public static event Action TurnUpdate;
     public static event Action EnemyTurnUpdate;

@@ -1,4 +1,5 @@
 using DG.Tweening;
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -14,6 +15,7 @@ public class CharacterSelectionItem : MonoBehaviour, IPointerEnterHandler, IPoin
     [SerializeField] private TextMeshProUGUI _descriptionText;
     [SerializeField] private RectTransform _classTransformParent;
     [SerializeField] private CharacterClassItem _classInterfacePrefab;
+    [SerializeField] private GameObject _spawnArea;
 
     [Space]
     [Header("Settings")]
@@ -46,6 +48,28 @@ public class CharacterSelectionItem : MonoBehaviour, IPointerEnterHandler, IPoin
         {
             return;
         }
+        //Instead of adding character straight from click,
+        //players must pick up character dropped into in-game world
+        //nah i give up 
+        /*
+        List<Vector2> availablePositions = new List<Vector2>();
+        Vector2 size = _spawnArea.GetComponent<BoxCollider2D>().size;
+        int totalCells = (int)size.x * (int)size.y;
+        Vector2 startPosition = new Vector2(-size.x / 2, size.y / 2 + 0.5f);
+        for(int rows = 0; rows < size.x; rows++)
+        {
+            for(int col = 0; col < size.y; col++)
+            {
+                availablePositions.Add(new Vector2(startPosition.x + (1 * rows), startPosition.y + (1 * col)));
+            }
+        }
+        bool foundSpot = false;
+        while (!foundSpot)
+        {
+            int index = Random.Range(0, availablePositions.Count);
+            
+        }
+        */
 
         CharacterManager.AddCharacter(_characterPrefab);
         CharacterSelectionManager.Instance.CloseSelection();
