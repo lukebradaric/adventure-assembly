@@ -4,44 +4,73 @@ using UnityEngine;
 [System.Serializable]
 public class ClassModifier
 {
-    //public Stat stat;
-    public string statName;
+    [Tooltip("The name of the stat in code.")]
+    public Stat stat;
+    [Tooltip("Does this apply to all characters? Or just characters of this class.")]
+    public bool isGlobal = true;
 
     public List<ClassModifierData> modifierData = new List<ClassModifierData>();
+    private ClassModifierInstance _currentModifier = null;
 
-    private ClassModifierData _currentModifierData = null;
-    private int _currentCount = 0;
+    private int _count = 0;
+    private Class _class;
 
-    public void AddCount(int value)
+    public void SetClass(Class cl)
     {
-        _currentCount += value;
-        if (_currentCount < 0) _currentCount = 0;
-        ClassModifierData newData = GetModifierData(_currentCount);
+        _count = 0;
+        _class = cl;
+    }
 
-        // If that class modifier data is already applied, return
-        if (_currentModifierData == newData)
+    public void RegisterCharacter()
+    {
+        _count++;
+        UpdateModifiers();
+    }
+
+    public void UnregisterCharacter()
+    {
+        _count--;
+        UpdateModifiers();
+    }
+
+    public void UpdateModifiers()
+    {
+        ClassModifierInstance newData = GetModifierData(_count);
+
+        if (newData == _currentModifier)
         {
             return;
         }
 
-        // If there is currently a modifier applied, remove it
-        if (_currentModifierData != null)
+        if (_currentModifier != null)
         {
-            // TODO: Implement stat manager
-            //stat.AddValue(-_currentModifierData.value);
+            if (isGlobal)
+            {
+                CharacterManager.RemoveGlobalModifier(_currentModifier);
+            }
+            else
+            {
+                CharacterManager.RemoveClassModifier(_class, _currentModifier);
+            }
         }
 
         if (newData != null)
         {
-            // TODO: Implement stat manager
-            //stat.AddValue(newData.value);
+            if (isGlobal)
+            {
+                CharacterManager.AddGlobalModifier(newData);
+            }
+            else
+            {
+                CharacterManager.AddClassModifier(_class, newData);
+            }
         }
 
-        _currentModifierData = newData;
+        _currentModifier = newData;
     }
 
     // Returns the nearest modifier data based on the count
-    private ClassModifierData GetModifierData(int count)
+    private ClassModifierInstance GetModifierData(int count)
     {
         ClassModifierData newData = null;
 
@@ -53,6 +82,19 @@ public class ClassModifier
             }
         }
 
-        return newData;
+        if (newData == null)
+        {
+            return null;
+        }
+
+        if (newData?.value == _currentModifier?.value)
+        {
+            return _currentModifier;
+        }
+
+        ClassModifierInstance instance = new ClassModifierInstance();
+        instance.statName = stat.name;
+        instance.value = newData.value;
+        return instance;
     }
 }

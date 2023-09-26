@@ -14,11 +14,14 @@ public class CharacterManager : EntityManagerBase<Character>
     private static int _currentLevel = 0;
     private static float _currentExperience;
 
-    private static CharacterListScriptableVariable _characterList;
+    private static Dictionary<Class, List<ClassModifierInstance>> _classModifiers = new Dictionary<Class, List<ClassModifierInstance>>();
+    private static List<ClassModifierInstance> _globalModifiers = new List<ClassModifierInstance>();
+
+    private static Transform _characterParentTransform = null;
 
     private void Awake()
     {
-        _characterList = Resources.Load("AllCharactersListScriptableVariable") as CharacterListScriptableVariable;
+        _characterParentTransform = new GameObject("CharacterParentTransform").transform;
     }
 
     private void OnEnable()
@@ -100,7 +103,28 @@ public class CharacterManager : EntityManagerBase<Character>
         Vector2 newCharacterPosition = lastCharacterBehaviour == null ? Vector2.zero : new Vector2(lastCharacterBehaviour.Position.x, lastCharacterBehaviour.Position.y - 1);
 
         // instantiate character
-        Instantiate(characterPrefab, newCharacterPosition, Quaternion.identity);
+        Character character = Instantiate(characterPrefab, newCharacterPosition, Quaternion.identity);
+        character.transform.SetParent(_characterParentTransform);
+
+        // Add global modifiers to new character
+        foreach (ClassModifierInstance modifier in _globalModifiers)
+        {
+            character.Stats.ChangeValue(modifier.statName, modifier.value);
+        }
+
+        // Add class modifiers to new character
+        foreach (Class cl in character.Classes)
+        {
+            if (!_classModifiers.ContainsKey(cl))
+            {
+                continue;
+            }
+
+            foreach (ClassModifierInstance modifier in _classModifiers[cl])
+            {
+                character.Stats.ChangeValue(modifier.statName, modifier.value);
+            }
+        }
     }
 
     public static void AddExperience(float experience)
@@ -112,6 +136,64 @@ public class CharacterManager : EntityManagerBase<Character>
         {
             _currentLevel = newLevel;
             LeveledUp?.Invoke();
+        }
+    }
+
+    public static void AddGlobalModifier(ClassModifierInstance modifier)
+    {
+        _globalModifiers.Add(modifier);
+        Debug.Log($"Global Modifier Added {modifier.statName}: {modifier.value}");
+
+        foreach (Character character in Entities)
+        {
+            character.Stats.ChangeValue(modifier.statName, modifier.value);
+        }
+    }
+
+    public static void RemoveGlobalModifier(ClassModifierInstance modifier)
+    {
+        _globalModifiers.Remove(modifier);
+        Debug.Log($"Global Modifier Removed {modifier.statName}: {modifier.value}");
+
+        foreach (Character character in Entities)
+        {
+            character.Stats.ChangeValue(modifier.statName, -modifier.value);
+        }
+    }
+
+    public static void AddClassModifier(Class cl, ClassModifierInstance modifier)
+    {
+        Debug.Log($"Class Modifier Added {cl.name} - {modifier.statName}: {modifier.value}");
+
+        if (!_classModifiers.ContainsKey(cl))
+        {
+            _classModifiers.Add(cl, new List<ClassModifierInstance> { modifier });
+        }
+
+        foreach (Character character in Entities)
+        {
+            if (!character.Classes.Contains(cl))
+            {
+                continue;
+            }
+
+            character.Stats.ChangeValue(modifier.statName, modifier.value);
+        }
+    }
+
+    public static void RemoveClassModifier(Class cl, ClassModifierInstance modifier)
+    {
+        _classModifiers[cl].Remove(modifier);
+        Debug.Log($"Class Modifier Removed {cl.name} - {modifier.statName}: {modifier.value}");
+
+        foreach (Character character in Entities)
+        {
+            if (!character.Classes.Contains(cl))
+            {
+                continue;
+            }
+
+            character.Stats.ChangeValue(modifier.statName, -modifier.value);
         }
     }
 

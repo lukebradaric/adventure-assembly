@@ -12,17 +12,27 @@ public class Class : ScriptableObject
     [Header("Modifiers")]
     public List<ClassModifier> modifiers = new List<ClassModifier>();
 
-    public void Register(Character character)
+    private void OnEnable()
     {
         foreach (ClassModifier modifier in modifiers)
         {
-            //modifiers
-            // Apply each modifier to character
+            modifier.SetClass(this);
         }
     }
 
-    public void Unregister(Character character)
+    public void Register()
     {
-        // Unapply each modifier to character
+        foreach (ClassModifier modifier in modifiers)
+        {
+            modifier.RegisterCharacter();
+        }
+    }
+
+    public void Unregister()
+    {
+        foreach (ClassModifier modifier in modifiers)
+        {
+            modifier.UnregisterCharacter();
+        }
     }
 }

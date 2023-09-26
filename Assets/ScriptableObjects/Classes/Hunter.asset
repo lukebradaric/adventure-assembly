@@ -15,7 +15,8 @@ MonoBehaviour:
   color: {r: 0.4255518, g: 0.6886792, b: 0.4383594, a: 0}
   description: 
   modifiers:
-  - stat: {fileID: 11400000, guid: 3b940db8d1dac80449766501112e5487, type: 2}
+  - stat: {fileID: 11400000, guid: b3081a991583b4a4a92595b621db5019, type: 2}
+    isGlobal: 1
     modifierData:
-    - count: 0
-      value: 0
+    - count: 4
+      value: 1

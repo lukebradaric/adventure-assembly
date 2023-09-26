@@ -22,9 +22,6 @@ public abstract class Entity : SerializedMonoBehaviour
     [MultiLineProperty(3)]
     [OdinSerialize] public string Description { get; private set; } = string.Empty;
 
-    [PropertySpace]
-    [Title("Stats")]
-    [OdinSerialize] public EntityStats Stats { get; private set; }
 
     [PropertySpace]
     [Title("Animation")]
@@ -35,6 +32,7 @@ public abstract class Entity : SerializedMonoBehaviour
     [Title("Abilities")]
     [OdinSerialize] public List<Ability> Abilities { get; private set; } = new List<Ability>();
 
+    public EntityStats Stats { get; private set; } = new EntityStats();
     public int CurrentHealth { get; private set; }
     public Vector2Int Position { get; private set; }
 
@@ -43,6 +41,7 @@ public abstract class Entity : SerializedMonoBehaviour
     public bool IsImmune => _immuneTurnsRemaining > 0;
     public bool IsStunned => _stunTurnsRemaining > 0;
 
+    public static event Action<Entity, int> Damaged;
     public event Action Destroyed;
 
     private int _immuneTurnsRemaining;
@@ -136,6 +135,7 @@ public abstract class Entity : SerializedMonoBehaviour
             return;
         }
 
+        damage = Stats.GetDamageTaken(damage);
 
         CurrentHealth -= damage;
 

@@ -1,3 +1,4 @@
+using System.Reflection;
 using UnityEngine;
 
 [System.Serializable]
@@ -36,5 +37,18 @@ public class EntityStats
     public int GetTurnSpeed(int baseTurnSpeed)
     {
         return Mathf.Min(baseTurnSpeed - turnSpeedBonus, 1);
+    }
+
+    public void ChangeValue(string statName, float value)
+    {
+        FieldInfo fieldInfo = GetType().GetField(statName);
+
+        if (fieldInfo == null)
+        {
+            Debug.LogError($"Failed to find field of name: {statName}");
+            return;
+        }
+
+        fieldInfo.SetValue(this, (float)fieldInfo.GetValue(this) + value);
     }
 }
