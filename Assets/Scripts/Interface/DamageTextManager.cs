@@ -41,5 +41,7 @@ public class DamageTextManager : MonoBehaviour
         Vector2 newPos = new Vector2(UnityEngine.Random.Range(-1f, 1f), UnityEngine.Random.Range(-1f, 1f)) + (Vector2)damageTextGameObject.transform.position;
         damageTextGameObject.transform.DOLocalMove(newPos, _tweenDuration).SetEase(Ease.OutQuint);
         damageText.DOColor(Color.clear, _tweenDuration).SetEase(Ease.InQuint);
+
+        Destroy(damageTextGameObject, _tweenDuration + 0.5f);
     }
 }
