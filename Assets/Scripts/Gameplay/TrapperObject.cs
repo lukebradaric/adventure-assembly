@@ -14,7 +14,7 @@ public class TrapperObject : Projectile
     protected override void OnEnemyCollision(Enemy enemy)
     {
         enemy.AddStun(_stunDuration);
-        enemy.Damage(_damage);
+        enemy.Damage(_entity.Stats.GetDamage(_damage));
         if (_destroyParticlesPrefab != null)
         {
             var particle = Instantiate(_destroyParticlesPrefab, this.transform.position, Quaternion.identity);

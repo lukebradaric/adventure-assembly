@@ -3,10 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using TinyTools.AutoLoad;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
+using TinyTools.ScriptableVariables;
+using TinyTools.ScriptableEvents;
 public class CharacterManager : EntityManagerBase<Character>
 {
     [SerializeField] private GameObject _firstCharacterIndicatorPrefab = default;
+
+    [SerializeField] private IntScriptableVariable _currentScore;
+    [SerializeField] private VoidScriptableEvent OnKillEnemy;
 
     public static event Action LeveledUp;
 
@@ -29,12 +34,20 @@ public class CharacterManager : EntityManagerBase<Character>
     private void OnEnable()
     {
         TurnManager.TurnUpdate += OnTurnUpdate;
+        Enemy.OnDeath += TestFunction;
         Unregistered += OnUnregistered;
+    }
+
+    public void TestFunction(int damage)
+    {
+        _currentScore.Value += damage * 100;
+        OnKillEnemy?.Raise();
     }
 
     private void OnDisable()
     {
         TurnManager.TurnUpdate -= OnTurnUpdate;
+        Enemy.OnDeath -= TestFunction;
         Unregistered -= OnUnregistered;
     }
 
@@ -47,7 +60,7 @@ public class CharacterManager : EntityManagerBase<Character>
     {
         if(Entities.Count == 0)
         {
-            Debug.Log("game lost");
+            SceneManager.LoadScene("GameOver");
         }
     }
 
@@ -262,5 +275,10 @@ public class CharacterManager : EntityManagerBase<Character>
         }
 
         return GeometryUtility.CalculateBounds(positions, Matrix4x4.identity);
+    }
+    public void UpdateScore(int scoreAmount)
+    {
+        _currentScore.Value += scoreAmount * 100;
+        OnKillEnemy?.Raise();
     }
 }

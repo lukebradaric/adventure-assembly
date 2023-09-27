@@ -6,7 +6,7 @@ public class PiercingProjectile : Projectile
 {
     protected override void OnEnemyCollision(Enemy enemy)
     {
-        enemy.Damage(_damage);
+        enemy.Damage(_entity.Stats.GetDamage(_damage));
         if (_destroyParticlesPrefab != null)
         {
             Instantiate(_destroyParticlesPrefab, transform.position, Quaternion.identity);

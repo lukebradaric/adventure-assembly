@@ -37,7 +37,7 @@ public class ElectricChain : Projectile
         _electricLine.positionCount = _enemiesHit.Count;
         foreach (Enemy enemyHit in _enemiesHit)
         {
-            enemyHit.Damage(_damage);
+            enemyHit.Damage(_entity.Stats.GetDamage(_damage));
             Debug.Log("Dealing Damage");
         }
         _collider.enabled = false;

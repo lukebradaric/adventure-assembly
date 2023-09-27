@@ -19,7 +19,7 @@ public class AxeProjectile : Projectile
     protected override void OnEnemyCollision(Enemy enemy)
     {
         Debug.Log("Hitting enemies");
-        enemy.Damage(_damage);
+        enemy.Damage(_entity.Stats.GetDamage(_damage));
     }
     private void OnEnable()
     {
