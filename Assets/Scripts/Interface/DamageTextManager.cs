@@ -4,7 +4,6 @@ using TinyTools.AutoLoad;
 using TMPro;
 using UnityEngine;
 
-[AutoLoad]
 public class DamageTextManager : MonoBehaviour
 {
     [Space]

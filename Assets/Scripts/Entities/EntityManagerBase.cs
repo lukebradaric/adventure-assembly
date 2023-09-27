@@ -1,9 +1,12 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
 public abstract class EntityManagerBase<T> : MonoBehaviour where T : Entity
 {
     public static List<T> Entities { get; private set; } = new List<T>();
+
+    public static event Action Unregistered;
 
     public static void Register(T entity)
     {
@@ -13,6 +16,7 @@ public abstract class EntityManagerBase<T> : MonoBehaviour where T : Entity
     public static void Unregister(T entity)
     {
         Entities.Remove(entity);
+        Unregistered?.Invoke();
     }
 
     public static T GetNearest(Vector2Int position, bool onScreenOnly = true)

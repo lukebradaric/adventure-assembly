@@ -1,7 +1,6 @@
 using TinyTools.AutoLoad;
 using UnityEngine;
 
-[AutoLoad]
 public class InputManager : MonoBehaviour
 {
     public static Vector2Int Axis = Vector2Int.right;

@@ -2,7 +2,6 @@ using System.Collections.Generic;
 using TinyTools.AutoLoad;
 using UnityEngine;
 
-[AutoLoad]
 public class EnemyManager : EntityManagerBase<Enemy>
 {
     private static HashSet<Vector2Int> _requestedPositions = new HashSet<Vector2Int>();

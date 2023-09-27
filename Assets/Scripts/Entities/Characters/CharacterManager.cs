@@ -4,7 +4,6 @@ using System.Linq;
 using TinyTools.AutoLoad;
 using UnityEngine;
 
-[AutoLoad]
 public class CharacterManager : EntityManagerBase<Character>
 {
     [SerializeField] private GameObject _firstCharacterIndicatorPrefab = default;
@@ -25,22 +24,31 @@ public class CharacterManager : EntityManagerBase<Character>
     private void Awake()
     {
         _characterParentTransform = new GameObject("CharacterParentTransform").transform;
-
     }
 
     private void OnEnable()
     {
         TurnManager.TurnUpdate += OnTurnUpdate;
+        Unregistered += OnUnregistered;
     }
 
     private void OnDisable()
     {
         TurnManager.TurnUpdate -= OnTurnUpdate;
+        Unregistered -= OnUnregistered;
     }
 
     private void Start()
     {
         _firstCharacterIndicator = GameObject.Instantiate(_firstCharacterIndicatorPrefab);
+    }
+
+    private void OnUnregistered()
+    {
+        if(Entities.Count == 0)
+        {
+            Debug.Log("game lost");
+        }
     }
 
     private static void OnTurnUpdate()
@@ -53,7 +61,7 @@ public class CharacterManager : EntityManagerBase<Character>
         // Position of the previous character
         Vector2Int previousCharacterPosition = Vector2Int.zero;
 
-        // Movement axis (If new input is just negative of previous, ignore it) (YOU CAN MOVE BACKWARDS INTO YOURSELF, DUHHH)
+        // Movement axis (If new input is just negative of previous, ignore it) (YOU CANT MOVE BACKWARDS INTO YOURSELF, DUHHH)
         Vector2Int moveAxis = InputManager.Axis == -_lastInputAxis ? _lastInputAxis : InputManager.Axis;
 
         // Characters to kill due to collision
@@ -76,20 +84,20 @@ public class CharacterManager : EntityManagerBase<Character>
             {
                 previousCharacterPosition = character.Position;
 
-                // This will probably turbo break the game
-                // If you run into a wall, Kill YA ENTIRE GENERATION & Yaself
+                // If you run into a wall, Kill YA SELF
                 Collider2D hitCollider = Physics2D.OverlapPoint(character.Position + moveAxis);
-                if (hitCollider != null)
+                if (hitCollider != null && hitCollider.CompareTag("Border"))
                 {
-                    if (hitCollider.CompareTag("Border"))
+                    killCharacters.Add(character);
+                    first = false;
+
+                    int charIndex = Entities.IndexOf(character);
+                    if (Entities.Count > charIndex + 1)
                     {
-                        Debug.Log("Destroying worlds.");
-                        foreach (Character doomed in Entities)
-                        {
-                            killCharacters.Add(doomed);
-                        }
-                        break;
+                        _firstCharacterIndicator.transform.SetParent(Entities[charIndex + 1].transform, false);
                     }
+
+                    continue;
                 }
 
                 // If you run into yourself, KILL YOUSELF
@@ -112,7 +120,7 @@ public class CharacterManager : EntityManagerBase<Character>
             character.Move(new Vector2Int(previousCharacterPosition.x - character.Position.x, previousCharacterPosition.y - character.Position.y));
             previousCharacterPosition = temp;
         }
-        
+
 
         // Kill all characters in the kill list (collision death)
         foreach (Character character in killCharacters)
@@ -162,9 +170,14 @@ public class CharacterManager : EntityManagerBase<Character>
         int newLevel = (int)Mathf.Sqrt(_currentExperience);
         if (newLevel - _currentLevel > 0)
         {
-            _currentLevel = newLevel;
-            LeveledUp?.Invoke();
+            LevelUp(newLevel);
         }
+    }
+
+    public static void LevelUp(int newLevel)
+    {
+        _currentLevel = newLevel;
+        LeveledUp?.Invoke();
     }
 
     public static void AddGlobalModifier(ClassModifierInstance modifier)
