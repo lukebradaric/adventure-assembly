@@ -40,10 +40,12 @@ public abstract class Entity : SerializedMonoBehaviour
     public bool IsDead { get; private set; } = false;
     public bool IsImmune => _immuneTurnsRemaining > 0;
     public bool IsStunned => _stunTurnsRemaining > 0;
+    public bool HasGrace => _graceTurnsRemaining > 0;
 
     public static event Action<Entity, int> Damaged;
     public event Action Destroyed;
 
+    private int _graceTurnsRemaining;
     private int _immuneTurnsRemaining;
     private int _stunTurnsRemaining;
 
@@ -101,6 +103,11 @@ public abstract class Entity : SerializedMonoBehaviour
         {
             _stunTurnsRemaining--;
         }
+
+        if(_graceTurnsRemaining > 0)
+        {
+            _graceTurnsRemaining--;
+        }
     }
 
     public void Move(Vector2Int movement)
@@ -130,6 +137,11 @@ public abstract class Entity : SerializedMonoBehaviour
             var particles = GameObject.Instantiate(StunParticlePrefab, transform);
             particles.GetComponent<ParticleSystem>().startLifetime = TurnManager.TurnInterval * turns;
         }
+    }
+
+    public virtual void AddGrace(int turns)
+    {
+        _graceTurnsRemaining += turns;
     }
 
     public virtual void Damage(int damage)

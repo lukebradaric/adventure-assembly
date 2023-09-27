@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Border
   - Spawn
+  - Loot
   layers:
   - Default
   - TransparentFX
@@ -13,7 +14,7 @@ TagManager:
   - Border
   - Water
   - UI
-  - 
+  - Loot
   - 
   - 
   - 

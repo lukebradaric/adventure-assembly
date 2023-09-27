@@ -13,7 +13,12 @@ public class CharacterManager : EntityManagerBase<Character>
     [SerializeField] private IntScriptableVariable _currentScore;
     [SerializeField] private VoidScriptableEvent OnKillEnemy;
 
+    [SerializeField] private LayerMask _lootLayerMaskVar;
+
+    private static LayerMask _lootLayerMask;
+
     public static event Action LeveledUp;
+    public static event Action LootPickedUp;
 
     private static Vector2Int _lastInputAxis;
 
@@ -28,7 +33,10 @@ public class CharacterManager : EntityManagerBase<Character>
 
     private void Awake()
     {
+        _currentExperience = 0;
+        _currentLevel = 0;
         _characterParentTransform = new GameObject("CharacterParentTransform").transform;
+        _lootLayerMask = _lootLayerMaskVar;
     }
 
     private void OnEnable()
@@ -58,7 +66,7 @@ public class CharacterManager : EntityManagerBase<Character>
 
     private void OnUnregistered()
     {
-        if(Entities.Count == 0)
+        if (Entities.Count == 0)
         {
             SceneManager.LoadScene("GameOver");
         }
@@ -75,7 +83,14 @@ public class CharacterManager : EntityManagerBase<Character>
         Vector2Int previousCharacterPosition = Vector2Int.zero;
 
         // Movement axis (If new input is just negative of previous, ignore it) (YOU CANT MOVE BACKWARDS INTO YOURSELF, DUHHH)
-        Vector2Int moveAxis = InputManager.Axis == -_lastInputAxis ? _lastInputAxis : InputManager.Axis;
+        //Vector2Int moveAxis = InputManager.Axis == -_lastInputAxis ? _lastInputAxis : InputManager.Axis;
+        Vector2Int moveAxis = InputManager.Axis;
+
+        // Ensure we don't move backwards into ourself (If it's only 1 character, we can move wherever)
+        if (Entities.Count > 1 && moveAxis == -_lastInputAxis)
+        {
+            moveAxis = _lastInputAxis;
+        }
 
         // Characters to kill due to collision
         List<Character> killCharacters = new List<Character>();
@@ -111,6 +126,13 @@ public class CharacterManager : EntityManagerBase<Character>
                     }
 
                     continue;
+                }
+
+                Collider2D lootCollider = Physics2D.OverlapPoint(character.Position + moveAxis, _lootLayerMask);
+                if (lootCollider != null && lootCollider.CompareTag("Loot"))
+                {
+                    LootPickedUp?.Invoke();
+                    Destroy(lootCollider.gameObject);
                 }
 
                 // If you run into yourself, KILL YOUSELF
@@ -155,6 +177,9 @@ public class CharacterManager : EntityManagerBase<Character>
         Character character = Instantiate(characterPrefab, newCharacterPosition, Quaternion.identity);
         character.transform.SetParent(_characterParentTransform);
 
+        // add 2 turns of death immunity
+        character.AddGrace(1);
+
         // Add global modifiers to new character
         foreach (ClassModifierInstance modifier in _globalModifiers)
         {
@@ -179,6 +204,7 @@ public class CharacterManager : EntityManagerBase<Character>
     public static void AddExperience(float experience)
     {
         _currentExperience += experience;
+        Debug.Log($"XP added {_currentExperience}");
 
         int newLevel = (int)Mathf.Sqrt(_currentExperience);
         if (newLevel - _currentLevel > 0)
@@ -191,6 +217,12 @@ public class CharacterManager : EntityManagerBase<Character>
     {
         _currentLevel = newLevel;
         LeveledUp?.Invoke();
+        Debug.Log($"Leveled up! {_currentLevel}");
+    }
+
+    public static void PickupLoot()
+    {
+        LootPickedUp?.Invoke();
     }
 
     public static void AddGlobalModifier(ClassModifierInstance modifier)

@@ -40,6 +40,11 @@ public class Character : Entity
 
     public override void Die()
     {
+        if (HasGrace)
+        {
+            return;
+        }
+
         base.Die();
 
         foreach (Class cl in Classes)

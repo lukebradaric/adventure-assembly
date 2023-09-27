@@ -26,7 +26,7 @@ public class TurnManager : MonoBehaviour
         if (_first)
         {
             _first = false;
-            CharacterManager.LevelUp(1);
+            CharacterManager.PickupLoot();
             StartCoroutine(TurnIntervalCoroutine());
             yield break;
         }

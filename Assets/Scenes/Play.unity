@@ -182,6 +182,10 @@ PrefabInstance:
       propertyPath: _currentScore
       value: 
       objectReference: {fileID: 11400000, guid: c769a6b12494b8d4ba2e5224aa1852c0, type: 2}
+    - target: {fileID: 6203468759774594263, guid: 6f76f82c3c5c23a47899d80bdf0cc396, type: 3}
+      propertyPath: _lootLayerMaskVar.m_Bits
+      value: 64
+      objectReference: {fileID: 0}
     - target: {fileID: 6203468760166289858, guid: 6f76f82c3c5c23a47899d80bdf0cc396, type: 3}
       propertyPath: m_Name
       value: GameCorePrefab

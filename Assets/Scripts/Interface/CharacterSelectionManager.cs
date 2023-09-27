@@ -18,15 +18,17 @@ public class CharacterSelectionManager : Singleton<CharacterSelectionManager>
 
     private void OnEnable()
     {
-        CharacterManager.LeveledUp += OnLeveledUp;
+        //CharacterManager.LeveledUp += OnLootPickedUp;
+        CharacterManager.LootPickedUp += OnLootPickedUp;
     }
 
     private void OnDisable()
     {
-        CharacterManager.LeveledUp -= OnLeveledUp;
+        //CharacterManager.LeveledUp -= OnLootPickedUp;
+        CharacterManager.LootPickedUp -= OnLootPickedUp;
     }
 
-    private void OnLeveledUp()
+    private void OnLootPickedUp()
     {
         OpenSelection();
     }
