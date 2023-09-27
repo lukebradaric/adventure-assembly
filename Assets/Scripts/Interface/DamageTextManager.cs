@@ -20,7 +20,7 @@ public class DamageTextManager : MonoBehaviour
 
     private void OnDisable()
     {
-        Entity.Damaged += OnDamaged;
+        Entity.Damaged -= OnDamaged;
     }
 
     private void OnDamaged(Entity entity, int damage)
