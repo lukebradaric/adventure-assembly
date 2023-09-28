@@ -136,7 +136,7 @@ public class CharacterManager : EntityManagerBase<Character>
                 }
 
                 // If you run into yourself, KILL YOUSELF
-                if (TryGet(character.Position + moveAxis, out Character c2))
+                if (TryGet(character.Position + moveAxis, out Character c2) && !c2.IsDead)
                 {
                     // Kill all characters after the one we ran into
                     _startKillCharacter = c2;

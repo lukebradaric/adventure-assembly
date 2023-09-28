@@ -236,15 +236,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7879205468994945221, guid: 6f76f82c3c5c23a47899d80bdf0cc396, type: 3}
       propertyPath: _spawnBounds.w
-      value: 5
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7879205468994945221, guid: 6f76f82c3c5c23a47899d80bdf0cc396, type: 3}
       propertyPath: _spawnBounds.x
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7879205468994945221, guid: 6f76f82c3c5c23a47899d80bdf0cc396, type: 3}
       propertyPath: _spawnBounds.y
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7879205468994945221, guid: 6f76f82c3c5c23a47899d80bdf0cc396, type: 3}
       propertyPath: _spawnBounds.z
@@ -856,7 +856,7 @@ GameObject:
   m_Component:
   - component: {fileID: 773705461}
   m_Layer: 0
-  m_Name: Border (1)
+  m_Name: Border
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1990,7 +1990,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1561021468}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: -0.5, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

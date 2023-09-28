@@ -189,7 +189,7 @@ MonoBehaviour:
   _destroyParticlesPrefab: {fileID: 9220285964605078023, guid: eff2ea0c78e571440914059319b198e6, type: 3}
   _destroySound: {fileID: 0}
   _speed: 0
-  _damage: 1
+  _damage: 10
   _maxLifetime: 30
   _stunDuration: 3
 --- !u!61 &2506831846515102428
