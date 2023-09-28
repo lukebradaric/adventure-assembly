@@ -245,7 +245,7 @@ MonoBehaviour:
       Data: 10
     - Name: Description
       Entry: 1
-      Data: 
+      Data: Charges nearby enemies, dealing damage and stunning for 1 turn.
     - Name: MoveTween
       Entry: 7
       Data: 0|BasicEntityTween, Assembly-CSharp

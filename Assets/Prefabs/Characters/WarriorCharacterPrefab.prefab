@@ -220,6 +220,7 @@ MonoBehaviour:
     ReferencedUnityObjects:
     - {fileID: 7439469529967429105}
     - {fileID: 1796884499739159224, guid: 8550b949e2d526141a5fd4751a1016db, type: 3}
+    - {fileID: 11400000, guid: cb67f9ff64a43ea4d95074b47fa5d8cd, type: 2}
     - {fileID: 11400000, guid: f1ebd7f66ba40f442aa5a61e12ae2038, type: 2}
     SerializedBytesString: 
     Prefab: {fileID: 0}
@@ -246,7 +247,7 @@ MonoBehaviour:
       Data: 10
     - Name: Description
       Entry: 1
-      Data: 
+      Data: Swings a giant axe every 2 turns and damages all nearby enemies.
     - Name: MoveTween
       Entry: 7
       Data: 0|BasicEntityTween, Assembly-CSharp
@@ -278,8 +279,8 @@ MonoBehaviour:
       Entry: 10
       Data: 1
     - Name: _projectileSound
-      Entry: 6
-      Data: 
+      Entry: 10
+      Data: 2
     - Name: 
       Entry: 8
       Data: 
@@ -315,7 +316,7 @@ MonoBehaviour:
       Data: 1
     - Name: 
       Entry: 10
-      Data: 2
+      Data: 3
     - Name: 
       Entry: 13
       Data: 

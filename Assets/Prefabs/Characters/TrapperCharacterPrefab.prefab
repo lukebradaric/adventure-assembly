@@ -245,7 +245,8 @@ MonoBehaviour:
       Data: 10
     - Name: Description
       Entry: 1
-      Data: Every X Turrns, Drops traps that stun enemies
+      Data: Drops traps behind every 5 turns. Enemies who step in the trap take damage
+        and are stunned.
     - Name: MoveTween
       Entry: 7
       Data: 0|BasicEntityTween, Assembly-CSharp

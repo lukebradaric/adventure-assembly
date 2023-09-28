@@ -247,7 +247,8 @@ MonoBehaviour:
       Data: 15
     - Name: Description
       Entry: 1
-      Data: Throws fast daggers at nearby enemies.
+      Data: Throws fast daggers at nearby enemies. (WIP) Daggers deal double the
+        normal critical strike damage.
     - Name: MoveTween
       Entry: 7
       Data: 0|BasicEntityTween, Assembly-CSharp

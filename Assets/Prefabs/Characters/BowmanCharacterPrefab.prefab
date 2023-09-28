@@ -246,7 +246,7 @@ MonoBehaviour:
       Data: 10
     - Name: Description
       Entry: 1
-      Data: Fires a piercing bolt
+      Data: Fires a long range bolt that pierces through enemies.
     - Name: MoveTween
       Entry: 7
       Data: 0|BasicEntityTween, Assembly-CSharp
