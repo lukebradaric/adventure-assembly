@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class TrapperObject : Projectile
@@ -13,8 +11,17 @@ public class TrapperObject : Projectile
 
     protected override void OnEnemyCollision(Enemy enemy)
     {
-        enemy.AddStun(_stunDuration);
         enemy.Damage(_entity.Stats.GetDamage(_damage));
+
+        // If we killed enemy with trap damage, return
+        if (enemy.IsDead)
+        {
+            _destroySound?.Play();
+            Destroy(gameObject);
+            return;
+        }
+
+        enemy.AddStun(_stunDuration);
         if (_destroyParticlesPrefab != null)
         {
             var particle = Instantiate(_destroyParticlesPrefab, this.transform.position, Quaternion.identity);

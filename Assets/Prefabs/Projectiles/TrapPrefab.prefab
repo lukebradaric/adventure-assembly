@@ -187,7 +187,7 @@ MonoBehaviour:
   _spriteRenderer: {fileID: 2506831846515102430}
   _rigidbody: {fileID: 2506831846515102416}
   _destroyParticlesPrefab: {fileID: 9220285964605078023, guid: eff2ea0c78e571440914059319b198e6, type: 3}
-  _destroySound: {fileID: 0}
+  _destroySound: {fileID: 11400000, guid: b1b0368f742b87644990bd0d5a87d459, type: 2}
   _speed: 0
   _damage: 10
   _maxLifetime: 30
