@@ -247,8 +247,8 @@ MonoBehaviour:
       Data: 15
     - Name: Description
       Entry: 1
-      Data: Throws fast daggers at nearby enemies. (WIP) Daggers deal double the
-        normal critical strike damage.
+      Data: Throws fast daggers at nearby enemies. Does double the normal critical
+        strike damage.
     - Name: MoveTween
       Entry: 7
       Data: 0|BasicEntityTween, Assembly-CSharp
@@ -291,6 +291,33 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
+    - Name: Stats
+      Entry: 7
+      Data: 4|EntityStats, Assembly-CSharp
+    - Name: damageMultiplier
+      Entry: 4
+      Data: 1
+    - Name: criticalChance
+      Entry: 4
+      Data: 0
+    - Name: criticalDamageMultiplier
+      Entry: 4
+      Data: 3
+    - Name: healMultiplier
+      Entry: 4
+      Data: 1
+    - Name: armorMultiplier
+      Entry: 4
+      Data: 1
+    - Name: areaDamageSizeMultiplier
+      Entry: 4
+      Data: 1
+    - Name: turnSpeedBonus
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
     - Name: Color
       Entry: 7
       Data: UnityEngine.Color, UnityEngine.CoreModule
@@ -311,7 +338,7 @@ MonoBehaviour:
       Data: 
     - Name: Classes
       Entry: 7
-      Data: 4|System.Collections.Generic.List`1[[Class, Assembly-CSharp]], mscorlib
+      Data: 5|System.Collections.Generic.List`1[[Class, Assembly-CSharp]], mscorlib
     - Name: 
       Entry: 12
       Data: 1

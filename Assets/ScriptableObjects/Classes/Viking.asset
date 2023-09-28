@@ -12,13 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8dac3c9900e0df64694cd5331d99736f, type: 3}
   m_Name: Viking
   m_EditorClassIdentifier: 
-  color: {r: 0.027450982, g: 0.54509807, b: 0.7607844, a: 1}
-  description: Increases the attack speed of all other vikings.
+  color: {r: 0.63529414, g: 0.6745098, b: 0.75294125, a: 1}
+  description: '10 / 20 - 100% / 200%
+
+    Increase attack speed for all Vikings.'
   modifiers:
   - stat: {fileID: 11400000, guid: b3081a991583b4a4a92595b621db5019, type: 2}
     isGlobal: 0
     modifierData:
-    - count: 2
-      value: 0.15
-    - count: 5
-      value: 0.4
+    - count: 10
+      value: 1
+    - count: 20
+      value: 2

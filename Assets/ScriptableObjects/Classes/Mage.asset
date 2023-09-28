@@ -12,15 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8dac3c9900e0df64694cd5331d99736f, type: 3}
   m_Name: Mage
   m_EditorClassIdentifier: 
-  color: {r: 0.9686275, g: 0.46274513, b: 0.13333334, a: 1}
-  description: 
+  color: {r: 0.42352945, g: 0.2392157, b: 0.43529415, a: 1}
+  description: '6 / 12 / 20 - 50% / 100% / 200%
+
+    Increase damage dealt by all
+    other Mages.'
   modifiers:
   - stat: {fileID: 11400000, guid: 74cb92772ac7db24abbfa78ddea58395, type: 2}
-    isGlobal: 1
+    isGlobal: 0
     modifierData:
-    - count: 2
-      value: 1
-    - count: 4
-      value: 0.25
     - count: 6
-      value: 0.6
+      value: 0.5
+    - count: 12
+      value: 1
+    - count: 20
+      value: 2

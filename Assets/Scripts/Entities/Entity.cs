@@ -32,7 +32,10 @@ public abstract class Entity : SerializedMonoBehaviour
     [Title("Abilities")]
     [OdinSerialize] public List<Ability> Abilities { get; private set; } = new List<Ability>();
 
-    public EntityStats Stats { get; private set; } = new EntityStats();
+    [PropertySpace]
+    [Title("Stats")]
+    [OdinSerialize] public EntityStats Stats { get; private set; } = new EntityStats();
+
     public int CurrentHealth { get; private set; }
     public Vector2Int Position { get; private set; }
 

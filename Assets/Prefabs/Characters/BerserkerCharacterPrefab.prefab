@@ -220,6 +220,7 @@ MonoBehaviour:
     ReferencedUnityObjects:
     - {fileID: 7439469529967429105}
     - {fileID: 7439469529967429107}
+    - {fileID: 11400000, guid: f989ee30b5273c94d8a8712f31cb7c1a, type: 2}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -294,6 +295,33 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
+    - Name: Stats
+      Entry: 7
+      Data: 4|EntityStats, Assembly-CSharp
+    - Name: damageMultiplier
+      Entry: 4
+      Data: 1
+    - Name: criticalChance
+      Entry: 4
+      Data: 0
+    - Name: criticalDamageMultiplier
+      Entry: 4
+      Data: 2
+    - Name: healMultiplier
+      Entry: 4
+      Data: 1
+    - Name: armorMultiplier
+      Entry: 4
+      Data: 1
+    - Name: areaDamageSizeMultiplier
+      Entry: 4
+      Data: 1
+    - Name: turnSpeedBonus
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
     - Name: Color
       Entry: 7
       Data: UnityEngine.Color, UnityEngine.CoreModule
@@ -314,10 +342,13 @@ MonoBehaviour:
       Data: 
     - Name: Classes
       Entry: 7
-      Data: 4|System.Collections.Generic.List`1[[Class, Assembly-CSharp]], mscorlib
+      Data: 5|System.Collections.Generic.List`1[[Class, Assembly-CSharp]], mscorlib
     - Name: 
       Entry: 12
-      Data: 0
+      Data: 1
+    - Name: 
+      Entry: 10
+      Data: 2
     - Name: 
       Entry: 13
       Data: 
