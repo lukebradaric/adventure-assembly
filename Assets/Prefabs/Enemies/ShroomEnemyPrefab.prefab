@@ -272,7 +272,7 @@ MonoBehaviour:
       Data: Imp
     - Name: BaseHealth
       Entry: 3
-      Data: 10
+      Data: 20
     - Name: Description
       Entry: 1
       Data: 
@@ -319,7 +319,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _enemy: {fileID: 1995840275533504438}
-  _attackDamage: 5
+  _attackDamage: 8
   _attackTween:
     rid: 8701468471791452187
   references:

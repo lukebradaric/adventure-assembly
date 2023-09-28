@@ -272,7 +272,7 @@ MonoBehaviour:
       Data: Minotaru
     - Name: BaseHealth
       Entry: 3
-      Data: 100
+      Data: 120
     - Name: Description
       Entry: 1
       Data: 
@@ -319,7 +319,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _enemy: {fileID: 1995840275533504438}
-  _attackDamage: 5
+  _attackDamage: 10
   _attackTween:
     rid: 8701468471791452187
   references:
