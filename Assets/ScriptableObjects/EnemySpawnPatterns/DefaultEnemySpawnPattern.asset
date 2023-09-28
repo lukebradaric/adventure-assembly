@@ -49,30 +49,30 @@ MonoBehaviour:
     m_RotationOrder: 4
   enemySpawnData:
   - enemyPrefab: {fileID: 1995840275533504438, guid: 0d4058314caf2be419dc2274cc3be515, type: 3}
-    minSpawnTurn: 0
-    maxSpawnTurn: 1800
+    minSpawnTurn: 50
+    maxSpawnTurn: 500
     weight: 35
   - enemyPrefab: {fileID: 1995840275533504438, guid: f133cc4832ff1b34b8bd07ee09b643af, type: 3}
     minSpawnTurn: 0
-    maxSpawnTurn: 1800
+    maxSpawnTurn: 300
     weight: 50
   - enemyPrefab: {fileID: 1995840275533504438, guid: 775c00b8eb732324b8548beb6168cf0b, type: 3}
-    minSpawnTurn: 0
+    minSpawnTurn: 300
     maxSpawnTurn: 1800
     weight: 5
   - enemyPrefab: {fileID: 1995840275533504438, guid: 1d6f1d6a6dd81b14ba2e836bc57186d5, type: 3}
     minSpawnTurn: 800
     maxSpawnTurn: 1800
-    weight: 2
+    weight: 8
   - enemyPrefab: {fileID: 1995840275533504438, guid: f1aa61a2265a6c94f84466c26f090425, type: 3}
     minSpawnTurn: 500
-    maxSpawnTurn: 1800
-    weight: 5
+    maxSpawnTurn: 900
+    weight: 8
   - enemyPrefab: {fileID: 1995840275533504438, guid: a97accd7c649b2944bdb32fbf607dcdf, type: 3}
-    minSpawnTurn: 100
-    maxSpawnTurn: 1800
+    minSpawnTurn: 300
+    maxSpawnTurn: 900
     weight: 25
   - enemyPrefab: {fileID: 1995840275533504438, guid: ba338d29ec884884fbf8bea2e4934797, type: 3}
-    minSpawnTurn: 100
-    maxSpawnTurn: 1800
+    minSpawnTurn: 700
+    maxSpawnTurn: 1500
     weight: 25
