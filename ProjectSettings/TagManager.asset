@@ -3,18 +3,15 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - Border
-  - Spawn
-  - Loot
+  tags: []
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Border
+  - 
   - Water
   - UI
-  - Loot
+  - 
   - 
   - 
   - 
@@ -41,21 +38,6 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Grid
-    uniqueID: 3539712867
-    locked: 0
-  - name: Background
-    uniqueID: 1897699631
-    locked: 0
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: Character
-    uniqueID: 3462393325
-    locked: 0
-  - name: Particles
-    uniqueID: 1204867749
-    locked: 0
-  - name: Interface
-    uniqueID: 3503793305
     locked: 0
