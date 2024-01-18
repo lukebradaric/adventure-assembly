@@ -1,0 +1,16 @@
+{
+    "name": "AdventureAssembly.Gameplay",
+    "rootNamespace": "",
+    "references": [
+        "GUID:864fc897e48abbf458a9d1efb9590aea"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

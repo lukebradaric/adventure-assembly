@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81fb64728e3f64f4a9e966ed0d163c1f, type: 3}
+  m_Name: TEST_KnightHeroData
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 21300000, guid: 9c0a16dccfff82d4aaef9b7f0ba1afcf, type: 3}
+    - {fileID: 11400000, guid: 48d68fcb99514464bacebd12adf4d074, type: 2}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Name
+      Entry: 1
+      Data: Knight
+    - Name: Description
+      Entry: 1
+      Data: This guy fucks.
+    - Name: Sprite
+      Entry: 10
+      Data: 0
+    - Name: ClassData
+      Entry: 10
+      Data: 1
+    - Name: MaxHealth
+      Entry: 3
+      Data: 30
