@@ -20,5 +20,11 @@ namespace AdventureAssembly.Core.Extensions
                     return Vector2.zero;
             }
         }
+
+        public static Vector3 ToVector3(this Direction direction)
+        {
+            Vector2 vector2 = ToVector2(direction);
+            return new Vector3(vector2.x, vector2.y, 0);
+        }
     }
 }
