@@ -19,6 +19,8 @@ namespace AdventureAssembly.Units
         [Header("Settings")]
         [SerializeField] private bool _updateIndicatorEveryFrame = false;
         [SerializeField] private float _directionIndicatorTweenDuration = 0.15f;
+        [SerializeField] private float _indicatorOffset = 1f;
+        [SerializeField] private float _indicatorHeightOffset = 0.4f;
 
         [Space]
         [Header("Testing")]
@@ -83,15 +85,11 @@ namespace AdventureAssembly.Units
             float rotation = (rad * (180 / Mathf.PI)) - 90f;
 
             // Determine arrow sprite position (Position is offset when moving horizontally)
-            Vector2 spritePosition = new Vector2(0, 1);
+            Vector2 spritePosition = new Vector2(0, _indicatorOffset);
             if (indicatorDirection == Vector2.right)
-            {
-                spritePosition.x = 0.4f;
-            }
+                spritePosition.x = _indicatorHeightOffset;
             else if (indicatorDirection == Vector2.left)
-            {
-                spritePosition.x = -0.4f;
-            }
+                spritePosition.x = -_indicatorHeightOffset;
 
             // Tween indicator arrow position
             _directionIndicatorSprite.DOLocalMove(spritePosition, _directionIndicatorTweenDuration);
