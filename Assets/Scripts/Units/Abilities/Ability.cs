@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace AdventureAssembly.Gameplay.Abilities
+namespace AdventureAssembly.Units.Abilities
 {
     public abstract class Ability
     {
