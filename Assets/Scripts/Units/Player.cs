@@ -94,10 +94,10 @@ namespace AdventureAssembly.Units
             }
 
             // Tween indicator arrow position
-            _directionIndicatorSprite.DOLocalMove(spritePosition, 0.15f);
+            _directionIndicatorSprite.DOLocalMove(spritePosition, _directionIndicatorTweenDuration);
 
             // Tween indicator rotation
-            _directionIndicator.DORotate(new Vector3(0, 0, rotation), 0.15f).OnUpdate(() =>
+            _directionIndicator.DORotate(new Vector3(0, 0, rotation), _directionIndicatorTweenDuration).OnUpdate(() =>
             {
                 UpdateDirectionIndicatorLineRenderer();
             });
