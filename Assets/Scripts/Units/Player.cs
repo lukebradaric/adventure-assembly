@@ -36,6 +36,11 @@ namespace AdventureAssembly.Units
 
         private void Update()
         {
+            if (_updateIndicatorEveryFrame)
+            {
+                UpdateDirectionIndicator();
+            }
+
             UpdateDirectionIndicatorLineRenderer();
         }
 
