@@ -1064,8 +1064,8 @@ MonoBehaviour:
   _directionIndicatorSprite: {fileID: 1960558070}
   _directionIndicatorLineRenderer: {fileID: 1394502700}
   _updateIndicatorEveryFrame: 0
-  _directionIndicatorTweenDuration: 0.15
-  _indicatorOffset: 1
+  _directionIndicatorTweenDuration: 0.1
+  _indicatorOffset: 0.9
   _indicatorHeightOffset: 0.4
   _heroTransforms:
   - {fileID: 1907480434}
