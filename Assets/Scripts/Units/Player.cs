@@ -25,7 +25,6 @@ namespace AdventureAssembly.Units
 
         public Vector2Int LastMovementVector { get; private set; } = Vector2Int.zero;
 
-        // Dictionary of positions for each hero
         private Dictionary<Vector2Int, Hero> _heroPositions = new Dictionary<Vector2Int, Hero>();
 
         private void OnEnable()
@@ -96,18 +95,18 @@ namespace AdventureAssembly.Units
                     continue;
                 }
 
-                // Move hero to new position
-                hero.Move(new Vector2Int(position.x - hero.Position.x, position.y - hero.Position.y));
-                position = hero.LastPosition;
-
-                // Register hero position in position dictionary (self-collision)
-                if (!_heroPositions.TryAdd(hero.Position, hero))
+                // If position is already occupied by another hero, kill remaining
+                Vector2Int movement = new Vector2Int(position.x - hero.Position.x, position.y - hero.Position.y);
+                if (!_heroPositions.TryAdd(hero.Position + movement, hero))
                 {
-                    Debug.Log($"{hero.HeroData.Name} and onward should die.");
                     killRemaining = true;
                     killHeroes.Add(hero);
                     continue;
                 }
+
+                // Move hero to new position
+                hero.Move(movement);
+                position = hero.LastPosition;
             }
 
             // Kill all heroes in the list of to kill
