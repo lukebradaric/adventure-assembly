@@ -2,6 +2,7 @@
 
 namespace AdventureAssembly.Units.Abilities
 {
+    [System.Serializable]
     public class ProjectileAbility : Ability
     {
         [SerializeField] private Projectile _projectilePrefab;
