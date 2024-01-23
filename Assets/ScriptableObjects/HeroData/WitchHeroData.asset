@@ -9,15 +9,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 81fb64728e3f64f4a9e966ed0d163c1f, type: 3}
-  m_Name: TEST_KnightHeroData
+  m_Script: {fileID: 11500000, guid: 54a1b804ab1d2524792249cd8608b8a2, type: 3}
+  m_Name: WitchHeroData
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 
     ReferencedUnityObjects:
-    - {fileID: 21300000, guid: 9c0a16dccfff82d4aaef9b7f0ba1afcf, type: 3}
-    - {fileID: 11400000, guid: 48d68fcb99514464bacebd12adf4d074, type: 2}
+    - {fileID: 21300000, guid: decd1ede3e884a040bc73a78fdbaccfd, type: 3}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -25,16 +24,16 @@ MonoBehaviour:
     SerializationNodes:
     - Name: Name
       Entry: 1
-      Data: Knight
+      Data: Witch
     - Name: Description
-      Entry: 1
-      Data: This guy fucks.
+      Entry: 6
+      Data: 
     - Name: Sprite
       Entry: 10
       Data: 0
     - Name: ClassData
-      Entry: 10
-      Data: 1
+      Entry: 6
+      Data: 
     - Name: MaxHealth
       Entry: 3
-      Data: 30
+      Data: 0

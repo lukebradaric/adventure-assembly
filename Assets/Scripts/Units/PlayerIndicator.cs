@@ -1,4 +1,5 @@
 ﻿using AdventureAssembly.Core;
+using AdventureAssembly.Core.Extensions;
 using AdventureAssembly.Input;
 using DG.Tweening;
 using UnityEngine;
@@ -21,12 +22,12 @@ namespace AdventureAssembly.Units
 
         private void OnEnable()
         {
-            TurnManager.TurnUpdate += OnTurnUpdate;
+            TurnManager.TurnLateUpdate += OnTurnLateUpdate;
         }
 
         private void OnDisable()
         {
-            TurnManager.TurnUpdate -= OnTurnUpdate;
+            TurnManager.TurnLateUpdate -= OnTurnLateUpdate;
         }
 
         private void Update()
@@ -34,14 +35,14 @@ namespace AdventureAssembly.Units
             UpdateIndicatorLineRenderer();
         }
 
-        private void OnTurnUpdate()
+        private void OnTurnLateUpdate()
         {
             UpdateIndicator();
         }
 
         private void UpdateIndicator()
         {
-            Vector2 indicatorDirection = InputManager.Instance.MovementVector;
+            Vector2 indicatorDirection = _player.LastMovementVector;
 
             // Calculate indicator rotation based on input direction
             float rad = Mathf.Atan2(indicatorDirection.y, indicatorDirection.x);
@@ -66,18 +67,13 @@ namespace AdventureAssembly.Units
 
         private void UpdateIndicatorLineRenderer()
         {
-            _indicatorLineRenderer.positionCount = _player.Units.Count + 2;
-
+            _indicatorLineRenderer.positionCount = _player.Heroes.Count + 1;
             _indicatorLineRenderer.SetPosition(0, _indicatorSpriteTransform.position);
 
-            Vector3 startPos = transform.position;
-            startPos.y -= 0.4f;
-            _indicatorLineRenderer.SetPosition(1, startPos);
-
-            int count = 2;
-            foreach (Unit unit in _player.Units)
+            int count = 1;
+            foreach (Hero hero in _player.Heroes)
             {
-                Vector3 pos = unit.transform.position;
+                Vector3 pos = hero.transform.position;
                 pos.y -= 0.4f;
                 _indicatorLineRenderer.SetPosition(count, pos);
                 count++;

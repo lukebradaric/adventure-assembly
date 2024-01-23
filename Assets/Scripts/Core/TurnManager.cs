@@ -8,6 +8,7 @@ namespace AdventureAssembly.Core
     public class TurnManager : Singleton<TurnManager>
     {
         public static event Action TurnUpdate;
+        public static event Action TurnLateUpdate;
 
         // TODO: Convert to serialized property
         [SerializeField] private float _turnInterval = 0.35f;
@@ -47,6 +48,7 @@ namespace AdventureAssembly.Core
             yield return new WaitForSeconds(_turnInterval);
             TurnUpdate?.Invoke();
             _turnCoroutine = StartCoroutine(TurnCoroutine());
+            TurnLateUpdate?.Invoke();
         }
     }
 }
