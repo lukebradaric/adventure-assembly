@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 721636767718559845}
   m_Layer: 0
   m_Name: HeroPrefab
-  m_TagString: Untagged
+  m_TagString: Hero
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -56,12 +56,12 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes:
-    - Name: HeroData
-      Entry: 6
-      Data: 
     - Name: SpriteRenderer
       Entry: 10
       Data: 0
+    - Name: HeroData
+      Entry: 6
+      Data: 
 --- !u!1 &7816698915213867670
 GameObject:
   m_ObjectHideFlags: 0

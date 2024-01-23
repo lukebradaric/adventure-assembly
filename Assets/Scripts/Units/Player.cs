@@ -18,6 +18,10 @@ namespace AdventureAssembly.Units
         [OdinSerialize] public List<Hero> Heroes { get; private set; } = new List<Hero>();
 
         [PropertySpace]
+        [Title("Settings")]
+        [OdinSerialize] public LayerMask HazardLayerMask {get; private set;} 
+
+        [PropertySpace]
         [Title("Debug")]
         [OdinSerialize] private List<HeroData> _startingHeroes = new List<HeroData>();
         [OdinSerialize] private List<HeroData> _debugAddHeroes = new List<HeroData>();
@@ -83,6 +87,15 @@ namespace AdventureAssembly.Units
         {
             // Move the start of the party (Indicator and player root)
             Vector2Int startPosition = new Vector2Int((int)transform.position.x, (int)transform.position.y) + NextMovementVector;
+
+            // Check if there is a hazard at the new position
+            if (IsHazardAtPosition(startPosition))
+            {
+                Heroes.First().Die();
+                startPosition = new Vector2Int((int)transform.position.x, (int)transform.position.y);
+            }
+
+            // Move the head position
             transform.DOMove((Vector2)startPosition, TickManager.Instance.TickInterval).SetEase(Ease.OutCubic);
 
             // Clear the dictionary of hero positions
@@ -129,6 +142,11 @@ namespace AdventureAssembly.Units
             LastMovementVector = NextMovementVector;
         }
 
+        private bool IsHazardAtPosition(Vector2Int position)
+        {
+            return Physics2D.OverlapCircleAll(position, 0.1f, HazardLayerMask).Length > 0;
+        }
+
         public void AddHero(HeroData heroData)
         {
             Debug.Log($"Adding new hero to player: {heroData.name}");
@@ -158,6 +176,7 @@ namespace AdventureAssembly.Units
                 Debug.LogError($"Player does not contain hero! {hero.name}");
             }
 
+            hero.Died -= OnHeroDied;
             Heroes.Remove(hero);
         }
     }
