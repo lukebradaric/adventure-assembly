@@ -1,12 +1,5 @@
 {
   "dependencies": {
-    "com.lukebradaric.tinytools": {
-      "version": "https://github.com/lukebradaric/TinyTools.git",
-      "depth": 0,
-      "source": "git",
-      "dependencies": {},
-      "hash": "52fa42f68dc91b15eaba13d8594100fbbe2fdacf"
-    },
     "com.unity.2d.animation": {
       "version": "9.0.4",
       "depth": 1,

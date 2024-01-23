@@ -9,13 +9,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 464e9d08b7fd2204485df617bd0eb4f6, type: 3}
-  m_Name: TEST_GuardianClassData
+  m_Script: {fileID: 11500000, guid: 54a1b804ab1d2524792249cd8608b8a2, type: 3}
+  m_Name: MagicianHeroData
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 
-    ReferencedUnityObjects: []
+    ReferencedUnityObjects:
+    - {fileID: 21300000, guid: 4dd486577d5d81e41a3a63c2de611470, type: 3}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -23,27 +24,29 @@ MonoBehaviour:
     SerializationNodes:
     - Name: Name
       Entry: 1
-      Data: Guardian
+      Data: Magician
     - Name: Description
       Entry: 1
-      Data: 'Protects your peeps.
-
-'
-    - Name: Color
+      Data: WOah sick magic
+    - Name: Sprite
+      Entry: 10
+      Data: 0
+    - Name: MaxHealth
+      Entry: 3
+      Data: 20
+    - Name: ClassData
+      Entry: 6
+      Data: 
+    - Name: Abilities
       Entry: 7
-      Data: UnityEngine.Color, UnityEngine.CoreModule
+      Data: 0|System.Collections.Generic.List`1[[AdventureAssembly.Units.Abilities.Ability,
+        AdventureAssembly.Units]], mscorlib
     - Name: 
-      Entry: 4
+      Entry: 12
       Data: 0
     - Name: 
-      Entry: 4
-      Data: 0.6
-    - Name: 
-      Entry: 4
-      Data: 0.8588236
-    - Name: 
-      Entry: 4
-      Data: 1
+      Entry: 13
+      Data: 
     - Name: 
       Entry: 8
       Data: 

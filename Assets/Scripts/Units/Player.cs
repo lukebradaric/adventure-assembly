@@ -1,13 +1,13 @@
 ﻿using AdventureAssembly.Core;
-using AdventureAssembly.Core.Extensions;
 using AdventureAssembly.Input;
 using DG.Tweening;
 using Sirenix.OdinInspector;
 using Sirenix.Serialization;
 using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.ConstrainedExecution;
+using TinyTools.Extensions;
 using UnityEngine;
+using static UnityEngine.UI.CanvasScaler;
 
 namespace AdventureAssembly.Units
 {
@@ -16,12 +16,12 @@ namespace AdventureAssembly.Units
         [PropertySpace]
         [Title("Components")]
         [SerializeField] private Hero _heroPrefab;
+        [OdinSerialize] public List<Hero> Heroes { get; private set; } = new List<Hero>();
 
         [PropertySpace]
         [Title("Debug")]
         [OdinSerialize] private List<HeroData> _startingHeroes = new List<HeroData>();
         [OdinSerialize] private List<HeroData> _debugAddHeroes = new List<HeroData>();
-        [OdinSerialize] public List<Hero> Heroes { get; private set; } = new List<Hero>();
 
         public Vector2Int LastMovementVector { get; private set; } = Vector2Int.zero;
 
@@ -29,17 +29,17 @@ namespace AdventureAssembly.Units
 
         private void OnEnable()
         {
-            TurnManager.TurnUpdate += OnTurnUpdate;
+            TickManager.TickUpdate += OnTurnUpdate;
         }
 
         private void OnDisable()
         {
-            TurnManager.TurnUpdate -= OnTurnUpdate;
+            TickManager.TickUpdate -= OnTurnUpdate;
         }
 
         private void Start()
         {
-            // Debug add starting Heroes
+            // TODO: Remove debug starting hero
             foreach (HeroData heroData in _startingHeroes)
             {
                 AddHero(heroData);
@@ -48,13 +48,16 @@ namespace AdventureAssembly.Units
 
         private void Update()
         {
+            // TODO: Remove debug adding heroes
             if (UnityEngine.Input.GetKeyDown("g"))
             {
-                foreach (HeroData heroData in _debugAddHeroes)
-                {
-                    AddHero(heroData);
-                }
+                AddHero(_debugAddHeroes.Random());
             }
+        }
+
+        private void OnHeroDied(Unit unit)
+        {
+            RemoveHero((Hero)unit);
         }
 
         private void OnTurnUpdate()
@@ -74,7 +77,7 @@ namespace AdventureAssembly.Units
 
             // Move the start of the party (Indicator and player root)
             Vector2Int startPosition = new Vector2Int((int)transform.position.x, (int)transform.position.y) + movementVector;
-            transform.DOMove((Vector2)startPosition, TurnManager.Instance.TurnInterval).SetEase(Ease.OutCubic);
+            transform.DOMove((Vector2)startPosition, TickManager.Instance.TickInterval).SetEase(Ease.OutCubic);
 
             // Clear the dictionary of hero positions
             _heroPositions.Clear();
@@ -116,11 +119,6 @@ namespace AdventureAssembly.Units
             }
         }
 
-        private void OnHeroDied(Unit unit)
-        {
-            Heroes.Remove((Hero)unit);
-        }
-
         public void AddHero(HeroData heroData)
         {
             Debug.Log($"Adding new hero to player: {heroData.name}");
@@ -129,7 +127,7 @@ namespace AdventureAssembly.Units
             Hero lastHero = Heroes.LastOrDefault();
             Vector2Int spawnPosition = lastHero == null ?
                 new Vector2Int((int)transform.position.x, (int)transform.position.y) :
-                new Vector2Int(lastHero.Position.x, lastHero.Position.y - 1);
+                lastHero.LastPosition;
 
             // Instantiate new hero gameobject
             Hero hero = Instantiate(_heroPrefab, (Vector2)spawnPosition, Quaternion.identity);
@@ -141,6 +139,16 @@ namespace AdventureAssembly.Units
 
             // Add hero to list
             Heroes.Add(hero);
+        }
+
+        public void RemoveHero(Hero hero)
+        {
+            if (!Heroes.Contains(hero))
+            {
+                Debug.LogError($"Player does not contain hero! {hero.name}");
+            }
+
+            Heroes.Remove(hero);
         }
     }
 }

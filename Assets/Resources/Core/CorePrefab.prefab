@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6680531804575610893}
   - component: {fileID: 2529185810186730192}
   m_Layer: 0
-  m_Name: TurnManager
+  m_Name: TickManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -44,7 +44,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 841295b8fca79c54fb71660edf65223d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _turnInterval: 0.35
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: TickInterval
+      Entry: 4
+      Data: 0.33333
 --- !u!1 &3801208764779467690
 GameObject:
   m_ObjectHideFlags: 0

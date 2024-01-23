@@ -1,6 +1,4 @@
 ﻿using AdventureAssembly.Core;
-using AdventureAssembly.Core.Extensions;
-using AdventureAssembly.Input;
 using DG.Tweening;
 using UnityEngine;
 
@@ -22,12 +20,12 @@ namespace AdventureAssembly.Units
 
         private void OnEnable()
         {
-            TurnManager.TurnLateUpdate += OnTurnLateUpdate;
+            TickManager.TickLateUpdate += OnTurnLateUpdate;
         }
 
         private void OnDisable()
         {
-            TurnManager.TurnLateUpdate -= OnTurnLateUpdate;
+            TickManager.TickLateUpdate -= OnTurnLateUpdate;
         }
 
         private void Update()

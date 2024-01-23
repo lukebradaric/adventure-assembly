@@ -43,7 +43,7 @@ namespace AdventureAssembly.Units
             this.FlipSprite(direction.x);
 
             // Move to new position
-            transform.DOMove((Vector2)Position, TurnManager.Instance.TurnInterval).SetEase(Ease.OutCubic);
+            transform.DOMove((Vector2)Position, TickManager.Instance.TickInterval).SetEase(Ease.OutCubic);
         }
     }
 }
