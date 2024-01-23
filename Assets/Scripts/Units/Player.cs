@@ -7,7 +7,6 @@ using System.Collections.Generic;
 using System.Linq;
 using TinyTools.Extensions;
 using UnityEngine;
-using static UnityEngine.UI.CanvasScaler;
 
 namespace AdventureAssembly.Units
 {
@@ -23,6 +22,7 @@ namespace AdventureAssembly.Units
         [OdinSerialize] private List<HeroData> _startingHeroes = new List<HeroData>();
         [OdinSerialize] private List<HeroData> _debugAddHeroes = new List<HeroData>();
 
+        public Vector2Int NextMovementVector { get; private set; } = Vector2Int.up;
         public Vector2Int LastMovementVector { get; private set; } = Vector2Int.zero;
 
         private Dictionary<Vector2Int, Hero> _heroPositions = new Dictionary<Vector2Int, Hero>();
@@ -30,11 +30,13 @@ namespace AdventureAssembly.Units
         private void OnEnable()
         {
             TickManager.TickUpdate += OnTurnUpdate;
+            InputManager.MovementVector.ValueChanged += OnMovementVectorChanged;
         }
 
         private void OnDisable()
         {
             TickManager.TickUpdate -= OnTurnUpdate;
+            InputManager.MovementVector.ValueChanged -= OnMovementVectorChanged;
         }
 
         private void Start()
@@ -55,6 +57,18 @@ namespace AdventureAssembly.Units
             }
         }
 
+        private void OnMovementVectorChanged(Vector2Int direction)
+        {
+            // Ignore input that is moving backwards
+            if (Heroes.Count > 1 && direction == -LastMovementVector)
+            {
+                Debug.Log($"Trying to move in opposite direction. Last:{LastMovementVector} New:{direction}");
+                return;
+            }
+
+            NextMovementVector = direction;
+        }
+
         private void OnHeroDied(Unit unit)
         {
             RemoveHero((Hero)unit);
@@ -67,16 +81,8 @@ namespace AdventureAssembly.Units
 
         private void UpdateUnitPositions()
         {
-            // Don't allow moving backwards into yourself
-            Vector2Int movementVector = InputManager.MovementVector;
-            if (Heroes.Count > 1 && movementVector == -LastMovementVector)
-            {
-                movementVector = LastMovementVector;
-            }
-            LastMovementVector = movementVector;
-
             // Move the start of the party (Indicator and player root)
-            Vector2Int startPosition = new Vector2Int((int)transform.position.x, (int)transform.position.y) + movementVector;
+            Vector2Int startPosition = new Vector2Int((int)transform.position.x, (int)transform.position.y) + NextMovementVector;
             transform.DOMove((Vector2)startPosition, TickManager.Instance.TickInterval).SetEase(Ease.OutCubic);
 
             // Clear the dictionary of hero positions
@@ -117,6 +123,10 @@ namespace AdventureAssembly.Units
             {
                 hero.Die();
             }
+
+            // Store last movement vector
+            Debug.Log($"Moving: {NextMovementVector}");
+            LastMovementVector = NextMovementVector;
         }
 
         public void AddHero(HeroData heroData)

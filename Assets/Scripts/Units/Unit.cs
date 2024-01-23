@@ -1,5 +1,4 @@
 ﻿using AdventureAssembly.Core;
-using AdventureAssembly.Core.Extensions;
 using Sirenix.OdinInspector;
 using Sirenix.Serialization;
 using System;
@@ -23,11 +22,6 @@ namespace AdventureAssembly.Units
         public virtual void Die()
         {
             Died?.Invoke(this);
-        }
-
-        public void Move(Direction direction)
-        {
-            Move(direction.ToVector2Int());
         }
 
         public void FlipSprite(int x)

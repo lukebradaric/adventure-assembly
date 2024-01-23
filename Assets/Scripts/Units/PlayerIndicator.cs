@@ -1,5 +1,6 @@
 ﻿using AdventureAssembly.Core;
 using DG.Tweening;
+using System.Collections;
 using UnityEngine;
 
 namespace AdventureAssembly.Units
@@ -21,11 +22,18 @@ namespace AdventureAssembly.Units
         private void OnEnable()
         {
             TickManager.TickLateUpdate += OnTurnLateUpdate;
+            TickManager.EnemyTickLateUpdate += OnTurnLateUpdate;
         }
 
         private void OnDisable()
         {
             TickManager.TickLateUpdate -= OnTurnLateUpdate;
+            TickManager.EnemyTickLateUpdate -= OnTurnLateUpdate;
+        }
+
+        private void Start()
+        {
+            StartCoroutine(UpdateCoroutine());
         }
 
         private void Update()
@@ -33,14 +41,21 @@ namespace AdventureAssembly.Units
             UpdateIndicatorLineRenderer();
         }
 
+        private IEnumerator UpdateCoroutine()
+        {
+            yield return new WaitForSeconds(_indicatorTweenDuration);
+            UpdateIndicator();
+            StartCoroutine(UpdateCoroutine());
+        }
+
         private void OnTurnLateUpdate()
         {
-            UpdateIndicator();
+            //UpdateIndicator();
         }
 
         private void UpdateIndicator()
         {
-            Vector2 indicatorDirection = _player.LastMovementVector;
+            Vector2 indicatorDirection = _player.NextMovementVector;
 
             // Calculate indicator rotation based on input direction
             float rad = Mathf.Atan2(indicatorDirection.y, indicatorDirection.x);

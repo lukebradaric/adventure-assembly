@@ -10,6 +10,8 @@ namespace AdventureAssembly.Core
     {
         public static event Action TickUpdate;
         public static event Action TickLateUpdate;
+        public static event Action EnemyTickUpdate;
+        public static event Action EnemyTickLateUpdate;
 
         [OdinSerialize] public float TickInterval { get; private set; } = 0.33333f;
 
@@ -37,10 +39,15 @@ namespace AdventureAssembly.Core
 
         private IEnumerator TickCoroutine()
         {
-            yield return new WaitForSeconds(TickInterval);
+            yield return new WaitForSeconds(TickInterval / 2f);
             TickUpdate?.Invoke();
-            _tickCoroutine = StartCoroutine(TickCoroutine());
             TickLateUpdate?.Invoke();
+
+            yield return new WaitForSeconds(TickInterval / 2f);
+            EnemyTickUpdate?.Invoke();
+            EnemyTickLateUpdate?.Invoke();
+
+            _tickCoroutine = StartCoroutine(TickCoroutine());
         }
     }
 }
