@@ -35,5 +35,10 @@ namespace AdventureAssembly.Units.Abilities
         }
 
         protected abstract void Execute();
+
+        public Ability GetClone()
+        {
+            return (Ability)this.MemberwiseClone();
+        }
     }
 }

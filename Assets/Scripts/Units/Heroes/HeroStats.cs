@@ -8,7 +8,7 @@ namespace AdventureAssembly.Units.Heroes
 
         public DamageData GetDamageData(DamageData damageData)
         {
-            float damage = damageData.Value;
+            float damage = damageData.BaseValue;
             damage *= DamageMultiplier.Value;
 
             damageData.Value = (int)Mathf.Ceil(damage);

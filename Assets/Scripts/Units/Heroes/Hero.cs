@@ -1,16 +1,30 @@
-﻿using UnityEngine;
+﻿using AdventureAssembly.Units.Abilities;
+using Sirenix.Serialization;
+using System.Collections.Generic;
+using UnityEngine;
 
 namespace AdventureAssembly.Units.Heroes
 {
     public class Hero : Unit
     {
+        [OdinSerialize] public HeroStats Stats {  get; protected set; }
+
         public HeroData HeroData { get; set; }
+
+        [OdinSerialize] public List<Ability> Abilities { get; protected set; } = new List<Ability>();
 
         public override void Initialize(UnitData unitData, Vector2Int position)
         {
             base.Initialize(unitData, position);
-
             this.HeroData = (HeroData)unitData;
+
+            // Clone abilities and register to this hero
+            foreach (Ability ability in HeroData.Abilities)
+            {
+                Ability newAbility = ability.GetClone();
+                newAbility.Initialize(this);
+                Abilities.Add(newAbility);
+            }
         }
 
         public override void Die()
@@ -27,9 +41,12 @@ namespace AdventureAssembly.Units.Heroes
             Destroy(gameObject, 3f);
         }
 
-        public override void Move(Vector2Int direction)
+        public override void OnTick()
         {
-            base.Move(direction);
+            foreach (Ability ability in Abilities)
+            {
+                ability.OnTick();
+            }
         }
     }
 }

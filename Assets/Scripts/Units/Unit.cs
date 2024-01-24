@@ -6,6 +6,7 @@ using UnityEngine;
 
 namespace AdventureAssembly.Units
 {
+    [SelectionBase]
     public abstract class Unit : SerializedMonoBehaviour
     {
         [PropertySpace]
@@ -14,8 +15,12 @@ namespace AdventureAssembly.Units
 
         public UnitData UnitData { get; private set; }
 
+        public int CurrentHealth { get; protected set; }
+
         public Vector2Int Position { get; protected set; }
         public Vector2Int LastPosition { get; protected set; }
+
+        public bool IsDead { get; protected set; } = false;
 
         public event Action<Unit> Died;
 
@@ -23,9 +28,20 @@ namespace AdventureAssembly.Units
         {
             this.UnitData = unitData;
             this.Position = position;
+            this.CurrentHealth = GetMaxHealth();
 
             SpriteRenderer.sprite = UnitData.Sprite;
             name = $"{UnitData.Name}";
+        }
+
+        public virtual int GetMaxHealth()
+        {
+            return UnitData.MaxHealth;
+        }
+
+        public virtual void OnTick()
+        {
+
         }
 
         public virtual void Move(Vector2Int direction)
@@ -42,12 +58,23 @@ namespace AdventureAssembly.Units
             UnitData.MovementTween.Animate(this, Position, TickManager.Instance.TickInterval);
         }
 
+        public virtual void Damage(DamageData damageData)
+        {
+            CurrentHealth -= damageData.Value;
+
+            if (CurrentHealth <= 0)
+            {
+                Die();
+            }
+        }
+
         public virtual void Die()
         {
+            IsDead = true;
             Died?.Invoke(this);
         }
 
-        public void FlipSprite(int x)
+        public virtual void FlipSprite(int x)
         {
             if (x == 0)
             {

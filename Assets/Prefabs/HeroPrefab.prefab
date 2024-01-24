@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1004285234093281764}
   - component: {fileID: 721636767718559845}
+  - component: {fileID: -890123428954646306}
   m_Layer: 0
   m_Name: HeroPrefab
   m_TagString: Hero
@@ -51,6 +52,7 @@ MonoBehaviour:
     SerializedBytes: 
     ReferencedUnityObjects:
     - {fileID: 8315645397188149435}
+    - {fileID: -890123428954646306}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -59,6 +61,21 @@ MonoBehaviour:
     - Name: SpriteRenderer
       Entry: 10
       Data: 0
+    - Name: Stats
+      Entry: 10
+      Data: 1
+--- !u!114 &-890123428954646306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3871126958874214877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d935b7c892d4ac64e8840b6d521acf9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7816698915213867670
 GameObject:
   m_ObjectHideFlags: 0

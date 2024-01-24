@@ -18,14 +18,14 @@ namespace AdventureAssembly.Units.Enemies
             base.Initialize(unitData, position);
 
             EnemyData = (EnemyData)unitData;
-            EnemyManager.Register(this);
+            EnemyManager.Instance.AddUnit(this);
         }
 
         public override void Die()
         {
             base.Die();
 
-            EnemyManager.Unregister(this);
+            EnemyManager.Instance.RemoveUnit(this);
             Destroy(gameObject);
         }
     }

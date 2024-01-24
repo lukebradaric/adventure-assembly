@@ -8,10 +8,13 @@ namespace AdventureAssembly.Units
     public abstract class UnitData : SerializedScriptableObject
     {
         [PropertySpace]
+        [Title("Unit")]
         [OdinSerialize] public string Name { get; private set; }
 
         [PreviewField(128, ObjectFieldAlignment.Left)]
         [OdinSerialize] public Sprite Sprite { get; private set; }
+
+        [OdinSerialize] public int MaxHealth { get; private set; }
 
         [OdinSerialize] public UnitMovementTween MovementTween { get; private set; } = new DefaultUnitMovementTween();
     }

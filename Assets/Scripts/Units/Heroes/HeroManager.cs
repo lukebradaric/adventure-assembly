@@ -6,17 +6,15 @@ using Sirenix.Serialization;
 using System.Collections.Generic;
 using System.Linq;
 using TinyTools.Extensions;
-using TinyTools.Generics;
 using UnityEngine;
 
 namespace AdventureAssembly.Units.Heroes
 {
-    public class Player : Singleton<Player>
+    public class HeroManager : UnitManager<Hero>
     {
         [PropertySpace]
         [Title("Components")]
         [SerializeField] private Hero _heroPrefab;
-        [OdinSerialize] public List<Hero> Heroes { get; private set; } = new List<Hero>();
 
         [PropertySpace]
         [Title("Settings")]
@@ -68,9 +66,8 @@ namespace AdventureAssembly.Units.Heroes
         private void OnMovementVectorChanged(Vector2Int direction)
         {
             // Ignore input that is moving backwards
-            if (Heroes.Count > 1 && direction == -LastMovementVector)
+            if (Units.Count > 1 && direction == -LastMovementVector)
             {
-                Debug.Log($"Trying to move in opposite direction. Last:{LastMovementVector} New:{direction}");
                 return;
             }
 
@@ -79,7 +76,7 @@ namespace AdventureAssembly.Units.Heroes
 
         private void OnHeroDied(Unit unit)
         {
-            RemoveHero((Hero)unit);
+            RemoveUnit((Hero)unit);
         }
 
         private void OnTurnUpdate()
@@ -95,7 +92,7 @@ namespace AdventureAssembly.Units.Heroes
             // Check if there is a hazard at the new position
             if (IsHazardAtPosition(startPosition))
             {
-                Heroes.First().Die();
+                Units.First().Die();
                 startPosition = new Vector2Int((int)transform.position.x, (int)transform.position.y);
             }
 
@@ -112,7 +109,7 @@ namespace AdventureAssembly.Units.Heroes
 
             // Loop through all heroes and move them towards the hero in front of them
             Vector2Int position = startPosition;
-            foreach (Hero hero in Heroes)
+            foreach (Hero hero in Units)
             {
                 // If a self-collision occurred, kill remaining heroes
                 if (killRemaining)
@@ -121,7 +118,7 @@ namespace AdventureAssembly.Units.Heroes
                     continue;
                 }
 
-                // If position is already occupied by another hero, kill remaining
+                // If new position is already occupied by another hero, kill remaining (self-collision)
                 Vector2Int movement = new Vector2Int(position.x - hero.Position.x, position.y - hero.Position.y);
                 if (!_heroPositions.TryAdd(hero.Position + movement, hero))
                 {
@@ -132,6 +129,7 @@ namespace AdventureAssembly.Units.Heroes
 
                 // Move hero to new position
                 hero.Move(movement);
+                hero.OnTick();
                 position = hero.LastPosition;
             }
 
@@ -153,7 +151,7 @@ namespace AdventureAssembly.Units.Heroes
         public void AddHero(HeroData heroData)
         {
             // Calculate hero spawn position
-            Hero lastHero = Heroes.LastOrDefault();
+            Hero lastHero = Units.LastOrDefault();
             Vector2Int spawnPosition = lastHero == null ?
                 new Vector2Int((int)transform.position.x, (int)transform.position.y) :
                 lastHero.LastPosition;
@@ -164,44 +162,19 @@ namespace AdventureAssembly.Units.Heroes
 
             // Initialize hero data
             hero.Initialize(heroData, spawnPosition);
+            AddUnit(hero);
+        }
+
+        public override void AddUnit(Hero hero)
+        {
+            base.AddUnit(hero);
             hero.Died += OnHeroDied;
-
-            // Add hero to list
-            Heroes.Add(hero);
         }
 
-        public void RemoveHero(Hero hero)
+        public override void RemoveUnit(Hero hero)
         {
-            if (!Heroes.Contains(hero))
-            {
-                Debug.LogError($"Player does not contain hero! {hero.name}");
-            }
-
+            base.RemoveUnit(hero);
             hero.Died -= OnHeroDied;
-            Heroes.Remove(hero);
-        }
-
-        public Vector2Int GetNearestHeroPosition(Vector2Int position)
-        {
-            return GetNearestHero(position).Position;
-        }
-
-        public Hero GetNearestHero(Vector2Int position)
-        {
-            Hero nearestHero = Heroes.First();
-            float currentDistance = Vector2Int.Distance(position, nearestHero.Position);
-
-            foreach (Hero hero in Heroes)
-            {
-                float distance = Vector2Int.Distance(position, hero.Position);
-                if (distance < currentDistance)
-                {
-                    nearestHero = hero;
-                    currentDistance = distance;
-                }
-            }
-
-            return nearestHero;
         }
     }
 }

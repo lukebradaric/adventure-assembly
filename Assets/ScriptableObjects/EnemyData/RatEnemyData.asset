@@ -28,18 +28,24 @@ MonoBehaviour:
     - Name: Sprite
       Entry: 10
       Data: 0
-    - Name: KillExperience
-      Entry: 3
-      Data: 0
     - Name: MaxHealth
       Entry: 3
       Data: 10
+    - Name: MovementTween
+      Entry: 7
+      Data: 0|AdventureAssembly.Units.Animation.DefaultUnitMovementTween, AdventureAssembly.Units
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: KillExperience
+      Entry: 3
+      Data: 1
     - Name: BaseDamage
       Entry: 3
       Data: 5
     - Name: Navigation
       Entry: 7
-      Data: 0|AdventureAssembly.Units.Enemies.DefaultEnemyNavigation, AdventureAssembly.Units
+      Data: 1|AdventureAssembly.Units.Enemies.DefaultEnemyNavigation, AdventureAssembly.Units
     - Name: 
       Entry: 8
       Data: 
