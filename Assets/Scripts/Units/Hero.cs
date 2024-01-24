@@ -1,21 +1,18 @@
 ﻿using AdventureAssembly.Core;
 using DG.Tweening;
-using Sirenix.Serialization;
 using UnityEngine;
 
 namespace AdventureAssembly.Units
 {
     public class Hero : Unit
     {
-        [OdinSerialize] public HeroData HeroData { get; set; }
+        public HeroData HeroData { get; set; }
 
-        public void Initialize(HeroData heroData, Vector2Int position)
+        public override void Initialize(UnitData unitData, Vector2Int position)
         {
-            this.HeroData = heroData;
-            this.Position = position;
+            base.Initialize(unitData, position);
 
-            SpriteRenderer.sprite = HeroData.Sprite;
-            name = $"{HeroData.Name}";
+            this.HeroData = (HeroData)unitData;
         }
 
         public override void Die()
@@ -34,13 +31,7 @@ namespace AdventureAssembly.Units
 
         public override void Move(Vector2Int direction)
         {
-            // Save last position
-            LastPosition = Position;
-
-            // Update new position
-            Position += direction;
-
-            this.FlipSprite(direction.x);
+            base.Move(direction);
 
             // Move to new position
             transform.DOMove((Vector2)Position, TickManager.Instance.TickInterval).SetEase(Ease.OutCubic);

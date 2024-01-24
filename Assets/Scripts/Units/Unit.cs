@@ -1,5 +1,4 @@
-﻿using AdventureAssembly.Core;
-using Sirenix.OdinInspector;
+﻿using Sirenix.OdinInspector;
 using Sirenix.Serialization;
 using System;
 using UnityEngine;
@@ -12,12 +11,33 @@ namespace AdventureAssembly.Units
         [Title("Components")]
         [OdinSerialize] public SpriteRenderer SpriteRenderer { get; private set; }
 
+        public UnitData UnitData { get; private set; }
+
         public Vector2Int Position { get; protected set; }
         public Vector2Int LastPosition { get; protected set; }
 
         public event Action<Unit> Died;
 
-        public abstract void Move(Vector2Int direction);
+        public virtual void Initialize(UnitData unitData, Vector2Int position)
+        {
+            this.UnitData = unitData;
+            this.Position = position;
+
+            SpriteRenderer.sprite = UnitData.Sprite;
+            name = $"{UnitData.Name}";
+        }
+
+        public virtual void Move(Vector2Int direction)
+        {
+            // Save last position
+            LastPosition = Position;
+
+            // Update new position
+            Position += direction;
+
+            // Flip sprite to face movement
+            this.FlipSprite(direction.x);
+        }
 
         public virtual void Die()
         {
@@ -32,18 +52,11 @@ namespace AdventureAssembly.Units
             }
 
             Vector3 localScale = transform.localScale;
-            //Vector3 rotation = transform.eulerAngles;
 
             if (x > 0)
-            {
-                //transform.DORotate(new Vector3(rotation.x, 0, rotation.z), TurnManager.Instance.TurnInterval / 2f);
                 localScale.x = Mathf.Abs(localScale.x);
-            }
             else if (x < 0)
-            {
-                //transform.DORotate(new Vector3(rotation.x, 180, rotation.z), TurnManager.Instance.TurnInterval / 2f);
                 localScale.x = -Mathf.Abs(localScale.x);
-            }
 
             transform.localScale = localScale;
         }

@@ -6,11 +6,12 @@ using Sirenix.Serialization;
 using System.Collections.Generic;
 using System.Linq;
 using TinyTools.Extensions;
+using TinyTools.Generics;
 using UnityEngine;
 
 namespace AdventureAssembly.Units
 {
-    public class Player : SerializedMonoBehaviour
+    public class Player : Singleton<Player>
     {
         [PropertySpace]
         [Title("Components")]
@@ -19,7 +20,7 @@ namespace AdventureAssembly.Units
 
         [PropertySpace]
         [Title("Settings")]
-        [OdinSerialize] public LayerMask HazardLayerMask {get; private set;} 
+        [OdinSerialize] public LayerMask HazardLayerMask { get; private set; }
 
         [PropertySpace]
         [Title("Debug")]
@@ -28,6 +29,9 @@ namespace AdventureAssembly.Units
 
         public Vector2Int NextMovementVector { get; private set; } = Vector2Int.up;
         public Vector2Int LastMovementVector { get; private set; } = Vector2Int.zero;
+
+        public Vector2Int HorizontalMovementVector { get; private set; }
+        public Vector2Int VerticalMovementVector { get; private set; }
 
         private Dictionary<Vector2Int, Hero> _heroPositions = new Dictionary<Vector2Int, Hero>();
 
@@ -138,7 +142,6 @@ namespace AdventureAssembly.Units
             }
 
             // Store last movement vector
-            Debug.Log($"Moving: {NextMovementVector}");
             LastMovementVector = NextMovementVector;
         }
 
@@ -178,6 +181,29 @@ namespace AdventureAssembly.Units
 
             hero.Died -= OnHeroDied;
             Heroes.Remove(hero);
+        }
+
+        public Vector2Int GetNearestHeroPosition(Vector2Int position)
+        {
+            return GetNearestHero(position).Position;
+        }
+
+        public Hero GetNearestHero(Vector2Int position)
+        {
+            Hero nearestHero = Heroes.First();
+            float currentDistance = Vector2Int.Distance(position, nearestHero.Position);
+
+            foreach (Hero hero in Heroes)
+            {
+                float distance = Vector2Int.Distance(position, hero.Position);
+                if (distance < currentDistance)
+                {
+                    nearestHero = hero;
+                    currentDistance = distance;
+                }
+            }
+
+            return nearestHero;
         }
     }
 }
