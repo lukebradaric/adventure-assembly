@@ -1,4 +1,5 @@
-﻿using Sirenix.OdinInspector;
+﻿using AdventureAssembly.Units.Animation;
+using Sirenix.OdinInspector;
 using Sirenix.Serialization;
 using UnityEngine;
 
@@ -11,5 +12,7 @@ namespace AdventureAssembly.Units
 
         [PreviewField(128, ObjectFieldAlignment.Left)]
         [OdinSerialize] public Sprite Sprite { get; private set; }
+
+        [OdinSerialize] public UnitMovementTween MovementTween { get; private set; } = new DefaultUnitMovementTween();
     }
 }

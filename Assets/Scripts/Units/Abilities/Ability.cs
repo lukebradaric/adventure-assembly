@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using AdventureAssembly.Units.Heroes;
+using UnityEngine;
 
 namespace AdventureAssembly.Units.Abilities
 {
@@ -27,7 +28,7 @@ namespace AdventureAssembly.Units.Abilities
             if (_currentTicks <= 0)
             {
                 Execute();
-                
+
                 // TODO: Calculate current ticks based on Hero stats
                 _currentTicks = _ticks;
             }

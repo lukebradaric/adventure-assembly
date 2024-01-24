@@ -3,7 +3,7 @@ using Sirenix.OdinInspector;
 using Sirenix.Serialization;
 using UnityEngine;
 
-namespace AdventureAssembly.Units
+namespace AdventureAssembly.Units.Heroes
 {
     [CreateAssetMenu(menuName = Constants.ScriptableObjectRootPath + "ClassData")]
     public class ClassData : SerializedScriptableObject

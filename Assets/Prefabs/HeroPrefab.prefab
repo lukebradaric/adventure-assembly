@@ -43,7 +43,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3871126958874214877}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d8df97f1e6ff4b43ad0a4345ac51152, type: 3}
+  m_Script: {fileID: 11500000, guid: bff1af15b18fe6b4cac217239e675408, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   serializationData:
@@ -59,9 +59,6 @@ MonoBehaviour:
     - Name: SpriteRenderer
       Entry: 10
       Data: 0
-    - Name: HeroData
-      Entry: 6
-      Data: 
 --- !u!1 &7816698915213867670
 GameObject:
   m_ObjectHideFlags: 0

@@ -5,7 +5,7 @@ using Sirenix.Serialization;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace AdventureAssembly.Units
+namespace AdventureAssembly.Units.Heroes
 {
     [CreateAssetMenu(menuName = Constants.ScriptableObjectRootPath + "HeroData")]
     public class HeroData : UnitData

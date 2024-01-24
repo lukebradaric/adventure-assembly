@@ -9,14 +9,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54a1b804ab1d2524792249cd8608b8a2, type: 3}
+  m_Script: {fileID: 11500000, guid: 1eac94dc4647e3d4e8f45f4a3ed18890, type: 3}
   m_Name: WitchHeroData
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 
     ReferencedUnityObjects:
-    - {fileID: 21300000, guid: decd1ede3e884a040bc73a78fdbaccfd, type: 3}
+    - {fileID: 21300000, guid: 3c4bcb2ce8d0a47448823c34f63a875c, type: 3}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -25,15 +25,34 @@ MonoBehaviour:
     - Name: Name
       Entry: 1
       Data: Witch
-    - Name: Description
-      Entry: 6
-      Data: 
     - Name: Sprite
       Entry: 10
       Data: 0
-    - Name: ClassData
+    - Name: MovementTween
+      Entry: 7
+      Data: 0|AdventureAssembly.Units.Animation.DefaultUnitMovementTween, AdventureAssembly.Units
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: Description
       Entry: 6
       Data: 
     - Name: MaxHealth
       Entry: 3
       Data: 0
+    - Name: ClassData
+      Entry: 6
+      Data: 
+    - Name: Abilities
+      Entry: 7
+      Data: 1|System.Collections.Generic.List`1[[AdventureAssembly.Units.Abilities.Ability,
+        AdventureAssembly.Units]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 

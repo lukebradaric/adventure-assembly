@@ -1,4 +1,5 @@
-﻿using Sirenix.OdinInspector;
+﻿using AdventureAssembly.Core;
+using Sirenix.OdinInspector;
 using Sirenix.Serialization;
 using System;
 using UnityEngine;
@@ -37,6 +38,8 @@ namespace AdventureAssembly.Units
 
             // Flip sprite to face movement
             this.FlipSprite(direction.x);
+
+            UnitData.MovementTween.Animate(this, Position, TickManager.Instance.TickInterval);
         }
 
         public virtual void Die()

@@ -1,6 +1,4 @@
-﻿using AdventureAssembly.Core;
-using DG.Tweening;
-using Sirenix.Serialization;
+﻿using Sirenix.Serialization;
 using UnityEngine;
 
 namespace AdventureAssembly.Units.Enemies
@@ -29,13 +27,6 @@ namespace AdventureAssembly.Units.Enemies
 
             EnemyManager.Unregister(this);
             Destroy(gameObject);
-        }
-
-        public override void Move(Vector2Int direction)
-        {
-            base.Move(direction);
-
-            transform.DOMove((Vector2)Position, TickManager.Instance.TickInterval).SetEase(Ease.OutCubic);
         }
     }
 }

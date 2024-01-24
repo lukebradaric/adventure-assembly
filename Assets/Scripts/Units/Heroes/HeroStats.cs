@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace AdventureAssembly.Units
+namespace AdventureAssembly.Units.Heroes
 {
     public class HeroStats : MonoBehaviour
     {

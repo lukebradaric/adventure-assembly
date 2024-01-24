@@ -1,8 +1,6 @@
-﻿using AdventureAssembly.Core;
-using DG.Tweening;
-using UnityEngine;
+﻿using UnityEngine;
 
-namespace AdventureAssembly.Units
+namespace AdventureAssembly.Units.Heroes
 {
     public class Hero : Unit
     {
@@ -32,9 +30,6 @@ namespace AdventureAssembly.Units
         public override void Move(Vector2Int direction)
         {
             base.Move(direction);
-
-            // Move to new position
-            transform.DOMove((Vector2)Position, TickManager.Instance.TickInterval).SetEase(Ease.OutCubic);
         }
     }
 }

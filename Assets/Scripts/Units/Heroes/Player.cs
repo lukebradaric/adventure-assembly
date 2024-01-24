@@ -9,7 +9,7 @@ using TinyTools.Extensions;
 using TinyTools.Generics;
 using UnityEngine;
 
-namespace AdventureAssembly.Units
+namespace AdventureAssembly.Units.Heroes
 {
     public class Player : Singleton<Player>
     {
@@ -152,8 +152,6 @@ namespace AdventureAssembly.Units
 
         public void AddHero(HeroData heroData)
         {
-            Debug.Log($"Adding new hero to player: {heroData.name}");
-
             // Calculate hero spawn position
             Hero lastHero = Heroes.LastOrDefault();
             Vector2Int spawnPosition = lastHero == null ?
