@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using AdventureAssembly.Units.Modifiers;
+using System.Collections.Generic;
 using System.Linq;
 using TinyTools.Generics;
 using UnityEngine;
@@ -7,11 +8,23 @@ namespace AdventureAssembly.Units
 {
     public abstract class UnitManager<T> : Singleton<UnitManager<T>> where T : Unit
     {
-        public static HashSet<T> Units { get; protected set; } = new HashSet<T>();
+        public static List<T> Units { get; protected set; } = new List<T>();
+
+        public static List<UnitModifier> Modifiers { get; protected set; } = new List<UnitModifier>();
+
+        protected static void ApplyAllModifiers(T unit)
+        {
+            // Apply all modifiers to a single unit
+            foreach (UnitModifier modifier in Modifiers)
+            {
+                modifier.Apply(unit);
+            }
+        }
 
         public virtual void AddUnit(T unit)
         {
             Units.Add(unit);
+            ApplyAllModifiers(unit);
         }
 
         public virtual void RemoveUnit(T unit)
@@ -22,6 +35,19 @@ namespace AdventureAssembly.Units
             }
 
             Units.Remove(unit);
+        }
+
+        public static void AddModifier(UnitModifier modifier)
+        {
+            //Debug.Log($"Adding new modifier: {modifier.GetType().Name}");
+
+            Modifiers.Add(modifier);
+
+            // Apply the new modifier to all existing units
+            foreach (T unit in Units)
+            {
+                modifier.Apply(unit);
+            }
         }
 
         public static T GetNearestUnit(Vector2Int position)

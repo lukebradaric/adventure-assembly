@@ -9,8 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6953635605719242568}
-  - component: {fileID: 3098733434465147185}
   - component: {fileID: -2141143125498980962}
+  - component: {fileID: 3098733434465147185}
+  - component: {fileID: -2632185598829885803}
   m_Layer: 0
   m_Name: EnemyPrefab
   m_TagString: Enemy
@@ -35,34 +36,6 @@ Transform:
   - {fileID: 1587228312349963352}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3098733434465147185
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 639080517317335966}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a45b540c4c08e7e499370be65eb97900, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  serializationData:
-    SerializedFormat: 2
-    SerializedBytes: 
-    ReferencedUnityObjects:
-    - {fileID: 8120395992605780396}
-    SerializedBytesString: 
-    Prefab: {fileID: 0}
-    PrefabModificationsReferencedUnityObjects: []
-    PrefabModifications: []
-    SerializationNodes:
-    - Name: SpriteRenderer
-      Entry: 10
-      Data: 0
-    - Name: EnemyData
-      Entry: 6
-      Data: 
 --- !u!58 &-2141143125498980962
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -98,6 +71,59 @@ CircleCollider2D:
   m_Offset: {x: 0, y: -0.2}
   serializedVersion: 2
   m_Radius: 0.4
+--- !u!114 &3098733434465147185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 639080517317335966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a45b540c4c08e7e499370be65eb97900, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 8120395992605780396}
+    - {fileID: -2632185598829885803}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: SpriteRenderer
+      Entry: 10
+      Data: 0
+    - Name: Stats
+      Entry: 10
+      Data: 1
+    - Name: EnemyData
+      Entry: 6
+      Data: 
+--- !u!114 &-2632185598829885803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 639080517317335966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31a6d64ea8ccdf14bbb9ed1c26530631, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
 --- !u!1 &5824801624664947533
 GameObject:
   m_ObjectHideFlags: 0

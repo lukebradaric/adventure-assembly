@@ -1,18 +1,13 @@
-﻿using UnityEngine;
-
-namespace AdventureAssembly.Units.Heroes
+﻿namespace AdventureAssembly.Units.Heroes
 {
-    public class HeroStats : MonoBehaviour
+    public class HeroStats : UnitStats
     {
-        public Stat<float> DamageMultiplier { get; set; } = new Stat<float>(1);
+        public HeroData HeroData { get; protected set; }
+        public Hero Hero { get; protected set; }
 
-        public DamageData GetDamageData(DamageData damageData)
+        public override void Initialize(Unit unit)
         {
-            float damage = damageData.BaseValue;
-            damage *= DamageMultiplier.Value;
-
-            damageData.Value = (int)Mathf.Ceil(damage);
-            return damageData;
+            base.Initialize(unit);
         }
     }
 }

@@ -45,13 +45,11 @@ namespace AdventureAssembly.Units
         {
             if (!collider.CompareTag(_enemyTag.Value))
             {
-                Debug.Log("Did not hit enemy.");
                 return;
             }
 
             if (!collider.TryGetComponent<Enemy>(out Enemy enemy))
             {
-                Debug.Log("Did not hit enemy component.");
                 return;
             }
 

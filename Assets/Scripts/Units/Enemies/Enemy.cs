@@ -5,20 +5,16 @@ namespace AdventureAssembly.Units.Enemies
 {
     public class Enemy : Unit
     {
-        [OdinSerialize] public EnemyData EnemyData { get; private set; }
+        new public EnemyStats Stats => (EnemyStats)this.Stats;
 
-        private void Start()
-        {
-            // Debug
-            Initialize(EnemyData, new Vector2Int((int)transform.position.x, (int)transform.position.y));
-        }
+        [OdinSerialize] public EnemyData EnemyData { get; private set; }
 
         public override void Initialize(UnitData unitData, Vector2Int position)
         {
-            base.Initialize(unitData, position);
-
             EnemyData = (EnemyData)unitData;
+
             EnemyManager.Instance.AddUnit(this);
+            base.Initialize(unitData, position);
         }
 
         public override void Die()

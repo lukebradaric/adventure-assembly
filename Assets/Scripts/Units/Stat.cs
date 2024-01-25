@@ -19,7 +19,7 @@ namespace AdventureAssembly.Units
 
                 foreach (var modifier in _statModifiers)
                 {
-                    if(modifier == null) continue;
+                    if (modifier == null) continue;
 
                     value = modifier.Process(value);
                 }

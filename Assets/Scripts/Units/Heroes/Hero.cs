@@ -7,7 +7,7 @@ namespace AdventureAssembly.Units.Heroes
 {
     public class Hero : Unit
     {
-        [OdinSerialize] public HeroStats Stats {  get; protected set; }
+        new public HeroStats Stats => (HeroStats)this.Stats;
 
         public HeroData HeroData { get; set; }
 

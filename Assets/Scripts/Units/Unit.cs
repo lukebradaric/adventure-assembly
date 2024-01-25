@@ -12,6 +12,7 @@ namespace AdventureAssembly.Units
         [PropertySpace]
         [Title("Components")]
         [OdinSerialize] public SpriteRenderer SpriteRenderer { get; private set; }
+        [OdinSerialize] public virtual UnitStats Stats { get; private set; }
 
         public UnitData UnitData { get; private set; }
 
@@ -28,21 +29,14 @@ namespace AdventureAssembly.Units
         {
             this.UnitData = unitData;
             this.Position = position;
-            this.CurrentHealth = GetMaxHealth();
+            this.Stats.Initialize(this);
+            this.CurrentHealth = Stats.GetMaxHealth();
 
             SpriteRenderer.sprite = UnitData.Sprite;
             name = $"{UnitData.Name}";
         }
 
-        public virtual int GetMaxHealth()
-        {
-            return UnitData.MaxHealth;
-        }
-
-        public virtual void OnTick()
-        {
-
-        }
+        public virtual void OnTick() { }
 
         public virtual void Move(Vector2Int direction)
         {
@@ -60,6 +54,11 @@ namespace AdventureAssembly.Units
 
         public virtual void Damage(DamageData damageData)
         {
+            if (IsDead)
+            {
+                return;
+            }
+
             CurrentHealth -= damageData.Value;
 
             if (CurrentHealth <= 0)

@@ -1,5 +1,6 @@
 ﻿using AdventureAssembly.Core;
 using AdventureAssembly.Input;
+using AdventureAssembly.Units.Modifiers;
 using DG.Tweening;
 using Sirenix.OdinInspector;
 using Sirenix.Serialization;
@@ -24,6 +25,7 @@ namespace AdventureAssembly.Units.Heroes
         [Title("Debug")]
         [OdinSerialize] private List<HeroData> _startingHeroes = new List<HeroData>();
         [OdinSerialize] private List<HeroData> _debugAddHeroes = new List<HeroData>();
+        [OdinSerialize] private List<UnitModifier> _startingModifiers = new List<UnitModifier>();
 
         public Vector2Int NextMovementVector { get; private set; } = Vector2Int.up;
         public Vector2Int LastMovementVector { get; private set; } = Vector2Int.zero;
@@ -51,6 +53,11 @@ namespace AdventureAssembly.Units.Heroes
             foreach (HeroData heroData in _startingHeroes)
             {
                 AddHero(heroData);
+            }
+
+            foreach (UnitModifier modifier in _startingModifiers)
+            {
+                HeroManager.AddModifier(modifier);
             }
         }
 
@@ -161,8 +168,8 @@ namespace AdventureAssembly.Units.Heroes
             hero.transform.SetParent(transform);
 
             // Initialize hero data
-            hero.Initialize(heroData, spawnPosition);
             AddUnit(hero);
+            hero.Initialize(heroData, spawnPosition);
         }
 
         public override void AddUnit(Hero hero)
