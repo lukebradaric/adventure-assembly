@@ -5,9 +5,8 @@ namespace AdventureAssembly.Units.Enemies
 {
     public class Enemy : Unit
     {
-        new public EnemyStats Stats => (EnemyStats)this.Stats;
-
-        [OdinSerialize] public EnemyData EnemyData { get; private set; }
+        new public EnemyStats Stats => (EnemyStats)base.Stats;
+        public EnemyData EnemyData { get; private set; }
 
         public override void Initialize(UnitData unitData, Vector2Int position)
         {

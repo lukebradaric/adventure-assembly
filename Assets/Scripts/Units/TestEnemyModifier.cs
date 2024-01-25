@@ -9,6 +9,7 @@ namespace AdventureAssembly.Units
 {
     public class TestEnemyModifier : SerializedMonoBehaviour
     {
+        public EnemyData enemyData;
         [OdinSerialize] private List<UnitModifier> modifiers = new List<UnitModifier>();
         [OdinSerialize] private List<Enemy> enemies = new List<Enemy>();
 
@@ -21,7 +22,7 @@ namespace AdventureAssembly.Units
 
             foreach (Enemy enemy in enemies)
             {
-                enemy.Initialize(enemy.EnemyData, new Vector2Int((int)enemy.transform.position.x, (int)enemy.transform.position.y));
+                enemy.Initialize(enemyData, new Vector2Int((int)enemy.transform.position.x, (int)enemy.transform.position.y));
             }
         }
     }
