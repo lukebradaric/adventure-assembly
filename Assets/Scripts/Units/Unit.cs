@@ -18,7 +18,7 @@ namespace AdventureAssembly.Units
 
         public int CurrentHealth { get; protected set; }
 
-        public Vector2Int Position { get; protected set; }
+        public Vector2Int Position { get; protected set; } = Vector2Int.zero;
         public Vector2Int LastPosition { get; protected set; }
 
         public bool IsDead { get; protected set; } = false;
