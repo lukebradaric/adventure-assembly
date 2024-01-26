@@ -50,6 +50,16 @@ namespace AdventureAssembly.Units
             }
         }
 
+        public static void RemoveModifier(UnitModifier modifier)
+        {
+            foreach (T unit in Units)
+            {
+                modifier.Remove(unit);
+            }
+
+            Modifiers.Remove(modifier);
+        }
+
         public static T GetNearestUnit(Vector2Int position)
         {
             T nearestUnit = Units.FirstOrDefault();

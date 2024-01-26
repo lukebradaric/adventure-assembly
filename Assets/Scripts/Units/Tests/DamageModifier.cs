@@ -1,6 +1,7 @@
-﻿using UnityEngine;
+﻿using AdventureAssembly.Units.Modifiers;
+using UnityEngine;
 
-namespace AdventureAssembly.Units.Modifiers
+namespace AdventureAssembly.Units.Tests
 {
     public class DamageModifier : UnitModifier
     {
@@ -9,6 +10,11 @@ namespace AdventureAssembly.Units.Modifiers
         public override void Apply(Unit unit)
         {
             unit.Stats.DamageMultiplier.AddModifier(_statModifier);
+        }
+
+        public override void Remove(Unit unit)
+        {
+            unit.Stats.DamageMultiplier.RemoveModifier(_statModifier);
         }
     }
 }

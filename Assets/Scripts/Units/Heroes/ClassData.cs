@@ -1,6 +1,7 @@
 ﻿using AdventureAssembly.Core;
 using Sirenix.OdinInspector;
 using Sirenix.Serialization;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace AdventureAssembly.Units.Heroes
@@ -14,5 +15,7 @@ namespace AdventureAssembly.Units.Heroes
         [OdinSerialize] public string Description { get; private set; }
 
         [OdinSerialize] public Color Color { get; private set; }
+
+        [OdinSerialize] public List<ClassModifier> Modifiers { get; private set; } = new List<ClassModifier>();
     }
 }

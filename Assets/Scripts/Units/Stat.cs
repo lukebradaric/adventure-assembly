@@ -42,7 +42,7 @@ namespace AdventureAssembly.Units
 
         public void RemoveModifier(StatModifier<T> modifier)
         {
-            if (_statModifiers.Contains(modifier))
+            if (!_statModifiers.Contains(modifier))
             {
                 Debug.LogError("Modifier was not found on stat!");
                 return;

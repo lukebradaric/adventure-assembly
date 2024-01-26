@@ -1,0 +1,111 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eecca23252d581e41bb6836e393a3370, type: 3}
+  m_Name: RogueClassData
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Name
+      Entry: 1
+      Data: Rogue
+    - Name: Description
+      Entry: 1
+      Data: 'Increase the critical strike chance of all heroes.
+
+        (3) - 10%
+        | (5) - 20% | (10) - 50%'
+    - Name: Color
+      Entry: 7
+      Data: UnityEngine.Color, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0.7735849
+    - Name: 
+      Entry: 4
+      Data: 0.200694218
+    - Name: 
+      Entry: 4
+      Data: 0.251733243
+    - Name: 
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: Modifiers
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[AdventureAssembly.Units.Heroes.ClassModifier,
+        AdventureAssembly.Units]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 1|AdventureAssembly.Units.Tests.TestClassModifier, AdventureAssembly.Units
+    - Name: RequiredCount
+      Entry: 3
+      Data: 3
+    - Name: _unitModifier
+      Entry: 7
+      Data: 2|AdventureAssembly.Units.Tests.DamageModifier, AdventureAssembly.Units
+    - Name: _statModifier
+      Entry: 7
+      Data: 3|AdventureAssembly.Units.Tests.DefaultStatModifier, AdventureAssembly.Units
+    - Name: _value
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 4|AdventureAssembly.Units.Tests.TestClassModifier, AdventureAssembly.Units
+    - Name: RequiredCount
+      Entry: 3
+      Data: 5
+    - Name: _unitModifier
+      Entry: 7
+      Data: 5|AdventureAssembly.Units.Tests.DamageModifier, AdventureAssembly.Units
+    - Name: _statModifier
+      Entry: 7
+      Data: 6|AdventureAssembly.Units.Tests.DefaultStatModifier, AdventureAssembly.Units
+    - Name: _value
+      Entry: 4
+      Data: 2
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 

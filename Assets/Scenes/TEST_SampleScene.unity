@@ -149,34 +149,26 @@ PrefabInstance:
       objectReference: {fileID: 3098733434465147185, guid: e861db9d7b4f5af43aa07f6ec4431335, type: 3}
     - target: {fileID: 3098733434465147185, guid: e861db9d7b4f5af43aa07f6ec4431335, type: 3}
       propertyPath: serializationData.PrefabModifications.Array.size
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3098733434465147185, guid: e861db9d7b4f5af43aa07f6ec4431335, type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
-      value: '"path":"EnemyData","value":$eref:0'
+      value: '"path":"SpriteRenderer","value":$eref:0'
       objectReference: {fileID: 0}
     - target: {fileID: 3098733434465147185, guid: e861db9d7b4f5af43aa07f6ec4431335, type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[1]
-      value: '"path":"SpriteRenderer","value":$eref:1'
-      objectReference: {fileID: 0}
-    - target: {fileID: 3098733434465147185, guid: e861db9d7b4f5af43aa07f6ec4431335, type: 3}
-      propertyPath: serializationData.PrefabModifications.Array.data[2]
-      value: '"path":"Stats","value":$eref:2'
+      value: '"path":"Stats","value":$eref:1'
       objectReference: {fileID: 0}
     - target: {fileID: 3098733434465147185, guid: e861db9d7b4f5af43aa07f6ec4431335, type: 3}
       propertyPath: serializationData.PrefabModificationsReferencedUnityObjects.Array.size
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3098733434465147185, guid: e861db9d7b4f5af43aa07f6ec4431335, type: 3}
       propertyPath: serializationData.PrefabModificationsReferencedUnityObjects.Array.data[0]
       value: 
-      objectReference: {fileID: 11400000, guid: b930fad0151c80c4ebdf5bd12e71e15c, type: 2}
-    - target: {fileID: 3098733434465147185, guid: e861db9d7b4f5af43aa07f6ec4431335, type: 3}
-      propertyPath: serializationData.PrefabModificationsReferencedUnityObjects.Array.data[1]
-      value: 
       objectReference: {fileID: 60127582}
     - target: {fileID: 3098733434465147185, guid: e861db9d7b4f5af43aa07f6ec4431335, type: 3}
-      propertyPath: serializationData.PrefabModificationsReferencedUnityObjects.Array.data[2]
+      propertyPath: serializationData.PrefabModificationsReferencedUnityObjects.Array.data[1]
       value: 
       objectReference: {fileID: 1690238254}
     - target: {fileID: 6953635605719242568, guid: e861db9d7b4f5af43aa07f6ec4431335, type: 3}
@@ -837,7 +829,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 947380827}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1444c1f48842a64980a0767076e36c3, type: 3}
+  m_Script: {fileID: 11500000, guid: f22a532182c158a42876df0f0f77840f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   serializationData:
@@ -1345,7 +1337,7 @@ PrefabInstance:
       objectReference: {fileID: 3213923293646680723, guid: e450e852feb5a7c41ad1cd4f12ff1f3e, type: 3}
     - target: {fileID: 3213923293646680723, guid: e450e852feb5a7c41ad1cd4f12ff1f3e, type: 3}
       propertyPath: serializationData.PrefabModifications.Array.size
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3213923293646680723, guid: e450e852feb5a7c41ad1cd4f12ff1f3e, type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
@@ -1361,8 +1353,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3213923293646680723, guid: e450e852feb5a7c41ad1cd4f12ff1f3e, type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[3]
-      value: '"path":"_startingModifiers","value":{"$id":0,"$type":"System.Collections.Generic.List`1[[AdventureAssembly.Units.Modifiers.UnitModifier,
-        AdventureAssembly.Units]], mscorlib","$rlength":0,"$rcontent":[]}'
+      value: '"path":"_startingHeroes.[0]","value":$eref:0'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3213923293646680723, guid: e450e852feb5a7c41ad1cd4f12ff1f3e, type: 3}
+      propertyPath: serializationData.PrefabModifications.Array.data[4]
+      value: '"path":"_startingModifiers","length":0'
       objectReference: {fileID: 0}
     - target: {fileID: 3213923293646680723, guid: e450e852feb5a7c41ad1cd4f12ff1f3e, type: 3}
       propertyPath: serializationData.PrefabModificationsReferencedUnityObjects.Array.size

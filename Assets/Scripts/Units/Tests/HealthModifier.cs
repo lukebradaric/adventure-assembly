@@ -1,6 +1,7 @@
-﻿using UnityEngine;
+﻿using AdventureAssembly.Units.Modifiers;
+using UnityEngine;
 
-namespace AdventureAssembly.Units.Modifiers
+namespace AdventureAssembly.Units.Tests
 {
     [System.Serializable]
     public class HealthModifier : UnitModifier
@@ -10,6 +11,11 @@ namespace AdventureAssembly.Units.Modifiers
         public override void Apply(Unit unit)
         {
             unit.Stats.MaxHealthMultiplier.AddModifier(_value);
+        }
+
+        public override void Remove(Unit unit)
+        {
+            unit.Stats.MaxHealthMultiplier.RemoveModifier(_value);
         }
     }
 }

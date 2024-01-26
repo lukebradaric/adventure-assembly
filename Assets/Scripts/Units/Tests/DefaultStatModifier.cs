@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace AdventureAssembly.Units
+namespace AdventureAssembly.Units.Tests
 {
     public class DefaultStatModifier : StatModifier<float>
     {

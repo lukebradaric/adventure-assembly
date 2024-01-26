@@ -52,7 +52,7 @@ namespace AdventureAssembly.Units.Heroes
             // TODO: Remove debug starting hero
             foreach (HeroData heroData in _startingHeroes)
             {
-                AddHero(heroData);
+                SpawnHero(heroData);
             }
 
             foreach (UnitModifier modifier in _startingModifiers)
@@ -66,7 +66,12 @@ namespace AdventureAssembly.Units.Heroes
             // TODO: Remove debug adding heroes
             if (UnityEngine.Input.GetKeyDown("g"))
             {
-                AddHero(_debugAddHeroes.Random());
+                SpawnHero(_debugAddHeroes.Random());
+            }
+
+            if (UnityEngine.Input.GetKeyDown("h"))
+            {
+                Units.Random().Die();
             }
         }
 
@@ -155,7 +160,7 @@ namespace AdventureAssembly.Units.Heroes
             return Physics2D.OverlapCircleAll(position, 0.1f, HazardLayerMask).Length > 0;
         }
 
-        public void AddHero(HeroData heroData)
+        public void SpawnHero(HeroData heroData)
         {
             // Calculate hero spawn position
             Hero lastHero = Units.LastOrDefault();
@@ -167,8 +172,13 @@ namespace AdventureAssembly.Units.Heroes
             Hero hero = Instantiate(_heroPrefab, (Vector2)spawnPosition, Quaternion.identity);
             hero.transform.SetParent(transform);
 
-            // Initialize hero data
+            // Add hero to this unit manager
             AddUnit(hero);
+
+            // Add all the heroes classes to the class manager
+            ClassManager.AddClassesByHeroData(heroData);
+
+            // Initialize the spawned hero
             hero.Initialize(heroData, spawnPosition);
         }
 
@@ -180,6 +190,7 @@ namespace AdventureAssembly.Units.Heroes
 
         public override void RemoveUnit(Hero hero)
         {
+            ClassManager.RemoveClassesByHeroData(hero.HeroData);
             base.RemoveUnit(hero);
             hero.Died -= OnHeroDied;
         }

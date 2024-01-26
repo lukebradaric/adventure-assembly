@@ -5,7 +5,7 @@ using Sirenix.Serialization;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace AdventureAssembly.Units
+namespace AdventureAssembly.Units.Tests
 {
     public class TestEnemyModifier : SerializedMonoBehaviour
     {

@@ -15,7 +15,7 @@ namespace AdventureAssembly.Units.Heroes
         [MultiLineProperty]
         [OdinSerialize] public string Description { get; private set; }
 
-        [OdinSerialize] public ClassData ClassData { get; private set; }
+        [OdinSerialize] public List<ClassData> ClassData { get; private set; } = new List<ClassData>();
 
         [OdinSerialize] public List<Ability> Abilities { get; private set; } = new List<Ability>();
     }

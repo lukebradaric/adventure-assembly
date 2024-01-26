@@ -17,6 +17,7 @@ MonoBehaviour:
     SerializedBytes: 
     ReferencedUnityObjects:
     - {fileID: 21300000, guid: 3c4bcb2ce8d0a47448823c34f63a875c, type: 3}
+    - {fileID: 11400000, guid: b86db4235a294c244b0964df39ff7556, type: 2}
     - {fileID: 9053408658122590034, guid: 1e090557ec945fb48bd4864be18fda2f, type: 3}
     SerializedBytesString: 
     Prefab: {fileID: 0}
@@ -42,18 +43,31 @@ MonoBehaviour:
       Entry: 6
       Data: 
     - Name: ClassData
-      Entry: 6
+      Entry: 7
+      Data: 1|System.Collections.Generic.List`1[[AdventureAssembly.Units.Heroes.ClassData,
+        AdventureAssembly.Units]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 10
+      Data: 1
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
       Data: 
     - Name: Abilities
       Entry: 7
-      Data: 1|System.Collections.Generic.List`1[[AdventureAssembly.Units.Abilities.Ability,
+      Data: 2|System.Collections.Generic.List`1[[AdventureAssembly.Units.Abilities.Ability,
         AdventureAssembly.Units]], mscorlib
     - Name: 
       Entry: 12
       Data: 1
     - Name: 
       Entry: 7
-      Data: 2|AdventureAssembly.Units.Abilities.ProjectileAbility, AdventureAssembly.Units
+      Data: 3|AdventureAssembly.Units.Abilities.ProjectileAbility, AdventureAssembly.Units
     - Name: _ticks
       Entry: 3
       Data: 3
@@ -62,7 +76,7 @@ MonoBehaviour:
       Data: 5
     - Name: _projectilePrefab
       Entry: 10
-      Data: 1
+      Data: 2
     - Name: 
       Entry: 8
       Data: 
