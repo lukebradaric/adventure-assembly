@@ -12,7 +12,6 @@ namespace AdventureAssembly.Units.Enemies
         {
             EnemyData = (EnemyData)unitData;
 
-            EnemyManager.Instance.AddUnit(this);
             base.Initialize(unitData, position);
         }
 
@@ -20,7 +19,6 @@ namespace AdventureAssembly.Units.Enemies
         {
             base.Die();
 
-            EnemyManager.Instance.RemoveUnit(this);
             Destroy(gameObject);
         }
     }

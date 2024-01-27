@@ -70,7 +70,7 @@ MonoBehaviour:
       Data: 3|AdventureAssembly.Units.Abilities.ProjectileAbility, AdventureAssembly.Units
     - Name: _ticks
       Entry: 3
-      Data: 3
+      Data: 1
     - Name: _baseDamage
       Entry: 3
       Data: 5

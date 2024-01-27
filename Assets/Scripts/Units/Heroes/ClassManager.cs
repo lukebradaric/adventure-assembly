@@ -72,14 +72,14 @@ namespace AdventureAssembly.Units.Heroes
             // If no modifier found and new modifier is null, return
             if (!ClassModifiers.ContainsKey(classData) && classModifier == null)
             {
-                Debug.Log("No class update.");
+                //Debug.Log("No class update.");
                 return;
             }
 
             // If no modifier found and new modifier is valid, add clone
             if (!ClassModifiers.ContainsKey(classData) && classModifier != null)
             {
-                Debug.Log("Adding a brand new modifier.");
+                //Debug.Log("Adding a brand new modifier.");
                 ClassModifiers.Add(classData, classModifier);
                 classModifier.Apply();
                 return;
@@ -88,7 +88,7 @@ namespace AdventureAssembly.Units.Heroes
             // If modifier is found and new modifier is null, remove old
             if (ClassModifiers.ContainsKey(classData) && classModifier == null)
             {
-                Debug.Log("Completely removing a modifier");
+                //Debug.Log("Completely removing a modifier");
                 ClassModifiers[classData].Remove();
                 ClassModifiers.Remove(classData);
                 return;
@@ -97,7 +97,7 @@ namespace AdventureAssembly.Units.Heroes
             // If modifier is found and new modifier does not match, remove old, add new
             if (ClassModifiers[classData].RequiredCount != classModifier.RequiredCount)
             {
-                Debug.Log("Updating an existing modifier");
+                //Debug.Log("Updating an existing modifier");
                 ClassModifiers[classData].Remove();
                 ClassModifiers[classData] = classModifier;
                 classModifier.Apply();
