@@ -33,16 +33,35 @@ MonoBehaviour:
       Data: 0
     - Name: MaxHealth
       Entry: 3
-      Data: 0
+      Data: 18
     - Name: MovementTween
       Entry: 7
       Data: 0|AdventureAssembly.Units.Animation.DefaultUnitMovementTween, AdventureAssembly.Units
     - Name: 
       Entry: 8
       Data: 
-    - Name: Description
-      Entry: 6
+    - Name: BackgroundColor
+      Entry: 7
+      Data: UnityEngine.Color, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0.7019608
+    - Name: 
+      Entry: 4
+      Data: 0.21960786
+    - Name: 
+      Entry: 4
+      Data: 0.192156881
+    - Name: 
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 8
       Data: 
+    - Name: Description
+      Entry: 1
+      Data: Throws daggers at nearby enemies. Daggers deal 100% increase critical
+        strike damage.
     - Name: ClassData
       Entry: 7
       Data: 1|System.Collections.Generic.List`1[[AdventureAssembly.Units.Heroes.ClassData,
