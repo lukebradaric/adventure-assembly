@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: eecca23252d581e41bb6836e393a3370, type: 3}
-  m_Name: PirateClassData
+  m_Name: MageClassData
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -23,25 +23,22 @@ MonoBehaviour:
     SerializationNodes:
     - Name: Name
       Entry: 1
-      Data: Pirate
+      Data: Mage
     - Name: Description
       Entry: 1
-      Data: 'Increased chance to gain currency from enemies.
-
-        (3) - 10% |
-        (5) - 20% | (10) - 50%'
+      Data: 
     - Name: Color
       Entry: 7
       Data: UnityEngine.Color, UnityEngine.CoreModule
     - Name: 
       Entry: 4
-      Data: 0.415094316
+      Data: 0
     - Name: 
       Entry: 4
-      Data: 0.2653161
+      Data: 0.8169582
     - Name: 
       Entry: 4
-      Data: 0.142933413
+      Data: 0.9245283
     - Name: 
       Entry: 4
       Data: 1

@@ -12,6 +12,8 @@ namespace AdventureAssembly.Units.Heroes
     {
         [PropertySpace]
         [Title("Hero")]
+        [OdinSerialize] public Color BackgroundColor { get; set; } = Color.magenta;
+
         [MultiLineProperty]
         [OdinSerialize] public string Description { get; private set; }
 
