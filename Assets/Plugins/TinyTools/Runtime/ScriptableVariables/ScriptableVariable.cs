@@ -4,7 +4,7 @@ namespace TinyTools.ScriptableVariables
 {
     public abstract class ScriptableVariable<T> : ScriptableObject
     {
-        [SerializeField] private T _value;
+        [SerializeField] protected T _value;
         public T Value
         {
             get

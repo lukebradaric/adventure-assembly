@@ -1,8 +1,9 @@
 ﻿using AdventureAssembly.Core;
 using AdventureAssembly.Units.Heroes;
 using DG.Tweening;
+using System;
 using System.Collections.Generic;
-using TinyTools.Extensions;
+using TinyTools.ScriptableEvents;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -11,11 +12,16 @@ namespace AdventureAssembly.Interface
     public class HeroSelectionInterface : MonoBehaviour
     {
         [Space]
+        [Header("Events")]
+        [SerializeField] private VoidScriptableEvent _openHeroChestScriptableEvent;
+
+        [Space]
         [Header("Prefabs")]
         [SerializeField] private HeroSelectionElement _heroSelectionElementPrefab;
 
         [Space]
         [Header("Components")]
+        [SerializeField] private HeroDataListScriptableVariable _heroDataList;
         [SerializeField] private RectTransform _horizontalLayoutTransform;
         [SerializeField] private HorizontalLayoutGroup _horizontalLayoutGroup;
         [SerializeField] private CanvasGroup _canvasGroup;
@@ -28,17 +34,25 @@ namespace AdventureAssembly.Interface
         [SerializeField] private float _heroSelectionTweenDurationOffset = 0.1f;
         [SerializeField] private Ease _tweenEase = Ease.OutBack;
 
-        [Space]
-        [Header("Debug")]
-        [SerializeField] private List<HeroData> _testHeroData = new List<HeroData>();
-
         private List<HeroSelectionElement> _heroSelectionElements = new List<HeroSelectionElement>();
 
-        private bool _showing = false;
+        private void OnEnable()
+        {
+            _openHeroChestScriptableEvent.RaisedVoid += OnOpenHeroChest;
+        }
+
+        private void OnDisable()
+        {
+            _openHeroChestScriptableEvent.RaisedVoid -= OnOpenHeroChest;
+        }
+
+        private void OnOpenHeroChest()
+        {
+            Show(_heroDataList.GetRandom(3));
+        }
 
         public void Show(List<HeroData> heroData)
         {
-            _showing = true;
             TimeManager.Pause();
 
             ShowSelections(heroData);
@@ -48,8 +62,6 @@ namespace AdventureAssembly.Interface
 
         public void Hide()
         {
-            _showing = false;
-
             _canvasGroup.DOFade(0f, _fadeTweenDuration).SetUpdate(true).OnComplete(() =>
             {
                 foreach (HeroSelectionElement element in _heroSelectionElements)

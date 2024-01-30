@@ -64,6 +64,19 @@ MonoBehaviour:
     - Name: Stats
       Entry: 10
       Data: 1
+    - Name: Abilities
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[AdventureAssembly.Units.Abilities.Ability,
+        AdventureAssembly.Units]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
 --- !u!114 &-890123428954646306
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -76,6 +89,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d935b7c892d4ac64e8840b6d521acf9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
 --- !u!1 &7816698915213867670
 GameObject:
   m_ObjectHideFlags: 0

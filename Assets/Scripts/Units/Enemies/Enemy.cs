@@ -1,4 +1,5 @@
-﻿using Sirenix.Serialization;
+﻿using AdventureAssembly.Core;
+using Sirenix.Serialization;
 using UnityEngine;
 
 namespace AdventureAssembly.Units.Enemies
@@ -18,6 +19,8 @@ namespace AdventureAssembly.Units.Enemies
         public override void Die()
         {
             base.Die();
+
+            ExperienceManager.Instance.AddExperience(EnemyData.KillExperience);
 
             Destroy(gameObject);
         }
