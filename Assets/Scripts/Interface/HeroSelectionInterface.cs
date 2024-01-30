@@ -36,27 +36,11 @@ namespace AdventureAssembly.Interface
 
         private bool _showing = false;
 
-        private void Update()
-        {
-            if (UnityEngine.Input.GetKeyDown("b"))
-            {
-                if (!_showing)
-                    Show();
-                else
-                    Hide();
-            }
-        }
-
-        public void Show()
+        public void Show(List<HeroData> heroData)
         {
             _showing = true;
             TimeManager.Pause();
 
-            List<HeroData> heroData = new List<HeroData>();
-            for(int i = 0; i < 3; i++)
-            {
-                heroData.Add(_testHeroData.Random());
-            }
             ShowSelections(heroData);
 
             _canvasGroup.DOFade(1f, _fadeTweenDuration).SetUpdate(true);

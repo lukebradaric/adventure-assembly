@@ -1,0 +1,20 @@
+{
+    "name": "AdventureAssembly.Interface",
+    "rootNamespace": "",
+    "references": [
+        "GUID:864fc897e48abbf458a9d1efb9590aea",
+        "GUID:a2e662a3426bd4e438921bb157c151d4",
+        "GUID:6055be8ebefd69e48b49212b09b47b2f",
+        "GUID:51407e3aa60f0aa46ab8b65c62cdf474",
+        "GUID:70dca3cfe6a1f5c4488fa851f72e2042"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
