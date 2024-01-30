@@ -19,7 +19,7 @@ namespace AdventureAssembly.Units.Abilities
             }
 
             Projectile projectile = GameObject.Instantiate(_projectilePrefab, _hero.transform.position, Quaternion.identity);
-            projectile.Initialize(_hero, enemy, _baseDamage);
+            projectile.Initialize(_hero, _baseDamage, enemy);
         }
     }
 }
