@@ -56,6 +56,7 @@ namespace AdventureAssembly.Interface
 
                 _nameText.text = _heroData.Name;
                 _descriptionText.text = _heroData.Description;
+                // TODO: Set ability speed text to ability speed
                 //_abilitySpeedText = _heroData.AbilitySpeed;
                 _maxHealthText.text = _heroData.MaxHealth.ToString();
 
@@ -63,7 +64,6 @@ namespace AdventureAssembly.Interface
                 //_shadowImage.sprite = _heroData.ShadowSprite;
                 _heroBackgroundImage.color = _heroData.BackgroundColor;
 
-                // TODO: Instantiate class element prefabs for each class
                 foreach (ClassData classData in _heroData.ClassData)
                 {
                     HeroClassElement heroClassElement = Instantiate(_heroClassElementPrefab, _classVerticalLayoutTransform);

@@ -21,12 +21,6 @@ namespace AdventureAssembly.Units.Heroes
         [Title("Settings")]
         [OdinSerialize] public LayerMask HazardLayerMask { get; private set; }
 
-        [PropertySpace]
-        [Title("Debug")]
-        [OdinSerialize] private List<HeroData> _startingHeroes = new List<HeroData>();
-        [OdinSerialize] private List<HeroData> _debugAddHeroes = new List<HeroData>();
-        [OdinSerialize] private List<UnitModifier> _startingModifiers = new List<UnitModifier>();
-
         public Vector2Int NextMovementVector { get; private set; } = Vector2Int.up;
         public Vector2Int LastMovementVector { get; private set; } = Vector2Int.zero;
 
@@ -45,34 +39,6 @@ namespace AdventureAssembly.Units.Heroes
         {
             TickManager.TickUpdate -= OnTurnUpdate;
             InputManager.MovementVector.ValueChanged -= OnMovementVectorChanged;
-        }
-
-        private void Start()
-        {
-            // TODO: Remove debug starting hero
-            foreach (HeroData heroData in _startingHeroes)
-            {
-                SpawnHero(heroData);
-            }
-
-            foreach (UnitModifier modifier in _startingModifiers)
-            {
-                HeroManager.AddModifier(modifier);
-            }
-        }
-
-        private void Update()
-        {
-            // TODO: Remove debug adding heroes
-            if (UnityEngine.Input.GetKeyDown("g"))
-            {
-                SpawnHero(_debugAddHeroes.Random());
-            }
-
-            if (UnityEngine.Input.GetKeyDown("h"))
-            {
-                Units.Random().Die();
-            }
         }
 
         private void OnMovementVectorChanged(Vector2Int direction)
