@@ -1,12 +1,11 @@
 ﻿using AdventureAssembly.Core;
 using AdventureAssembly.Input;
-using AdventureAssembly.Units.Modifiers;
 using DG.Tweening;
 using Sirenix.OdinInspector;
 using Sirenix.Serialization;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using TinyTools.Extensions;
 using UnityEngine;
 
 namespace AdventureAssembly.Units.Heroes
@@ -19,26 +18,46 @@ namespace AdventureAssembly.Units.Heroes
 
         [PropertySpace]
         [Title("Settings")]
+        [Tooltip("How much time between each Hero Ability update? Measured in seconds.")]
+        [OdinSerialize] public float UpdateInterval { get; private set; }
+        [Tooltip("What LayerMask are Hazard objects placed on?")]
         [OdinSerialize] public LayerMask HazardLayerMask { get; private set; }
 
         public Vector2Int NextMovementVector { get; private set; } = Vector2Int.up;
         public Vector2Int LastMovementVector { get; private set; } = Vector2Int.zero;
-
         public Vector2Int HorizontalMovementVector { get; private set; }
         public Vector2Int VerticalMovementVector { get; private set; }
 
+        // Dictionary of all current hero positions
         private Dictionary<Vector2Int, Hero> _heroPositions = new Dictionary<Vector2Int, Hero>();
+
+        // The coroutine that updates the ability timers of all heroes
+        private Coroutine _updateCoroutine = null;
 
         private void OnEnable()
         {
             TickManager.TickUpdate += OnTurnUpdate;
             InputManager.MovementVector.ValueChanged += OnMovementVectorChanged;
+
+            _updateCoroutine = StartCoroutine(UpdateCoroutine());
         }
 
         private void OnDisable()
         {
             TickManager.TickUpdate -= OnTurnUpdate;
             InputManager.MovementVector.ValueChanged -= OnMovementVectorChanged;
+        }
+
+        private IEnumerator UpdateCoroutine()
+        {
+            yield return new WaitForSeconds(UpdateInterval);
+
+            foreach (Hero hero in Units)
+            {
+                hero.OnUpdate(UpdateInterval);
+            }
+
+            _updateCoroutine = StartCoroutine(UpdateCoroutine());
         }
 
         private void OnMovementVectorChanged(Vector2Int direction)
@@ -107,7 +126,6 @@ namespace AdventureAssembly.Units.Heroes
 
                 // Move hero to new position
                 hero.Move(movement);
-                hero.OnTick();
                 position = hero.LastPosition;
             }
 

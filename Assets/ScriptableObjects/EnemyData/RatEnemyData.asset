@@ -30,7 +30,7 @@ MonoBehaviour:
       Data: 0
     - Name: MaxHealth
       Entry: 3
-      Data: 10
+      Data: 5
     - Name: MovementTween
       Entry: 7
       Data: 0|AdventureAssembly.Units.Animation.DefaultUnitMovementTween, AdventureAssembly.Units

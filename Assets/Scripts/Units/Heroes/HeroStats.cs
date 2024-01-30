@@ -1,4 +1,6 @@
-﻿namespace AdventureAssembly.Units.Heroes
+﻿using System;
+
+namespace AdventureAssembly.Units.Heroes
 {
     public class HeroStats : UnitStats
     {
@@ -8,6 +10,11 @@
         public override void Initialize(Unit unit)
         {
             base.Initialize(unit);
+        }
+
+        public float GetAbilitySpeed(float baseSpeed)
+        {
+            return baseSpeed;
         }
     }
 }

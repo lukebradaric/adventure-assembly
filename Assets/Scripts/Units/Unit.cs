@@ -36,7 +36,7 @@ namespace AdventureAssembly.Units
             name = $"{UnitData.Name}";
         }
 
-        public virtual void OnTick() { }
+        public virtual void OnUpdate(float time) { }
 
         public virtual void Move(Vector2Int direction)
         {

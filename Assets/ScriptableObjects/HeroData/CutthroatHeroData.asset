@@ -91,9 +91,9 @@ MonoBehaviour:
     - Name: 
       Entry: 7
       Data: 3|AdventureAssembly.Units.Abilities.ProjectileAbility, AdventureAssembly.Units
-    - Name: _ticks
-      Entry: 3
-      Data: 3
+    - Name: _baseSpeed
+      Entry: 4
+      Data: 2
     - Name: _baseDamage
       Entry: 3
       Data: 5

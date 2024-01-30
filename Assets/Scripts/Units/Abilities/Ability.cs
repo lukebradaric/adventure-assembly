@@ -6,11 +6,11 @@ namespace AdventureAssembly.Units.Abilities
     [System.Serializable]
     public abstract class Ability
     {
-        [Tooltip("How often should this ability occur?")]
-        [SerializeField] private int _ticks;
+        [Tooltip("How often should this ability occur? Measured in seconds.")]
+        [SerializeField] private float _baseSpeed;
 
         // Current ticks until ability is executed
-        protected int _currentTicks;
+        protected float _currentTime;
 
         // The hero this ability is on
         protected Hero _hero;
@@ -18,19 +18,17 @@ namespace AdventureAssembly.Units.Abilities
         public void Initialize(Hero hero)
         {
             _hero = hero;
-            _currentTicks = _ticks;
+            _currentTime = _baseSpeed;
         }
 
-        public void OnTick()
+        public void OnUpdate(float time)
         {
-            _currentTicks--;
+            _currentTime -= time;
 
-            if (_currentTicks <= 0)
+            if (_currentTime <= 0)
             {
                 Execute();
-
-                // TODO: Calculate current ticks based on Hero stats
-                _currentTicks = _ticks;
+                _currentTime = _hero.Stats.GetAbilitySpeed(_baseSpeed);
             }
         }
 

@@ -40,11 +40,11 @@ namespace AdventureAssembly.Units.Heroes
             Destroy(gameObject, 3f);
         }
 
-        public override void OnTick()
+        public override void OnUpdate(float time)
         {
             foreach (Ability ability in Abilities)
             {
-                ability.OnTick();
+                ability.OnUpdate(time);
             }
         }
     }

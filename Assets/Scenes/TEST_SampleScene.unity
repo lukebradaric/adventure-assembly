@@ -815,6 +815,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _enemyPrefab: {fileID: 3098733434465147185, guid: e861db9d7b4f5af43aa07f6ec4431335, type: 3}
+  _updateInterval: 1
   _maxEnemyCount: 300
   _spawnRadius: {x: 18, y: 22}
   _spawnCurve:
@@ -823,20 +824,38 @@ MonoBehaviour:
     - serializedVersion: 3
       time: 0
       value: 0
-      inSlope: 0.0055555557
-      outSlope: 0.0055555557
+      inSlope: 0.017913511
+      outSlope: 0.017913511
       tangentMode: 34
       weightedMode: 0
       inWeight: 0
       outWeight: 0.33333334
     - serializedVersion: 3
-      time: 360
-      value: 2
-      inSlope: 0.0055555557
-      outSlope: 0.0055555557
-      tangentMode: 34
+      time: 143.962
+      value: 2.578865
+      inSlope: -0.035059366
+      outSlope: -0.035059366
+      tangentMode: 0
       weightedMode: 0
       inWeight: 0.33333334
+      outWeight: 0.09805335
+    - serializedVersion: 3
+      time: 426.32437
+      value: 9.746985
+      inSlope: -0.028188
+      outSlope: -0.028188
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.22373284
+    - serializedVersion: 3
+      time: 600
+      value: 15
+      inSlope: 0.024245959
+      outSlope: 0.024245959
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.19852185
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
@@ -897,32 +916,16 @@ PrefabInstance:
       objectReference: {fileID: 3213923293646680723, guid: e450e852feb5a7c41ad1cd4f12ff1f3e, type: 3}
     - target: {fileID: 3213923293646680723, guid: e450e852feb5a7c41ad1cd4f12ff1f3e, type: 3}
       propertyPath: serializationData.PrefabModifications.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 3213923293646680723, guid: e450e852feb5a7c41ad1cd4f12ff1f3e, type: 3}
-      propertyPath: serializationData.PrefabModifications.Array.data[0]
-      value: '"path":"_debugAddHeroes","length":1'
-      objectReference: {fileID: 0}
-    - target: {fileID: 3213923293646680723, guid: e450e852feb5a7c41ad1cd4f12ff1f3e, type: 3}
-      propertyPath: serializationData.PrefabModifications.Array.data[1]
-      value: '"path":"_debugAddHeroes.[0]","value":$eref:0'
-      objectReference: {fileID: 0}
-    - target: {fileID: 3213923293646680723, guid: e450e852feb5a7c41ad1cd4f12ff1f3e, type: 3}
-      propertyPath: serializationData.PrefabModifications.Array.data[2]
-      value: '"path":"_startingHeroes","length":1'
-      objectReference: {fileID: 0}
-    - target: {fileID: 3213923293646680723, guid: e450e852feb5a7c41ad1cd4f12ff1f3e, type: 3}
-      propertyPath: serializationData.PrefabModifications.Array.data[3]
-      value: '"path":"_startingHeroes.[0]","value":$eref:0'
-      objectReference: {fileID: 0}
-    - target: {fileID: 3213923293646680723, guid: e450e852feb5a7c41ad1cd4f12ff1f3e, type: 3}
-      propertyPath: serializationData.PrefabModificationsReferencedUnityObjects.Array.size
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3213923293646680723, guid: e450e852feb5a7c41ad1cd4f12ff1f3e, type: 3}
-      propertyPath: serializationData.PrefabModificationsReferencedUnityObjects.Array.data[0]
-      value: 
-      objectReference: {fileID: 11400000, guid: 45d296dc0520eba4294511ed092eca5f, type: 2}
+      propertyPath: serializationData.PrefabModifications.Array.data[0]
+      value: '"path":"UpdateInterval","value":{"$id":0,"$type":"System.Single, mscorlib",0.1}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3213923293646680723, guid: e450e852feb5a7c41ad1cd4f12ff1f3e, type: 3}
+      propertyPath: serializationData.PrefabModificationsReferencedUnityObjects.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5471210707774386764, guid: e450e852feb5a7c41ad1cd4f12ff1f3e, type: 3}
       propertyPath: _heroManager
       value: 

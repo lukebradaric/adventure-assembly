@@ -1,4 +1,5 @@
 ﻿using AdventureAssembly.Core;
+using System.Collections;
 using System.Collections.Generic;
 using TinyTools.Generics;
 using UnityEngine;
@@ -20,6 +21,7 @@ namespace AdventureAssembly.Units.Enemies
 
         [Space]
         [Header("Settings")]
+        [SerializeField] private float _updateInterval;
         [SerializeField] private int _maxEnemyCount;
         [SerializeField] private Vector2 _spawnRadius;
         [SerializeField] private AnimationCurve _spawnCurve;
@@ -27,20 +29,24 @@ namespace AdventureAssembly.Units.Enemies
 
         private float _currentTime = 0f;
 
+        private Coroutine _updateCoroutine = null;
+
         private void OnEnable()
         {
-            TickManager.EnemyTickUpdate += OnEnemyTickUpdate;
+            _updateCoroutine = StartCoroutine(UpdateCoroutine());
         }
 
-        private void OnDisable()
+        private IEnumerator UpdateCoroutine()
         {
-            TickManager.EnemyTickUpdate -= OnEnemyTickUpdate;
+            yield return new WaitForSeconds(_updateInterval);
+            _currentTime += _updateInterval;
+            OnUpdate();
+
+            _updateCoroutine = StartCoroutine(UpdateCoroutine());
         }
 
-        private void OnEnemyTickUpdate()
+        private void OnUpdate()
         {
-            _currentTime += TickManager.Instance.TickInterval;
-
             SpawnRandomEnemies(GetEnemySpawnCount());
         }
 
@@ -68,6 +74,8 @@ namespace AdventureAssembly.Units.Enemies
 
         private void SpawnRandomEnemies(int count)
         {
+            Debug.Log($"Spawning {count} enemie(s)!");
+
             List<EnemyData> enemyData = GetRandomEnemyData(count);
 
             foreach (EnemyData enemy in enemyData)
