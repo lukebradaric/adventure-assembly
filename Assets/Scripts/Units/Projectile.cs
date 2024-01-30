@@ -22,11 +22,33 @@ namespace AdventureAssembly.Units
 
         public Vector2 MoveDirection { get; protected set; }
 
-        public void Initialize(Hero hero, Unit targetUnit, int baseDamage)
+        // This Ititalize homes to a set target.
+        public void Initialize(Hero hero, int baseDamage, Unit targetUnit)
         {
             this.Hero = hero;
-            this.TargetUnit = targetUnit;
             this.BaseDamage = baseDamage;
+            this.TargetUnit = targetUnit;
+        }
+
+        // This Intialize doesn't need a target, instead it moves in the direction we give it.
+        public void Initialize(Hero hero, int baseDamage, Vector2 direction)
+        {
+            this.Hero = hero;
+            this.BaseDamage = baseDamage;
+            this.TargetUnit = null;
+    
+            SetMoveDirection(direction);
+        }
+
+        public void SetMoveDirection(Vector2 direction)
+        {
+            MoveDirection = direction.normalized;
+
+            // Face the top of the projectile towards the direction we want it to go
+            transform.up = MoveDirection;
+
+            // Set projectile speed
+            _rigidbody.velocity = MoveDirection * _speed;
         }
 
         private void FixedUpdate()
@@ -36,9 +58,7 @@ namespace AdventureAssembly.Units
                 return;
             }
 
-            MoveDirection = (TargetUnit.transform.position - transform.position).normalized;
-            transform.up = MoveDirection;
-            _rigidbody.velocity = MoveDirection * _speed;
+            SetMoveDirection((TargetUnit.transform.position - transform.position));
         }
 
         private void OnTriggerEnter2D(Collider2D collider)
