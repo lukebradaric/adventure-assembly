@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using AdventureAssembly.Units.Enemies;
 using UnityEngine;
 
-namespace AdventureAssembly.Units.Abilities{
+namespace AdventureAssembly.Units.Abilities
+{
     
     public class SpellThiefAbility : Ability
     {
