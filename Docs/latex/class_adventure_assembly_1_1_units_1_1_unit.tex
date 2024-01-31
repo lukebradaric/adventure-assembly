@@ -9,24 +9,26 @@ Inheritance diagram for Adventure\+Assembly.\+Units.\+Unit\+:\begin{figure}[H]
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{class_adventure_assembly_1_1_units_1_1_unit_acf5840ae70dc7d8b514b1d48e3ae906f}\label{class_adventure_assembly_1_1_units_1_1_unit_acf5840ae70dc7d8b514b1d48e3ae906f} 
-virtual void {\bfseries Initialize} (\mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_unit_data}{Unit\+Data}} unit\+Data, Vector2\+Int position)
+virtual void \mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_unit_acf5840ae70dc7d8b514b1d48e3ae906f}{Initialize}} (\mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_unit_data}{Unit\+Data}} unit\+Data, Vector2\+Int position)
+\begin{DoxyCompactList}\small\item\em Initializes this unit with data and a position. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_unit_a2ff1fb6e8c612f7a7aa681d67c652b1a}{Move}} (Vector2\+Int direction)
+\begin{DoxyCompactList}\small\item\em Moves this unit in a direction. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_unit_a9d21459bedf8307516c28a02a97e6f68}{Take\+Damage}} (\mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_damage_data}{Damage\+Data}} damage\+Data)
+\begin{DoxyCompactList}\small\item\em Causes this unit to take damage. Damage\+Data must be calculate beforehand. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_unit_a4ffdf49e62850ce9e51d669004a4b499}{Die}} ()
+\begin{DoxyCompactList}\small\item\em Kills this unit. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_unit_aed49f829ffff64b58847a7c158a57392}{Flip\+Sprite}} (int x)
+\begin{DoxyCompactList}\small\item\em Flips this units sprite to a specific direction. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_unit_aea72e9754ddba7da62420b73a621b419}{On\+Update}} (float time)
+\begin{DoxyCompactList}\small\item\em Called on the unit update interval. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
 \item 
-\Hypertarget{class_adventure_assembly_1_1_units_1_1_unit_aea72e9754ddba7da62420b73a621b419}\label{class_adventure_assembly_1_1_units_1_1_unit_aea72e9754ddba7da62420b73a621b419} 
-virtual void {\bfseries On\+Update} (float time)
-\item 
-\Hypertarget{class_adventure_assembly_1_1_units_1_1_unit_a2ff1fb6e8c612f7a7aa681d67c652b1a}\label{class_adventure_assembly_1_1_units_1_1_unit_a2ff1fb6e8c612f7a7aa681d67c652b1a} 
-virtual void {\bfseries Move} (Vector2\+Int direction)
-\item 
-\Hypertarget{class_adventure_assembly_1_1_units_1_1_unit_a45f62d207097560cd028e3c5eab7c091}\label{class_adventure_assembly_1_1_units_1_1_unit_a45f62d207097560cd028e3c5eab7c091} 
-virtual void {\bfseries Damage} (\mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_damage_data}{Damage\+Data}} damage\+Data)
-\item 
-\Hypertarget{class_adventure_assembly_1_1_units_1_1_unit_a4ffdf49e62850ce9e51d669004a4b499}\label{class_adventure_assembly_1_1_units_1_1_unit_a4ffdf49e62850ce9e51d669004a4b499} 
-virtual void {\bfseries Die} ()
-\item 
-\Hypertarget{class_adventure_assembly_1_1_units_1_1_unit_aed49f829ffff64b58847a7c158a57392}\label{class_adventure_assembly_1_1_units_1_1_unit_aed49f829ffff64b58847a7c158a57392} 
-virtual void {\bfseries Flip\+Sprite} (int x)
-\end{DoxyCompactItemize}
+virtual void \mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_unit_ae9ae0bfe01101a26aad5d2491d035b5e}{On\+Take\+Damage}} (\mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_damage_data}{Damage\+Data}} damage\+Data)
+\begin{DoxyCompactList}\small\item\em Called when this unit takes damage. Called after damage is applied. \end{DoxyCompactList}\item 
+\Hypertarget{class_adventure_assembly_1_1_units_1_1_unit_aafaa2562c1c70c472b56689907ee844f}\label{class_adventure_assembly_1_1_units_1_1_unit_aafaa2562c1c70c472b56689907ee844f} 
+virtual void {\bfseries On\+Die} ()
+\begin{DoxyCompactList}\small\item\em Called when this unit dies. Called after death event is invoked. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Properties}
 \begin{DoxyCompactItemize}
 \item 
@@ -42,14 +44,17 @@ virtual \mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_unit_stats}{Unit
 \Hypertarget{class_adventure_assembly_1_1_units_1_1_unit_abe54923d5a5d0f38c84454dd7d61e19d}\label{class_adventure_assembly_1_1_units_1_1_unit_abe54923d5a5d0f38c84454dd7d61e19d} 
 int {\bfseries Current\+Health}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
 \item 
+\Hypertarget{class_adventure_assembly_1_1_units_1_1_unit_aeb6dedf5a847c7da814b16195cca0c48}\label{class_adventure_assembly_1_1_units_1_1_unit_aeb6dedf5a847c7da814b16195cca0c48} 
+bool {\bfseries Is\+Dead} = false\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\item 
+\Hypertarget{class_adventure_assembly_1_1_units_1_1_unit_ab89fa6afb04b9f78aef51217192b9af3}\label{class_adventure_assembly_1_1_units_1_1_unit_ab89fa6afb04b9f78aef51217192b9af3} 
+\mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_damage_data}{Damage\+Data}} {\bfseries Last\+Damage\+Taken} = null\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The last Damage\+Data that this unit took. Null by default. \end{DoxyCompactList}\item 
 \Hypertarget{class_adventure_assembly_1_1_units_1_1_unit_ac0ba4f9e48f1e5054b8e5c9912c1e86a}\label{class_adventure_assembly_1_1_units_1_1_unit_ac0ba4f9e48f1e5054b8e5c9912c1e86a} 
 Vector2\+Int {\bfseries Position} = Vector2\+Int.\+zero\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
 \item 
 \Hypertarget{class_adventure_assembly_1_1_units_1_1_unit_a9afb5a52cef8d77760a0b7472fa71424}\label{class_adventure_assembly_1_1_units_1_1_unit_a9afb5a52cef8d77760a0b7472fa71424} 
 Vector2\+Int {\bfseries Last\+Position}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
-\item 
-\Hypertarget{class_adventure_assembly_1_1_units_1_1_unit_aeb6dedf5a847c7da814b16195cca0c48}\label{class_adventure_assembly_1_1_units_1_1_unit_aeb6dedf5a847c7da814b16195cca0c48} 
-bool {\bfseries Is\+Dead} = false\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
 \end{DoxyCompactItemize}
 \doxysubsubsection*{Events}
 \begin{DoxyCompactItemize}
@@ -57,6 +62,127 @@ bool {\bfseries Is\+Dead} = false\hspace{0.3cm}{\ttfamily  \mbox{[}get, protecte
 \Hypertarget{class_adventure_assembly_1_1_units_1_1_unit_aedb81657370d6a615ea461e04ee9ed89}\label{class_adventure_assembly_1_1_units_1_1_unit_aedb81657370d6a615ea461e04ee9ed89} 
 Action$<$ \mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_unit}{Unit}} $>$ {\bfseries Died}
 \end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_adventure_assembly_1_1_units_1_1_unit_a4ffdf49e62850ce9e51d669004a4b499}\label{class_adventure_assembly_1_1_units_1_1_unit_a4ffdf49e62850ce9e51d669004a4b499} 
+\index{AdventureAssembly.Units.Unit@{AdventureAssembly.Units.Unit}!Die@{Die}}
+\index{Die@{Die}!AdventureAssembly.Units.Unit@{AdventureAssembly.Units.Unit}}
+\doxysubsubsection{\texorpdfstring{Die()}{Die()}}
+{\footnotesize\ttfamily virtual void Adventure\+Assembly.\+Units.\+Unit.\+Die (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Kills this unit. 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_a4f23dfed60ba1b400f1aeb88eaad251c}{Adventure\+Assembly.\+Units.\+Enemies.\+Enemy}}, and \mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_aea23a411b8f806212073a7187cabf8e4}{Adventure\+Assembly.\+Units.\+Heroes.\+Hero}}.
+
+\Hypertarget{class_adventure_assembly_1_1_units_1_1_unit_aed49f829ffff64b58847a7c158a57392}\label{class_adventure_assembly_1_1_units_1_1_unit_aed49f829ffff64b58847a7c158a57392} 
+\index{AdventureAssembly.Units.Unit@{AdventureAssembly.Units.Unit}!FlipSprite@{FlipSprite}}
+\index{FlipSprite@{FlipSprite}!AdventureAssembly.Units.Unit@{AdventureAssembly.Units.Unit}}
+\doxysubsubsection{\texorpdfstring{FlipSprite()}{FlipSprite()}}
+{\footnotesize\ttfamily virtual void Adventure\+Assembly.\+Units.\+Unit.\+Flip\+Sprite (\begin{DoxyParamCaption}\item[{int}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Flips this units sprite to a specific direction. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The direction to flip. x \texorpdfstring{$>$}{>} 0 = right, x \texorpdfstring{$<$}{<} 0 = left\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_adventure_assembly_1_1_units_1_1_unit_acf5840ae70dc7d8b514b1d48e3ae906f}\label{class_adventure_assembly_1_1_units_1_1_unit_acf5840ae70dc7d8b514b1d48e3ae906f} 
+\index{AdventureAssembly.Units.Unit@{AdventureAssembly.Units.Unit}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!AdventureAssembly.Units.Unit@{AdventureAssembly.Units.Unit}}
+\doxysubsubsection{\texorpdfstring{Initialize()}{Initialize()}}
+{\footnotesize\ttfamily virtual void Adventure\+Assembly.\+Units.\+Unit.\+Initialize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_unit_data}{Unit\+Data}}}]{unit\+Data,  }\item[{Vector2\+Int}]{position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Initializes this unit with data and a position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em unit\+Data} & The Unit\+Data for this unit to use.\\
+\hline
+{\em position} & The starting position of this unit\\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_a4b320d4e4e24ca4a2fc3484d54f131ea}{Adventure\+Assembly.\+Units.\+Enemies.\+Enemy}}, and \mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_ab4f1154d51a9c8910966ab1b716885eb}{Adventure\+Assembly.\+Units.\+Heroes.\+Hero}}.
+
+\Hypertarget{class_adventure_assembly_1_1_units_1_1_unit_a2ff1fb6e8c612f7a7aa681d67c652b1a}\label{class_adventure_assembly_1_1_units_1_1_unit_a2ff1fb6e8c612f7a7aa681d67c652b1a} 
+\index{AdventureAssembly.Units.Unit@{AdventureAssembly.Units.Unit}!Move@{Move}}
+\index{Move@{Move}!AdventureAssembly.Units.Unit@{AdventureAssembly.Units.Unit}}
+\doxysubsubsection{\texorpdfstring{Move()}{Move()}}
+{\footnotesize\ttfamily virtual void Adventure\+Assembly.\+Units.\+Unit.\+Move (\begin{DoxyParamCaption}\item[{Vector2\+Int}]{direction }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Moves this unit in a direction. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em direction} & The direction to move this unit.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_adventure_assembly_1_1_units_1_1_unit_ae9ae0bfe01101a26aad5d2491d035b5e}\label{class_adventure_assembly_1_1_units_1_1_unit_ae9ae0bfe01101a26aad5d2491d035b5e} 
+\index{AdventureAssembly.Units.Unit@{AdventureAssembly.Units.Unit}!OnTakeDamage@{OnTakeDamage}}
+\index{OnTakeDamage@{OnTakeDamage}!AdventureAssembly.Units.Unit@{AdventureAssembly.Units.Unit}}
+\doxysubsubsection{\texorpdfstring{OnTakeDamage()}{OnTakeDamage()}}
+{\footnotesize\ttfamily virtual void Adventure\+Assembly.\+Units.\+Unit.\+On\+Take\+Damage (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_damage_data}{Damage\+Data}}}]{damage\+Data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Called when this unit takes damage. Called after damage is applied. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em damage\+Data} & The Damage\+Data that this unit took.\\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_a6c1a082e5af64ce2574e58cec0fb6328}{Adventure\+Assembly.\+Units.\+Enemies.\+Enemy}}.
+
+\Hypertarget{class_adventure_assembly_1_1_units_1_1_unit_aea72e9754ddba7da62420b73a621b419}\label{class_adventure_assembly_1_1_units_1_1_unit_aea72e9754ddba7da62420b73a621b419} 
+\index{AdventureAssembly.Units.Unit@{AdventureAssembly.Units.Unit}!OnUpdate@{OnUpdate}}
+\index{OnUpdate@{OnUpdate}!AdventureAssembly.Units.Unit@{AdventureAssembly.Units.Unit}}
+\doxysubsubsection{\texorpdfstring{OnUpdate()}{OnUpdate()}}
+{\footnotesize\ttfamily virtual void Adventure\+Assembly.\+Units.\+Unit.\+On\+Update (\begin{DoxyParamCaption}\item[{float}]{time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Called on the unit update interval. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & The time between updates.\\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_a42378eba3287f826ffe33cc27021cf6e}{Adventure\+Assembly.\+Units.\+Heroes.\+Hero}}.
+
+\Hypertarget{class_adventure_assembly_1_1_units_1_1_unit_a9d21459bedf8307516c28a02a97e6f68}\label{class_adventure_assembly_1_1_units_1_1_unit_a9d21459bedf8307516c28a02a97e6f68} 
+\index{AdventureAssembly.Units.Unit@{AdventureAssembly.Units.Unit}!TakeDamage@{TakeDamage}}
+\index{TakeDamage@{TakeDamage}!AdventureAssembly.Units.Unit@{AdventureAssembly.Units.Unit}}
+\doxysubsubsection{\texorpdfstring{TakeDamage()}{TakeDamage()}}
+{\footnotesize\ttfamily virtual void Adventure\+Assembly.\+Units.\+Unit.\+Take\+Damage (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_damage_data}{Damage\+Data}}}]{damage\+Data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Causes this unit to take damage. Damage\+Data must be calculate beforehand. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em damage\+Data} & The Damage\+Data to deal to this unit.\\
+\hline
+\end{DoxyParams}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

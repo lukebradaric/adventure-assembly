@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['goldinterface_0',['GoldInterface',['../class_adventure_assembly_1_1_interface_1_1_gold_interface.html',1,'AdventureAssembly::Interface']]],
-  ['goldmanager_1',['GoldManager',['../class_adventure_assembly_1_1_core_1_1_gold_manager.html',1,'AdventureAssembly::Core']]]
+  ['flipsprite_0',['FlipSprite',['../class_adventure_assembly_1_1_units_1_1_unit.html#aed49f829ffff64b58847a7c158a57392',1,'AdventureAssembly::Units::Unit']]]
 ];

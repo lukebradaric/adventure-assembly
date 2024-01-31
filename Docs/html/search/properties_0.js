@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['currentgold_0',['CurrentGold',['../class_adventure_assembly_1_1_core_1_1_gold_manager.html#a5d86e6053d11d4f10777ae9cc67a033b',1,'AdventureAssembly::Core::GoldManager']]]
+  ['basevalue_0',['BaseValue',['../class_adventure_assembly_1_1_units_1_1_damage_data.html#a1d3dd679c2cdd652226ad87c5337ebad',1,'AdventureAssembly::Units::DamageData']]]
 ];

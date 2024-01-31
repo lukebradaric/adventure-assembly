@@ -680,17 +680,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 45d296dc0520eba4294511ed092eca5f, type: 2}
   - {fileID: 11400000, guid: 634ae0fe27a4606498e364ed387ab4e3, type: 2}
   - {fileID: 11400000, guid: 54f52912655b6c140bb6eeaffe9731bc, type: 2}
---- !u!114 &1043925131 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3213923293646680723, guid: e450e852feb5a7c41ad1cd4f12ff1f3e, type: 3}
-  m_PrefabInstance: {fileID: 626106776973342897}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b2692a6491d1cc4ba1811d8b52298f7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1113050846
 GameObject:
   m_ObjectHideFlags: 0
@@ -906,10 +895,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerPrefab
       objectReference: {fileID: 0}
-    - target: {fileID: 2721008306345571318, guid: e450e852feb5a7c41ad1cd4f12ff1f3e, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3213923293646680723, guid: e450e852feb5a7c41ad1cd4f12ff1f3e, type: 3}
       propertyPath: serializationData.Prefab
       value: 
@@ -923,17 +908,9 @@ PrefabInstance:
       value: '"path":"UpdateInterval","value":{"$id":0,"$type":"System.Single, mscorlib",0.1}'
       objectReference: {fileID: 0}
     - target: {fileID: 3213923293646680723, guid: e450e852feb5a7c41ad1cd4f12ff1f3e, type: 3}
-      propertyPath: serializationData.PrefabModificationsReferencedUnityObjects.Array.size
-      value: 0
+      propertyPath: serializationData.SerializationNodes.Array.data[0].Data
+      value: 0.1
       objectReference: {fileID: 0}
-    - target: {fileID: 5428801609344274336, guid: e450e852feb5a7c41ad1cd4f12ff1f3e, type: 3}
-      propertyPath: m_SortingOrder
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5471210707774386764, guid: e450e852feb5a7c41ad1cd4f12ff1f3e, type: 3}
-      propertyPath: _heroManager
-      value: 
-      objectReference: {fileID: 1043925131}
     - target: {fileID: 5881971965238946979, guid: e450e852feb5a7c41ad1cd4f12ff1f3e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

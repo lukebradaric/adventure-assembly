@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3335121298453384356}
   - component: {fileID: 9053408658122590034}
   m_Layer: 0
-  m_Name: ProjectilePrefab
+  m_Name: CutthroatProjectilePrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

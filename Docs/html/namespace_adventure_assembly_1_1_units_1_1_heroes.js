@@ -3,7 +3,7 @@ var namespace_adventure_assembly_1_1_units_1_1_heroes =
     [ "ClassData", "class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_data.html", null ],
     [ "ClassManager", "class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_manager.html", null ],
     [ "ClassModifier", "class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_modifier.html", null ],
-    [ "Hero", "class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero.html", null ],
+    [ "Hero", "class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero.html", "class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero" ],
     [ "HeroData", "class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_data.html", null ],
     [ "HeroDataListScriptableVariable", "class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_data_list_scriptable_variable.html", null ],
     [ "HeroIndicator", "class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_indicator.html", null ],

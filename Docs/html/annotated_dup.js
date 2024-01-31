@@ -19,6 +19,8 @@ var annotated_dup =
         [ "InputManager", "class_adventure_assembly_1_1_input_1_1_input_manager.html", null ]
       ] ],
       [ "Interface", "namespace_adventure_assembly_1_1_interface.html", [
+        [ "DamageTextElement", "class_adventure_assembly_1_1_interface_1_1_damage_text_element.html", "class_adventure_assembly_1_1_interface_1_1_damage_text_element" ],
+        [ "DamageTextInterface", "class_adventure_assembly_1_1_interface_1_1_damage_text_interface.html", null ],
         [ "GoldInterface", "class_adventure_assembly_1_1_interface_1_1_gold_interface.html", null ],
         [ "HeroClassElement", "class_adventure_assembly_1_1_interface_1_1_hero_class_element.html", null ],
         [ "HeroSelectionElement", "class_adventure_assembly_1_1_interface_1_1_hero_selection_element.html", null ],
@@ -43,10 +45,11 @@ var annotated_dup =
         ] ],
         [ "Enemies", "namespace_adventure_assembly_1_1_units_1_1_enemies.html", [
           [ "DefaultEnemyNavigation", "class_adventure_assembly_1_1_units_1_1_enemies_1_1_default_enemy_navigation.html", null ],
-          [ "Enemy", "class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy.html", null ],
+          [ "Enemy", "class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy.html", "class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy" ],
           [ "EnemyData", "class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_data.html", null ],
           [ "EnemyManager", "class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_manager.html", null ],
           [ "EnemyNavigation", "class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_navigation.html", null ],
+          [ "EnemyScriptableEvent", "class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_scriptable_event.html", null ],
           [ "EnemySpawner", "class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_spawner.html", null ],
           [ "EnemyStats", "class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_stats.html", null ]
         ] ],
@@ -54,7 +57,7 @@ var annotated_dup =
           [ "ClassData", "class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_data.html", null ],
           [ "ClassManager", "class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_manager.html", null ],
           [ "ClassModifier", "class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_modifier.html", null ],
-          [ "Hero", "class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero.html", null ],
+          [ "Hero", "class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero.html", "class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero" ],
           [ "HeroData", "class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_data.html", null ],
           [ "HeroDataListScriptableVariable", "class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_data_list_scriptable_variable.html", null ],
           [ "HeroIndicator", "class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_indicator.html", null ],
@@ -74,11 +77,11 @@ var annotated_dup =
           [ "TestClassModifier", "class_adventure_assembly_1_1_units_1_1_tests_1_1_test_class_modifier.html", null ],
           [ "TestEnemyModifier", "class_adventure_assembly_1_1_units_1_1_tests_1_1_test_enemy_modifier.html", null ]
         ] ],
-        [ "DamageData", "class_adventure_assembly_1_1_units_1_1_damage_data.html", null ],
+        [ "DamageData", "class_adventure_assembly_1_1_units_1_1_damage_data.html", "class_adventure_assembly_1_1_units_1_1_damage_data" ],
         [ "Projectile", "class_adventure_assembly_1_1_units_1_1_projectile.html", null ],
         [ "Stat", "class_adventure_assembly_1_1_units_1_1_stat.html", null ],
         [ "StatModifier", "class_adventure_assembly_1_1_units_1_1_stat_modifier.html", null ],
-        [ "Unit", "class_adventure_assembly_1_1_units_1_1_unit.html", null ],
+        [ "Unit", "class_adventure_assembly_1_1_units_1_1_unit.html", "class_adventure_assembly_1_1_units_1_1_unit" ],
         [ "UnitData", "class_adventure_assembly_1_1_units_1_1_unit_data.html", null ],
         [ "UnitManager", "class_adventure_assembly_1_1_units_1_1_unit_manager.html", null ],
         [ "UnitStats", "class_adventure_assembly_1_1_units_1_1_unit_stats.html", null ]

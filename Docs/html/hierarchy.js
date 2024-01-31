@@ -28,6 +28,8 @@ var hierarchy =
         [ "AdventureAssembly.Debug.DebugOpenChest", "class_adventure_assembly_1_1_debug_1_1_debug_open_chest.html", null ]
       ] ],
       [ "AdventureAssembly.Input.InputManager", "class_adventure_assembly_1_1_input_1_1_input_manager.html", null ],
+      [ "AdventureAssembly.Interface.DamageTextElement", "class_adventure_assembly_1_1_interface_1_1_damage_text_element.html", null ],
+      [ "AdventureAssembly.Interface.DamageTextInterface", "class_adventure_assembly_1_1_interface_1_1_damage_text_interface.html", null ],
       [ "AdventureAssembly.Interface.GoldInterface", "class_adventure_assembly_1_1_interface_1_1_gold_interface.html", null ],
       [ "AdventureAssembly.Interface.HeroClassElement", "class_adventure_assembly_1_1_interface_1_1_hero_class_element.html", null ],
       [ "AdventureAssembly.Interface.HeroSelectionElement", "class_adventure_assembly_1_1_interface_1_1_hero_selection_element.html", null ],
@@ -38,6 +40,9 @@ var hierarchy =
       [ "AdventureAssembly.Units.Heroes.HeroIndicator", "class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_indicator.html", null ],
       [ "AdventureAssembly.Units.Heroes.HeroSelectionStart", "class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_selection_start.html", null ],
       [ "AdventureAssembly.Units.Projectile", "class_adventure_assembly_1_1_units_1_1_projectile.html", null ]
+    ] ],
+    [ "ScriptableEvent", null, [
+      [ "AdventureAssembly.Units.Enemies.EnemyScriptableEvent", "class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_scriptable_event.html", null ]
     ] ],
     [ "ScriptableVariable", null, [
       [ "AdventureAssembly.Units.Heroes.HeroDataListScriptableVariable", "class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_data_list_scriptable_variable.html", null ]

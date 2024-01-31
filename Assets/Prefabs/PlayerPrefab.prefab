@@ -50,78 +50,21 @@ MonoBehaviour:
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 
-    ReferencedUnityObjects:
-    - {fileID: 11400000, guid: 634ae0fe27a4606498e364ed387ab4e3, type: 2}
-    - {fileID: 11400000, guid: 54f52912655b6c140bb6eeaffe9731bc, type: 2}
-    - {fileID: 11400000, guid: 45d296dc0520eba4294511ed092eca5f, type: 2}
+    ReferencedUnityObjects: []
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes:
-    - Name: Heroes
-      Entry: 7
-      Data: 0|System.Collections.Generic.List`1[[AdventureAssembly.Units.Heroes.Hero,
-        AdventureAssembly.Units]], mscorlib
-    - Name: 
-      Entry: 12
-      Data: 0
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
+    - Name: UpdateInterval
+      Entry: 4
+      Data: 0.1
     - Name: HazardLayerMask
       Entry: 7
       Data: UnityEngine.LayerMask, UnityEngine.CoreModule
     - Name: 
       Entry: 3
       Data: 64
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: _startingHeroes
-      Entry: 7
-      Data: 1|System.Collections.Generic.List`1[[AdventureAssembly.Units.Heroes.HeroData,
-        AdventureAssembly.Units]], mscorlib
-    - Name: 
-      Entry: 12
-      Data: 3
-    - Name: 
-      Entry: 10
-      Data: 0
-    - Name: 
-      Entry: 10
-      Data: 1
-    - Name: 
-      Entry: 10
-      Data: 2
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: _debugAddHeroes
-      Entry: 7
-      Data: 2|System.Collections.Generic.List`1[[AdventureAssembly.Units.Heroes.HeroData,
-        AdventureAssembly.Units]], mscorlib
-    - Name: 
-      Entry: 12
-      Data: 3
-    - Name: 
-      Entry: 10
-      Data: 0
-    - Name: 
-      Entry: 10
-      Data: 1
-    - Name: 
-      Entry: 10
-      Data: 2
-    - Name: 
-      Entry: 13
-      Data: 
     - Name: 
       Entry: 8
       Data: 
@@ -138,7 +81,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c64c8027eeafe14419040fe59f297b1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _player: {fileID: 3213923293646680723}
+  _heroManager: {fileID: 3213923293646680723}
   _indicatorTransform: {fileID: 2409160707422846549}
   _indicatorSpriteTransform: {fileID: 6425545979937016736}
   _indicatorLineRenderer: {fileID: 5428801609344274336}
@@ -217,7 +160,7 @@ LineRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -690112537
   m_SortingLayer: -1
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Positions: []
   m_Parameters:
     serializedVersion: 3

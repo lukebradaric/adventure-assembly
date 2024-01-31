@@ -10,20 +10,20 @@ Inheritance diagram for Adventure\+Assembly.\+Units.\+Heroes.\+Hero\+:\begin{fig
 \begin{DoxyCompactItemize}
 \item 
 override void \mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_ab4f1154d51a9c8910966ab1b716885eb}{Initialize}} (\mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_unit_data}{Unit\+Data}} unit\+Data, Vector2\+Int position)
-\item 
+\begin{DoxyCompactList}\small\item\em Initializes this unit with data and a position. \end{DoxyCompactList}\item 
 override void \mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_aea23a411b8f806212073a7187cabf8e4}{Die}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Kills this unit. \end{DoxyCompactList}\item 
 override void \mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_a42378eba3287f826ffe33cc27021cf6e}{On\+Update}} (float time)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Called on the unit update interval. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_unit}{Adventure\+Assembly.\+Units.\+Unit}}}
 \begin{DoxyCompactItemize}
 \item 
-virtual void {\bfseries Move} (Vector2\+Int direction)
-\item 
-virtual void {\bfseries Damage} (\mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_damage_data}{Damage\+Data}} damage\+Data)
-\item 
-virtual void {\bfseries Flip\+Sprite} (int x)
-\end{DoxyCompactItemize}
+virtual void \mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_unit_a2ff1fb6e8c612f7a7aa681d67c652b1a}{Move}} (Vector2\+Int direction)
+\begin{DoxyCompactList}\small\item\em Moves this unit in a direction. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_unit_a9d21459bedf8307516c28a02a97e6f68}{Take\+Damage}} (\mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_damage_data}{Damage\+Data}} damage\+Data)
+\begin{DoxyCompactList}\small\item\em Causes this unit to take damage. Damage\+Data must be calculate beforehand. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_unit_aed49f829ffff64b58847a7c158a57392}{Flip\+Sprite}} (int x)
+\begin{DoxyCompactList}\small\item\em Flips this units sprite to a specific direction. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Properties}
 \begin{DoxyCompactItemize}
 \item 
@@ -47,13 +47,22 @@ virtual \mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_unit_stats}{Unit
 \item 
 int {\bfseries Current\+Health}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
 \item 
+bool {\bfseries Is\+Dead} = false\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\item 
+\mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_damage_data}{Damage\+Data}} {\bfseries Last\+Damage\+Taken} = null\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The last Damage\+Data that this unit took. Null by default. \end{DoxyCompactList}\item 
 Vector2\+Int {\bfseries Position} = Vector2\+Int.\+zero\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
 \item 
 Vector2\+Int {\bfseries Last\+Position}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
-\item 
-bool {\bfseries Is\+Dead} = false\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
 \end{DoxyCompactItemize}
 \doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_unit}{Adventure\+Assembly.\+Units.\+Unit}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_unit_ae9ae0bfe01101a26aad5d2491d035b5e}{On\+Take\+Damage}} (\mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_damage_data}{Damage\+Data}} damage\+Data)
+\begin{DoxyCompactList}\small\item\em Called when this unit takes damage. Called after damage is applied. \end{DoxyCompactList}\item 
+virtual void {\bfseries On\+Die} ()
+\begin{DoxyCompactList}\small\item\em Called when this unit dies. Called after death event is invoked. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Events inherited from \mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_unit}{Adventure\+Assembly.\+Units.\+Unit}}}
 \begin{DoxyCompactItemize}
 \item 
@@ -70,7 +79,11 @@ Action$<$ \mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_unit}{Unit}} $
 
 
 
-Reimplemented from \mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_unit}{Adventure\+Assembly.\+Units.\+Unit}}.
+Kills this unit. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_unit_a4ffdf49e62850ce9e51d669004a4b499}{Adventure\+Assembly.\+Units.\+Unit}}.
 
 \Hypertarget{class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_ab4f1154d51a9c8910966ab1b716885eb}\label{class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_ab4f1154d51a9c8910966ab1b716885eb} 
 \index{AdventureAssembly.Units.Heroes.Hero@{AdventureAssembly.Units.Heroes.Hero}!Initialize@{Initialize}}
@@ -80,7 +93,18 @@ Reimplemented from \mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_unit}
 
 
 
-Reimplemented from \mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_unit}{Adventure\+Assembly.\+Units.\+Unit}}.
+Initializes this unit with data and a position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em unit\+Data} & The Unit\+Data for this unit to use.\\
+\hline
+{\em position} & The starting position of this unit\\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_unit_acf5840ae70dc7d8b514b1d48e3ae906f}{Adventure\+Assembly.\+Units.\+Unit}}.
 
 \Hypertarget{class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_a42378eba3287f826ffe33cc27021cf6e}\label{class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_a42378eba3287f826ffe33cc27021cf6e} 
 \index{AdventureAssembly.Units.Heroes.Hero@{AdventureAssembly.Units.Heroes.Hero}!OnUpdate@{OnUpdate}}
@@ -90,7 +114,16 @@ Reimplemented from \mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_unit}
 
 
 
-Reimplemented from \mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_unit}{Adventure\+Assembly.\+Units.\+Unit}}.
+Called on the unit update interval. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & The time between updates.\\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_unit_aea72e9754ddba7da62420b73a621b419}{Adventure\+Assembly.\+Units.\+Unit}}.
 
 
 
