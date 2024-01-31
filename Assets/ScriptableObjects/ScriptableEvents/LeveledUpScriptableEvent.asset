@@ -10,6 +10,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f57bfac30102d0a40a60ebf2c1edbe93, type: 3}
-  m_Name: OpenHeroChestScriptableEvent
+  m_Name: LeveledUpScriptableEvent
   m_EditorClassIdentifier: 
-  _description: The event fired when a hero chest is opened.
+  _description: The event fired when the player levels up from experience.

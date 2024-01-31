@@ -11,7 +11,7 @@ namespace AdventureAssembly.Core
     {
         [Space]
         [Header("Events")]
-        [SerializeField] private VoidScriptableEvent _openHeroChestScriptableEvent;
+        [SerializeField] private VoidScriptableEvent _leveledUpScriptableEvent;
 
         [Space]
         [Header("Debugging")]
@@ -31,7 +31,7 @@ namespace AdventureAssembly.Core
             if (newLevel != currentLevel)
             {
                 currentLevel = newLevel;
-                _openHeroChestScriptableEvent?.Raise();
+                _leveledUpScriptableEvent?.Invoke();
             }
         }
     }

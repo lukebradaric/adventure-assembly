@@ -16,7 +16,7 @@ namespace AdventureAssembly.Interface
     {
         [Space]
         [Header("Events")]
-        [SerializeField] private VoidScriptableEvent _openHeroChestScriptableEvent;
+        [SerializeField] private VoidScriptableEvent _chestOpenedScriptableEvent;
 
         [Space]
         [Header("Prefabs")]
@@ -41,12 +41,12 @@ namespace AdventureAssembly.Interface
 
         private void OnEnable()
         {
-            _openHeroChestScriptableEvent.VoidEvent += OnOpenHeroChest;
+            _chestOpenedScriptableEvent.VoidEvent += OnOpenHeroChest;
         }
 
         private void OnDisable()
         {
-            _openHeroChestScriptableEvent.VoidEvent -= OnOpenHeroChest;
+            _chestOpenedScriptableEvent.VoidEvent -= OnOpenHeroChest;
         }
 
         private void OnOpenHeroChest()

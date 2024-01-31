@@ -93,6 +93,11 @@ namespace AdventureAssembly.Units.Heroes
                 startPosition = new Vector2Int((int)transform.position.x, (int)transform.position.y);
             }
 
+            if (GridManager.TryGetObject(startPosition, out GameObject gm) && gm.TryGetComponent<Chest>(out Chest chest))
+            {
+                chest.OnCollect();
+            }
+
             // Move the head position
             transform.DOMove((Vector2)startPosition, TickManager.Instance.TickInterval).SetEase(Ease.OutCubic);
 

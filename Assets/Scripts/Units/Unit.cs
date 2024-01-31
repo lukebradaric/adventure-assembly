@@ -41,6 +41,8 @@ namespace AdventureAssembly.Units
             this.Stats.Initialize(this);
             this.CurrentHealth = Stats.GetMaxHealth();
 
+            GridManager.AddPosition(this.Position, gameObject);
+
             SpriteRenderer.sprite = UnitData.Sprite;
             name = $"{UnitData.Name}";
         }
@@ -56,6 +58,8 @@ namespace AdventureAssembly.Units
 
             // Update new position
             Position += direction;
+
+            GridManager.UpdatePosition(LastPosition, Position, gameObject);
 
             // Flip sprite to face movement
             this.FlipSprite(direction.x);
@@ -91,6 +95,7 @@ namespace AdventureAssembly.Units
         {
             IsDead = true;
             Died?.Invoke(this);
+            GridManager.RemovePosition(this.Position, gameObject);
             OnDie();
         }
 
