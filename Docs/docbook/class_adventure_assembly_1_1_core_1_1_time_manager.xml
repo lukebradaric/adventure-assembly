@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_adventure_assembly_1_1_core_1_1_time_manager" xml:lang="en-US">
+<title>AdventureAssembly.Core.TimeManager Class Reference</title>
+<indexterm><primary>AdventureAssembly.Core.TimeManager</primary></indexterm>
+<para>Inheritance diagram for AdventureAssembly.Core.TimeManager:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_adventure_assembly_1_1_core_1_1_time_manager.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>static void <link linkend="_class_adventure_assembly_1_1_core_1_1_time_manager_1afd407f4f20376c0a9cb81c2d2ea70303">Pause</link> ()</para>
+</listitem>
+            <listitem><para>static void <link linkend="_class_adventure_assembly_1_1_core_1_1_time_manager_1aa50b76fb213f82e78c2f6576073b7af1">Unpause</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_adventure_assembly_1_1_core_1_1_time_manager_1afd407f4f20376c0a9cb81c2d2ea70303"/><section>
+    <title>Pause()</title>
+<indexterm><primary>Pause</primary><secondary>AdventureAssembly.Core.TimeManager</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Core.TimeManager</primary><secondary>Pause</secondary></indexterm>
+<para><computeroutput>static void AdventureAssembly.Core.TimeManager.Pause ( )<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_adventure_assembly_1_1_core_1_1_time_manager_1aa50b76fb213f82e78c2f6576073b7af1"/><section>
+    <title>Unpause()</title>
+<indexterm><primary>Unpause</primary><secondary>AdventureAssembly.Core.TimeManager</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Core.TimeManager</primary><secondary>Unpause</secondary></indexterm>
+<para><computeroutput>static void AdventureAssembly.Core.TimeManager.Unpause ( )<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+D:/Unity/Projects/adventure-assembly/Assets/Scripts/Core/<link linkend="__time_manager_8cs">TimeManager.cs</link></section>
+</section>

@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespace_adventure_assembly_1_1_tests" xml:lang="en-US">
+<title>AdventureAssembly.Tests Namespace Reference</title>
+<indexterm><primary>AdventureAssembly.Tests</primary></indexterm>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespace_adventure_assembly_1_1_tests_1_1_play_mode">PlayMode</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="dir_7db68f476bd50f9f6d9cf398af037e8e" kind="dir">
+    <compoundname>D:/Unity/Projects/adventure-assembly/Assets/Scripts/Core</compoundname>
+    <innerdir refid="dir_85cdf9ebbd5a3fb7d275a2b04dcb32c8">D:/Unity/Projects/adventure-assembly/Assets/Scripts/Core/Bootstrap</innerdir>
+    <innerfile refid="_constants_8cs">Constants.cs</innerfile>
+    <innerfile refid="_experience_manager_8cs">ExperienceManager.cs</innerfile>
+    <innerfile refid="_gold_manager_8cs">GoldManager.cs</innerfile>
+    <innerfile refid="_tick_manager_8cs">TickManager.cs</innerfile>
+    <innerfile refid="_time_manager_8cs">TimeManager.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Core/"/>
+  </compounddef>
+</doxygen>

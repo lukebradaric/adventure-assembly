@@ -1,0 +1,214 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_adventure_assembly_1_1_units_1_1_unit_manager" kind="class" language="C#" prot="public" abstract="yes">
+    <compoundname>AdventureAssembly::Units::UnitManager</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Singleton&lt; UnitManager&lt; T &gt; &gt;</basecompoundref>
+    <templateparamlist>
+      <param>
+        <type>T</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_adventure_assembly_1_1_units_1_1_unit_manager_1a5a409f68cd594daaaf44db79088ccae2" prot="public" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="yes">
+        <type>List&lt; T &gt;</type>
+        <definition>List&lt;T&gt; AdventureAssembly.Units.UnitManager&lt; T &gt;.Units</definition>
+        <argsstring></argsstring>
+        <name>Units</name>
+        <qualifiedname>AdventureAssembly.Units.UnitManager.Units</qualifiedname>
+        <initializer>= new List&lt;T&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/UnitManager.cs" line="11" column="28" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/UnitManager.cs" bodystart="11" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="property" id="class_adventure_assembly_1_1_units_1_1_unit_manager_1a161d885a0d5c68f361fae56a6448b145" prot="public" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="yes">
+        <type>List&lt; <ref refid="class_adventure_assembly_1_1_units_1_1_modifiers_1_1_unit_modifier" kindref="compound">UnitModifier</ref> &gt;</type>
+        <definition>List&lt;UnitModifier&gt; AdventureAssembly.Units.UnitManager&lt; T &gt;.Modifiers</definition>
+        <argsstring></argsstring>
+        <name>Modifiers</name>
+        <qualifiedname>AdventureAssembly.Units.UnitManager.Modifiers</qualifiedname>
+        <initializer>= new List&lt;<ref refid="class_adventure_assembly_1_1_units_1_1_modifiers_1_1_unit_modifier" kindref="compound">UnitModifier</ref>&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/UnitManager.cs" line="13" column="28" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/UnitManager.cs" bodystart="13" bodyend="13"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-static-func">
+      <memberdef kind="function" id="class_adventure_assembly_1_1_units_1_1_unit_manager_1aa2fde2933a1692469ae2093448ee94f1" prot="protected" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void AdventureAssembly.Units.UnitManager&lt; T &gt;.ApplyAllModifiers</definition>
+        <argsstring>(T unit)</argsstring>
+        <name>ApplyAllModifiers</name>
+        <qualifiedname>AdventureAssembly.Units.UnitManager.ApplyAllModifiers</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/UnitManager.cs" line="15" column="31" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/UnitManager.cs" bodystart="15" bodyend="22"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_adventure_assembly_1_1_units_1_1_unit_manager_1ae0aba3ed84df68725ee6e82050b2921d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void AdventureAssembly.Units.UnitManager&lt; T &gt;.AddUnit</definition>
+        <argsstring>(T unit)</argsstring>
+        <name>AddUnit</name>
+        <qualifiedname>AdventureAssembly.Units.UnitManager.AddUnit</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/UnitManager.cs" line="24" column="29" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/UnitManager.cs" bodystart="24" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="class_adventure_assembly_1_1_units_1_1_unit_manager_1a32df56cbeb18c74e7613e4712d02cc42" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void AdventureAssembly.Units.UnitManager&lt; T &gt;.RemoveUnit</definition>
+        <argsstring>(T unit)</argsstring>
+        <name>RemoveUnit</name>
+        <qualifiedname>AdventureAssembly.Units.UnitManager.RemoveUnit</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/UnitManager.cs" line="30" column="29" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/UnitManager.cs" bodystart="30" bodyend="38"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_adventure_assembly_1_1_units_1_1_unit_manager_1aff9d4b068be7ed9986a7e626b844799c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void AdventureAssembly.Units.UnitManager&lt; T &gt;.AddModifier</definition>
+        <argsstring>(UnitModifier modifier)</argsstring>
+        <name>AddModifier</name>
+        <qualifiedname>AdventureAssembly.Units.UnitManager.AddModifier</qualifiedname>
+        <param>
+          <type><ref refid="class_adventure_assembly_1_1_units_1_1_modifiers_1_1_unit_modifier" kindref="compound">UnitModifier</ref></type>
+          <declname>modifier</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/UnitManager.cs" line="40" column="28" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/UnitManager.cs" bodystart="40" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="class_adventure_assembly_1_1_units_1_1_unit_manager_1ab3e50a5bd1e7589712693e0b3c8d1f12" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void AdventureAssembly.Units.UnitManager&lt; T &gt;.RemoveModifier</definition>
+        <argsstring>(UnitModifier modifier)</argsstring>
+        <name>RemoveModifier</name>
+        <qualifiedname>AdventureAssembly.Units.UnitManager.RemoveModifier</qualifiedname>
+        <param>
+          <type><ref refid="class_adventure_assembly_1_1_units_1_1_modifiers_1_1_unit_modifier" kindref="compound">UnitModifier</ref></type>
+          <declname>modifier</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/UnitManager.cs" line="53" column="28" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/UnitManager.cs" bodystart="53" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="class_adventure_assembly_1_1_units_1_1_unit_manager_1a9c20545856d094b8ffb7d74276f865ca" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>static T AdventureAssembly.Units.UnitManager&lt; T &gt;.GetNearestUnit</definition>
+        <argsstring>(Vector2Int position)</argsstring>
+        <name>GetNearestUnit</name>
+        <qualifiedname>AdventureAssembly.Units.UnitManager.GetNearestUnit</qualifiedname>
+        <param>
+          <type>Vector2Int</type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/UnitManager.cs" line="63" column="25" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/UnitManager.cs" bodystart="63" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="class_adventure_assembly_1_1_units_1_1_unit_manager_1a30c7b516eaea1e15d7f5bb23c16b388b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool AdventureAssembly.Units.UnitManager&lt; T &gt;.HasUnitAtPosition</definition>
+        <argsstring>(Vector2Int position)</argsstring>
+        <name>HasUnitAtPosition</name>
+        <qualifiedname>AdventureAssembly.Units.UnitManager.HasUnitAtPosition</qualifiedname>
+        <param>
+          <type>Vector2Int</type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/UnitManager.cs" line="81" column="28" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/UnitManager.cs" bodystart="81" bodyend="93"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>AdventureAssembly.Units.UnitManager&lt; T &gt;</label>
+        <link refid="class_adventure_assembly_1_1_units_1_1_unit_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Singleton&lt; UnitManager&lt; T &gt; &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>AdventureAssembly.Units.UnitManager&lt; T &gt;</label>
+        <link refid="class_adventure_assembly_1_1_units_1_1_unit_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Singleton&lt; UnitManager&lt; T &gt; &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/UnitManager.cs" line="9" column="21" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/UnitManager.cs" bodystart="10" bodyend="94"/>
+    <listofallmembers>
+      <member refid="class_adventure_assembly_1_1_units_1_1_unit_manager_1aff9d4b068be7ed9986a7e626b844799c" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::UnitManager</scope><name>AddModifier</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_unit_manager_1ae0aba3ed84df68725ee6e82050b2921d" prot="public" virt="virtual"><scope>AdventureAssembly::Units::UnitManager</scope><name>AddUnit</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_unit_manager_1aa2fde2933a1692469ae2093448ee94f1" prot="protected" virt="non-virtual"><scope>AdventureAssembly::Units::UnitManager</scope><name>ApplyAllModifiers</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_unit_manager_1a9c20545856d094b8ffb7d74276f865ca" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::UnitManager</scope><name>GetNearestUnit</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_unit_manager_1a30c7b516eaea1e15d7f5bb23c16b388b" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::UnitManager</scope><name>HasUnitAtPosition</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_unit_manager_1a161d885a0d5c68f361fae56a6448b145" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::UnitManager</scope><name>Modifiers</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_unit_manager_1ab3e50a5bd1e7589712693e0b3c8d1f12" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::UnitManager</scope><name>RemoveModifier</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_unit_manager_1a32df56cbeb18c74e7613e4712d02cc42" prot="public" virt="virtual"><scope>AdventureAssembly::Units::UnitManager</scope><name>RemoveUnit</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_unit_manager_1a5a409f68cd594daaaf44db79088ccae2" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::UnitManager</scope><name>Units</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

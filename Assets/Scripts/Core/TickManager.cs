@@ -6,6 +6,9 @@ using UnityEngine;
 
 namespace AdventureAssembly.Core
 {
+    /// <summary>
+    /// Manager for handling tick and enemy tick updates.
+    /// </summary>
     public class TickManager : Singleton<TickManager>
     {
         public static event Action TickUpdate;

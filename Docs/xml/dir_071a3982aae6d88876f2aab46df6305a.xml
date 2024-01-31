@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="dir_071a3982aae6d88876f2aab46df6305a" kind="dir">
+    <compoundname>D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Abilities</compoundname>
+    <innerfile refid="_ability_8cs">Ability.cs</innerfile>
+    <innerfile refid="_projectile_ability_8cs">ProjectileAbility.cs</innerfile>
+    <innerfile refid="_spell_thief_ability_8cs">SpellThiefAbility.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Abilities/"/>
+  </compounddef>
+</doxygen>

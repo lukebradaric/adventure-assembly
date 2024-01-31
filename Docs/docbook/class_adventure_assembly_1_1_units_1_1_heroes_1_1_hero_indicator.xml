@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_indicator" xml:lang="en-US">
+<title>AdventureAssembly.Units.Heroes.HeroIndicator Class Reference</title>
+<indexterm><primary>AdventureAssembly.Units.Heroes.HeroIndicator</primary></indexterm>
+<para>Inheritance diagram for AdventureAssembly.Units.Heroes.HeroIndicator:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_indicator.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<para>
+The documentation for this class was generated from the following file:</para>
+D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/<link linkend="__hero_indicator_8cs">HeroIndicator.cs</link></section>

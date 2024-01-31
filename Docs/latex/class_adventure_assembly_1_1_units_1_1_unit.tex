@@ -1,0 +1,64 @@
+\doxysection{Adventure\+Assembly.\+Units.\+Unit Class Reference}
+\hypertarget{class_adventure_assembly_1_1_units_1_1_unit}{}\label{class_adventure_assembly_1_1_units_1_1_unit}\index{AdventureAssembly.Units.Unit@{AdventureAssembly.Units.Unit}}
+Inheritance diagram for Adventure\+Assembly.\+Units.\+Unit\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_adventure_assembly_1_1_units_1_1_unit}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_adventure_assembly_1_1_units_1_1_unit_acf5840ae70dc7d8b514b1d48e3ae906f}\label{class_adventure_assembly_1_1_units_1_1_unit_acf5840ae70dc7d8b514b1d48e3ae906f} 
+virtual void {\bfseries Initialize} (\mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_unit_data}{Unit\+Data}} unit\+Data, Vector2\+Int position)
+\item 
+\Hypertarget{class_adventure_assembly_1_1_units_1_1_unit_aea72e9754ddba7da62420b73a621b419}\label{class_adventure_assembly_1_1_units_1_1_unit_aea72e9754ddba7da62420b73a621b419} 
+virtual void {\bfseries On\+Update} (float time)
+\item 
+\Hypertarget{class_adventure_assembly_1_1_units_1_1_unit_a2ff1fb6e8c612f7a7aa681d67c652b1a}\label{class_adventure_assembly_1_1_units_1_1_unit_a2ff1fb6e8c612f7a7aa681d67c652b1a} 
+virtual void {\bfseries Move} (Vector2\+Int direction)
+\item 
+\Hypertarget{class_adventure_assembly_1_1_units_1_1_unit_a45f62d207097560cd028e3c5eab7c091}\label{class_adventure_assembly_1_1_units_1_1_unit_a45f62d207097560cd028e3c5eab7c091} 
+virtual void {\bfseries Damage} (\mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_damage_data}{Damage\+Data}} damage\+Data)
+\item 
+\Hypertarget{class_adventure_assembly_1_1_units_1_1_unit_a4ffdf49e62850ce9e51d669004a4b499}\label{class_adventure_assembly_1_1_units_1_1_unit_a4ffdf49e62850ce9e51d669004a4b499} 
+virtual void {\bfseries Die} ()
+\item 
+\Hypertarget{class_adventure_assembly_1_1_units_1_1_unit_aed49f829ffff64b58847a7c158a57392}\label{class_adventure_assembly_1_1_units_1_1_unit_aed49f829ffff64b58847a7c158a57392} 
+virtual void {\bfseries Flip\+Sprite} (int x)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_adventure_assembly_1_1_units_1_1_unit_a11257e3c8dcfb967d85212aa41485da4}\label{class_adventure_assembly_1_1_units_1_1_unit_a11257e3c8dcfb967d85212aa41485da4} 
+Sprite\+Renderer {\bfseries Sprite\+Renderer}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\Hypertarget{class_adventure_assembly_1_1_units_1_1_unit_a133db396ea3ad3cc73c7c9de8538c975}\label{class_adventure_assembly_1_1_units_1_1_unit_a133db396ea3ad3cc73c7c9de8538c975} 
+virtual \mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_unit_stats}{Unit\+Stats}} {\bfseries Stats}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\Hypertarget{class_adventure_assembly_1_1_units_1_1_unit_a6e4837996ced88e06efa04f108246617}\label{class_adventure_assembly_1_1_units_1_1_unit_a6e4837996ced88e06efa04f108246617} 
+\mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_unit_data}{Unit\+Data}} {\bfseries Unit\+Data}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\Hypertarget{class_adventure_assembly_1_1_units_1_1_unit_abe54923d5a5d0f38c84454dd7d61e19d}\label{class_adventure_assembly_1_1_units_1_1_unit_abe54923d5a5d0f38c84454dd7d61e19d} 
+int {\bfseries Current\+Health}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\item 
+\Hypertarget{class_adventure_assembly_1_1_units_1_1_unit_ac0ba4f9e48f1e5054b8e5c9912c1e86a}\label{class_adventure_assembly_1_1_units_1_1_unit_ac0ba4f9e48f1e5054b8e5c9912c1e86a} 
+Vector2\+Int {\bfseries Position} = Vector2\+Int.\+zero\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\item 
+\Hypertarget{class_adventure_assembly_1_1_units_1_1_unit_a9afb5a52cef8d77760a0b7472fa71424}\label{class_adventure_assembly_1_1_units_1_1_unit_a9afb5a52cef8d77760a0b7472fa71424} 
+Vector2\+Int {\bfseries Last\+Position}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\item 
+\Hypertarget{class_adventure_assembly_1_1_units_1_1_unit_aeb6dedf5a847c7da814b16195cca0c48}\label{class_adventure_assembly_1_1_units_1_1_unit_aeb6dedf5a847c7da814b16195cca0c48} 
+bool {\bfseries Is\+Dead} = false\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Events}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_adventure_assembly_1_1_units_1_1_unit_aedb81657370d6a615ea461e04ee9ed89}\label{class_adventure_assembly_1_1_units_1_1_unit_aedb81657370d6a615ea461e04ee9ed89} 
+Action$<$ \mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_unit}{Unit}} $>$ {\bfseries Died}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Unity/\+Projects/adventure-\/assembly/\+Assets/\+Scripts/\+Units/Unit.\+cs\end{DoxyCompactItemize}

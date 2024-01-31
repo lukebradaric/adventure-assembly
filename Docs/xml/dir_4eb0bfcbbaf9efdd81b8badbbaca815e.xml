@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="dir_4eb0bfcbbaf9efdd81b8badbbaca815e" kind="dir">
+    <compoundname>D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units</compoundname>
+    <innerdir refid="dir_071a3982aae6d88876f2aab46df6305a">D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Abilities</innerdir>
+    <innerdir refid="dir_8bc465951b91036e4fb83034edfc2a66">D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Animation</innerdir>
+    <innerdir refid="dir_07a82b8a61ef390e2ac25ea6e27e5186">D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Enemies</innerdir>
+    <innerdir refid="dir_fd76c590d86f02895e2b1ace73e7c46a">D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes</innerdir>
+    <innerdir refid="dir_62ee763545c2600b2033c1d73c29f338">D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Modifiers</innerdir>
+    <innerdir refid="dir_bd5061c05f1141a560860017b2b9fa01">D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Tests</innerdir>
+    <innerfile refid="_damage_data_8cs">DamageData.cs</innerfile>
+    <innerfile refid="_projectile_8cs">Projectile.cs</innerfile>
+    <innerfile refid="_stat_8cs">Stat.cs</innerfile>
+    <innerfile refid="_stat_modifier_8cs">StatModifier.cs</innerfile>
+    <innerfile refid="_unit_8cs">Unit.cs</innerfile>
+    <innerfile refid="_unit_data_8cs">UnitData.cs</innerfile>
+    <innerfile refid="_unit_manager_8cs">UnitManager.cs</innerfile>
+    <innerfile refid="_unit_stats_8cs">UnitStats.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/"/>
+  </compounddef>
+</doxygen>

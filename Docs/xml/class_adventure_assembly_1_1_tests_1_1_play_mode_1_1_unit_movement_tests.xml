@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_adventure_assembly_1_1_tests_1_1_play_mode_1_1_unit_movement_tests" kind="class" language="C#" prot="public">
+    <compoundname>AdventureAssembly::Tests::PlayMode::UnitMovementTests</compoundname>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_adventure_assembly_1_1_tests_1_1_play_mode_1_1_unit_movement_tests_1ae29519e99da5f090ea968d085a032e49" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AdventureAssembly.Tests.PlayMode.UnitMovementTests.HeroStatsTest</definition>
+        <argsstring>()</argsstring>
+        <name>HeroStatsTest</name>
+        <qualifiedname>AdventureAssembly.Tests.PlayMode.UnitMovementTests.HeroStatsTest</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Tests/PlayMode/UnitStatsTests.cs" line="13" column="21" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Tests/PlayMode/UnitStatsTests.cs" bodystart="13" bodyend="26"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Tests/PlayMode/UnitStatsTests.cs" line="9" column="11" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Tests/PlayMode/UnitStatsTests.cs" bodystart="10" bodyend="27"/>
+    <listofallmembers>
+      <member refid="class_adventure_assembly_1_1_tests_1_1_play_mode_1_1_unit_movement_tests_1ae29519e99da5f090ea968d085a032e49" prot="public" virt="non-virtual"><scope>AdventureAssembly::Tests::PlayMode::UnitMovementTests</scope><name>HeroStatsTest</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

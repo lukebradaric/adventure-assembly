@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_adventure_assembly_1_1_units_1_1_tests_1_1_test_class_modifier" kind="class" language="C#" prot="public">
+    <compoundname>AdventureAssembly::Units::Tests::TestClassModifier</compoundname>
+    <basecompoundref refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_modifier" prot="public" virt="non-virtual">AdventureAssembly.Units.Heroes.ClassModifier</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_adventure_assembly_1_1_units_1_1_tests_1_1_test_class_modifier_1aa39feb05cca0d1366f2709a08469257e" prot="private" static="no" mutable="no">
+        <type><ref refid="class_adventure_assembly_1_1_units_1_1_modifiers_1_1_unit_modifier" kindref="compound">UnitModifier</ref></type>
+        <definition>UnitModifier AdventureAssembly.Units.Tests.TestClassModifier._unitModifier</definition>
+        <argsstring></argsstring>
+        <name>_unitModifier</name>
+        <qualifiedname>AdventureAssembly.Units.Tests.TestClassModifier._unitModifier</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Tests/TestClassModifier.cs" line="10" column="31" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Tests/TestClassModifier.cs" bodystart="10" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_adventure_assembly_1_1_units_1_1_tests_1_1_test_class_modifier_1acd811f51390e67929f4bfbfa30c709be" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void AdventureAssembly.Units.Tests.TestClassModifier.Apply</definition>
+        <argsstring>()</argsstring>
+        <name>Apply</name>
+        <qualifiedname>AdventureAssembly.Units.Tests.TestClassModifier.Apply</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Tests/TestClassModifier.cs" line="12" column="30" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Tests/TestClassModifier.cs" bodystart="12" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="class_adventure_assembly_1_1_units_1_1_tests_1_1_test_class_modifier_1af0c959dd8455be6f7b351d6c26a07ce8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void AdventureAssembly.Units.Tests.TestClassModifier.Remove</definition>
+        <argsstring>()</argsstring>
+        <name>Remove</name>
+        <qualifiedname>AdventureAssembly.Units.Tests.TestClassModifier.Remove</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Tests/TestClassModifier.cs" line="17" column="30" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Tests/TestClassModifier.cs" bodystart="17" bodyend="20"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>AdventureAssembly.Units.Tests.TestClassModifier</label>
+        <link refid="class_adventure_assembly_1_1_units_1_1_tests_1_1_test_class_modifier"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ClassModifier</label>
+        <link refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_modifier"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>AdventureAssembly.Units.Tests.TestClassModifier</label>
+        <link refid="class_adventure_assembly_1_1_units_1_1_tests_1_1_test_class_modifier"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ClassModifier</label>
+        <link refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_modifier"/>
+      </node>
+    </collaborationgraph>
+    <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Tests/TestClassModifier.cs" line="8" column="11" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Tests/TestClassModifier.cs" bodystart="9" bodyend="21"/>
+    <listofallmembers>
+      <member refid="class_adventure_assembly_1_1_units_1_1_tests_1_1_test_class_modifier_1aa39feb05cca0d1366f2709a08469257e" prot="private" virt="non-virtual"><scope>AdventureAssembly::Units::Tests::TestClassModifier</scope><name>_unitModifier</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_tests_1_1_test_class_modifier_1acd811f51390e67929f4bfbfa30c709be" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::Tests::TestClassModifier</scope><name>Apply</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_modifier_1ac3f20123b40aaa5466e1125163f8382c" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::Tests::TestClassModifier</scope><name>GetClone</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_tests_1_1_test_class_modifier_1af0c959dd8455be6f7b351d6c26a07ce8" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::Tests::TestClassModifier</scope><name>Remove</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_modifier_1a8da9c60ba6a1e0af9d3494313396fc1b" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::Tests::TestClassModifier</scope><name>RequiredCount</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_adventure_assembly_1_1_units_1_1_modifiers_1_1_hero_modifier" kind="class" language="C#" prot="public" abstract="yes">
+    <compoundname>AdventureAssembly::Units::Modifiers::HeroModifier</compoundname>
+    <basecompoundref refid="class_adventure_assembly_1_1_units_1_1_modifiers_1_1_unit_modifier" prot="public" virt="non-virtual">AdventureAssembly.Units.Modifiers.UnitModifier</basecompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_adventure_assembly_1_1_units_1_1_modifiers_1_1_hero_modifier_1a5f0e44e3c1712bc5afce10349c29fd2a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void AdventureAssembly.Units.Modifiers.HeroModifier.Apply</definition>
+        <argsstring>(Unit unit)</argsstring>
+        <name>Apply</name>
+        <qualifiedname>AdventureAssembly.Units.Modifiers.HeroModifier.Apply</qualifiedname>
+        <param>
+          <type><ref refid="class_adventure_assembly_1_1_units_1_1_unit" kindref="compound">Unit</ref></type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Modifiers/HeroModifier.cs" line="8" column="30" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Modifiers/HeroModifier.cs" bodystart="8" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="function" id="class_adventure_assembly_1_1_units_1_1_modifiers_1_1_hero_modifier_1ac0432b7a49403a6b9824cec826f4cc9b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AdventureAssembly.Units.Modifiers.HeroModifier.Apply</definition>
+        <argsstring>(Hero hero)</argsstring>
+        <name>Apply</name>
+        <qualifiedname>AdventureAssembly.Units.Modifiers.HeroModifier.Apply</qualifiedname>
+        <param>
+          <type><ref refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero" kindref="compound">Hero</ref></type>
+          <declname>hero</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Modifiers/HeroModifier.cs" line="13" column="30"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>AdventureAssembly.Units.Modifiers.HeroModifier</label>
+        <link refid="class_adventure_assembly_1_1_units_1_1_modifiers_1_1_hero_modifier"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UnitModifier</label>
+        <link refid="class_adventure_assembly_1_1_units_1_1_modifiers_1_1_unit_modifier"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>AdventureAssembly.Units.Modifiers.HeroModifier</label>
+        <link refid="class_adventure_assembly_1_1_units_1_1_modifiers_1_1_hero_modifier"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UnitModifier</label>
+        <link refid="class_adventure_assembly_1_1_units_1_1_modifiers_1_1_unit_modifier"/>
+      </node>
+    </collaborationgraph>
+    <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Modifiers/HeroModifier.cs" line="6" column="21" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Modifiers/HeroModifier.cs" bodystart="7" bodyend="14"/>
+    <listofallmembers>
+      <member refid="class_adventure_assembly_1_1_units_1_1_modifiers_1_1_hero_modifier_1a5f0e44e3c1712bc5afce10349c29fd2a" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::Modifiers::HeroModifier</scope><name>Apply</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_modifiers_1_1_hero_modifier_1ac0432b7a49403a6b9824cec826f4cc9b" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::Modifiers::HeroModifier</scope><name>Apply</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_modifiers_1_1_unit_modifier_1acd947b8858afe54670ddc0d091b62622" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::Modifiers::HeroModifier</scope><name>Remove</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

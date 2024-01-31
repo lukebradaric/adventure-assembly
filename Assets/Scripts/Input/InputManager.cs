@@ -3,6 +3,9 @@ using UnityEngine;
 
 namespace AdventureAssembly.Input
 {
+    /// <summary>
+    /// Manager for handling player input and translating to movement directions.
+    /// </summary>
     public class InputManager : MonoBehaviour
     {
         public static Observable<Vector2Int> MovementVector { get; private set; } = new Observable<Vector2Int>(Vector2Int.up);

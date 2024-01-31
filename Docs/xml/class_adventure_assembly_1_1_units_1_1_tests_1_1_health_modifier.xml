@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_adventure_assembly_1_1_units_1_1_tests_1_1_health_modifier" kind="class" language="C#" prot="public">
+    <compoundname>AdventureAssembly::Units::Tests::HealthModifier</compoundname>
+    <basecompoundref refid="class_adventure_assembly_1_1_units_1_1_modifiers_1_1_unit_modifier" prot="public" virt="non-virtual">AdventureAssembly.Units.Modifiers.UnitModifier</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_adventure_assembly_1_1_units_1_1_tests_1_1_health_modifier_1a1d234e6de5580367597989ab9b26a033" prot="private" static="no" mutable="no">
+        <type><ref refid="class_adventure_assembly_1_1_units_1_1_stat_modifier" kindref="compound">StatModifier</ref>&lt; float &gt;</type>
+        <definition>StatModifier&lt;float&gt; AdventureAssembly.Units.Tests.HealthModifier._value</definition>
+        <argsstring></argsstring>
+        <name>_value</name>
+        <qualifiedname>AdventureAssembly.Units.Tests.HealthModifier._value</qualifiedname>
+        <initializer>= new <ref refid="class_adventure_assembly_1_1_units_1_1_tests_1_1_default_stat_modifier" kindref="compound">DefaultStatModifier</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Tests/HealthModifier.cs" line="9" column="31" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Tests/HealthModifier.cs" bodystart="9" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_adventure_assembly_1_1_units_1_1_tests_1_1_health_modifier_1a1cdbdb979c09b62b64e20846d0d7a8fc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void AdventureAssembly.Units.Tests.HealthModifier.Apply</definition>
+        <argsstring>(Unit unit)</argsstring>
+        <name>Apply</name>
+        <qualifiedname>AdventureAssembly.Units.Tests.HealthModifier.Apply</qualifiedname>
+        <param>
+          <type><ref refid="class_adventure_assembly_1_1_units_1_1_unit" kindref="compound">Unit</ref></type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Tests/HealthModifier.cs" line="11" column="30" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Tests/HealthModifier.cs" bodystart="11" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_adventure_assembly_1_1_units_1_1_tests_1_1_health_modifier_1a925f31964d321772d31b820d33c17e5e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void AdventureAssembly.Units.Tests.HealthModifier.Remove</definition>
+        <argsstring>(Unit unit)</argsstring>
+        <name>Remove</name>
+        <qualifiedname>AdventureAssembly.Units.Tests.HealthModifier.Remove</qualifiedname>
+        <param>
+          <type><ref refid="class_adventure_assembly_1_1_units_1_1_unit" kindref="compound">Unit</ref></type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Tests/HealthModifier.cs" line="16" column="30" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Tests/HealthModifier.cs" bodystart="16" bodyend="19"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>AdventureAssembly.Units.Tests.HealthModifier</label>
+        <link refid="class_adventure_assembly_1_1_units_1_1_tests_1_1_health_modifier"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UnitModifier</label>
+        <link refid="class_adventure_assembly_1_1_units_1_1_modifiers_1_1_unit_modifier"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>AdventureAssembly.Units.Tests.HealthModifier</label>
+        <link refid="class_adventure_assembly_1_1_units_1_1_tests_1_1_health_modifier"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UnitModifier</label>
+        <link refid="class_adventure_assembly_1_1_units_1_1_modifiers_1_1_unit_modifier"/>
+      </node>
+    </collaborationgraph>
+    <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Tests/HealthModifier.cs" line="7" column="11" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Tests/HealthModifier.cs" bodystart="8" bodyend="20"/>
+    <listofallmembers>
+      <member refid="class_adventure_assembly_1_1_units_1_1_tests_1_1_health_modifier_1a1d234e6de5580367597989ab9b26a033" prot="private" virt="non-virtual"><scope>AdventureAssembly::Units::Tests::HealthModifier</scope><name>_value</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_tests_1_1_health_modifier_1a1cdbdb979c09b62b64e20846d0d7a8fc" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::Tests::HealthModifier</scope><name>Apply</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_tests_1_1_health_modifier_1a925f31964d321772d31b820d33c17e5e" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::Tests::HealthModifier</scope><name>Remove</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

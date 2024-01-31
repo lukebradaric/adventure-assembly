@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_adventure_assembly_1_1_debug_1_1_debug_kill_random_hero" xml:lang="en-US">
+<title>AdventureAssembly.Debug.DebugKillRandomHero Class Reference</title>
+<indexterm><primary>AdventureAssembly.Debug.DebugKillRandomHero</primary></indexterm>
+<para>Inheritance diagram for AdventureAssembly.Debug.DebugKillRandomHero:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_adventure_assembly_1_1_debug_1_1_debug_kill_random_hero.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>override void <link linkend="_class_adventure_assembly_1_1_debug_1_1_debug_kill_random_hero_1a545af70079ec1519f82e0992ccfaf24a">DebugKeyPressed</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public Member Functions inherited from <link linkend="_class_adventure_assembly_1_1_debug_1_1_debug_key_press">AdventureAssembly.Debug.DebugKeyPress</link>        <itemizedlist>
+            <listitem><para>void <link linkend="_class_adventure_assembly_1_1_debug_1_1_debug_key_press_1a6cfb9ebeb46d46b3a461d28c70c7bd8f">DebugKeyPressed</link> ()</para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Additional Inherited Members    </title>
+Protected Member Functions inherited from <link linkend="_class_adventure_assembly_1_1_debug_1_1_debug_key_press">AdventureAssembly.Debug.DebugKeyPress</link>        <itemizedlist>
+            <listitem><para>virtual void <link linkend="_class_adventure_assembly_1_1_debug_1_1_debug_key_press_1a7197c2d043820047eb4a37322cb73627">Update</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_adventure_assembly_1_1_debug_1_1_debug_kill_random_hero_1a545af70079ec1519f82e0992ccfaf24a"/><section>
+    <title>DebugKeyPressed()</title>
+<indexterm><primary>DebugKeyPressed</primary><secondary>AdventureAssembly.Debug.DebugKillRandomHero</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Debug.DebugKillRandomHero</primary><secondary>DebugKeyPressed</secondary></indexterm>
+<para><computeroutput>override void AdventureAssembly.Debug.DebugKillRandomHero.DebugKeyPressed ( )</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+D:/Unity/Projects/adventure-assembly/Assets/Scripts/Debug/<link linkend="__debug_kill_random_hero_8cs">DebugKillRandomHero.cs</link></section>
+</section>

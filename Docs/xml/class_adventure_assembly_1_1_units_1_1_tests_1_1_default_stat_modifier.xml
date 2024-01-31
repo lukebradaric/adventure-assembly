@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_adventure_assembly_1_1_units_1_1_tests_1_1_default_stat_modifier" kind="class" language="C#" prot="public">
+    <compoundname>AdventureAssembly::Units::Tests::DefaultStatModifier</compoundname>
+    <basecompoundref refid="class_adventure_assembly_1_1_units_1_1_stat_modifier" prot="public" virt="non-virtual">AdventureAssembly.Units.StatModifier&lt; float &gt;</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_adventure_assembly_1_1_units_1_1_tests_1_1_default_stat_modifier_1a8f137bc485f8077031773777f4ef23a1" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float AdventureAssembly.Units.Tests.DefaultStatModifier._value</definition>
+        <argsstring></argsstring>
+        <name>_value</name>
+        <qualifiedname>AdventureAssembly.Units.Tests.DefaultStatModifier._value</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Tests/DefaultStatModifier.cs" line="12" column="24" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Tests/DefaultStatModifier.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_adventure_assembly_1_1_units_1_1_tests_1_1_default_stat_modifier_1abe2ffd02286fcc6ca5e62cd1b80f110a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>AdventureAssembly.Units.Tests.DefaultStatModifier.DefaultStatModifier</definition>
+        <argsstring>(float value=0f)</argsstring>
+        <name>DefaultStatModifier</name>
+        <qualifiedname>AdventureAssembly.Units.Tests.DefaultStatModifier.DefaultStatModifier</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>value</declname>
+          <defval>0f</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Tests/DefaultStatModifier.cs" line="7" column="16" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Tests/DefaultStatModifier.cs" bodystart="7" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_adventure_assembly_1_1_units_1_1_tests_1_1_default_stat_modifier_1a8e51d5133a2ad837841f580141d3cddf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override float</type>
+        <definition>override float AdventureAssembly.Units.Tests.DefaultStatModifier.Process</definition>
+        <argsstring>(float value)</argsstring>
+        <name>Process</name>
+        <qualifiedname>AdventureAssembly.Units.Tests.DefaultStatModifier.Process</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Tests/DefaultStatModifier.cs" line="14" column="31" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Tests/DefaultStatModifier.cs" bodystart="14" bodyend="18"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>AdventureAssembly.Units.Tests.DefaultStatModifier</label>
+        <link refid="class_adventure_assembly_1_1_units_1_1_tests_1_1_default_stat_modifier"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>StatModifier&lt; float &gt;</label>
+        <link refid="class_adventure_assembly_1_1_units_1_1_stat_modifier"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>AdventureAssembly.Units.Tests.DefaultStatModifier</label>
+        <link refid="class_adventure_assembly_1_1_units_1_1_tests_1_1_default_stat_modifier"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>StatModifier&lt; float &gt;</label>
+        <link refid="class_adventure_assembly_1_1_units_1_1_stat_modifier"/>
+      </node>
+    </collaborationgraph>
+    <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Tests/DefaultStatModifier.cs" line="5" column="11" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Tests/DefaultStatModifier.cs" bodystart="6" bodyend="19"/>
+    <listofallmembers>
+      <member refid="class_adventure_assembly_1_1_units_1_1_tests_1_1_default_stat_modifier_1a8f137bc485f8077031773777f4ef23a1" prot="private" virt="non-virtual"><scope>AdventureAssembly::Units::Tests::DefaultStatModifier</scope><name>_value</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_tests_1_1_default_stat_modifier_1abe2ffd02286fcc6ca5e62cd1b80f110a" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::Tests::DefaultStatModifier</scope><name>DefaultStatModifier</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_tests_1_1_default_stat_modifier_1a8e51d5133a2ad837841f580141d3cddf" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::Tests::DefaultStatModifier</scope><name>Process</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_stat_modifier_1ae05754daa96a6604549c0bef0ab89874" prot="public" virt="non-virtual" ambiguityscope="StatModifier&lt; float &gt;."><scope>AdventureAssembly::Units::Tests::DefaultStatModifier</scope><name>Process</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

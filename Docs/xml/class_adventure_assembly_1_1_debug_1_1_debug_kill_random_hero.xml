@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_adventure_assembly_1_1_debug_1_1_debug_kill_random_hero" kind="class" language="C#" prot="public">
+    <compoundname>AdventureAssembly::Debug::DebugKillRandomHero</compoundname>
+    <basecompoundref refid="class_adventure_assembly_1_1_debug_1_1_debug_key_press" prot="public" virt="non-virtual">AdventureAssembly.Debug.DebugKeyPress</basecompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_adventure_assembly_1_1_debug_1_1_debug_kill_random_hero_1a545af70079ec1519f82e0992ccfaf24a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void AdventureAssembly.Debug.DebugKillRandomHero.DebugKeyPressed</definition>
+        <argsstring>()</argsstring>
+        <name>DebugKeyPressed</name>
+        <qualifiedname>AdventureAssembly.Debug.DebugKillRandomHero.DebugKeyPressed</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Debug/DebugKillRandomHero.cs" line="8" column="30" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Debug/DebugKillRandomHero.cs" bodystart="8" bodyend="11"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>AdventureAssembly.Debug.DebugKillRandomHero</label>
+        <link refid="class_adventure_assembly_1_1_debug_1_1_debug_kill_random_hero"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>DebugKeyPress</label>
+        <link refid="class_adventure_assembly_1_1_debug_1_1_debug_key_press"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>AdventureAssembly.Debug.DebugKillRandomHero</label>
+        <link refid="class_adventure_assembly_1_1_debug_1_1_debug_kill_random_hero"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>DebugKeyPress</label>
+        <link refid="class_adventure_assembly_1_1_debug_1_1_debug_key_press"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Debug/DebugKillRandomHero.cs" line="6" column="11" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Debug/DebugKillRandomHero.cs" bodystart="7" bodyend="12"/>
+    <listofallmembers>
+      <member refid="class_adventure_assembly_1_1_debug_1_1_debug_kill_random_hero_1a545af70079ec1519f82e0992ccfaf24a" prot="public" virt="non-virtual"><scope>AdventureAssembly::Debug::DebugKillRandomHero</scope><name>DebugKeyPressed</name></member>
+      <member refid="class_adventure_assembly_1_1_debug_1_1_debug_key_press_1a7197c2d043820047eb4a37322cb73627" prot="protected" virt="virtual"><scope>AdventureAssembly::Debug::DebugKillRandomHero</scope><name>Update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

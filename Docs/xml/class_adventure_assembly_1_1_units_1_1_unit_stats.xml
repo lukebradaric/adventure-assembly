@@ -1,0 +1,171 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_adventure_assembly_1_1_units_1_1_unit_stats" kind="class" language="C#" prot="public">
+    <compoundname>AdventureAssembly::Units::UnitStats</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">SerializedMonoBehaviour</basecompoundref>
+    <derivedcompoundref refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_stats" prot="public" virt="non-virtual">AdventureAssembly.Units.Enemies.EnemyStats</derivedcompoundref>
+    <derivedcompoundref refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_stats" prot="public" virt="non-virtual">AdventureAssembly.Units.Heroes.HeroStats</derivedcompoundref>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_adventure_assembly_1_1_units_1_1_unit_stats_1acb9e0cadc6fd05bf447e7cb42c5e6fe7" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="yes">
+        <type><ref refid="class_adventure_assembly_1_1_units_1_1_unit" kindref="compound">Unit</ref></type>
+        <definition>Unit AdventureAssembly.Units.UnitStats.Unit</definition>
+        <argsstring></argsstring>
+        <name>Unit</name>
+        <qualifiedname>AdventureAssembly.Units.UnitStats.Unit</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/UnitStats.cs" line="8" column="21" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/UnitStats.cs" bodystart="8" bodyend="8"/>
+      </memberdef>
+      <memberdef kind="property" id="class_adventure_assembly_1_1_units_1_1_unit_stats_1a388594321287b630bf69a06e962ae774" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="yes">
+        <type><ref refid="class_adventure_assembly_1_1_units_1_1_unit_data" kindref="compound">UnitData</ref></type>
+        <definition>UnitData AdventureAssembly.Units.UnitStats.UnitData</definition>
+        <argsstring></argsstring>
+        <name>UnitData</name>
+        <qualifiedname>AdventureAssembly.Units.UnitStats.UnitData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/UnitStats.cs" line="9" column="25" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/UnitStats.cs" bodystart="9" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="property" id="class_adventure_assembly_1_1_units_1_1_unit_stats_1a3acbe358408d422a12c1aaa001af14f3" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_adventure_assembly_1_1_units_1_1_stat" kindref="compound">Stat</ref>&lt; float &gt;</type>
+        <definition>Stat&lt;float&gt; AdventureAssembly.Units.UnitStats.DamageMultiplier</definition>
+        <argsstring></argsstring>
+        <name>DamageMultiplier</name>
+        <qualifiedname>AdventureAssembly.Units.UnitStats.DamageMultiplier</qualifiedname>
+        <initializer>= new <ref refid="class_adventure_assembly_1_1_units_1_1_stat" kindref="compound">Stat</ref>&lt;float&gt;(1f)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/UnitStats.cs" line="17" column="21" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/UnitStats.cs" bodystart="17" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="property" id="class_adventure_assembly_1_1_units_1_1_unit_stats_1a4f2e950f3fd84b3d8de9b2f652a7a12b" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_adventure_assembly_1_1_units_1_1_stat" kindref="compound">Stat</ref>&lt; float &gt;</type>
+        <definition>Stat&lt;float&gt; AdventureAssembly.Units.UnitStats.MaxHealthMultiplier</definition>
+        <argsstring></argsstring>
+        <name>MaxHealthMultiplier</name>
+        <qualifiedname>AdventureAssembly.Units.UnitStats.MaxHealthMultiplier</qualifiedname>
+        <initializer>= new <ref refid="class_adventure_assembly_1_1_units_1_1_stat" kindref="compound">Stat</ref>&lt;float&gt;(1f)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/UnitStats.cs" line="18" column="21" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/UnitStats.cs" bodystart="18" bodyend="18"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_adventure_assembly_1_1_units_1_1_unit_stats_1a70f9d0bf6d75f8c6ea338344d62ca627" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void AdventureAssembly.Units.UnitStats.Initialize</definition>
+        <argsstring>(Unit unit)</argsstring>
+        <name>Initialize</name>
+        <qualifiedname>AdventureAssembly.Units.UnitStats.Initialize</qualifiedname>
+        <reimplementedby refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_stats_1a728d16c9fa6125282081bce40c7c9b00">Initialize</reimplementedby>
+        <reimplementedby refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_stats_1af4d64b88399b062566ead0ed45a67e6f">Initialize</reimplementedby>
+        <param>
+          <type><ref refid="class_adventure_assembly_1_1_units_1_1_unit" kindref="compound">Unit</ref></type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/UnitStats.cs" line="11" column="29" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/UnitStats.cs" bodystart="11" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="class_adventure_assembly_1_1_units_1_1_unit_stats_1a83a2beb1adad04a2f00ea443cae7c3b6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="class_adventure_assembly_1_1_units_1_1_damage_data" kindref="compound">DamageData</ref></type>
+        <definition>virtual DamageData AdventureAssembly.Units.UnitStats.GetDamageData</definition>
+        <argsstring>(DamageData damageData)</argsstring>
+        <name>GetDamageData</name>
+        <qualifiedname>AdventureAssembly.Units.UnitStats.GetDamageData</qualifiedname>
+        <param>
+          <type><ref refid="class_adventure_assembly_1_1_units_1_1_damage_data" kindref="compound">DamageData</ref></type>
+          <declname>damageData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/UnitStats.cs" line="20" column="35" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/UnitStats.cs" bodystart="20" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="class_adventure_assembly_1_1_units_1_1_unit_stats_1ae6119f225ce8bd14ca1e63ff82fa8a38" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>int</type>
+        <definition>virtual int AdventureAssembly.Units.UnitStats.GetMaxHealth</definition>
+        <argsstring>()</argsstring>
+        <name>GetMaxHealth</name>
+        <qualifiedname>AdventureAssembly.Units.UnitStats.GetMaxHealth</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/UnitStats.cs" line="29" column="28" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/UnitStats.cs" bodystart="29" bodyend="32"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>AdventureAssembly.Units.UnitStats</label>
+        <link refid="class_adventure_assembly_1_1_units_1_1_unit_stats"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>AdventureAssembly.Units.Enemies.EnemyStats</label>
+        <link refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_stats"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>AdventureAssembly.Units.Heroes.HeroStats</label>
+        <link refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_stats"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>SerializedMonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>AdventureAssembly.Units.UnitStats</label>
+        <link refid="class_adventure_assembly_1_1_units_1_1_unit_stats"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>SerializedMonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/UnitStats.cs" line="6" column="11" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/UnitStats.cs" bodystart="7" bodyend="33"/>
+    <listofallmembers>
+      <member refid="class_adventure_assembly_1_1_units_1_1_unit_stats_1a3acbe358408d422a12c1aaa001af14f3" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::UnitStats</scope><name>DamageMultiplier</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_unit_stats_1a83a2beb1adad04a2f00ea443cae7c3b6" prot="public" virt="virtual"><scope>AdventureAssembly::Units::UnitStats</scope><name>GetDamageData</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_unit_stats_1ae6119f225ce8bd14ca1e63ff82fa8a38" prot="public" virt="virtual"><scope>AdventureAssembly::Units::UnitStats</scope><name>GetMaxHealth</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_unit_stats_1a70f9d0bf6d75f8c6ea338344d62ca627" prot="public" virt="virtual"><scope>AdventureAssembly::Units::UnitStats</scope><name>Initialize</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_unit_stats_1a4f2e950f3fd84b3d8de9b2f652a7a12b" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::UnitStats</scope><name>MaxHealthMultiplier</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_unit_stats_1acb9e0cadc6fd05bf447e7cb42c5e6fe7" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::UnitStats</scope><name>Unit</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_unit_stats_1a388594321287b630bf69a06e962ae774" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::UnitStats</scope><name>UnitData</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

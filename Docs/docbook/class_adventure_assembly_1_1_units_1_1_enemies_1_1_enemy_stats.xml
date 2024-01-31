@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_stats" xml:lang="en-US">
+<title>AdventureAssembly.Units.Enemies.EnemyStats Class Reference</title>
+<indexterm><primary>AdventureAssembly.Units.Enemies.EnemyStats</primary></indexterm>
+<para>Inheritance diagram for AdventureAssembly.Units.Enemies.EnemyStats:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_stats.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>override void <link linkend="_class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_stats_1a728d16c9fa6125282081bce40c7c9b00">Initialize</link> (<link linkend="_class_adventure_assembly_1_1_units_1_1_unit">Unit</link> unit)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public Member Functions inherited from <link linkend="_class_adventure_assembly_1_1_units_1_1_unit_stats">AdventureAssembly.Units.UnitStats</link>        <itemizedlist>
+            <listitem><para>virtual <link linkend="_class_adventure_assembly_1_1_units_1_1_damage_data">DamageData</link> <link linkend="_class_adventure_assembly_1_1_units_1_1_unit_stats_1a83a2beb1adad04a2f00ea443cae7c3b6">GetDamageData</link> (<link linkend="_class_adventure_assembly_1_1_units_1_1_damage_data">DamageData</link> damageData)</para>
+</listitem>
+            <listitem><para>virtual int <link linkend="_class_adventure_assembly_1_1_units_1_1_unit_stats_1ae6119f225ce8bd14ca1e63ff82fa8a38">GetMaxHealth</link> ()</para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_data">EnemyData</link> <link linkend="_class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_stats_1a0288679a232a6c8ed89d75ec49bc07e9">EnemyData</link><computeroutput> [get, protected set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para><link linkend="_class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy">Enemy</link> <link linkend="_class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_stats_1abd7d3dd3b3631261ba9c1810e41f6b3b">Enemy</link><computeroutput> [get, protected set]</computeroutput>
+</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Properties inherited from <link linkend="_class_adventure_assembly_1_1_units_1_1_unit_stats">AdventureAssembly.Units.UnitStats</link>        <itemizedlist>
+            <listitem><para><link linkend="_class_adventure_assembly_1_1_units_1_1_unit">Unit</link> <link linkend="_class_adventure_assembly_1_1_units_1_1_unit_stats_1acb9e0cadc6fd05bf447e7cb42c5e6fe7">Unit</link><computeroutput> [get, protected set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para><link linkend="_class_adventure_assembly_1_1_units_1_1_unit_data">UnitData</link> <link linkend="_class_adventure_assembly_1_1_units_1_1_unit_stats_1a388594321287b630bf69a06e962ae774">UnitData</link><computeroutput> [get, protected set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para><link linkend="_class_adventure_assembly_1_1_units_1_1_stat">Stat</link>&lt; float &gt; <link linkend="_class_adventure_assembly_1_1_units_1_1_unit_stats_1a3acbe358408d422a12c1aaa001af14f3">DamageMultiplier</link> = new <link linkend="_class_adventure_assembly_1_1_units_1_1_stat">Stat</link>&lt;float&gt;(1f)<computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para><link linkend="_class_adventure_assembly_1_1_units_1_1_stat">Stat</link>&lt; float &gt; <link linkend="_class_adventure_assembly_1_1_units_1_1_unit_stats_1a4f2e950f3fd84b3d8de9b2f652a7a12b">MaxHealthMultiplier</link> = new <link linkend="_class_adventure_assembly_1_1_units_1_1_stat">Stat</link>&lt;float&gt;(1f)<computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+        </itemizedlist>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_stats_1a728d16c9fa6125282081bce40c7c9b00"/><section>
+    <title>Initialize()</title>
+<indexterm><primary>Initialize</primary><secondary>AdventureAssembly.Units.Enemies.EnemyStats</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Units.Enemies.EnemyStats</primary><secondary>Initialize</secondary></indexterm>
+<para><computeroutput>override void AdventureAssembly.Units.Enemies.EnemyStats.Initialize (<link linkend="_class_adventure_assembly_1_1_units_1_1_unit">Unit</link> unit)<computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Reimplemented from <link linkend="_class_adventure_assembly_1_1_units_1_1_unit_stats_1a70f9d0bf6d75f8c6ea338344d62ca627">AdventureAssembly.Units.UnitStats</link>.</para>
+</section>
+</section>
+<section>
+<title>Property Documentation</title>
+<anchor xml:id="_class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_stats_1abd7d3dd3b3631261ba9c1810e41f6b3b"/><section>
+    <title>Enemy</title>
+<indexterm><primary>Enemy</primary><secondary>AdventureAssembly.Units.Enemies.EnemyStats</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Units.Enemies.EnemyStats</primary><secondary>Enemy</secondary></indexterm>
+<para><computeroutput><link linkend="_class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy">Enemy</link> AdventureAssembly.Units.Enemies.EnemyStats.Enemy<computeroutput>[get]</computeroutput>, <computeroutput>[protected set]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_stats_1a0288679a232a6c8ed89d75ec49bc07e9"/><section>
+    <title>EnemyData</title>
+<indexterm><primary>EnemyData</primary><secondary>AdventureAssembly.Units.Enemies.EnemyStats</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Units.Enemies.EnemyStats</primary><secondary>EnemyData</secondary></indexterm>
+<para><computeroutput><link linkend="_class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_data">EnemyData</link> AdventureAssembly.Units.Enemies.EnemyStats.EnemyData<computeroutput>[get]</computeroutput>, <computeroutput>[protected set]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Enemies/<link linkend="__enemy_stats_8cs">EnemyStats.cs</link></section>
+</section>

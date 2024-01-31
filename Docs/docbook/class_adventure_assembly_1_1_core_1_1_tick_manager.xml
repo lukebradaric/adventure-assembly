@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_adventure_assembly_1_1_core_1_1_tick_manager" xml:lang="en-US">
+<title>AdventureAssembly.Core.TickManager Class Reference</title>
+<indexterm><primary>AdventureAssembly.Core.TickManager</primary></indexterm>
+<para>Inheritance diagram for AdventureAssembly.Core.TickManager:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_adventure_assembly_1_1_core_1_1_tick_manager.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_adventure_assembly_1_1_core_1_1_tick_manager_1a271dfcbfd2af6a9e00b43cc354ae213b">StartTickUpdates</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_adventure_assembly_1_1_core_1_1_tick_manager_1a8b1c5fd906b3419a8836131790836a1b">StopTickUpdates</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para>float <link linkend="_class_adventure_assembly_1_1_core_1_1_tick_manager_1a3f37da2050caca2eacfe9d65069ee29e">TickInterval</link> = 0.33333f<computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Events    </title>
+        <itemizedlist>
+            <listitem><para>static Action <link linkend="_class_adventure_assembly_1_1_core_1_1_tick_manager_1a4e535fa85fb667baf3de16d4d157fd3d">TickUpdate</link></para>
+</listitem>
+            <listitem><para>static Action <link linkend="_class_adventure_assembly_1_1_core_1_1_tick_manager_1a8d2ea4373e4994192d77bbd144c31cdf">TickLateUpdate</link></para>
+</listitem>
+            <listitem><para>static Action <link linkend="_class_adventure_assembly_1_1_core_1_1_tick_manager_1a57b771ff08445ab092c040e980571304">EnemyTickUpdate</link></para>
+</listitem>
+            <listitem><para>static Action <link linkend="_class_adventure_assembly_1_1_core_1_1_tick_manager_1ae3024126bf67ba3d82ac6a5be5616885">EnemyTickLateUpdate</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_adventure_assembly_1_1_core_1_1_tick_manager_1a271dfcbfd2af6a9e00b43cc354ae213b"/><section>
+    <title>StartTickUpdates()</title>
+<indexterm><primary>StartTickUpdates</primary><secondary>AdventureAssembly.Core.TickManager</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Core.TickManager</primary><secondary>StartTickUpdates</secondary></indexterm>
+<para><computeroutput>void AdventureAssembly.Core.TickManager.StartTickUpdates ( )</computeroutput></para></section>
+<anchor xml:id="_class_adventure_assembly_1_1_core_1_1_tick_manager_1a8b1c5fd906b3419a8836131790836a1b"/><section>
+    <title>StopTickUpdates()</title>
+<indexterm><primary>StopTickUpdates</primary><secondary>AdventureAssembly.Core.TickManager</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Core.TickManager</primary><secondary>StopTickUpdates</secondary></indexterm>
+<para><computeroutput>void AdventureAssembly.Core.TickManager.StopTickUpdates ( )</computeroutput></para></section>
+</section>
+<section>
+<title>Property Documentation</title>
+<anchor xml:id="_class_adventure_assembly_1_1_core_1_1_tick_manager_1a3f37da2050caca2eacfe9d65069ee29e"/><section>
+    <title>TickInterval</title>
+<indexterm><primary>TickInterval</primary><secondary>AdventureAssembly.Core.TickManager</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Core.TickManager</primary><secondary>TickInterval</secondary></indexterm>
+<para><computeroutput>float AdventureAssembly.Core.TickManager.TickInterval = 0.33333f<computeroutput>[get]</computeroutput></computeroutput></para></section>
+</section>
+<section>
+<title>Event Documentation</title>
+<anchor xml:id="_class_adventure_assembly_1_1_core_1_1_tick_manager_1ae3024126bf67ba3d82ac6a5be5616885"/><section>
+    <title>EnemyTickLateUpdate</title>
+<indexterm><primary>EnemyTickLateUpdate</primary><secondary>AdventureAssembly.Core.TickManager</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Core.TickManager</primary><secondary>EnemyTickLateUpdate</secondary></indexterm>
+<para><computeroutput>Action AdventureAssembly.Core.TickManager.EnemyTickLateUpdate<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_adventure_assembly_1_1_core_1_1_tick_manager_1a57b771ff08445ab092c040e980571304"/><section>
+    <title>EnemyTickUpdate</title>
+<indexterm><primary>EnemyTickUpdate</primary><secondary>AdventureAssembly.Core.TickManager</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Core.TickManager</primary><secondary>EnemyTickUpdate</secondary></indexterm>
+<para><computeroutput>Action AdventureAssembly.Core.TickManager.EnemyTickUpdate<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_adventure_assembly_1_1_core_1_1_tick_manager_1a8d2ea4373e4994192d77bbd144c31cdf"/><section>
+    <title>TickLateUpdate</title>
+<indexterm><primary>TickLateUpdate</primary><secondary>AdventureAssembly.Core.TickManager</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Core.TickManager</primary><secondary>TickLateUpdate</secondary></indexterm>
+<para><computeroutput>Action AdventureAssembly.Core.TickManager.TickLateUpdate<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_adventure_assembly_1_1_core_1_1_tick_manager_1a4e535fa85fb667baf3de16d4d157fd3d"/><section>
+    <title>TickUpdate</title>
+<indexterm><primary>TickUpdate</primary><secondary>AdventureAssembly.Core.TickManager</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Core.TickManager</primary><secondary>TickUpdate</secondary></indexterm>
+<para><computeroutput>Action AdventureAssembly.Core.TickManager.TickUpdate<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+D:/Unity/Projects/adventure-assembly/Assets/Scripts/Core/<link linkend="__tick_manager_8cs">TickManager.cs</link></section>
+</section>

@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_adventure_assembly_1_1_interface_1_1_interface_manager" xml:lang="en-US">
+<title>AdventureAssembly.Interface.InterfaceManager Class Reference</title>
+<indexterm><primary>AdventureAssembly.Interface.InterfaceManager</primary></indexterm>
+<para>Inheritance diagram for AdventureAssembly.Interface.InterfaceManager:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_adventure_assembly_1_1_interface_1_1_interface_manager.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_adventure_assembly_1_1_interface_1_1_hero_selection_interface">HeroSelectionInterface</link> <link linkend="_class_adventure_assembly_1_1_interface_1_1_interface_manager_1af1d33aeb859087298c0a253c1eaf8abc">HeroSelectionInterface</link><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Property Documentation</title>
+<anchor xml:id="_class_adventure_assembly_1_1_interface_1_1_interface_manager_1af1d33aeb859087298c0a253c1eaf8abc"/><section>
+    <title>HeroSelectionInterface</title>
+<indexterm><primary>HeroSelectionInterface</primary><secondary>AdventureAssembly.Interface.InterfaceManager</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Interface.InterfaceManager</primary><secondary>HeroSelectionInterface</secondary></indexterm>
+<para><computeroutput><link linkend="_class_adventure_assembly_1_1_interface_1_1_hero_selection_interface">HeroSelectionInterface</link> AdventureAssembly.Interface.InterfaceManager.HeroSelectionInterface<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+D:/Unity/Projects/adventure-assembly/Assets/Scripts/Interface/<link linkend="__interface_manager_8cs">InterfaceManager.cs</link></section>
+</section>

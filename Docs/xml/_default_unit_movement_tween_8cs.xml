@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="_default_unit_movement_tween_8cs" kind="file" language="C#">
+    <compoundname>DefaultUnitMovementTween.cs</compoundname>
+    <innerclass refid="class_adventure_assembly_1_1_units_1_1_animation_1_1_default_unit_movement_tween" prot="public">AdventureAssembly::Units::Animation::DefaultUnitMovementTween</innerclass>
+    <innernamespace refid="namespace_adventure_assembly">AdventureAssembly</innernamespace>
+    <innernamespace refid="namespace_adventure_assembly_1_1_units">AdventureAssembly::Units</innernamespace>
+    <innernamespace refid="namespace_adventure_assembly_1_1_units_1_1_animation">AdventureAssembly::Units::Animation</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using<sp/></highlight><highlight class="normal">DG.Tweening;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">UnityEngine;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="namespace_adventure_assembly_1_1_units_1_1_animation" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_adventure_assembly_1_1_units_1_1_animation" kindref="compound">AdventureAssembly.Units.Animation</ref></highlight></codeline>
+<codeline lineno="5"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="6" refid="class_adventure_assembly_1_1_units_1_1_animation_1_1_default_unit_movement_tween" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_adventure_assembly_1_1_units_1_1_animation_1_1_default_unit_movement_tween" kindref="compound">DefaultUnitMovementTween</ref><sp/>:<sp/><ref refid="class_adventure_assembly_1_1_units_1_1_animation_1_1_unit_movement_tween" kindref="compound">UnitMovementTween</ref></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_adventure_assembly_1_1_units_1_1_animation_1_1_default_unit_movement_tween_1ab32e3e375a904486ad542a1d6f734ef5" kindref="member">Animate</ref>(<ref refid="class_adventure_assembly_1_1_units_1_1_unit" kindref="compound">Unit</ref><sp/>unit,<sp/>Vector2Int<sp/>newPosition,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>duration)</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>unit.transform.DOMove((Vector2)newPosition,<sp/>duration).SetEase(Ease.OutCubic);</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Animation/DefaultUnitMovementTween.cs"/>
+  </compounddef>
+</doxygen>

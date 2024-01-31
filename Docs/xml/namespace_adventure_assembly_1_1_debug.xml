@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="namespace_adventure_assembly_1_1_debug" kind="namespace" language="C#">
+    <compoundname>AdventureAssembly::Debug</compoundname>
+    <innerclass refid="class_adventure_assembly_1_1_debug_1_1_debug_key_press" prot="public">AdventureAssembly::Debug::DebugKeyPress</innerclass>
+    <innerclass refid="class_adventure_assembly_1_1_debug_1_1_debug_kill_random_hero" prot="public">AdventureAssembly::Debug::DebugKillRandomHero</innerclass>
+    <innerclass refid="class_adventure_assembly_1_1_debug_1_1_debug_open_chest" prot="public">AdventureAssembly::Debug::DebugOpenChest</innerclass>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespace_adventure_assembly_1_1_debug_1a7c635ec39f90bcb5c2a10816715556fb" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>DebugInputMode</name>
+        <qualifiedname>AdventureAssembly.Debug.DebugInputMode</qualifiedname>
+        <enumvalue id="namespace_adventure_assembly_1_1_debug_1a7c635ec39f90bcb5c2a10816715556fba0610123bdd4ffc191a3ea05a847e1307" prot="public">
+          <name>Press</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_adventure_assembly_1_1_debug_1a7c635ec39f90bcb5c2a10816715556fbabcd8db575b47c838e5d551e3973db4ac" prot="public">
+          <name>Hold</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Debug/DebugInputMode.cs" line="3" column="11" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Debug/DebugInputMode.cs" bodystart="4" bodyend="7"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Debug/DebugInputMode.cs" line="1" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_adventure_assembly_1_1_units_1_1_unit_stats" xml:lang="en-US">
+<title>AdventureAssembly.Units.UnitStats Class Reference</title>
+<indexterm><primary>AdventureAssembly.Units.UnitStats</primary></indexterm>
+<para>Inheritance diagram for AdventureAssembly.Units.UnitStats:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_adventure_assembly_1_1_units_1_1_unit_stats.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>virtual void <link linkend="_class_adventure_assembly_1_1_units_1_1_unit_stats_1a70f9d0bf6d75f8c6ea338344d62ca627">Initialize</link> (<link linkend="_class_adventure_assembly_1_1_units_1_1_unit">Unit</link> unit)</para>
+</listitem>
+            <listitem><para>virtual <link linkend="_class_adventure_assembly_1_1_units_1_1_damage_data">DamageData</link> <link linkend="_class_adventure_assembly_1_1_units_1_1_unit_stats_1a83a2beb1adad04a2f00ea443cae7c3b6">GetDamageData</link> (<link linkend="_class_adventure_assembly_1_1_units_1_1_damage_data">DamageData</link> damageData)</para>
+</listitem>
+            <listitem><para>virtual int <link linkend="_class_adventure_assembly_1_1_units_1_1_unit_stats_1ae6119f225ce8bd14ca1e63ff82fa8a38">GetMaxHealth</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_adventure_assembly_1_1_units_1_1_unit">Unit</link> <link linkend="_class_adventure_assembly_1_1_units_1_1_unit_stats_1acb9e0cadc6fd05bf447e7cb42c5e6fe7">Unit</link><computeroutput> [get, protected set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para><link linkend="_class_adventure_assembly_1_1_units_1_1_unit_data">UnitData</link> <link linkend="_class_adventure_assembly_1_1_units_1_1_unit_stats_1a388594321287b630bf69a06e962ae774">UnitData</link><computeroutput> [get, protected set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para><link linkend="_class_adventure_assembly_1_1_units_1_1_stat">Stat</link>&lt; float &gt; <link linkend="_class_adventure_assembly_1_1_units_1_1_unit_stats_1a3acbe358408d422a12c1aaa001af14f3">DamageMultiplier</link> = new <link linkend="_class_adventure_assembly_1_1_units_1_1_stat">Stat</link>&lt;float&gt;(1f)<computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para><link linkend="_class_adventure_assembly_1_1_units_1_1_stat">Stat</link>&lt; float &gt; <link linkend="_class_adventure_assembly_1_1_units_1_1_unit_stats_1a4f2e950f3fd84b3d8de9b2f652a7a12b">MaxHealthMultiplier</link> = new <link linkend="_class_adventure_assembly_1_1_units_1_1_stat">Stat</link>&lt;float&gt;(1f)<computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_adventure_assembly_1_1_units_1_1_unit_stats_1a83a2beb1adad04a2f00ea443cae7c3b6"/><section>
+    <title>GetDamageData()</title>
+<indexterm><primary>GetDamageData</primary><secondary>AdventureAssembly.Units.UnitStats</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Units.UnitStats</primary><secondary>GetDamageData</secondary></indexterm>
+<para><computeroutput>virtual <link linkend="_class_adventure_assembly_1_1_units_1_1_damage_data">DamageData</link> AdventureAssembly.Units.UnitStats.GetDamageData (<link linkend="_class_adventure_assembly_1_1_units_1_1_damage_data">DamageData</link> damageData)<computeroutput>[virtual]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_adventure_assembly_1_1_units_1_1_unit_stats_1ae6119f225ce8bd14ca1e63ff82fa8a38"/><section>
+    <title>GetMaxHealth()</title>
+<indexterm><primary>GetMaxHealth</primary><secondary>AdventureAssembly.Units.UnitStats</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Units.UnitStats</primary><secondary>GetMaxHealth</secondary></indexterm>
+<para><computeroutput>virtual int AdventureAssembly.Units.UnitStats.GetMaxHealth ( )<computeroutput>[virtual]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_adventure_assembly_1_1_units_1_1_unit_stats_1a70f9d0bf6d75f8c6ea338344d62ca627"/><section>
+    <title>Initialize()</title>
+<indexterm><primary>Initialize</primary><secondary>AdventureAssembly.Units.UnitStats</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Units.UnitStats</primary><secondary>Initialize</secondary></indexterm>
+<para><computeroutput>virtual void AdventureAssembly.Units.UnitStats.Initialize (<link linkend="_class_adventure_assembly_1_1_units_1_1_unit">Unit</link> unit)<computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Reimplemented in <link linkend="_class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_stats_1a728d16c9fa6125282081bce40c7c9b00">AdventureAssembly.Units.Enemies.EnemyStats</link>, and <link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_stats_1af4d64b88399b062566ead0ed45a67e6f">AdventureAssembly.Units.Heroes.HeroStats</link>.</para>
+</section>
+</section>
+<section>
+<title>Property Documentation</title>
+<anchor xml:id="_class_adventure_assembly_1_1_units_1_1_unit_stats_1a3acbe358408d422a12c1aaa001af14f3"/><section>
+    <title>DamageMultiplier</title>
+<indexterm><primary>DamageMultiplier</primary><secondary>AdventureAssembly.Units.UnitStats</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Units.UnitStats</primary><secondary>DamageMultiplier</secondary></indexterm>
+<para><computeroutput><link linkend="_class_adventure_assembly_1_1_units_1_1_stat">Stat</link>&lt;float&gt; AdventureAssembly.Units.UnitStats.DamageMultiplier = new <link linkend="_class_adventure_assembly_1_1_units_1_1_stat">Stat</link>&lt;float&gt;(1f)<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_adventure_assembly_1_1_units_1_1_unit_stats_1a4f2e950f3fd84b3d8de9b2f652a7a12b"/><section>
+    <title>MaxHealthMultiplier</title>
+<indexterm><primary>MaxHealthMultiplier</primary><secondary>AdventureAssembly.Units.UnitStats</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Units.UnitStats</primary><secondary>MaxHealthMultiplier</secondary></indexterm>
+<para><computeroutput><link linkend="_class_adventure_assembly_1_1_units_1_1_stat">Stat</link>&lt;float&gt; AdventureAssembly.Units.UnitStats.MaxHealthMultiplier = new <link linkend="_class_adventure_assembly_1_1_units_1_1_stat">Stat</link>&lt;float&gt;(1f)<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_adventure_assembly_1_1_units_1_1_unit_stats_1acb9e0cadc6fd05bf447e7cb42c5e6fe7"/><section>
+    <title>Unit</title>
+<indexterm><primary>Unit</primary><secondary>AdventureAssembly.Units.UnitStats</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Units.UnitStats</primary><secondary>Unit</secondary></indexterm>
+<para><computeroutput><link linkend="_class_adventure_assembly_1_1_units_1_1_unit">Unit</link> AdventureAssembly.Units.UnitStats.Unit<computeroutput>[get]</computeroutput>, <computeroutput>[protected set]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_adventure_assembly_1_1_units_1_1_unit_stats_1a388594321287b630bf69a06e962ae774"/><section>
+    <title>UnitData</title>
+<indexterm><primary>UnitData</primary><secondary>AdventureAssembly.Units.UnitStats</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Units.UnitStats</primary><secondary>UnitData</secondary></indexterm>
+<para><computeroutput><link linkend="_class_adventure_assembly_1_1_units_1_1_unit_data">UnitData</link> AdventureAssembly.Units.UnitStats.UnitData<computeroutput>[get]</computeroutput>, <computeroutput>[protected set]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/<link linkend="__unit_stats_8cs">UnitStats.cs</link></section>
+</section>

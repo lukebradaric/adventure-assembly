@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_data_list_scriptable_variable" kind="class" language="C#" prot="public">
+    <compoundname>AdventureAssembly::Units::Heroes::HeroDataListScriptableVariable</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">ScriptableVariable&lt; List&lt; HeroData &gt; &gt;</basecompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_data_list_scriptable_variable_1a35f4a9ec36c57c30e88d303d175a0bda" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_data" kindref="compound">HeroData</ref></type>
+        <definition>HeroData AdventureAssembly.Units.Heroes.HeroDataListScriptableVariable.GetRandom</definition>
+        <argsstring>()</argsstring>
+        <name>GetRandom</name>
+        <qualifiedname>AdventureAssembly.Units.Heroes.HeroDataListScriptableVariable.GetRandom</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/HeroDataListScriptableVariable.cs" line="12" column="25" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/HeroDataListScriptableVariable.cs" bodystart="12" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_data_list_scriptable_variable_1aa1d4ab3ee2c9e5e62d54ad8751c2f426" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; <ref refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_data" kindref="compound">HeroData</ref> &gt;</type>
+        <definition>List&lt; HeroData &gt; AdventureAssembly.Units.Heroes.HeroDataListScriptableVariable.GetRandom</definition>
+        <argsstring>(int count)</argsstring>
+        <name>GetRandom</name>
+        <qualifiedname>AdventureAssembly.Units.Heroes.HeroDataListScriptableVariable.GetRandom</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/HeroDataListScriptableVariable.cs" line="17" column="21" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/HeroDataListScriptableVariable.cs" bodystart="17" bodyend="30"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>AdventureAssembly.Units.Heroes.HeroDataListScriptableVariable</label>
+        <link refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_data_list_scriptable_variable"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ScriptableVariable&lt; List&lt; HeroData &gt; &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>AdventureAssembly.Units.Heroes.HeroDataListScriptableVariable</label>
+        <link refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_data_list_scriptable_variable"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ScriptableVariable&lt; List&lt; HeroData &gt; &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/HeroDataListScriptableVariable.cs" line="10" column="11" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/HeroDataListScriptableVariable.cs" bodystart="11" bodyend="31"/>
+    <listofallmembers>
+      <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_data_list_scriptable_variable_1a35f4a9ec36c57c30e88d303d175a0bda" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::Heroes::HeroDataListScriptableVariable</scope><name>GetRandom</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_data_list_scriptable_variable_1aa1d4ab3ee2c9e5e62d54ad8751c2f426" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::Heroes::HeroDataListScriptableVariable</scope><name>GetRandom</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

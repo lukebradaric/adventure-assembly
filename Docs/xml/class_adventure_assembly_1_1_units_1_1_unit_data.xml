@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_adventure_assembly_1_1_units_1_1_unit_data" kind="class" language="C#" prot="public" abstract="yes">
+    <compoundname>AdventureAssembly::Units::UnitData</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">SerializedScriptableObject</basecompoundref>
+    <derivedcompoundref refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_data" prot="public" virt="non-virtual">AdventureAssembly.Units.Enemies.EnemyData</derivedcompoundref>
+    <derivedcompoundref refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_data" prot="public" virt="non-virtual">AdventureAssembly.Units.Heroes.HeroData</derivedcompoundref>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_adventure_assembly_1_1_units_1_1_unit_data_1a69171383da86da349b0d330024ac894e" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>string</type>
+        <definition>string AdventureAssembly.Units.UnitData.Name</definition>
+        <argsstring></argsstring>
+        <name>Name</name>
+        <qualifiedname>AdventureAssembly.Units.UnitData.Name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/UnitData.cs" line="12" column="24" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/UnitData.cs" bodystart="12" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="property" id="class_adventure_assembly_1_1_units_1_1_unit_data_1a43cf81379cf6ed95be45c067dc507fe0" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>Sprite</type>
+        <definition>Sprite AdventureAssembly.Units.UnitData.Sprite</definition>
+        <argsstring></argsstring>
+        <name>Sprite</name>
+        <qualifiedname>AdventureAssembly.Units.UnitData.Sprite</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/UnitData.cs" line="15" column="24" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/UnitData.cs" bodystart="15" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="property" id="class_adventure_assembly_1_1_units_1_1_unit_data_1a58a8f15f25278abc97a70a03ed84c075" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>int</type>
+        <definition>int AdventureAssembly.Units.UnitData.MaxHealth</definition>
+        <argsstring></argsstring>
+        <name>MaxHealth</name>
+        <qualifiedname>AdventureAssembly.Units.UnitData.MaxHealth</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/UnitData.cs" line="17" column="21" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/UnitData.cs" bodystart="17" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="property" id="class_adventure_assembly_1_1_units_1_1_unit_data_1a198983aa6fc95b867c884f41b74bfe7a" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type><ref refid="class_adventure_assembly_1_1_units_1_1_animation_1_1_unit_movement_tween" kindref="compound">UnitMovementTween</ref></type>
+        <definition>UnitMovementTween AdventureAssembly.Units.UnitData.MovementTween</definition>
+        <argsstring></argsstring>
+        <name>MovementTween</name>
+        <qualifiedname>AdventureAssembly.Units.UnitData.MovementTween</qualifiedname>
+        <initializer>= new <ref refid="class_adventure_assembly_1_1_units_1_1_animation_1_1_default_unit_movement_tween" kindref="compound">DefaultUnitMovementTween</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/UnitData.cs" line="19" column="35" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/UnitData.cs" bodystart="19" bodyend="19"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>AdventureAssembly.Units.UnitData</label>
+        <link refid="class_adventure_assembly_1_1_units_1_1_unit_data"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>AdventureAssembly.Units.Enemies.EnemyData</label>
+        <link refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_data"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>AdventureAssembly.Units.Heroes.HeroData</label>
+        <link refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_data"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>SerializedScriptableObject</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>AdventureAssembly.Units.UnitData</label>
+        <link refid="class_adventure_assembly_1_1_units_1_1_unit_data"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>SerializedScriptableObject</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/UnitData.cs" line="8" column="21" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/UnitData.cs" bodystart="9" bodyend="20"/>
+    <listofallmembers>
+      <member refid="class_adventure_assembly_1_1_units_1_1_unit_data_1a58a8f15f25278abc97a70a03ed84c075" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::UnitData</scope><name>MaxHealth</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_unit_data_1a198983aa6fc95b867c884f41b74bfe7a" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::UnitData</scope><name>MovementTween</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_unit_data_1a69171383da86da349b0d330024ac894e" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::UnitData</scope><name>Name</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_unit_data_1a43cf81379cf6ed95be45c067dc507fe0" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::UnitData</scope><name>Sprite</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

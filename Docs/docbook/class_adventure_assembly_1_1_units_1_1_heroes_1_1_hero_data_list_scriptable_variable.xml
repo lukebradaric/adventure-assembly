@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_data_list_scriptable_variable" xml:lang="en-US">
+<title>AdventureAssembly.Units.Heroes.HeroDataListScriptableVariable Class Reference</title>
+<indexterm><primary>AdventureAssembly.Units.Heroes.HeroDataListScriptableVariable</primary></indexterm>
+<para>Inheritance diagram for AdventureAssembly.Units.Heroes.HeroDataListScriptableVariable:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_data_list_scriptable_variable.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_data">HeroData</link> <link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_data_list_scriptable_variable_1a35f4a9ec36c57c30e88d303d175a0bda">GetRandom</link> ()</para>
+</listitem>
+            <listitem><para>List&lt; <link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_data">HeroData</link> &gt; <link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_data_list_scriptable_variable_1aa1d4ab3ee2c9e5e62d54ad8751c2f426">GetRandom</link> (int count)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_data_list_scriptable_variable_1a35f4a9ec36c57c30e88d303d175a0bda"/><section>
+    <title>GetRandom()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>GetRandom</primary><secondary>AdventureAssembly.Units.Heroes.HeroDataListScriptableVariable</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Units.Heroes.HeroDataListScriptableVariable</primary><secondary>GetRandom</secondary></indexterm>
+<para><computeroutput><link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_data">HeroData</link> AdventureAssembly.Units.Heroes.HeroDataListScriptableVariable.GetRandom ( )</computeroutput></para></section>
+<anchor xml:id="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_data_list_scriptable_variable_1aa1d4ab3ee2c9e5e62d54ad8751c2f426"/><section>
+    <title>GetRandom()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>GetRandom</primary><secondary>AdventureAssembly.Units.Heroes.HeroDataListScriptableVariable</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Units.Heroes.HeroDataListScriptableVariable</primary><secondary>GetRandom</secondary></indexterm>
+<para><computeroutput>List&lt; <link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_data">HeroData</link> &gt; AdventureAssembly.Units.Heroes.HeroDataListScriptableVariable.GetRandom (int count)</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/<link linkend="__hero_data_list_scriptable_variable_8cs">HeroDataListScriptableVariable.cs</link></section>
+</section>

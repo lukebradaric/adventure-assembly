@@ -926,6 +926,10 @@ PrefabInstance:
       propertyPath: serializationData.PrefabModificationsReferencedUnityObjects.Array.size
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5428801609344274336, guid: e450e852feb5a7c41ad1cd4f12ff1f3e, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 5471210707774386764, guid: e450e852feb5a7c41ad1cd4f12ff1f3e, type: 3}
       propertyPath: _heroManager
       value: 

@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespace_adventure_assembly_1_1_units_1_1_tests" xml:lang="en-US">
+<title>AdventureAssembly.Units.Tests Namespace Reference</title>
+<indexterm><primary>AdventureAssembly.Units.Tests</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_adventure_assembly_1_1_units_1_1_tests_1_1_damage_modifier">DamageModifier</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_adventure_assembly_1_1_units_1_1_tests_1_1_default_stat_modifier">DefaultStatModifier</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_adventure_assembly_1_1_units_1_1_tests_1_1_health_modifier">HealthModifier</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_adventure_assembly_1_1_units_1_1_tests_1_1_test_class_modifier">TestClassModifier</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_adventure_assembly_1_1_units_1_1_tests_1_1_test_enemy_modifier">TestEnemyModifier</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_5231e15b06875d64b56adeb846ac0863" xml:lang="en-US">
+<title>D:/Unity/Projects/adventure-assembly/Assets/Scripts/Interface Directory Reference</title>
+<indexterm><primary>D:/Unity/Projects/adventure-assembly/Assets/Scripts/Interface Directory Reference</primary></indexterm>
+<simplesect>
+    <title>Files    </title>
+        <itemizedlist>
+            <listitem><para>file <link linkend="__gold_interface_8cs">GoldInterface.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__hero_class_element_8cs">HeroClassElement.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__hero_selection_element_8cs">HeroSelectionElement.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__hero_selection_interface_8cs">HeroSelectionInterface.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__interface_2_hero_selection_start_8cs">HeroSelectionStart.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__interface_manager_8cs">InterfaceManager.cs</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

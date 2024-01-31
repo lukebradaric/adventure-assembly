@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_f13b41af88cf68434578284aaf699e39" xml:lang="en-US">
+<title>D:/Unity/Projects/adventure-assembly/Assets/Scripts Directory Reference</title>
+<indexterm><primary>D:/Unity/Projects/adventure-assembly/Assets/Scripts Directory Reference</primary></indexterm>
+<simplesect>
+    <title>Directories    </title>
+        <itemizedlist>
+            <listitem><para>directory <link linkend="_dir_7db68f476bd50f9f6d9cf398af037e8e">Core</link></para>
+</listitem>
+            <listitem><para>directory <link linkend="_dir_b426409c486fcc95972188faa22ba378">Debug</link></para>
+</listitem>
+            <listitem><para>directory <link linkend="_dir_82bf5dcf5f07f0970851629866abc1ad">Input</link></para>
+</listitem>
+            <listitem><para>directory <link linkend="_dir_5231e15b06875d64b56adeb846ac0863">Interface</link></para>
+</listitem>
+            <listitem><para>directory <link linkend="_dir_819c5f94eeb3ceb186bdcd8928cc14ef">Tests</link></para>
+</listitem>
+            <listitem><para>directory <link linkend="_dir_4eb0bfcbbaf9efdd81b8badbbaca815e">Units</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

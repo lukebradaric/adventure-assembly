@@ -1,0 +1,328 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_spawner" kind="class" language="C#" prot="public">
+    <compoundname>AdventureAssembly::Units::Enemies::EnemySpawner</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_spawner_1a1d11eb981da1da2c16296dad148971f1" prot="private" static="no" mutable="no">
+        <type><ref refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy" kindref="compound">Enemy</ref></type>
+        <definition>Enemy AdventureAssembly.Units.Enemies.EnemySpawner._enemyPrefab</definition>
+        <argsstring></argsstring>
+        <name>_enemyPrefab</name>
+        <qualifiedname>AdventureAssembly.Units.Enemies.EnemySpawner._enemyPrefab</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Enemies/EnemySpawner.cs" line="20" column="24" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Enemies/EnemySpawner.cs" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_spawner_1a7f1a7e7b8e043996bd4b1a72792048f2" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float AdventureAssembly.Units.Enemies.EnemySpawner._updateInterval</definition>
+        <argsstring></argsstring>
+        <name>_updateInterval</name>
+        <qualifiedname>AdventureAssembly.Units.Enemies.EnemySpawner._updateInterval</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Enemies/EnemySpawner.cs" line="24" column="24" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Enemies/EnemySpawner.cs" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_spawner_1afb3bd7dda85774b85d672e40ce3f06fb" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AdventureAssembly.Units.Enemies.EnemySpawner._maxEnemyCount</definition>
+        <argsstring></argsstring>
+        <name>_maxEnemyCount</name>
+        <qualifiedname>AdventureAssembly.Units.Enemies.EnemySpawner._maxEnemyCount</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Enemies/EnemySpawner.cs" line="25" column="22" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Enemies/EnemySpawner.cs" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_spawner_1aa79c0a9ec3367dddd64a333df2c17bd5" prot="private" static="no" mutable="no">
+        <type>Vector2</type>
+        <definition>Vector2 AdventureAssembly.Units.Enemies.EnemySpawner._spawnRadius</definition>
+        <argsstring></argsstring>
+        <name>_spawnRadius</name>
+        <qualifiedname>AdventureAssembly.Units.Enemies.EnemySpawner._spawnRadius</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Enemies/EnemySpawner.cs" line="26" column="26" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Enemies/EnemySpawner.cs" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_spawner_1a6e86b5bb57d0957c12caeb99cae86cdf" prot="private" static="no" mutable="no">
+        <type>AnimationCurve</type>
+        <definition>AnimationCurve AdventureAssembly.Units.Enemies.EnemySpawner._spawnCurve</definition>
+        <argsstring></argsstring>
+        <name>_spawnCurve</name>
+        <qualifiedname>AdventureAssembly.Units.Enemies.EnemySpawner._spawnCurve</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Enemies/EnemySpawner.cs" line="27" column="33" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Enemies/EnemySpawner.cs" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_spawner_1a59e0f10fd6433fddcae3c31f05da753b" prot="private" static="no" mutable="no">
+        <type>List&lt; EnemySpawnData &gt;</type>
+        <definition>List&lt;EnemySpawnData&gt; AdventureAssembly.Units.Enemies.EnemySpawner._spawnData</definition>
+        <argsstring></argsstring>
+        <name>_spawnData</name>
+        <qualifiedname>AdventureAssembly.Units.Enemies.EnemySpawner._spawnData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Enemies/EnemySpawner.cs" line="28" column="23" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Enemies/EnemySpawner.cs" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_spawner_1a043d88fde224ad1eb96f5b7ae1286bba" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float AdventureAssembly.Units.Enemies.EnemySpawner._currentTime</definition>
+        <argsstring></argsstring>
+        <name>_currentTime</name>
+        <qualifiedname>AdventureAssembly.Units.Enemies.EnemySpawner._currentTime</qualifiedname>
+        <initializer>= 0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Enemies/EnemySpawner.cs" line="30" column="23" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Enemies/EnemySpawner.cs" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_spawner_1a66b6f17a19552c13fcbe1d83153a38ea" prot="private" static="no" mutable="no">
+        <type>Coroutine</type>
+        <definition>Coroutine AdventureAssembly.Units.Enemies.EnemySpawner._updateCoroutine</definition>
+        <argsstring></argsstring>
+        <name>_updateCoroutine</name>
+        <qualifiedname>AdventureAssembly.Units.Enemies.EnemySpawner._updateCoroutine</qualifiedname>
+        <initializer>= null</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Enemies/EnemySpawner.cs" line="32" column="27" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Enemies/EnemySpawner.cs" bodystart="32" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_spawner_1a7b2394813ca52e3ccb83a4c852b75095" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AdventureAssembly.Units.Enemies.EnemySpawner.OnEnable</definition>
+        <argsstring>()</argsstring>
+        <name>OnEnable</name>
+        <qualifiedname>AdventureAssembly.Units.Enemies.EnemySpawner.OnEnable</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Enemies/EnemySpawner.cs" line="34" column="22" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Enemies/EnemySpawner.cs" bodystart="34" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_spawner_1a36bf06360734348f85d8e6f70290e674" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IEnumerator</type>
+        <definition>IEnumerator AdventureAssembly.Units.Enemies.EnemySpawner.UpdateCoroutine</definition>
+        <argsstring>()</argsstring>
+        <name>UpdateCoroutine</name>
+        <qualifiedname>AdventureAssembly.Units.Enemies.EnemySpawner.UpdateCoroutine</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Enemies/EnemySpawner.cs" line="39" column="29" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Enemies/EnemySpawner.cs" bodystart="39" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_spawner_1ac229b133ecd54b37a9225251ebcb72bd" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AdventureAssembly.Units.Enemies.EnemySpawner.OnUpdate</definition>
+        <argsstring>()</argsstring>
+        <name>OnUpdate</name>
+        <qualifiedname>AdventureAssembly.Units.Enemies.EnemySpawner.OnUpdate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Enemies/EnemySpawner.cs" line="48" column="22" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Enemies/EnemySpawner.cs" bodystart="48" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_spawner_1a19b3d04b9a1bdb50c6e3c8baeb17dd77" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int AdventureAssembly.Units.Enemies.EnemySpawner.GetEnemySpawnCount</definition>
+        <argsstring>()</argsstring>
+        <name>GetEnemySpawnCount</name>
+        <qualifiedname>AdventureAssembly.Units.Enemies.EnemySpawner.GetEnemySpawnCount</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Enemies/EnemySpawner.cs" line="53" column="21" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Enemies/EnemySpawner.cs" bodystart="53" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_spawner_1acfe88c78a182fa3667c95c9530f4cf1a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; <ref refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_data" kindref="compound">EnemyData</ref> &gt;</type>
+        <definition>List&lt; EnemyData &gt; AdventureAssembly.Units.Enemies.EnemySpawner.GetRandomEnemyData</definition>
+        <argsstring>(int count)</argsstring>
+        <name>GetRandomEnemyData</name>
+        <qualifiedname>AdventureAssembly.Units.Enemies.EnemySpawner.GetRandomEnemyData</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Enemies/EnemySpawner.cs" line="58" column="22" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Enemies/EnemySpawner.cs" bodystart="58" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_spawner_1a16dbc2538e4554eaf91f6df938450cfe" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AdventureAssembly.Units.Enemies.EnemySpawner.SpawnRandomEnemies</definition>
+        <argsstring>(int count)</argsstring>
+        <name>SpawnRandomEnemies</name>
+        <qualifiedname>AdventureAssembly.Units.Enemies.EnemySpawner.SpawnRandomEnemies</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Enemies/EnemySpawner.cs" line="75" column="22" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Enemies/EnemySpawner.cs" bodystart="75" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_spawner_1afe44277383c050bcf845c9163a54905f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Vector2Int</type>
+        <definition>Vector2Int AdventureAssembly.Units.Enemies.EnemySpawner.GetSpawnPosition</definition>
+        <argsstring>()</argsstring>
+        <name>GetSpawnPosition</name>
+        <qualifiedname>AdventureAssembly.Units.Enemies.EnemySpawner.GetSpawnPosition</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Enemies/EnemySpawner.cs" line="85" column="28" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Enemies/EnemySpawner.cs" bodystart="85" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_spawner_1ac1d863396509ca6a8e061ccfda71d223" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AdventureAssembly.Units.Enemies.EnemySpawner.SpawnEnemy</definition>
+        <argsstring>(EnemyData enemyData)</argsstring>
+        <name>SpawnEnemy</name>
+        <qualifiedname>AdventureAssembly.Units.Enemies.EnemySpawner.SpawnEnemy</qualifiedname>
+        <param>
+          <type><ref refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_data" kindref="compound">EnemyData</ref></type>
+          <declname>enemyData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Enemies/EnemySpawner.cs" line="99" column="22" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Enemies/EnemySpawner.cs" bodystart="99" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_spawner_1a979cdf4fda6c93f18172e3149c8f2ef2" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AdventureAssembly.Units.Enemies.EnemySpawner.OnEnemyDied</definition>
+        <argsstring>(Unit unit)</argsstring>
+        <name>OnEnemyDied</name>
+        <qualifiedname>AdventureAssembly.Units.Enemies.EnemySpawner.OnEnemyDied</qualifiedname>
+        <param>
+          <type><ref refid="class_adventure_assembly_1_1_units_1_1_unit" kindref="compound">Unit</ref></type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Enemies/EnemySpawner.cs" line="117" column="22" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Enemies/EnemySpawner.cs" bodystart="117" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_spawner_1a270ce205e1c0b38c99422ec7e751b273" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AdventureAssembly.Units.Enemies.EnemySpawner.OnDrawGizmos</definition>
+        <argsstring>()</argsstring>
+        <name>OnDrawGizmos</name>
+        <qualifiedname>AdventureAssembly.Units.Enemies.EnemySpawner.OnDrawGizmos</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Enemies/EnemySpawner.cs" line="123" column="22" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Enemies/EnemySpawner.cs" bodystart="123" bodyend="128"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>AdventureAssembly.Units.Enemies.EnemySpawner</label>
+        <link refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_spawner"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>AdventureAssembly.Units.Enemies.EnemySpawner</label>
+        <link refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_spawner"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Enemies/EnemySpawner.cs" line="16" column="11" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Enemies/EnemySpawner.cs" bodystart="17" bodyend="129"/>
+    <listofallmembers>
+      <member refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_spawner_1a043d88fde224ad1eb96f5b7ae1286bba" prot="private" virt="non-virtual"><scope>AdventureAssembly::Units::Enemies::EnemySpawner</scope><name>_currentTime</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_spawner_1a1d11eb981da1da2c16296dad148971f1" prot="private" virt="non-virtual"><scope>AdventureAssembly::Units::Enemies::EnemySpawner</scope><name>_enemyPrefab</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_spawner_1afb3bd7dda85774b85d672e40ce3f06fb" prot="private" virt="non-virtual"><scope>AdventureAssembly::Units::Enemies::EnemySpawner</scope><name>_maxEnemyCount</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_spawner_1a6e86b5bb57d0957c12caeb99cae86cdf" prot="private" virt="non-virtual"><scope>AdventureAssembly::Units::Enemies::EnemySpawner</scope><name>_spawnCurve</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_spawner_1a59e0f10fd6433fddcae3c31f05da753b" prot="private" virt="non-virtual"><scope>AdventureAssembly::Units::Enemies::EnemySpawner</scope><name>_spawnData</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_spawner_1aa79c0a9ec3367dddd64a333df2c17bd5" prot="private" virt="non-virtual"><scope>AdventureAssembly::Units::Enemies::EnemySpawner</scope><name>_spawnRadius</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_spawner_1a66b6f17a19552c13fcbe1d83153a38ea" prot="private" virt="non-virtual"><scope>AdventureAssembly::Units::Enemies::EnemySpawner</scope><name>_updateCoroutine</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_spawner_1a7f1a7e7b8e043996bd4b1a72792048f2" prot="private" virt="non-virtual"><scope>AdventureAssembly::Units::Enemies::EnemySpawner</scope><name>_updateInterval</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_spawner_1a19b3d04b9a1bdb50c6e3c8baeb17dd77" prot="private" virt="non-virtual"><scope>AdventureAssembly::Units::Enemies::EnemySpawner</scope><name>GetEnemySpawnCount</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_spawner_1acfe88c78a182fa3667c95c9530f4cf1a" prot="private" virt="non-virtual"><scope>AdventureAssembly::Units::Enemies::EnemySpawner</scope><name>GetRandomEnemyData</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_spawner_1afe44277383c050bcf845c9163a54905f" prot="private" virt="non-virtual"><scope>AdventureAssembly::Units::Enemies::EnemySpawner</scope><name>GetSpawnPosition</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_spawner_1a270ce205e1c0b38c99422ec7e751b273" prot="private" virt="non-virtual"><scope>AdventureAssembly::Units::Enemies::EnemySpawner</scope><name>OnDrawGizmos</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_spawner_1a7b2394813ca52e3ccb83a4c852b75095" prot="private" virt="non-virtual"><scope>AdventureAssembly::Units::Enemies::EnemySpawner</scope><name>OnEnable</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_spawner_1a979cdf4fda6c93f18172e3149c8f2ef2" prot="private" virt="non-virtual"><scope>AdventureAssembly::Units::Enemies::EnemySpawner</scope><name>OnEnemyDied</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_spawner_1ac229b133ecd54b37a9225251ebcb72bd" prot="private" virt="non-virtual"><scope>AdventureAssembly::Units::Enemies::EnemySpawner</scope><name>OnUpdate</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_spawner_1ac1d863396509ca6a8e061ccfda71d223" prot="private" virt="non-virtual"><scope>AdventureAssembly::Units::Enemies::EnemySpawner</scope><name>SpawnEnemy</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_spawner_1a16dbc2538e4554eaf91f6df938450cfe" prot="private" virt="non-virtual"><scope>AdventureAssembly::Units::Enemies::EnemySpawner</scope><name>SpawnRandomEnemies</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_spawner_1a36bf06360734348f85d8e6f70290e674" prot="private" virt="non-virtual"><scope>AdventureAssembly::Units::Enemies::EnemySpawner</scope><name>UpdateCoroutine</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

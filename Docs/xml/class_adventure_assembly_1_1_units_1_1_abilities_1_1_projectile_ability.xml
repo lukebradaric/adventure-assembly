@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_adventure_assembly_1_1_units_1_1_abilities_1_1_projectile_ability" kind="class" language="C#" prot="public">
+    <compoundname>AdventureAssembly::Units::Abilities::ProjectileAbility</compoundname>
+    <basecompoundref refid="class_adventure_assembly_1_1_units_1_1_abilities_1_1_ability" prot="public" virt="non-virtual">AdventureAssembly.Units.Abilities.Ability</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_adventure_assembly_1_1_units_1_1_abilities_1_1_projectile_ability_1a3bfd987206fa5580b0bade4c38ac421d" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AdventureAssembly.Units.Abilities.ProjectileAbility._baseDamage</definition>
+        <argsstring></argsstring>
+        <name>_baseDamage</name>
+        <qualifiedname>AdventureAssembly.Units.Abilities.ProjectileAbility._baseDamage</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Abilities/ProjectileAbility.cs" line="9" column="22" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Abilities/ProjectileAbility.cs" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_adventure_assembly_1_1_units_1_1_abilities_1_1_projectile_ability_1adaf4263fa604b17d299892133aa4070b" prot="private" static="no" mutable="no">
+        <type><ref refid="class_adventure_assembly_1_1_units_1_1_projectile" kindref="compound">Projectile</ref></type>
+        <definition>Projectile AdventureAssembly.Units.Abilities.ProjectileAbility._projectilePrefab</definition>
+        <argsstring></argsstring>
+        <name>_projectilePrefab</name>
+        <qualifiedname>AdventureAssembly.Units.Abilities.ProjectileAbility._projectilePrefab</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Abilities/ProjectileAbility.cs" line="10" column="29" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Abilities/ProjectileAbility.cs" bodystart="10" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_adventure_assembly_1_1_units_1_1_abilities_1_1_projectile_ability_1ac727e4221751d93c12fee7822a579523" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void AdventureAssembly.Units.Abilities.ProjectileAbility.Execute</definition>
+        <argsstring>()</argsstring>
+        <name>Execute</name>
+        <qualifiedname>AdventureAssembly.Units.Abilities.ProjectileAbility.Execute</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Abilities/ProjectileAbility.cs" line="12" column="33" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Abilities/ProjectileAbility.cs" bodystart="12" bodyend="23"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Ability</label>
+        <link refid="class_adventure_assembly_1_1_units_1_1_abilities_1_1_ability"/>
+      </node>
+      <node id="1">
+        <label>AdventureAssembly.Units.Abilities.ProjectileAbility</label>
+        <link refid="class_adventure_assembly_1_1_units_1_1_abilities_1_1_projectile_ability"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Ability</label>
+        <link refid="class_adventure_assembly_1_1_units_1_1_abilities_1_1_ability"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>_hero</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>AdventureAssembly.Units.Abilities.ProjectileAbility</label>
+        <link refid="class_adventure_assembly_1_1_units_1_1_abilities_1_1_projectile_ability"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>AdventureAssembly.Units.Heroes.Hero</label>
+        <link refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>SerializedMonoBehaviour</label>
+      </node>
+      <node id="4">
+        <label>Unit</label>
+        <link refid="class_adventure_assembly_1_1_units_1_1_unit"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Abilities/ProjectileAbility.cs" line="7" column="11" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Abilities/ProjectileAbility.cs" bodystart="8" bodyend="24"/>
+    <listofallmembers>
+      <member refid="class_adventure_assembly_1_1_units_1_1_abilities_1_1_projectile_ability_1a3bfd987206fa5580b0bade4c38ac421d" prot="private" virt="non-virtual"><scope>AdventureAssembly::Units::Abilities::ProjectileAbility</scope><name>_baseDamage</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_abilities_1_1_ability_1a915b3150562955757d4dca3dfa551b30" prot="protected" virt="non-virtual"><scope>AdventureAssembly::Units::Abilities::ProjectileAbility</scope><name>_currentTime</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_abilities_1_1_ability_1a11cd1eb21886e3c08b9564f60090125f" prot="protected" virt="non-virtual"><scope>AdventureAssembly::Units::Abilities::ProjectileAbility</scope><name>_hero</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_abilities_1_1_projectile_ability_1adaf4263fa604b17d299892133aa4070b" prot="private" virt="non-virtual"><scope>AdventureAssembly::Units::Abilities::ProjectileAbility</scope><name>_projectilePrefab</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_abilities_1_1_projectile_ability_1ac727e4221751d93c12fee7822a579523" prot="protected" virt="non-virtual"><scope>AdventureAssembly::Units::Abilities::ProjectileAbility</scope><name>Execute</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_abilities_1_1_ability_1a720aa4b9d9ce12d3ce9dc0672c2e09bb" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::Abilities::ProjectileAbility</scope><name>GetClone</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_abilities_1_1_ability_1ac791d2af1bb18d969d6435d7c3299d60" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::Abilities::ProjectileAbility</scope><name>Initialize</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_abilities_1_1_ability_1a5461d3186734eae08dfb7eeaa1f22b04" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::Abilities::ProjectileAbility</scope><name>OnUpdate</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

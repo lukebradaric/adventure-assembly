@@ -1,0 +1,77 @@
+.TH "AdventureAssembly.Core.GoldManager" 3 "AdventureAssembly" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+AdventureAssembly.Core.GoldManager \- Manager for handling gold\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits Singleton< GoldManager >\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBUpdate\fP ()"
+.br
+.ti -1c
+.RI "void \fBAddGold\fP (Vector2 position)"
+.br
+.ti -1c
+.RI "void \fBAddGold\fP (Vector2 position, int amount)"
+.br
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static bool \fBTrySpend\fP (int amount)"
+.br
+.RI "Tries to spend an amount of gold\&. "
+.in -1c
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "static Observable< int > \fBCurrentGold\fP = new Observable<int>(0)\fR [get]\fP"
+.br
+.RI "The amount of gold the player currently has\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Manager for handling gold\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "void AdventureAssembly\&.Core\&.GoldManager\&.AddGold (Vector2 position)"
+
+.SS "void AdventureAssembly\&.Core\&.GoldManager\&.AddGold (Vector2 position, int amount)"
+
+.SS "static bool AdventureAssembly\&.Core\&.GoldManager\&.TrySpend (int amount)\fR [static]\fP"
+
+.PP
+Tries to spend an amount of gold\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIamount\fP The amount of gold to spend\&.
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+True if the gold was succesfully spent\&. False if the gold was not spent\&.
+.RE
+.PP
+
+.SS "void AdventureAssembly\&.Core\&.GoldManager\&.Update ()"
+
+.SH "Property Documentation"
+.PP 
+.SS "Observable<int> AdventureAssembly\&.Core\&.GoldManager\&.CurrentGold = new Observable<int>(0)\fR [static]\fP, \fR [get]\fP"
+
+.PP
+The amount of gold the player currently has\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for AdventureAssembly from the source code\&.

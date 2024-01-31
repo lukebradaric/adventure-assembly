@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespace_adventure_assembly_1_1_units_1_1_heroes" xml:lang="en-US">
+<title>AdventureAssembly.Units.Heroes Namespace Reference</title>
+<indexterm><primary>AdventureAssembly.Units.Heroes</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_data">ClassData</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_manager">ClassManager</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_modifier">ClassModifier</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero">Hero</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_data">HeroData</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_data_list_scriptable_variable">HeroDataListScriptableVariable</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_indicator">HeroIndicator</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_manager">HeroManager</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_selection_start">HeroSelectionStart</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_stats">HeroStats</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

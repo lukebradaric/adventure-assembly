@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_adventure_assembly_1_1_input_1_1_input_manager" kind="class" language="C#" prot="public">
+    <compoundname>AdventureAssembly::Input::InputManager</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_adventure_assembly_1_1_input_1_1_input_manager_1af5b4c41d4fc4958d65777bb09afd1a6d" prot="public" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>Observable&lt; Vector2Int &gt;</type>
+        <definition>Observable&lt;Vector2Int&gt; AdventureAssembly.Input.InputManager.MovementVector</definition>
+        <argsstring></argsstring>
+        <name>MovementVector</name>
+        <qualifiedname>AdventureAssembly.Input.InputManager.MovementVector</qualifiedname>
+        <initializer>= new Observable&lt;Vector2Int&gt;(Vector2Int.up)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Input/InputManager.cs" line="8" column="34" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Input/InputManager.cs" bodystart="8" bodyend="8"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_adventure_assembly_1_1_input_1_1_input_manager_1a6f271d89f7e116b5517bc399238365d7" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AdventureAssembly.Input.InputManager.Update</definition>
+        <argsstring>()</argsstring>
+        <name>Update</name>
+        <qualifiedname>AdventureAssembly.Input.InputManager.Update</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Input/InputManager.cs" line="10" column="22" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Input/InputManager.cs" bodystart="10" bodyend="31"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>AdventureAssembly.Input.InputManager</label>
+        <link refid="class_adventure_assembly_1_1_input_1_1_input_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>AdventureAssembly.Input.InputManager</label>
+        <link refid="class_adventure_assembly_1_1_input_1_1_input_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Input/InputManager.cs" line="6" column="11" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Input/InputManager.cs" bodystart="7" bodyend="32"/>
+    <listofallmembers>
+      <member refid="class_adventure_assembly_1_1_input_1_1_input_manager_1af5b4c41d4fc4958d65777bb09afd1a6d" prot="public" virt="non-virtual"><scope>AdventureAssembly::Input::InputManager</scope><name>MovementVector</name></member>
+      <member refid="class_adventure_assembly_1_1_input_1_1_input_manager_1a6f271d89f7e116b5517bc399238365d7" prot="private" virt="non-virtual"><scope>AdventureAssembly::Input::InputManager</scope><name>Update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

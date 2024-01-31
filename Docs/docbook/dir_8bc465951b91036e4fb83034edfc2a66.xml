@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_8bc465951b91036e4fb83034edfc2a66" xml:lang="en-US">
+<title>D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Animation Directory Reference</title>
+<indexterm><primary>D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Animation Directory Reference</primary></indexterm>
+<simplesect>
+    <title>Files    </title>
+        <itemizedlist>
+            <listitem><para>file <link linkend="__default_unit_movement_tween_8cs">DefaultUnitMovementTween.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__unit_movement_tween_8cs">UnitMovementTween.cs</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

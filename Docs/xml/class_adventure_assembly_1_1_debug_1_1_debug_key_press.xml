@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_adventure_assembly_1_1_debug_1_1_debug_key_press" kind="class" language="C#" prot="public" abstract="yes">
+    <compoundname>AdventureAssembly::Debug::DebugKeyPress</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+    <derivedcompoundref refid="class_adventure_assembly_1_1_debug_1_1_debug_kill_random_hero" prot="public" virt="non-virtual">AdventureAssembly.Debug.DebugKillRandomHero</derivedcompoundref>
+    <derivedcompoundref refid="class_adventure_assembly_1_1_debug_1_1_debug_open_chest" prot="public" virt="non-virtual">AdventureAssembly.Debug.DebugOpenChest</derivedcompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_adventure_assembly_1_1_debug_1_1_debug_key_press_1a5520f7dfb2070dfc596e38543592436f" prot="private" static="no" mutable="no">
+        <type>KeyCode</type>
+        <definition>KeyCode AdventureAssembly.Debug.DebugKeyPress._key</definition>
+        <argsstring></argsstring>
+        <name>_key</name>
+        <qualifiedname>AdventureAssembly.Debug.DebugKeyPress._key</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Debug/DebugKeyPress.cs" line="7" column="26" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Debug/DebugKeyPress.cs" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_adventure_assembly_1_1_debug_1_1_debug_key_press_1a2d6f605185d29a2a02676c56dc41a233" prot="private" static="no" mutable="no">
+        <type><ref refid="namespace_adventure_assembly_1_1_debug_1a7c635ec39f90bcb5c2a10816715556fb" kindref="member">DebugInputMode</ref></type>
+        <definition>DebugInputMode AdventureAssembly.Debug.DebugKeyPress._inputMode</definition>
+        <argsstring></argsstring>
+        <name>_inputMode</name>
+        <qualifiedname>AdventureAssembly.Debug.DebugKeyPress._inputMode</qualifiedname>
+        <initializer>= <ref refid="namespace_adventure_assembly_1_1_debug_1a7c635ec39f90bcb5c2a10816715556fba0610123bdd4ffc191a3ea05a847e1307" kindref="member">DebugInputMode.Press</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Debug/DebugKeyPress.cs" line="8" column="33" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Debug/DebugKeyPress.cs" bodystart="8" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_adventure_assembly_1_1_debug_1_1_debug_key_press_1a7197c2d043820047eb4a37322cb73627" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void AdventureAssembly.Debug.DebugKeyPress.Update</definition>
+        <argsstring>()</argsstring>
+        <name>Update</name>
+        <qualifiedname>AdventureAssembly.Debug.DebugKeyPress.Update</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Debug/DebugKeyPress.cs" line="10" column="32" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Debug/DebugKeyPress.cs" bodystart="10" bodyend="20"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_adventure_assembly_1_1_debug_1_1_debug_key_press_1a6cfb9ebeb46d46b3a461d28c70c7bd8f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AdventureAssembly.Debug.DebugKeyPress.DebugKeyPressed</definition>
+        <argsstring>()</argsstring>
+        <name>DebugKeyPressed</name>
+        <qualifiedname>AdventureAssembly.Debug.DebugKeyPress.DebugKeyPressed</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Debug/DebugKeyPress.cs" line="22" column="30"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>AdventureAssembly.Debug.DebugKeyPress</label>
+        <link refid="class_adventure_assembly_1_1_debug_1_1_debug_key_press"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>AdventureAssembly.Debug.DebugKillRandomHero</label>
+        <link refid="class_adventure_assembly_1_1_debug_1_1_debug_kill_random_hero"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>AdventureAssembly.Debug.DebugOpenChest</label>
+        <link refid="class_adventure_assembly_1_1_debug_1_1_debug_open_chest"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>AdventureAssembly.Debug.DebugKeyPress</label>
+        <link refid="class_adventure_assembly_1_1_debug_1_1_debug_key_press"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Debug/DebugKeyPress.cs" line="5" column="21" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Debug/DebugKeyPress.cs" bodystart="6" bodyend="23"/>
+    <listofallmembers>
+      <member refid="class_adventure_assembly_1_1_debug_1_1_debug_key_press_1a2d6f605185d29a2a02676c56dc41a233" prot="private" virt="non-virtual"><scope>AdventureAssembly::Debug::DebugKeyPress</scope><name>_inputMode</name></member>
+      <member refid="class_adventure_assembly_1_1_debug_1_1_debug_key_press_1a5520f7dfb2070dfc596e38543592436f" prot="private" virt="non-virtual"><scope>AdventureAssembly::Debug::DebugKeyPress</scope><name>_key</name></member>
+      <member refid="class_adventure_assembly_1_1_debug_1_1_debug_key_press_1a6cfb9ebeb46d46b3a461d28c70c7bd8f" prot="public" virt="non-virtual"><scope>AdventureAssembly::Debug::DebugKeyPress</scope><name>DebugKeyPressed</name></member>
+      <member refid="class_adventure_assembly_1_1_debug_1_1_debug_key_press_1a7197c2d043820047eb4a37322cb73627" prot="protected" virt="virtual"><scope>AdventureAssembly::Debug::DebugKeyPress</scope><name>Update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

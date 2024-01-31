@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_adventure_assembly_1_1_tests_1_1_play_mode_1_1_unit_movement_tests" xml:lang="en-US">
+<title>AdventureAssembly.Tests.PlayMode.UnitMovementTests Class Reference</title>
+<indexterm><primary>AdventureAssembly.Tests.PlayMode.UnitMovementTests</primary></indexterm>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_adventure_assembly_1_1_tests_1_1_play_mode_1_1_unit_movement_tests_1ae29519e99da5f090ea968d085a032e49">HeroStatsTest</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_adventure_assembly_1_1_tests_1_1_play_mode_1_1_unit_movement_tests_1ae29519e99da5f090ea968d085a032e49"/><section>
+    <title>HeroStatsTest()</title>
+<indexterm><primary>HeroStatsTest</primary><secondary>AdventureAssembly.Tests.PlayMode.UnitMovementTests</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Tests.PlayMode.UnitMovementTests</primary><secondary>HeroStatsTest</secondary></indexterm>
+<para><computeroutput>void AdventureAssembly.Tests.PlayMode.UnitMovementTests.HeroStatsTest ( )</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+D:/Unity/Projects/adventure-assembly/Assets/Scripts/Tests/PlayMode/<link linkend="__unit_stats_tests_8cs">UnitStatsTests.cs</link></section>
+</section>

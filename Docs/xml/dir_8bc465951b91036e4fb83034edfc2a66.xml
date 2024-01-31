@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="dir_8bc465951b91036e4fb83034edfc2a66" kind="dir">
+    <compoundname>D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Animation</compoundname>
+    <innerfile refid="_default_unit_movement_tween_8cs">DefaultUnitMovementTween.cs</innerfile>
+    <innerfile refid="_unit_movement_tween_8cs">UnitMovementTween.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Animation/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_adventure_assembly_1_1_units_1_1_stat" xml:lang="en-US">
+<title>AdventureAssembly.Units.Stat&lt; T &gt; Class Template Reference</title>
+<indexterm><primary>AdventureAssembly.Units.Stat&lt; T &gt;</primary></indexterm>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_adventure_assembly_1_1_units_1_1_stat_1a95220e13cccb49e30da107ffa98b1e91">Stat</link> (T value=default)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_adventure_assembly_1_1_units_1_1_stat_1a4d3ca9dc1dc4b9096e541c87cb71afb9">AddModifier</link> (<link linkend="_class_adventure_assembly_1_1_units_1_1_stat_modifier">StatModifier</link>&lt; T &gt; modifier)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_adventure_assembly_1_1_units_1_1_stat_1a229f2c577ac76acd4c1c52b259954fcc">RemoveModifier</link> (<link linkend="_class_adventure_assembly_1_1_units_1_1_stat_modifier">StatModifier</link>&lt; T &gt; modifier)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para>T <link linkend="_class_adventure_assembly_1_1_units_1_1_stat_1ab801cba746e8c4160b870fddefe21697">BaseValue</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>T <link linkend="_class_adventure_assembly_1_1_units_1_1_stat_1a733e183f3c189fb5599d114baaa3979e">Value</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_adventure_assembly_1_1_units_1_1_stat_1a95220e13cccb49e30da107ffa98b1e91"/><section>
+    <title>Stat()</title>
+<indexterm><primary>Stat</primary><secondary>AdventureAssembly.Units.Stat&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Units.Stat&lt; T &gt;</primary><secondary>Stat</secondary></indexterm>
+<para><computeroutput><link linkend="_class_adventure_assembly_1_1_units_1_1_stat">AdventureAssembly.Units.Stat</link>&lt; T &gt;.<link linkend="_class_adventure_assembly_1_1_units_1_1_stat">Stat</link> (T value = <computeroutput>default</computeroutput>
+)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_adventure_assembly_1_1_units_1_1_stat_1a4d3ca9dc1dc4b9096e541c87cb71afb9"/><section>
+    <title>AddModifier()</title>
+<indexterm><primary>AddModifier</primary><secondary>AdventureAssembly.Units.Stat&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Units.Stat&lt; T &gt;</primary><secondary>AddModifier</secondary></indexterm>
+<para><computeroutput>void <link linkend="_class_adventure_assembly_1_1_units_1_1_stat">AdventureAssembly.Units.Stat</link>&lt; T &gt;.AddModifier (<link linkend="_class_adventure_assembly_1_1_units_1_1_stat_modifier">StatModifier</link>&lt; T &gt; modifier)</computeroutput></para></section>
+<anchor xml:id="_class_adventure_assembly_1_1_units_1_1_stat_1a229f2c577ac76acd4c1c52b259954fcc"/><section>
+    <title>RemoveModifier()</title>
+<indexterm><primary>RemoveModifier</primary><secondary>AdventureAssembly.Units.Stat&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Units.Stat&lt; T &gt;</primary><secondary>RemoveModifier</secondary></indexterm>
+<para><computeroutput>void <link linkend="_class_adventure_assembly_1_1_units_1_1_stat">AdventureAssembly.Units.Stat</link>&lt; T &gt;.RemoveModifier (<link linkend="_class_adventure_assembly_1_1_units_1_1_stat_modifier">StatModifier</link>&lt; T &gt; modifier)</computeroutput></para></section>
+</section>
+<section>
+<title>Property Documentation</title>
+<anchor xml:id="_class_adventure_assembly_1_1_units_1_1_stat_1ab801cba746e8c4160b870fddefe21697"/><section>
+    <title>BaseValue</title>
+<indexterm><primary>BaseValue</primary><secondary>AdventureAssembly.Units.Stat&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Units.Stat&lt; T &gt;</primary><secondary>BaseValue</secondary></indexterm>
+<para><computeroutput>T <link linkend="_class_adventure_assembly_1_1_units_1_1_stat">AdventureAssembly.Units.Stat</link>&lt; T &gt;.BaseValue<computeroutput>[get]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_adventure_assembly_1_1_units_1_1_stat_1a733e183f3c189fb5599d114baaa3979e"/><section>
+    <title>Value</title>
+<indexterm><primary>Value</primary><secondary>AdventureAssembly.Units.Stat&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Units.Stat&lt; T &gt;</primary><secondary>Value</secondary></indexterm>
+<para><computeroutput>T <link linkend="_class_adventure_assembly_1_1_units_1_1_stat">AdventureAssembly.Units.Stat</link>&lt; T &gt;.Value<computeroutput>[get]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/<link linkend="__stat_8cs">Stat.cs</link></section>
+</section>

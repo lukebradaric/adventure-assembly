@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_manager" xml:lang="en-US">
+<title>AdventureAssembly.Units.Heroes.HeroManager Class Reference</title>
+<indexterm><primary>AdventureAssembly.Units.Heroes.HeroManager</primary></indexterm>
+<para>Inheritance diagram for AdventureAssembly.Units.Heroes.HeroManager:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_manager.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_manager_1a6d7c5c41bb33a8d9edbeff97e56cb12a">SpawnHero</link> (<link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_data">HeroData</link> heroData)</para>
+</listitem>
+            <listitem><para>override void <link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_manager_1a83ab1667efc226f7df884f7f9803fa49">AddUnit</link> (<link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero">Hero</link> hero)</para>
+</listitem>
+            <listitem><para>override void <link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_manager_1aa940327f305685105c4b00918024f1ae">RemoveUnit</link> (<link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero">Hero</link> hero)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public Member Functions inherited from <link linkend="_class_adventure_assembly_1_1_units_1_1_unit_manager">AdventureAssembly.Units.UnitManager&lt; Hero &gt;</link>        <itemizedlist>
+            <listitem><para>virtual void <link linkend="_class_adventure_assembly_1_1_units_1_1_unit_manager_1ae0aba3ed84df68725ee6e82050b2921d">AddUnit</link> (T unit)</para>
+</listitem>
+            <listitem><para>virtual void <link linkend="_class_adventure_assembly_1_1_units_1_1_unit_manager_1a32df56cbeb18c74e7613e4712d02cc42">RemoveUnit</link> (T unit)</para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para>float <link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_manager_1a2458d46868e68ef828c2b1349296df24">UpdateInterval</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>LayerMask <link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_manager_1a0756922a36407443f8af2f378f643e9e">HazardLayerMask</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>Vector2Int <link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_manager_1a24db7e94f3c6152cda78678d13c6bfc8">NextMovementVector</link> = Vector2Int.up<computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>Vector2Int <link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_manager_1a024badb2e1543a83dfbf6e4de85ff331">LastMovementVector</link> = Vector2Int.zero<computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>Vector2Int <link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_manager_1a14decb34fd4b770b5cc2a44d76fe84cc">HorizontalMovementVector</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>Vector2Int <link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_manager_1ab0a910519c24cb4f7981d1f5a15b206f">VerticalMovementVector</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Properties inherited from <link linkend="_class_adventure_assembly_1_1_units_1_1_unit_manager">AdventureAssembly.Units.UnitManager&lt; Hero &gt;</link>        <itemizedlist>
+            <listitem><para>static List&lt; T &gt; <link linkend="_class_adventure_assembly_1_1_units_1_1_unit_manager_1a5a409f68cd594daaaf44db79088ccae2">Units</link><computeroutput> [get, protected set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>static List&lt; <link linkend="_class_adventure_assembly_1_1_units_1_1_modifiers_1_1_unit_modifier">UnitModifier</link> &gt; <link linkend="_class_adventure_assembly_1_1_units_1_1_unit_manager_1a161d885a0d5c68f361fae56a6448b145">Modifiers</link><computeroutput> [get, protected set]</computeroutput>
+</para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Additional Inherited Members    </title>
+Static Public Member Functions inherited from <link linkend="_class_adventure_assembly_1_1_units_1_1_unit_manager">AdventureAssembly.Units.UnitManager&lt; Hero &gt;</link>        <itemizedlist>
+            <listitem><para>static void <link linkend="_class_adventure_assembly_1_1_units_1_1_unit_manager_1aff9d4b068be7ed9986a7e626b844799c">AddModifier</link> (<link linkend="_class_adventure_assembly_1_1_units_1_1_modifiers_1_1_unit_modifier">UnitModifier</link> modifier)</para>
+</listitem>
+            <listitem><para>static void <link linkend="_class_adventure_assembly_1_1_units_1_1_unit_manager_1ab3e50a5bd1e7589712693e0b3c8d1f12">RemoveModifier</link> (<link linkend="_class_adventure_assembly_1_1_units_1_1_modifiers_1_1_unit_modifier">UnitModifier</link> modifier)</para>
+</listitem>
+            <listitem><para>static T <link linkend="_class_adventure_assembly_1_1_units_1_1_unit_manager_1a9c20545856d094b8ffb7d74276f865ca">GetNearestUnit</link> (Vector2Int position)</para>
+</listitem>
+            <listitem><para>static bool <link linkend="_class_adventure_assembly_1_1_units_1_1_unit_manager_1a30c7b516eaea1e15d7f5bb23c16b388b">HasUnitAtPosition</link> (Vector2Int position)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Static Protected Member Functions inherited from <link linkend="_class_adventure_assembly_1_1_units_1_1_unit_manager">AdventureAssembly.Units.UnitManager&lt; Hero &gt;</link>        <itemizedlist>
+            <listitem><para>static void <link linkend="_class_adventure_assembly_1_1_units_1_1_unit_manager_1aa2fde2933a1692469ae2093448ee94f1">ApplyAllModifiers</link> (T unit)</para>
+</listitem>
+        </itemizedlist>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_manager_1a83ab1667efc226f7df884f7f9803fa49"/><section>
+    <title>AddUnit()</title>
+<indexterm><primary>AddUnit</primary><secondary>AdventureAssembly.Units.Heroes.HeroManager</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Units.Heroes.HeroManager</primary><secondary>AddUnit</secondary></indexterm>
+<para><computeroutput>override void AdventureAssembly.Units.Heroes.HeroManager.AddUnit (<link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero">Hero</link> hero)</computeroutput></para></section>
+<anchor xml:id="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_manager_1aa940327f305685105c4b00918024f1ae"/><section>
+    <title>RemoveUnit()</title>
+<indexterm><primary>RemoveUnit</primary><secondary>AdventureAssembly.Units.Heroes.HeroManager</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Units.Heroes.HeroManager</primary><secondary>RemoveUnit</secondary></indexterm>
+<para><computeroutput>override void AdventureAssembly.Units.Heroes.HeroManager.RemoveUnit (<link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero">Hero</link> hero)</computeroutput></para></section>
+<anchor xml:id="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_manager_1a6d7c5c41bb33a8d9edbeff97e56cb12a"/><section>
+    <title>SpawnHero()</title>
+<indexterm><primary>SpawnHero</primary><secondary>AdventureAssembly.Units.Heroes.HeroManager</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Units.Heroes.HeroManager</primary><secondary>SpawnHero</secondary></indexterm>
+<para><computeroutput>void AdventureAssembly.Units.Heroes.HeroManager.SpawnHero (<link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_data">HeroData</link> heroData)</computeroutput></para></section>
+</section>
+<section>
+<title>Property Documentation</title>
+<anchor xml:id="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_manager_1a0756922a36407443f8af2f378f643e9e"/><section>
+    <title>HazardLayerMask</title>
+<indexterm><primary>HazardLayerMask</primary><secondary>AdventureAssembly.Units.Heroes.HeroManager</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Units.Heroes.HeroManager</primary><secondary>HazardLayerMask</secondary></indexterm>
+<para><computeroutput>LayerMask AdventureAssembly.Units.Heroes.HeroManager.HazardLayerMask<computeroutput>[get]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_manager_1a14decb34fd4b770b5cc2a44d76fe84cc"/><section>
+    <title>HorizontalMovementVector</title>
+<indexterm><primary>HorizontalMovementVector</primary><secondary>AdventureAssembly.Units.Heroes.HeroManager</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Units.Heroes.HeroManager</primary><secondary>HorizontalMovementVector</secondary></indexterm>
+<para><computeroutput>Vector2Int AdventureAssembly.Units.Heroes.HeroManager.HorizontalMovementVector<computeroutput>[get]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_manager_1a024badb2e1543a83dfbf6e4de85ff331"/><section>
+    <title>LastMovementVector</title>
+<indexterm><primary>LastMovementVector</primary><secondary>AdventureAssembly.Units.Heroes.HeroManager</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Units.Heroes.HeroManager</primary><secondary>LastMovementVector</secondary></indexterm>
+<para><computeroutput>Vector2Int AdventureAssembly.Units.Heroes.HeroManager.LastMovementVector = Vector2Int.zero<computeroutput>[get]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_manager_1a24db7e94f3c6152cda78678d13c6bfc8"/><section>
+    <title>NextMovementVector</title>
+<indexterm><primary>NextMovementVector</primary><secondary>AdventureAssembly.Units.Heroes.HeroManager</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Units.Heroes.HeroManager</primary><secondary>NextMovementVector</secondary></indexterm>
+<para><computeroutput>Vector2Int AdventureAssembly.Units.Heroes.HeroManager.NextMovementVector = Vector2Int.up<computeroutput>[get]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_manager_1a2458d46868e68ef828c2b1349296df24"/><section>
+    <title>UpdateInterval</title>
+<indexterm><primary>UpdateInterval</primary><secondary>AdventureAssembly.Units.Heroes.HeroManager</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Units.Heroes.HeroManager</primary><secondary>UpdateInterval</secondary></indexterm>
+<para><computeroutput>float AdventureAssembly.Units.Heroes.HeroManager.UpdateInterval<computeroutput>[get]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_manager_1ab0a910519c24cb4f7981d1f5a15b206f"/><section>
+    <title>VerticalMovementVector</title>
+<indexterm><primary>VerticalMovementVector</primary><secondary>AdventureAssembly.Units.Heroes.HeroManager</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Units.Heroes.HeroManager</primary><secondary>VerticalMovementVector</secondary></indexterm>
+<para><computeroutput>Vector2Int AdventureAssembly.Units.Heroes.HeroManager.VerticalMovementVector<computeroutput>[get]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/<link linkend="__hero_manager_8cs">HeroManager.cs</link></section>
+</section>

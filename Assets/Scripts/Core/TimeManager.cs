@@ -2,6 +2,9 @@
 
 namespace AdventureAssembly.Core
 {
+    /// <summary>
+    /// Manager for handling pausing/unpausing the game.
+    /// </summary>
     public class TimeManager : MonoBehaviour
     {
         // Pause the game

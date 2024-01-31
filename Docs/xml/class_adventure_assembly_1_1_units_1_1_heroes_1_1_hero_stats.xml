@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_stats" kind="class" language="C#" prot="public">
+    <compoundname>AdventureAssembly::Units::Heroes::HeroStats</compoundname>
+    <basecompoundref refid="class_adventure_assembly_1_1_units_1_1_unit_stats" prot="public" virt="non-virtual">AdventureAssembly.Units.UnitStats</basecompoundref>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_stats_1a2af0e7c07dd4529309b73895711c28e3" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="yes">
+        <type><ref refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_data" kindref="compound">HeroData</ref></type>
+        <definition>HeroData AdventureAssembly.Units.Heroes.HeroStats.HeroData</definition>
+        <argsstring></argsstring>
+        <name>HeroData</name>
+        <qualifiedname>AdventureAssembly.Units.Heroes.HeroStats.HeroData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/HeroStats.cs" line="7" column="25" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/HeroStats.cs" bodystart="7" bodyend="7"/>
+      </memberdef>
+      <memberdef kind="property" id="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_stats_1aae7b6446e470f3c71b6da63885e2460a" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="yes">
+        <type><ref refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero" kindref="compound">Hero</ref></type>
+        <definition>Hero AdventureAssembly.Units.Heroes.HeroStats.Hero</definition>
+        <argsstring></argsstring>
+        <name>Hero</name>
+        <qualifiedname>AdventureAssembly.Units.Heroes.HeroStats.Hero</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/HeroStats.cs" line="8" column="21" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/HeroStats.cs" bodystart="8" bodyend="8"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_stats_1af4d64b88399b062566ead0ed45a67e6f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void AdventureAssembly.Units.Heroes.HeroStats.Initialize</definition>
+        <argsstring>(Unit unit)</argsstring>
+        <name>Initialize</name>
+        <qualifiedname>AdventureAssembly.Units.Heroes.HeroStats.Initialize</qualifiedname>
+        <reimplements refid="class_adventure_assembly_1_1_units_1_1_unit_stats_1a70f9d0bf6d75f8c6ea338344d62ca627">Initialize</reimplements>
+        <param>
+          <type><ref refid="class_adventure_assembly_1_1_units_1_1_unit" kindref="compound">Unit</ref></type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/HeroStats.cs" line="10" column="30" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/HeroStats.cs" bodystart="10" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_stats_1a3783aafd6929a20faeeb0ba3e2fed330" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float AdventureAssembly.Units.Heroes.HeroStats.GetAbilitySpeed</definition>
+        <argsstring>(float baseSpeed)</argsstring>
+        <name>GetAbilitySpeed</name>
+        <qualifiedname>AdventureAssembly.Units.Heroes.HeroStats.GetAbilitySpeed</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>baseSpeed</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/HeroStats.cs" line="15" column="22" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/HeroStats.cs" bodystart="15" bodyend="18"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>AdventureAssembly.Units.Heroes.HeroStats</label>
+        <link refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_stats"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>SerializedMonoBehaviour</label>
+      </node>
+      <node id="2">
+        <label>UnitStats</label>
+        <link refid="class_adventure_assembly_1_1_units_1_1_unit_stats"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>AdventureAssembly.Units.Heroes.HeroStats</label>
+        <link refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_stats"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>SerializedMonoBehaviour</label>
+      </node>
+      <node id="2">
+        <label>UnitStats</label>
+        <link refid="class_adventure_assembly_1_1_units_1_1_unit_stats"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/HeroStats.cs" line="5" column="11" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/HeroStats.cs" bodystart="6" bodyend="19"/>
+    <listofallmembers>
+      <member refid="class_adventure_assembly_1_1_units_1_1_unit_stats_1a3acbe358408d422a12c1aaa001af14f3" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::Heroes::HeroStats</scope><name>DamageMultiplier</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_stats_1a3783aafd6929a20faeeb0ba3e2fed330" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::Heroes::HeroStats</scope><name>GetAbilitySpeed</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_unit_stats_1a83a2beb1adad04a2f00ea443cae7c3b6" prot="public" virt="virtual"><scope>AdventureAssembly::Units::Heroes::HeroStats</scope><name>GetDamageData</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_unit_stats_1ae6119f225ce8bd14ca1e63ff82fa8a38" prot="public" virt="virtual"><scope>AdventureAssembly::Units::Heroes::HeroStats</scope><name>GetMaxHealth</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_stats_1aae7b6446e470f3c71b6da63885e2460a" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::Heroes::HeroStats</scope><name>Hero</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_stats_1a2af0e7c07dd4529309b73895711c28e3" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::Heroes::HeroStats</scope><name>HeroData</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_stats_1af4d64b88399b062566ead0ed45a67e6f" prot="public" virt="virtual"><scope>AdventureAssembly::Units::Heroes::HeroStats</scope><name>Initialize</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_unit_stats_1a4f2e950f3fd84b3d8de9b2f652a7a12b" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::Heroes::HeroStats</scope><name>MaxHealthMultiplier</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_unit_stats_1acb9e0cadc6fd05bf447e7cb42c5e6fe7" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::Heroes::HeroStats</scope><name>Unit</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_unit_stats_1a388594321287b630bf69a06e962ae774" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::Heroes::HeroStats</scope><name>UnitData</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

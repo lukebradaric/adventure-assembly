@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_stats" xml:lang="en-US">
+<title>AdventureAssembly.Units.Heroes.HeroStats Class Reference</title>
+<indexterm><primary>AdventureAssembly.Units.Heroes.HeroStats</primary></indexterm>
+<para>Inheritance diagram for AdventureAssembly.Units.Heroes.HeroStats:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_stats.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>override void <link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_stats_1af4d64b88399b062566ead0ed45a67e6f">Initialize</link> (<link linkend="_class_adventure_assembly_1_1_units_1_1_unit">Unit</link> unit)</para>
+</listitem>
+            <listitem><para>float <link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_stats_1a3783aafd6929a20faeeb0ba3e2fed330">GetAbilitySpeed</link> (float baseSpeed)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public Member Functions inherited from <link linkend="_class_adventure_assembly_1_1_units_1_1_unit_stats">AdventureAssembly.Units.UnitStats</link>        <itemizedlist>
+            <listitem><para>virtual <link linkend="_class_adventure_assembly_1_1_units_1_1_damage_data">DamageData</link> <link linkend="_class_adventure_assembly_1_1_units_1_1_unit_stats_1a83a2beb1adad04a2f00ea443cae7c3b6">GetDamageData</link> (<link linkend="_class_adventure_assembly_1_1_units_1_1_damage_data">DamageData</link> damageData)</para>
+</listitem>
+            <listitem><para>virtual int <link linkend="_class_adventure_assembly_1_1_units_1_1_unit_stats_1ae6119f225ce8bd14ca1e63ff82fa8a38">GetMaxHealth</link> ()</para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_data">HeroData</link> <link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_stats_1a2af0e7c07dd4529309b73895711c28e3">HeroData</link><computeroutput> [get, protected set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para><link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero">Hero</link> <link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_stats_1aae7b6446e470f3c71b6da63885e2460a">Hero</link><computeroutput> [get, protected set]</computeroutput>
+</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Properties inherited from <link linkend="_class_adventure_assembly_1_1_units_1_1_unit_stats">AdventureAssembly.Units.UnitStats</link>        <itemizedlist>
+            <listitem><para><link linkend="_class_adventure_assembly_1_1_units_1_1_unit">Unit</link> <link linkend="_class_adventure_assembly_1_1_units_1_1_unit_stats_1acb9e0cadc6fd05bf447e7cb42c5e6fe7">Unit</link><computeroutput> [get, protected set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para><link linkend="_class_adventure_assembly_1_1_units_1_1_unit_data">UnitData</link> <link linkend="_class_adventure_assembly_1_1_units_1_1_unit_stats_1a388594321287b630bf69a06e962ae774">UnitData</link><computeroutput> [get, protected set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para><link linkend="_class_adventure_assembly_1_1_units_1_1_stat">Stat</link>&lt; float &gt; <link linkend="_class_adventure_assembly_1_1_units_1_1_unit_stats_1a3acbe358408d422a12c1aaa001af14f3">DamageMultiplier</link> = new <link linkend="_class_adventure_assembly_1_1_units_1_1_stat">Stat</link>&lt;float&gt;(1f)<computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para><link linkend="_class_adventure_assembly_1_1_units_1_1_stat">Stat</link>&lt; float &gt; <link linkend="_class_adventure_assembly_1_1_units_1_1_unit_stats_1a4f2e950f3fd84b3d8de9b2f652a7a12b">MaxHealthMultiplier</link> = new <link linkend="_class_adventure_assembly_1_1_units_1_1_stat">Stat</link>&lt;float&gt;(1f)<computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+        </itemizedlist>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_stats_1a3783aafd6929a20faeeb0ba3e2fed330"/><section>
+    <title>GetAbilitySpeed()</title>
+<indexterm><primary>GetAbilitySpeed</primary><secondary>AdventureAssembly.Units.Heroes.HeroStats</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Units.Heroes.HeroStats</primary><secondary>GetAbilitySpeed</secondary></indexterm>
+<para><computeroutput>float AdventureAssembly.Units.Heroes.HeroStats.GetAbilitySpeed (float baseSpeed)</computeroutput></para></section>
+<anchor xml:id="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_stats_1af4d64b88399b062566ead0ed45a67e6f"/><section>
+    <title>Initialize()</title>
+<indexterm><primary>Initialize</primary><secondary>AdventureAssembly.Units.Heroes.HeroStats</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Units.Heroes.HeroStats</primary><secondary>Initialize</secondary></indexterm>
+<para><computeroutput>override void AdventureAssembly.Units.Heroes.HeroStats.Initialize (<link linkend="_class_adventure_assembly_1_1_units_1_1_unit">Unit</link> unit)<computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Reimplemented from <link linkend="_class_adventure_assembly_1_1_units_1_1_unit_stats_1a70f9d0bf6d75f8c6ea338344d62ca627">AdventureAssembly.Units.UnitStats</link>.</para>
+</section>
+</section>
+<section>
+<title>Property Documentation</title>
+<anchor xml:id="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_stats_1aae7b6446e470f3c71b6da63885e2460a"/><section>
+    <title>Hero</title>
+<indexterm><primary>Hero</primary><secondary>AdventureAssembly.Units.Heroes.HeroStats</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Units.Heroes.HeroStats</primary><secondary>Hero</secondary></indexterm>
+<para><computeroutput><link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero">Hero</link> AdventureAssembly.Units.Heroes.HeroStats.Hero<computeroutput>[get]</computeroutput>, <computeroutput>[protected set]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_stats_1a2af0e7c07dd4529309b73895711c28e3"/><section>
+    <title>HeroData</title>
+<indexterm><primary>HeroData</primary><secondary>AdventureAssembly.Units.Heroes.HeroStats</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Units.Heroes.HeroStats</primary><secondary>HeroData</secondary></indexterm>
+<para><computeroutput><link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_data">HeroData</link> AdventureAssembly.Units.Heroes.HeroStats.HeroData<computeroutput>[get]</computeroutput>, <computeroutput>[protected set]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/<link linkend="__hero_stats_8cs">HeroStats.cs</link></section>
+</section>

@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="dir_f13b41af88cf68434578284aaf699e39" kind="dir">
+    <compoundname>D:/Unity/Projects/adventure-assembly/Assets/Scripts</compoundname>
+    <innerdir refid="dir_7db68f476bd50f9f6d9cf398af037e8e">D:/Unity/Projects/adventure-assembly/Assets/Scripts/Core</innerdir>
+    <innerdir refid="dir_b426409c486fcc95972188faa22ba378">D:/Unity/Projects/adventure-assembly/Assets/Scripts/Debug</innerdir>
+    <innerdir refid="dir_82bf5dcf5f07f0970851629866abc1ad">D:/Unity/Projects/adventure-assembly/Assets/Scripts/Input</innerdir>
+    <innerdir refid="dir_5231e15b06875d64b56adeb846ac0863">D:/Unity/Projects/adventure-assembly/Assets/Scripts/Interface</innerdir>
+    <innerdir refid="dir_819c5f94eeb3ceb186bdcd8928cc14ef">D:/Unity/Projects/adventure-assembly/Assets/Scripts/Tests</innerdir>
+    <innerdir refid="dir_4eb0bfcbbaf9efdd81b8badbbaca815e">D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/"/>
+  </compounddef>
+</doxygen>

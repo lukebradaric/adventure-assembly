@@ -74,8 +74,6 @@ namespace AdventureAssembly.Units.Enemies
 
         private void SpawnRandomEnemies(int count)
         {
-            Debug.Log($"Spawning {count} enemie(s)!");
-
             List<EnemyData> enemyData = GetRandomEnemyData(count);
 
             foreach (EnemyData enemy in enemyData)

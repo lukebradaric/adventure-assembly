@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_adventure_assembly_1_1_units_1_1_animation_1_1_default_unit_movement_tween" kind="class" language="C#" prot="public">
+    <compoundname>AdventureAssembly::Units::Animation::DefaultUnitMovementTween</compoundname>
+    <basecompoundref refid="class_adventure_assembly_1_1_units_1_1_animation_1_1_unit_movement_tween" prot="public" virt="non-virtual">AdventureAssembly.Units.Animation.UnitMovementTween</basecompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_adventure_assembly_1_1_units_1_1_animation_1_1_default_unit_movement_tween_1ab32e3e375a904486ad542a1d6f734ef5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void AdventureAssembly.Units.Animation.DefaultUnitMovementTween.Animate</definition>
+        <argsstring>(Unit unit, Vector2Int newPosition, float duration)</argsstring>
+        <name>Animate</name>
+        <qualifiedname>AdventureAssembly.Units.Animation.DefaultUnitMovementTween.Animate</qualifiedname>
+        <param>
+          <type><ref refid="class_adventure_assembly_1_1_units_1_1_unit" kindref="compound">Unit</ref></type>
+          <declname>unit</declname>
+        </param>
+        <param>
+          <type>Vector2Int</type>
+          <declname>newPosition</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>duration</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Animation/DefaultUnitMovementTween.cs" line="8" column="30" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Animation/DefaultUnitMovementTween.cs" bodystart="8" bodyend="11"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>AdventureAssembly.Units.Animation.DefaultUnitMovementTween</label>
+        <link refid="class_adventure_assembly_1_1_units_1_1_animation_1_1_default_unit_movement_tween"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UnitMovementTween</label>
+        <link refid="class_adventure_assembly_1_1_units_1_1_animation_1_1_unit_movement_tween"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>AdventureAssembly.Units.Animation.DefaultUnitMovementTween</label>
+        <link refid="class_adventure_assembly_1_1_units_1_1_animation_1_1_default_unit_movement_tween"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UnitMovementTween</label>
+        <link refid="class_adventure_assembly_1_1_units_1_1_animation_1_1_unit_movement_tween"/>
+      </node>
+    </collaborationgraph>
+    <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Animation/DefaultUnitMovementTween.cs" line="6" column="11" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Animation/DefaultUnitMovementTween.cs" bodystart="7" bodyend="12"/>
+    <listofallmembers>
+      <member refid="class_adventure_assembly_1_1_units_1_1_animation_1_1_default_unit_movement_tween_1ab32e3e375a904486ad542a1d6f734ef5" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::Animation::DefaultUnitMovementTween</scope><name>Animate</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

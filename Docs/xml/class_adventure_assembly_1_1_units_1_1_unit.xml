@@ -1,0 +1,297 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_adventure_assembly_1_1_units_1_1_unit" kind="class" language="C#" prot="public" abstract="yes">
+    <compoundname>AdventureAssembly::Units::Unit</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">SerializedMonoBehaviour</basecompoundref>
+    <derivedcompoundref refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy" prot="public" virt="non-virtual">AdventureAssembly.Units.Enemies.Enemy</derivedcompoundref>
+    <derivedcompoundref refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero" prot="public" virt="non-virtual">AdventureAssembly.Units.Heroes.Hero</derivedcompoundref>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_adventure_assembly_1_1_units_1_1_unit_1a11257e3c8dcfb967d85212aa41485da4" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>SpriteRenderer</type>
+        <definition>SpriteRenderer AdventureAssembly.Units.Unit.SpriteRenderer</definition>
+        <argsstring></argsstring>
+        <name>SpriteRenderer</name>
+        <qualifiedname>AdventureAssembly.Units.Unit.SpriteRenderer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Unit.cs" line="14" column="32" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Unit.cs" bodystart="14" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="property" id="class_adventure_assembly_1_1_units_1_1_unit_1a133db396ea3ad3cc73c7c9de8538c975" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type><ref refid="class_adventure_assembly_1_1_units_1_1_unit_stats" kindref="compound">UnitStats</ref></type>
+        <definition>virtual UnitStats AdventureAssembly.Units.Unit.Stats</definition>
+        <argsstring></argsstring>
+        <name>Stats</name>
+        <qualifiedname>AdventureAssembly.Units.Unit.Stats</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Unit.cs" line="15" column="35" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Unit.cs" bodystart="15" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="property" id="class_adventure_assembly_1_1_units_1_1_unit_1a6e4837996ced88e06efa04f108246617" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type><ref refid="class_adventure_assembly_1_1_units_1_1_unit_data" kindref="compound">UnitData</ref></type>
+        <definition>UnitData AdventureAssembly.Units.Unit.UnitData</definition>
+        <argsstring></argsstring>
+        <name>UnitData</name>
+        <qualifiedname>AdventureAssembly.Units.Unit.UnitData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Unit.cs" line="17" column="25" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Unit.cs" bodystart="17" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="property" id="class_adventure_assembly_1_1_units_1_1_unit_1abe54923d5a5d0f38c84454dd7d61e19d" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="yes">
+        <type>int</type>
+        <definition>int AdventureAssembly.Units.Unit.CurrentHealth</definition>
+        <argsstring></argsstring>
+        <name>CurrentHealth</name>
+        <qualifiedname>AdventureAssembly.Units.Unit.CurrentHealth</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Unit.cs" line="19" column="20" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Unit.cs" bodystart="19" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="property" id="class_adventure_assembly_1_1_units_1_1_unit_1ac0ba4f9e48f1e5054b8e5c9912c1e86a" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="yes">
+        <type>Vector2Int</type>
+        <definition>Vector2Int AdventureAssembly.Units.Unit.Position</definition>
+        <argsstring></argsstring>
+        <name>Position</name>
+        <qualifiedname>AdventureAssembly.Units.Unit.Position</qualifiedname>
+        <initializer>= Vector2Int.zero</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Unit.cs" line="21" column="27" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Unit.cs" bodystart="21" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="property" id="class_adventure_assembly_1_1_units_1_1_unit_1a9afb5a52cef8d77760a0b7472fa71424" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="yes">
+        <type>Vector2Int</type>
+        <definition>Vector2Int AdventureAssembly.Units.Unit.LastPosition</definition>
+        <argsstring></argsstring>
+        <name>LastPosition</name>
+        <qualifiedname>AdventureAssembly.Units.Unit.LastPosition</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Unit.cs" line="22" column="27" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Unit.cs" bodystart="22" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="property" id="class_adventure_assembly_1_1_units_1_1_unit_1aeb6dedf5a847c7da814b16195cca0c48" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="yes">
+        <type>bool</type>
+        <definition>bool AdventureAssembly.Units.Unit.IsDead</definition>
+        <argsstring></argsstring>
+        <name>IsDead</name>
+        <qualifiedname>AdventureAssembly.Units.Unit.IsDead</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Unit.cs" line="24" column="21" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Unit.cs" bodystart="24" bodyend="24"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="event">
+      <memberdef kind="event" id="class_adventure_assembly_1_1_units_1_1_unit_1aedb81657370d6a615ea461e04ee9ed89" prot="public" static="no" add="no" remove="no" raise="no">
+        <type>Action&lt; <ref refid="class_adventure_assembly_1_1_units_1_1_unit" kindref="compound">Unit</ref> &gt;</type>
+        <definition>Action&lt;Unit&gt; AdventureAssembly.Units.Unit.Died</definition>
+        <argsstring></argsstring>
+        <name>Died</name>
+        <qualifiedname>AdventureAssembly.Units.Unit.Died</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Unit.cs" line="26" column="29" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Unit.cs" bodystart="26" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_adventure_assembly_1_1_units_1_1_unit_1acf5840ae70dc7d8b514b1d48e3ae906f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void AdventureAssembly.Units.Unit.Initialize</definition>
+        <argsstring>(UnitData unitData, Vector2Int position)</argsstring>
+        <name>Initialize</name>
+        <qualifiedname>AdventureAssembly.Units.Unit.Initialize</qualifiedname>
+        <reimplementedby refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_1a4b320d4e4e24ca4a2fc3484d54f131ea">Initialize</reimplementedby>
+        <reimplementedby refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_1ab4f1154d51a9c8910966ab1b716885eb">Initialize</reimplementedby>
+        <param>
+          <type><ref refid="class_adventure_assembly_1_1_units_1_1_unit_data" kindref="compound">UnitData</ref></type>
+          <declname>unitData</declname>
+        </param>
+        <param>
+          <type>Vector2Int</type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Unit.cs" line="28" column="29" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Unit.cs" bodystart="28" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="class_adventure_assembly_1_1_units_1_1_unit_1aea72e9754ddba7da62420b73a621b419" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void AdventureAssembly.Units.Unit.OnUpdate</definition>
+        <argsstring>(float time)</argsstring>
+        <name>OnUpdate</name>
+        <qualifiedname>AdventureAssembly.Units.Unit.OnUpdate</qualifiedname>
+        <reimplementedby refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_1a42378eba3287f826ffe33cc27021cf6e">OnUpdate</reimplementedby>
+        <param>
+          <type>float</type>
+          <declname>time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Unit.cs" line="39" column="29" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Unit.cs" bodystart="39" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="class_adventure_assembly_1_1_units_1_1_unit_1a2ff1fb6e8c612f7a7aa681d67c652b1a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void AdventureAssembly.Units.Unit.Move</definition>
+        <argsstring>(Vector2Int direction)</argsstring>
+        <name>Move</name>
+        <qualifiedname>AdventureAssembly.Units.Unit.Move</qualifiedname>
+        <param>
+          <type>Vector2Int</type>
+          <declname>direction</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Unit.cs" line="41" column="29" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Unit.cs" bodystart="41" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="class_adventure_assembly_1_1_units_1_1_unit_1a45f62d207097560cd028e3c5eab7c091" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void AdventureAssembly.Units.Unit.Damage</definition>
+        <argsstring>(DamageData damageData)</argsstring>
+        <name>Damage</name>
+        <qualifiedname>AdventureAssembly.Units.Unit.Damage</qualifiedname>
+        <param>
+          <type><ref refid="class_adventure_assembly_1_1_units_1_1_damage_data" kindref="compound">DamageData</ref></type>
+          <declname>damageData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Unit.cs" line="55" column="29" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Unit.cs" bodystart="55" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="class_adventure_assembly_1_1_units_1_1_unit_1a4ffdf49e62850ce9e51d669004a4b499" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void AdventureAssembly.Units.Unit.Die</definition>
+        <argsstring>()</argsstring>
+        <name>Die</name>
+        <qualifiedname>AdventureAssembly.Units.Unit.Die</qualifiedname>
+        <reimplementedby refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_1a4f23dfed60ba1b400f1aeb88eaad251c">Die</reimplementedby>
+        <reimplementedby refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_1aea23a411b8f806212073a7187cabf8e4">Die</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Unit.cs" line="70" column="29" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Unit.cs" bodystart="70" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="class_adventure_assembly_1_1_units_1_1_unit_1aed49f829ffff64b58847a7c158a57392" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void AdventureAssembly.Units.Unit.FlipSprite</definition>
+        <argsstring>(int x)</argsstring>
+        <name>FlipSprite</name>
+        <qualifiedname>AdventureAssembly.Units.Unit.FlipSprite</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Unit.cs" line="76" column="29" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Unit.cs" bodystart="76" bodyend="91"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>AdventureAssembly.Units.Unit</label>
+        <link refid="class_adventure_assembly_1_1_units_1_1_unit"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>AdventureAssembly.Units.Enemies.Enemy</label>
+        <link refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>AdventureAssembly.Units.Heroes.Hero</label>
+        <link refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>SerializedMonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>AdventureAssembly.Units.Unit</label>
+        <link refid="class_adventure_assembly_1_1_units_1_1_unit"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>SerializedMonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Unit.cs" line="10" column="21" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Unit.cs" bodystart="11" bodyend="92"/>
+    <listofallmembers>
+      <member refid="class_adventure_assembly_1_1_units_1_1_unit_1abe54923d5a5d0f38c84454dd7d61e19d" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::Unit</scope><name>CurrentHealth</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_unit_1a45f62d207097560cd028e3c5eab7c091" prot="public" virt="virtual"><scope>AdventureAssembly::Units::Unit</scope><name>Damage</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_unit_1a4ffdf49e62850ce9e51d669004a4b499" prot="public" virt="virtual"><scope>AdventureAssembly::Units::Unit</scope><name>Die</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_unit_1aedb81657370d6a615ea461e04ee9ed89" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::Unit</scope><name>Died</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_unit_1aed49f829ffff64b58847a7c158a57392" prot="public" virt="virtual"><scope>AdventureAssembly::Units::Unit</scope><name>FlipSprite</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_unit_1acf5840ae70dc7d8b514b1d48e3ae906f" prot="public" virt="virtual"><scope>AdventureAssembly::Units::Unit</scope><name>Initialize</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_unit_1aeb6dedf5a847c7da814b16195cca0c48" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::Unit</scope><name>IsDead</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_unit_1a9afb5a52cef8d77760a0b7472fa71424" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::Unit</scope><name>LastPosition</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_unit_1a2ff1fb6e8c612f7a7aa681d67c652b1a" prot="public" virt="virtual"><scope>AdventureAssembly::Units::Unit</scope><name>Move</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_unit_1aea72e9754ddba7da62420b73a621b419" prot="public" virt="virtual"><scope>AdventureAssembly::Units::Unit</scope><name>OnUpdate</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_unit_1ac0ba4f9e48f1e5054b8e5c9912c1e86a" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::Unit</scope><name>Position</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_unit_1a11257e3c8dcfb967d85212aa41485da4" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::Unit</scope><name>SpriteRenderer</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_unit_1a133db396ea3ad3cc73c7c9de8538c975" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::Unit</scope><name>Stats</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_unit_1a6e4837996ced88e06efa04f108246617" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::Unit</scope><name>UnitData</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

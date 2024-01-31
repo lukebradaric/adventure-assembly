@@ -1,0 +1,618 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.10.0" xml:lang="en-US">
+  <compound refid="class_adventure_assembly_1_1_units_1_1_abilities_1_1_ability" kind="class"><name>AdventureAssembly::Units::Abilities::Ability</name>
+    <member refid="class_adventure_assembly_1_1_units_1_1_abilities_1_1_ability_1abfb5c99116ace20bc1f660dc33e75d01" kind="variable"><name>_baseSpeed</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_abilities_1_1_ability_1a915b3150562955757d4dca3dfa551b30" kind="variable"><name>_currentTime</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_abilities_1_1_ability_1a11cd1eb21886e3c08b9564f60090125f" kind="variable"><name>_hero</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_abilities_1_1_ability_1ac791d2af1bb18d969d6435d7c3299d60" kind="function"><name>Initialize</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_abilities_1_1_ability_1a5461d3186734eae08dfb7eeaa1f22b04" kind="function"><name>OnUpdate</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_abilities_1_1_ability_1a720aa4b9d9ce12d3ce9dc0672c2e09bb" kind="function"><name>GetClone</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_abilities_1_1_ability_1a10b7f6c143ff31ee425d5bcf2a1b399b" kind="function"><name>Execute</name></member>
+  </compound>
+  <compound refid="class_adventure_assembly_1_1_core_1_1_bootstrap_1_1_bootstrapper" kind="class"><name>AdventureAssembly::Core::Bootstrap::Bootstrapper</name>
+    <member refid="class_adventure_assembly_1_1_core_1_1_bootstrap_1_1_bootstrapper_1a809c0600f64a27928210455a46f69604" kind="function"><name>Initialize</name></member>
+  </compound>
+  <compound refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_data" kind="class"><name>AdventureAssembly::Units::Heroes::ClassData</name>
+    <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_data_1a393174ef471e39faf867987eed964539" kind="property"><name>Name</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_data_1a1ff978ddf2e7a0843f7c954dcd6216af" kind="property"><name>Description</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_data_1aaf32940d92d2845fef9e436b6446e239" kind="property"><name>Color</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_data_1a828e34ababecf6697194be728c7493ca" kind="property"><name>Modifiers</name></member>
+  </compound>
+  <compound refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_manager" kind="class"><name>AdventureAssembly::Units::Heroes::ClassManager</name>
+    <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_manager_1a6a953e668b1e9506932d096616b715af" kind="property"><name>ClassCount</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_manager_1acb5d4942547fa20821f025f6b2373102" kind="property"><name>ClassModifiers</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_manager_1ae484c2f9fa8d9305a3f8cf831f1c5c3f" kind="property"><name>ClassModifierInstances</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_manager_1ae2b4562aca8b6c1678a306c0e770eefc" kind="function"><name>AddClassesByHeroData</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_manager_1accc8ea33d23c274c535b6f47df5760c7" kind="function"><name>RemoveClassesByHeroData</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_manager_1a60d31086ee257ac0d19ad7be3198bb1b" kind="function"><name>AddClass</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_manager_1a6b75c2fe0d5cb153b3627275255ed525" kind="function"><name>RemoveClass</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_manager_1a9489fef7dd4fa76b8aae9ba1d140670c" kind="function"><name>UpdateClassModifiers</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_manager_1af7eadcd8447456d9840ca0f0b5765952" kind="function"><name>GetClassModifier</name></member>
+  </compound>
+  <compound refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_modifier" kind="class"><name>AdventureAssembly::Units::Heroes::ClassModifier</name>
+    <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_modifier_1a8da9c60ba6a1e0af9d3494313396fc1b" kind="property"><name>RequiredCount</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_modifier_1a3c684a60ec288e333f4302c13ae9a44c" kind="function"><name>Apply</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_modifier_1a8633417242b29f52210dc136f3292df9" kind="function"><name>Remove</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_modifier_1ac3f20123b40aaa5466e1125163f8382c" kind="function"><name>GetClone</name></member>
+  </compound>
+  <compound refid="class_adventure_assembly_1_1_core_1_1_constants" kind="class"><name>AdventureAssembly::Core::Constants</name>
+    <member refid="class_adventure_assembly_1_1_core_1_1_constants_1a1fe2d579067d71542a62bb76578d7121" kind="variable"><name>ScriptableObjectRootPath</name></member>
+  </compound>
+  <compound refid="class_adventure_assembly_1_1_units_1_1_damage_data" kind="class"><name>AdventureAssembly::Units::DamageData</name>
+    <member refid="class_adventure_assembly_1_1_units_1_1_damage_data_1a1d3dd679c2cdd652226ad87c5337ebad" kind="property"><name>BaseValue</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_damage_data_1abce190e454570554a0feff9a2ebcad41" kind="property"><name>Value</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_damage_data_1a8328172421fe9c72769d8ddb724e27c4" kind="property"><name>IsCritical</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_damage_data_1a3542cb64c0d3eeffb549c46a204347c7" kind="function"><name>DamageData</name></member>
+  </compound>
+  <compound refid="class_adventure_assembly_1_1_units_1_1_tests_1_1_damage_modifier" kind="class"><name>AdventureAssembly::Units::Tests::DamageModifier</name>
+    <member refid="class_adventure_assembly_1_1_units_1_1_tests_1_1_damage_modifier_1abeae0cc1e107d18e5bde898e461e40c4" kind="variable"><name>_statModifier</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_tests_1_1_damage_modifier_1a0e4a402879a654b3fbb91529180bc93a" kind="function"><name>Apply</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_tests_1_1_damage_modifier_1a26ea62e49c64f4b12987bb142d83b44e" kind="function"><name>Remove</name></member>
+  </compound>
+  <compound refid="class_adventure_assembly_1_1_debug_1_1_debug_key_press" kind="class"><name>AdventureAssembly::Debug::DebugKeyPress</name>
+    <member refid="class_adventure_assembly_1_1_debug_1_1_debug_key_press_1a5520f7dfb2070dfc596e38543592436f" kind="variable"><name>_key</name></member>
+    <member refid="class_adventure_assembly_1_1_debug_1_1_debug_key_press_1a2d6f605185d29a2a02676c56dc41a233" kind="variable"><name>_inputMode</name></member>
+    <member refid="class_adventure_assembly_1_1_debug_1_1_debug_key_press_1a7197c2d043820047eb4a37322cb73627" kind="function"><name>Update</name></member>
+    <member refid="class_adventure_assembly_1_1_debug_1_1_debug_key_press_1a6cfb9ebeb46d46b3a461d28c70c7bd8f" kind="function"><name>DebugKeyPressed</name></member>
+  </compound>
+  <compound refid="class_adventure_assembly_1_1_debug_1_1_debug_kill_random_hero" kind="class"><name>AdventureAssembly::Debug::DebugKillRandomHero</name>
+    <member refid="class_adventure_assembly_1_1_debug_1_1_debug_kill_random_hero_1a545af70079ec1519f82e0992ccfaf24a" kind="function"><name>DebugKeyPressed</name></member>
+  </compound>
+  <compound refid="class_adventure_assembly_1_1_debug_1_1_debug_open_chest" kind="class"><name>AdventureAssembly::Debug::DebugOpenChest</name>
+    <member refid="class_adventure_assembly_1_1_debug_1_1_debug_open_chest_1a35bdf7e2d90f429d77aaf98a8b230812" kind="variable"><name>heroData</name></member>
+    <member refid="class_adventure_assembly_1_1_debug_1_1_debug_open_chest_1a8ea433c7a306bb06d4ef7fe6115734dd" kind="function"><name>DebugKeyPressed</name></member>
+  </compound>
+  <compound refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_default_enemy_navigation" kind="class"><name>AdventureAssembly::Units::Enemies::DefaultEnemyNavigation</name>
+    <member refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_default_enemy_navigation_1a23a966deb18a00e1efb5e8b31e48d083" kind="function"><name>Update</name></member>
+  </compound>
+  <compound refid="class_adventure_assembly_1_1_units_1_1_tests_1_1_default_stat_modifier" kind="class"><name>AdventureAssembly::Units::Tests::DefaultStatModifier</name>
+    <member refid="class_adventure_assembly_1_1_units_1_1_tests_1_1_default_stat_modifier_1a8f137bc485f8077031773777f4ef23a1" kind="variable"><name>_value</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_tests_1_1_default_stat_modifier_1abe2ffd02286fcc6ca5e62cd1b80f110a" kind="function"><name>DefaultStatModifier</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_tests_1_1_default_stat_modifier_1a8e51d5133a2ad837841f580141d3cddf" kind="function"><name>Process</name></member>
+  </compound>
+  <compound refid="class_adventure_assembly_1_1_units_1_1_animation_1_1_default_unit_movement_tween" kind="class"><name>AdventureAssembly::Units::Animation::DefaultUnitMovementTween</name>
+    <member refid="class_adventure_assembly_1_1_units_1_1_animation_1_1_default_unit_movement_tween_1ab32e3e375a904486ad542a1d6f734ef5" kind="function"><name>Animate</name></member>
+  </compound>
+  <compound refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy" kind="class"><name>AdventureAssembly::Units::Enemies::Enemy</name>
+    <member refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_1af049021eec2eed7dbde90b7fd3390e0a" kind="property"><name>Stats</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_1ad11a7e2b19f7692a3c6de7ce9c731456" kind="property"><name>EnemyData</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_1a4b320d4e4e24ca4a2fc3484d54f131ea" kind="function"><name>Initialize</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_1a4f23dfed60ba1b400f1aeb88eaad251c" kind="function"><name>Die</name></member>
+  </compound>
+  <compound refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_data" kind="class"><name>AdventureAssembly::Units::Enemies::EnemyData</name>
+    <member refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_data_1abfddf619aa36efd1342cba155948a01b" kind="property"><name>KillExperience</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_data_1a23aef6ca87b066aea0ee5069a480d294" kind="property"><name>BaseDamage</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_data_1ae8ea742363924497f52d8982973a0086" kind="property"><name>Navigation</name></member>
+  </compound>
+  <compound refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_manager" kind="class"><name>AdventureAssembly::Units::Enemies::EnemyManager</name>
+    <member refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_manager_1aca24711216dc879400d04a40f2c43c25" kind="function"><name>OnEnable</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_manager_1a059b377a82268f795f90324c6c0d6ef1" kind="function"><name>OnDisable</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_manager_1a55cc72ff2f35eb36e106ee6d494cef04" kind="function"><name>OnEnemyTickUpdate</name></member>
+  </compound>
+  <compound refid="class_adventure_assembly_1_1_units_1_1_modifiers_1_1_enemy_modifier" kind="class"><name>AdventureAssembly::Units::Modifiers::EnemyModifier</name>
+    <member refid="class_adventure_assembly_1_1_units_1_1_modifiers_1_1_enemy_modifier_1a769432bb831b83b5cd9974e3b2732b35" kind="function"><name>Apply</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_modifiers_1_1_enemy_modifier_1a80619d1cd779aeae1ef89ee9bde95d74" kind="function"><name>Apply</name></member>
+  </compound>
+  <compound refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_navigation" kind="class"><name>AdventureAssembly::Units::Enemies::EnemyNavigation</name>
+    <member refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_navigation_1a0bcd201ee5ed3aa6670174dc1c52f366" kind="function"><name>Update</name></member>
+  </compound>
+  <compound refid="struct_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_spawn_data" kind="struct"><name>AdventureAssembly::Units::Enemies::EnemySpawnData</name>
+    <member refid="struct_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_spawn_data_1a45e04e1273a87c1025b2114c7e28caf8" kind="variable"><name>EnemyData</name></member>
+    <member refid="struct_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_spawn_data_1a96c8a31a92d75d6e0f45c2a10f87b8d9" kind="variable"><name>Weight</name></member>
+  </compound>
+  <compound refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_spawner" kind="class"><name>AdventureAssembly::Units::Enemies::EnemySpawner</name>
+    <member refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_spawner_1a1d11eb981da1da2c16296dad148971f1" kind="variable"><name>_enemyPrefab</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_spawner_1a7f1a7e7b8e043996bd4b1a72792048f2" kind="variable"><name>_updateInterval</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_spawner_1afb3bd7dda85774b85d672e40ce3f06fb" kind="variable"><name>_maxEnemyCount</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_spawner_1aa79c0a9ec3367dddd64a333df2c17bd5" kind="variable"><name>_spawnRadius</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_spawner_1a6e86b5bb57d0957c12caeb99cae86cdf" kind="variable"><name>_spawnCurve</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_spawner_1a59e0f10fd6433fddcae3c31f05da753b" kind="variable"><name>_spawnData</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_spawner_1a043d88fde224ad1eb96f5b7ae1286bba" kind="variable"><name>_currentTime</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_spawner_1a66b6f17a19552c13fcbe1d83153a38ea" kind="variable"><name>_updateCoroutine</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_spawner_1a7b2394813ca52e3ccb83a4c852b75095" kind="function"><name>OnEnable</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_spawner_1a36bf06360734348f85d8e6f70290e674" kind="function"><name>UpdateCoroutine</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_spawner_1ac229b133ecd54b37a9225251ebcb72bd" kind="function"><name>OnUpdate</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_spawner_1a19b3d04b9a1bdb50c6e3c8baeb17dd77" kind="function"><name>GetEnemySpawnCount</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_spawner_1acfe88c78a182fa3667c95c9530f4cf1a" kind="function"><name>GetRandomEnemyData</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_spawner_1a16dbc2538e4554eaf91f6df938450cfe" kind="function"><name>SpawnRandomEnemies</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_spawner_1afe44277383c050bcf845c9163a54905f" kind="function"><name>GetSpawnPosition</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_spawner_1ac1d863396509ca6a8e061ccfda71d223" kind="function"><name>SpawnEnemy</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_spawner_1a979cdf4fda6c93f18172e3149c8f2ef2" kind="function"><name>OnEnemyDied</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_spawner_1a270ce205e1c0b38c99422ec7e751b273" kind="function"><name>OnDrawGizmos</name></member>
+  </compound>
+  <compound refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_stats" kind="class"><name>AdventureAssembly::Units::Enemies::EnemyStats</name>
+    <member refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_stats_1a0288679a232a6c8ed89d75ec49bc07e9" kind="property"><name>EnemyData</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_stats_1abd7d3dd3b3631261ba9c1810e41f6b3b" kind="property"><name>Enemy</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_stats_1a728d16c9fa6125282081bce40c7c9b00" kind="function"><name>Initialize</name></member>
+  </compound>
+  <compound refid="class_adventure_assembly_1_1_core_1_1_experience_manager" kind="class"><name>AdventureAssembly::Core::ExperienceManager</name>
+    <member refid="class_adventure_assembly_1_1_core_1_1_experience_manager_1ade22a427d1d17c09608b1376eab593e1" kind="variable"><name>_openHeroChestScriptableEvent</name></member>
+    <member refid="class_adventure_assembly_1_1_core_1_1_experience_manager_1a540a366751fc71dad0c6d337bce668ba" kind="variable"><name>_currentExperience</name></member>
+    <member refid="class_adventure_assembly_1_1_core_1_1_experience_manager_1a77eb57b62cca1909b58e00971171f586" kind="variable"><name>currentLevel</name></member>
+    <member refid="class_adventure_assembly_1_1_core_1_1_experience_manager_1aa3a339f607f98987fe05899aad7bfed9" kind="function"><name>AddExperience</name></member>
+    <member refid="class_adventure_assembly_1_1_core_1_1_experience_manager_1aed35bda02976d8f5069003f5538d9c9d" kind="function"><name>UpdateLevel</name></member>
+  </compound>
+  <compound refid="class_adventure_assembly_1_1_interface_1_1_gold_interface" kind="class"><name>AdventureAssembly::Interface::GoldInterface</name>
+    <member refid="class_adventure_assembly_1_1_interface_1_1_gold_interface_1ace3a91eae6b22aeb115af9188e59f465" kind="variable"><name>_layoutTransform</name></member>
+    <member refid="class_adventure_assembly_1_1_interface_1_1_gold_interface_1a91fe1b49d7896c278008dc0e05eb27e4" kind="variable"><name>_goldText</name></member>
+    <member refid="class_adventure_assembly_1_1_interface_1_1_gold_interface_1a60f9094ba002f093fe553398e45d4a01" kind="function"><name>OnEnable</name></member>
+    <member refid="class_adventure_assembly_1_1_interface_1_1_gold_interface_1a3f227c385a954074ee7cdc75d1956c45" kind="function"><name>OnDisable</name></member>
+    <member refid="class_adventure_assembly_1_1_interface_1_1_gold_interface_1a1f51c9934e6b0d7bbf750d99c98061cc" kind="function"><name>OnCurrentGoldChanged</name></member>
+  </compound>
+  <compound refid="class_adventure_assembly_1_1_core_1_1_gold_manager" kind="class"><name>AdventureAssembly::Core::GoldManager</name>
+    <member refid="class_adventure_assembly_1_1_core_1_1_gold_manager_1a989cc40c954cb7985ecbdcb8d730504c" kind="variable"><name>_goldPrefab</name></member>
+    <member refid="class_adventure_assembly_1_1_core_1_1_gold_manager_1abd9d73b881c693edb7f663ba5522c0f7" kind="variable"><name>_goldTweenTransform</name></member>
+    <member refid="class_adventure_assembly_1_1_core_1_1_gold_manager_1a945190c5c8f2e77c549aa337f9f70cf4" kind="variable"><name>_tweenCurve</name></member>
+    <member refid="class_adventure_assembly_1_1_core_1_1_gold_manager_1a3609196f81039e7c6a7ab4b5b8d55e23" kind="variable"><name>_tweenDistanceDuration</name></member>
+    <member refid="class_adventure_assembly_1_1_core_1_1_gold_manager_1a26b07fc548aea718145ad0c3cd2b40af" kind="variable"><name>_minTweenDuration</name></member>
+    <member refid="class_adventure_assembly_1_1_core_1_1_gold_manager_1a7c56ff66c5dc4b341de3fc9961623c54" kind="variable"><name>_delayPerGold</name></member>
+    <member refid="class_adventure_assembly_1_1_core_1_1_gold_manager_1a5d86e6053d11d4f10777ae9cc67a033b" kind="property"><name>CurrentGold</name></member>
+    <member refid="class_adventure_assembly_1_1_core_1_1_gold_manager_1a935b80f8233bcd15f3d9fa89c9d9d44a" kind="function"><name>Update</name></member>
+    <member refid="class_adventure_assembly_1_1_core_1_1_gold_manager_1ab0b9b358e127f14d3b75e42f0e8ddcac" kind="function"><name>AddGold</name></member>
+    <member refid="class_adventure_assembly_1_1_core_1_1_gold_manager_1a1c2cd8b1c5e160dfbff05e692b8e37ee" kind="function"><name>AddGold</name></member>
+    <member refid="class_adventure_assembly_1_1_core_1_1_gold_manager_1acfc23b01a393f04b5da265df90d90ec8" kind="function"><name>TrySpend</name></member>
+    <member refid="class_adventure_assembly_1_1_core_1_1_gold_manager_1a95f9a910e75306f7a4996120b350ef34" kind="function"><name>AddGoldCoroutine</name></member>
+  </compound>
+  <compound refid="class_adventure_assembly_1_1_units_1_1_tests_1_1_health_modifier" kind="class"><name>AdventureAssembly::Units::Tests::HealthModifier</name>
+    <member refid="class_adventure_assembly_1_1_units_1_1_tests_1_1_health_modifier_1a1d234e6de5580367597989ab9b26a033" kind="variable"><name>_value</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_tests_1_1_health_modifier_1a1cdbdb979c09b62b64e20846d0d7a8fc" kind="function"><name>Apply</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_tests_1_1_health_modifier_1a925f31964d321772d31b820d33c17e5e" kind="function"><name>Remove</name></member>
+  </compound>
+  <compound refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero" kind="class"><name>AdventureAssembly::Units::Heroes::Hero</name>
+    <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_1a723b90045e4ed5147155eca32d4e520c" kind="property"><name>Stats</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_1a4adff20bf7e08108a464c9b497e24eca" kind="property"><name>HeroData</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_1a43b87472043d568ce4068023bd2dc82a" kind="property"><name>Abilities</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_1ab4f1154d51a9c8910966ab1b716885eb" kind="function"><name>Initialize</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_1aea23a411b8f806212073a7187cabf8e4" kind="function"><name>Die</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_1a42378eba3287f826ffe33cc27021cf6e" kind="function"><name>OnUpdate</name></member>
+  </compound>
+  <compound refid="class_adventure_assembly_1_1_interface_1_1_hero_class_element" kind="class"><name>AdventureAssembly::Interface::HeroClassElement</name>
+    <member refid="class_adventure_assembly_1_1_interface_1_1_hero_class_element_1ac4b33fc99a8f08bf92e26f0e6c583bdf" kind="variable"><name>_backgroundImage</name></member>
+    <member refid="class_adventure_assembly_1_1_interface_1_1_hero_class_element_1aed6fa6368fcab42fbe4fe6ea1f9eee2d" kind="variable"><name>_text</name></member>
+    <member refid="class_adventure_assembly_1_1_interface_1_1_hero_class_element_1adaf1dddec3705d7b10349e58fac2d873" kind="variable"><name>_classData</name></member>
+    <member refid="class_adventure_assembly_1_1_interface_1_1_hero_class_element_1a1a5be67bdb13bda1b524003ecf69865c" kind="property"><name>ClassData</name></member>
+  </compound>
+  <compound refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_data" kind="class"><name>AdventureAssembly::Units::Heroes::HeroData</name>
+    <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_data_1afb39f056c85e6ff6f0f4c01c28db320b" kind="property"><name>BackgroundColor</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_data_1a802c0604de6e6cd130ac909e9dbbfb59" kind="property"><name>Description</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_data_1a3717e5baed4a3f11c4b7b1f0c6af9902" kind="property"><name>ClassData</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_data_1ac9df40eff6a5f55539f77201b3a60156" kind="property"><name>Abilities</name></member>
+  </compound>
+  <compound refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_data_list_scriptable_variable" kind="class"><name>AdventureAssembly::Units::Heroes::HeroDataListScriptableVariable</name>
+    <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_data_list_scriptable_variable_1a35f4a9ec36c57c30e88d303d175a0bda" kind="function"><name>GetRandom</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_data_list_scriptable_variable_1aa1d4ab3ee2c9e5e62d54ad8751c2f426" kind="function"><name>GetRandom</name></member>
+  </compound>
+  <compound refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_indicator" kind="class"><name>AdventureAssembly::Units::Heroes::HeroIndicator</name>
+    <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_indicator_1ac7f235eae565488ef1e434001329d17b" kind="variable"><name>_heroManager</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_indicator_1a0b49aef1bed916368af0790636edb9c0" kind="variable"><name>_indicatorTransform</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_indicator_1a5113a1c3123dde63ea3a83fa67c4aa3f" kind="variable"><name>_indicatorSpriteTransform</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_indicator_1a03df066b2fe2bbf7c5431637a10e4c71" kind="variable"><name>_indicatorLineRenderer</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_indicator_1af035c5636bc4002093514b83cb678d59" kind="variable"><name>_indicatorTweenDuration</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_indicator_1af0b6f9a96d94fa7504ce5a5b40a71778" kind="variable"><name>_indicatorOffset</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_indicator_1a9db51914ec696f60017af95a260e96c0" kind="function"><name>OnEnable</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_indicator_1a2db8bf63313b564175221b6091b75ef9" kind="function"><name>OnDisable</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_indicator_1acdb25eec4d30105c48f2fdab9eb5f75e" kind="function"><name>Start</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_indicator_1ab0fddeb773f03f5062b2bf72f4c40b6a" kind="function"><name>Update</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_indicator_1ad1c533d0e9d996e16d69711629ef6fbe" kind="function"><name>UpdateCoroutine</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_indicator_1a30ce7f2a89e1ac9c52ecae37b47f7843" kind="function"><name>OnTurnLateUpdate</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_indicator_1a84d0a1d9015b5ebbb72733b3e9b2c469" kind="function"><name>UpdateIndicator</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_indicator_1a634c75664db7e1db2af29ecb1fc10299" kind="function"><name>UpdateIndicatorLineRenderer</name></member>
+  </compound>
+  <compound refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_manager" kind="class"><name>AdventureAssembly::Units::Heroes::HeroManager</name>
+    <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_manager_1a98a6d56665575cdab578613c783f0cc1" kind="variable"><name>_heroPrefab</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_manager_1aacaf622bdae958f23da24d9c7b208edf" kind="variable"><name>_heroPositions</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_manager_1ade48eefc6cd0308224c0073c7a4a5357" kind="variable"><name>_updateCoroutine</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_manager_1a2458d46868e68ef828c2b1349296df24" kind="property"><name>UpdateInterval</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_manager_1a0756922a36407443f8af2f378f643e9e" kind="property"><name>HazardLayerMask</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_manager_1a24db7e94f3c6152cda78678d13c6bfc8" kind="property"><name>NextMovementVector</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_manager_1a024badb2e1543a83dfbf6e4de85ff331" kind="property"><name>LastMovementVector</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_manager_1a14decb34fd4b770b5cc2a44d76fe84cc" kind="property"><name>HorizontalMovementVector</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_manager_1ab0a910519c24cb4f7981d1f5a15b206f" kind="property"><name>VerticalMovementVector</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_manager_1a96c4810f9181121922650d0e12b2571e" kind="function"><name>OnEnable</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_manager_1a10fd1caea69717917b47f8ac2a8703b7" kind="function"><name>OnDisable</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_manager_1a5d8f656aa05ca8d87df0d7b584ffe424" kind="function"><name>UpdateCoroutine</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_manager_1af849c8745b633f9b32bb1316e7b9eb7d" kind="function"><name>OnMovementVectorChanged</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_manager_1a317d7dec2daefe1bfd971df0026223ab" kind="function"><name>OnHeroDied</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_manager_1a5abb756b61b056fed938025cbe9c0fe4" kind="function"><name>OnTurnUpdate</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_manager_1aa5ec8529115aedbe50c93eb33cd5504a" kind="function"><name>UpdateUnitPositions</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_manager_1a238a7ff68e2526cbab0f27a8db69c6f5" kind="function"><name>IsHazardAtPosition</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_manager_1a6d7c5c41bb33a8d9edbeff97e56cb12a" kind="function"><name>SpawnHero</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_manager_1a83ab1667efc226f7df884f7f9803fa49" kind="function"><name>AddUnit</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_manager_1aa940327f305685105c4b00918024f1ae" kind="function"><name>RemoveUnit</name></member>
+  </compound>
+  <compound refid="class_adventure_assembly_1_1_units_1_1_modifiers_1_1_hero_modifier" kind="class"><name>AdventureAssembly::Units::Modifiers::HeroModifier</name>
+    <member refid="class_adventure_assembly_1_1_units_1_1_modifiers_1_1_hero_modifier_1a5f0e44e3c1712bc5afce10349c29fd2a" kind="function"><name>Apply</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_modifiers_1_1_hero_modifier_1ac0432b7a49403a6b9824cec826f4cc9b" kind="function"><name>Apply</name></member>
+  </compound>
+  <compound refid="class_adventure_assembly_1_1_interface_1_1_hero_selection_element" kind="class"><name>AdventureAssembly::Interface::HeroSelectionElement</name>
+    <member refid="class_adventure_assembly_1_1_interface_1_1_hero_selection_element_1a326a62eb3e12b9014c24269d8a8ab3ba" kind="variable"><name>_heroClassElementPrefab</name></member>
+    <member refid="class_adventure_assembly_1_1_interface_1_1_hero_selection_element_1a8bb5f3e89778be8e1b68de5cabcac4ac" kind="variable"><name>_canvasGroup</name></member>
+    <member refid="class_adventure_assembly_1_1_interface_1_1_hero_selection_element_1a27fc0481ca75cd27c0f47e6caf34c8c8" kind="variable"><name>_verticalLayoutTransform</name></member>
+    <member refid="class_adventure_assembly_1_1_interface_1_1_hero_selection_element_1a1f79e9b81e6682c7e3c14984903a5ba0" kind="variable"><name>_classVerticalLayoutTransform</name></member>
+    <member refid="class_adventure_assembly_1_1_interface_1_1_hero_selection_element_1a78d18e4a0cb9950a15a46d92774e0144" kind="variable"><name>_nameText</name></member>
+    <member refid="class_adventure_assembly_1_1_interface_1_1_hero_selection_element_1a06db26ead80d607a43655fe706e0e574" kind="variable"><name>_descriptionText</name></member>
+    <member refid="class_adventure_assembly_1_1_interface_1_1_hero_selection_element_1a628ae479314017daf84248e71adccf6a" kind="variable"><name>_abilitySpeedText</name></member>
+    <member refid="class_adventure_assembly_1_1_interface_1_1_hero_selection_element_1a72177cb66a5bb0a155269d2b4d9779a3" kind="variable"><name>_maxHealthText</name></member>
+    <member refid="class_adventure_assembly_1_1_interface_1_1_hero_selection_element_1aa92b25c7ecb89900bc21705fc5afb0d5" kind="variable"><name>_heroImage</name></member>
+    <member refid="class_adventure_assembly_1_1_interface_1_1_hero_selection_element_1a024fd5a6eff13437de37685e4855b794" kind="variable"><name>_shadowImage</name></member>
+    <member refid="class_adventure_assembly_1_1_interface_1_1_hero_selection_element_1ae8add61ed87ee8a8347f5c24bfbcd9a7" kind="variable"><name>_heroBackgroundImage</name></member>
+    <member refid="class_adventure_assembly_1_1_interface_1_1_hero_selection_element_1acb380dbc864b5dc6611c73cdf9845ccf" kind="variable"><name>_hoverBackgroundImage</name></member>
+    <member refid="class_adventure_assembly_1_1_interface_1_1_hero_selection_element_1ae288925972d11e5d231d650346d735a9" kind="variable"><name>_otherHoverCanvasGroupAlpha</name></member>
+    <member refid="class_adventure_assembly_1_1_interface_1_1_hero_selection_element_1a52c981568d7bc5c4afea69cd2c483879" kind="variable"><name>_hoverTweenDuration</name></member>
+    <member refid="class_adventure_assembly_1_1_interface_1_1_hero_selection_element_1af31aaeb71db69e26a6557fe400bd5a70" kind="variable"><name>_hoverScale</name></member>
+    <member refid="class_adventure_assembly_1_1_interface_1_1_hero_selection_element_1a7d4c4e474f993a861e9317216bbefcbc" kind="variable"><name>_hoverBackgroundImageAlpha</name></member>
+    <member refid="class_adventure_assembly_1_1_interface_1_1_hero_selection_element_1acd0a17bc780fec4877647131dd318a22" kind="variable"><name>_heroData</name></member>
+    <member refid="class_adventure_assembly_1_1_interface_1_1_hero_selection_element_1a6754aa6596e0e318864a3ff1e5321260" kind="property"><name>VerticalLayoutTransform</name></member>
+    <member refid="class_adventure_assembly_1_1_interface_1_1_hero_selection_element_1adf3c645fd0ab44e823a60b9c71b6bff2" kind="property"><name>HeroSelectionInterface</name></member>
+    <member refid="class_adventure_assembly_1_1_interface_1_1_hero_selection_element_1a2e8fe18d4eeb5588a7c973c22c25ab7c" kind="property"><name>HeroData</name></member>
+    <member refid="class_adventure_assembly_1_1_interface_1_1_hero_selection_element_1a2784fe055c889c4c67af12a30e733a63" kind="function"><name>OnPointerEnter</name></member>
+    <member refid="class_adventure_assembly_1_1_interface_1_1_hero_selection_element_1a13faffebae60fc47c57f7a90306f0890" kind="function"><name>OnPointerExit</name></member>
+    <member refid="class_adventure_assembly_1_1_interface_1_1_hero_selection_element_1aae60de5cc416352bfcec07ac69390865" kind="function"><name>OnPointerDown</name></member>
+  </compound>
+  <compound refid="class_adventure_assembly_1_1_interface_1_1_hero_selection_interface" kind="class"><name>AdventureAssembly::Interface::HeroSelectionInterface</name>
+    <member refid="class_adventure_assembly_1_1_interface_1_1_hero_selection_interface_1a0797f2cc53977c88bbcde4d97b7ff990" kind="variable"><name>_openHeroChestScriptableEvent</name></member>
+    <member refid="class_adventure_assembly_1_1_interface_1_1_hero_selection_interface_1aa9f616cfc6501c9f76f2b151bea58521" kind="variable"><name>_heroSelectionElementPrefab</name></member>
+    <member refid="class_adventure_assembly_1_1_interface_1_1_hero_selection_interface_1ac35e847bcdacac1276c3cbcb09d953e9" kind="variable"><name>_heroDataList</name></member>
+    <member refid="class_adventure_assembly_1_1_interface_1_1_hero_selection_interface_1a0307c05cb9aa091ddfec34af1ebee003" kind="variable"><name>_horizontalLayoutTransform</name></member>
+    <member refid="class_adventure_assembly_1_1_interface_1_1_hero_selection_interface_1a36b39ed5eb68364d0de07eee2cf03845" kind="variable"><name>_horizontalLayoutGroup</name></member>
+    <member refid="class_adventure_assembly_1_1_interface_1_1_hero_selection_interface_1ab6066b07e94c440d795887ba4bfad53e" kind="variable"><name>_canvasGroup</name></member>
+    <member refid="class_adventure_assembly_1_1_interface_1_1_hero_selection_interface_1acaec1c570d2af73f622e440af2b8e129" kind="variable"><name>_fadeTweenDuration</name></member>
+    <member refid="class_adventure_assembly_1_1_interface_1_1_hero_selection_interface_1a25a2f6f2f6da47934f88f54cd96bf9f1" kind="variable"><name>_heroSelectionTweenPositionOffset</name></member>
+    <member refid="class_adventure_assembly_1_1_interface_1_1_hero_selection_interface_1ab0e85bce4871ba93b2dffa45200bdca1" kind="variable"><name>_heroSelectionTweenDuration</name></member>
+    <member refid="class_adventure_assembly_1_1_interface_1_1_hero_selection_interface_1afa0a341f910785aeaa6e4d8adcc392fe" kind="variable"><name>_heroSelectionTweenDurationOffset</name></member>
+    <member refid="class_adventure_assembly_1_1_interface_1_1_hero_selection_interface_1a0e9fe0a30491d8f34964be7f33b0fad9" kind="variable"><name>_tweenEase</name></member>
+    <member refid="class_adventure_assembly_1_1_interface_1_1_hero_selection_interface_1ab4729ef6c098567fceb4859d0aa68f6b" kind="variable"><name>_heroSelectionElements</name></member>
+    <member refid="class_adventure_assembly_1_1_interface_1_1_hero_selection_interface_1a78795b6d062c6e6989ee09d9ef16294e" kind="function"><name>OnEnable</name></member>
+    <member refid="class_adventure_assembly_1_1_interface_1_1_hero_selection_interface_1a2433c358ed117edeec92c8d1cdbc55e1" kind="function"><name>OnDisable</name></member>
+    <member refid="class_adventure_assembly_1_1_interface_1_1_hero_selection_interface_1a0932ab52418df84d7fd65d2f3a66ded2" kind="function"><name>OnOpenHeroChest</name></member>
+    <member refid="class_adventure_assembly_1_1_interface_1_1_hero_selection_interface_1a04d5f4ffec2c885a55817ffa4223df4a" kind="function"><name>Show</name></member>
+    <member refid="class_adventure_assembly_1_1_interface_1_1_hero_selection_interface_1a8103d143f4ba25ac18494514f6805b39" kind="function"><name>Hide</name></member>
+    <member refid="class_adventure_assembly_1_1_interface_1_1_hero_selection_interface_1a17d42e49b612636fbacae81943ef64cc" kind="function"><name>ShowSelections</name></member>
+    <member refid="class_adventure_assembly_1_1_interface_1_1_hero_selection_interface_1a454bdbc0442447de56128697457c090d" kind="function"><name>OnHeroSelected</name></member>
+  </compound>
+  <compound refid="class_adventure_assembly_1_1_interface_1_1_hero_selection_start" kind="class"><name>AdventureAssembly::Interface::HeroSelectionStart</name>
+    <member refid="class_adventure_assembly_1_1_interface_1_1_hero_selection_start_1a95349a3e79886da31640794315f8293c" kind="variable"><name>heroData</name></member>
+    <member refid="class_adventure_assembly_1_1_interface_1_1_hero_selection_start_1ac3db21d00682d36df888c7fbf3127a67" kind="function"><name>Start</name></member>
+  </compound>
+  <compound refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_selection_start" kind="class"><name>AdventureAssembly::Units::Heroes::HeroSelectionStart</name>
+    <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_selection_start_1a30179593f6640dd7900885ced8aa1458" kind="function"><name>Start</name></member>
+  </compound>
+  <compound refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_stats" kind="class"><name>AdventureAssembly::Units::Heroes::HeroStats</name>
+    <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_stats_1a2af0e7c07dd4529309b73895711c28e3" kind="property"><name>HeroData</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_stats_1aae7b6446e470f3c71b6da63885e2460a" kind="property"><name>Hero</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_stats_1af4d64b88399b062566ead0ed45a67e6f" kind="function"><name>Initialize</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_stats_1a3783aafd6929a20faeeb0ba3e2fed330" kind="function"><name>GetAbilitySpeed</name></member>
+  </compound>
+  <compound refid="class_adventure_assembly_1_1_input_1_1_input_manager" kind="class"><name>AdventureAssembly::Input::InputManager</name>
+    <member refid="class_adventure_assembly_1_1_input_1_1_input_manager_1af5b4c41d4fc4958d65777bb09afd1a6d" kind="property"><name>MovementVector</name></member>
+    <member refid="class_adventure_assembly_1_1_input_1_1_input_manager_1a6f271d89f7e116b5517bc399238365d7" kind="function"><name>Update</name></member>
+  </compound>
+  <compound refid="class_adventure_assembly_1_1_interface_1_1_interface_manager" kind="class"><name>AdventureAssembly::Interface::InterfaceManager</name>
+    <member refid="class_adventure_assembly_1_1_interface_1_1_interface_manager_1af1d33aeb859087298c0a253c1eaf8abc" kind="property"><name>HeroSelectionInterface</name></member>
+  </compound>
+  <compound refid="class_adventure_assembly_1_1_units_1_1_projectile" kind="class"><name>AdventureAssembly::Units::Projectile</name>
+    <member refid="class_adventure_assembly_1_1_units_1_1_projectile_1a1d54cb82a5cfd662689cc25529ea9798" kind="variable"><name>_rigidbody</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_projectile_1ac23c45038ffcd8da1a3d0899d3bd590c" kind="variable"><name>_enemyTag</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_projectile_1a64717721ebdbcd9e9ff3879379ad1576" kind="variable"><name>_speed</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_projectile_1a4f3d3676110d97a1bdf5a322e5bae70c" kind="property"><name>Hero</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_projectile_1a95c748d616d0e3c154e648925c36bc7d" kind="property"><name>TargetUnit</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_projectile_1a11ef92af7d58149ff0f85c748d40d49c" kind="property"><name>BaseDamage</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_projectile_1af7f28dc202046996fbf6bd35f54e3993" kind="property"><name>MoveDirection</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_projectile_1aab40fe31e75c17a6486c5d9fd7339ce3" kind="function"><name>Initialize</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_projectile_1a1583574ebeb5030e95abf044e4354b7e" kind="function"><name>Initialize</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_projectile_1ab3645e3be49495742ec05a84485fce53" kind="function"><name>SetMoveDirection</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_projectile_1ae39f6079a7eb3ca124fbf4db9a000ec3" kind="function"><name>FixedUpdate</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_projectile_1a2bfa3cfb1ad765d41ce47f81151bae16" kind="function"><name>OnTriggerEnter2D</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_projectile_1a98d40fa411ec6c5d0ab96653c3d56081" kind="function"><name>OnEnemyCollision</name></member>
+  </compound>
+  <compound refid="class_adventure_assembly_1_1_units_1_1_abilities_1_1_projectile_ability" kind="class"><name>AdventureAssembly::Units::Abilities::ProjectileAbility</name>
+    <member refid="class_adventure_assembly_1_1_units_1_1_abilities_1_1_projectile_ability_1a3bfd987206fa5580b0bade4c38ac421d" kind="variable"><name>_baseDamage</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_abilities_1_1_projectile_ability_1adaf4263fa604b17d299892133aa4070b" kind="variable"><name>_projectilePrefab</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_abilities_1_1_projectile_ability_1ac727e4221751d93c12fee7822a579523" kind="function"><name>Execute</name></member>
+  </compound>
+  <compound refid="class_adventure_assembly_1_1_units_1_1_abilities_1_1_spell_thief_ability" kind="class"><name>AdventureAssembly::Units::Abilities::SpellThiefAbility</name>
+    <member refid="class_adventure_assembly_1_1_units_1_1_abilities_1_1_spell_thief_ability_1abe9ff68791cb29534201b94796294b18" kind="variable"><name>_projectilePrefab</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_abilities_1_1_spell_thief_ability_1aab85d199cd5e8edd07320dabf037e988" kind="variable"><name>_baseDamage</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_abilities_1_1_spell_thief_ability_1a498b2907d47d5f95be1f421c36f7dc46" kind="variable"><name>_enemiesPerExtraProjectile</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_abilities_1_1_spell_thief_ability_1a34d1371ed4f26ca2944340f33a1cec28" kind="function"><name>Execute</name></member>
+  </compound>
+  <compound refid="class_adventure_assembly_1_1_units_1_1_stat" kind="class"><name>AdventureAssembly::Units::Stat</name>
+    <member refid="class_adventure_assembly_1_1_units_1_1_stat_1ab801cba746e8c4160b870fddefe21697" kind="property"><name>BaseValue</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_stat_1a733e183f3c189fb5599d114baaa3979e" kind="property"><name>Value</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_stat_1a28df7a47a97a4e004c937f971368365b" kind="variable"><name>_statModifiers</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_stat_1a95220e13cccb49e30da107ffa98b1e91" kind="function"><name>Stat</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_stat_1a4d3ca9dc1dc4b9096e541c87cb71afb9" kind="function"><name>AddModifier</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_stat_1a229f2c577ac76acd4c1c52b259954fcc" kind="function"><name>RemoveModifier</name></member>
+  </compound>
+  <compound refid="class_adventure_assembly_1_1_units_1_1_stat_modifier" kind="class"><name>AdventureAssembly::Units::StatModifier</name>
+    <member refid="class_adventure_assembly_1_1_units_1_1_stat_modifier_1ae05754daa96a6604549c0bef0ab89874" kind="function"><name>Process</name></member>
+  </compound>
+  <compound refid="class_adventure_assembly_1_1_units_1_1_tests_1_1_test_class_modifier" kind="class"><name>AdventureAssembly::Units::Tests::TestClassModifier</name>
+    <member refid="class_adventure_assembly_1_1_units_1_1_tests_1_1_test_class_modifier_1aa39feb05cca0d1366f2709a08469257e" kind="variable"><name>_unitModifier</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_tests_1_1_test_class_modifier_1acd811f51390e67929f4bfbfa30c709be" kind="function"><name>Apply</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_tests_1_1_test_class_modifier_1af0c959dd8455be6f7b351d6c26a07ce8" kind="function"><name>Remove</name></member>
+  </compound>
+  <compound refid="class_adventure_assembly_1_1_units_1_1_tests_1_1_test_enemy_modifier" kind="class"><name>AdventureAssembly::Units::Tests::TestEnemyModifier</name>
+    <member refid="class_adventure_assembly_1_1_units_1_1_tests_1_1_test_enemy_modifier_1acbac2a02750e70846d53df02acea9672" kind="variable"><name>enemyData</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_tests_1_1_test_enemy_modifier_1af738a9eb28cfdbd96e76d2342664d891" kind="variable"><name>modifiers</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_tests_1_1_test_enemy_modifier_1a02503c1f8e4efc23b6a1302ebd0376da" kind="variable"><name>enemies</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_tests_1_1_test_enemy_modifier_1ad61ae78e378f966ceddc466ac6ab176c" kind="function"><name>Awake</name></member>
+  </compound>
+  <compound refid="class_adventure_assembly_1_1_core_1_1_tick_manager" kind="class"><name>AdventureAssembly::Core::TickManager</name>
+    <member refid="class_adventure_assembly_1_1_core_1_1_tick_manager_1a4e535fa85fb667baf3de16d4d157fd3d" kind="event"><name>TickUpdate</name></member>
+    <member refid="class_adventure_assembly_1_1_core_1_1_tick_manager_1a8d2ea4373e4994192d77bbd144c31cdf" kind="event"><name>TickLateUpdate</name></member>
+    <member refid="class_adventure_assembly_1_1_core_1_1_tick_manager_1a57b771ff08445ab092c040e980571304" kind="event"><name>EnemyTickUpdate</name></member>
+    <member refid="class_adventure_assembly_1_1_core_1_1_tick_manager_1ae3024126bf67ba3d82ac6a5be5616885" kind="event"><name>EnemyTickLateUpdate</name></member>
+    <member refid="class_adventure_assembly_1_1_core_1_1_tick_manager_1a3f37da2050caca2eacfe9d65069ee29e" kind="property"><name>TickInterval</name></member>
+    <member refid="class_adventure_assembly_1_1_core_1_1_tick_manager_1ae296cb287462847d317ba76c14ad6615" kind="variable"><name>_tickCoroutine</name></member>
+    <member refid="class_adventure_assembly_1_1_core_1_1_tick_manager_1ad74702bb436aa6209b0c7010ee125697" kind="function"><name>Start</name></member>
+    <member refid="class_adventure_assembly_1_1_core_1_1_tick_manager_1a8b9db514f12bf60d25b65c74abd3159f" kind="function"><name>TickCoroutine</name></member>
+    <member refid="class_adventure_assembly_1_1_core_1_1_tick_manager_1a271dfcbfd2af6a9e00b43cc354ae213b" kind="function"><name>StartTickUpdates</name></member>
+    <member refid="class_adventure_assembly_1_1_core_1_1_tick_manager_1a8b1c5fd906b3419a8836131790836a1b" kind="function"><name>StopTickUpdates</name></member>
+  </compound>
+  <compound refid="class_adventure_assembly_1_1_core_1_1_time_manager" kind="class"><name>AdventureAssembly::Core::TimeManager</name>
+    <member refid="class_adventure_assembly_1_1_core_1_1_time_manager_1afd407f4f20376c0a9cb81c2d2ea70303" kind="function"><name>Pause</name></member>
+    <member refid="class_adventure_assembly_1_1_core_1_1_time_manager_1aa50b76fb213f82e78c2f6576073b7af1" kind="function"><name>Unpause</name></member>
+  </compound>
+  <compound refid="class_adventure_assembly_1_1_units_1_1_unit" kind="class"><name>AdventureAssembly::Units::Unit</name>
+    <member refid="class_adventure_assembly_1_1_units_1_1_unit_1a11257e3c8dcfb967d85212aa41485da4" kind="property"><name>SpriteRenderer</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_unit_1a133db396ea3ad3cc73c7c9de8538c975" kind="property"><name>Stats</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_unit_1a6e4837996ced88e06efa04f108246617" kind="property"><name>UnitData</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_unit_1abe54923d5a5d0f38c84454dd7d61e19d" kind="property"><name>CurrentHealth</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_unit_1ac0ba4f9e48f1e5054b8e5c9912c1e86a" kind="property"><name>Position</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_unit_1a9afb5a52cef8d77760a0b7472fa71424" kind="property"><name>LastPosition</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_unit_1aeb6dedf5a847c7da814b16195cca0c48" kind="property"><name>IsDead</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_unit_1aedb81657370d6a615ea461e04ee9ed89" kind="event"><name>Died</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_unit_1acf5840ae70dc7d8b514b1d48e3ae906f" kind="function"><name>Initialize</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_unit_1aea72e9754ddba7da62420b73a621b419" kind="function"><name>OnUpdate</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_unit_1a2ff1fb6e8c612f7a7aa681d67c652b1a" kind="function"><name>Move</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_unit_1a45f62d207097560cd028e3c5eab7c091" kind="function"><name>Damage</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_unit_1a4ffdf49e62850ce9e51d669004a4b499" kind="function"><name>Die</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_unit_1aed49f829ffff64b58847a7c158a57392" kind="function"><name>FlipSprite</name></member>
+  </compound>
+  <compound refid="class_adventure_assembly_1_1_units_1_1_unit_data" kind="class"><name>AdventureAssembly::Units::UnitData</name>
+    <member refid="class_adventure_assembly_1_1_units_1_1_unit_data_1a69171383da86da349b0d330024ac894e" kind="property"><name>Name</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_unit_data_1a43cf81379cf6ed95be45c067dc507fe0" kind="property"><name>Sprite</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_unit_data_1a58a8f15f25278abc97a70a03ed84c075" kind="property"><name>MaxHealth</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_unit_data_1a198983aa6fc95b867c884f41b74bfe7a" kind="property"><name>MovementTween</name></member>
+  </compound>
+  <compound refid="class_adventure_assembly_1_1_units_1_1_unit_manager" kind="class"><name>AdventureAssembly::Units::UnitManager</name>
+    <member refid="class_adventure_assembly_1_1_units_1_1_unit_manager_1a5a409f68cd594daaaf44db79088ccae2" kind="property"><name>Units</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_unit_manager_1a161d885a0d5c68f361fae56a6448b145" kind="property"><name>Modifiers</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_unit_manager_1aa2fde2933a1692469ae2093448ee94f1" kind="function"><name>ApplyAllModifiers</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_unit_manager_1ae0aba3ed84df68725ee6e82050b2921d" kind="function"><name>AddUnit</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_unit_manager_1a32df56cbeb18c74e7613e4712d02cc42" kind="function"><name>RemoveUnit</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_unit_manager_1aff9d4b068be7ed9986a7e626b844799c" kind="function"><name>AddModifier</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_unit_manager_1ab3e50a5bd1e7589712693e0b3c8d1f12" kind="function"><name>RemoveModifier</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_unit_manager_1a9c20545856d094b8ffb7d74276f865ca" kind="function"><name>GetNearestUnit</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_unit_manager_1a30c7b516eaea1e15d7f5bb23c16b388b" kind="function"><name>HasUnitAtPosition</name></member>
+  </compound>
+  <compound refid="class_adventure_assembly_1_1_units_1_1_modifiers_1_1_unit_modifier" kind="class"><name>AdventureAssembly::Units::Modifiers::UnitModifier</name>
+    <member refid="class_adventure_assembly_1_1_units_1_1_modifiers_1_1_unit_modifier_1a95e0ec4898b322ccf1fb7b151c9d0638" kind="function"><name>Apply</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_modifiers_1_1_unit_modifier_1acd947b8858afe54670ddc0d091b62622" kind="function"><name>Remove</name></member>
+  </compound>
+  <compound refid="class_adventure_assembly_1_1_tests_1_1_play_mode_1_1_unit_movement_tests" kind="class"><name>AdventureAssembly::Tests::PlayMode::UnitMovementTests</name>
+    <member refid="class_adventure_assembly_1_1_tests_1_1_play_mode_1_1_unit_movement_tests_1ae29519e99da5f090ea968d085a032e49" kind="function"><name>HeroStatsTest</name></member>
+  </compound>
+  <compound refid="class_adventure_assembly_1_1_units_1_1_animation_1_1_unit_movement_tween" kind="class"><name>AdventureAssembly::Units::Animation::UnitMovementTween</name>
+    <member refid="class_adventure_assembly_1_1_units_1_1_animation_1_1_unit_movement_tween_1a52dad0a659a9ce1dc05fcd72b08aa089" kind="function"><name>Animate</name></member>
+  </compound>
+  <compound refid="class_adventure_assembly_1_1_units_1_1_unit_stats" kind="class"><name>AdventureAssembly::Units::UnitStats</name>
+    <member refid="class_adventure_assembly_1_1_units_1_1_unit_stats_1acb9e0cadc6fd05bf447e7cb42c5e6fe7" kind="property"><name>Unit</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_unit_stats_1a388594321287b630bf69a06e962ae774" kind="property"><name>UnitData</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_unit_stats_1a3acbe358408d422a12c1aaa001af14f3" kind="property"><name>DamageMultiplier</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_unit_stats_1a4f2e950f3fd84b3d8de9b2f652a7a12b" kind="property"><name>MaxHealthMultiplier</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_unit_stats_1a70f9d0bf6d75f8c6ea338344d62ca627" kind="function"><name>Initialize</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_unit_stats_1a83a2beb1adad04a2f00ea443cae7c3b6" kind="function"><name>GetDamageData</name></member>
+    <member refid="class_adventure_assembly_1_1_units_1_1_unit_stats_1ae6119f225ce8bd14ca1e63ff82fa8a38" kind="function"><name>GetMaxHealth</name></member>
+  </compound>
+  <compound refid="namespace_adventure_assembly" kind="namespace"><name>AdventureAssembly</name>
+  </compound>
+  <compound refid="namespace_adventure_assembly_1_1_core" kind="namespace"><name>AdventureAssembly::Core</name>
+  </compound>
+  <compound refid="namespace_adventure_assembly_1_1_core_1_1_bootstrap" kind="namespace"><name>AdventureAssembly::Core::Bootstrap</name>
+  </compound>
+  <compound refid="namespace_adventure_assembly_1_1_debug" kind="namespace"><name>AdventureAssembly::Debug</name>
+    <member refid="namespace_adventure_assembly_1_1_debug_1a7c635ec39f90bcb5c2a10816715556fb" kind="enum"><name>DebugInputMode</name></member>
+    <member refid="namespace_adventure_assembly_1_1_debug_1a7c635ec39f90bcb5c2a10816715556fba0610123bdd4ffc191a3ea05a847e1307" kind="enumvalue"><name>Press</name></member>
+    <member refid="namespace_adventure_assembly_1_1_debug_1a7c635ec39f90bcb5c2a10816715556fbabcd8db575b47c838e5d551e3973db4ac" kind="enumvalue"><name>Hold</name></member>
+  </compound>
+  <compound refid="namespace_adventure_assembly_1_1_input" kind="namespace"><name>AdventureAssembly::Input</name>
+  </compound>
+  <compound refid="namespace_adventure_assembly_1_1_interface" kind="namespace"><name>AdventureAssembly::Interface</name>
+  </compound>
+  <compound refid="namespace_adventure_assembly_1_1_tests" kind="namespace"><name>AdventureAssembly::Tests</name>
+  </compound>
+  <compound refid="namespace_adventure_assembly_1_1_tests_1_1_play_mode" kind="namespace"><name>AdventureAssembly::Tests::PlayMode</name>
+  </compound>
+  <compound refid="namespace_adventure_assembly_1_1_units" kind="namespace"><name>AdventureAssembly::Units</name>
+  </compound>
+  <compound refid="namespace_adventure_assembly_1_1_units_1_1_abilities" kind="namespace"><name>AdventureAssembly::Units::Abilities</name>
+  </compound>
+  <compound refid="namespace_adventure_assembly_1_1_units_1_1_animation" kind="namespace"><name>AdventureAssembly::Units::Animation</name>
+  </compound>
+  <compound refid="namespace_adventure_assembly_1_1_units_1_1_enemies" kind="namespace"><name>AdventureAssembly::Units::Enemies</name>
+  </compound>
+  <compound refid="namespace_adventure_assembly_1_1_units_1_1_heroes" kind="namespace"><name>AdventureAssembly::Units::Heroes</name>
+  </compound>
+  <compound refid="namespace_adventure_assembly_1_1_units_1_1_modifiers" kind="namespace"><name>AdventureAssembly::Units::Modifiers</name>
+  </compound>
+  <compound refid="namespace_adventure_assembly_1_1_units_1_1_tests" kind="namespace"><name>AdventureAssembly::Units::Tests</name>
+  </compound>
+  <compound refid="namespace_d_g_1_1_tweening" kind="namespace"><name>DG::Tweening</name>
+  </compound>
+  <compound refid="namespace_n_unit_1_1_framework" kind="namespace"><name>NUnit::Framework</name>
+  </compound>
+  <compound refid="namespace_sirenix_1_1_odin_inspector" kind="namespace"><name>Sirenix::OdinInspector</name>
+  </compound>
+  <compound refid="namespace_sirenix_1_1_serialization" kind="namespace"><name>Sirenix::Serialization</name>
+  </compound>
+  <compound refid="namespace_system" kind="namespace"><name>System</name>
+  </compound>
+  <compound refid="namespace_system_1_1_collections" kind="namespace"><name>System::Collections</name>
+  </compound>
+  <compound refid="namespace_system_1_1_collections_1_1_generic" kind="namespace"><name>System::Collections::Generic</name>
+  </compound>
+  <compound refid="namespace_system_1_1_linq" kind="namespace"><name>System::Linq</name>
+  </compound>
+  <compound refid="namespace_tiny_tools_1_1_extensions" kind="namespace"><name>TinyTools::Extensions</name>
+  </compound>
+  <compound refid="namespace_tiny_tools_1_1_generics" kind="namespace"><name>TinyTools::Generics</name>
+  </compound>
+  <compound refid="namespace_tiny_tools_1_1_scriptable_events" kind="namespace"><name>TinyTools::ScriptableEvents</name>
+  </compound>
+  <compound refid="namespace_tiny_tools_1_1_scriptable_variables" kind="namespace"><name>TinyTools::ScriptableVariables</name>
+  </compound>
+  <compound refid="namespace_t_m_pro" kind="namespace"><name>TMPro</name>
+  </compound>
+  <compound refid="namespace_unity_engine" kind="namespace"><name>UnityEngine</name>
+  </compound>
+  <compound refid="namespace_unity_engine_1_1_event_systems" kind="namespace"><name>UnityEngine::EventSystems</name>
+  </compound>
+  <compound refid="namespace_unity_engine_1_1_u_i" kind="namespace"><name>UnityEngine::UI</name>
+  </compound>
+  <compound refid="_bootstrapper_8cs" kind="file"><name>Bootstrapper.cs</name>
+  </compound>
+  <compound refid="_constants_8cs" kind="file"><name>Constants.cs</name>
+  </compound>
+  <compound refid="_experience_manager_8cs" kind="file"><name>ExperienceManager.cs</name>
+  </compound>
+  <compound refid="_gold_manager_8cs" kind="file"><name>GoldManager.cs</name>
+  </compound>
+  <compound refid="_tick_manager_8cs" kind="file"><name>TickManager.cs</name>
+  </compound>
+  <compound refid="_time_manager_8cs" kind="file"><name>TimeManager.cs</name>
+  </compound>
+  <compound refid="_debug_input_mode_8cs" kind="file"><name>DebugInputMode.cs</name>
+  </compound>
+  <compound refid="_debug_key_press_8cs" kind="file"><name>DebugKeyPress.cs</name>
+  </compound>
+  <compound refid="_debug_kill_random_hero_8cs" kind="file"><name>DebugKillRandomHero.cs</name>
+  </compound>
+  <compound refid="_debug_open_chest_8cs" kind="file"><name>DebugOpenChest.cs</name>
+  </compound>
+  <compound refid="_input_manager_8cs" kind="file"><name>InputManager.cs</name>
+  </compound>
+  <compound refid="_gold_interface_8cs" kind="file"><name>GoldInterface.cs</name>
+  </compound>
+  <compound refid="_hero_class_element_8cs" kind="file"><name>HeroClassElement.cs</name>
+  </compound>
+  <compound refid="_hero_selection_element_8cs" kind="file"><name>HeroSelectionElement.cs</name>
+  </compound>
+  <compound refid="_hero_selection_interface_8cs" kind="file"><name>HeroSelectionInterface.cs</name>
+  </compound>
+  <compound refid="_interface_2_hero_selection_start_8cs" kind="file"><name>HeroSelectionStart.cs</name>
+  </compound>
+  <compound refid="_units_2_heroes_2_hero_selection_start_8cs" kind="file"><name>HeroSelectionStart.cs</name>
+  </compound>
+  <compound refid="_interface_manager_8cs" kind="file"><name>InterfaceManager.cs</name>
+  </compound>
+  <compound refid="_unit_stats_tests_8cs" kind="file"><name>UnitStatsTests.cs</name>
+  </compound>
+  <compound refid="_ability_8cs" kind="file"><name>Ability.cs</name>
+  </compound>
+  <compound refid="_projectile_ability_8cs" kind="file"><name>ProjectileAbility.cs</name>
+  </compound>
+  <compound refid="_spell_thief_ability_8cs" kind="file"><name>SpellThiefAbility.cs</name>
+  </compound>
+  <compound refid="_default_unit_movement_tween_8cs" kind="file"><name>DefaultUnitMovementTween.cs</name>
+  </compound>
+  <compound refid="_unit_movement_tween_8cs" kind="file"><name>UnitMovementTween.cs</name>
+  </compound>
+  <compound refid="_damage_data_8cs" kind="file"><name>DamageData.cs</name>
+  </compound>
+  <compound refid="_default_enemy_navigation_8cs" kind="file"><name>DefaultEnemyNavigation.cs</name>
+  </compound>
+  <compound refid="_enemy_8cs" kind="file"><name>Enemy.cs</name>
+  </compound>
+  <compound refid="_enemy_data_8cs" kind="file"><name>EnemyData.cs</name>
+  </compound>
+  <compound refid="_enemy_manager_8cs" kind="file"><name>EnemyManager.cs</name>
+  </compound>
+  <compound refid="_enemy_navigation_8cs" kind="file"><name>EnemyNavigation.cs</name>
+  </compound>
+  <compound refid="_enemy_spawner_8cs" kind="file"><name>EnemySpawner.cs</name>
+  </compound>
+  <compound refid="_enemy_stats_8cs" kind="file"><name>EnemyStats.cs</name>
+  </compound>
+  <compound refid="_class_data_8cs" kind="file"><name>ClassData.cs</name>
+  </compound>
+  <compound refid="_class_manager_8cs" kind="file"><name>ClassManager.cs</name>
+  </compound>
+  <compound refid="_class_modifier_8cs" kind="file"><name>ClassModifier.cs</name>
+  </compound>
+  <compound refid="_hero_8cs" kind="file"><name>Hero.cs</name>
+  </compound>
+  <compound refid="_hero_data_8cs" kind="file"><name>HeroData.cs</name>
+  </compound>
+  <compound refid="_hero_data_list_scriptable_variable_8cs" kind="file"><name>HeroDataListScriptableVariable.cs</name>
+  </compound>
+  <compound refid="_hero_indicator_8cs" kind="file"><name>HeroIndicator.cs</name>
+  </compound>
+  <compound refid="_hero_manager_8cs" kind="file"><name>HeroManager.cs</name>
+  </compound>
+  <compound refid="_hero_stats_8cs" kind="file"><name>HeroStats.cs</name>
+  </compound>
+  <compound refid="_enemy_modifier_8cs" kind="file"><name>EnemyModifier.cs</name>
+  </compound>
+  <compound refid="_hero_modifier_8cs" kind="file"><name>HeroModifier.cs</name>
+  </compound>
+  <compound refid="_unit_modifier_8cs" kind="file"><name>UnitModifier.cs</name>
+  </compound>
+  <compound refid="_projectile_8cs" kind="file"><name>Projectile.cs</name>
+  </compound>
+  <compound refid="_stat_8cs" kind="file"><name>Stat.cs</name>
+  </compound>
+  <compound refid="_stat_modifier_8cs" kind="file"><name>StatModifier.cs</name>
+  </compound>
+  <compound refid="_damage_modifier_8cs" kind="file"><name>DamageModifier.cs</name>
+  </compound>
+  <compound refid="_default_stat_modifier_8cs" kind="file"><name>DefaultStatModifier.cs</name>
+  </compound>
+  <compound refid="_health_modifier_8cs" kind="file"><name>HealthModifier.cs</name>
+  </compound>
+  <compound refid="_test_class_modifier_8cs" kind="file"><name>TestClassModifier.cs</name>
+  </compound>
+  <compound refid="_test_enemy_modifier_8cs" kind="file"><name>TestEnemyModifier.cs</name>
+  </compound>
+  <compound refid="_unit_8cs" kind="file"><name>Unit.cs</name>
+  </compound>
+  <compound refid="_unit_data_8cs" kind="file"><name>UnitData.cs</name>
+  </compound>
+  <compound refid="_unit_manager_8cs" kind="file"><name>UnitManager.cs</name>
+  </compound>
+  <compound refid="_unit_stats_8cs" kind="file"><name>UnitStats.cs</name>
+  </compound>
+  <compound refid="dir_071a3982aae6d88876f2aab46df6305a" kind="dir"><name>D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Abilities</name>
+  </compound>
+  <compound refid="dir_8bc465951b91036e4fb83034edfc2a66" kind="dir"><name>D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Animation</name>
+  </compound>
+  <compound refid="dir_84bbf7b3c7f28a5a18725745e1505219" kind="dir"><name>D:/Unity/Projects/adventure-assembly/Assets</name>
+  </compound>
+  <compound refid="dir_85cdf9ebbd5a3fb7d275a2b04dcb32c8" kind="dir"><name>D:/Unity/Projects/adventure-assembly/Assets/Scripts/Core/Bootstrap</name>
+  </compound>
+  <compound refid="dir_7db68f476bd50f9f6d9cf398af037e8e" kind="dir"><name>D:/Unity/Projects/adventure-assembly/Assets/Scripts/Core</name>
+  </compound>
+  <compound refid="dir_b426409c486fcc95972188faa22ba378" kind="dir"><name>D:/Unity/Projects/adventure-assembly/Assets/Scripts/Debug</name>
+  </compound>
+  <compound refid="dir_07a82b8a61ef390e2ac25ea6e27e5186" kind="dir"><name>D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Enemies</name>
+  </compound>
+  <compound refid="dir_fd76c590d86f02895e2b1ace73e7c46a" kind="dir"><name>D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes</name>
+  </compound>
+  <compound refid="dir_82bf5dcf5f07f0970851629866abc1ad" kind="dir"><name>D:/Unity/Projects/adventure-assembly/Assets/Scripts/Input</name>
+  </compound>
+  <compound refid="dir_5231e15b06875d64b56adeb846ac0863" kind="dir"><name>D:/Unity/Projects/adventure-assembly/Assets/Scripts/Interface</name>
+  </compound>
+  <compound refid="dir_62ee763545c2600b2033c1d73c29f338" kind="dir"><name>D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Modifiers</name>
+  </compound>
+  <compound refid="dir_2884f10e321720bb85a7573cbfbd38b2" kind="dir"><name>D:/Unity/Projects/adventure-assembly/Assets/Scripts/Tests/PlayMode</name>
+  </compound>
+  <compound refid="dir_f13b41af88cf68434578284aaf699e39" kind="dir"><name>D:/Unity/Projects/adventure-assembly/Assets/Scripts</name>
+  </compound>
+  <compound refid="dir_819c5f94eeb3ceb186bdcd8928cc14ef" kind="dir"><name>D:/Unity/Projects/adventure-assembly/Assets/Scripts/Tests</name>
+  </compound>
+  <compound refid="dir_bd5061c05f1141a560860017b2b9fa01" kind="dir"><name>D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Tests</name>
+  </compound>
+  <compound refid="dir_4eb0bfcbbaf9efdd81b8badbbaca815e" kind="dir"><name>D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units</name>
+  </compound>
+</doxygenindex>

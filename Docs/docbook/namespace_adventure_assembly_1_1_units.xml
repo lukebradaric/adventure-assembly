@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespace_adventure_assembly_1_1_units" xml:lang="en-US">
+<title>AdventureAssembly.Units Namespace Reference</title>
+<indexterm><primary>AdventureAssembly.Units</primary></indexterm>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespace_adventure_assembly_1_1_units_1_1_abilities">Abilities</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespace_adventure_assembly_1_1_units_1_1_animation">Animation</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespace_adventure_assembly_1_1_units_1_1_enemies">Enemies</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespace_adventure_assembly_1_1_units_1_1_heroes">Heroes</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespace_adventure_assembly_1_1_units_1_1_modifiers">Modifiers</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespace_adventure_assembly_1_1_units_1_1_tests">Tests</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_adventure_assembly_1_1_units_1_1_damage_data">DamageData</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_adventure_assembly_1_1_units_1_1_projectile">Projectile</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_adventure_assembly_1_1_units_1_1_stat">Stat</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_adventure_assembly_1_1_units_1_1_stat_modifier">StatModifier</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_adventure_assembly_1_1_units_1_1_unit">Unit</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_adventure_assembly_1_1_units_1_1_unit_data">UnitData</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_adventure_assembly_1_1_units_1_1_unit_manager">UnitManager</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_adventure_assembly_1_1_units_1_1_unit_stats">UnitStats</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

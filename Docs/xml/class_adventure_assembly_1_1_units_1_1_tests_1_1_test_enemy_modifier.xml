@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_adventure_assembly_1_1_units_1_1_tests_1_1_test_enemy_modifier" kind="class" language="C#" prot="public">
+    <compoundname>AdventureAssembly::Units::Tests::TestEnemyModifier</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">SerializedMonoBehaviour</basecompoundref>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_adventure_assembly_1_1_units_1_1_tests_1_1_test_enemy_modifier_1acbac2a02750e70846d53df02acea9672" prot="public" static="no" mutable="no">
+        <type><ref refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_data" kindref="compound">EnemyData</ref></type>
+        <definition>EnemyData AdventureAssembly.Units.Tests.TestEnemyModifier.enemyData</definition>
+        <argsstring></argsstring>
+        <name>enemyData</name>
+        <qualifiedname>AdventureAssembly.Units.Tests.TestEnemyModifier.enemyData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Tests/TestEnemyModifier.cs" line="12" column="26" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Tests/TestEnemyModifier.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_adventure_assembly_1_1_units_1_1_tests_1_1_test_enemy_modifier_1af738a9eb28cfdbd96e76d2342664d891" prot="private" static="no" mutable="no">
+        <type>List&lt; <ref refid="class_adventure_assembly_1_1_units_1_1_modifiers_1_1_unit_modifier" kindref="compound">UnitModifier</ref> &gt;</type>
+        <definition>List&lt;UnitModifier&gt; AdventureAssembly.Units.Tests.TestEnemyModifier.modifiers</definition>
+        <argsstring></argsstring>
+        <name>modifiers</name>
+        <qualifiedname>AdventureAssembly.Units.Tests.TestEnemyModifier.modifiers</qualifiedname>
+        <initializer>= new List&lt;<ref refid="class_adventure_assembly_1_1_units_1_1_modifiers_1_1_unit_modifier" kindref="compound">UnitModifier</ref>&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Tests/TestEnemyModifier.cs" line="13" column="23" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Tests/TestEnemyModifier.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_adventure_assembly_1_1_units_1_1_tests_1_1_test_enemy_modifier_1a02503c1f8e4efc23b6a1302ebd0376da" prot="private" static="no" mutable="no">
+        <type>List&lt; <ref refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy" kindref="compound">Enemy</ref> &gt;</type>
+        <definition>List&lt;Enemy&gt; AdventureAssembly.Units.Tests.TestEnemyModifier.enemies</definition>
+        <argsstring></argsstring>
+        <name>enemies</name>
+        <qualifiedname>AdventureAssembly.Units.Tests.TestEnemyModifier.enemies</qualifiedname>
+        <initializer>= new List&lt;<ref refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy" kindref="compound">Enemy</ref>&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Tests/TestEnemyModifier.cs" line="14" column="23" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Tests/TestEnemyModifier.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_adventure_assembly_1_1_units_1_1_tests_1_1_test_enemy_modifier_1ad61ae78e378f966ceddc466ac6ab176c" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AdventureAssembly.Units.Tests.TestEnemyModifier.Awake</definition>
+        <argsstring>()</argsstring>
+        <name>Awake</name>
+        <qualifiedname>AdventureAssembly.Units.Tests.TestEnemyModifier.Awake</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Tests/TestEnemyModifier.cs" line="16" column="22" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Tests/TestEnemyModifier.cs" bodystart="16" bodyend="27"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>AdventureAssembly.Units.Tests.TestEnemyModifier</label>
+        <link refid="class_adventure_assembly_1_1_units_1_1_tests_1_1_test_enemy_modifier"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>SerializedMonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>AdventureAssembly.Units.Tests.TestEnemyModifier</label>
+        <link refid="class_adventure_assembly_1_1_units_1_1_tests_1_1_test_enemy_modifier"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>enemyData</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>AdventureAssembly.Units.Enemies.EnemyData</label>
+        <link refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_data"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>SerializedMonoBehaviour</label>
+      </node>
+      <node id="5">
+        <label>SerializedScriptableObject</label>
+      </node>
+      <node id="4">
+        <label>UnitData</label>
+        <link refid="class_adventure_assembly_1_1_units_1_1_unit_data"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Tests/TestEnemyModifier.cs" line="10" column="11" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Tests/TestEnemyModifier.cs" bodystart="11" bodyend="28"/>
+    <listofallmembers>
+      <member refid="class_adventure_assembly_1_1_units_1_1_tests_1_1_test_enemy_modifier_1ad61ae78e378f966ceddc466ac6ab176c" prot="private" virt="non-virtual"><scope>AdventureAssembly::Units::Tests::TestEnemyModifier</scope><name>Awake</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_tests_1_1_test_enemy_modifier_1a02503c1f8e4efc23b6a1302ebd0376da" prot="private" virt="non-virtual"><scope>AdventureAssembly::Units::Tests::TestEnemyModifier</scope><name>enemies</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_tests_1_1_test_enemy_modifier_1acbac2a02750e70846d53df02acea9672" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::Tests::TestEnemyModifier</scope><name>enemyData</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_tests_1_1_test_enemy_modifier_1af738a9eb28cfdbd96e76d2342664d891" prot="private" virt="non-virtual"><scope>AdventureAssembly::Units::Tests::TestEnemyModifier</scope><name>modifiers</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

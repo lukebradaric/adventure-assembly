@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_adventure_assembly_1_1_interface_1_1_interface_manager" kind="class" language="C#" prot="public">
+    <compoundname>AdventureAssembly::Interface::InterfaceManager</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Singleton&lt; InterfaceManager &gt;</basecompoundref>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_adventure_assembly_1_1_interface_1_1_interface_manager_1af1d33aeb859087298c0a253c1eaf8abc" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_adventure_assembly_1_1_interface_1_1_hero_selection_interface" kindref="compound">HeroSelectionInterface</ref></type>
+        <definition>HeroSelectionInterface AdventureAssembly.Interface.InterfaceManager.HeroSelectionInterface</definition>
+        <argsstring></argsstring>
+        <name>HeroSelectionInterface</name>
+        <qualifiedname>AdventureAssembly.Interface.InterfaceManager.HeroSelectionInterface</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Interface/InterfaceManager.cs" line="8" column="40" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Interface/InterfaceManager.cs" bodystart="8" bodyend="8"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>AdventureAssembly.Interface.InterfaceManager</label>
+        <link refid="class_adventure_assembly_1_1_interface_1_1_interface_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Singleton&lt; InterfaceManager &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>AdventureAssembly.Interface.InterfaceManager</label>
+        <link refid="class_adventure_assembly_1_1_interface_1_1_interface_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Singleton&lt; InterfaceManager &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Interface/InterfaceManager.cs" line="6" column="11" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Interface/InterfaceManager.cs" bodystart="7" bodyend="9"/>
+    <listofallmembers>
+      <member refid="class_adventure_assembly_1_1_interface_1_1_interface_manager_1af1d33aeb859087298c0a253c1eaf8abc" prot="public" virt="non-virtual"><scope>AdventureAssembly::Interface::InterfaceManager</scope><name>HeroSelectionInterface</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

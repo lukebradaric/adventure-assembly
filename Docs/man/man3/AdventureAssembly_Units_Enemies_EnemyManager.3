@@ -1,0 +1,59 @@
+.TH "AdventureAssembly.Units.Enemies.EnemyManager" 3 "AdventureAssembly" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+AdventureAssembly.Units.Enemies.EnemyManager
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBAdventureAssembly\&.Units\&.UnitManager< Enemy >\fP\&.
+.SS "Additional Inherited Members"
+
+
+Public Member Functions inherited from \fBAdventureAssembly\&.Units\&.UnitManager< Enemy >\fP
+.in +1c
+.ti -1c
+.RI "virtual void \fBAddUnit\fP (T unit)"
+.br
+.ti -1c
+.RI "virtual void \fBRemoveUnit\fP (T unit)"
+.br
+.in -1c
+
+Static Public Member Functions inherited from \fBAdventureAssembly\&.Units\&.UnitManager< Enemy >\fP
+.in +1c
+.ti -1c
+.RI "static void \fBAddModifier\fP (\fBUnitModifier\fP modifier)"
+.br
+.ti -1c
+.RI "static void \fBRemoveModifier\fP (\fBUnitModifier\fP modifier)"
+.br
+.ti -1c
+.RI "static T \fBGetNearestUnit\fP (Vector2Int position)"
+.br
+.ti -1c
+.RI "static bool \fBHasUnitAtPosition\fP (Vector2Int position)"
+.br
+.in -1c
+
+Static Protected Member Functions inherited from \fBAdventureAssembly\&.Units\&.UnitManager< Enemy >\fP
+.in +1c
+.ti -1c
+.RI "static void \fBApplyAllModifiers\fP (T unit)"
+.br
+.in -1c
+
+Properties inherited from \fBAdventureAssembly\&.Units\&.UnitManager< Enemy >\fP
+.in +1c
+.ti -1c
+.RI "static List< T > \fBUnits\fP\fR [get, protected set]\fP"
+.br
+.ti -1c
+.RI "static List< \fBUnitModifier\fP > \fBModifiers\fP\fR [get, protected set]\fP"
+.br
+.in -1c
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for AdventureAssembly from the source code\&.

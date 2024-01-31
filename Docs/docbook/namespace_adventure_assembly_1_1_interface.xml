@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespace_adventure_assembly_1_1_interface" xml:lang="en-US">
+<title>AdventureAssembly.Interface Namespace Reference</title>
+<indexterm><primary>AdventureAssembly.Interface</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_adventure_assembly_1_1_interface_1_1_gold_interface">GoldInterface</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_adventure_assembly_1_1_interface_1_1_hero_class_element">HeroClassElement</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_adventure_assembly_1_1_interface_1_1_hero_selection_element">HeroSelectionElement</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_adventure_assembly_1_1_interface_1_1_hero_selection_interface">HeroSelectionInterface</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_adventure_assembly_1_1_interface_1_1_hero_selection_start">HeroSelectionStart</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_adventure_assembly_1_1_interface_1_1_interface_manager">InterfaceManager</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

@@ -1,0 +1,197 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_adventure_assembly_1_1_core_1_1_tick_manager" kind="class" language="C#" prot="public">
+    <compoundname>AdventureAssembly::Core::TickManager</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Singleton&lt; TickManager &gt;</basecompoundref>
+    <sectiondef kind="event">
+      <memberdef kind="event" id="class_adventure_assembly_1_1_core_1_1_tick_manager_1a4e535fa85fb667baf3de16d4d157fd3d" prot="public" static="yes" add="no" remove="no" raise="no">
+        <type>Action</type>
+        <definition>Action AdventureAssembly.Core.TickManager.TickUpdate</definition>
+        <argsstring></argsstring>
+        <name>TickUpdate</name>
+        <qualifiedname>AdventureAssembly.Core.TickManager.TickUpdate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Core/TickManager.cs" line="11" column="36" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Core/TickManager.cs" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="event" id="class_adventure_assembly_1_1_core_1_1_tick_manager_1a8d2ea4373e4994192d77bbd144c31cdf" prot="public" static="yes" add="no" remove="no" raise="no">
+        <type>Action</type>
+        <definition>Action AdventureAssembly.Core.TickManager.TickLateUpdate</definition>
+        <argsstring></argsstring>
+        <name>TickLateUpdate</name>
+        <qualifiedname>AdventureAssembly.Core.TickManager.TickLateUpdate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Core/TickManager.cs" line="12" column="36" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Core/TickManager.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="event" id="class_adventure_assembly_1_1_core_1_1_tick_manager_1a57b771ff08445ab092c040e980571304" prot="public" static="yes" add="no" remove="no" raise="no">
+        <type>Action</type>
+        <definition>Action AdventureAssembly.Core.TickManager.EnemyTickUpdate</definition>
+        <argsstring></argsstring>
+        <name>EnemyTickUpdate</name>
+        <qualifiedname>AdventureAssembly.Core.TickManager.EnemyTickUpdate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Core/TickManager.cs" line="13" column="36" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Core/TickManager.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="event" id="class_adventure_assembly_1_1_core_1_1_tick_manager_1ae3024126bf67ba3d82ac6a5be5616885" prot="public" static="yes" add="no" remove="no" raise="no">
+        <type>Action</type>
+        <definition>Action AdventureAssembly.Core.TickManager.EnemyTickLateUpdate</definition>
+        <argsstring></argsstring>
+        <name>EnemyTickLateUpdate</name>
+        <qualifiedname>AdventureAssembly.Core.TickManager.EnemyTickLateUpdate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Core/TickManager.cs" line="14" column="36" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Core/TickManager.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_adventure_assembly_1_1_core_1_1_tick_manager_1a3f37da2050caca2eacfe9d65069ee29e" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>float</type>
+        <definition>float AdventureAssembly.Core.TickManager.TickInterval</definition>
+        <argsstring></argsstring>
+        <name>TickInterval</name>
+        <qualifiedname>AdventureAssembly.Core.TickManager.TickInterval</qualifiedname>
+        <initializer>= 0.33333f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Core/TickManager.cs" line="16" column="23" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Core/TickManager.cs" bodystart="16" bodyend="16"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_adventure_assembly_1_1_core_1_1_tick_manager_1ae296cb287462847d317ba76c14ad6615" prot="private" static="no" mutable="no">
+        <type>Coroutine</type>
+        <definition>Coroutine AdventureAssembly.Core.TickManager._tickCoroutine</definition>
+        <argsstring></argsstring>
+        <name>_tickCoroutine</name>
+        <qualifiedname>AdventureAssembly.Core.TickManager._tickCoroutine</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Core/TickManager.cs" line="18" column="27" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Core/TickManager.cs" bodystart="18" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_adventure_assembly_1_1_core_1_1_tick_manager_1ad74702bb436aa6209b0c7010ee125697" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AdventureAssembly.Core.TickManager.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <qualifiedname>AdventureAssembly.Core.TickManager.Start</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Core/TickManager.cs" line="20" column="22" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Core/TickManager.cs" bodystart="20" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_adventure_assembly_1_1_core_1_1_tick_manager_1a8b9db514f12bf60d25b65c74abd3159f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IEnumerator</type>
+        <definition>IEnumerator AdventureAssembly.Core.TickManager.TickCoroutine</definition>
+        <argsstring>()</argsstring>
+        <name>TickCoroutine</name>
+        <qualifiedname>AdventureAssembly.Core.TickManager.TickCoroutine</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Core/TickManager.cs" line="40" column="29" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Core/TickManager.cs" bodystart="40" bodyend="51"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_adventure_assembly_1_1_core_1_1_tick_manager_1a271dfcbfd2af6a9e00b43cc354ae213b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AdventureAssembly.Core.TickManager.StartTickUpdates</definition>
+        <argsstring>()</argsstring>
+        <name>StartTickUpdates</name>
+        <qualifiedname>AdventureAssembly.Core.TickManager.StartTickUpdates</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Core/TickManager.cs" line="25" column="21" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Core/TickManager.cs" bodystart="25" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="class_adventure_assembly_1_1_core_1_1_tick_manager_1a8b1c5fd906b3419a8836131790836a1b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AdventureAssembly.Core.TickManager.StopTickUpdates</definition>
+        <argsstring>()</argsstring>
+        <name>StopTickUpdates</name>
+        <qualifiedname>AdventureAssembly.Core.TickManager.StopTickUpdates</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Core/TickManager.cs" line="30" column="21" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Core/TickManager.cs" bodystart="30" bodyend="38"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>AdventureAssembly.Core.TickManager</label>
+        <link refid="class_adventure_assembly_1_1_core_1_1_tick_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Singleton&lt; TickManager &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>AdventureAssembly.Core.TickManager</label>
+        <link refid="class_adventure_assembly_1_1_core_1_1_tick_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Singleton&lt; TickManager &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Core/TickManager.cs" line="9" column="11" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Core/TickManager.cs" bodystart="10" bodyend="52"/>
+    <listofallmembers>
+      <member refid="class_adventure_assembly_1_1_core_1_1_tick_manager_1ae296cb287462847d317ba76c14ad6615" prot="private" virt="non-virtual"><scope>AdventureAssembly::Core::TickManager</scope><name>_tickCoroutine</name></member>
+      <member refid="class_adventure_assembly_1_1_core_1_1_tick_manager_1ae3024126bf67ba3d82ac6a5be5616885" prot="public" virt="non-virtual"><scope>AdventureAssembly::Core::TickManager</scope><name>EnemyTickLateUpdate</name></member>
+      <member refid="class_adventure_assembly_1_1_core_1_1_tick_manager_1a57b771ff08445ab092c040e980571304" prot="public" virt="non-virtual"><scope>AdventureAssembly::Core::TickManager</scope><name>EnemyTickUpdate</name></member>
+      <member refid="class_adventure_assembly_1_1_core_1_1_tick_manager_1ad74702bb436aa6209b0c7010ee125697" prot="private" virt="non-virtual"><scope>AdventureAssembly::Core::TickManager</scope><name>Start</name></member>
+      <member refid="class_adventure_assembly_1_1_core_1_1_tick_manager_1a271dfcbfd2af6a9e00b43cc354ae213b" prot="public" virt="non-virtual"><scope>AdventureAssembly::Core::TickManager</scope><name>StartTickUpdates</name></member>
+      <member refid="class_adventure_assembly_1_1_core_1_1_tick_manager_1a8b1c5fd906b3419a8836131790836a1b" prot="public" virt="non-virtual"><scope>AdventureAssembly::Core::TickManager</scope><name>StopTickUpdates</name></member>
+      <member refid="class_adventure_assembly_1_1_core_1_1_tick_manager_1a8b9db514f12bf60d25b65c74abd3159f" prot="private" virt="non-virtual"><scope>AdventureAssembly::Core::TickManager</scope><name>TickCoroutine</name></member>
+      <member refid="class_adventure_assembly_1_1_core_1_1_tick_manager_1a3f37da2050caca2eacfe9d65069ee29e" prot="public" virt="non-virtual"><scope>AdventureAssembly::Core::TickManager</scope><name>TickInterval</name></member>
+      <member refid="class_adventure_assembly_1_1_core_1_1_tick_manager_1a8d2ea4373e4994192d77bbd144c31cdf" prot="public" virt="non-virtual"><scope>AdventureAssembly::Core::TickManager</scope><name>TickLateUpdate</name></member>
+      <member refid="class_adventure_assembly_1_1_core_1_1_tick_manager_1a4e535fa85fb667baf3de16d4d157fd3d" prot="public" virt="non-virtual"><scope>AdventureAssembly::Core::TickManager</scope><name>TickUpdate</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

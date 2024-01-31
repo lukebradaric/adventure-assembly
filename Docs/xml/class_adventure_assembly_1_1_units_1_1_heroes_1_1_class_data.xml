@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_data" kind="class" language="C#" prot="public">
+    <compoundname>AdventureAssembly::Units::Heroes::ClassData</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">SerializedScriptableObject</basecompoundref>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_data_1a393174ef471e39faf867987eed964539" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>string</type>
+        <definition>string AdventureAssembly.Units.Heroes.ClassData.Name</definition>
+        <argsstring></argsstring>
+        <name>Name</name>
+        <qualifiedname>AdventureAssembly.Units.Heroes.ClassData.Name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/ClassData.cs" line="12" column="24" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/ClassData.cs" bodystart="12" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="property" id="class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_data_1a1ff978ddf2e7a0843f7c954dcd6216af" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>string</type>
+        <definition>string AdventureAssembly.Units.Heroes.ClassData.Description</definition>
+        <argsstring></argsstring>
+        <name>Description</name>
+        <qualifiedname>AdventureAssembly.Units.Heroes.ClassData.Description</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/ClassData.cs" line="15" column="24" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/ClassData.cs" bodystart="15" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="property" id="class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_data_1aaf32940d92d2845fef9e436b6446e239" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>Color</type>
+        <definition>Color AdventureAssembly.Units.Heroes.ClassData.Color</definition>
+        <argsstring></argsstring>
+        <name>Color</name>
+        <qualifiedname>AdventureAssembly.Units.Heroes.ClassData.Color</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/ClassData.cs" line="17" column="23" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/ClassData.cs" bodystart="17" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="property" id="class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_data_1a828e34ababecf6697194be728c7493ca" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>List&lt; <ref refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_modifier" kindref="compound">ClassModifier</ref> &gt;</type>
+        <definition>List&lt;ClassModifier&gt; AdventureAssembly.Units.Heroes.ClassData.Modifiers</definition>
+        <argsstring></argsstring>
+        <name>Modifiers</name>
+        <qualifiedname>AdventureAssembly.Units.Heroes.ClassData.Modifiers</qualifiedname>
+        <initializer>= new List&lt;<ref refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_modifier" kindref="compound">ClassModifier</ref>&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/ClassData.cs" line="19" column="22" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/ClassData.cs" bodystart="19" bodyend="19"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>AdventureAssembly.Units.Heroes.ClassData</label>
+        <link refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_data"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>SerializedScriptableObject</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>AdventureAssembly.Units.Heroes.ClassData</label>
+        <link refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_data"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>SerializedScriptableObject</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/ClassData.cs" line="10" column="11" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/ClassData.cs" bodystart="11" bodyend="20"/>
+    <listofallmembers>
+      <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_data_1aaf32940d92d2845fef9e436b6446e239" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::Heroes::ClassData</scope><name>Color</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_data_1a1ff978ddf2e7a0843f7c954dcd6216af" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::Heroes::ClassData</scope><name>Description</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_data_1a828e34ababecf6697194be728c7493ca" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::Heroes::ClassData</scope><name>Modifiers</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_data_1a393174ef471e39faf867987eed964539" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::Heroes::ClassData</scope><name>Name</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_adventure_assembly_1_1_units_1_1_damage_data" kind="class" language="C#" prot="public">
+    <compoundname>AdventureAssembly::Units::DamageData</compoundname>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_adventure_assembly_1_1_units_1_1_damage_data_1a1d3dd679c2cdd652226ad87c5337ebad" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>int</type>
+        <definition>int AdventureAssembly.Units.DamageData.BaseValue</definition>
+        <argsstring></argsstring>
+        <name>BaseValue</name>
+        <qualifiedname>AdventureAssembly.Units.DamageData.BaseValue</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/DamageData.cs" line="10" column="20" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/DamageData.cs" bodystart="10" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="property" id="class_adventure_assembly_1_1_units_1_1_damage_data_1abce190e454570554a0feff9a2ebcad41" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int AdventureAssembly.Units.DamageData.Value</definition>
+        <argsstring></argsstring>
+        <name>Value</name>
+        <qualifiedname>AdventureAssembly.Units.DamageData.Value</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/DamageData.cs" line="12" column="20" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/DamageData.cs" bodystart="12" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="property" id="class_adventure_assembly_1_1_units_1_1_damage_data_1a8328172421fe9c72769d8ddb724e27c4" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>bool</type>
+        <definition>bool AdventureAssembly.Units.DamageData.IsCritical</definition>
+        <argsstring></argsstring>
+        <name>IsCritical</name>
+        <qualifiedname>AdventureAssembly.Units.DamageData.IsCritical</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/DamageData.cs" line="13" column="21" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/DamageData.cs" bodystart="13" bodyend="13"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_adventure_assembly_1_1_units_1_1_damage_data_1a3542cb64c0d3eeffb549c46a204347c7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>AdventureAssembly.Units.DamageData.DamageData</definition>
+        <argsstring>(int baseValue)</argsstring>
+        <name>DamageData</name>
+        <qualifiedname>AdventureAssembly.Units.DamageData.DamageData</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>baseValue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/DamageData.cs" line="5" column="16" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/DamageData.cs" bodystart="5" bodyend="8"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/DamageData.cs" line="3" column="11" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/DamageData.cs" bodystart="4" bodyend="14"/>
+    <listofallmembers>
+      <member refid="class_adventure_assembly_1_1_units_1_1_damage_data_1a1d3dd679c2cdd652226ad87c5337ebad" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::DamageData</scope><name>BaseValue</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_damage_data_1a3542cb64c0d3eeffb549c46a204347c7" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::DamageData</scope><name>DamageData</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_damage_data_1a8328172421fe9c72769d8ddb724e27c4" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::DamageData</scope><name>IsCritical</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_damage_data_1abce190e454570554a0feff9a2ebcad41" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::DamageData</scope><name>Value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespace_adventure_assembly_1_1_core" xml:lang="en-US">
+<title>AdventureAssembly.Core Namespace Reference</title>
+<indexterm><primary>AdventureAssembly.Core</primary></indexterm>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespace_adventure_assembly_1_1_core_1_1_bootstrap">Bootstrap</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <emphasis role="strong">Constants</emphasis></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_adventure_assembly_1_1_core_1_1_experience_manager">ExperienceManager</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_adventure_assembly_1_1_core_1_1_gold_manager">GoldManager</link></para>
+
+<para>Manager for handling gold. </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_adventure_assembly_1_1_core_1_1_tick_manager">TickManager</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_adventure_assembly_1_1_core_1_1_time_manager">TimeManager</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

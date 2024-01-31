@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="namespace_adventure_assembly_1_1_units_1_1_enemies" kind="namespace" language="C#">
+    <compoundname>AdventureAssembly::Units::Enemies</compoundname>
+    <innerclass refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_default_enemy_navigation" prot="public">AdventureAssembly::Units::Enemies::DefaultEnemyNavigation</innerclass>
+    <innerclass refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy" prot="public">AdventureAssembly::Units::Enemies::Enemy</innerclass>
+    <innerclass refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_data" prot="public">AdventureAssembly::Units::Enemies::EnemyData</innerclass>
+    <innerclass refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_manager" prot="public">AdventureAssembly::Units::Enemies::EnemyManager</innerclass>
+    <innerclass refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_navigation" prot="public">AdventureAssembly::Units::Enemies::EnemyNavigation</innerclass>
+    <innerclass refid="struct_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_spawn_data" prot="package">AdventureAssembly::Units::Enemies::EnemySpawnData</innerclass>
+    <innerclass refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_spawner" prot="public">AdventureAssembly::Units::Enemies::EnemySpawner</innerclass>
+    <innerclass refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_stats" prot="public">AdventureAssembly::Units::Enemies::EnemyStats</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Enemies/DefaultEnemyNavigation.cs" line="7" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_adventure_assembly_1_1_units_1_1_tests_1_1_health_modifier" xml:lang="en-US">
+<title>AdventureAssembly.Units.Tests.HealthModifier Class Reference</title>
+<indexterm><primary>AdventureAssembly.Units.Tests.HealthModifier</primary></indexterm>
+<para>Inheritance diagram for AdventureAssembly.Units.Tests.HealthModifier:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_adventure_assembly_1_1_units_1_1_tests_1_1_health_modifier.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>override void <link linkend="_class_adventure_assembly_1_1_units_1_1_tests_1_1_health_modifier_1a1cdbdb979c09b62b64e20846d0d7a8fc">Apply</link> (<link linkend="_class_adventure_assembly_1_1_units_1_1_unit">Unit</link> unit)</para>
+</listitem>
+            <listitem><para>override void <link linkend="_class_adventure_assembly_1_1_units_1_1_tests_1_1_health_modifier_1a925f31964d321772d31b820d33c17e5e">Remove</link> (<link linkend="_class_adventure_assembly_1_1_units_1_1_unit">Unit</link> unit)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public Member Functions inherited from <link linkend="_class_adventure_assembly_1_1_units_1_1_modifiers_1_1_unit_modifier">AdventureAssembly.Units.Modifiers.UnitModifier</link>        <itemizedlist>
+            <listitem><para>void <link linkend="_class_adventure_assembly_1_1_units_1_1_modifiers_1_1_unit_modifier_1a95e0ec4898b322ccf1fb7b151c9d0638">Apply</link> (<link linkend="_class_adventure_assembly_1_1_units_1_1_unit">Unit</link> unit)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_adventure_assembly_1_1_units_1_1_modifiers_1_1_unit_modifier_1acd947b8858afe54670ddc0d091b62622">Remove</link> (<link linkend="_class_adventure_assembly_1_1_units_1_1_unit">Unit</link> unit)</para>
+</listitem>
+        </itemizedlist>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_adventure_assembly_1_1_units_1_1_tests_1_1_health_modifier_1a1cdbdb979c09b62b64e20846d0d7a8fc"/><section>
+    <title>Apply()</title>
+<indexterm><primary>Apply</primary><secondary>AdventureAssembly.Units.Tests.HealthModifier</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Units.Tests.HealthModifier</primary><secondary>Apply</secondary></indexterm>
+<para><computeroutput>override void AdventureAssembly.Units.Tests.HealthModifier.Apply (<link linkend="_class_adventure_assembly_1_1_units_1_1_unit">Unit</link> unit)</computeroutput></para></section>
+<anchor xml:id="_class_adventure_assembly_1_1_units_1_1_tests_1_1_health_modifier_1a925f31964d321772d31b820d33c17e5e"/><section>
+    <title>Remove()</title>
+<indexterm><primary>Remove</primary><secondary>AdventureAssembly.Units.Tests.HealthModifier</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Units.Tests.HealthModifier</primary><secondary>Remove</secondary></indexterm>
+<para><computeroutput>override void AdventureAssembly.Units.Tests.HealthModifier.Remove (<link linkend="_class_adventure_assembly_1_1_units_1_1_unit">Unit</link> unit)</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Tests/<link linkend="__health_modifier_8cs">HealthModifier.cs</link></section>
+</section>

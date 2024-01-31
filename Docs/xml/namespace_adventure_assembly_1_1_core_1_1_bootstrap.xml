@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="namespace_adventure_assembly_1_1_core_1_1_bootstrap" kind="namespace" language="C#">
+    <compoundname>AdventureAssembly::Core::Bootstrap</compoundname>
+    <innerclass refid="class_adventure_assembly_1_1_core_1_1_bootstrap_1_1_bootstrapper" prot="public">AdventureAssembly::Core::Bootstrap::Bootstrapper</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Core/Bootstrap/Bootstrapper.cs" line="3" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_adventure_assembly_1_1_input_1_1_input_manager" xml:lang="en-US">
+<title>AdventureAssembly.Input.InputManager Class Reference</title>
+<indexterm><primary>AdventureAssembly.Input.InputManager</primary></indexterm>
+<para>Inheritance diagram for AdventureAssembly.Input.InputManager:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_adventure_assembly_1_1_input_1_1_input_manager.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para>static Observable&lt; Vector2Int &gt; <link linkend="_class_adventure_assembly_1_1_input_1_1_input_manager_1af5b4c41d4fc4958d65777bb09afd1a6d">MovementVector</link> = new Observable&lt;Vector2Int&gt;(Vector2Int.up)<computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Property Documentation</title>
+<anchor xml:id="_class_adventure_assembly_1_1_input_1_1_input_manager_1af5b4c41d4fc4958d65777bb09afd1a6d"/><section>
+    <title>MovementVector</title>
+<indexterm><primary>MovementVector</primary><secondary>AdventureAssembly.Input.InputManager</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Input.InputManager</primary><secondary>MovementVector</secondary></indexterm>
+<para><computeroutput>Observable&lt;Vector2Int&gt; AdventureAssembly.Input.InputManager.MovementVector = new Observable&lt;Vector2Int&gt;(Vector2Int.up)<computeroutput>[static]</computeroutput>, <computeroutput>[get]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+D:/Unity/Projects/adventure-assembly/Assets/Scripts/Input/<link linkend="__input_manager_8cs">InputManager.cs</link></section>
+</section>

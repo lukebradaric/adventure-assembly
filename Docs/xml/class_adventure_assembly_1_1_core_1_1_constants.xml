@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_adventure_assembly_1_1_core_1_1_constants" kind="class" language="C#" prot="public">
+    <compoundname>AdventureAssembly::Core::Constants</compoundname>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_adventure_assembly_1_1_core_1_1_constants_1a1fe2d579067d71542a62bb76578d7121" prot="public" static="yes" mutable="no">
+        <type>const string</type>
+        <definition>const string AdventureAssembly.Core.Constants.ScriptableObjectRootPath</definition>
+        <argsstring></argsstring>
+        <name>ScriptableObjectRootPath</name>
+        <qualifiedname>AdventureAssembly.Core.Constants.ScriptableObjectRootPath</qualifiedname>
+        <initializer>= &quot;AdventureAssembly/&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Core/Constants.cs" line="7" column="29" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Core/Constants.cs" bodystart="7" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Core/Constants.cs" line="5" column="19" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Core/Constants.cs" bodystart="6" bodyend="8"/>
+    <listofallmembers>
+      <member refid="class_adventure_assembly_1_1_core_1_1_constants_1a1fe2d579067d71542a62bb76578d7121" prot="public" virt="non-virtual"><scope>AdventureAssembly::Core::Constants</scope><name>ScriptableObjectRootPath</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

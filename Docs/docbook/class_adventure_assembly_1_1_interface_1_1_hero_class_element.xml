@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_adventure_assembly_1_1_interface_1_1_hero_class_element" xml:lang="en-US">
+<title>AdventureAssembly.Interface.HeroClassElement Class Reference</title>
+<indexterm><primary>AdventureAssembly.Interface.HeroClassElement</primary></indexterm>
+<para>Inheritance diagram for AdventureAssembly.Interface.HeroClassElement:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_adventure_assembly_1_1_interface_1_1_hero_class_element.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_data">ClassData</link> <link linkend="_class_adventure_assembly_1_1_interface_1_1_hero_class_element_1a1a5be67bdb13bda1b524003ecf69865c">ClassData</link><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Property Documentation</title>
+<anchor xml:id="_class_adventure_assembly_1_1_interface_1_1_hero_class_element_1a1a5be67bdb13bda1b524003ecf69865c"/><section>
+    <title>ClassData</title>
+<indexterm><primary>ClassData</primary><secondary>AdventureAssembly.Interface.HeroClassElement</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Interface.HeroClassElement</primary><secondary>ClassData</secondary></indexterm>
+<para><computeroutput><link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_data">ClassData</link> AdventureAssembly.Interface.HeroClassElement.ClassData<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+D:/Unity/Projects/adventure-assembly/Assets/Scripts/Interface/<link linkend="__hero_class_element_8cs">HeroClassElement.cs</link></section>
+</section>

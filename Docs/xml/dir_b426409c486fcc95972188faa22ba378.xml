@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="dir_b426409c486fcc95972188faa22ba378" kind="dir">
+    <compoundname>D:/Unity/Projects/adventure-assembly/Assets/Scripts/Debug</compoundname>
+    <innerfile refid="_debug_input_mode_8cs">DebugInputMode.cs</innerfile>
+    <innerfile refid="_debug_key_press_8cs">DebugKeyPress.cs</innerfile>
+    <innerfile refid="_debug_kill_random_hero_8cs">DebugKillRandomHero.cs</innerfile>
+    <innerfile refid="_debug_open_chest_8cs">DebugOpenChest.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Debug/"/>
+  </compounddef>
+</doxygen>

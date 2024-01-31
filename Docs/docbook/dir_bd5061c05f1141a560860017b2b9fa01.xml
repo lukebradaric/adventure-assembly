@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_bd5061c05f1141a560860017b2b9fa01" xml:lang="en-US">
+<title>D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Tests Directory Reference</title>
+<indexterm><primary>D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Tests Directory Reference</primary></indexterm>
+<simplesect>
+    <title>Files    </title>
+        <itemizedlist>
+            <listitem><para>file <link linkend="__damage_modifier_8cs">DamageModifier.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__default_stat_modifier_8cs">DefaultStatModifier.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__health_modifier_8cs">HealthModifier.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__test_class_modifier_8cs">TestClassModifier.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__test_enemy_modifier_8cs">TestEnemyModifier.cs</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

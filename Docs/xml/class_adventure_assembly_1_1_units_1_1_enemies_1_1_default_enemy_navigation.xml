@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_adventure_assembly_1_1_units_1_1_enemies_1_1_default_enemy_navigation" kind="class" language="C#" prot="public">
+    <compoundname>AdventureAssembly::Units::Enemies::DefaultEnemyNavigation</compoundname>
+    <basecompoundref refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_navigation" prot="public" virt="non-virtual">AdventureAssembly.Units.Enemies.EnemyNavigation</basecompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_adventure_assembly_1_1_units_1_1_enemies_1_1_default_enemy_navigation_1a23a966deb18a00e1efb5e8b31e48d083" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void AdventureAssembly.Units.Enemies.DefaultEnemyNavigation.Update</definition>
+        <argsstring>(Enemy enemy)</argsstring>
+        <name>Update</name>
+        <qualifiedname>AdventureAssembly.Units.Enemies.DefaultEnemyNavigation.Update</qualifiedname>
+        <param>
+          <type><ref refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy" kindref="compound">Enemy</ref></type>
+          <declname>enemy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Enemies/DefaultEnemyNavigation.cs" line="11" column="30" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Enemies/DefaultEnemyNavigation.cs" bodystart="11" bodyend="64"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>AdventureAssembly.Units.Enemies.DefaultEnemyNavigation</label>
+        <link refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_default_enemy_navigation"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>EnemyNavigation</label>
+        <link refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_navigation"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>AdventureAssembly.Units.Enemies.DefaultEnemyNavigation</label>
+        <link refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_default_enemy_navigation"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>EnemyNavigation</label>
+        <link refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_navigation"/>
+      </node>
+    </collaborationgraph>
+    <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Enemies/DefaultEnemyNavigation.cs" line="9" column="11" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Enemies/DefaultEnemyNavigation.cs" bodystart="10" bodyend="65"/>
+    <listofallmembers>
+      <member refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_default_enemy_navigation_1a23a966deb18a00e1efb5e8b31e48d083" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::Enemies::DefaultEnemyNavigation</scope><name>Update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

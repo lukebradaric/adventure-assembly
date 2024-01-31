@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="namespace_adventure_assembly_1_1_units_1_1_abilities" kind="namespace" language="C#">
+    <compoundname>AdventureAssembly::Units::Abilities</compoundname>
+    <innerclass refid="class_adventure_assembly_1_1_units_1_1_abilities_1_1_ability" prot="public">AdventureAssembly::Units::Abilities::Ability</innerclass>
+    <innerclass refid="class_adventure_assembly_1_1_units_1_1_abilities_1_1_projectile_ability" prot="public">AdventureAssembly::Units::Abilities::ProjectileAbility</innerclass>
+    <innerclass refid="class_adventure_assembly_1_1_units_1_1_abilities_1_1_spell_thief_ability" prot="public">AdventureAssembly::Units::Abilities::SpellThiefAbility</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Abilities/Ability.cs" line="4" column="1"/>
+  </compounddef>
+</doxygen>
