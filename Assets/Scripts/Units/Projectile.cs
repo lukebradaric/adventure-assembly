@@ -8,6 +8,8 @@ namespace AdventureAssembly.Units
 {
     public class Projectile : MonoBehaviour
     {
+        private const float MaxLifetime = 5.0f;
+
         [Space]
         [Header("Components")]
         [SerializeField] private Rigidbody2D _rigidbody;
@@ -50,6 +52,12 @@ namespace AdventureAssembly.Units
 
             // Set projectile speed
             _rigidbody.velocity = MoveDirection * _speed;
+        }
+
+        private void Start()
+        {
+            // Destroy projectile after maxlifetime
+            Destroy(gameObject, MaxLifetime);
         }
 
         private void FixedUpdate()
