@@ -8,7 +8,7 @@ namespace TinyTools.ScriptableEvents
     {
         public void Raise()
         {
-            base.Raise(null);
+            base.Invoke(null);
         }
     }
 }

@@ -6,7 +6,10 @@ using UnityEngine;
 
 namespace AdventureAssembly.Units.Heroes
 {
-    [CreateAssetMenu(menuName = Constants.ScriptableObjectRootPath + "HeroDataListScriptableVariable")]
+    /// <summary>
+    /// A ScriptableObject containing a list of HeroData. Offers functions for retrieving random/specific HeroData.
+    /// </summary>
+    [CreateAssetMenu(menuName = Constants.ScriptableObjectRootPath + "ScriptableVariables/HeroDataListScriptableVariable")]
     public class HeroDataListScriptableVariable : ScriptableVariable<List<HeroData>>
     {
         public HeroData GetRandom()

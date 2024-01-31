@@ -6,13 +6,13 @@ namespace TinyTools.ScriptableEvents
 {
     public abstract class ScriptableEvent<T> : ScriptableEvent
     {
-        public event Action<T> Raised;
-        public event Action RaisedVoid;
+        public event Action<T> Event;
+        public event Action VoidEvent;
 
-        public void Raise(T value)
+        public void Invoke(T value)
         {
-            Raised?.Invoke(value);
-            RaisedVoid?.Invoke();
+            Event?.Invoke(value);
+            VoidEvent?.Invoke();
 
             for (int i = _listeners.Count - 1; i >= 0; i--)
             {
