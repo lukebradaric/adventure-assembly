@@ -41,12 +41,12 @@ namespace AdventureAssembly.Interface
 
         private void OnEnable()
         {
-            _openHeroChestScriptableEvent.RaisedVoid += OnOpenHeroChest;
+            _openHeroChestScriptableEvent.VoidEvent += OnOpenHeroChest;
         }
 
         private void OnDisable()
         {
-            _openHeroChestScriptableEvent.RaisedVoid -= OnOpenHeroChest;
+            _openHeroChestScriptableEvent.VoidEvent -= OnOpenHeroChest;
         }
 
         private void OnOpenHeroChest()

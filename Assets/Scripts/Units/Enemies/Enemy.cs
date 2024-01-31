@@ -1,11 +1,14 @@
 ﻿using AdventureAssembly.Core;
-using Sirenix.Serialization;
 using UnityEngine;
 
 namespace AdventureAssembly.Units.Enemies
 {
     public class Enemy : Unit
     {
+        [Space]
+        [Header("Events")]
+        [SerializeField] private EnemyScriptableEvent _enemyDamagedScriptableEvent;
+
         new public EnemyStats Stats => (EnemyStats)base.Stats;
         public EnemyData EnemyData { get; private set; }
 
@@ -23,6 +26,12 @@ namespace AdventureAssembly.Units.Enemies
             ExperienceManager.Instance.AddExperience(EnemyData.KillExperience);
 
             Destroy(gameObject);
+        }
+
+        protected override void OnTakeDamage(DamageData damageData)
+        {
+            base.OnTakeDamage(damageData);
+            _enemyDamagedScriptableEvent?.Invoke(this);
         }
     }
 }

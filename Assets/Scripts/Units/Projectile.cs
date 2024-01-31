@@ -78,7 +78,14 @@ namespace AdventureAssembly.Units
 
         private void OnEnemyCollision(Enemy enemy)
         {
-            enemy.Damage(Hero.Stats.GetDamageData(new DamageData(BaseDamage)));
+            // Create new damagedata
+            DamageData damageData = Hero.Stats.GetDamageData(new DamageData(BaseDamage));
+
+            // Assign the damage direction to the direction of this projectile
+            damageData.Direction = MoveDirection;
+
+            enemy.TakeDamage(damageData);
+
             Destroy(gameObject);
         }
     }
