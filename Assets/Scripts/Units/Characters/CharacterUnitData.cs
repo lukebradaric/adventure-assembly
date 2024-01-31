@@ -3,9 +3,9 @@ using Sirenix.OdinInspector;
 using Sirenix.Serialization;
 using UnityEngine;
 
-namespace AdventureAssembly.Units
+namespace AdventureAssembly.Units.Characters
 {
-    public abstract class UnitData : SerializedScriptableObject
+    public abstract class CharacterUnitData : SerializedScriptableObject
     {
         [PropertySpace]
         [Title("Unit")]

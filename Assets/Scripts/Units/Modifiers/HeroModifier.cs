@@ -1,11 +1,12 @@
-﻿using AdventureAssembly.Units.Heroes;
+﻿using AdventureAssembly.Units.Characters;
+using AdventureAssembly.Units.Heroes;
 
 namespace AdventureAssembly.Units.Modifiers
 {
     [System.Serializable]
     public abstract class HeroModifier : UnitModifier
     {
-        public override void Apply(Unit unit)
+        public override void Apply(CharacterUnit unit)
         {
             Apply((Hero)unit);
         }

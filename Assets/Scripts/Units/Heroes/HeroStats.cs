@@ -1,13 +1,14 @@
-﻿using System;
+﻿using AdventureAssembly.Units.Characters;
+using System;
 
 namespace AdventureAssembly.Units.Heroes
 {
-    public class HeroStats : UnitStats
+    public class HeroStats : CharacterUnitStats
     {
         public HeroData HeroData { get; protected set; }
         public Hero Hero { get; protected set; }
 
-        public override void Initialize(Unit unit)
+        public override void Initialize(CharacterUnit unit)
         {
             base.Initialize(unit);
         }

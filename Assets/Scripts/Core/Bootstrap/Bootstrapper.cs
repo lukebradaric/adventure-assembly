@@ -10,7 +10,7 @@ namespace AdventureAssembly.Core.Bootstrap
         [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
         private static void Initialize()
         {
-            GameObject corePrefab = Resources.Load<GameObject>("Core/CorePrefab");
+            GameObject corePrefab = Resources.Load<GameObject>("CorePrefab");
             GameObject coreGameObject = Instantiate(corePrefab, Vector3.zero, Quaternion.identity);
             DontDestroyOnLoad(coreGameObject);
         }

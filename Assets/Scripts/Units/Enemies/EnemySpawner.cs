@@ -1,4 +1,5 @@
 ﻿using AdventureAssembly.Core;
+using AdventureAssembly.Units.Characters;
 using System.Collections;
 using System.Collections.Generic;
 using TinyTools.Generics;
@@ -114,7 +115,7 @@ namespace AdventureAssembly.Units.Enemies
             enemy.Died += OnEnemyDied;
         }
 
-        private void OnEnemyDied(Unit unit)
+        private void OnEnemyDied(CharacterUnit unit)
         {
             unit.Died -= OnEnemyDied;
             EnemyManager.Instance.RemoveUnit((Enemy)unit);

@@ -1,4 +1,5 @@
-﻿using AdventureAssembly.Units.Modifiers;
+﻿using AdventureAssembly.Units.Characters;
+using AdventureAssembly.Units.Modifiers;
 using UnityEngine;
 
 namespace AdventureAssembly.Units.Tests
@@ -8,12 +9,12 @@ namespace AdventureAssembly.Units.Tests
     {
         [SerializeField] private StatModifier<float> _value = new DefaultStatModifier();
 
-        public override void Apply(Unit unit)
+        public override void Apply(CharacterUnit unit)
         {
             unit.Stats.MaxHealthMultiplier.AddModifier(_value);
         }
 
-        public override void Remove(Unit unit)
+        public override void Remove(CharacterUnit unit)
         {
             unit.Stats.MaxHealthMultiplier.RemoveModifier(_value);
         }

@@ -4,9 +4,9 @@ using System.Linq;
 using TinyTools.Generics;
 using UnityEngine;
 
-namespace AdventureAssembly.Units
+namespace AdventureAssembly.Units.Characters
 {
-    public abstract class UnitManager<T> : Singleton<UnitManager<T>> where T : Unit
+    public abstract class CharacterUnitManager<T> : Singleton<CharacterUnitManager<T>> where T : CharacterUnit
     {
         public static List<T> Units { get; protected set; } = new List<T>();
 

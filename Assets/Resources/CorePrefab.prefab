@@ -707,11 +707,13 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8937116221333986910}
-  - {fileID: 6680531804575610893}
+  - {fileID: 2438348472841527338}
   - {fileID: 2854490631800233406}
+  - {fileID: 6680531804575610893}
   - {fileID: 2094845540964921518}
   - {fileID: 22513686043512948}
   - {fileID: 7624536702433332534}
+  - {fileID: 1351283218667160448}
   - {fileID: 3529064444652754002}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -831,6 +833,54 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!1 &5804584680031962610
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1351283218667160448}
+  - component: {fileID: 7740172834300752732}
+  m_Layer: 0
+  m_Name: ChestManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1351283218667160448
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5804584680031962610}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6303403006865418316}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7740172834300752732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5804584680031962610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c0471e971258c64abd84b8f86a6cb75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _leveledUpScriptableEvent: {fileID: 11400000, guid: 58f59860885d82c4181d3cdb7d22325d, type: 2}
+  _chestSpawnedScriptableEvent: {fileID: 11400000, guid: be6c83750e985ea47a10a795ca4289a2, type: 2}
+  _chestUnitPrefab: {fileID: 5411363518447056152, guid: fdc6bb102eb87a049a2c5a85d0e4438c, type: 3}
+  _spawnBounds: {x: -13, y: 13, z: -7, w: 7}
 --- !u!1 &7295226944604647430
 GameObject:
   m_ObjectHideFlags: 0
@@ -969,7 +1019,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa6031ce57a828e4482771a26b295fc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _openHeroChestScriptableEvent: {fileID: 11400000, guid: 58f59860885d82c4181d3cdb7d22325d, type: 2}
+  _chestOpenedScriptableEvent: {fileID: 11400000, guid: cccd2151a7ff8de4fa9cce831ede2159, type: 2}
   _heroSelectionElementPrefab: {fileID: 9108679556771777142, guid: ca0eb6cbcf998c04d9a529ff2fd45ec8, type: 3}
   _heroDataList: {fileID: 11400000, guid: 2ff3b874a7fa18943a841ec56bbb6a53, type: 2}
   _horizontalLayoutTransform: {fileID: 3862527536199652651}
@@ -1139,6 +1189,50 @@ MonoBehaviour:
   m_InputActionsPerSecond: 10
   m_RepeatDelay: 0.5
   m_ForceModuleActive: 0
+--- !u!1 &8060446101335884626
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2438348472841527338}
+  - component: {fileID: 4111469950009489089}
+  m_Layer: 0
+  m_Name: GridManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2438348472841527338
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8060446101335884626}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6303403006865418316}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4111469950009489089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8060446101335884626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dc2dc04f19582941a6e069add436873, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8665607113751055927
 GameObject:
   m_ObjectHideFlags: 0
@@ -1192,6 +1286,4 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes: []
-  _openHeroChestScriptableEvent: {fileID: 11400000, guid: 58f59860885d82c4181d3cdb7d22325d, type: 2}
-  _currentExperience: 0
-  currentLevel: 0
+  _leveledUpScriptableEvent: {fileID: 11400000, guid: 58f59860885d82c4181d3cdb7d22325d, type: 2}
