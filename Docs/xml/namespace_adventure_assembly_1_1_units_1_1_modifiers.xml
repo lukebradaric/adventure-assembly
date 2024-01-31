@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="namespace_adventure_assembly_1_1_units_1_1_modifiers" kind="namespace" language="C#">
+    <compoundname>AdventureAssembly::Units::Modifiers</compoundname>
+    <innerclass refid="class_adventure_assembly_1_1_units_1_1_modifiers_1_1_enemy_modifier" prot="public">AdventureAssembly::Units::Modifiers::EnemyModifier</innerclass>
+    <innerclass refid="class_adventure_assembly_1_1_units_1_1_modifiers_1_1_hero_modifier" prot="public">AdventureAssembly::Units::Modifiers::HeroModifier</innerclass>
+    <innerclass refid="class_adventure_assembly_1_1_units_1_1_modifiers_1_1_unit_modifier" prot="public">AdventureAssembly::Units::Modifiers::UnitModifier</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Modifiers/EnemyModifier.cs" line="3" column="1"/>
+  </compounddef>
+</doxygen>

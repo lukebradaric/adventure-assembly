@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_b426409c486fcc95972188faa22ba378" xml:lang="en-US">
+<title>D:/Unity/Projects/adventure-assembly/Assets/Scripts/Debug Directory Reference</title>
+<indexterm><primary>D:/Unity/Projects/adventure-assembly/Assets/Scripts/Debug Directory Reference</primary></indexterm>
+<simplesect>
+    <title>Files    </title>
+        <itemizedlist>
+            <listitem><para>file <link linkend="__debug_input_mode_8cs">DebugInputMode.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__debug_key_press_8cs">DebugKeyPress.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__debug_kill_random_hero_8cs">DebugKillRandomHero.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__debug_open_chest_8cs">DebugOpenChest.cs</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

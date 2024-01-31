@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_82bf5dcf5f07f0970851629866abc1ad" xml:lang="en-US">
+<title>D:/Unity/Projects/adventure-assembly/Assets/Scripts/Input Directory Reference</title>
+<indexterm><primary>D:/Unity/Projects/adventure-assembly/Assets/Scripts/Input Directory Reference</primary></indexterm>
+<simplesect>
+    <title>Files    </title>
+        <itemizedlist>
+            <listitem><para>file <link linkend="__input_manager_8cs">InputManager.cs</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

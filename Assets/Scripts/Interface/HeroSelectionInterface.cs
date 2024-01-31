@@ -9,6 +9,9 @@ using UnityEngine.UI;
 
 namespace AdventureAssembly.Interface
 {
+    /// <summary>
+    /// Interface for handling new hero selections.
+    /// </summary>
     public class HeroSelectionInterface : MonoBehaviour
     {
         [Space]

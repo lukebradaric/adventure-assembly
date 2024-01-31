@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_data" xml:lang="en-US">
+<title>AdventureAssembly.Units.Heroes.ClassData Class Reference</title>
+<indexterm><primary>AdventureAssembly.Units.Heroes.ClassData</primary></indexterm>
+<para>Inheritance diagram for AdventureAssembly.Units.Heroes.ClassData:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_data.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para>string <link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_data_1a393174ef471e39faf867987eed964539">Name</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>string <link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_data_1a1ff978ddf2e7a0843f7c954dcd6216af">Description</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>Color <link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_data_1aaf32940d92d2845fef9e436b6446e239">Color</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>List&lt; <link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_modifier">ClassModifier</link> &gt; <link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_data_1a828e34ababecf6697194be728c7493ca">Modifiers</link> = new List&lt;<link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_modifier">ClassModifier</link>&gt;()<computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Property Documentation</title>
+<anchor xml:id="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_data_1aaf32940d92d2845fef9e436b6446e239"/><section>
+    <title>Color</title>
+<indexterm><primary>Color</primary><secondary>AdventureAssembly.Units.Heroes.ClassData</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Units.Heroes.ClassData</primary><secondary>Color</secondary></indexterm>
+<para><computeroutput>Color AdventureAssembly.Units.Heroes.ClassData.Color<computeroutput>[get]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_data_1a1ff978ddf2e7a0843f7c954dcd6216af"/><section>
+    <title>Description</title>
+<indexterm><primary>Description</primary><secondary>AdventureAssembly.Units.Heroes.ClassData</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Units.Heroes.ClassData</primary><secondary>Description</secondary></indexterm>
+<para><computeroutput>string AdventureAssembly.Units.Heroes.ClassData.Description<computeroutput>[get]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_data_1a828e34ababecf6697194be728c7493ca"/><section>
+    <title>Modifiers</title>
+<indexterm><primary>Modifiers</primary><secondary>AdventureAssembly.Units.Heroes.ClassData</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Units.Heroes.ClassData</primary><secondary>Modifiers</secondary></indexterm>
+<para><computeroutput>List&lt;<link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_modifier">ClassModifier</link>&gt; AdventureAssembly.Units.Heroes.ClassData.Modifiers = new List&lt;<link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_modifier">ClassModifier</link>&gt;()<computeroutput>[get]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_data_1a393174ef471e39faf867987eed964539"/><section>
+    <title>Name</title>
+<indexterm><primary>Name</primary><secondary>AdventureAssembly.Units.Heroes.ClassData</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Units.Heroes.ClassData</primary><secondary>Name</secondary></indexterm>
+<para><computeroutput>string AdventureAssembly.Units.Heroes.ClassData.Name<computeroutput>[get]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/<link linkend="__class_data_8cs">ClassData.cs</link></section>
+</section>

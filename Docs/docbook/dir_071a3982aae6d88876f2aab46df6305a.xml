@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_071a3982aae6d88876f2aab46df6305a" xml:lang="en-US">
+<title>D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Abilities Directory Reference</title>
+<indexterm><primary>D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Abilities Directory Reference</primary></indexterm>
+<simplesect>
+    <title>Files    </title>
+        <itemizedlist>
+            <listitem><para>file <link linkend="__ability_8cs">Ability.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__projectile_ability_8cs">ProjectileAbility.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__spell_thief_ability_8cs">SpellThiefAbility.cs</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

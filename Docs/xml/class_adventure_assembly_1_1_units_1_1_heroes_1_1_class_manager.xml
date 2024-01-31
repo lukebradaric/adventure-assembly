@@ -1,0 +1,212 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_manager" kind="class" language="C#" prot="public">
+    <compoundname>AdventureAssembly::Units::Heroes::ClassManager</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_manager_1a6a953e668b1e9506932d096616b715af" prot="public" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>Dictionary&lt; <ref refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_data" kindref="compound">ClassData</ref>, int &gt;</type>
+        <definition>Dictionary&lt;ClassData, int&gt; AdventureAssembly.Units.Heroes.ClassManager.ClassCount</definition>
+        <argsstring></argsstring>
+        <name>ClassCount</name>
+        <qualifiedname>AdventureAssembly.Units.Heroes.ClassManager.ClassCount</qualifiedname>
+        <initializer>= new Dictionary&lt;<ref refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_data" kindref="compound">ClassData</ref>, int&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/ClassManager.cs" line="9" column="34" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/ClassManager.cs" bodystart="9" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="property" id="class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_manager_1acb5d4942547fa20821f025f6b2373102" prot="public" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>Dictionary&lt; <ref refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_data" kindref="compound">ClassData</ref>, <ref refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_modifier" kindref="compound">ClassModifier</ref> &gt;</type>
+        <definition>Dictionary&lt;ClassData, ClassModifier&gt; AdventureAssembly.Units.Heroes.ClassManager.ClassModifiers</definition>
+        <argsstring></argsstring>
+        <name>ClassModifiers</name>
+        <qualifiedname>AdventureAssembly.Units.Heroes.ClassManager.ClassModifiers</qualifiedname>
+        <initializer>= new Dictionary&lt;<ref refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_data" kindref="compound">ClassData</ref>, <ref refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_modifier" kindref="compound">ClassModifier</ref>&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/ClassManager.cs" line="12" column="34" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/ClassManager.cs" bodystart="12" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="property" id="class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_manager_1ae484c2f9fa8d9305a3f8cf831f1c5c3f" prot="public" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>Dictionary&lt; <ref refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_data" kindref="compound">ClassData</ref>, List&lt; <ref refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_modifier" kindref="compound">ClassModifier</ref> &gt; &gt;</type>
+        <definition>Dictionary&lt;ClassData, List&lt;ClassModifier&gt; &gt; AdventureAssembly.Units.Heroes.ClassManager.ClassModifierInstances</definition>
+        <argsstring></argsstring>
+        <name>ClassModifierInstances</name>
+        <qualifiedname>AdventureAssembly.Units.Heroes.ClassManager.ClassModifierInstances</qualifiedname>
+        <initializer>= new Dictionary&lt;<ref refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_data" kindref="compound">ClassData</ref>, List&lt;<ref refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_modifier" kindref="compound">ClassModifier</ref>&gt;&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/ClassManager.cs" line="15" column="34" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/ClassManager.cs" bodystart="15" bodyend="15"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_manager_1ae2b4562aca8b6c1678a306c0e770eefc" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void AdventureAssembly.Units.Heroes.ClassManager.AddClassesByHeroData</definition>
+        <argsstring>(HeroData heroData)</argsstring>
+        <name>AddClassesByHeroData</name>
+        <qualifiedname>AdventureAssembly.Units.Heroes.ClassManager.AddClassesByHeroData</qualifiedname>
+        <param>
+          <type><ref refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_data" kindref="compound">HeroData</ref></type>
+          <declname>heroData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/ClassManager.cs" line="17" column="28" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/ClassManager.cs" bodystart="17" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_manager_1accc8ea33d23c274c535b6f47df5760c7" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void AdventureAssembly.Units.Heroes.ClassManager.RemoveClassesByHeroData</definition>
+        <argsstring>(HeroData heroData)</argsstring>
+        <name>RemoveClassesByHeroData</name>
+        <qualifiedname>AdventureAssembly.Units.Heroes.ClassManager.RemoveClassesByHeroData</qualifiedname>
+        <param>
+          <type><ref refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_data" kindref="compound">HeroData</ref></type>
+          <declname>heroData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/ClassManager.cs" line="25" column="28" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/ClassManager.cs" bodystart="25" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_manager_1a60d31086ee257ac0d19ad7be3198bb1b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void AdventureAssembly.Units.Heroes.ClassManager.AddClass</definition>
+        <argsstring>(ClassData classData)</argsstring>
+        <name>AddClass</name>
+        <qualifiedname>AdventureAssembly.Units.Heroes.ClassManager.AddClass</qualifiedname>
+        <param>
+          <type><ref refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_data" kindref="compound">ClassData</ref></type>
+          <declname>classData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/ClassManager.cs" line="34" column="28" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/ClassManager.cs" bodystart="34" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_manager_1a6b75c2fe0d5cb153b3627275255ed525" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void AdventureAssembly.Units.Heroes.ClassManager.RemoveClass</definition>
+        <argsstring>(ClassData classData)</argsstring>
+        <name>RemoveClass</name>
+        <qualifiedname>AdventureAssembly.Units.Heroes.ClassManager.RemoveClass</qualifiedname>
+        <param>
+          <type><ref refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_data" kindref="compound">ClassData</ref></type>
+          <declname>classData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/ClassManager.cs" line="49" column="28" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/ClassManager.cs" bodystart="49" bodyend="65"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_manager_1a9489fef7dd4fa76b8aae9ba1d140670c" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void AdventureAssembly.Units.Heroes.ClassManager.UpdateClassModifiers</definition>
+        <argsstring>(ClassData classData, int currentCount)</argsstring>
+        <name>UpdateClassModifiers</name>
+        <qualifiedname>AdventureAssembly.Units.Heroes.ClassManager.UpdateClassModifiers</qualifiedname>
+        <param>
+          <type><ref refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_data" kindref="compound">ClassData</ref></type>
+          <declname>classData</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>currentCount</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/ClassManager.cs" line="68" column="29" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/ClassManager.cs" bodystart="68" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_manager_1af7eadcd8447456d9840ca0f0b5765952" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_modifier" kindref="compound">ClassModifier</ref></type>
+        <definition>static ClassModifier AdventureAssembly.Units.Heroes.ClassManager.GetClassModifier</definition>
+        <argsstring>(ClassData classData, int currentCount)</argsstring>
+        <name>GetClassModifier</name>
+        <qualifiedname>AdventureAssembly.Units.Heroes.ClassManager.GetClassModifier</qualifiedname>
+        <param>
+          <type><ref refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_data" kindref="compound">ClassData</ref></type>
+          <declname>classData</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>currentCount</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/ClassManager.cs" line="109" column="38" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/ClassManager.cs" bodystart="109" bodyend="135"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>AdventureAssembly.Units.Heroes.ClassManager</label>
+        <link refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>AdventureAssembly.Units.Heroes.ClassManager</label>
+        <link refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/ClassManager.cs" line="6" column="11" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/ClassManager.cs" bodystart="7" bodyend="136"/>
+    <listofallmembers>
+      <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_manager_1a60d31086ee257ac0d19ad7be3198bb1b" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::Heroes::ClassManager</scope><name>AddClass</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_manager_1ae2b4562aca8b6c1678a306c0e770eefc" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::Heroes::ClassManager</scope><name>AddClassesByHeroData</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_manager_1a6a953e668b1e9506932d096616b715af" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::Heroes::ClassManager</scope><name>ClassCount</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_manager_1ae484c2f9fa8d9305a3f8cf831f1c5c3f" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::Heroes::ClassManager</scope><name>ClassModifierInstances</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_manager_1acb5d4942547fa20821f025f6b2373102" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::Heroes::ClassManager</scope><name>ClassModifiers</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_manager_1af7eadcd8447456d9840ca0f0b5765952" prot="private" virt="non-virtual"><scope>AdventureAssembly::Units::Heroes::ClassManager</scope><name>GetClassModifier</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_manager_1a6b75c2fe0d5cb153b3627275255ed525" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::Heroes::ClassManager</scope><name>RemoveClass</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_manager_1accc8ea33d23c274c535b6f47df5760c7" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::Heroes::ClassManager</scope><name>RemoveClassesByHeroData</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_manager_1a9489fef7dd4fa76b8aae9ba1d140670c" prot="private" virt="non-virtual"><scope>AdventureAssembly::Units::Heroes::ClassManager</scope><name>UpdateClassModifiers</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,275 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_adventure_assembly_1_1_units_1_1_projectile" kind="class" language="C#" prot="public">
+    <compoundname>AdventureAssembly::Units::Projectile</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_adventure_assembly_1_1_units_1_1_projectile_1a1d54cb82a5cfd662689cc25529ea9798" prot="private" static="no" mutable="no">
+        <type>Rigidbody2D</type>
+        <definition>Rigidbody2D AdventureAssembly.Units.Projectile._rigidbody</definition>
+        <argsstring></argsstring>
+        <name>_rigidbody</name>
+        <qualifiedname>AdventureAssembly.Units.Projectile._rigidbody</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Projectile.cs" line="12" column="30" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Projectile.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_adventure_assembly_1_1_units_1_1_projectile_1ac23c45038ffcd8da1a3d0899d3bd590c" prot="private" static="no" mutable="no">
+        <type>StringScriptableVariable</type>
+        <definition>StringScriptableVariable AdventureAssembly.Units.Projectile._enemyTag</definition>
+        <argsstring></argsstring>
+        <name>_enemyTag</name>
+        <qualifiedname>AdventureAssembly.Units.Projectile._enemyTag</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Projectile.cs" line="13" column="43" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Projectile.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_adventure_assembly_1_1_units_1_1_projectile_1a64717721ebdbcd9e9ff3879379ad1576" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float AdventureAssembly.Units.Projectile._speed</definition>
+        <argsstring></argsstring>
+        <name>_speed</name>
+        <qualifiedname>AdventureAssembly.Units.Projectile._speed</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Projectile.cs" line="17" column="24" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Projectile.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_adventure_assembly_1_1_units_1_1_projectile_1a4f3d3676110d97a1bdf5a322e5bae70c" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="yes">
+        <type><ref refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero" kindref="compound">Hero</ref></type>
+        <definition>Hero AdventureAssembly.Units.Projectile.Hero</definition>
+        <argsstring></argsstring>
+        <name>Hero</name>
+        <qualifiedname>AdventureAssembly.Units.Projectile.Hero</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Projectile.cs" line="19" column="21" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Projectile.cs" bodystart="19" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="property" id="class_adventure_assembly_1_1_units_1_1_projectile_1a95c748d616d0e3c154e648925c36bc7d" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="yes">
+        <type><ref refid="class_adventure_assembly_1_1_units_1_1_unit" kindref="compound">Unit</ref></type>
+        <definition>Unit AdventureAssembly.Units.Projectile.TargetUnit</definition>
+        <argsstring></argsstring>
+        <name>TargetUnit</name>
+        <qualifiedname>AdventureAssembly.Units.Projectile.TargetUnit</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Projectile.cs" line="20" column="21" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Projectile.cs" bodystart="20" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="property" id="class_adventure_assembly_1_1_units_1_1_projectile_1a11ef92af7d58149ff0f85c748d40d49c" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="yes">
+        <type>int</type>
+        <definition>int AdventureAssembly.Units.Projectile.BaseDamage</definition>
+        <argsstring></argsstring>
+        <name>BaseDamage</name>
+        <qualifiedname>AdventureAssembly.Units.Projectile.BaseDamage</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Projectile.cs" line="21" column="20" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Projectile.cs" bodystart="21" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="property" id="class_adventure_assembly_1_1_units_1_1_projectile_1af7f28dc202046996fbf6bd35f54e3993" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="yes">
+        <type>Vector2</type>
+        <definition>Vector2 AdventureAssembly.Units.Projectile.MoveDirection</definition>
+        <argsstring></argsstring>
+        <name>MoveDirection</name>
+        <qualifiedname>AdventureAssembly.Units.Projectile.MoveDirection</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Projectile.cs" line="23" column="24" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Projectile.cs" bodystart="23" bodyend="23"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_adventure_assembly_1_1_units_1_1_projectile_1aab40fe31e75c17a6486c5d9fd7339ce3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AdventureAssembly.Units.Projectile.Initialize</definition>
+        <argsstring>(Hero hero, int baseDamage, Unit targetUnit)</argsstring>
+        <name>Initialize</name>
+        <qualifiedname>AdventureAssembly.Units.Projectile.Initialize</qualifiedname>
+        <param>
+          <type><ref refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero" kindref="compound">Hero</ref></type>
+          <declname>hero</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>baseDamage</declname>
+        </param>
+        <param>
+          <type><ref refid="class_adventure_assembly_1_1_units_1_1_unit" kindref="compound">Unit</ref></type>
+          <declname>targetUnit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Projectile.cs" line="26" column="21" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Projectile.cs" bodystart="26" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="class_adventure_assembly_1_1_units_1_1_projectile_1a1583574ebeb5030e95abf044e4354b7e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AdventureAssembly.Units.Projectile.Initialize</definition>
+        <argsstring>(Hero hero, int baseDamage, Vector2 direction)</argsstring>
+        <name>Initialize</name>
+        <qualifiedname>AdventureAssembly.Units.Projectile.Initialize</qualifiedname>
+        <param>
+          <type><ref refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero" kindref="compound">Hero</ref></type>
+          <declname>hero</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>baseDamage</declname>
+        </param>
+        <param>
+          <type>Vector2</type>
+          <declname>direction</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Projectile.cs" line="34" column="21" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Projectile.cs" bodystart="34" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="class_adventure_assembly_1_1_units_1_1_projectile_1ab3645e3be49495742ec05a84485fce53" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AdventureAssembly.Units.Projectile.SetMoveDirection</definition>
+        <argsstring>(Vector2 direction)</argsstring>
+        <name>SetMoveDirection</name>
+        <qualifiedname>AdventureAssembly.Units.Projectile.SetMoveDirection</qualifiedname>
+        <param>
+          <type>Vector2</type>
+          <declname>direction</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Projectile.cs" line="43" column="21" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Projectile.cs" bodystart="43" bodyend="52"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_adventure_assembly_1_1_units_1_1_projectile_1ae39f6079a7eb3ca124fbf4db9a000ec3" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AdventureAssembly.Units.Projectile.FixedUpdate</definition>
+        <argsstring>()</argsstring>
+        <name>FixedUpdate</name>
+        <qualifiedname>AdventureAssembly.Units.Projectile.FixedUpdate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Projectile.cs" line="54" column="22" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Projectile.cs" bodystart="54" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="class_adventure_assembly_1_1_units_1_1_projectile_1a2bfa3cfb1ad765d41ce47f81151bae16" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AdventureAssembly.Units.Projectile.OnTriggerEnter2D</definition>
+        <argsstring>(Collider2D collider)</argsstring>
+        <name>OnTriggerEnter2D</name>
+        <qualifiedname>AdventureAssembly.Units.Projectile.OnTriggerEnter2D</qualifiedname>
+        <param>
+          <type>Collider2D</type>
+          <declname>collider</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Projectile.cs" line="64" column="22" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Projectile.cs" bodystart="64" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="class_adventure_assembly_1_1_units_1_1_projectile_1a98d40fa411ec6c5d0ab96653c3d56081" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AdventureAssembly.Units.Projectile.OnEnemyCollision</definition>
+        <argsstring>(Enemy enemy)</argsstring>
+        <name>OnEnemyCollision</name>
+        <qualifiedname>AdventureAssembly.Units.Projectile.OnEnemyCollision</qualifiedname>
+        <param>
+          <type><ref refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy" kindref="compound">Enemy</ref></type>
+          <declname>enemy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Projectile.cs" line="79" column="22" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Projectile.cs" bodystart="79" bodyend="83"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>AdventureAssembly.Units.Projectile</label>
+        <link refid="class_adventure_assembly_1_1_units_1_1_projectile"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>AdventureAssembly.Units.Projectile</label>
+        <link refid="class_adventure_assembly_1_1_units_1_1_projectile"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Projectile.cs" line="8" column="11" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Projectile.cs" bodystart="9" bodyend="84"/>
+    <listofallmembers>
+      <member refid="class_adventure_assembly_1_1_units_1_1_projectile_1ac23c45038ffcd8da1a3d0899d3bd590c" prot="private" virt="non-virtual"><scope>AdventureAssembly::Units::Projectile</scope><name>_enemyTag</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_projectile_1a1d54cb82a5cfd662689cc25529ea9798" prot="private" virt="non-virtual"><scope>AdventureAssembly::Units::Projectile</scope><name>_rigidbody</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_projectile_1a64717721ebdbcd9e9ff3879379ad1576" prot="private" virt="non-virtual"><scope>AdventureAssembly::Units::Projectile</scope><name>_speed</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_projectile_1a11ef92af7d58149ff0f85c748d40d49c" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::Projectile</scope><name>BaseDamage</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_projectile_1ae39f6079a7eb3ca124fbf4db9a000ec3" prot="private" virt="non-virtual"><scope>AdventureAssembly::Units::Projectile</scope><name>FixedUpdate</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_projectile_1a4f3d3676110d97a1bdf5a322e5bae70c" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::Projectile</scope><name>Hero</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_projectile_1aab40fe31e75c17a6486c5d9fd7339ce3" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::Projectile</scope><name>Initialize</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_projectile_1a1583574ebeb5030e95abf044e4354b7e" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::Projectile</scope><name>Initialize</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_projectile_1af7f28dc202046996fbf6bd35f54e3993" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::Projectile</scope><name>MoveDirection</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_projectile_1a98d40fa411ec6c5d0ab96653c3d56081" prot="private" virt="non-virtual"><scope>AdventureAssembly::Units::Projectile</scope><name>OnEnemyCollision</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_projectile_1a2bfa3cfb1ad765d41ce47f81151bae16" prot="private" virt="non-virtual"><scope>AdventureAssembly::Units::Projectile</scope><name>OnTriggerEnter2D</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_projectile_1ab3645e3be49495742ec05a84485fce53" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::Projectile</scope><name>SetMoveDirection</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_projectile_1a95c748d616d0e3c154e648925c36bc7d" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::Projectile</scope><name>TargetUnit</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

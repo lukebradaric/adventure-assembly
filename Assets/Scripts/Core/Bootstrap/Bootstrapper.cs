@@ -2,6 +2,9 @@
 
 namespace AdventureAssembly.Core.Bootstrap
 {
+    /// <summary>
+    /// Handles bootstrapping the core elements of the application.
+    /// </summary>
     public class Bootstrapper : MonoBehaviour
     {
         [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]

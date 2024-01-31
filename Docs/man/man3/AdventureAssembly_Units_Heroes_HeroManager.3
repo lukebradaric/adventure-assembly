@@ -1,0 +1,116 @@
+.TH "AdventureAssembly.Units.Heroes.HeroManager" 3 "AdventureAssembly" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+AdventureAssembly.Units.Heroes.HeroManager
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBAdventureAssembly\&.Units\&.UnitManager< Hero >\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBSpawnHero\fP (\fBHeroData\fP heroData)"
+.br
+.ti -1c
+.RI "override void \fBAddUnit\fP (\fBHero\fP hero)"
+.br
+.ti -1c
+.RI "override void \fBRemoveUnit\fP (\fBHero\fP hero)"
+.br
+.in -1c
+
+Public Member Functions inherited from \fBAdventureAssembly\&.Units\&.UnitManager< Hero >\fP
+.in +1c
+.ti -1c
+.RI "virtual void \fBAddUnit\fP (T unit)"
+.br
+.ti -1c
+.RI "virtual void \fBRemoveUnit\fP (T unit)"
+.br
+.in -1c
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "float \fBUpdateInterval\fP\fR [get]\fP"
+.br
+.ti -1c
+.RI "LayerMask \fBHazardLayerMask\fP\fR [get]\fP"
+.br
+.ti -1c
+.RI "Vector2Int \fBNextMovementVector\fP = Vector2Int\&.up\fR [get]\fP"
+.br
+.ti -1c
+.RI "Vector2Int \fBLastMovementVector\fP = Vector2Int\&.zero\fR [get]\fP"
+.br
+.ti -1c
+.RI "Vector2Int \fBHorizontalMovementVector\fP\fR [get]\fP"
+.br
+.ti -1c
+.RI "Vector2Int \fBVerticalMovementVector\fP\fR [get]\fP"
+.br
+.in -1c
+
+Properties inherited from \fBAdventureAssembly\&.Units\&.UnitManager< Hero >\fP
+.in +1c
+.ti -1c
+.RI "static List< T > \fBUnits\fP\fR [get, protected set]\fP"
+.br
+.ti -1c
+.RI "static List< \fBUnitModifier\fP > \fBModifiers\fP\fR [get, protected set]\fP"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+
+
+Static Public Member Functions inherited from \fBAdventureAssembly\&.Units\&.UnitManager< Hero >\fP
+.in +1c
+.ti -1c
+.RI "static void \fBAddModifier\fP (\fBUnitModifier\fP modifier)"
+.br
+.ti -1c
+.RI "static void \fBRemoveModifier\fP (\fBUnitModifier\fP modifier)"
+.br
+.ti -1c
+.RI "static T \fBGetNearestUnit\fP (Vector2Int position)"
+.br
+.ti -1c
+.RI "static bool \fBHasUnitAtPosition\fP (Vector2Int position)"
+.br
+.in -1c
+
+Static Protected Member Functions inherited from \fBAdventureAssembly\&.Units\&.UnitManager< Hero >\fP
+.in +1c
+.ti -1c
+.RI "static void \fBApplyAllModifiers\fP (T unit)"
+.br
+.in -1c
+.SH "Member Function Documentation"
+.PP 
+.SS "override void AdventureAssembly\&.Units\&.Heroes\&.HeroManager\&.AddUnit (\fBHero\fP hero)"
+
+.SS "override void AdventureAssembly\&.Units\&.Heroes\&.HeroManager\&.RemoveUnit (\fBHero\fP hero)"
+
+.SS "void AdventureAssembly\&.Units\&.Heroes\&.HeroManager\&.SpawnHero (\fBHeroData\fP heroData)"
+
+.SH "Property Documentation"
+.PP 
+.SS "LayerMask AdventureAssembly\&.Units\&.Heroes\&.HeroManager\&.HazardLayerMask\fR [get]\fP"
+
+.SS "Vector2Int AdventureAssembly\&.Units\&.Heroes\&.HeroManager\&.HorizontalMovementVector\fR [get]\fP"
+
+.SS "Vector2Int AdventureAssembly\&.Units\&.Heroes\&.HeroManager\&.LastMovementVector = Vector2Int\&.zero\fR [get]\fP"
+
+.SS "Vector2Int AdventureAssembly\&.Units\&.Heroes\&.HeroManager\&.NextMovementVector = Vector2Int\&.up\fR [get]\fP"
+
+.SS "float AdventureAssembly\&.Units\&.Heroes\&.HeroManager\&.UpdateInterval\fR [get]\fP"
+
+.SS "Vector2Int AdventureAssembly\&.Units\&.Heroes\&.HeroManager\&.VerticalMovementVector\fR [get]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for AdventureAssembly from the source code\&.

@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="_enemy_8cs" kind="file" language="C#">
+    <compoundname>Enemy.cs</compoundname>
+    <innerclass refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy" prot="public">AdventureAssembly::Units::Enemies::Enemy</innerclass>
+    <innernamespace refid="namespace_adventure_assembly">AdventureAssembly</innernamespace>
+    <innernamespace refid="namespace_adventure_assembly_1_1_units">AdventureAssembly::Units</innernamespace>
+    <innernamespace refid="namespace_adventure_assembly_1_1_units_1_1_enemies">AdventureAssembly::Units::Enemies</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespace_adventure_assembly_1_1_core" kindref="compound">AdventureAssembly.Core</ref>;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">Sirenix.Serialization;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">UnityEngine;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_adventure_assembly_1_1_units_1_1_enemies" kindref="compound">AdventureAssembly.Units.Enemies</ref></highlight></codeline>
+<codeline lineno="6"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="7" refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy" kindref="compound">Enemy</ref><sp/>:<sp/><ref refid="class_adventure_assembly_1_1_units_1_1_unit" kindref="compound">Unit</ref></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_stats" kindref="compound">EnemyStats</ref><sp/><ref refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_1af049021eec2eed7dbde90b7fd3390e0a" kindref="member">Stats</ref><sp/>=&gt;<sp/>(<ref refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_stats" kindref="compound">EnemyStats</ref>)base.Stats;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_data" kindref="compound">EnemyData</ref><sp/><ref refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_data" kindref="compound">EnemyData</ref><sp/>{<sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal">;<sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">set</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_1a4b320d4e4e24ca4a2fc3484d54f131ea" kindref="member">Initialize</ref>(<ref refid="class_adventure_assembly_1_1_units_1_1_unit_data" kindref="compound">UnitData</ref><sp/>unitData,<sp/>Vector2Int<sp/>position)</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_data" kindref="compound">EnemyData</ref><sp/>=<sp/>(<ref refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_1ad11a7e2b19f7692a3c6de7ce9c731456" kindref="member">EnemyData</ref>)unitData;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>base.Initialize(unitData,<sp/>position);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_1a4f23dfed60ba1b400f1aeb88eaad251c" kindref="member">Die</ref>()</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>base.Die();</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_adventure_assembly_1_1_core_1_1_experience_manager" kindref="compound">ExperienceManager</ref>.Instance.<ref refid="class_adventure_assembly_1_1_core_1_1_experience_manager_1aa3a339f607f98987fe05899aad7bfed9" kindref="member">AddExperience</ref>(<ref refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_data" kindref="compound">EnemyData</ref>.<ref refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_data_1abfddf619aa36efd1342cba155948a01b" kindref="member">KillExperience</ref>);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Destroy(gameObject);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Enemies/Enemy.cs"/>
+  </compounddef>
+</doxygen>

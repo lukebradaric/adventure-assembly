@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_data" xml:lang="en-US">
+<title>AdventureAssembly.Units.Heroes.HeroData Class Reference</title>
+<indexterm><primary>AdventureAssembly.Units.Heroes.HeroData</primary></indexterm>
+<para>Inheritance diagram for AdventureAssembly.Units.Heroes.HeroData:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_data.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para>Color <link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_data_1afb39f056c85e6ff6f0f4c01c28db320b">BackgroundColor</link> = Color.magenta<computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>string <link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_data_1a802c0604de6e6cd130ac909e9dbbfb59">Description</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>List&lt; <link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_data">ClassData</link> &gt; <link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_data_1a3717e5baed4a3f11c4b7b1f0c6af9902">ClassData</link> = new List&lt;<link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_data">ClassData</link>&gt;()<computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>List&lt; <link linkend="_class_adventure_assembly_1_1_units_1_1_abilities_1_1_ability">Ability</link> &gt; <link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_data_1ac9df40eff6a5f55539f77201b3a60156">Abilities</link> = new List&lt;<link linkend="_class_adventure_assembly_1_1_units_1_1_abilities_1_1_ability">Ability</link>&gt;()<computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Properties inherited from <link linkend="_class_adventure_assembly_1_1_units_1_1_unit_data">AdventureAssembly.Units.UnitData</link>        <itemizedlist>
+            <listitem><para>string <link linkend="_class_adventure_assembly_1_1_units_1_1_unit_data_1a69171383da86da349b0d330024ac894e">Name</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>Sprite <link linkend="_class_adventure_assembly_1_1_units_1_1_unit_data_1a43cf81379cf6ed95be45c067dc507fe0">Sprite</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>int <link linkend="_class_adventure_assembly_1_1_units_1_1_unit_data_1a58a8f15f25278abc97a70a03ed84c075">MaxHealth</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+            <listitem><para><link linkend="_class_adventure_assembly_1_1_units_1_1_animation_1_1_unit_movement_tween">UnitMovementTween</link> <link linkend="_class_adventure_assembly_1_1_units_1_1_unit_data_1a198983aa6fc95b867c884f41b74bfe7a">MovementTween</link> = new <link linkend="_class_adventure_assembly_1_1_units_1_1_animation_1_1_default_unit_movement_tween">DefaultUnitMovementTween</link>()<computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+        </itemizedlist>
+<section>
+<title>Property Documentation</title>
+<anchor xml:id="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_data_1ac9df40eff6a5f55539f77201b3a60156"/><section>
+    <title>Abilities</title>
+<indexterm><primary>Abilities</primary><secondary>AdventureAssembly.Units.Heroes.HeroData</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Units.Heroes.HeroData</primary><secondary>Abilities</secondary></indexterm>
+<para><computeroutput>List&lt;<link linkend="_class_adventure_assembly_1_1_units_1_1_abilities_1_1_ability">Ability</link>&gt; AdventureAssembly.Units.Heroes.HeroData.Abilities = new List&lt;<link linkend="_class_adventure_assembly_1_1_units_1_1_abilities_1_1_ability">Ability</link>&gt;()<computeroutput>[get]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_data_1afb39f056c85e6ff6f0f4c01c28db320b"/><section>
+    <title>BackgroundColor</title>
+<indexterm><primary>BackgroundColor</primary><secondary>AdventureAssembly.Units.Heroes.HeroData</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Units.Heroes.HeroData</primary><secondary>BackgroundColor</secondary></indexterm>
+<para><computeroutput>Color AdventureAssembly.Units.Heroes.HeroData.BackgroundColor = Color.magenta<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_data_1a3717e5baed4a3f11c4b7b1f0c6af9902"/><section>
+    <title>ClassData</title>
+<indexterm><primary>ClassData</primary><secondary>AdventureAssembly.Units.Heroes.HeroData</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Units.Heroes.HeroData</primary><secondary>ClassData</secondary></indexterm>
+<para><computeroutput>List&lt;<link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_data">ClassData</link>&gt; AdventureAssembly.Units.Heroes.HeroData.ClassData = new List&lt;<link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_data">ClassData</link>&gt;()<computeroutput>[get]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_data_1a802c0604de6e6cd130ac909e9dbbfb59"/><section>
+    <title>Description</title>
+<indexterm><primary>Description</primary><secondary>AdventureAssembly.Units.Heroes.HeroData</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Units.Heroes.HeroData</primary><secondary>Description</secondary></indexterm>
+<para><computeroutput>string AdventureAssembly.Units.Heroes.HeroData.Description<computeroutput>[get]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/<link linkend="__hero_data_8cs">HeroData.cs</link></section>
+</section>

@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="namespace_adventure_assembly_1_1_units" kind="namespace" language="C#">
+    <compoundname>AdventureAssembly::Units</compoundname>
+    <innerclass refid="class_adventure_assembly_1_1_units_1_1_damage_data" prot="public">AdventureAssembly::Units::DamageData</innerclass>
+    <innerclass refid="class_adventure_assembly_1_1_units_1_1_projectile" prot="public">AdventureAssembly::Units::Projectile</innerclass>
+    <innerclass refid="class_adventure_assembly_1_1_units_1_1_stat" prot="public">AdventureAssembly::Units::Stat</innerclass>
+    <innerclass refid="class_adventure_assembly_1_1_units_1_1_stat_modifier" prot="public">AdventureAssembly::Units::StatModifier</innerclass>
+    <innerclass refid="class_adventure_assembly_1_1_units_1_1_unit" prot="public">AdventureAssembly::Units::Unit</innerclass>
+    <innerclass refid="class_adventure_assembly_1_1_units_1_1_unit_data" prot="public">AdventureAssembly::Units::UnitData</innerclass>
+    <innerclass refid="class_adventure_assembly_1_1_units_1_1_unit_manager" prot="public">AdventureAssembly::Units::UnitManager</innerclass>
+    <innerclass refid="class_adventure_assembly_1_1_units_1_1_unit_stats" prot="public">AdventureAssembly::Units::UnitStats</innerclass>
+    <innernamespace refid="namespace_adventure_assembly_1_1_units_1_1_abilities">AdventureAssembly::Units::Abilities</innernamespace>
+    <innernamespace refid="namespace_adventure_assembly_1_1_units_1_1_animation">AdventureAssembly::Units::Animation</innernamespace>
+    <innernamespace refid="namespace_adventure_assembly_1_1_units_1_1_enemies">AdventureAssembly::Units::Enemies</innernamespace>
+    <innernamespace refid="namespace_adventure_assembly_1_1_units_1_1_heroes">AdventureAssembly::Units::Heroes</innernamespace>
+    <innernamespace refid="namespace_adventure_assembly_1_1_units_1_1_modifiers">AdventureAssembly::Units::Modifiers</innernamespace>
+    <innernamespace refid="namespace_adventure_assembly_1_1_units_1_1_tests">AdventureAssembly::Units::Tests</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Abilities/Ability.cs" line="4" column="1"/>
+  </compounddef>
+</doxygen>

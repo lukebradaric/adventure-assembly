@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespace_adventure_assembly_1_1_debug" xml:lang="en-US">
+<title>AdventureAssembly.Debug Namespace Reference</title>
+<indexterm><primary>AdventureAssembly.Debug</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_adventure_assembly_1_1_debug_1_1_debug_key_press">DebugKeyPress</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_adventure_assembly_1_1_debug_1_1_debug_kill_random_hero">DebugKillRandomHero</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_adventure_assembly_1_1_debug_1_1_debug_open_chest">DebugOpenChest</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Enumerations    </title>
+        <itemizedlist>
+            <listitem><para>enum <link linkend="_namespace_adventure_assembly_1_1_debug_1a7c635ec39f90bcb5c2a10816715556fb">DebugInputMode</link> { <link linkend="_namespace_adventure_assembly_1_1_debug_1a7c635ec39f90bcb5c2a10816715556fba0610123bdd4ffc191a3ea05a847e1307">Press</link>
+, <link linkend="_namespace_adventure_assembly_1_1_debug_1a7c635ec39f90bcb5c2a10816715556fbabcd8db575b47c838e5d551e3973db4ac">Hold</link>
+ }</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Enumeration Type Documentation</title>
+<anchor xml:id="_namespace_adventure_assembly_1_1_debug_1a7c635ec39f90bcb5c2a10816715556fb"/><section>
+    <title>DebugInputMode</title>
+<indexterm><primary>DebugInputMode</primary><secondary>AdventureAssembly.Debug</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Debug</primary><secondary>DebugInputMode</secondary></indexterm>
+<para><computeroutput>enum <link linkend="_namespace_adventure_assembly_1_1_debug_1a7c635ec39f90bcb5c2a10816715556fb">AdventureAssembly.Debug.DebugInputMode</link></computeroutput></para><informaltable frame="all">
+<title>Enumerator</title>
+    <tgroup cols="2" align="left" colsep="1" rowsep="1">
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+<tbody>
+<row><entry><indexterm><primary>Press</primary><secondary>AdventureAssembly.Debug</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Debug</primary><secondary>Press</secondary></indexterm>
+<anchor xml:id="_namespace_adventure_assembly_1_1_debug_1a7c635ec39f90bcb5c2a10816715556fba0610123bdd4ffc191a3ea05a847e1307"/>Press</entry><entry></entry></row><row><entry><indexterm><primary>Hold</primary><secondary>AdventureAssembly.Debug</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Debug</primary><secondary>Hold</secondary></indexterm>
+<anchor xml:id="_namespace_adventure_assembly_1_1_debug_1a7c635ec39f90bcb5c2a10816715556fbabcd8db575b47c838e5d551e3973db4ac"/>Hold</entry><entry></entry></row>    </tbody>
+    </tgroup>
+</informaltable>
+</section>
+</section>
+</section>

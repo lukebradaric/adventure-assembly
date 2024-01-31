@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_adventure_assembly_1_1_units_1_1_tests_1_1_test_class_modifier" xml:lang="en-US">
+<title>AdventureAssembly.Units.Tests.TestClassModifier Class Reference</title>
+<indexterm><primary>AdventureAssembly.Units.Tests.TestClassModifier</primary></indexterm>
+<para>Inheritance diagram for AdventureAssembly.Units.Tests.TestClassModifier:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_adventure_assembly_1_1_units_1_1_tests_1_1_test_class_modifier.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>override void <link linkend="_class_adventure_assembly_1_1_units_1_1_tests_1_1_test_class_modifier_1acd811f51390e67929f4bfbfa30c709be">Apply</link> ()</para>
+</listitem>
+            <listitem><para>override void <link linkend="_class_adventure_assembly_1_1_units_1_1_tests_1_1_test_class_modifier_1af0c959dd8455be6f7b351d6c26a07ce8">Remove</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public Member Functions inherited from <link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_modifier">AdventureAssembly.Units.Heroes.ClassModifier</link>        <itemizedlist>
+            <listitem><para>void <link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_modifier_1a3c684a60ec288e333f4302c13ae9a44c">Apply</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_modifier_1a8633417242b29f52210dc136f3292df9">Remove</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_modifier">ClassModifier</link> <link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_modifier_1ac3f20123b40aaa5466e1125163f8382c">GetClone</link> ()</para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Additional Inherited Members    </title>
+Properties inherited from <link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_modifier">AdventureAssembly.Units.Heroes.ClassModifier</link>        <itemizedlist>
+            <listitem><para>int <link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_modifier_1a8da9c60ba6a1e0af9d3494313396fc1b">RequiredCount</link><computeroutput> [get, protected set]</computeroutput>
+</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_adventure_assembly_1_1_units_1_1_tests_1_1_test_class_modifier_1acd811f51390e67929f4bfbfa30c709be"/><section>
+    <title>Apply()</title>
+<indexterm><primary>Apply</primary><secondary>AdventureAssembly.Units.Tests.TestClassModifier</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Units.Tests.TestClassModifier</primary><secondary>Apply</secondary></indexterm>
+<para><computeroutput>override void AdventureAssembly.Units.Tests.TestClassModifier.Apply ( )</computeroutput></para></section>
+<anchor xml:id="_class_adventure_assembly_1_1_units_1_1_tests_1_1_test_class_modifier_1af0c959dd8455be6f7b351d6c26a07ce8"/><section>
+    <title>Remove()</title>
+<indexterm><primary>Remove</primary><secondary>AdventureAssembly.Units.Tests.TestClassModifier</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Units.Tests.TestClassModifier</primary><secondary>Remove</secondary></indexterm>
+<para><computeroutput>override void AdventureAssembly.Units.Tests.TestClassModifier.Remove ( )</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Tests/<link linkend="__test_class_modifier_8cs">TestClassModifier.cs</link></section>
+</section>

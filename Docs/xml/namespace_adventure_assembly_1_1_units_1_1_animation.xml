@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="namespace_adventure_assembly_1_1_units_1_1_animation" kind="namespace" language="C#">
+    <compoundname>AdventureAssembly::Units::Animation</compoundname>
+    <innerclass refid="class_adventure_assembly_1_1_units_1_1_animation_1_1_default_unit_movement_tween" prot="public">AdventureAssembly::Units::Animation::DefaultUnitMovementTween</innerclass>
+    <innerclass refid="class_adventure_assembly_1_1_units_1_1_animation_1_1_unit_movement_tween" prot="public">AdventureAssembly::Units::Animation::UnitMovementTween</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Animation/DefaultUnitMovementTween.cs" line="4" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,110 @@
+.TH "AdventureAssembly.Units.Unit" 3 "AdventureAssembly" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+AdventureAssembly.Units.Unit
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits SerializedMonoBehaviour\&.
+.PP
+Inherited by \fBAdventureAssembly\&.Units\&.Enemies\&.Enemy\fP, and \fBAdventureAssembly\&.Units\&.Heroes\&.Hero\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual void \fBInitialize\fP (\fBUnitData\fP unitData, Vector2Int position)"
+.br
+.ti -1c
+.RI "virtual void \fBOnUpdate\fP (float time)"
+.br
+.ti -1c
+.RI "virtual void \fBMove\fP (Vector2Int direction)"
+.br
+.ti -1c
+.RI "virtual void \fBDamage\fP (\fBDamageData\fP damageData)"
+.br
+.ti -1c
+.RI "virtual void \fBDie\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBFlipSprite\fP (int x)"
+.br
+.in -1c
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "SpriteRenderer \fBSpriteRenderer\fP\fR [get]\fP"
+.br
+.ti -1c
+.RI "virtual \fBUnitStats\fP \fBStats\fP\fR [get]\fP"
+.br
+.ti -1c
+.RI "\fBUnitData\fP \fBUnitData\fP\fR [get]\fP"
+.br
+.ti -1c
+.RI "int \fBCurrentHealth\fP\fR [get, protected set]\fP"
+.br
+.ti -1c
+.RI "Vector2Int \fBPosition\fP = Vector2Int\&.zero\fR [get, protected set]\fP"
+.br
+.ti -1c
+.RI "Vector2Int \fBLastPosition\fP\fR [get, protected set]\fP"
+.br
+.ti -1c
+.RI "bool \fBIsDead\fP = false\fR [get, protected set]\fP"
+.br
+.in -1c
+.SS "Events"
+
+.in +1c
+.ti -1c
+.RI "Action< \fBUnit\fP > \fBDied\fP"
+.br
+.in -1c
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual void AdventureAssembly\&.Units\&.Unit\&.Damage (\fBDamageData\fP damageData)\fR [virtual]\fP"
+
+.SS "virtual void AdventureAssembly\&.Units\&.Unit\&.Die ()\fR [virtual]\fP"
+
+.PP
+Reimplemented in \fBAdventureAssembly\&.Units\&.Enemies\&.Enemy\fP, and \fBAdventureAssembly\&.Units\&.Heroes\&.Hero\fP\&.
+.SS "virtual void AdventureAssembly\&.Units\&.Unit\&.FlipSprite (int x)\fR [virtual]\fP"
+
+.SS "virtual void AdventureAssembly\&.Units\&.Unit\&.Initialize (\fBUnitData\fP unitData, Vector2Int position)\fR [virtual]\fP"
+
+.PP
+Reimplemented in \fBAdventureAssembly\&.Units\&.Enemies\&.Enemy\fP, and \fBAdventureAssembly\&.Units\&.Heroes\&.Hero\fP\&.
+.SS "virtual void AdventureAssembly\&.Units\&.Unit\&.Move (Vector2Int direction)\fR [virtual]\fP"
+
+.SS "virtual void AdventureAssembly\&.Units\&.Unit\&.OnUpdate (float time)\fR [virtual]\fP"
+
+.PP
+Reimplemented in \fBAdventureAssembly\&.Units\&.Heroes\&.Hero\fP\&.
+.SH "Property Documentation"
+.PP 
+.SS "int AdventureAssembly\&.Units\&.Unit\&.CurrentHealth\fR [get]\fP, \fR [protected set]\fP"
+
+.SS "bool AdventureAssembly\&.Units\&.Unit\&.IsDead = false\fR [get]\fP, \fR [protected set]\fP"
+
+.SS "Vector2Int AdventureAssembly\&.Units\&.Unit\&.LastPosition\fR [get]\fP, \fR [protected set]\fP"
+
+.SS "Vector2Int AdventureAssembly\&.Units\&.Unit\&.Position = Vector2Int\&.zero\fR [get]\fP, \fR [protected set]\fP"
+
+.SS "SpriteRenderer AdventureAssembly\&.Units\&.Unit\&.SpriteRenderer\fR [get]\fP"
+
+.SS "virtual \fBUnitStats\fP AdventureAssembly\&.Units\&.Unit\&.Stats\fR [get]\fP"
+
+.SS "\fBUnitData\fP AdventureAssembly\&.Units\&.Unit\&.UnitData\fR [get]\fP"
+
+.SH "Event Documentation"
+.PP 
+.SS "Action<\fBUnit\fP> AdventureAssembly\&.Units\&.Unit\&.Died"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for AdventureAssembly from the source code\&.

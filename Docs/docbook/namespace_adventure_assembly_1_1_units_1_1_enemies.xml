@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespace_adventure_assembly_1_1_units_1_1_enemies" xml:lang="en-US">
+<title>AdventureAssembly.Units.Enemies Namespace Reference</title>
+<indexterm><primary>AdventureAssembly.Units.Enemies</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_adventure_assembly_1_1_units_1_1_enemies_1_1_default_enemy_navigation">DefaultEnemyNavigation</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy">Enemy</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_data">EnemyData</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_manager">EnemyManager</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_navigation">EnemyNavigation</link></para>
+</listitem>
+            <listitem><para>struct <emphasis role="strong">EnemySpawnData</emphasis></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_spawner">EnemySpawner</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_stats">EnemyStats</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="namespace_n_unit_1_1_framework" kind="namespace" language="C#">
+    <compoundname>NUnit::Framework</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Tests/PlayMode/UnitStatsTests.cs" line="4" column="22"/>
+  </compounddef>
+</doxygen>

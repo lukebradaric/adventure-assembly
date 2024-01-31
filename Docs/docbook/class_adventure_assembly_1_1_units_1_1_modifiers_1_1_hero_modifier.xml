@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_adventure_assembly_1_1_units_1_1_modifiers_1_1_hero_modifier" xml:lang="en-US">
+<title>AdventureAssembly.Units.Modifiers.HeroModifier Class Reference</title>
+<indexterm><primary>AdventureAssembly.Units.Modifiers.HeroModifier</primary></indexterm>
+<para>Inheritance diagram for AdventureAssembly.Units.Modifiers.HeroModifier:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_adventure_assembly_1_1_units_1_1_modifiers_1_1_hero_modifier.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>override void <link linkend="_class_adventure_assembly_1_1_units_1_1_modifiers_1_1_hero_modifier_1a5f0e44e3c1712bc5afce10349c29fd2a">Apply</link> (<link linkend="_class_adventure_assembly_1_1_units_1_1_unit">Unit</link> unit)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_adventure_assembly_1_1_units_1_1_modifiers_1_1_hero_modifier_1ac0432b7a49403a6b9824cec826f4cc9b">Apply</link> (<link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero">Hero</link> hero)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public Member Functions inherited from <link linkend="_class_adventure_assembly_1_1_units_1_1_modifiers_1_1_unit_modifier">AdventureAssembly.Units.Modifiers.UnitModifier</link>        <itemizedlist>
+            <listitem><para>void <link linkend="_class_adventure_assembly_1_1_units_1_1_modifiers_1_1_unit_modifier_1a95e0ec4898b322ccf1fb7b151c9d0638">Apply</link> (<link linkend="_class_adventure_assembly_1_1_units_1_1_unit">Unit</link> unit)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_adventure_assembly_1_1_units_1_1_modifiers_1_1_unit_modifier_1acd947b8858afe54670ddc0d091b62622">Remove</link> (<link linkend="_class_adventure_assembly_1_1_units_1_1_unit">Unit</link> unit)</para>
+</listitem>
+        </itemizedlist>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_adventure_assembly_1_1_units_1_1_modifiers_1_1_hero_modifier_1ac0432b7a49403a6b9824cec826f4cc9b"/><section>
+    <title>Apply()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>Apply</primary><secondary>AdventureAssembly.Units.Modifiers.HeroModifier</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Units.Modifiers.HeroModifier</primary><secondary>Apply</secondary></indexterm>
+<para><computeroutput>void AdventureAssembly.Units.Modifiers.HeroModifier.Apply (<link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero">Hero</link> hero)<computeroutput>[abstract]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_adventure_assembly_1_1_units_1_1_modifiers_1_1_hero_modifier_1a5f0e44e3c1712bc5afce10349c29fd2a"/><section>
+    <title>Apply()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>Apply</primary><secondary>AdventureAssembly.Units.Modifiers.HeroModifier</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Units.Modifiers.HeroModifier</primary><secondary>Apply</secondary></indexterm>
+<para><computeroutput>override void AdventureAssembly.Units.Modifiers.HeroModifier.Apply (<link linkend="_class_adventure_assembly_1_1_units_1_1_unit">Unit</link> unit)</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Modifiers/<link linkend="__hero_modifier_8cs">HeroModifier.cs</link></section>
+</section>

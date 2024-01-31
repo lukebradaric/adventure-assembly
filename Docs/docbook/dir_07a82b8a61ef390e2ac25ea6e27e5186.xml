@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_07a82b8a61ef390e2ac25ea6e27e5186" xml:lang="en-US">
+<title>D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Enemies Directory Reference</title>
+<indexterm><primary>D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Enemies Directory Reference</primary></indexterm>
+<simplesect>
+    <title>Files    </title>
+        <itemizedlist>
+            <listitem><para>file <link linkend="__default_enemy_navigation_8cs">DefaultEnemyNavigation.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__enemy_8cs">Enemy.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__enemy_data_8cs">EnemyData.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__enemy_manager_8cs">EnemyManager.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__enemy_navigation_8cs">EnemyNavigation.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__enemy_spawner_8cs">EnemySpawner.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__enemy_stats_8cs">EnemyStats.cs</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

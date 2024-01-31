@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="namespace_adventure_assembly_1_1_interface" kind="namespace" language="C#">
+    <compoundname>AdventureAssembly::Interface</compoundname>
+    <innerclass refid="class_adventure_assembly_1_1_interface_1_1_gold_interface" prot="public">AdventureAssembly::Interface::GoldInterface</innerclass>
+    <innerclass refid="class_adventure_assembly_1_1_interface_1_1_hero_class_element" prot="public">AdventureAssembly::Interface::HeroClassElement</innerclass>
+    <innerclass refid="class_adventure_assembly_1_1_interface_1_1_hero_selection_element" prot="public">AdventureAssembly::Interface::HeroSelectionElement</innerclass>
+    <innerclass refid="class_adventure_assembly_1_1_interface_1_1_hero_selection_interface" prot="public">AdventureAssembly::Interface::HeroSelectionInterface</innerclass>
+    <innerclass refid="class_adventure_assembly_1_1_interface_1_1_hero_selection_start" prot="public">AdventureAssembly::Interface::HeroSelectionStart</innerclass>
+    <innerclass refid="class_adventure_assembly_1_1_interface_1_1_interface_manager" prot="public">AdventureAssembly::Interface::InterfaceManager</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Interface/GoldInterface.cs" line="6" column="1"/>
+  </compounddef>
+</doxygen>

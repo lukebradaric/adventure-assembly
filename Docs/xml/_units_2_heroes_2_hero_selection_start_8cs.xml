@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="_units_2_heroes_2_hero_selection_start_8cs" kind="file" language="C#">
+    <compoundname>HeroSelectionStart.cs</compoundname>
+    <innerclass refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_selection_start" prot="public">AdventureAssembly::Units::Heroes::HeroSelectionStart</innerclass>
+    <innernamespace refid="namespace_adventure_assembly">AdventureAssembly</innernamespace>
+    <innernamespace refid="namespace_adventure_assembly_1_1_units">AdventureAssembly::Units</innernamespace>
+    <innernamespace refid="namespace_adventure_assembly_1_1_units_1_1_heroes">AdventureAssembly::Units::Heroes</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using<sp/></highlight><highlight class="normal">UnityEngine;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_adventure_assembly_1_1_units_1_1_heroes" kindref="compound">AdventureAssembly.Units.Heroes</ref></highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="5" refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_selection_start" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_selection_start" kindref="compound">HeroSelectionStart</ref><sp/>:<sp/>MonoBehaviour</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Start()</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/HeroSelectionStart.cs"/>
+  </compounddef>
+</doxygen>

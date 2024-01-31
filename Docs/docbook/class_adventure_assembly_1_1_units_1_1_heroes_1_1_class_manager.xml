@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_manager" xml:lang="en-US">
+<title>AdventureAssembly.Units.Heroes.ClassManager Class Reference</title>
+<indexterm><primary>AdventureAssembly.Units.Heroes.ClassManager</primary></indexterm>
+<para>Inheritance diagram for AdventureAssembly.Units.Heroes.ClassManager:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_manager.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>static void <link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_manager_1ae2b4562aca8b6c1678a306c0e770eefc">AddClassesByHeroData</link> (<link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_data">HeroData</link> heroData)</para>
+</listitem>
+            <listitem><para>static void <link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_manager_1accc8ea33d23c274c535b6f47df5760c7">RemoveClassesByHeroData</link> (<link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_data">HeroData</link> heroData)</para>
+</listitem>
+            <listitem><para>static void <link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_manager_1a60d31086ee257ac0d19ad7be3198bb1b">AddClass</link> (<link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_data">ClassData</link> classData)</para>
+</listitem>
+            <listitem><para>static void <link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_manager_1a6b75c2fe0d5cb153b3627275255ed525">RemoveClass</link> (<link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_data">ClassData</link> classData)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para>static Dictionary&lt; <link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_data">ClassData</link>, int &gt; <link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_manager_1a6a953e668b1e9506932d096616b715af">ClassCount</link> = new Dictionary&lt;<link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_data">ClassData</link>, int&gt;()<computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>static Dictionary&lt; <link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_data">ClassData</link>, <link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_modifier">ClassModifier</link> &gt; <link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_manager_1acb5d4942547fa20821f025f6b2373102">ClassModifiers</link> = new Dictionary&lt;<link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_data">ClassData</link>, <link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_modifier">ClassModifier</link>&gt;()<computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>static Dictionary&lt; <link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_data">ClassData</link>, List&lt; <link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_modifier">ClassModifier</link> &gt; &gt; <link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_manager_1ae484c2f9fa8d9305a3f8cf831f1c5c3f">ClassModifierInstances</link> = new Dictionary&lt;<link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_data">ClassData</link>, List&lt;<link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_modifier">ClassModifier</link>&gt;&gt;()<computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_manager_1a60d31086ee257ac0d19ad7be3198bb1b"/><section>
+    <title>AddClass()</title>
+<indexterm><primary>AddClass</primary><secondary>AdventureAssembly.Units.Heroes.ClassManager</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Units.Heroes.ClassManager</primary><secondary>AddClass</secondary></indexterm>
+<para><computeroutput>static void AdventureAssembly.Units.Heroes.ClassManager.AddClass (<link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_data">ClassData</link> classData)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_manager_1ae2b4562aca8b6c1678a306c0e770eefc"/><section>
+    <title>AddClassesByHeroData()</title>
+<indexterm><primary>AddClassesByHeroData</primary><secondary>AdventureAssembly.Units.Heroes.ClassManager</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Units.Heroes.ClassManager</primary><secondary>AddClassesByHeroData</secondary></indexterm>
+<para><computeroutput>static void AdventureAssembly.Units.Heroes.ClassManager.AddClassesByHeroData (<link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_data">HeroData</link> heroData)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_manager_1a6b75c2fe0d5cb153b3627275255ed525"/><section>
+    <title>RemoveClass()</title>
+<indexterm><primary>RemoveClass</primary><secondary>AdventureAssembly.Units.Heroes.ClassManager</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Units.Heroes.ClassManager</primary><secondary>RemoveClass</secondary></indexterm>
+<para><computeroutput>static void AdventureAssembly.Units.Heroes.ClassManager.RemoveClass (<link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_data">ClassData</link> classData)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_manager_1accc8ea33d23c274c535b6f47df5760c7"/><section>
+    <title>RemoveClassesByHeroData()</title>
+<indexterm><primary>RemoveClassesByHeroData</primary><secondary>AdventureAssembly.Units.Heroes.ClassManager</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Units.Heroes.ClassManager</primary><secondary>RemoveClassesByHeroData</secondary></indexterm>
+<para><computeroutput>static void AdventureAssembly.Units.Heroes.ClassManager.RemoveClassesByHeroData (<link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_data">HeroData</link> heroData)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+</section>
+<section>
+<title>Property Documentation</title>
+<anchor xml:id="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_manager_1a6a953e668b1e9506932d096616b715af"/><section>
+    <title>ClassCount</title>
+<indexterm><primary>ClassCount</primary><secondary>AdventureAssembly.Units.Heroes.ClassManager</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Units.Heroes.ClassManager</primary><secondary>ClassCount</secondary></indexterm>
+<para><computeroutput>Dictionary&lt;<link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_data">ClassData</link>, int&gt; AdventureAssembly.Units.Heroes.ClassManager.ClassCount = new Dictionary&lt;<link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_data">ClassData</link>, int&gt;()<computeroutput>[static]</computeroutput>, <computeroutput>[get]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_manager_1ae484c2f9fa8d9305a3f8cf831f1c5c3f"/><section>
+    <title>ClassModifierInstances</title>
+<indexterm><primary>ClassModifierInstances</primary><secondary>AdventureAssembly.Units.Heroes.ClassManager</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Units.Heroes.ClassManager</primary><secondary>ClassModifierInstances</secondary></indexterm>
+<para><computeroutput>Dictionary&lt;<link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_data">ClassData</link>, List&lt;<link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_modifier">ClassModifier</link>&gt; &gt; AdventureAssembly.Units.Heroes.ClassManager.ClassModifierInstances = new Dictionary&lt;<link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_data">ClassData</link>, List&lt;<link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_modifier">ClassModifier</link>&gt;&gt;()<computeroutput>[static]</computeroutput>, <computeroutput>[get]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_manager_1acb5d4942547fa20821f025f6b2373102"/><section>
+    <title>ClassModifiers</title>
+<indexterm><primary>ClassModifiers</primary><secondary>AdventureAssembly.Units.Heroes.ClassManager</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Units.Heroes.ClassManager</primary><secondary>ClassModifiers</secondary></indexterm>
+<para><computeroutput>Dictionary&lt;<link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_data">ClassData</link>, <link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_modifier">ClassModifier</link>&gt; AdventureAssembly.Units.Heroes.ClassManager.ClassModifiers = new Dictionary&lt;<link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_data">ClassData</link>, <link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_modifier">ClassModifier</link>&gt;()<computeroutput>[static]</computeroutput>, <computeroutput>[get]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/<link linkend="__class_manager_8cs">ClassManager.cs</link></section>
+</section>

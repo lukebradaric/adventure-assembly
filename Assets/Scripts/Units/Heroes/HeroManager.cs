@@ -154,7 +154,7 @@ namespace AdventureAssembly.Units.Heroes
 
             // Instantiate new hero gameobject
             Hero hero = Instantiate(_heroPrefab, (Vector2)spawnPosition, Quaternion.identity);
-            hero.transform.SetParent(transform);
+            //hero.transform.SetParent(transform);
 
             // Add hero to this unit manager
             AddUnit(hero);

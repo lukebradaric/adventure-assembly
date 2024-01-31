@@ -1,0 +1,79 @@
+.TH "AdventureAssembly.Units.UnitManager< T >" 3 "AdventureAssembly" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+AdventureAssembly.Units.UnitManager< T >
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits Singleton< UnitManager< T > >\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual void \fBAddUnit\fP (T unit)"
+.br
+.ti -1c
+.RI "virtual void \fBRemoveUnit\fP (T unit)"
+.br
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static void \fBAddModifier\fP (\fBUnitModifier\fP modifier)"
+.br
+.ti -1c
+.RI "static void \fBRemoveModifier\fP (\fBUnitModifier\fP modifier)"
+.br
+.ti -1c
+.RI "static T \fBGetNearestUnit\fP (Vector2Int position)"
+.br
+.ti -1c
+.RI "static bool \fBHasUnitAtPosition\fP (Vector2Int position)"
+.br
+.in -1c
+.SS "Static Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static void \fBApplyAllModifiers\fP (T unit)"
+.br
+.in -1c
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "static List< T > \fBUnits\fP = new List<T>()\fR [get, protected set]\fP"
+.br
+.ti -1c
+.RI "static List< \fBUnitModifier\fP > \fBModifiers\fP = new List<\fBUnitModifier\fP>()\fR [get, protected set]\fP"
+.br
+.in -1c
+.SH "Member Function Documentation"
+.PP 
+.SS "static void \fBAdventureAssembly\&.Units\&.UnitManager\fP< T >\&.AddModifier (\fBUnitModifier\fP modifier)\fR [static]\fP"
+
+.SS "virtual void \fBAdventureAssembly\&.Units\&.UnitManager\fP< T >\&.AddUnit (T unit)\fR [virtual]\fP"
+
+.SS "static void \fBAdventureAssembly\&.Units\&.UnitManager\fP< T >\&.ApplyAllModifiers (T unit)\fR [static]\fP, \fR [protected]\fP"
+
+.SS "static T \fBAdventureAssembly\&.Units\&.UnitManager\fP< T >\&.GetNearestUnit (Vector2Int position)\fR [static]\fP"
+
+.SS "static bool \fBAdventureAssembly\&.Units\&.UnitManager\fP< T >\&.HasUnitAtPosition (Vector2Int position)\fR [static]\fP"
+
+.SS "static void \fBAdventureAssembly\&.Units\&.UnitManager\fP< T >\&.RemoveModifier (\fBUnitModifier\fP modifier)\fR [static]\fP"
+
+.SS "virtual void \fBAdventureAssembly\&.Units\&.UnitManager\fP< T >\&.RemoveUnit (T unit)\fR [virtual]\fP"
+
+.SH "Property Documentation"
+.PP 
+.SS "List<\fBUnitModifier\fP> \fBAdventureAssembly\&.Units\&.UnitManager\fP< T >\&.Modifiers = new List<\fBUnitModifier\fP>()\fR [static]\fP, \fR [get]\fP, \fR [protected set]\fP"
+
+.SS "List<T> \fBAdventureAssembly\&.Units\&.UnitManager\fP< T >\&.Units = new List<T>()\fR [static]\fP, \fR [get]\fP, \fR [protected set]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for AdventureAssembly from the source code\&.

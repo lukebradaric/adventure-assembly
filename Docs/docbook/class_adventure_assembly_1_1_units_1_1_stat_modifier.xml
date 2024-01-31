@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_adventure_assembly_1_1_units_1_1_stat_modifier" xml:lang="en-US">
+<title>AdventureAssembly.Units.StatModifier&lt; T &gt; Class Template Reference</title>
+<indexterm><primary>AdventureAssembly.Units.StatModifier&lt; T &gt;</primary></indexterm>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>T <link linkend="_class_adventure_assembly_1_1_units_1_1_stat_modifier_1ae05754daa96a6604549c0bef0ab89874">Process</link> (T value)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_adventure_assembly_1_1_units_1_1_stat_modifier_1ae05754daa96a6604549c0bef0ab89874"/><section>
+    <title>Process()</title>
+<indexterm><primary>Process</primary><secondary>AdventureAssembly.Units.StatModifier&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Units.StatModifier&lt; T &gt;</primary><secondary>Process</secondary></indexterm>
+<para><computeroutput>T <link linkend="_class_adventure_assembly_1_1_units_1_1_stat_modifier">AdventureAssembly.Units.StatModifier</link>&lt; T &gt;.Process (T value)<computeroutput>[abstract]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/<link linkend="__stat_modifier_8cs">StatModifier.cs</link></section>
+</section>

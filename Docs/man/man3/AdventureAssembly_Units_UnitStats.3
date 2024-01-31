@@ -1,0 +1,65 @@
+.TH "AdventureAssembly.Units.UnitStats" 3 "AdventureAssembly" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+AdventureAssembly.Units.UnitStats
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits SerializedMonoBehaviour\&.
+.PP
+Inherited by \fBAdventureAssembly\&.Units\&.Enemies\&.EnemyStats\fP, and \fBAdventureAssembly\&.Units\&.Heroes\&.HeroStats\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual void \fBInitialize\fP (\fBUnit\fP unit)"
+.br
+.ti -1c
+.RI "virtual \fBDamageData\fP \fBGetDamageData\fP (\fBDamageData\fP damageData)"
+.br
+.ti -1c
+.RI "virtual int \fBGetMaxHealth\fP ()"
+.br
+.in -1c
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "\fBUnit\fP \fBUnit\fP\fR [get, protected set]\fP"
+.br
+.ti -1c
+.RI "\fBUnitData\fP \fBUnitData\fP\fR [get, protected set]\fP"
+.br
+.ti -1c
+.RI "\fBStat\fP< float > \fBDamageMultiplier\fP = new \fBStat\fP<float>(1f)\fR [get, set]\fP"
+.br
+.ti -1c
+.RI "\fBStat\fP< float > \fBMaxHealthMultiplier\fP = new \fBStat\fP<float>(1f)\fR [get, set]\fP"
+.br
+.in -1c
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual \fBDamageData\fP AdventureAssembly\&.Units\&.UnitStats\&.GetDamageData (\fBDamageData\fP damageData)\fR [virtual]\fP"
+
+.SS "virtual int AdventureAssembly\&.Units\&.UnitStats\&.GetMaxHealth ()\fR [virtual]\fP"
+
+.SS "virtual void AdventureAssembly\&.Units\&.UnitStats\&.Initialize (\fBUnit\fP unit)\fR [virtual]\fP"
+
+.PP
+Reimplemented in \fBAdventureAssembly\&.Units\&.Enemies\&.EnemyStats\fP, and \fBAdventureAssembly\&.Units\&.Heroes\&.HeroStats\fP\&.
+.SH "Property Documentation"
+.PP 
+.SS "\fBStat\fP<float> AdventureAssembly\&.Units\&.UnitStats\&.DamageMultiplier = new \fBStat\fP<float>(1f)\fR [get]\fP, \fR [set]\fP"
+
+.SS "\fBStat\fP<float> AdventureAssembly\&.Units\&.UnitStats\&.MaxHealthMultiplier = new \fBStat\fP<float>(1f)\fR [get]\fP, \fR [set]\fP"
+
+.SS "\fBUnit\fP AdventureAssembly\&.Units\&.UnitStats\&.Unit\fR [get]\fP, \fR [protected set]\fP"
+
+.SS "\fBUnitData\fP AdventureAssembly\&.Units\&.UnitStats\&.UnitData\fR [get]\fP, \fR [protected set]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for AdventureAssembly from the source code\&.

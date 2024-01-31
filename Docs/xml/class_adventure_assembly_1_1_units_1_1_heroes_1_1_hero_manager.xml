@@ -1,0 +1,383 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_manager" kind="class" language="C#" prot="public">
+    <compoundname>AdventureAssembly::Units::Heroes::HeroManager</compoundname>
+    <basecompoundref refid="class_adventure_assembly_1_1_units_1_1_unit_manager" prot="public" virt="non-virtual">AdventureAssembly.Units.UnitManager&lt; Hero &gt;</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_manager_1a98a6d56665575cdab578613c783f0cc1" prot="private" static="no" mutable="no">
+        <type><ref refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero" kindref="compound">Hero</ref></type>
+        <definition>Hero AdventureAssembly.Units.Heroes.HeroManager._heroPrefab</definition>
+        <argsstring></argsstring>
+        <name>_heroPrefab</name>
+        <qualifiedname>AdventureAssembly.Units.Heroes.HeroManager._heroPrefab</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/HeroManager.cs" line="17" column="23" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/HeroManager.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_manager_1aacaf622bdae958f23da24d9c7b208edf" prot="private" static="no" mutable="no">
+        <type>Dictionary&lt; Vector2Int, <ref refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero" kindref="compound">Hero</ref> &gt;</type>
+        <definition>Dictionary&lt;Vector2Int, Hero&gt; AdventureAssembly.Units.Heroes.HeroManager._heroPositions</definition>
+        <argsstring></argsstring>
+        <name>_heroPositions</name>
+        <qualifiedname>AdventureAssembly.Units.Heroes.HeroManager._heroPositions</qualifiedname>
+        <initializer>= new Dictionary&lt;Vector2Int, <ref refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero" kindref="compound">Hero</ref>&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/HeroManager.cs" line="32" column="28" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/HeroManager.cs" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_manager_1ade48eefc6cd0308224c0073c7a4a5357" prot="private" static="no" mutable="no">
+        <type>Coroutine</type>
+        <definition>Coroutine AdventureAssembly.Units.Heroes.HeroManager._updateCoroutine</definition>
+        <argsstring></argsstring>
+        <name>_updateCoroutine</name>
+        <qualifiedname>AdventureAssembly.Units.Heroes.HeroManager._updateCoroutine</qualifiedname>
+        <initializer>= null</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/HeroManager.cs" line="35" column="27" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/HeroManager.cs" bodystart="35" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_manager_1a2458d46868e68ef828c2b1349296df24" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>float</type>
+        <definition>float AdventureAssembly.Units.Heroes.HeroManager.UpdateInterval</definition>
+        <argsstring></argsstring>
+        <name>UpdateInterval</name>
+        <qualifiedname>AdventureAssembly.Units.Heroes.HeroManager.UpdateInterval</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/HeroManager.cs" line="22" column="23" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/HeroManager.cs" bodystart="22" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="property" id="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_manager_1a0756922a36407443f8af2f378f643e9e" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>LayerMask</type>
+        <definition>LayerMask AdventureAssembly.Units.Heroes.HeroManager.HazardLayerMask</definition>
+        <argsstring></argsstring>
+        <name>HazardLayerMask</name>
+        <qualifiedname>AdventureAssembly.Units.Heroes.HeroManager.HazardLayerMask</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/HeroManager.cs" line="24" column="27" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/HeroManager.cs" bodystart="24" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="property" id="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_manager_1a24db7e94f3c6152cda78678d13c6bfc8" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>Vector2Int</type>
+        <definition>Vector2Int AdventureAssembly.Units.Heroes.HeroManager.NextMovementVector</definition>
+        <argsstring></argsstring>
+        <name>NextMovementVector</name>
+        <qualifiedname>AdventureAssembly.Units.Heroes.HeroManager.NextMovementVector</qualifiedname>
+        <initializer>= Vector2Int.up</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/HeroManager.cs" line="26" column="27" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/HeroManager.cs" bodystart="26" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="property" id="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_manager_1a024badb2e1543a83dfbf6e4de85ff331" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>Vector2Int</type>
+        <definition>Vector2Int AdventureAssembly.Units.Heroes.HeroManager.LastMovementVector</definition>
+        <argsstring></argsstring>
+        <name>LastMovementVector</name>
+        <qualifiedname>AdventureAssembly.Units.Heroes.HeroManager.LastMovementVector</qualifiedname>
+        <initializer>= Vector2Int.zero</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/HeroManager.cs" line="27" column="27" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/HeroManager.cs" bodystart="27" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="property" id="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_manager_1a14decb34fd4b770b5cc2a44d76fe84cc" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>Vector2Int</type>
+        <definition>Vector2Int AdventureAssembly.Units.Heroes.HeroManager.HorizontalMovementVector</definition>
+        <argsstring></argsstring>
+        <name>HorizontalMovementVector</name>
+        <qualifiedname>AdventureAssembly.Units.Heroes.HeroManager.HorizontalMovementVector</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/HeroManager.cs" line="28" column="27" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/HeroManager.cs" bodystart="28" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="property" id="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_manager_1ab0a910519c24cb4f7981d1f5a15b206f" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>Vector2Int</type>
+        <definition>Vector2Int AdventureAssembly.Units.Heroes.HeroManager.VerticalMovementVector</definition>
+        <argsstring></argsstring>
+        <name>VerticalMovementVector</name>
+        <qualifiedname>AdventureAssembly.Units.Heroes.HeroManager.VerticalMovementVector</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/HeroManager.cs" line="29" column="27" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/HeroManager.cs" bodystart="29" bodyend="29"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_manager_1a96c4810f9181121922650d0e12b2571e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AdventureAssembly.Units.Heroes.HeroManager.OnEnable</definition>
+        <argsstring>()</argsstring>
+        <name>OnEnable</name>
+        <qualifiedname>AdventureAssembly.Units.Heroes.HeroManager.OnEnable</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/HeroManager.cs" line="37" column="22" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/HeroManager.cs" bodystart="37" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_manager_1a10fd1caea69717917b47f8ac2a8703b7" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AdventureAssembly.Units.Heroes.HeroManager.OnDisable</definition>
+        <argsstring>()</argsstring>
+        <name>OnDisable</name>
+        <qualifiedname>AdventureAssembly.Units.Heroes.HeroManager.OnDisable</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/HeroManager.cs" line="45" column="22" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/HeroManager.cs" bodystart="45" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_manager_1a5d8f656aa05ca8d87df0d7b584ffe424" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IEnumerator</type>
+        <definition>IEnumerator AdventureAssembly.Units.Heroes.HeroManager.UpdateCoroutine</definition>
+        <argsstring>()</argsstring>
+        <name>UpdateCoroutine</name>
+        <qualifiedname>AdventureAssembly.Units.Heroes.HeroManager.UpdateCoroutine</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/HeroManager.cs" line="51" column="29" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/HeroManager.cs" bodystart="51" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_manager_1af849c8745b633f9b32bb1316e7b9eb7d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AdventureAssembly.Units.Heroes.HeroManager.OnMovementVectorChanged</definition>
+        <argsstring>(Vector2Int direction)</argsstring>
+        <name>OnMovementVectorChanged</name>
+        <qualifiedname>AdventureAssembly.Units.Heroes.HeroManager.OnMovementVectorChanged</qualifiedname>
+        <param>
+          <type>Vector2Int</type>
+          <declname>direction</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/HeroManager.cs" line="63" column="22" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/HeroManager.cs" bodystart="63" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_manager_1a317d7dec2daefe1bfd971df0026223ab" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AdventureAssembly.Units.Heroes.HeroManager.OnHeroDied</definition>
+        <argsstring>(Unit unit)</argsstring>
+        <name>OnHeroDied</name>
+        <qualifiedname>AdventureAssembly.Units.Heroes.HeroManager.OnHeroDied</qualifiedname>
+        <param>
+          <type><ref refid="class_adventure_assembly_1_1_units_1_1_unit" kindref="compound">Unit</ref></type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/HeroManager.cs" line="74" column="22" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/HeroManager.cs" bodystart="74" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_manager_1a5abb756b61b056fed938025cbe9c0fe4" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AdventureAssembly.Units.Heroes.HeroManager.OnTurnUpdate</definition>
+        <argsstring>()</argsstring>
+        <name>OnTurnUpdate</name>
+        <qualifiedname>AdventureAssembly.Units.Heroes.HeroManager.OnTurnUpdate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/HeroManager.cs" line="79" column="22" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/HeroManager.cs" bodystart="79" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_manager_1aa5ec8529115aedbe50c93eb33cd5504a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AdventureAssembly.Units.Heroes.HeroManager.UpdateUnitPositions</definition>
+        <argsstring>()</argsstring>
+        <name>UpdateUnitPositions</name>
+        <qualifiedname>AdventureAssembly.Units.Heroes.HeroManager.UpdateUnitPositions</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/HeroManager.cs" line="84" column="22" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/HeroManager.cs" bodystart="84" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_manager_1a238a7ff68e2526cbab0f27a8db69c6f5" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool AdventureAssembly.Units.Heroes.HeroManager.IsHazardAtPosition</definition>
+        <argsstring>(Vector2Int position)</argsstring>
+        <name>IsHazardAtPosition</name>
+        <qualifiedname>AdventureAssembly.Units.Heroes.HeroManager.IsHazardAtPosition</qualifiedname>
+        <param>
+          <type>Vector2Int</type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/HeroManager.cs" line="142" column="22" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/HeroManager.cs" bodystart="142" bodyend="145"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_manager_1a6d7c5c41bb33a8d9edbeff97e56cb12a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AdventureAssembly.Units.Heroes.HeroManager.SpawnHero</definition>
+        <argsstring>(HeroData heroData)</argsstring>
+        <name>SpawnHero</name>
+        <qualifiedname>AdventureAssembly.Units.Heroes.HeroManager.SpawnHero</qualifiedname>
+        <param>
+          <type><ref refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_data" kindref="compound">HeroData</ref></type>
+          <declname>heroData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/HeroManager.cs" line="147" column="21" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/HeroManager.cs" bodystart="147" bodyend="167"/>
+      </memberdef>
+      <memberdef kind="function" id="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_manager_1a83ab1667efc226f7df884f7f9803fa49" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void AdventureAssembly.Units.Heroes.HeroManager.AddUnit</definition>
+        <argsstring>(Hero hero)</argsstring>
+        <name>AddUnit</name>
+        <qualifiedname>AdventureAssembly.Units.Heroes.HeroManager.AddUnit</qualifiedname>
+        <param>
+          <type><ref refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero" kindref="compound">Hero</ref></type>
+          <declname>hero</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/HeroManager.cs" line="169" column="30" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/HeroManager.cs" bodystart="169" bodyend="173"/>
+      </memberdef>
+      <memberdef kind="function" id="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_manager_1aa940327f305685105c4b00918024f1ae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void AdventureAssembly.Units.Heroes.HeroManager.RemoveUnit</definition>
+        <argsstring>(Hero hero)</argsstring>
+        <name>RemoveUnit</name>
+        <qualifiedname>AdventureAssembly.Units.Heroes.HeroManager.RemoveUnit</qualifiedname>
+        <param>
+          <type><ref refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero" kindref="compound">Hero</ref></type>
+          <declname>hero</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/HeroManager.cs" line="175" column="30" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/HeroManager.cs" bodystart="175" bodyend="180"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>AdventureAssembly.Units.Heroes.HeroManager</label>
+        <link refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UnitManager&lt; Hero &gt;</label>
+        <link refid="class_adventure_assembly_1_1_units_1_1_unit_manager"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>AdventureAssembly.Units.Heroes.HeroManager</label>
+        <link refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UnitManager&lt; Hero &gt;</label>
+        <link refid="class_adventure_assembly_1_1_units_1_1_unit_manager"/>
+      </node>
+    </collaborationgraph>
+    <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/HeroManager.cs" line="13" column="11" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/HeroManager.cs" bodystart="14" bodyend="181"/>
+    <listofallmembers>
+      <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_manager_1aacaf622bdae958f23da24d9c7b208edf" prot="private" virt="non-virtual"><scope>AdventureAssembly::Units::Heroes::HeroManager</scope><name>_heroPositions</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_manager_1a98a6d56665575cdab578613c783f0cc1" prot="private" virt="non-virtual"><scope>AdventureAssembly::Units::Heroes::HeroManager</scope><name>_heroPrefab</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_manager_1ade48eefc6cd0308224c0073c7a4a5357" prot="private" virt="non-virtual"><scope>AdventureAssembly::Units::Heroes::HeroManager</scope><name>_updateCoroutine</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_unit_manager_1aff9d4b068be7ed9986a7e626b844799c" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::Heroes::HeroManager</scope><name>AddModifier</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_manager_1a83ab1667efc226f7df884f7f9803fa49" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::Heroes::HeroManager</scope><name>AddUnit</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_unit_manager_1ae0aba3ed84df68725ee6e82050b2921d" prot="public" virt="virtual" ambiguityscope="UnitManager&lt; Hero &gt;."><scope>AdventureAssembly::Units::Heroes::HeroManager</scope><name>AddUnit</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_unit_manager_1aa2fde2933a1692469ae2093448ee94f1" prot="protected" virt="non-virtual"><scope>AdventureAssembly::Units::Heroes::HeroManager</scope><name>ApplyAllModifiers</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_unit_manager_1a9c20545856d094b8ffb7d74276f865ca" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::Heroes::HeroManager</scope><name>GetNearestUnit</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_unit_manager_1a30c7b516eaea1e15d7f5bb23c16b388b" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::Heroes::HeroManager</scope><name>HasUnitAtPosition</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_manager_1a0756922a36407443f8af2f378f643e9e" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::Heroes::HeroManager</scope><name>HazardLayerMask</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_manager_1a14decb34fd4b770b5cc2a44d76fe84cc" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::Heroes::HeroManager</scope><name>HorizontalMovementVector</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_manager_1a238a7ff68e2526cbab0f27a8db69c6f5" prot="private" virt="non-virtual"><scope>AdventureAssembly::Units::Heroes::HeroManager</scope><name>IsHazardAtPosition</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_manager_1a024badb2e1543a83dfbf6e4de85ff331" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::Heroes::HeroManager</scope><name>LastMovementVector</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_unit_manager_1a161d885a0d5c68f361fae56a6448b145" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::Heroes::HeroManager</scope><name>Modifiers</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_manager_1a24db7e94f3c6152cda78678d13c6bfc8" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::Heroes::HeroManager</scope><name>NextMovementVector</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_manager_1a10fd1caea69717917b47f8ac2a8703b7" prot="private" virt="non-virtual"><scope>AdventureAssembly::Units::Heroes::HeroManager</scope><name>OnDisable</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_manager_1a96c4810f9181121922650d0e12b2571e" prot="private" virt="non-virtual"><scope>AdventureAssembly::Units::Heroes::HeroManager</scope><name>OnEnable</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_manager_1a317d7dec2daefe1bfd971df0026223ab" prot="private" virt="non-virtual"><scope>AdventureAssembly::Units::Heroes::HeroManager</scope><name>OnHeroDied</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_manager_1af849c8745b633f9b32bb1316e7b9eb7d" prot="private" virt="non-virtual"><scope>AdventureAssembly::Units::Heroes::HeroManager</scope><name>OnMovementVectorChanged</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_manager_1a5abb756b61b056fed938025cbe9c0fe4" prot="private" virt="non-virtual"><scope>AdventureAssembly::Units::Heroes::HeroManager</scope><name>OnTurnUpdate</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_unit_manager_1ab3e50a5bd1e7589712693e0b3c8d1f12" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::Heroes::HeroManager</scope><name>RemoveModifier</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_manager_1aa940327f305685105c4b00918024f1ae" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::Heroes::HeroManager</scope><name>RemoveUnit</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_unit_manager_1a32df56cbeb18c74e7613e4712d02cc42" prot="public" virt="virtual" ambiguityscope="UnitManager&lt; Hero &gt;."><scope>AdventureAssembly::Units::Heroes::HeroManager</scope><name>RemoveUnit</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_manager_1a6d7c5c41bb33a8d9edbeff97e56cb12a" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::Heroes::HeroManager</scope><name>SpawnHero</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_unit_manager_1a5a409f68cd594daaaf44db79088ccae2" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::Heroes::HeroManager</scope><name>Units</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_manager_1a5d8f656aa05ca8d87df0d7b584ffe424" prot="private" virt="non-virtual"><scope>AdventureAssembly::Units::Heroes::HeroManager</scope><name>UpdateCoroutine</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_manager_1a2458d46868e68ef828c2b1349296df24" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::Heroes::HeroManager</scope><name>UpdateInterval</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_manager_1aa5ec8529115aedbe50c93eb33cd5504a" prot="private" virt="non-virtual"><scope>AdventureAssembly::Units::Heroes::HeroManager</scope><name>UpdateUnitPositions</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_manager_1ab0a910519c24cb4f7981d1f5a15b206f" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::Heroes::HeroManager</scope><name>VerticalMovementVector</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

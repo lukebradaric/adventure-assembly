@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="_debug_open_chest_8cs" kind="file" language="C#">
+    <compoundname>DebugOpenChest.cs</compoundname>
+    <innerclass refid="class_adventure_assembly_1_1_debug_1_1_debug_open_chest" prot="public">AdventureAssembly::Debug::DebugOpenChest</innerclass>
+    <innernamespace refid="namespace_adventure_assembly">AdventureAssembly</innernamespace>
+    <innernamespace refid="namespace_adventure_assembly_1_1_debug">AdventureAssembly::Debug</innernamespace>
+    <innernamespace refid="namespace_system_1_1_collections_1_1_generic">System::Collections::Generic</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespace_adventure_assembly_1_1_interface" kindref="compound">AdventureAssembly.Interface</ref>;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespace_adventure_assembly_1_1_units_1_1_heroes" kindref="compound">AdventureAssembly.Units.Heroes</ref>;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">System.Collections.Generic;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">UnityEngine;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_adventure_assembly_1_1_debug" kindref="compound">AdventureAssembly.Debug</ref></highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8" refid="class_adventure_assembly_1_1_debug_1_1_debug_open_chest" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_adventure_assembly_1_1_debug_1_1_debug_open_chest" kindref="compound">DebugOpenChest</ref><sp/>:<sp/><ref refid="class_adventure_assembly_1_1_debug_1_1_debug_key_press" kindref="compound">DebugKeyPress</ref></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[SerializeField]<sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>List&lt;HeroData&gt;<sp/>heroData<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>List&lt;HeroData&gt;();</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_adventure_assembly_1_1_debug_1_1_debug_open_chest_1a8ea433c7a306bb06d4ef7fe6115734dd" kindref="member">DebugKeyPressed</ref>()</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(heroData.Count<sp/>&gt;<sp/>3)</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UnityEngine.Debug.LogError(</highlight><highlight class="stringliteral">&quot;Cannot<sp/>provide<sp/>HeroSelectionInterface<sp/>with<sp/>more<sp/>than<sp/>3<sp/>hero<sp/>data!<sp/>This<sp/>is<sp/>a<sp/>debugging<sp/>tool<sp/>for<sp/>opening<sp/>chests.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_adventure_assembly_1_1_interface_1_1_interface_manager" kindref="compound">InterfaceManager</ref>.Instance.<ref refid="class_adventure_assembly_1_1_interface_1_1_interface_manager_1af1d33aeb859087298c0a253c1eaf8abc" kindref="member">HeroSelectionInterface</ref>.<ref refid="class_adventure_assembly_1_1_interface_1_1_hero_selection_interface_1a04d5f4ffec2c885a55817ffa4223df4a" kindref="member">Show</ref>(heroData);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Debug/DebugOpenChest.cs"/>
+  </compounddef>
+</doxygen>

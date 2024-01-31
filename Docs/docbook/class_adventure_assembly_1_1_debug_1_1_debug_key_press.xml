@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_adventure_assembly_1_1_debug_1_1_debug_key_press" xml:lang="en-US">
+<title>AdventureAssembly.Debug.DebugKeyPress Class Reference</title>
+<indexterm><primary>AdventureAssembly.Debug.DebugKeyPress</primary></indexterm>
+<para>Inheritance diagram for AdventureAssembly.Debug.DebugKeyPress:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_adventure_assembly_1_1_debug_1_1_debug_key_press.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_adventure_assembly_1_1_debug_1_1_debug_key_press_1a6cfb9ebeb46d46b3a461d28c70c7bd8f">DebugKeyPressed</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Protected Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>virtual void <link linkend="_class_adventure_assembly_1_1_debug_1_1_debug_key_press_1a7197c2d043820047eb4a37322cb73627">Update</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_adventure_assembly_1_1_debug_1_1_debug_key_press_1a6cfb9ebeb46d46b3a461d28c70c7bd8f"/><section>
+    <title>DebugKeyPressed()</title>
+<indexterm><primary>DebugKeyPressed</primary><secondary>AdventureAssembly.Debug.DebugKeyPress</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Debug.DebugKeyPress</primary><secondary>DebugKeyPressed</secondary></indexterm>
+<para><computeroutput>void AdventureAssembly.Debug.DebugKeyPress.DebugKeyPressed ( )<computeroutput>[abstract]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_adventure_assembly_1_1_debug_1_1_debug_key_press_1a7197c2d043820047eb4a37322cb73627"/><section>
+    <title>Update()</title>
+<indexterm><primary>Update</primary><secondary>AdventureAssembly.Debug.DebugKeyPress</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Debug.DebugKeyPress</primary><secondary>Update</secondary></indexterm>
+<para><computeroutput>virtual void AdventureAssembly.Debug.DebugKeyPress.Update ( )<computeroutput>[protected]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+D:/Unity/Projects/adventure-assembly/Assets/Scripts/Debug/<link linkend="__debug_key_press_8cs">DebugKeyPress.cs</link></section>
+</section>

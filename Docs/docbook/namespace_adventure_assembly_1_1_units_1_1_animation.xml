@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespace_adventure_assembly_1_1_units_1_1_animation" xml:lang="en-US">
+<title>AdventureAssembly.Units.Animation Namespace Reference</title>
+<indexterm><primary>AdventureAssembly.Units.Animation</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_adventure_assembly_1_1_units_1_1_animation_1_1_default_unit_movement_tween">DefaultUnitMovementTween</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_adventure_assembly_1_1_units_1_1_animation_1_1_unit_movement_tween">UnitMovementTween</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

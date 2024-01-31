@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__enemy_spawner_8cs" xml:lang="en-US">
+<title>D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Enemies/EnemySpawner.cs File Reference</title>
+<indexterm><primary>D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Enemies/EnemySpawner.cs</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>struct <emphasis role="strong">AdventureAssembly.Units.Enemies.EnemySpawnData</emphasis></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_spawner">AdventureAssembly.Units.Enemies.EnemySpawner</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespace_adventure_assembly">AdventureAssembly</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespace_adventure_assembly_1_1_units">AdventureAssembly.Units</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespace_adventure_assembly_1_1_units_1_1_enemies">AdventureAssembly.Units.Enemies</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

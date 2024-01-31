@@ -1,0 +1,100 @@
+.TH "AdventureAssembly.Units.Enemies.Enemy" 3 "AdventureAssembly" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+AdventureAssembly.Units.Enemies.Enemy
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBAdventureAssembly\&.Units\&.Unit\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "override void \fBInitialize\fP (\fBUnitData\fP unitData, Vector2Int position)"
+.br
+.ti -1c
+.RI "override void \fBDie\fP ()"
+.br
+.in -1c
+
+Public Member Functions inherited from \fBAdventureAssembly\&.Units\&.Unit\fP
+.in +1c
+.ti -1c
+.RI "virtual void \fBOnUpdate\fP (float time)"
+.br
+.ti -1c
+.RI "virtual void \fBMove\fP (Vector2Int direction)"
+.br
+.ti -1c
+.RI "virtual void \fBDamage\fP (\fBDamageData\fP damageData)"
+.br
+.ti -1c
+.RI "virtual void \fBFlipSprite\fP (int x)"
+.br
+.in -1c
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "new \fBEnemyStats\fP \fBStats\fP\fR [get]\fP"
+.br
+.ti -1c
+.RI "\fBEnemyData\fP \fBEnemyData\fP\fR [get]\fP"
+.br
+.in -1c
+
+Properties inherited from \fBAdventureAssembly\&.Units\&.Unit\fP
+.in +1c
+.ti -1c
+.RI "SpriteRenderer \fBSpriteRenderer\fP\fR [get]\fP"
+.br
+.ti -1c
+.RI "virtual \fBUnitStats\fP \fBStats\fP\fR [get]\fP"
+.br
+.ti -1c
+.RI "\fBUnitData\fP \fBUnitData\fP\fR [get]\fP"
+.br
+.ti -1c
+.RI "int \fBCurrentHealth\fP\fR [get, protected set]\fP"
+.br
+.ti -1c
+.RI "Vector2Int \fBPosition\fP = Vector2Int\&.zero\fR [get, protected set]\fP"
+.br
+.ti -1c
+.RI "Vector2Int \fBLastPosition\fP\fR [get, protected set]\fP"
+.br
+.ti -1c
+.RI "bool \fBIsDead\fP = false\fR [get, protected set]\fP"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+
+
+Events inherited from \fBAdventureAssembly\&.Units\&.Unit\fP
+.in +1c
+.ti -1c
+.RI "Action< \fBUnit\fP > \fBDied\fP"
+.br
+.in -1c
+.SH "Member Function Documentation"
+.PP 
+.SS "override void AdventureAssembly\&.Units\&.Enemies\&.Enemy\&.Die ()\fR [virtual]\fP"
+
+.PP
+Reimplemented from \fBAdventureAssembly\&.Units\&.Unit\fP\&.
+.SS "override void AdventureAssembly\&.Units\&.Enemies\&.Enemy\&.Initialize (\fBUnitData\fP unitData, Vector2Int position)\fR [virtual]\fP"
+
+.PP
+Reimplemented from \fBAdventureAssembly\&.Units\&.Unit\fP\&.
+.SH "Property Documentation"
+.PP 
+.SS "\fBEnemyData\fP AdventureAssembly\&.Units\&.Enemies\&.Enemy\&.EnemyData\fR [get]\fP"
+
+.SS "new \fBEnemyStats\fP AdventureAssembly\&.Units\&.Enemies\&.Enemy\&.Stats\fR [get]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for AdventureAssembly from the source code\&.

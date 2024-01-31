@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_adventure_assembly_1_1_units_1_1_tests_1_1_test_enemy_modifier" xml:lang="en-US">
+<title>AdventureAssembly.Units.Tests.TestEnemyModifier Class Reference</title>
+<indexterm><primary>AdventureAssembly.Units.Tests.TestEnemyModifier</primary></indexterm>
+<para>Inheritance diagram for AdventureAssembly.Units.Tests.TestEnemyModifier:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_adventure_assembly_1_1_units_1_1_tests_1_1_test_enemy_modifier.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_data">EnemyData</link> <link linkend="_class_adventure_assembly_1_1_units_1_1_tests_1_1_test_enemy_modifier_1acbac2a02750e70846d53df02acea9672">enemyData</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_adventure_assembly_1_1_units_1_1_tests_1_1_test_enemy_modifier_1acbac2a02750e70846d53df02acea9672"/><section>
+    <title>enemyData</title>
+<indexterm><primary>enemyData</primary><secondary>AdventureAssembly.Units.Tests.TestEnemyModifier</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Units.Tests.TestEnemyModifier</primary><secondary>enemyData</secondary></indexterm>
+<para><computeroutput><link linkend="_class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_data">EnemyData</link> AdventureAssembly.Units.Tests.TestEnemyModifier.enemyData</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Tests/<link linkend="__test_enemy_modifier_8cs">TestEnemyModifier.cs</link></section>
+</section>

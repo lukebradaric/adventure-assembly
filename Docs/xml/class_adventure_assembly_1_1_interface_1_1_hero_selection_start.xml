@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_adventure_assembly_1_1_interface_1_1_hero_selection_start" kind="class" language="C#" prot="public">
+    <compoundname>AdventureAssembly::Interface::HeroSelectionStart</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_adventure_assembly_1_1_interface_1_1_hero_selection_start_1a95349a3e79886da31640794315f8293c" prot="public" static="no" mutable="no">
+        <type>List&lt; <ref refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_data" kindref="compound">HeroData</ref> &gt;</type>
+        <definition>List&lt;HeroData&gt; AdventureAssembly.Interface.HeroSelectionStart.heroData</definition>
+        <argsstring></argsstring>
+        <name>heroData</name>
+        <qualifiedname>AdventureAssembly.Interface.HeroSelectionStart.heroData</qualifiedname>
+        <initializer>= new List&lt;<ref refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_data" kindref="compound">HeroData</ref>&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Interface/HeroSelectionStart.cs" line="9" column="21" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Interface/HeroSelectionStart.cs" bodystart="9" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_adventure_assembly_1_1_interface_1_1_hero_selection_start_1ac3db21d00682d36df888c7fbf3127a67" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AdventureAssembly.Interface.HeroSelectionStart.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <qualifiedname>AdventureAssembly.Interface.HeroSelectionStart.Start</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Interface/HeroSelectionStart.cs" line="11" column="22" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Interface/HeroSelectionStart.cs" bodystart="11" bodyend="14"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>AdventureAssembly.Interface.HeroSelectionStart</label>
+        <link refid="class_adventure_assembly_1_1_interface_1_1_hero_selection_start"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>AdventureAssembly.Interface.HeroSelectionStart</label>
+        <link refid="class_adventure_assembly_1_1_interface_1_1_hero_selection_start"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Interface/HeroSelectionStart.cs" line="7" column="11" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Interface/HeroSelectionStart.cs" bodystart="8" bodyend="15"/>
+    <listofallmembers>
+      <member refid="class_adventure_assembly_1_1_interface_1_1_hero_selection_start_1a95349a3e79886da31640794315f8293c" prot="public" virt="non-virtual"><scope>AdventureAssembly::Interface::HeroSelectionStart</scope><name>heroData</name></member>
+      <member refid="class_adventure_assembly_1_1_interface_1_1_hero_selection_start_1ac3db21d00682d36df888c7fbf3127a67" prot="private" virt="non-virtual"><scope>AdventureAssembly::Interface::HeroSelectionStart</scope><name>Start</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

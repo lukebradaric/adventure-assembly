@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="namespace_adventure_assembly_1_1_core" kind="namespace" language="C#">
+    <compoundname>AdventureAssembly::Core</compoundname>
+    <innerclass refid="class_adventure_assembly_1_1_core_1_1_constants" prot="public">AdventureAssembly::Core::Constants</innerclass>
+    <innerclass refid="class_adventure_assembly_1_1_core_1_1_experience_manager" prot="public">AdventureAssembly::Core::ExperienceManager</innerclass>
+    <innerclass refid="class_adventure_assembly_1_1_core_1_1_gold_manager" prot="public">AdventureAssembly::Core::GoldManager</innerclass>
+    <innerclass refid="class_adventure_assembly_1_1_core_1_1_tick_manager" prot="public">AdventureAssembly::Core::TickManager</innerclass>
+    <innerclass refid="class_adventure_assembly_1_1_core_1_1_time_manager" prot="public">AdventureAssembly::Core::TimeManager</innerclass>
+    <innernamespace refid="namespace_adventure_assembly_1_1_core_1_1_bootstrap">AdventureAssembly::Core::Bootstrap</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Core/Bootstrap/Bootstrapper.cs" line="3" column="1"/>
+  </compounddef>
+</doxygen>

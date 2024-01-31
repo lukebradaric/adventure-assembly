@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="dir_07a82b8a61ef390e2ac25ea6e27e5186" kind="dir">
+    <compoundname>D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Enemies</compoundname>
+    <innerfile refid="_default_enemy_navigation_8cs">DefaultEnemyNavigation.cs</innerfile>
+    <innerfile refid="_enemy_8cs">Enemy.cs</innerfile>
+    <innerfile refid="_enemy_data_8cs">EnemyData.cs</innerfile>
+    <innerfile refid="_enemy_manager_8cs">EnemyManager.cs</innerfile>
+    <innerfile refid="_enemy_navigation_8cs">EnemyNavigation.cs</innerfile>
+    <innerfile refid="_enemy_spawner_8cs">EnemySpawner.cs</innerfile>
+    <innerfile refid="_enemy_stats_8cs">EnemyStats.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Enemies/"/>
+  </compounddef>
+</doxygen>

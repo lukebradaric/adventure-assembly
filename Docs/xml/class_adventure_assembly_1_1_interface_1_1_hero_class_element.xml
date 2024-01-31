@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_adventure_assembly_1_1_interface_1_1_hero_class_element" kind="class" language="C#" prot="public">
+    <compoundname>AdventureAssembly::Interface::HeroClassElement</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_adventure_assembly_1_1_interface_1_1_hero_class_element_1ac4b33fc99a8f08bf92e26f0e6c583bdf" prot="private" static="no" mutable="no">
+        <type>Image</type>
+        <definition>Image AdventureAssembly.Interface.HeroClassElement._backgroundImage</definition>
+        <argsstring></argsstring>
+        <name>_backgroundImage</name>
+        <qualifiedname>AdventureAssembly.Interface.HeroClassElement._backgroundImage</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Interface/HeroClassElement.cs" line="12" column="24" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Interface/HeroClassElement.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_adventure_assembly_1_1_interface_1_1_hero_class_element_1aed6fa6368fcab42fbe4fe6ea1f9eee2d" prot="private" static="no" mutable="no">
+        <type>TextMeshProUGUI</type>
+        <definition>TextMeshProUGUI AdventureAssembly.Interface.HeroClassElement._text</definition>
+        <argsstring></argsstring>
+        <name>_text</name>
+        <qualifiedname>AdventureAssembly.Interface.HeroClassElement._text</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Interface/HeroClassElement.cs" line="13" column="34" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Interface/HeroClassElement.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_adventure_assembly_1_1_interface_1_1_hero_class_element_1adaf1dddec3705d7b10349e58fac2d873" prot="private" static="no" mutable="no">
+        <type><ref refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_data" kindref="compound">ClassData</ref></type>
+        <definition>ClassData AdventureAssembly.Interface.HeroClassElement._classData</definition>
+        <argsstring></argsstring>
+        <name>_classData</name>
+        <qualifiedname>AdventureAssembly.Interface.HeroClassElement._classData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Interface/HeroClassElement.cs" line="15" column="27" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Interface/HeroClassElement.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_adventure_assembly_1_1_interface_1_1_hero_class_element_1a1a5be67bdb13bda1b524003ecf69865c" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_data" kindref="compound">ClassData</ref></type>
+        <definition>ClassData AdventureAssembly.Interface.HeroClassElement.ClassData</definition>
+        <argsstring></argsstring>
+        <name>ClassData</name>
+        <qualifiedname>AdventureAssembly.Interface.HeroClassElement.ClassData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Interface/HeroClassElement.cs" line="16" column="26" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Interface/HeroClassElement.cs" bodystart="17" bodyend="29"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>AdventureAssembly.Interface.HeroClassElement</label>
+        <link refid="class_adventure_assembly_1_1_interface_1_1_hero_class_element"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>AdventureAssembly.Interface.HeroClassElement</label>
+        <link refid="class_adventure_assembly_1_1_interface_1_1_hero_class_element"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Interface/HeroClassElement.cs" line="8" column="11" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Interface/HeroClassElement.cs" bodystart="9" bodyend="30"/>
+    <listofallmembers>
+      <member refid="class_adventure_assembly_1_1_interface_1_1_hero_class_element_1ac4b33fc99a8f08bf92e26f0e6c583bdf" prot="private" virt="non-virtual"><scope>AdventureAssembly::Interface::HeroClassElement</scope><name>_backgroundImage</name></member>
+      <member refid="class_adventure_assembly_1_1_interface_1_1_hero_class_element_1adaf1dddec3705d7b10349e58fac2d873" prot="private" virt="non-virtual"><scope>AdventureAssembly::Interface::HeroClassElement</scope><name>_classData</name></member>
+      <member refid="class_adventure_assembly_1_1_interface_1_1_hero_class_element_1aed6fa6368fcab42fbe4fe6ea1f9eee2d" prot="private" virt="non-virtual"><scope>AdventureAssembly::Interface::HeroClassElement</scope><name>_text</name></member>
+      <member refid="class_adventure_assembly_1_1_interface_1_1_hero_class_element_1a1a5be67bdb13bda1b524003ecf69865c" prot="public" virt="non-virtual"><scope>AdventureAssembly::Interface::HeroClassElement</scope><name>ClassData</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_adventure_assembly_1_1_core_1_1_time_manager" kind="class" language="C#" prot="public">
+    <compoundname>AdventureAssembly::Core::TimeManager</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_adventure_assembly_1_1_core_1_1_time_manager_1afd407f4f20376c0a9cb81c2d2ea70303" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void AdventureAssembly.Core.TimeManager.Pause</definition>
+        <argsstring>()</argsstring>
+        <name>Pause</name>
+        <qualifiedname>AdventureAssembly.Core.TimeManager.Pause</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Core/TimeManager.cs" line="8" column="28" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Core/TimeManager.cs" bodystart="8" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="function" id="class_adventure_assembly_1_1_core_1_1_time_manager_1aa50b76fb213f82e78c2f6576073b7af1" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void AdventureAssembly.Core.TimeManager.Unpause</definition>
+        <argsstring>()</argsstring>
+        <name>Unpause</name>
+        <qualifiedname>AdventureAssembly.Core.TimeManager.Unpause</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Core/TimeManager.cs" line="14" column="28" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Core/TimeManager.cs" bodystart="14" bodyend="17"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>AdventureAssembly.Core.TimeManager</label>
+        <link refid="class_adventure_assembly_1_1_core_1_1_time_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>AdventureAssembly.Core.TimeManager</label>
+        <link refid="class_adventure_assembly_1_1_core_1_1_time_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Core/TimeManager.cs" line="5" column="11" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Core/TimeManager.cs" bodystart="6" bodyend="18"/>
+    <listofallmembers>
+      <member refid="class_adventure_assembly_1_1_core_1_1_time_manager_1afd407f4f20376c0a9cb81c2d2ea70303" prot="public" virt="non-virtual"><scope>AdventureAssembly::Core::TimeManager</scope><name>Pause</name></member>
+      <member refid="class_adventure_assembly_1_1_core_1_1_time_manager_1aa50b76fb213f82e78c2f6576073b7af1" prot="public" virt="non-virtual"><scope>AdventureAssembly::Core::TimeManager</scope><name>Unpause</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

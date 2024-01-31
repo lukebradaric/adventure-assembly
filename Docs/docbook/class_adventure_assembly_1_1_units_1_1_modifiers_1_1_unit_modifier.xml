@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_adventure_assembly_1_1_units_1_1_modifiers_1_1_unit_modifier" xml:lang="en-US">
+<title>AdventureAssembly.Units.Modifiers.UnitModifier Class Reference</title>
+<indexterm><primary>AdventureAssembly.Units.Modifiers.UnitModifier</primary></indexterm>
+<para>Inheritance diagram for AdventureAssembly.Units.Modifiers.UnitModifier:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_adventure_assembly_1_1_units_1_1_modifiers_1_1_unit_modifier.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_adventure_assembly_1_1_units_1_1_modifiers_1_1_unit_modifier_1a95e0ec4898b322ccf1fb7b151c9d0638">Apply</link> (<link linkend="_class_adventure_assembly_1_1_units_1_1_unit">Unit</link> unit)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_adventure_assembly_1_1_units_1_1_modifiers_1_1_unit_modifier_1acd947b8858afe54670ddc0d091b62622">Remove</link> (<link linkend="_class_adventure_assembly_1_1_units_1_1_unit">Unit</link> unit)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_adventure_assembly_1_1_units_1_1_modifiers_1_1_unit_modifier_1a95e0ec4898b322ccf1fb7b151c9d0638"/><section>
+    <title>Apply()</title>
+<indexterm><primary>Apply</primary><secondary>AdventureAssembly.Units.Modifiers.UnitModifier</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Units.Modifiers.UnitModifier</primary><secondary>Apply</secondary></indexterm>
+<para><computeroutput>void AdventureAssembly.Units.Modifiers.UnitModifier.Apply (<link linkend="_class_adventure_assembly_1_1_units_1_1_unit">Unit</link> unit)<computeroutput>[abstract]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_adventure_assembly_1_1_units_1_1_modifiers_1_1_unit_modifier_1acd947b8858afe54670ddc0d091b62622"/><section>
+    <title>Remove()</title>
+<indexterm><primary>Remove</primary><secondary>AdventureAssembly.Units.Modifiers.UnitModifier</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Units.Modifiers.UnitModifier</primary><secondary>Remove</secondary></indexterm>
+<para><computeroutput>void AdventureAssembly.Units.Modifiers.UnitModifier.Remove (<link linkend="_class_adventure_assembly_1_1_units_1_1_unit">Unit</link> unit)<computeroutput>[abstract]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Modifiers/<link linkend="__unit_modifier_8cs">UnitModifier.cs</link></section>
+</section>

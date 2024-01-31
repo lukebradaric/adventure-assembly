@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="struct_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_spawn_data" kind="struct" language="C#" prot="package">
+    <compoundname>AdventureAssembly::Units::Enemies::EnemySpawnData</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_spawn_data_1a45e04e1273a87c1025b2114c7e28caf8" prot="public" static="no" mutable="no">
+        <type><ref refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_data" kindref="compound">EnemyData</ref></type>
+        <definition>EnemyData AdventureAssembly.Units.Enemies.EnemySpawnData.EnemyData</definition>
+        <argsstring></argsstring>
+        <name>EnemyData</name>
+        <qualifiedname>AdventureAssembly.Units.Enemies.EnemySpawnData.EnemyData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Enemies/EnemySpawner.cs" line="12" column="26" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Enemies/EnemySpawner.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_spawn_data_1a96c8a31a92d75d6e0f45c2a10f87b8d9" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AdventureAssembly.Units.Enemies.EnemySpawnData.Weight</definition>
+        <argsstring></argsstring>
+        <name>Weight</name>
+        <qualifiedname>AdventureAssembly.Units.Enemies.EnemySpawnData.Weight</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Enemies/EnemySpawner.cs" line="13" column="20" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Enemies/EnemySpawner.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>AdventureAssembly.Units.Enemies.EnemySpawnData</label>
+        <childnode refid="2" relation="usage">
+          <edgelabel>EnemyData</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>AdventureAssembly.Units.Enemies.EnemyData</label>
+        <link refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_data"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>SerializedScriptableObject</label>
+      </node>
+      <node id="3">
+        <label>UnitData</label>
+        <link refid="class_adventure_assembly_1_1_units_1_1_unit_data"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Enemies/EnemySpawner.cs" line="10" column="13" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Enemies/EnemySpawner.cs" bodystart="11" bodyend="14"/>
+    <listofallmembers>
+      <member refid="struct_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_spawn_data_1a45e04e1273a87c1025b2114c7e28caf8" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::Enemies::EnemySpawnData</scope><name>EnemyData</name></member>
+      <member refid="struct_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_spawn_data_1a96c8a31a92d75d6e0f45c2a10f87b8d9" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::Enemies::EnemySpawnData</scope><name>Weight</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

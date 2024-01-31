@@ -1,0 +1,92 @@
+\doxysection{Adventure\+Assembly.\+Core.\+Gold\+Manager Class Reference}
+\hypertarget{class_adventure_assembly_1_1_core_1_1_gold_manager}{}\label{class_adventure_assembly_1_1_core_1_1_gold_manager}\index{AdventureAssembly.Core.GoldManager@{AdventureAssembly.Core.GoldManager}}
+
+
+Manager for adding and spending gold.  
+
+
+Inheritance diagram for Adventure\+Assembly.\+Core.\+Gold\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_adventure_assembly_1_1_core_1_1_gold_manager}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_adventure_assembly_1_1_core_1_1_gold_manager_ab0b9b358e127f14d3b75e42f0e8ddcac}{Add\+Gold}} (Vector2 position)
+\begin{DoxyCompactList}\small\item\em Adds gold with an in-\/game tweening animation. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_adventure_assembly_1_1_core_1_1_gold_manager_a1c2cd8b1c5e160dfbff05e692b8e37ee}{Add\+Gold}} (Vector2 position, int amount)
+\begin{DoxyCompactList}\small\item\em Adds multiple gold with an in-\/game tweening animation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{class_adventure_assembly_1_1_core_1_1_gold_manager_acfc23b01a393f04b5da265df90d90ec8}{Try\+Spend}} (int amount)
+\begin{DoxyCompactList}\small\item\em Tries to spend an amount of gold. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_adventure_assembly_1_1_core_1_1_gold_manager_a5d86e6053d11d4f10777ae9cc67a033b}\label{class_adventure_assembly_1_1_core_1_1_gold_manager_a5d86e6053d11d4f10777ae9cc67a033b} 
+static Observable$<$ int $>$ {\bfseries Current\+Gold} = new Observable$<$int$>$(0)\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The amount of gold the player currently has. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Manager for adding and spending gold. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_adventure_assembly_1_1_core_1_1_gold_manager_ab0b9b358e127f14d3b75e42f0e8ddcac}\label{class_adventure_assembly_1_1_core_1_1_gold_manager_ab0b9b358e127f14d3b75e42f0e8ddcac} 
+\index{AdventureAssembly.Core.GoldManager@{AdventureAssembly.Core.GoldManager}!AddGold@{AddGold}}
+\index{AddGold@{AddGold}!AdventureAssembly.Core.GoldManager@{AdventureAssembly.Core.GoldManager}}
+\doxysubsubsection{\texorpdfstring{AddGold()}{AddGold()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Adventure\+Assembly.\+Core.\+Gold\+Manager.\+Add\+Gold (\begin{DoxyParamCaption}\item[{Vector2}]{position }\end{DoxyParamCaption})}
+
+
+
+Adds gold with an in-\/game tweening animation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & The starting position to spawn the gold.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_adventure_assembly_1_1_core_1_1_gold_manager_a1c2cd8b1c5e160dfbff05e692b8e37ee}\label{class_adventure_assembly_1_1_core_1_1_gold_manager_a1c2cd8b1c5e160dfbff05e692b8e37ee} 
+\index{AdventureAssembly.Core.GoldManager@{AdventureAssembly.Core.GoldManager}!AddGold@{AddGold}}
+\index{AddGold@{AddGold}!AdventureAssembly.Core.GoldManager@{AdventureAssembly.Core.GoldManager}}
+\doxysubsubsection{\texorpdfstring{AddGold()}{AddGold()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Adventure\+Assembly.\+Core.\+Gold\+Manager.\+Add\+Gold (\begin{DoxyParamCaption}\item[{Vector2}]{position,  }\item[{int}]{amount }\end{DoxyParamCaption})}
+
+
+
+Adds multiple gold with an in-\/game tweening animation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & The starting position to spawn the gold.\\
+\hline
+{\em amount} & The amount of gold to add.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_adventure_assembly_1_1_core_1_1_gold_manager_acfc23b01a393f04b5da265df90d90ec8}\label{class_adventure_assembly_1_1_core_1_1_gold_manager_acfc23b01a393f04b5da265df90d90ec8} 
+\index{AdventureAssembly.Core.GoldManager@{AdventureAssembly.Core.GoldManager}!TrySpend@{TrySpend}}
+\index{TrySpend@{TrySpend}!AdventureAssembly.Core.GoldManager@{AdventureAssembly.Core.GoldManager}}
+\doxysubsubsection{\texorpdfstring{TrySpend()}{TrySpend()}}
+{\footnotesize\ttfamily static bool Adventure\+Assembly.\+Core.\+Gold\+Manager.\+Try\+Spend (\begin{DoxyParamCaption}\item[{int}]{amount }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Tries to spend an amount of gold. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em amount} & The amount of gold to spend.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the gold was succesfully spent. False if the gold was not spent.
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Unity/\+Projects/adventure-\/assembly/\+Assets/\+Scripts/\+Core/Gold\+Manager.\+cs\end{DoxyCompactItemize}

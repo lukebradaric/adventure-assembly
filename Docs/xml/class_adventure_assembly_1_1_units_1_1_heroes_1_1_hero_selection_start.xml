@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_selection_start" kind="class" language="C#" prot="public">
+    <compoundname>AdventureAssembly::Units::Heroes::HeroSelectionStart</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_selection_start_1a30179593f6640dd7900885ced8aa1458" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AdventureAssembly.Units.Heroes.HeroSelectionStart.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <qualifiedname>AdventureAssembly.Units.Heroes.HeroSelectionStart.Start</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/HeroSelectionStart.cs" line="7" column="22" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/HeroSelectionStart.cs" bodystart="7" bodyend="9"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>AdventureAssembly.Units.Heroes.HeroSelectionStart</label>
+        <link refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_selection_start"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>AdventureAssembly.Units.Heroes.HeroSelectionStart</label>
+        <link refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_selection_start"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/HeroSelectionStart.cs" line="5" column="11" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/HeroSelectionStart.cs" bodystart="6" bodyend="10"/>
+    <listofallmembers>
+      <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_selection_start_1a30179593f6640dd7900885ced8aa1458" prot="private" virt="non-virtual"><scope>AdventureAssembly::Units::Heroes::HeroSelectionStart</scope><name>Start</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

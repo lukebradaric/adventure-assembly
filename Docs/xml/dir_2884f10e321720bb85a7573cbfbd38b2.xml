@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="dir_2884f10e321720bb85a7573cbfbd38b2" kind="dir">
+    <compoundname>D:/Unity/Projects/adventure-assembly/Assets/Scripts/Tests/PlayMode</compoundname>
+    <innerfile refid="_unit_stats_tests_8cs">UnitStatsTests.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Tests/PlayMode/"/>
+  </compounddef>
+</doxygen>

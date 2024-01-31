@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_adventure_assembly_1_1_units_1_1_tests_1_1_default_stat_modifier" xml:lang="en-US">
+<title>AdventureAssembly.Units.Tests.DefaultStatModifier Class Reference</title>
+<indexterm><primary>AdventureAssembly.Units.Tests.DefaultStatModifier</primary></indexterm>
+<para>Inheritance diagram for AdventureAssembly.Units.Tests.DefaultStatModifier:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_adventure_assembly_1_1_units_1_1_tests_1_1_default_stat_modifier.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_adventure_assembly_1_1_units_1_1_tests_1_1_default_stat_modifier_1abe2ffd02286fcc6ca5e62cd1b80f110a">DefaultStatModifier</link> (float value=0f)</para>
+</listitem>
+            <listitem><para>override float <link linkend="_class_adventure_assembly_1_1_units_1_1_tests_1_1_default_stat_modifier_1a8e51d5133a2ad837841f580141d3cddf">Process</link> (float value)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public Member Functions inherited from <link linkend="_class_adventure_assembly_1_1_units_1_1_stat_modifier">AdventureAssembly.Units.StatModifier&lt; float &gt;</link>        <itemizedlist>
+            <listitem><para>T <link linkend="_class_adventure_assembly_1_1_units_1_1_stat_modifier_1ae05754daa96a6604549c0bef0ab89874">Process</link> (T value)</para>
+</listitem>
+        </itemizedlist>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_adventure_assembly_1_1_units_1_1_tests_1_1_default_stat_modifier_1abe2ffd02286fcc6ca5e62cd1b80f110a"/><section>
+    <title>DefaultStatModifier()</title>
+<indexterm><primary>DefaultStatModifier</primary><secondary>AdventureAssembly.Units.Tests.DefaultStatModifier</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Units.Tests.DefaultStatModifier</primary><secondary>DefaultStatModifier</secondary></indexterm>
+<para><computeroutput>AdventureAssembly.Units.Tests.DefaultStatModifier.DefaultStatModifier (float value = <computeroutput>0f</computeroutput>
+)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_adventure_assembly_1_1_units_1_1_tests_1_1_default_stat_modifier_1a8e51d5133a2ad837841f580141d3cddf"/><section>
+    <title>Process()</title>
+<indexterm><primary>Process</primary><secondary>AdventureAssembly.Units.Tests.DefaultStatModifier</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Units.Tests.DefaultStatModifier</primary><secondary>Process</secondary></indexterm>
+<para><computeroutput>override float AdventureAssembly.Units.Tests.DefaultStatModifier.Process (float value)</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Tests/<link linkend="__default_stat_modifier_8cs">DefaultStatModifier.cs</link></section>
+</section>

@@ -4,6 +4,9 @@ using UnityEngine;
 
 namespace AdventureAssembly.Core
 {
+    /// <summary>
+    /// Manager for keeping track of player experience and when to spawn to hero chests.
+    /// </summary>
     public class ExperienceManager : Singleton<ExperienceManager>
     {
         [Space]

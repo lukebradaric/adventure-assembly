@@ -1,0 +1,178 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_adventure_assembly_1_1_units_1_1_abilities_1_1_ability" kind="class" language="C#" prot="public" abstract="yes">
+    <compoundname>AdventureAssembly::Units::Abilities::Ability</compoundname>
+    <derivedcompoundref refid="class_adventure_assembly_1_1_units_1_1_abilities_1_1_projectile_ability" prot="public" virt="non-virtual">AdventureAssembly.Units.Abilities.ProjectileAbility</derivedcompoundref>
+    <derivedcompoundref refid="class_adventure_assembly_1_1_units_1_1_abilities_1_1_spell_thief_ability" prot="public" virt="non-virtual">AdventureAssembly.Units.Abilities.SpellThiefAbility</derivedcompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_adventure_assembly_1_1_units_1_1_abilities_1_1_ability_1abfb5c99116ace20bc1f660dc33e75d01" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float AdventureAssembly.Units.Abilities.Ability._baseSpeed</definition>
+        <argsstring></argsstring>
+        <name>_baseSpeed</name>
+        <qualifiedname>AdventureAssembly.Units.Abilities.Ability._baseSpeed</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Abilities/Ability.cs" line="10" column="24" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Abilities/Ability.cs" bodystart="10" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_adventure_assembly_1_1_units_1_1_abilities_1_1_ability_1a915b3150562955757d4dca3dfa551b30" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float AdventureAssembly.Units.Abilities.Ability._currentTime</definition>
+        <argsstring></argsstring>
+        <name>_currentTime</name>
+        <qualifiedname>AdventureAssembly.Units.Abilities.Ability._currentTime</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Abilities/Ability.cs" line="13" column="25" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Abilities/Ability.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_adventure_assembly_1_1_units_1_1_abilities_1_1_ability_1a11cd1eb21886e3c08b9564f60090125f" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero" kindref="compound">Hero</ref></type>
+        <definition>Hero AdventureAssembly.Units.Abilities.Ability._hero</definition>
+        <argsstring></argsstring>
+        <name>_hero</name>
+        <qualifiedname>AdventureAssembly.Units.Abilities.Ability._hero</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Abilities/Ability.cs" line="16" column="24" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Abilities/Ability.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_adventure_assembly_1_1_units_1_1_abilities_1_1_ability_1ac791d2af1bb18d969d6435d7c3299d60" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AdventureAssembly.Units.Abilities.Ability.Initialize</definition>
+        <argsstring>(Hero hero)</argsstring>
+        <name>Initialize</name>
+        <qualifiedname>AdventureAssembly.Units.Abilities.Ability.Initialize</qualifiedname>
+        <param>
+          <type><ref refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero" kindref="compound">Hero</ref></type>
+          <declname>hero</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Abilities/Ability.cs" line="18" column="21" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Abilities/Ability.cs" bodystart="18" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_adventure_assembly_1_1_units_1_1_abilities_1_1_ability_1a5461d3186734eae08dfb7eeaa1f22b04" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AdventureAssembly.Units.Abilities.Ability.OnUpdate</definition>
+        <argsstring>(float time)</argsstring>
+        <name>OnUpdate</name>
+        <qualifiedname>AdventureAssembly.Units.Abilities.Ability.OnUpdate</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Abilities/Ability.cs" line="24" column="21" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Abilities/Ability.cs" bodystart="24" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="class_adventure_assembly_1_1_units_1_1_abilities_1_1_ability_1a720aa4b9d9ce12d3ce9dc0672c2e09bb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_adventure_assembly_1_1_units_1_1_abilities_1_1_ability" kindref="compound">Ability</ref></type>
+        <definition>Ability AdventureAssembly.Units.Abilities.Ability.GetClone</definition>
+        <argsstring>()</argsstring>
+        <name>GetClone</name>
+        <qualifiedname>AdventureAssembly.Units.Abilities.Ability.GetClone</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Abilities/Ability.cs" line="37" column="24" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Abilities/Ability.cs" bodystart="37" bodyend="40"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_adventure_assembly_1_1_units_1_1_abilities_1_1_ability_1a10b7f6c143ff31ee425d5bcf2a1b399b" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AdventureAssembly.Units.Abilities.Ability.Execute</definition>
+        <argsstring>()</argsstring>
+        <name>Execute</name>
+        <qualifiedname>AdventureAssembly.Units.Abilities.Ability.Execute</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Abilities/Ability.cs" line="35" column="33"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>AdventureAssembly.Units.Abilities.Ability</label>
+        <link refid="class_adventure_assembly_1_1_units_1_1_abilities_1_1_ability"/>
+      </node>
+      <node id="2">
+        <label>AdventureAssembly.Units.Abilities.ProjectileAbility</label>
+        <link refid="class_adventure_assembly_1_1_units_1_1_abilities_1_1_projectile_ability"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>AdventureAssembly.Units.Abilities.SpellThiefAbility</label>
+        <link refid="class_adventure_assembly_1_1_units_1_1_abilities_1_1_spell_thief_ability"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>AdventureAssembly.Units.Abilities.Ability</label>
+        <link refid="class_adventure_assembly_1_1_units_1_1_abilities_1_1_ability"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>_hero</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>AdventureAssembly.Units.Heroes.Hero</label>
+        <link refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>SerializedMonoBehaviour</label>
+      </node>
+      <node id="3">
+        <label>Unit</label>
+        <link refid="class_adventure_assembly_1_1_units_1_1_unit"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Abilities/Ability.cs" line="7" column="21" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Abilities/Ability.cs" bodystart="8" bodyend="41"/>
+    <listofallmembers>
+      <member refid="class_adventure_assembly_1_1_units_1_1_abilities_1_1_ability_1abfb5c99116ace20bc1f660dc33e75d01" prot="private" virt="non-virtual"><scope>AdventureAssembly::Units::Abilities::Ability</scope><name>_baseSpeed</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_abilities_1_1_ability_1a915b3150562955757d4dca3dfa551b30" prot="protected" virt="non-virtual"><scope>AdventureAssembly::Units::Abilities::Ability</scope><name>_currentTime</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_abilities_1_1_ability_1a11cd1eb21886e3c08b9564f60090125f" prot="protected" virt="non-virtual"><scope>AdventureAssembly::Units::Abilities::Ability</scope><name>_hero</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_abilities_1_1_ability_1a10b7f6c143ff31ee425d5bcf2a1b399b" prot="protected" virt="non-virtual"><scope>AdventureAssembly::Units::Abilities::Ability</scope><name>Execute</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_abilities_1_1_ability_1a720aa4b9d9ce12d3ce9dc0672c2e09bb" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::Abilities::Ability</scope><name>GetClone</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_abilities_1_1_ability_1ac791d2af1bb18d969d6435d7c3299d60" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::Abilities::Ability</scope><name>Initialize</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_abilities_1_1_ability_1a5461d3186734eae08dfb7eeaa1f22b04" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::Abilities::Ability</scope><name>OnUpdate</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

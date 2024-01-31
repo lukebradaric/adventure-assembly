@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_adventure_assembly_1_1_units_1_1_unit_manager" xml:lang="en-US">
+<title>AdventureAssembly.Units.UnitManager&lt; T &gt; Class Template Reference</title>
+<indexterm><primary>AdventureAssembly.Units.UnitManager&lt; T &gt;</primary></indexterm>
+<para>Inheritance diagram for AdventureAssembly.Units.UnitManager&lt; T &gt;:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_adventure_assembly_1_1_units_1_1_unit_manager.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>virtual void <link linkend="_class_adventure_assembly_1_1_units_1_1_unit_manager_1ae0aba3ed84df68725ee6e82050b2921d">AddUnit</link> (T unit)</para>
+</listitem>
+            <listitem><para>virtual void <link linkend="_class_adventure_assembly_1_1_units_1_1_unit_manager_1a32df56cbeb18c74e7613e4712d02cc42">RemoveUnit</link> (T unit)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>static void <link linkend="_class_adventure_assembly_1_1_units_1_1_unit_manager_1aff9d4b068be7ed9986a7e626b844799c">AddModifier</link> (<link linkend="_class_adventure_assembly_1_1_units_1_1_modifiers_1_1_unit_modifier">UnitModifier</link> modifier)</para>
+</listitem>
+            <listitem><para>static void <link linkend="_class_adventure_assembly_1_1_units_1_1_unit_manager_1ab3e50a5bd1e7589712693e0b3c8d1f12">RemoveModifier</link> (<link linkend="_class_adventure_assembly_1_1_units_1_1_modifiers_1_1_unit_modifier">UnitModifier</link> modifier)</para>
+</listitem>
+            <listitem><para>static T <link linkend="_class_adventure_assembly_1_1_units_1_1_unit_manager_1a9c20545856d094b8ffb7d74276f865ca">GetNearestUnit</link> (Vector2Int position)</para>
+</listitem>
+            <listitem><para>static bool <link linkend="_class_adventure_assembly_1_1_units_1_1_unit_manager_1a30c7b516eaea1e15d7f5bb23c16b388b">HasUnitAtPosition</link> (Vector2Int position)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Protected Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>static void <link linkend="_class_adventure_assembly_1_1_units_1_1_unit_manager_1aa2fde2933a1692469ae2093448ee94f1">ApplyAllModifiers</link> (T unit)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para>static List&lt; T &gt; <link linkend="_class_adventure_assembly_1_1_units_1_1_unit_manager_1a5a409f68cd594daaaf44db79088ccae2">Units</link> = new List&lt;T&gt;()<computeroutput> [get, protected set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>static List&lt; <link linkend="_class_adventure_assembly_1_1_units_1_1_modifiers_1_1_unit_modifier">UnitModifier</link> &gt; <link linkend="_class_adventure_assembly_1_1_units_1_1_unit_manager_1a161d885a0d5c68f361fae56a6448b145">Modifiers</link> = new List&lt;<link linkend="_class_adventure_assembly_1_1_units_1_1_modifiers_1_1_unit_modifier">UnitModifier</link>&gt;()<computeroutput> [get, protected set]</computeroutput>
+</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_adventure_assembly_1_1_units_1_1_unit_manager_1aff9d4b068be7ed9986a7e626b844799c"/><section>
+    <title>AddModifier()</title>
+<indexterm><primary>AddModifier</primary><secondary>AdventureAssembly.Units.UnitManager&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Units.UnitManager&lt; T &gt;</primary><secondary>AddModifier</secondary></indexterm>
+<para><computeroutput>static void <link linkend="_class_adventure_assembly_1_1_units_1_1_unit_manager">AdventureAssembly.Units.UnitManager</link>&lt; T &gt;.AddModifier (<link linkend="_class_adventure_assembly_1_1_units_1_1_modifiers_1_1_unit_modifier">UnitModifier</link> modifier)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_adventure_assembly_1_1_units_1_1_unit_manager_1ae0aba3ed84df68725ee6e82050b2921d"/><section>
+    <title>AddUnit()</title>
+<indexterm><primary>AddUnit</primary><secondary>AdventureAssembly.Units.UnitManager&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Units.UnitManager&lt; T &gt;</primary><secondary>AddUnit</secondary></indexterm>
+<para><computeroutput>virtual void <link linkend="_class_adventure_assembly_1_1_units_1_1_unit_manager">AdventureAssembly.Units.UnitManager</link>&lt; T &gt;.AddUnit (T unit)<computeroutput>[virtual]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_adventure_assembly_1_1_units_1_1_unit_manager_1aa2fde2933a1692469ae2093448ee94f1"/><section>
+    <title>ApplyAllModifiers()</title>
+<indexterm><primary>ApplyAllModifiers</primary><secondary>AdventureAssembly.Units.UnitManager&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Units.UnitManager&lt; T &gt;</primary><secondary>ApplyAllModifiers</secondary></indexterm>
+<para><computeroutput>static void <link linkend="_class_adventure_assembly_1_1_units_1_1_unit_manager">AdventureAssembly.Units.UnitManager</link>&lt; T &gt;.ApplyAllModifiers (T unit)<computeroutput>[static]</computeroutput>, <computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_adventure_assembly_1_1_units_1_1_unit_manager_1a9c20545856d094b8ffb7d74276f865ca"/><section>
+    <title>GetNearestUnit()</title>
+<indexterm><primary>GetNearestUnit</primary><secondary>AdventureAssembly.Units.UnitManager&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Units.UnitManager&lt; T &gt;</primary><secondary>GetNearestUnit</secondary></indexterm>
+<para><computeroutput>static T <link linkend="_class_adventure_assembly_1_1_units_1_1_unit_manager">AdventureAssembly.Units.UnitManager</link>&lt; T &gt;.GetNearestUnit (Vector2Int position)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_adventure_assembly_1_1_units_1_1_unit_manager_1a30c7b516eaea1e15d7f5bb23c16b388b"/><section>
+    <title>HasUnitAtPosition()</title>
+<indexterm><primary>HasUnitAtPosition</primary><secondary>AdventureAssembly.Units.UnitManager&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Units.UnitManager&lt; T &gt;</primary><secondary>HasUnitAtPosition</secondary></indexterm>
+<para><computeroutput>static bool <link linkend="_class_adventure_assembly_1_1_units_1_1_unit_manager">AdventureAssembly.Units.UnitManager</link>&lt; T &gt;.HasUnitAtPosition (Vector2Int position)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_adventure_assembly_1_1_units_1_1_unit_manager_1ab3e50a5bd1e7589712693e0b3c8d1f12"/><section>
+    <title>RemoveModifier()</title>
+<indexterm><primary>RemoveModifier</primary><secondary>AdventureAssembly.Units.UnitManager&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Units.UnitManager&lt; T &gt;</primary><secondary>RemoveModifier</secondary></indexterm>
+<para><computeroutput>static void <link linkend="_class_adventure_assembly_1_1_units_1_1_unit_manager">AdventureAssembly.Units.UnitManager</link>&lt; T &gt;.RemoveModifier (<link linkend="_class_adventure_assembly_1_1_units_1_1_modifiers_1_1_unit_modifier">UnitModifier</link> modifier)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_adventure_assembly_1_1_units_1_1_unit_manager_1a32df56cbeb18c74e7613e4712d02cc42"/><section>
+    <title>RemoveUnit()</title>
+<indexterm><primary>RemoveUnit</primary><secondary>AdventureAssembly.Units.UnitManager&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Units.UnitManager&lt; T &gt;</primary><secondary>RemoveUnit</secondary></indexterm>
+<para><computeroutput>virtual void <link linkend="_class_adventure_assembly_1_1_units_1_1_unit_manager">AdventureAssembly.Units.UnitManager</link>&lt; T &gt;.RemoveUnit (T unit)<computeroutput>[virtual]</computeroutput></computeroutput></para></section>
+</section>
+<section>
+<title>Property Documentation</title>
+<anchor xml:id="_class_adventure_assembly_1_1_units_1_1_unit_manager_1a161d885a0d5c68f361fae56a6448b145"/><section>
+    <title>Modifiers</title>
+<indexterm><primary>Modifiers</primary><secondary>AdventureAssembly.Units.UnitManager&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Units.UnitManager&lt; T &gt;</primary><secondary>Modifiers</secondary></indexterm>
+<para><computeroutput>List&lt;<link linkend="_class_adventure_assembly_1_1_units_1_1_modifiers_1_1_unit_modifier">UnitModifier</link>&gt; <link linkend="_class_adventure_assembly_1_1_units_1_1_unit_manager">AdventureAssembly.Units.UnitManager</link>&lt; T &gt;.Modifiers = new List&lt;<link linkend="_class_adventure_assembly_1_1_units_1_1_modifiers_1_1_unit_modifier">UnitModifier</link>&gt;()<computeroutput>[static]</computeroutput>, <computeroutput>[get]</computeroutput>, <computeroutput>[protected set]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_adventure_assembly_1_1_units_1_1_unit_manager_1a5a409f68cd594daaaf44db79088ccae2"/><section>
+    <title>Units</title>
+<indexterm><primary>Units</primary><secondary>AdventureAssembly.Units.UnitManager&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Units.UnitManager&lt; T &gt;</primary><secondary>Units</secondary></indexterm>
+<para><computeroutput>List&lt;T&gt; <link linkend="_class_adventure_assembly_1_1_units_1_1_unit_manager">AdventureAssembly.Units.UnitManager</link>&lt; T &gt;.Units = new List&lt;T&gt;()<computeroutput>[static]</computeroutput>, <computeroutput>[get]</computeroutput>, <computeroutput>[protected set]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/<link linkend="__unit_manager_8cs">UnitManager.cs</link></section>
+</section>

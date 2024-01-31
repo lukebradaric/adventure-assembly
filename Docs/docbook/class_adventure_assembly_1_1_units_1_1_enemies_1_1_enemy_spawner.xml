@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_spawner" xml:lang="en-US">
+<title>AdventureAssembly.Units.Enemies.EnemySpawner Class Reference</title>
+<indexterm><primary>AdventureAssembly.Units.Enemies.EnemySpawner</primary></indexterm>
+<para>Inheritance diagram for AdventureAssembly.Units.Enemies.EnemySpawner:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_spawner.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<para>
+The documentation for this class was generated from the following file:</para>
+D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Enemies/<link linkend="__enemy_spawner_8cs">EnemySpawner.cs</link></section>

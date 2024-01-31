@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="_spell_thief_ability_8cs" kind="file" language="C#">
+    <compoundname>SpellThiefAbility.cs</compoundname>
+    <innerclass refid="class_adventure_assembly_1_1_units_1_1_abilities_1_1_spell_thief_ability" prot="public">AdventureAssembly::Units::Abilities::SpellThiefAbility</innerclass>
+    <innernamespace refid="namespace_adventure_assembly">AdventureAssembly</innernamespace>
+    <innernamespace refid="namespace_adventure_assembly_1_1_units">AdventureAssembly::Units</innernamespace>
+    <innernamespace refid="namespace_adventure_assembly_1_1_units_1_1_abilities">AdventureAssembly::Units::Abilities</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using<sp/></highlight><highlight class="normal">System.Collections;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">System.Collections.Generic;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespace_adventure_assembly_1_1_units_1_1_enemies" kindref="compound">AdventureAssembly.Units.Enemies</ref>;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">UnityEngine;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_adventure_assembly_1_1_units_1_1_abilities" kindref="compound">AdventureAssembly.Units.Abilities</ref></highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="9" refid="class_adventure_assembly_1_1_units_1_1_abilities_1_1_spell_thief_ability" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_adventure_assembly_1_1_units_1_1_abilities_1_1_spell_thief_ability" kindref="compound">SpellThiefAbility</ref><sp/>:<sp/><ref refid="class_adventure_assembly_1_1_units_1_1_abilities_1_1_ability" kindref="compound">Ability</ref></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Prefab<sp/>of<sp/>the<sp/>Projectile</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[SerializeField]<sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/><ref refid="class_adventure_assembly_1_1_units_1_1_projectile" kindref="compound">Projectile</ref><sp/>_projectilePrefab;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[Tooltip(</highlight><highlight class="stringliteral">&quot;The<sp/>base<sp/>damage<sp/>of<sp/>the<sp/>projectile.&quot;</highlight><highlight class="normal">)]</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[SerializeField]<sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_baseDamage;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[Tooltip(</highlight><highlight class="stringliteral">&quot;How<sp/>many<sp/>enemies<sp/>should<sp/>there<sp/>be<sp/>er<sp/>extra<sp/>projectile?&quot;</highlight><highlight class="normal">)]</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[SerializeField]<sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_enemiesPerExtraProjectile;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_adventure_assembly_1_1_units_1_1_abilities_1_1_spell_thief_ability_1a34d1371ed4f26ca2944340f33a1cec28" kindref="member">Execute</ref>()</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Calculate<sp/>how<sp/>many<sp/>times<sp/>to<sp/>fire<sp/>the<sp/>projectile<sp/>and<sp/>add<sp/>one<sp/>to<sp/>always<sp/>have<sp/>at<sp/>least<sp/>one<sp/>projectile</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>count<sp/>=<sp/>(int)(<ref refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_manager" kindref="compound">EnemyManager</ref>.<ref refid="class_adventure_assembly_1_1_units_1_1_unit_manager_1a5a409f68cd594daaaf44db79088ccae2" kindref="member">Units</ref>.Count<sp/>/<sp/>_enemiesPerExtraProjectile)<sp/>+<sp/>1;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>count;<sp/>i++)</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Spawn<sp/>the<sp/>projectile</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_adventure_assembly_1_1_units_1_1_projectile" kindref="compound">Projectile</ref><sp/>projectile<sp/>=<sp/>GameObject.Instantiate(_projectilePrefab,<sp/>(Vector2)<ref refid="class_adventure_assembly_1_1_units_1_1_abilities_1_1_ability_1a11cd1eb21886e3c08b9564f60090125f" kindref="member">_hero</ref>.Position,<sp/>Quaternion.identity);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Vector2<sp/>direction<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Vector2(Random.Range(-1f,<sp/>1f),<sp/>Random.Range(-1f,<sp/>1f));</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>In<sp/>the<sp/>rare<sp/>chance<sp/>that<sp/>the<sp/>random<sp/>vector<sp/>is<sp/>(0,0),<sp/>set<sp/>it<sp/>to<sp/>going<sp/>straight<sp/>up!</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(direction<sp/>==<sp/>Vector2.zero)</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>direction<sp/>=<sp/>Vector2.up;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Initialize<sp/>projectile</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>projectile.<ref refid="class_adventure_assembly_1_1_units_1_1_projectile_1aab40fe31e75c17a6486c5d9fd7339ce3" kindref="member">Initialize</ref>(<ref refid="class_adventure_assembly_1_1_units_1_1_abilities_1_1_ability_1a11cd1eb21886e3c08b9564f60090125f" kindref="member">_hero</ref>,<sp/>_baseDamage,<sp/>direction);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="44"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Abilities/SpellThiefAbility.cs"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_navigation" xml:lang="en-US">
+<title>AdventureAssembly.Units.Enemies.EnemyNavigation Class Reference</title>
+<indexterm><primary>AdventureAssembly.Units.Enemies.EnemyNavigation</primary></indexterm>
+<para>Inheritance diagram for AdventureAssembly.Units.Enemies.EnemyNavigation:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_navigation.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_navigation_1a0bcd201ee5ed3aa6670174dc1c52f366">Update</link> (<link linkend="_class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy">Enemy</link> enemy)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_navigation_1a0bcd201ee5ed3aa6670174dc1c52f366"/><section>
+    <title>Update()</title>
+<indexterm><primary>Update</primary><secondary>AdventureAssembly.Units.Enemies.EnemyNavigation</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Units.Enemies.EnemyNavigation</primary><secondary>Update</secondary></indexterm>
+<para><computeroutput>void AdventureAssembly.Units.Enemies.EnemyNavigation.Update (<link linkend="_class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy">Enemy</link> enemy)<computeroutput>[abstract]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Enemies/<link linkend="__enemy_navigation_8cs">EnemyNavigation.cs</link></section>
+</section>

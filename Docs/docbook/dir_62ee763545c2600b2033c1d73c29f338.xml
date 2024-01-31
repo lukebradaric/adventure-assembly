@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_62ee763545c2600b2033c1d73c29f338" xml:lang="en-US">
+<title>D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Modifiers Directory Reference</title>
+<indexterm><primary>D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Modifiers Directory Reference</primary></indexterm>
+<simplesect>
+    <title>Files    </title>
+        <itemizedlist>
+            <listitem><para>file <link linkend="__enemy_modifier_8cs">EnemyModifier.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__hero_modifier_8cs">HeroModifier.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__unit_modifier_8cs">UnitModifier.cs</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

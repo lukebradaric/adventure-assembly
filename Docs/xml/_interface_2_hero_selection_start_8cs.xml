@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="_interface_2_hero_selection_start_8cs" kind="file" language="C#">
+    <compoundname>HeroSelectionStart.cs</compoundname>
+    <innerclass refid="class_adventure_assembly_1_1_interface_1_1_hero_selection_start" prot="public">AdventureAssembly::Interface::HeroSelectionStart</innerclass>
+    <innernamespace refid="namespace_adventure_assembly">AdventureAssembly</innernamespace>
+    <innernamespace refid="namespace_adventure_assembly_1_1_interface">AdventureAssembly::Interface</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespace_adventure_assembly_1_1_units_1_1_heroes" kindref="compound">AdventureAssembly.Units.Heroes</ref>;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">System.Collections.Generic;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">UnityEngine;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_adventure_assembly_1_1_interface" kindref="compound">AdventureAssembly.Interface</ref></highlight></codeline>
+<codeline lineno="6"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="7" refid="class_adventure_assembly_1_1_interface_1_1_hero_selection_start" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_adventure_assembly_1_1_interface_1_1_hero_selection_start" kindref="compound">HeroSelectionStart</ref><sp/>:<sp/>MonoBehaviour</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>List&lt;HeroData&gt;<sp/><ref refid="class_adventure_assembly_1_1_interface_1_1_hero_selection_start_1a95349a3e79886da31640794315f8293c" kindref="member">heroData</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>List&lt;HeroData&gt;();</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Start()</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_adventure_assembly_1_1_interface_1_1_interface_manager" kindref="compound">InterfaceManager</ref>.Instance.<ref refid="class_adventure_assembly_1_1_interface_1_1_interface_manager_1af1d33aeb859087298c0a253c1eaf8abc" kindref="member">HeroSelectionInterface</ref>.<ref refid="class_adventure_assembly_1_1_interface_1_1_hero_selection_interface_1a04d5f4ffec2c885a55817ffa4223df4a" kindref="member">Show</ref>(<ref refid="class_adventure_assembly_1_1_interface_1_1_hero_selection_start_1a95349a3e79886da31640794315f8293c" kindref="member">heroData</ref>);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Interface/HeroSelectionStart.cs"/>
+  </compounddef>
+</doxygen>

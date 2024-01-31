@@ -1,0 +1,266 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_adventure_assembly_1_1_core_1_1_gold_manager" kind="class" language="C#" prot="public">
+    <compoundname>AdventureAssembly::Core::GoldManager</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Singleton&lt; GoldManager &gt;</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_adventure_assembly_1_1_core_1_1_gold_manager_1a989cc40c954cb7985ecbdcb8d730504c" prot="private" static="no" mutable="no">
+        <type>GameObject</type>
+        <definition>GameObject AdventureAssembly.Core.GoldManager._goldPrefab</definition>
+        <argsstring></argsstring>
+        <name>_goldPrefab</name>
+        <qualifiedname>AdventureAssembly.Core.GoldManager._goldPrefab</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Core/GoldManager.cs" line="15" column="29" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Core/GoldManager.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_adventure_assembly_1_1_core_1_1_gold_manager_1abd9d73b881c693edb7f663ba5522c0f7" prot="private" static="no" mutable="no">
+        <type>RectTransform</type>
+        <definition>RectTransform AdventureAssembly.Core.GoldManager._goldTweenTransform</definition>
+        <argsstring></argsstring>
+        <name>_goldTweenTransform</name>
+        <qualifiedname>AdventureAssembly.Core.GoldManager._goldTweenTransform</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Core/GoldManager.cs" line="19" column="32" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Core/GoldManager.cs" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_adventure_assembly_1_1_core_1_1_gold_manager_1a945190c5c8f2e77c549aa337f9f70cf4" prot="private" static="no" mutable="no">
+        <type>AnimationCurve</type>
+        <definition>AnimationCurve AdventureAssembly.Core.GoldManager._tweenCurve</definition>
+        <argsstring></argsstring>
+        <name>_tweenCurve</name>
+        <qualifiedname>AdventureAssembly.Core.GoldManager._tweenCurve</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Core/GoldManager.cs" line="24" column="33" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Core/GoldManager.cs" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_adventure_assembly_1_1_core_1_1_gold_manager_1a3609196f81039e7c6a7ab4b5b8d55e23" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float AdventureAssembly.Core.GoldManager._tweenDistanceDuration</definition>
+        <argsstring></argsstring>
+        <name>_tweenDistanceDuration</name>
+        <qualifiedname>AdventureAssembly.Core.GoldManager._tweenDistanceDuration</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Core/GoldManager.cs" line="26" column="24" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Core/GoldManager.cs" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_adventure_assembly_1_1_core_1_1_gold_manager_1a26b07fc548aea718145ad0c3cd2b40af" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float AdventureAssembly.Core.GoldManager._minTweenDuration</definition>
+        <argsstring></argsstring>
+        <name>_minTweenDuration</name>
+        <qualifiedname>AdventureAssembly.Core.GoldManager._minTweenDuration</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Core/GoldManager.cs" line="28" column="24" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Core/GoldManager.cs" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_adventure_assembly_1_1_core_1_1_gold_manager_1a7c56ff66c5dc4b341de3fc9961623c54" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float AdventureAssembly.Core.GoldManager._delayPerGold</definition>
+        <argsstring></argsstring>
+        <name>_delayPerGold</name>
+        <qualifiedname>AdventureAssembly.Core.GoldManager._delayPerGold</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Core/GoldManager.cs" line="30" column="24" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Core/GoldManager.cs" bodystart="30" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_adventure_assembly_1_1_core_1_1_gold_manager_1a5d86e6053d11d4f10777ae9cc67a033b" prot="public" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>Observable&lt; int &gt;</type>
+        <definition>Observable&lt;int&gt; AdventureAssembly.Core.GoldManager.CurrentGold</definition>
+        <argsstring></argsstring>
+        <name>CurrentGold</name>
+        <qualifiedname>AdventureAssembly.Core.GoldManager.CurrentGold</qualifiedname>
+        <initializer>= new Observable&lt;int&gt;(0)</initializer>
+        <briefdescription>
+<para>The amount of gold the player currently has. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Core/GoldManager.cs" line="35" column="34" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Core/GoldManager.cs" bodystart="35" bodyend="35"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_adventure_assembly_1_1_core_1_1_gold_manager_1a935b80f8233bcd15f3d9fa89c9d9d44a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AdventureAssembly.Core.GoldManager.Update</definition>
+        <argsstring>()</argsstring>
+        <name>Update</name>
+        <qualifiedname>AdventureAssembly.Core.GoldManager.Update</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Core/GoldManager.cs" line="37" column="21" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Core/GoldManager.cs" bodystart="37" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="class_adventure_assembly_1_1_core_1_1_gold_manager_1ab0b9b358e127f14d3b75e42f0e8ddcac" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AdventureAssembly.Core.GoldManager.AddGold</definition>
+        <argsstring>(Vector2 position)</argsstring>
+        <name>AddGold</name>
+        <qualifiedname>AdventureAssembly.Core.GoldManager.AddGold</qualifiedname>
+        <param>
+          <type>Vector2</type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Core/GoldManager.cs" line="66" column="21" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Core/GoldManager.cs" bodystart="66" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="class_adventure_assembly_1_1_core_1_1_gold_manager_1a1c2cd8b1c5e160dfbff05e692b8e37ee" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AdventureAssembly.Core.GoldManager.AddGold</definition>
+        <argsstring>(Vector2 position, int amount)</argsstring>
+        <name>AddGold</name>
+        <qualifiedname>AdventureAssembly.Core.GoldManager.AddGold</qualifiedname>
+        <param>
+          <type>Vector2</type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>amount</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Core/GoldManager.cs" line="83" column="21" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Core/GoldManager.cs" bodystart="83" bodyend="86"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_adventure_assembly_1_1_core_1_1_gold_manager_1acfc23b01a393f04b5da265df90d90ec8" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool AdventureAssembly.Core.GoldManager.TrySpend</definition>
+        <argsstring>(int amount)</argsstring>
+        <name>TrySpend</name>
+        <qualifiedname>AdventureAssembly.Core.GoldManager.TrySpend</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>amount</declname>
+        </param>
+        <briefdescription>
+<para>Tries to spend an amount of gold. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>amount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The amount of gold to spend.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the gold was succesfully spent. False if the gold was not spent.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Core/GoldManager.cs" line="55" column="28" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Core/GoldManager.cs" bodystart="55" bodyend="64"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_adventure_assembly_1_1_core_1_1_gold_manager_1a95f9a910e75306f7a4996120b350ef34" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IEnumerator</type>
+        <definition>IEnumerator AdventureAssembly.Core.GoldManager.AddGoldCoroutine</definition>
+        <argsstring>(Vector2 position, int amount)</argsstring>
+        <name>AddGoldCoroutine</name>
+        <qualifiedname>AdventureAssembly.Core.GoldManager.AddGoldCoroutine</qualifiedname>
+        <param>
+          <type>Vector2</type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>amount</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Core/GoldManager.cs" line="88" column="29" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Core/GoldManager.cs" bodystart="88" bodyend="95"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Manager for handling gold. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>AdventureAssembly.Core.GoldManager</label>
+        <link refid="class_adventure_assembly_1_1_core_1_1_gold_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Singleton&lt; GoldManager &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>AdventureAssembly.Core.GoldManager</label>
+        <link refid="class_adventure_assembly_1_1_core_1_1_gold_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Singleton&lt; GoldManager &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Core/GoldManager.cs" line="11" column="11" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Core/GoldManager.cs" bodystart="12" bodyend="96"/>
+    <listofallmembers>
+      <member refid="class_adventure_assembly_1_1_core_1_1_gold_manager_1a7c56ff66c5dc4b341de3fc9961623c54" prot="private" virt="non-virtual"><scope>AdventureAssembly::Core::GoldManager</scope><name>_delayPerGold</name></member>
+      <member refid="class_adventure_assembly_1_1_core_1_1_gold_manager_1a989cc40c954cb7985ecbdcb8d730504c" prot="private" virt="non-virtual"><scope>AdventureAssembly::Core::GoldManager</scope><name>_goldPrefab</name></member>
+      <member refid="class_adventure_assembly_1_1_core_1_1_gold_manager_1abd9d73b881c693edb7f663ba5522c0f7" prot="private" virt="non-virtual"><scope>AdventureAssembly::Core::GoldManager</scope><name>_goldTweenTransform</name></member>
+      <member refid="class_adventure_assembly_1_1_core_1_1_gold_manager_1a26b07fc548aea718145ad0c3cd2b40af" prot="private" virt="non-virtual"><scope>AdventureAssembly::Core::GoldManager</scope><name>_minTweenDuration</name></member>
+      <member refid="class_adventure_assembly_1_1_core_1_1_gold_manager_1a945190c5c8f2e77c549aa337f9f70cf4" prot="private" virt="non-virtual"><scope>AdventureAssembly::Core::GoldManager</scope><name>_tweenCurve</name></member>
+      <member refid="class_adventure_assembly_1_1_core_1_1_gold_manager_1a3609196f81039e7c6a7ab4b5b8d55e23" prot="private" virt="non-virtual"><scope>AdventureAssembly::Core::GoldManager</scope><name>_tweenDistanceDuration</name></member>
+      <member refid="class_adventure_assembly_1_1_core_1_1_gold_manager_1ab0b9b358e127f14d3b75e42f0e8ddcac" prot="public" virt="non-virtual"><scope>AdventureAssembly::Core::GoldManager</scope><name>AddGold</name></member>
+      <member refid="class_adventure_assembly_1_1_core_1_1_gold_manager_1a1c2cd8b1c5e160dfbff05e692b8e37ee" prot="public" virt="non-virtual"><scope>AdventureAssembly::Core::GoldManager</scope><name>AddGold</name></member>
+      <member refid="class_adventure_assembly_1_1_core_1_1_gold_manager_1a95f9a910e75306f7a4996120b350ef34" prot="private" virt="non-virtual"><scope>AdventureAssembly::Core::GoldManager</scope><name>AddGoldCoroutine</name></member>
+      <member refid="class_adventure_assembly_1_1_core_1_1_gold_manager_1a5d86e6053d11d4f10777ae9cc67a033b" prot="public" virt="non-virtual"><scope>AdventureAssembly::Core::GoldManager</scope><name>CurrentGold</name></member>
+      <member refid="class_adventure_assembly_1_1_core_1_1_gold_manager_1acfc23b01a393f04b5da265df90d90ec8" prot="public" virt="non-virtual"><scope>AdventureAssembly::Core::GoldManager</scope><name>TrySpend</name></member>
+      <member refid="class_adventure_assembly_1_1_core_1_1_gold_manager_1a935b80f8233bcd15f3d9fa89c9d9d44a" prot="public" virt="non-virtual"><scope>AdventureAssembly::Core::GoldManager</scope><name>Update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

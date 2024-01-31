@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_adventure_assembly_1_1_debug_1_1_debug_open_chest" kind="class" language="C#" prot="public">
+    <compoundname>AdventureAssembly::Debug::DebugOpenChest</compoundname>
+    <basecompoundref refid="class_adventure_assembly_1_1_debug_1_1_debug_key_press" prot="public" virt="non-virtual">AdventureAssembly.Debug.DebugKeyPress</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_adventure_assembly_1_1_debug_1_1_debug_open_chest_1a35bdf7e2d90f429d77aaf98a8b230812" prot="private" static="no" mutable="no">
+        <type>List&lt; <ref refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_data" kindref="compound">HeroData</ref> &gt;</type>
+        <definition>List&lt;HeroData&gt; AdventureAssembly.Debug.DebugOpenChest.heroData</definition>
+        <argsstring></argsstring>
+        <name>heroData</name>
+        <qualifiedname>AdventureAssembly.Debug.DebugOpenChest.heroData</qualifiedname>
+        <initializer>= new List&lt;<ref refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_data" kindref="compound">HeroData</ref>&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Debug/DebugOpenChest.cs" line="10" column="23" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Debug/DebugOpenChest.cs" bodystart="10" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_adventure_assembly_1_1_debug_1_1_debug_open_chest_1a8ea433c7a306bb06d4ef7fe6115734dd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void AdventureAssembly.Debug.DebugOpenChest.DebugKeyPressed</definition>
+        <argsstring>()</argsstring>
+        <name>DebugKeyPressed</name>
+        <qualifiedname>AdventureAssembly.Debug.DebugOpenChest.DebugKeyPressed</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Debug/DebugOpenChest.cs" line="12" column="30" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Debug/DebugOpenChest.cs" bodystart="12" bodyend="21"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>AdventureAssembly.Debug.DebugOpenChest</label>
+        <link refid="class_adventure_assembly_1_1_debug_1_1_debug_open_chest"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>DebugKeyPress</label>
+        <link refid="class_adventure_assembly_1_1_debug_1_1_debug_key_press"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>AdventureAssembly.Debug.DebugOpenChest</label>
+        <link refid="class_adventure_assembly_1_1_debug_1_1_debug_open_chest"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>DebugKeyPress</label>
+        <link refid="class_adventure_assembly_1_1_debug_1_1_debug_key_press"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Debug/DebugOpenChest.cs" line="8" column="11" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Debug/DebugOpenChest.cs" bodystart="9" bodyend="22"/>
+    <listofallmembers>
+      <member refid="class_adventure_assembly_1_1_debug_1_1_debug_open_chest_1a8ea433c7a306bb06d4ef7fe6115734dd" prot="public" virt="non-virtual"><scope>AdventureAssembly::Debug::DebugOpenChest</scope><name>DebugKeyPressed</name></member>
+      <member refid="class_adventure_assembly_1_1_debug_1_1_debug_open_chest_1a35bdf7e2d90f429d77aaf98a8b230812" prot="private" virt="non-virtual"><scope>AdventureAssembly::Debug::DebugOpenChest</scope><name>heroData</name></member>
+      <member refid="class_adventure_assembly_1_1_debug_1_1_debug_key_press_1a7197c2d043820047eb4a37322cb73627" prot="protected" virt="virtual"><scope>AdventureAssembly::Debug::DebugOpenChest</scope><name>Update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

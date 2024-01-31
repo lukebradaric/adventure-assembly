@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="namespace_adventure_assembly_1_1_units_1_1_heroes" kind="namespace" language="C#">
+    <compoundname>AdventureAssembly::Units::Heroes</compoundname>
+    <innerclass refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_data" prot="public">AdventureAssembly::Units::Heroes::ClassData</innerclass>
+    <innerclass refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_manager" prot="public">AdventureAssembly::Units::Heroes::ClassManager</innerclass>
+    <innerclass refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_modifier" prot="public">AdventureAssembly::Units::Heroes::ClassModifier</innerclass>
+    <innerclass refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero" prot="public">AdventureAssembly::Units::Heroes::Hero</innerclass>
+    <innerclass refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_data" prot="public">AdventureAssembly::Units::Heroes::HeroData</innerclass>
+    <innerclass refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_data_list_scriptable_variable" prot="public">AdventureAssembly::Units::Heroes::HeroDataListScriptableVariable</innerclass>
+    <innerclass refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_indicator" prot="public">AdventureAssembly::Units::Heroes::HeroIndicator</innerclass>
+    <innerclass refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_manager" prot="public">AdventureAssembly::Units::Heroes::HeroManager</innerclass>
+    <innerclass refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_selection_start" prot="public">AdventureAssembly::Units::Heroes::HeroSelectionStart</innerclass>
+    <innerclass refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_stats" prot="public">AdventureAssembly::Units::Heroes::HeroStats</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/ClassData.cs" line="7" column="1"/>
+  </compounddef>
+</doxygen>

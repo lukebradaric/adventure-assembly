@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_adventure_assembly_1_1_core_1_1_gold_manager" xml:lang="en-US">
+<title>AdventureAssembly.Core.GoldManager Class Reference</title>
+<indexterm><primary>AdventureAssembly.Core.GoldManager</primary></indexterm>
+<para>
+
+<para>Manager for handling gold. </para>
+ 
+</para>
+<para>Inheritance diagram for AdventureAssembly.Core.GoldManager:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_adventure_assembly_1_1_core_1_1_gold_manager.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_adventure_assembly_1_1_core_1_1_gold_manager_1a935b80f8233bcd15f3d9fa89c9d9d44a">Update</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_adventure_assembly_1_1_core_1_1_gold_manager_1ab0b9b358e127f14d3b75e42f0e8ddcac">AddGold</link> (Vector2 position)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_adventure_assembly_1_1_core_1_1_gold_manager_1a1c2cd8b1c5e160dfbff05e692b8e37ee">AddGold</link> (Vector2 position, int amount)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>static bool <link linkend="_class_adventure_assembly_1_1_core_1_1_gold_manager_1acfc23b01a393f04b5da265df90d90ec8">TrySpend</link> (int amount)</para>
+
+<para>Tries to spend an amount of gold. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para>static Observable&lt; int &gt; <link linkend="_class_adventure_assembly_1_1_core_1_1_gold_manager_1a5d86e6053d11d4f10777ae9cc67a033b">CurrentGold</link> = new Observable&lt;int&gt;(0)<computeroutput> [get]</computeroutput>
+</para>
+
+<para>The amount of gold the player currently has. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Manager for handling gold. </para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_adventure_assembly_1_1_core_1_1_gold_manager_1ab0b9b358e127f14d3b75e42f0e8ddcac"/><section>
+    <title>AddGold()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>AddGold</primary><secondary>AdventureAssembly.Core.GoldManager</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Core.GoldManager</primary><secondary>AddGold</secondary></indexterm>
+<para><computeroutput>void AdventureAssembly.Core.GoldManager.AddGold (Vector2 position)</computeroutput></para></section>
+<anchor xml:id="_class_adventure_assembly_1_1_core_1_1_gold_manager_1a1c2cd8b1c5e160dfbff05e692b8e37ee"/><section>
+    <title>AddGold()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>AddGold</primary><secondary>AdventureAssembly.Core.GoldManager</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Core.GoldManager</primary><secondary>AddGold</secondary></indexterm>
+<para><computeroutput>void AdventureAssembly.Core.GoldManager.AddGold (Vector2 position, int amount)</computeroutput></para></section>
+<anchor xml:id="_class_adventure_assembly_1_1_core_1_1_gold_manager_1acfc23b01a393f04b5da265df90d90ec8"/><section>
+    <title>TrySpend()</title>
+<indexterm><primary>TrySpend</primary><secondary>AdventureAssembly.Core.GoldManager</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Core.GoldManager</primary><secondary>TrySpend</secondary></indexterm>
+<para><computeroutput>static bool AdventureAssembly.Core.GoldManager.TrySpend (int amount)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>Tries to spend an amount of gold. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>amount</entry><entry>
+<para>The amount of gold to spend.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>True if the gold was succesfully spent. False if the gold was not spent.</para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_adventure_assembly_1_1_core_1_1_gold_manager_1a935b80f8233bcd15f3d9fa89c9d9d44a"/><section>
+    <title>Update()</title>
+<indexterm><primary>Update</primary><secondary>AdventureAssembly.Core.GoldManager</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Core.GoldManager</primary><secondary>Update</secondary></indexterm>
+<para><computeroutput>void AdventureAssembly.Core.GoldManager.Update ( )</computeroutput></para></section>
+</section>
+<section>
+<title>Property Documentation</title>
+<anchor xml:id="_class_adventure_assembly_1_1_core_1_1_gold_manager_1a5d86e6053d11d4f10777ae9cc67a033b"/><section>
+    <title>CurrentGold</title>
+<indexterm><primary>CurrentGold</primary><secondary>AdventureAssembly.Core.GoldManager</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Core.GoldManager</primary><secondary>CurrentGold</secondary></indexterm>
+<para><computeroutput>Observable&lt;int&gt; AdventureAssembly.Core.GoldManager.CurrentGold = new Observable&lt;int&gt;(0)<computeroutput>[static]</computeroutput>, <computeroutput>[get]</computeroutput></computeroutput></para><para>
+
+<para>The amount of gold the player currently has. </para>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+D:/Unity/Projects/adventure-assembly/Assets/Scripts/Core/<link linkend="__gold_manager_8cs">GoldManager.cs</link></section>
+</section>

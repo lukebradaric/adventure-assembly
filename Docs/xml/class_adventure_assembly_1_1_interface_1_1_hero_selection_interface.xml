@@ -1,0 +1,345 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_adventure_assembly_1_1_interface_1_1_hero_selection_interface" kind="class" language="C#" prot="public">
+    <compoundname>AdventureAssembly::Interface::HeroSelectionInterface</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_adventure_assembly_1_1_interface_1_1_hero_selection_interface_1a0797f2cc53977c88bbcde4d97b7ff990" prot="private" static="no" mutable="no">
+        <type>VoidScriptableEvent</type>
+        <definition>VoidScriptableEvent AdventureAssembly.Interface.HeroSelectionInterface._openHeroChestScriptableEvent</definition>
+        <argsstring></argsstring>
+        <name>_openHeroChestScriptableEvent</name>
+        <qualifiedname>AdventureAssembly.Interface.HeroSelectionInterface._openHeroChestScriptableEvent</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Interface/HeroSelectionInterface.cs" line="16" column="38" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Interface/HeroSelectionInterface.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_adventure_assembly_1_1_interface_1_1_hero_selection_interface_1aa9f616cfc6501c9f76f2b151bea58521" prot="private" static="no" mutable="no">
+        <type><ref refid="class_adventure_assembly_1_1_interface_1_1_hero_selection_element" kindref="compound">HeroSelectionElement</ref></type>
+        <definition>HeroSelectionElement AdventureAssembly.Interface.HeroSelectionInterface._heroSelectionElementPrefab</definition>
+        <argsstring></argsstring>
+        <name>_heroSelectionElementPrefab</name>
+        <qualifiedname>AdventureAssembly.Interface.HeroSelectionInterface._heroSelectionElementPrefab</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Interface/HeroSelectionInterface.cs" line="20" column="39" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Interface/HeroSelectionInterface.cs" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_adventure_assembly_1_1_interface_1_1_hero_selection_interface_1ac35e847bcdacac1276c3cbcb09d953e9" prot="private" static="no" mutable="no">
+        <type><ref refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_data_list_scriptable_variable" kindref="compound">HeroDataListScriptableVariable</ref></type>
+        <definition>HeroDataListScriptableVariable AdventureAssembly.Interface.HeroSelectionInterface._heroDataList</definition>
+        <argsstring></argsstring>
+        <name>_heroDataList</name>
+        <qualifiedname>AdventureAssembly.Interface.HeroSelectionInterface._heroDataList</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Interface/HeroSelectionInterface.cs" line="24" column="49" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Interface/HeroSelectionInterface.cs" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_adventure_assembly_1_1_interface_1_1_hero_selection_interface_1a0307c05cb9aa091ddfec34af1ebee003" prot="private" static="no" mutable="no">
+        <type>RectTransform</type>
+        <definition>RectTransform AdventureAssembly.Interface.HeroSelectionInterface._horizontalLayoutTransform</definition>
+        <argsstring></argsstring>
+        <name>_horizontalLayoutTransform</name>
+        <qualifiedname>AdventureAssembly.Interface.HeroSelectionInterface._horizontalLayoutTransform</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Interface/HeroSelectionInterface.cs" line="25" column="32" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Interface/HeroSelectionInterface.cs" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_adventure_assembly_1_1_interface_1_1_hero_selection_interface_1a36b39ed5eb68364d0de07eee2cf03845" prot="private" static="no" mutable="no">
+        <type>HorizontalLayoutGroup</type>
+        <definition>HorizontalLayoutGroup AdventureAssembly.Interface.HeroSelectionInterface._horizontalLayoutGroup</definition>
+        <argsstring></argsstring>
+        <name>_horizontalLayoutGroup</name>
+        <qualifiedname>AdventureAssembly.Interface.HeroSelectionInterface._horizontalLayoutGroup</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Interface/HeroSelectionInterface.cs" line="26" column="40" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Interface/HeroSelectionInterface.cs" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_adventure_assembly_1_1_interface_1_1_hero_selection_interface_1ab6066b07e94c440d795887ba4bfad53e" prot="private" static="no" mutable="no">
+        <type>CanvasGroup</type>
+        <definition>CanvasGroup AdventureAssembly.Interface.HeroSelectionInterface._canvasGroup</definition>
+        <argsstring></argsstring>
+        <name>_canvasGroup</name>
+        <qualifiedname>AdventureAssembly.Interface.HeroSelectionInterface._canvasGroup</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Interface/HeroSelectionInterface.cs" line="27" column="30" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Interface/HeroSelectionInterface.cs" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_adventure_assembly_1_1_interface_1_1_hero_selection_interface_1acaec1c570d2af73f622e440af2b8e129" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float AdventureAssembly.Interface.HeroSelectionInterface._fadeTweenDuration</definition>
+        <argsstring></argsstring>
+        <name>_fadeTweenDuration</name>
+        <qualifiedname>AdventureAssembly.Interface.HeroSelectionInterface._fadeTweenDuration</qualifiedname>
+        <initializer>= 0.5f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Interface/HeroSelectionInterface.cs" line="31" column="24" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Interface/HeroSelectionInterface.cs" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_adventure_assembly_1_1_interface_1_1_hero_selection_interface_1a25a2f6f2f6da47934f88f54cd96bf9f1" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float AdventureAssembly.Interface.HeroSelectionInterface._heroSelectionTweenPositionOffset</definition>
+        <argsstring></argsstring>
+        <name>_heroSelectionTweenPositionOffset</name>
+        <qualifiedname>AdventureAssembly.Interface.HeroSelectionInterface._heroSelectionTweenPositionOffset</qualifiedname>
+        <initializer>= 1500</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Interface/HeroSelectionInterface.cs" line="32" column="24" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Interface/HeroSelectionInterface.cs" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_adventure_assembly_1_1_interface_1_1_hero_selection_interface_1ab0e85bce4871ba93b2dffa45200bdca1" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float AdventureAssembly.Interface.HeroSelectionInterface._heroSelectionTweenDuration</definition>
+        <argsstring></argsstring>
+        <name>_heroSelectionTweenDuration</name>
+        <qualifiedname>AdventureAssembly.Interface.HeroSelectionInterface._heroSelectionTweenDuration</qualifiedname>
+        <initializer>= 0.5f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Interface/HeroSelectionInterface.cs" line="33" column="24" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Interface/HeroSelectionInterface.cs" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_adventure_assembly_1_1_interface_1_1_hero_selection_interface_1afa0a341f910785aeaa6e4d8adcc392fe" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float AdventureAssembly.Interface.HeroSelectionInterface._heroSelectionTweenDurationOffset</definition>
+        <argsstring></argsstring>
+        <name>_heroSelectionTweenDurationOffset</name>
+        <qualifiedname>AdventureAssembly.Interface.HeroSelectionInterface._heroSelectionTweenDurationOffset</qualifiedname>
+        <initializer>= 0.1f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Interface/HeroSelectionInterface.cs" line="34" column="24" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Interface/HeroSelectionInterface.cs" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_adventure_assembly_1_1_interface_1_1_hero_selection_interface_1a0e9fe0a30491d8f34964be7f33b0fad9" prot="private" static="no" mutable="no">
+        <type>Ease</type>
+        <definition>Ease AdventureAssembly.Interface.HeroSelectionInterface._tweenEase</definition>
+        <argsstring></argsstring>
+        <name>_tweenEase</name>
+        <qualifiedname>AdventureAssembly.Interface.HeroSelectionInterface._tweenEase</qualifiedname>
+        <initializer>= Ease.OutBack</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Interface/HeroSelectionInterface.cs" line="35" column="23" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Interface/HeroSelectionInterface.cs" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_adventure_assembly_1_1_interface_1_1_hero_selection_interface_1ab4729ef6c098567fceb4859d0aa68f6b" prot="private" static="no" mutable="no">
+        <type>List&lt; <ref refid="class_adventure_assembly_1_1_interface_1_1_hero_selection_element" kindref="compound">HeroSelectionElement</ref> &gt;</type>
+        <definition>List&lt;HeroSelectionElement&gt; AdventureAssembly.Interface.HeroSelectionInterface._heroSelectionElements</definition>
+        <argsstring></argsstring>
+        <name>_heroSelectionElements</name>
+        <qualifiedname>AdventureAssembly.Interface.HeroSelectionInterface._heroSelectionElements</qualifiedname>
+        <initializer>= new List&lt;<ref refid="class_adventure_assembly_1_1_interface_1_1_hero_selection_element" kindref="compound">HeroSelectionElement</ref>&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Interface/HeroSelectionInterface.cs" line="37" column="22" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Interface/HeroSelectionInterface.cs" bodystart="37" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_adventure_assembly_1_1_interface_1_1_hero_selection_interface_1a78795b6d062c6e6989ee09d9ef16294e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AdventureAssembly.Interface.HeroSelectionInterface.OnEnable</definition>
+        <argsstring>()</argsstring>
+        <name>OnEnable</name>
+        <qualifiedname>AdventureAssembly.Interface.HeroSelectionInterface.OnEnable</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Interface/HeroSelectionInterface.cs" line="39" column="22" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Interface/HeroSelectionInterface.cs" bodystart="39" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="class_adventure_assembly_1_1_interface_1_1_hero_selection_interface_1a2433c358ed117edeec92c8d1cdbc55e1" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AdventureAssembly.Interface.HeroSelectionInterface.OnDisable</definition>
+        <argsstring>()</argsstring>
+        <name>OnDisable</name>
+        <qualifiedname>AdventureAssembly.Interface.HeroSelectionInterface.OnDisable</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Interface/HeroSelectionInterface.cs" line="44" column="22" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Interface/HeroSelectionInterface.cs" bodystart="44" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="class_adventure_assembly_1_1_interface_1_1_hero_selection_interface_1a0932ab52418df84d7fd65d2f3a66ded2" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AdventureAssembly.Interface.HeroSelectionInterface.OnOpenHeroChest</definition>
+        <argsstring>()</argsstring>
+        <name>OnOpenHeroChest</name>
+        <qualifiedname>AdventureAssembly.Interface.HeroSelectionInterface.OnOpenHeroChest</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Interface/HeroSelectionInterface.cs" line="49" column="22" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Interface/HeroSelectionInterface.cs" bodystart="49" bodyend="52"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_adventure_assembly_1_1_interface_1_1_hero_selection_interface_1a04d5f4ffec2c885a55817ffa4223df4a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AdventureAssembly.Interface.HeroSelectionInterface.Show</definition>
+        <argsstring>(List&lt; HeroData &gt; heroData)</argsstring>
+        <name>Show</name>
+        <qualifiedname>AdventureAssembly.Interface.HeroSelectionInterface.Show</qualifiedname>
+        <param>
+          <type>List&lt; <ref refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_data" kindref="compound">HeroData</ref> &gt;</type>
+          <declname>heroData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Interface/HeroSelectionInterface.cs" line="54" column="21" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Interface/HeroSelectionInterface.cs" bodystart="54" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="class_adventure_assembly_1_1_interface_1_1_hero_selection_interface_1a8103d143f4ba25ac18494514f6805b39" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AdventureAssembly.Interface.HeroSelectionInterface.Hide</definition>
+        <argsstring>()</argsstring>
+        <name>Hide</name>
+        <qualifiedname>AdventureAssembly.Interface.HeroSelectionInterface.Hide</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Interface/HeroSelectionInterface.cs" line="63" column="21" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Interface/HeroSelectionInterface.cs" bodystart="63" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="class_adventure_assembly_1_1_interface_1_1_hero_selection_interface_1a17d42e49b612636fbacae81943ef64cc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AdventureAssembly.Interface.HeroSelectionInterface.ShowSelections</definition>
+        <argsstring>(List&lt; HeroData &gt; heroData)</argsstring>
+        <name>ShowSelections</name>
+        <qualifiedname>AdventureAssembly.Interface.HeroSelectionInterface.ShowSelections</qualifiedname>
+        <param>
+          <type>List&lt; <ref refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_data" kindref="compound">HeroData</ref> &gt;</type>
+          <declname>heroData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Interface/HeroSelectionInterface.cs" line="77" column="21" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Interface/HeroSelectionInterface.cs" bodystart="77" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="class_adventure_assembly_1_1_interface_1_1_hero_selection_interface_1a454bdbc0442447de56128697457c090d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AdventureAssembly.Interface.HeroSelectionInterface.OnHeroSelected</definition>
+        <argsstring>(HeroData heroData)</argsstring>
+        <name>OnHeroSelected</name>
+        <qualifiedname>AdventureAssembly.Interface.HeroSelectionInterface.OnHeroSelected</qualifiedname>
+        <param>
+          <type><ref refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_data" kindref="compound">HeroData</ref></type>
+          <declname>heroData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Interface/HeroSelectionInterface.cs" line="113" column="21" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Interface/HeroSelectionInterface.cs" bodystart="113" bodyend="117"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>AdventureAssembly.Interface.HeroSelectionInterface</label>
+        <link refid="class_adventure_assembly_1_1_interface_1_1_hero_selection_interface"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>AdventureAssembly.Interface.HeroSelectionInterface</label>
+        <link refid="class_adventure_assembly_1_1_interface_1_1_hero_selection_interface"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Interface/HeroSelectionInterface.cs" line="12" column="11" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Interface/HeroSelectionInterface.cs" bodystart="13" bodyend="118"/>
+    <listofallmembers>
+      <member refid="class_adventure_assembly_1_1_interface_1_1_hero_selection_interface_1ab6066b07e94c440d795887ba4bfad53e" prot="private" virt="non-virtual"><scope>AdventureAssembly::Interface::HeroSelectionInterface</scope><name>_canvasGroup</name></member>
+      <member refid="class_adventure_assembly_1_1_interface_1_1_hero_selection_interface_1acaec1c570d2af73f622e440af2b8e129" prot="private" virt="non-virtual"><scope>AdventureAssembly::Interface::HeroSelectionInterface</scope><name>_fadeTweenDuration</name></member>
+      <member refid="class_adventure_assembly_1_1_interface_1_1_hero_selection_interface_1ac35e847bcdacac1276c3cbcb09d953e9" prot="private" virt="non-virtual"><scope>AdventureAssembly::Interface::HeroSelectionInterface</scope><name>_heroDataList</name></member>
+      <member refid="class_adventure_assembly_1_1_interface_1_1_hero_selection_interface_1aa9f616cfc6501c9f76f2b151bea58521" prot="private" virt="non-virtual"><scope>AdventureAssembly::Interface::HeroSelectionInterface</scope><name>_heroSelectionElementPrefab</name></member>
+      <member refid="class_adventure_assembly_1_1_interface_1_1_hero_selection_interface_1ab4729ef6c098567fceb4859d0aa68f6b" prot="private" virt="non-virtual"><scope>AdventureAssembly::Interface::HeroSelectionInterface</scope><name>_heroSelectionElements</name></member>
+      <member refid="class_adventure_assembly_1_1_interface_1_1_hero_selection_interface_1ab0e85bce4871ba93b2dffa45200bdca1" prot="private" virt="non-virtual"><scope>AdventureAssembly::Interface::HeroSelectionInterface</scope><name>_heroSelectionTweenDuration</name></member>
+      <member refid="class_adventure_assembly_1_1_interface_1_1_hero_selection_interface_1afa0a341f910785aeaa6e4d8adcc392fe" prot="private" virt="non-virtual"><scope>AdventureAssembly::Interface::HeroSelectionInterface</scope><name>_heroSelectionTweenDurationOffset</name></member>
+      <member refid="class_adventure_assembly_1_1_interface_1_1_hero_selection_interface_1a25a2f6f2f6da47934f88f54cd96bf9f1" prot="private" virt="non-virtual"><scope>AdventureAssembly::Interface::HeroSelectionInterface</scope><name>_heroSelectionTweenPositionOffset</name></member>
+      <member refid="class_adventure_assembly_1_1_interface_1_1_hero_selection_interface_1a36b39ed5eb68364d0de07eee2cf03845" prot="private" virt="non-virtual"><scope>AdventureAssembly::Interface::HeroSelectionInterface</scope><name>_horizontalLayoutGroup</name></member>
+      <member refid="class_adventure_assembly_1_1_interface_1_1_hero_selection_interface_1a0307c05cb9aa091ddfec34af1ebee003" prot="private" virt="non-virtual"><scope>AdventureAssembly::Interface::HeroSelectionInterface</scope><name>_horizontalLayoutTransform</name></member>
+      <member refid="class_adventure_assembly_1_1_interface_1_1_hero_selection_interface_1a0797f2cc53977c88bbcde4d97b7ff990" prot="private" virt="non-virtual"><scope>AdventureAssembly::Interface::HeroSelectionInterface</scope><name>_openHeroChestScriptableEvent</name></member>
+      <member refid="class_adventure_assembly_1_1_interface_1_1_hero_selection_interface_1a0e9fe0a30491d8f34964be7f33b0fad9" prot="private" virt="non-virtual"><scope>AdventureAssembly::Interface::HeroSelectionInterface</scope><name>_tweenEase</name></member>
+      <member refid="class_adventure_assembly_1_1_interface_1_1_hero_selection_interface_1a8103d143f4ba25ac18494514f6805b39" prot="public" virt="non-virtual"><scope>AdventureAssembly::Interface::HeroSelectionInterface</scope><name>Hide</name></member>
+      <member refid="class_adventure_assembly_1_1_interface_1_1_hero_selection_interface_1a2433c358ed117edeec92c8d1cdbc55e1" prot="private" virt="non-virtual"><scope>AdventureAssembly::Interface::HeroSelectionInterface</scope><name>OnDisable</name></member>
+      <member refid="class_adventure_assembly_1_1_interface_1_1_hero_selection_interface_1a78795b6d062c6e6989ee09d9ef16294e" prot="private" virt="non-virtual"><scope>AdventureAssembly::Interface::HeroSelectionInterface</scope><name>OnEnable</name></member>
+      <member refid="class_adventure_assembly_1_1_interface_1_1_hero_selection_interface_1a454bdbc0442447de56128697457c090d" prot="public" virt="non-virtual"><scope>AdventureAssembly::Interface::HeroSelectionInterface</scope><name>OnHeroSelected</name></member>
+      <member refid="class_adventure_assembly_1_1_interface_1_1_hero_selection_interface_1a0932ab52418df84d7fd65d2f3a66ded2" prot="private" virt="non-virtual"><scope>AdventureAssembly::Interface::HeroSelectionInterface</scope><name>OnOpenHeroChest</name></member>
+      <member refid="class_adventure_assembly_1_1_interface_1_1_hero_selection_interface_1a04d5f4ffec2c885a55817ffa4223df4a" prot="public" virt="non-virtual"><scope>AdventureAssembly::Interface::HeroSelectionInterface</scope><name>Show</name></member>
+      <member refid="class_adventure_assembly_1_1_interface_1_1_hero_selection_interface_1a17d42e49b612636fbacae81943ef64cc" prot="public" virt="non-virtual"><scope>AdventureAssembly::Interface::HeroSelectionInterface</scope><name>ShowSelections</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

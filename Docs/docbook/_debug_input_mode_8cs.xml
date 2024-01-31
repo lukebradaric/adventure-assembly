@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__debug_input_mode_8cs" xml:lang="en-US">
+<title>D:/Unity/Projects/adventure-assembly/Assets/Scripts/Debug/DebugInputMode.cs File Reference</title>
+<indexterm><primary>D:/Unity/Projects/adventure-assembly/Assets/Scripts/Debug/DebugInputMode.cs</primary></indexterm>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespace_adventure_assembly">AdventureAssembly</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespace_adventure_assembly_1_1_debug">AdventureAssembly.Debug</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Enumerations    </title>
+        <itemizedlist>
+            <listitem><para>enum <link linkend="_namespace_adventure_assembly_1_1_debug_1a7c635ec39f90bcb5c2a10816715556fb">AdventureAssembly.Debug.DebugInputMode</link> { <link linkend="_namespace_adventure_assembly_1_1_debug_1a7c635ec39f90bcb5c2a10816715556fba0610123bdd4ffc191a3ea05a847e1307">AdventureAssembly.Debug.Press</link>
+, <link linkend="_namespace_adventure_assembly_1_1_debug_1a7c635ec39f90bcb5c2a10816715556fbabcd8db575b47c838e5d551e3973db4ac">AdventureAssembly.Debug.Hold</link>
+ }</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

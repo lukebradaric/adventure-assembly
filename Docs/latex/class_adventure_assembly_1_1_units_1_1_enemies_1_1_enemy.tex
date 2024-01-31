@@ -1,0 +1,86 @@
+\doxysection{Adventure\+Assembly.\+Units.\+Enemies.\+Enemy Class Reference}
+\hypertarget{class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy}{}\label{class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy}\index{AdventureAssembly.Units.Enemies.Enemy@{AdventureAssembly.Units.Enemies.Enemy}}
+Inheritance diagram for Adventure\+Assembly.\+Units.\+Enemies.\+Enemy\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_a4b320d4e4e24ca4a2fc3484d54f131ea}{Initialize}} (\mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_unit_data}{Unit\+Data}} unit\+Data, Vector2\+Int position)
+\item 
+override void \mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_a4f23dfed60ba1b400f1aeb88eaad251c}{Die}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_unit}{Adventure\+Assembly.\+Units.\+Unit}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual void {\bfseries On\+Update} (float time)
+\item 
+virtual void {\bfseries Move} (Vector2\+Int direction)
+\item 
+virtual void {\bfseries Damage} (\mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_damage_data}{Damage\+Data}} damage\+Data)
+\item 
+virtual void {\bfseries Flip\+Sprite} (int x)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_af049021eec2eed7dbde90b7fd3390e0a}\label{class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_af049021eec2eed7dbde90b7fd3390e0a} 
+new \mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_stats}{Enemy\+Stats}} {\bfseries Stats}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\Hypertarget{class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_ad11a7e2b19f7692a3c6de7ce9c731456}\label{class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_ad11a7e2b19f7692a3c6de7ce9c731456} 
+\mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_data}{Enemy\+Data}} {\bfseries Enemy\+Data}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_unit}{Adventure\+Assembly.\+Units.\+Unit}}}
+\begin{DoxyCompactItemize}
+\item 
+Sprite\+Renderer {\bfseries Sprite\+Renderer}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+virtual \mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_unit_stats}{Unit\+Stats}} {\bfseries Stats}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_unit_data}{Unit\+Data}} {\bfseries Unit\+Data}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+int {\bfseries Current\+Health}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\item 
+Vector2\+Int {\bfseries Position} = Vector2\+Int.\+zero\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\item 
+Vector2\+Int {\bfseries Last\+Position}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\item 
+bool {\bfseries Is\+Dead} = false\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Events inherited from \mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_unit}{Adventure\+Assembly.\+Units.\+Unit}}}
+\begin{DoxyCompactItemize}
+\item 
+Action$<$ \mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_unit}{Unit}} $>$ {\bfseries Died}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_a4f23dfed60ba1b400f1aeb88eaad251c}\label{class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_a4f23dfed60ba1b400f1aeb88eaad251c} 
+\index{AdventureAssembly.Units.Enemies.Enemy@{AdventureAssembly.Units.Enemies.Enemy}!Die@{Die}}
+\index{Die@{Die}!AdventureAssembly.Units.Enemies.Enemy@{AdventureAssembly.Units.Enemies.Enemy}}
+\doxysubsubsection{\texorpdfstring{Die()}{Die()}}
+{\footnotesize\ttfamily override void Adventure\+Assembly.\+Units.\+Enemies.\+Enemy.\+Die (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_unit}{Adventure\+Assembly.\+Units.\+Unit}}.
+
+\Hypertarget{class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_a4b320d4e4e24ca4a2fc3484d54f131ea}\label{class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_a4b320d4e4e24ca4a2fc3484d54f131ea} 
+\index{AdventureAssembly.Units.Enemies.Enemy@{AdventureAssembly.Units.Enemies.Enemy}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!AdventureAssembly.Units.Enemies.Enemy@{AdventureAssembly.Units.Enemies.Enemy}}
+\doxysubsubsection{\texorpdfstring{Initialize()}{Initialize()}}
+{\footnotesize\ttfamily override void Adventure\+Assembly.\+Units.\+Enemies.\+Enemy.\+Initialize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_unit_data}{Unit\+Data}}}]{unit\+Data,  }\item[{Vector2\+Int}]{position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_unit}{Adventure\+Assembly.\+Units.\+Unit}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Unity/\+Projects/adventure-\/assembly/\+Assets/\+Scripts/\+Units/\+Enemies/Enemy.\+cs\end{DoxyCompactItemize}

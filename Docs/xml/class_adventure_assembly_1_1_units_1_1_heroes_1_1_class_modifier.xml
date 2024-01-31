@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_modifier" kind="class" language="C#" prot="public" abstract="yes">
+    <compoundname>AdventureAssembly::Units::Heroes::ClassModifier</compoundname>
+    <derivedcompoundref refid="class_adventure_assembly_1_1_units_1_1_tests_1_1_test_class_modifier" prot="public" virt="non-virtual">AdventureAssembly.Units.Tests.TestClassModifier</derivedcompoundref>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_modifier_1a8da9c60ba6a1e0af9d3494313396fc1b" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="yes">
+        <type>int</type>
+        <definition>int AdventureAssembly.Units.Heroes.ClassModifier.RequiredCount</definition>
+        <argsstring></argsstring>
+        <name>RequiredCount</name>
+        <qualifiedname>AdventureAssembly.Units.Heroes.ClassModifier.RequiredCount</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/ClassModifier.cs" line="10" column="21" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/ClassModifier.cs" bodystart="10" bodyend="10"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_modifier_1a3c684a60ec288e333f4302c13ae9a44c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AdventureAssembly.Units.Heroes.ClassModifier.Apply</definition>
+        <argsstring>()</argsstring>
+        <name>Apply</name>
+        <qualifiedname>AdventureAssembly.Units.Heroes.ClassModifier.Apply</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/ClassModifier.cs" line="12" column="30"/>
+      </memberdef>
+      <memberdef kind="function" id="class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_modifier_1a8633417242b29f52210dc136f3292df9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AdventureAssembly.Units.Heroes.ClassModifier.Remove</definition>
+        <argsstring>()</argsstring>
+        <name>Remove</name>
+        <qualifiedname>AdventureAssembly.Units.Heroes.ClassModifier.Remove</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/ClassModifier.cs" line="13" column="30"/>
+      </memberdef>
+      <memberdef kind="function" id="class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_modifier_1ac3f20123b40aaa5466e1125163f8382c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_modifier" kindref="compound">ClassModifier</ref></type>
+        <definition>ClassModifier AdventureAssembly.Units.Heroes.ClassModifier.GetClone</definition>
+        <argsstring>()</argsstring>
+        <name>GetClone</name>
+        <qualifiedname>AdventureAssembly.Units.Heroes.ClassModifier.GetClone</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/ClassModifier.cs" line="15" column="30" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/ClassModifier.cs" bodystart="15" bodyend="18"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>AdventureAssembly.Units.Heroes.ClassModifier</label>
+        <link refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_modifier"/>
+      </node>
+      <node id="2">
+        <label>AdventureAssembly.Units.Tests.TestClassModifier</label>
+        <link refid="class_adventure_assembly_1_1_units_1_1_tests_1_1_test_class_modifier"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/ClassModifier.cs" line="7" column="21" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/ClassModifier.cs" bodystart="8" bodyend="19"/>
+    <listofallmembers>
+      <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_modifier_1a3c684a60ec288e333f4302c13ae9a44c" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::Heroes::ClassModifier</scope><name>Apply</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_modifier_1ac3f20123b40aaa5466e1125163f8382c" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::Heroes::ClassModifier</scope><name>GetClone</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_modifier_1a8633417242b29f52210dc136f3292df9" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::Heroes::ClassModifier</scope><name>Remove</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_modifier_1a8da9c60ba6a1e0af9d3494313396fc1b" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::Heroes::ClassModifier</scope><name>RequiredCount</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

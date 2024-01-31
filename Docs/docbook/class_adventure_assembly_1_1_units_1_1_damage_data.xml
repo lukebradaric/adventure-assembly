@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_adventure_assembly_1_1_units_1_1_damage_data" xml:lang="en-US">
+<title>AdventureAssembly.Units.DamageData Class Reference</title>
+<indexterm><primary>AdventureAssembly.Units.DamageData</primary></indexterm>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_adventure_assembly_1_1_units_1_1_damage_data_1a3542cb64c0d3eeffb549c46a204347c7">DamageData</link> (int baseValue)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para>int <link linkend="_class_adventure_assembly_1_1_units_1_1_damage_data_1a1d3dd679c2cdd652226ad87c5337ebad">BaseValue</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>int <link linkend="_class_adventure_assembly_1_1_units_1_1_damage_data_1abce190e454570554a0feff9a2ebcad41">Value</link><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_adventure_assembly_1_1_units_1_1_damage_data_1a8328172421fe9c72769d8ddb724e27c4">IsCritical</link><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_adventure_assembly_1_1_units_1_1_damage_data_1a3542cb64c0d3eeffb549c46a204347c7"/><section>
+    <title>DamageData()</title>
+<indexterm><primary>DamageData</primary><secondary>AdventureAssembly.Units.DamageData</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Units.DamageData</primary><secondary>DamageData</secondary></indexterm>
+<para><computeroutput>AdventureAssembly.Units.DamageData.DamageData (int baseValue)</computeroutput></para></section>
+</section>
+<section>
+<title>Property Documentation</title>
+<anchor xml:id="_class_adventure_assembly_1_1_units_1_1_damage_data_1a1d3dd679c2cdd652226ad87c5337ebad"/><section>
+    <title>BaseValue</title>
+<indexterm><primary>BaseValue</primary><secondary>AdventureAssembly.Units.DamageData</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Units.DamageData</primary><secondary>BaseValue</secondary></indexterm>
+<para><computeroutput>int AdventureAssembly.Units.DamageData.BaseValue<computeroutput>[get]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_adventure_assembly_1_1_units_1_1_damage_data_1a8328172421fe9c72769d8ddb724e27c4"/><section>
+    <title>IsCritical</title>
+<indexterm><primary>IsCritical</primary><secondary>AdventureAssembly.Units.DamageData</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Units.DamageData</primary><secondary>IsCritical</secondary></indexterm>
+<para><computeroutput>bool AdventureAssembly.Units.DamageData.IsCritical<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_adventure_assembly_1_1_units_1_1_damage_data_1abce190e454570554a0feff9a2ebcad41"/><section>
+    <title>Value</title>
+<indexterm><primary>Value</primary><secondary>AdventureAssembly.Units.DamageData</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Units.DamageData</primary><secondary>Value</secondary></indexterm>
+<para><computeroutput>int AdventureAssembly.Units.DamageData.Value<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/<link linkend="__damage_data_8cs">DamageData.cs</link></section>
+</section>

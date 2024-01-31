@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_adventure_assembly_1_1_units_1_1_animation_1_1_unit_movement_tween" xml:lang="en-US">
+<title>AdventureAssembly.Units.Animation.UnitMovementTween Class Reference</title>
+<indexterm><primary>AdventureAssembly.Units.Animation.UnitMovementTween</primary></indexterm>
+<para>Inheritance diagram for AdventureAssembly.Units.Animation.UnitMovementTween:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_adventure_assembly_1_1_units_1_1_animation_1_1_unit_movement_tween.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_adventure_assembly_1_1_units_1_1_animation_1_1_unit_movement_tween_1a52dad0a659a9ce1dc05fcd72b08aa089">Animate</link> (<link linkend="_class_adventure_assembly_1_1_units_1_1_unit">Unit</link> unit, Vector2Int newPosition, float duration)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_adventure_assembly_1_1_units_1_1_animation_1_1_unit_movement_tween_1a52dad0a659a9ce1dc05fcd72b08aa089"/><section>
+    <title>Animate()</title>
+<indexterm><primary>Animate</primary><secondary>AdventureAssembly.Units.Animation.UnitMovementTween</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Units.Animation.UnitMovementTween</primary><secondary>Animate</secondary></indexterm>
+<para><computeroutput>void AdventureAssembly.Units.Animation.UnitMovementTween.Animate (<link linkend="_class_adventure_assembly_1_1_units_1_1_unit">Unit</link> unit, Vector2Int newPosition, float duration)<computeroutput>[abstract]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Animation/<link linkend="__unit_movement_tween_8cs">UnitMovementTween.cs</link></section>
+</section>

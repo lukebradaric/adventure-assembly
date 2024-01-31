@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_7db68f476bd50f9f6d9cf398af037e8e" xml:lang="en-US">
+<title>D:/Unity/Projects/adventure-assembly/Assets/Scripts/Core Directory Reference</title>
+<indexterm><primary>D:/Unity/Projects/adventure-assembly/Assets/Scripts/Core Directory Reference</primary></indexterm>
+<simplesect>
+    <title>Directories    </title>
+        <itemizedlist>
+            <listitem><para>directory <link linkend="_dir_85cdf9ebbd5a3fb7d275a2b04dcb32c8">Bootstrap</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Files    </title>
+        <itemizedlist>
+            <listitem><para>file <link linkend="__constants_8cs">Constants.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__experience_manager_8cs">ExperienceManager.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__gold_manager_8cs">GoldManager.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__tick_manager_8cs">TickManager.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__time_manager_8cs">TimeManager.cs</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

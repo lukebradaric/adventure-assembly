@@ -1,0 +1,252 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_indicator" kind="class" language="C#" prot="public">
+    <compoundname>AdventureAssembly::Units::Heroes::HeroIndicator</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_indicator_1ac7f235eae565488ef1e434001329d17b" prot="private" static="no" mutable="no">
+        <type><ref refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_manager" kindref="compound">HeroManager</ref></type>
+        <definition>HeroManager AdventureAssembly.Units.Heroes.HeroIndicator._heroManager</definition>
+        <argsstring></argsstring>
+        <name>_heroManager</name>
+        <qualifiedname>AdventureAssembly.Units.Heroes.HeroIndicator._heroManager</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/HeroIndicator.cs" line="12" column="30" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/HeroIndicator.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_indicator_1a0b49aef1bed916368af0790636edb9c0" prot="private" static="no" mutable="no">
+        <type>Transform</type>
+        <definition>Transform AdventureAssembly.Units.Heroes.HeroIndicator._indicatorTransform</definition>
+        <argsstring></argsstring>
+        <name>_indicatorTransform</name>
+        <qualifiedname>AdventureAssembly.Units.Heroes.HeroIndicator._indicatorTransform</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/HeroIndicator.cs" line="13" column="28" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/HeroIndicator.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_indicator_1a5113a1c3123dde63ea3a83fa67c4aa3f" prot="private" static="no" mutable="no">
+        <type>Transform</type>
+        <definition>Transform AdventureAssembly.Units.Heroes.HeroIndicator._indicatorSpriteTransform</definition>
+        <argsstring></argsstring>
+        <name>_indicatorSpriteTransform</name>
+        <qualifiedname>AdventureAssembly.Units.Heroes.HeroIndicator._indicatorSpriteTransform</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/HeroIndicator.cs" line="14" column="28" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/HeroIndicator.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_indicator_1a03df066b2fe2bbf7c5431637a10e4c71" prot="private" static="no" mutable="no">
+        <type>LineRenderer</type>
+        <definition>LineRenderer AdventureAssembly.Units.Heroes.HeroIndicator._indicatorLineRenderer</definition>
+        <argsstring></argsstring>
+        <name>_indicatorLineRenderer</name>
+        <qualifiedname>AdventureAssembly.Units.Heroes.HeroIndicator._indicatorLineRenderer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/HeroIndicator.cs" line="15" column="31" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/HeroIndicator.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_indicator_1af035c5636bc4002093514b83cb678d59" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float AdventureAssembly.Units.Heroes.HeroIndicator._indicatorTweenDuration</definition>
+        <argsstring></argsstring>
+        <name>_indicatorTweenDuration</name>
+        <qualifiedname>AdventureAssembly.Units.Heroes.HeroIndicator._indicatorTweenDuration</qualifiedname>
+        <initializer>= 0.1f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/HeroIndicator.cs" line="19" column="24" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/HeroIndicator.cs" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_indicator_1af0b6f9a96d94fa7504ce5a5b40a71778" prot="private" static="no" mutable="no">
+        <type>Vector2</type>
+        <definition>Vector2 AdventureAssembly.Units.Heroes.HeroIndicator._indicatorOffset</definition>
+        <argsstring></argsstring>
+        <name>_indicatorOffset</name>
+        <qualifiedname>AdventureAssembly.Units.Heroes.HeroIndicator._indicatorOffset</qualifiedname>
+        <initializer>= new Vector2(0.9f, 0.4f)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/HeroIndicator.cs" line="20" column="26" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/HeroIndicator.cs" bodystart="20" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_indicator_1a9db51914ec696f60017af95a260e96c0" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AdventureAssembly.Units.Heroes.HeroIndicator.OnEnable</definition>
+        <argsstring>()</argsstring>
+        <name>OnEnable</name>
+        <qualifiedname>AdventureAssembly.Units.Heroes.HeroIndicator.OnEnable</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/HeroIndicator.cs" line="22" column="22" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/HeroIndicator.cs" bodystart="22" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_indicator_1a2db8bf63313b564175221b6091b75ef9" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AdventureAssembly.Units.Heroes.HeroIndicator.OnDisable</definition>
+        <argsstring>()</argsstring>
+        <name>OnDisable</name>
+        <qualifiedname>AdventureAssembly.Units.Heroes.HeroIndicator.OnDisable</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/HeroIndicator.cs" line="28" column="22" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/HeroIndicator.cs" bodystart="28" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_indicator_1acdb25eec4d30105c48f2fdab9eb5f75e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AdventureAssembly.Units.Heroes.HeroIndicator.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <qualifiedname>AdventureAssembly.Units.Heroes.HeroIndicator.Start</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/HeroIndicator.cs" line="34" column="22" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/HeroIndicator.cs" bodystart="34" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_indicator_1ab0fddeb773f03f5062b2bf72f4c40b6a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AdventureAssembly.Units.Heroes.HeroIndicator.Update</definition>
+        <argsstring>()</argsstring>
+        <name>Update</name>
+        <qualifiedname>AdventureAssembly.Units.Heroes.HeroIndicator.Update</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/HeroIndicator.cs" line="39" column="22" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/HeroIndicator.cs" bodystart="39" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_indicator_1ad1c533d0e9d996e16d69711629ef6fbe" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IEnumerator</type>
+        <definition>IEnumerator AdventureAssembly.Units.Heroes.HeroIndicator.UpdateCoroutine</definition>
+        <argsstring>()</argsstring>
+        <name>UpdateCoroutine</name>
+        <qualifiedname>AdventureAssembly.Units.Heroes.HeroIndicator.UpdateCoroutine</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/HeroIndicator.cs" line="44" column="29" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/HeroIndicator.cs" bodystart="44" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_indicator_1a30ce7f2a89e1ac9c52ecae37b47f7843" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AdventureAssembly.Units.Heroes.HeroIndicator.OnTurnLateUpdate</definition>
+        <argsstring>()</argsstring>
+        <name>OnTurnLateUpdate</name>
+        <qualifiedname>AdventureAssembly.Units.Heroes.HeroIndicator.OnTurnLateUpdate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/HeroIndicator.cs" line="51" column="22" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/HeroIndicator.cs" bodystart="51" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_indicator_1a84d0a1d9015b5ebbb72733b3e9b2c469" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AdventureAssembly.Units.Heroes.HeroIndicator.UpdateIndicator</definition>
+        <argsstring>()</argsstring>
+        <name>UpdateIndicator</name>
+        <qualifiedname>AdventureAssembly.Units.Heroes.HeroIndicator.UpdateIndicator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/HeroIndicator.cs" line="56" column="22" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/HeroIndicator.cs" bodystart="56" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_indicator_1a634c75664db7e1db2af29ecb1fc10299" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AdventureAssembly.Units.Heroes.HeroIndicator.UpdateIndicatorLineRenderer</definition>
+        <argsstring>()</argsstring>
+        <name>UpdateIndicatorLineRenderer</name>
+        <qualifiedname>AdventureAssembly.Units.Heroes.HeroIndicator.UpdateIndicatorLineRenderer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/HeroIndicator.cs" line="81" column="22" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/HeroIndicator.cs" bodystart="81" bodyend="94"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>AdventureAssembly.Units.Heroes.HeroIndicator</label>
+        <link refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_indicator"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>AdventureAssembly.Units.Heroes.HeroIndicator</label>
+        <link refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_indicator"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/HeroIndicator.cs" line="8" column="11" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Heroes/HeroIndicator.cs" bodystart="9" bodyend="95"/>
+    <listofallmembers>
+      <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_indicator_1ac7f235eae565488ef1e434001329d17b" prot="private" virt="non-virtual"><scope>AdventureAssembly::Units::Heroes::HeroIndicator</scope><name>_heroManager</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_indicator_1a03df066b2fe2bbf7c5431637a10e4c71" prot="private" virt="non-virtual"><scope>AdventureAssembly::Units::Heroes::HeroIndicator</scope><name>_indicatorLineRenderer</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_indicator_1af0b6f9a96d94fa7504ce5a5b40a71778" prot="private" virt="non-virtual"><scope>AdventureAssembly::Units::Heroes::HeroIndicator</scope><name>_indicatorOffset</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_indicator_1a5113a1c3123dde63ea3a83fa67c4aa3f" prot="private" virt="non-virtual"><scope>AdventureAssembly::Units::Heroes::HeroIndicator</scope><name>_indicatorSpriteTransform</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_indicator_1a0b49aef1bed916368af0790636edb9c0" prot="private" virt="non-virtual"><scope>AdventureAssembly::Units::Heroes::HeroIndicator</scope><name>_indicatorTransform</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_indicator_1af035c5636bc4002093514b83cb678d59" prot="private" virt="non-virtual"><scope>AdventureAssembly::Units::Heroes::HeroIndicator</scope><name>_indicatorTweenDuration</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_indicator_1a2db8bf63313b564175221b6091b75ef9" prot="private" virt="non-virtual"><scope>AdventureAssembly::Units::Heroes::HeroIndicator</scope><name>OnDisable</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_indicator_1a9db51914ec696f60017af95a260e96c0" prot="private" virt="non-virtual"><scope>AdventureAssembly::Units::Heroes::HeroIndicator</scope><name>OnEnable</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_indicator_1a30ce7f2a89e1ac9c52ecae37b47f7843" prot="private" virt="non-virtual"><scope>AdventureAssembly::Units::Heroes::HeroIndicator</scope><name>OnTurnLateUpdate</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_indicator_1acdb25eec4d30105c48f2fdab9eb5f75e" prot="private" virt="non-virtual"><scope>AdventureAssembly::Units::Heroes::HeroIndicator</scope><name>Start</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_indicator_1ab0fddeb773f03f5062b2bf72f4c40b6a" prot="private" virt="non-virtual"><scope>AdventureAssembly::Units::Heroes::HeroIndicator</scope><name>Update</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_indicator_1ad1c533d0e9d996e16d69711629ef6fbe" prot="private" virt="non-virtual"><scope>AdventureAssembly::Units::Heroes::HeroIndicator</scope><name>UpdateCoroutine</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_indicator_1a84d0a1d9015b5ebbb72733b3e9b2c469" prot="private" virt="non-virtual"><scope>AdventureAssembly::Units::Heroes::HeroIndicator</scope><name>UpdateIndicator</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_indicator_1a634c75664db7e1db2af29ecb1fc10299" prot="private" virt="non-virtual"><scope>AdventureAssembly::Units::Heroes::HeroIndicator</scope><name>UpdateIndicatorLineRenderer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

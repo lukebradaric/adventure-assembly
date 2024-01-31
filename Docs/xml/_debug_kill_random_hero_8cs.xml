@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="_debug_kill_random_hero_8cs" kind="file" language="C#">
+    <compoundname>DebugKillRandomHero.cs</compoundname>
+    <innerclass refid="class_adventure_assembly_1_1_debug_1_1_debug_kill_random_hero" prot="public">AdventureAssembly::Debug::DebugKillRandomHero</innerclass>
+    <innernamespace refid="namespace_adventure_assembly">AdventureAssembly</innernamespace>
+    <innernamespace refid="namespace_adventure_assembly_1_1_debug">AdventureAssembly::Debug</innernamespace>
+    <innernamespace refid="namespace_tiny_tools_1_1_extensions">TinyTools::Extensions</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespace_adventure_assembly_1_1_units_1_1_heroes" kindref="compound">AdventureAssembly.Units.Heroes</ref>;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">TinyTools.Extensions;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_adventure_assembly_1_1_debug" kindref="compound">AdventureAssembly.Debug</ref></highlight></codeline>
+<codeline lineno="5"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="6" refid="class_adventure_assembly_1_1_debug_1_1_debug_kill_random_hero" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_adventure_assembly_1_1_debug_1_1_debug_kill_random_hero" kindref="compound">DebugKillRandomHero</ref><sp/>:<sp/><ref refid="class_adventure_assembly_1_1_debug_1_1_debug_key_press" kindref="compound">DebugKeyPress</ref></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_adventure_assembly_1_1_debug_1_1_debug_kill_random_hero_1a545af70079ec1519f82e0992ccfaf24a" kindref="member">DebugKeyPressed</ref>()</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_manager" kindref="compound">HeroManager</ref>.<ref refid="class_adventure_assembly_1_1_units_1_1_unit_manager_1a5a409f68cd594daaaf44db79088ccae2" kindref="member">Units</ref>.Random().Die();</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Debug/DebugKillRandomHero.cs"/>
+  </compounddef>
+</doxygen>

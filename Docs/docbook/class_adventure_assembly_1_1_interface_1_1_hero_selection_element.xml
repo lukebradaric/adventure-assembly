@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_adventure_assembly_1_1_interface_1_1_hero_selection_element" xml:lang="en-US">
+<title>AdventureAssembly.Interface.HeroSelectionElement Class Reference</title>
+<indexterm><primary>AdventureAssembly.Interface.HeroSelectionElement</primary></indexterm>
+<para>Inheritance diagram for AdventureAssembly.Interface.HeroSelectionElement:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_adventure_assembly_1_1_interface_1_1_hero_selection_element.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_adventure_assembly_1_1_interface_1_1_hero_selection_element_1a2784fe055c889c4c67af12a30e733a63">OnPointerEnter</link> (PointerEventData eventData)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_adventure_assembly_1_1_interface_1_1_hero_selection_element_1a13faffebae60fc47c57f7a90306f0890">OnPointerExit</link> (PointerEventData eventData)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_adventure_assembly_1_1_interface_1_1_hero_selection_element_1aae60de5cc416352bfcec07ac69390865">OnPointerDown</link> (PointerEventData eventData)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para>RectTransform <link linkend="_class_adventure_assembly_1_1_interface_1_1_hero_selection_element_1a6754aa6596e0e318864a3ff1e5321260">VerticalLayoutTransform</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+            <listitem><para><link linkend="_class_adventure_assembly_1_1_interface_1_1_hero_selection_interface">HeroSelectionInterface</link> <link linkend="_class_adventure_assembly_1_1_interface_1_1_hero_selection_element_1adf3c645fd0ab44e823a60b9c71b6bff2">HeroSelectionInterface</link><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para><link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_data">HeroData</link> <link linkend="_class_adventure_assembly_1_1_interface_1_1_hero_selection_element_1a2e8fe18d4eeb5588a7c973c22c25ab7c">HeroData</link><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_adventure_assembly_1_1_interface_1_1_hero_selection_element_1aae60de5cc416352bfcec07ac69390865"/><section>
+    <title>OnPointerDown()</title>
+<indexterm><primary>OnPointerDown</primary><secondary>AdventureAssembly.Interface.HeroSelectionElement</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Interface.HeroSelectionElement</primary><secondary>OnPointerDown</secondary></indexterm>
+<para><computeroutput>void AdventureAssembly.Interface.HeroSelectionElement.OnPointerDown (PointerEventData eventData)</computeroutput></para></section>
+<anchor xml:id="_class_adventure_assembly_1_1_interface_1_1_hero_selection_element_1a2784fe055c889c4c67af12a30e733a63"/><section>
+    <title>OnPointerEnter()</title>
+<indexterm><primary>OnPointerEnter</primary><secondary>AdventureAssembly.Interface.HeroSelectionElement</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Interface.HeroSelectionElement</primary><secondary>OnPointerEnter</secondary></indexterm>
+<para><computeroutput>void AdventureAssembly.Interface.HeroSelectionElement.OnPointerEnter (PointerEventData eventData)</computeroutput></para></section>
+<anchor xml:id="_class_adventure_assembly_1_1_interface_1_1_hero_selection_element_1a13faffebae60fc47c57f7a90306f0890"/><section>
+    <title>OnPointerExit()</title>
+<indexterm><primary>OnPointerExit</primary><secondary>AdventureAssembly.Interface.HeroSelectionElement</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Interface.HeroSelectionElement</primary><secondary>OnPointerExit</secondary></indexterm>
+<para><computeroutput>void AdventureAssembly.Interface.HeroSelectionElement.OnPointerExit (PointerEventData eventData)</computeroutput></para></section>
+</section>
+<section>
+<title>Property Documentation</title>
+<anchor xml:id="_class_adventure_assembly_1_1_interface_1_1_hero_selection_element_1a2e8fe18d4eeb5588a7c973c22c25ab7c"/><section>
+    <title>HeroData</title>
+<indexterm><primary>HeroData</primary><secondary>AdventureAssembly.Interface.HeroSelectionElement</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Interface.HeroSelectionElement</primary><secondary>HeroData</secondary></indexterm>
+<para><computeroutput><link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_data">HeroData</link> AdventureAssembly.Interface.HeroSelectionElement.HeroData<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_adventure_assembly_1_1_interface_1_1_hero_selection_element_1adf3c645fd0ab44e823a60b9c71b6bff2"/><section>
+    <title>HeroSelectionInterface</title>
+<indexterm><primary>HeroSelectionInterface</primary><secondary>AdventureAssembly.Interface.HeroSelectionElement</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Interface.HeroSelectionElement</primary><secondary>HeroSelectionInterface</secondary></indexterm>
+<para><computeroutput><link linkend="_class_adventure_assembly_1_1_interface_1_1_hero_selection_interface">HeroSelectionInterface</link> AdventureAssembly.Interface.HeroSelectionElement.HeroSelectionInterface<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_adventure_assembly_1_1_interface_1_1_hero_selection_element_1a6754aa6596e0e318864a3ff1e5321260"/><section>
+    <title>VerticalLayoutTransform</title>
+<indexterm><primary>VerticalLayoutTransform</primary><secondary>AdventureAssembly.Interface.HeroSelectionElement</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Interface.HeroSelectionElement</primary><secondary>VerticalLayoutTransform</secondary></indexterm>
+<para><computeroutput>RectTransform AdventureAssembly.Interface.HeroSelectionElement.VerticalLayoutTransform<computeroutput>[get]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+D:/Unity/Projects/adventure-assembly/Assets/Scripts/Interface/<link linkend="__hero_selection_element_8cs">HeroSelectionElement.cs</link></section>
+</section>

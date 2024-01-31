@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_data" kind="class" language="C#" prot="public">
+    <compoundname>AdventureAssembly::Units::Enemies::EnemyData</compoundname>
+    <basecompoundref refid="class_adventure_assembly_1_1_units_1_1_unit_data" prot="public" virt="non-virtual">AdventureAssembly.Units.UnitData</basecompoundref>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_data_1abfddf619aa36efd1342cba155948a01b" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>int</type>
+        <definition>int AdventureAssembly.Units.Enemies.EnemyData.KillExperience</definition>
+        <argsstring></argsstring>
+        <name>KillExperience</name>
+        <qualifiedname>AdventureAssembly.Units.Enemies.EnemyData.KillExperience</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Enemies/EnemyData.cs" line="13" column="21" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Enemies/EnemyData.cs" bodystart="13" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="property" id="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_data_1a23aef6ca87b066aea0ee5069a480d294" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>int</type>
+        <definition>int AdventureAssembly.Units.Enemies.EnemyData.BaseDamage</definition>
+        <argsstring></argsstring>
+        <name>BaseDamage</name>
+        <qualifiedname>AdventureAssembly.Units.Enemies.EnemyData.BaseDamage</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Enemies/EnemyData.cs" line="15" column="21" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Enemies/EnemyData.cs" bodystart="15" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="property" id="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_data_1ae8ea742363924497f52d8982973a0086" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type><ref refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_navigation" kindref="compound">EnemyNavigation</ref></type>
+        <definition>EnemyNavigation AdventureAssembly.Units.Enemies.EnemyData.Navigation</definition>
+        <argsstring></argsstring>
+        <name>Navigation</name>
+        <qualifiedname>AdventureAssembly.Units.Enemies.EnemyData.Navigation</qualifiedname>
+        <initializer>= new <ref refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_default_enemy_navigation" kindref="compound">DefaultEnemyNavigation</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Enemies/EnemyData.cs" line="17" column="33" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Enemies/EnemyData.cs" bodystart="17" bodyend="17"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>AdventureAssembly.Units.Enemies.EnemyData</label>
+        <link refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_data"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>SerializedScriptableObject</label>
+      </node>
+      <node id="2">
+        <label>UnitData</label>
+        <link refid="class_adventure_assembly_1_1_units_1_1_unit_data"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>AdventureAssembly.Units.Enemies.EnemyData</label>
+        <link refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_data"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>SerializedScriptableObject</label>
+      </node>
+      <node id="2">
+        <label>UnitData</label>
+        <link refid="class_adventure_assembly_1_1_units_1_1_unit_data"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Enemies/EnemyData.cs" line="9" column="11" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Enemies/EnemyData.cs" bodystart="10" bodyend="18"/>
+    <listofallmembers>
+      <member refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_data_1a23aef6ca87b066aea0ee5069a480d294" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::Enemies::EnemyData</scope><name>BaseDamage</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_data_1abfddf619aa36efd1342cba155948a01b" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::Enemies::EnemyData</scope><name>KillExperience</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_unit_data_1a58a8f15f25278abc97a70a03ed84c075" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::Enemies::EnemyData</scope><name>MaxHealth</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_unit_data_1a198983aa6fc95b867c884f41b74bfe7a" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::Enemies::EnemyData</scope><name>MovementTween</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_unit_data_1a69171383da86da349b0d330024ac894e" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::Enemies::EnemyData</scope><name>Name</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_data_1ae8ea742363924497f52d8982973a0086" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::Enemies::EnemyData</scope><name>Navigation</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_unit_data_1a43cf81379cf6ed95be45c067dc507fe0" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::Enemies::EnemyData</scope><name>Sprite</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

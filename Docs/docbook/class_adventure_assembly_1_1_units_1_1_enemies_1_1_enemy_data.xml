@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_data" xml:lang="en-US">
+<title>AdventureAssembly.Units.Enemies.EnemyData Class Reference</title>
+<indexterm><primary>AdventureAssembly.Units.Enemies.EnemyData</primary></indexterm>
+<para>Inheritance diagram for AdventureAssembly.Units.Enemies.EnemyData:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_data.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para>int <link linkend="_class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_data_1abfddf619aa36efd1342cba155948a01b">KillExperience</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>int <link linkend="_class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_data_1a23aef6ca87b066aea0ee5069a480d294">BaseDamage</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+            <listitem><para><link linkend="_class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_navigation">EnemyNavigation</link> <link linkend="_class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_data_1ae8ea742363924497f52d8982973a0086">Navigation</link> = new <link linkend="_class_adventure_assembly_1_1_units_1_1_enemies_1_1_default_enemy_navigation">DefaultEnemyNavigation</link>()<computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Properties inherited from <link linkend="_class_adventure_assembly_1_1_units_1_1_unit_data">AdventureAssembly.Units.UnitData</link>        <itemizedlist>
+            <listitem><para>string <link linkend="_class_adventure_assembly_1_1_units_1_1_unit_data_1a69171383da86da349b0d330024ac894e">Name</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>Sprite <link linkend="_class_adventure_assembly_1_1_units_1_1_unit_data_1a43cf81379cf6ed95be45c067dc507fe0">Sprite</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>int <link linkend="_class_adventure_assembly_1_1_units_1_1_unit_data_1a58a8f15f25278abc97a70a03ed84c075">MaxHealth</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+            <listitem><para><link linkend="_class_adventure_assembly_1_1_units_1_1_animation_1_1_unit_movement_tween">UnitMovementTween</link> <link linkend="_class_adventure_assembly_1_1_units_1_1_unit_data_1a198983aa6fc95b867c884f41b74bfe7a">MovementTween</link> = new <link linkend="_class_adventure_assembly_1_1_units_1_1_animation_1_1_default_unit_movement_tween">DefaultUnitMovementTween</link>()<computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+        </itemizedlist>
+<section>
+<title>Property Documentation</title>
+<anchor xml:id="_class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_data_1a23aef6ca87b066aea0ee5069a480d294"/><section>
+    <title>BaseDamage</title>
+<indexterm><primary>BaseDamage</primary><secondary>AdventureAssembly.Units.Enemies.EnemyData</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Units.Enemies.EnemyData</primary><secondary>BaseDamage</secondary></indexterm>
+<para><computeroutput>int AdventureAssembly.Units.Enemies.EnemyData.BaseDamage<computeroutput>[get]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_data_1abfddf619aa36efd1342cba155948a01b"/><section>
+    <title>KillExperience</title>
+<indexterm><primary>KillExperience</primary><secondary>AdventureAssembly.Units.Enemies.EnemyData</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Units.Enemies.EnemyData</primary><secondary>KillExperience</secondary></indexterm>
+<para><computeroutput>int AdventureAssembly.Units.Enemies.EnemyData.KillExperience<computeroutput>[get]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_data_1ae8ea742363924497f52d8982973a0086"/><section>
+    <title>Navigation</title>
+<indexterm><primary>Navigation</primary><secondary>AdventureAssembly.Units.Enemies.EnemyData</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Units.Enemies.EnemyData</primary><secondary>Navigation</secondary></indexterm>
+<para><computeroutput><link linkend="_class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_navigation">EnemyNavigation</link> AdventureAssembly.Units.Enemies.EnemyData.Navigation = new <link linkend="_class_adventure_assembly_1_1_units_1_1_enemies_1_1_default_enemy_navigation">DefaultEnemyNavigation</link>()<computeroutput>[get]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Enemies/<link linkend="__enemy_data_8cs">EnemyData.cs</link></section>
+</section>

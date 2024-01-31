@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_adventure_assembly_1_1_units_1_1_modifiers_1_1_unit_modifier" kind="class" language="C#" prot="public" abstract="yes">
+    <compoundname>AdventureAssembly::Units::Modifiers::UnitModifier</compoundname>
+    <derivedcompoundref refid="class_adventure_assembly_1_1_units_1_1_modifiers_1_1_enemy_modifier" prot="public" virt="non-virtual">AdventureAssembly.Units.Modifiers.EnemyModifier</derivedcompoundref>
+    <derivedcompoundref refid="class_adventure_assembly_1_1_units_1_1_modifiers_1_1_hero_modifier" prot="public" virt="non-virtual">AdventureAssembly.Units.Modifiers.HeroModifier</derivedcompoundref>
+    <derivedcompoundref refid="class_adventure_assembly_1_1_units_1_1_tests_1_1_damage_modifier" prot="public" virt="non-virtual">AdventureAssembly.Units.Tests.DamageModifier</derivedcompoundref>
+    <derivedcompoundref refid="class_adventure_assembly_1_1_units_1_1_tests_1_1_health_modifier" prot="public" virt="non-virtual">AdventureAssembly.Units.Tests.HealthModifier</derivedcompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_adventure_assembly_1_1_units_1_1_modifiers_1_1_unit_modifier_1a95e0ec4898b322ccf1fb7b151c9d0638" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AdventureAssembly.Units.Modifiers.UnitModifier.Apply</definition>
+        <argsstring>(Unit unit)</argsstring>
+        <name>Apply</name>
+        <qualifiedname>AdventureAssembly.Units.Modifiers.UnitModifier.Apply</qualifiedname>
+        <param>
+          <type><ref refid="class_adventure_assembly_1_1_units_1_1_unit" kindref="compound">Unit</ref></type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Modifiers/UnitModifier.cs" line="6" column="30"/>
+      </memberdef>
+      <memberdef kind="function" id="class_adventure_assembly_1_1_units_1_1_modifiers_1_1_unit_modifier_1acd947b8858afe54670ddc0d091b62622" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AdventureAssembly.Units.Modifiers.UnitModifier.Remove</definition>
+        <argsstring>(Unit unit)</argsstring>
+        <name>Remove</name>
+        <qualifiedname>AdventureAssembly.Units.Modifiers.UnitModifier.Remove</qualifiedname>
+        <param>
+          <type><ref refid="class_adventure_assembly_1_1_units_1_1_unit" kindref="compound">Unit</ref></type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Modifiers/UnitModifier.cs" line="7" column="30"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>AdventureAssembly.Units.Modifiers.UnitModifier</label>
+        <link refid="class_adventure_assembly_1_1_units_1_1_modifiers_1_1_unit_modifier"/>
+      </node>
+      <node id="2">
+        <label>AdventureAssembly.Units.Modifiers.EnemyModifier</label>
+        <link refid="class_adventure_assembly_1_1_units_1_1_modifiers_1_1_enemy_modifier"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>AdventureAssembly.Units.Modifiers.HeroModifier</label>
+        <link refid="class_adventure_assembly_1_1_units_1_1_modifiers_1_1_hero_modifier"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>AdventureAssembly.Units.Tests.DamageModifier</label>
+        <link refid="class_adventure_assembly_1_1_units_1_1_tests_1_1_damage_modifier"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>AdventureAssembly.Units.Tests.HealthModifier</label>
+        <link refid="class_adventure_assembly_1_1_units_1_1_tests_1_1_health_modifier"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Modifiers/UnitModifier.cs" line="4" column="21" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Modifiers/UnitModifier.cs" bodystart="5" bodyend="8"/>
+    <listofallmembers>
+      <member refid="class_adventure_assembly_1_1_units_1_1_modifiers_1_1_unit_modifier_1a95e0ec4898b322ccf1fb7b151c9d0638" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::Modifiers::UnitModifier</scope><name>Apply</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_modifiers_1_1_unit_modifier_1acd947b8858afe54670ddc0d091b62622" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::Modifiers::UnitModifier</scope><name>Remove</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

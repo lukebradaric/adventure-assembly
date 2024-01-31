@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_adventure_assembly_1_1_core_1_1_experience_manager" xml:lang="en-US">
+<title>AdventureAssembly.Core.ExperienceManager Class Reference</title>
+<indexterm><primary>AdventureAssembly.Core.ExperienceManager</primary></indexterm>
+<para>Inheritance diagram for AdventureAssembly.Core.ExperienceManager:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_adventure_assembly_1_1_core_1_1_experience_manager.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_adventure_assembly_1_1_core_1_1_experience_manager_1aa3a339f607f98987fe05899aad7bfed9">AddExperience</link> (int experience)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_adventure_assembly_1_1_core_1_1_experience_manager_1aed35bda02976d8f5069003f5538d9c9d">UpdateLevel</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_adventure_assembly_1_1_core_1_1_experience_manager_1aa3a339f607f98987fe05899aad7bfed9"/><section>
+    <title>AddExperience()</title>
+<indexterm><primary>AddExperience</primary><secondary>AdventureAssembly.Core.ExperienceManager</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Core.ExperienceManager</primary><secondary>AddExperience</secondary></indexterm>
+<para><computeroutput>void AdventureAssembly.Core.ExperienceManager.AddExperience (int experience)</computeroutput></para></section>
+<anchor xml:id="_class_adventure_assembly_1_1_core_1_1_experience_manager_1aed35bda02976d8f5069003f5538d9c9d"/><section>
+    <title>UpdateLevel()</title>
+<indexterm><primary>UpdateLevel</primary><secondary>AdventureAssembly.Core.ExperienceManager</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Core.ExperienceManager</primary><secondary>UpdateLevel</secondary></indexterm>
+<para><computeroutput>void AdventureAssembly.Core.ExperienceManager.UpdateLevel ( )</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+D:/Unity/Projects/adventure-assembly/Assets/Scripts/Core/<link linkend="__experience_manager_8cs">ExperienceManager.cs</link></section>
+</section>

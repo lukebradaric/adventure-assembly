@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_stats" kind="class" language="C#" prot="public">
+    <compoundname>AdventureAssembly::Units::Enemies::EnemyStats</compoundname>
+    <basecompoundref refid="class_adventure_assembly_1_1_units_1_1_unit_stats" prot="public" virt="non-virtual">AdventureAssembly.Units.UnitStats</basecompoundref>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_stats_1a0288679a232a6c8ed89d75ec49bc07e9" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="yes">
+        <type><ref refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_data" kindref="compound">EnemyData</ref></type>
+        <definition>EnemyData AdventureAssembly.Units.Enemies.EnemyStats.EnemyData</definition>
+        <argsstring></argsstring>
+        <name>EnemyData</name>
+        <qualifiedname>AdventureAssembly.Units.Enemies.EnemyStats.EnemyData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Enemies/EnemyStats.cs" line="5" column="26" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Enemies/EnemyStats.cs" bodystart="5" bodyend="5"/>
+      </memberdef>
+      <memberdef kind="property" id="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_stats_1abd7d3dd3b3631261ba9c1810e41f6b3b" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="yes">
+        <type><ref refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy" kindref="compound">Enemy</ref></type>
+        <definition>Enemy AdventureAssembly.Units.Enemies.EnemyStats.Enemy</definition>
+        <argsstring></argsstring>
+        <name>Enemy</name>
+        <qualifiedname>AdventureAssembly.Units.Enemies.EnemyStats.Enemy</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Enemies/EnemyStats.cs" line="6" column="22" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Enemies/EnemyStats.cs" bodystart="6" bodyend="6"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_stats_1a728d16c9fa6125282081bce40c7c9b00" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void AdventureAssembly.Units.Enemies.EnemyStats.Initialize</definition>
+        <argsstring>(Unit unit)</argsstring>
+        <name>Initialize</name>
+        <qualifiedname>AdventureAssembly.Units.Enemies.EnemyStats.Initialize</qualifiedname>
+        <reimplements refid="class_adventure_assembly_1_1_units_1_1_unit_stats_1a70f9d0bf6d75f8c6ea338344d62ca627">Initialize</reimplements>
+        <param>
+          <type><ref refid="class_adventure_assembly_1_1_units_1_1_unit" kindref="compound">Unit</ref></type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Enemies/EnemyStats.cs" line="8" column="30" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Enemies/EnemyStats.cs" bodystart="8" bodyend="11"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>AdventureAssembly.Units.Enemies.EnemyStats</label>
+        <link refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_stats"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>SerializedMonoBehaviour</label>
+      </node>
+      <node id="2">
+        <label>UnitStats</label>
+        <link refid="class_adventure_assembly_1_1_units_1_1_unit_stats"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>AdventureAssembly.Units.Enemies.EnemyStats</label>
+        <link refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_stats"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>SerializedMonoBehaviour</label>
+      </node>
+      <node id="2">
+        <label>UnitStats</label>
+        <link refid="class_adventure_assembly_1_1_units_1_1_unit_stats"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Enemies/EnemyStats.cs" line="3" column="11" bodyfile="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Enemies/EnemyStats.cs" bodystart="4" bodyend="12"/>
+    <listofallmembers>
+      <member refid="class_adventure_assembly_1_1_units_1_1_unit_stats_1a3acbe358408d422a12c1aaa001af14f3" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::Enemies::EnemyStats</scope><name>DamageMultiplier</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_stats_1abd7d3dd3b3631261ba9c1810e41f6b3b" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::Enemies::EnemyStats</scope><name>Enemy</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_stats_1a0288679a232a6c8ed89d75ec49bc07e9" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::Enemies::EnemyStats</scope><name>EnemyData</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_unit_stats_1a83a2beb1adad04a2f00ea443cae7c3b6" prot="public" virt="virtual"><scope>AdventureAssembly::Units::Enemies::EnemyStats</scope><name>GetDamageData</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_unit_stats_1ae6119f225ce8bd14ca1e63ff82fa8a38" prot="public" virt="virtual"><scope>AdventureAssembly::Units::Enemies::EnemyStats</scope><name>GetMaxHealth</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_stats_1a728d16c9fa6125282081bce40c7c9b00" prot="public" virt="virtual"><scope>AdventureAssembly::Units::Enemies::EnemyStats</scope><name>Initialize</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_unit_stats_1a4f2e950f3fd84b3d8de9b2f652a7a12b" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::Enemies::EnemyStats</scope><name>MaxHealthMultiplier</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_unit_stats_1acb9e0cadc6fd05bf447e7cb42c5e6fe7" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::Enemies::EnemyStats</scope><name>Unit</name></member>
+      <member refid="class_adventure_assembly_1_1_units_1_1_unit_stats_1a388594321287b630bf69a06e962ae774" prot="public" virt="non-virtual"><scope>AdventureAssembly::Units::Enemies::EnemyStats</scope><name>UnitData</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

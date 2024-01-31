@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_adventure_assembly_1_1_units_1_1_modifiers_1_1_enemy_modifier" xml:lang="en-US">
+<title>AdventureAssembly.Units.Modifiers.EnemyModifier Class Reference</title>
+<indexterm><primary>AdventureAssembly.Units.Modifiers.EnemyModifier</primary></indexterm>
+<para>Inheritance diagram for AdventureAssembly.Units.Modifiers.EnemyModifier:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_adventure_assembly_1_1_units_1_1_modifiers_1_1_enemy_modifier.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>override void <link linkend="_class_adventure_assembly_1_1_units_1_1_modifiers_1_1_enemy_modifier_1a769432bb831b83b5cd9974e3b2732b35">Apply</link> (<link linkend="_class_adventure_assembly_1_1_units_1_1_unit">Unit</link> unit)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_adventure_assembly_1_1_units_1_1_modifiers_1_1_enemy_modifier_1a80619d1cd779aeae1ef89ee9bde95d74">Apply</link> (<link linkend="_class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy">Enemy</link> enemy)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public Member Functions inherited from <link linkend="_class_adventure_assembly_1_1_units_1_1_modifiers_1_1_unit_modifier">AdventureAssembly.Units.Modifiers.UnitModifier</link>        <itemizedlist>
+            <listitem><para>void <link linkend="_class_adventure_assembly_1_1_units_1_1_modifiers_1_1_unit_modifier_1a95e0ec4898b322ccf1fb7b151c9d0638">Apply</link> (<link linkend="_class_adventure_assembly_1_1_units_1_1_unit">Unit</link> unit)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_adventure_assembly_1_1_units_1_1_modifiers_1_1_unit_modifier_1acd947b8858afe54670ddc0d091b62622">Remove</link> (<link linkend="_class_adventure_assembly_1_1_units_1_1_unit">Unit</link> unit)</para>
+</listitem>
+        </itemizedlist>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_adventure_assembly_1_1_units_1_1_modifiers_1_1_enemy_modifier_1a80619d1cd779aeae1ef89ee9bde95d74"/><section>
+    <title>Apply()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>Apply</primary><secondary>AdventureAssembly.Units.Modifiers.EnemyModifier</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Units.Modifiers.EnemyModifier</primary><secondary>Apply</secondary></indexterm>
+<para><computeroutput>void AdventureAssembly.Units.Modifiers.EnemyModifier.Apply (<link linkend="_class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy">Enemy</link> enemy)<computeroutput>[abstract]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_adventure_assembly_1_1_units_1_1_modifiers_1_1_enemy_modifier_1a769432bb831b83b5cd9974e3b2732b35"/><section>
+    <title>Apply()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>Apply</primary><secondary>AdventureAssembly.Units.Modifiers.EnemyModifier</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Units.Modifiers.EnemyModifier</primary><secondary>Apply</secondary></indexterm>
+<para><computeroutput>override void AdventureAssembly.Units.Modifiers.EnemyModifier.Apply (<link linkend="_class_adventure_assembly_1_1_units_1_1_unit">Unit</link> unit)</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Modifiers/<link linkend="__enemy_modifier_8cs">EnemyModifier.cs</link></section>
+</section>

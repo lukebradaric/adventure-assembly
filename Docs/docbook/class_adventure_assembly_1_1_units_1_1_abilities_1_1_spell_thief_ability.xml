@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_adventure_assembly_1_1_units_1_1_abilities_1_1_spell_thief_ability" xml:lang="en-US">
+<title>AdventureAssembly.Units.Abilities.SpellThiefAbility Class Reference</title>
+<indexterm><primary>AdventureAssembly.Units.Abilities.SpellThiefAbility</primary></indexterm>
+<para>Inheritance diagram for AdventureAssembly.Units.Abilities.SpellThiefAbility:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_adventure_assembly_1_1_units_1_1_abilities_1_1_spell_thief_ability.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Protected Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>override void <link linkend="_class_adventure_assembly_1_1_units_1_1_abilities_1_1_spell_thief_ability_1a34d1371ed4f26ca2944340f33a1cec28">Execute</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Protected Member Functions inherited from <link linkend="_class_adventure_assembly_1_1_units_1_1_abilities_1_1_ability">AdventureAssembly.Units.Abilities.Ability</link>        <itemizedlist>
+            <listitem><para>void <link linkend="_class_adventure_assembly_1_1_units_1_1_abilities_1_1_ability_1a10b7f6c143ff31ee425d5bcf2a1b399b">Execute</link> ()</para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Additional Inherited Members    </title>
+Public Member Functions inherited from <link linkend="_class_adventure_assembly_1_1_units_1_1_abilities_1_1_ability">AdventureAssembly.Units.Abilities.Ability</link>        <itemizedlist>
+            <listitem><para>void <link linkend="_class_adventure_assembly_1_1_units_1_1_abilities_1_1_ability_1ac791d2af1bb18d969d6435d7c3299d60">Initialize</link> (<link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero">Hero</link> hero)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_adventure_assembly_1_1_units_1_1_abilities_1_1_ability_1a5461d3186734eae08dfb7eeaa1f22b04">OnUpdate</link> (float time)</para>
+</listitem>
+            <listitem><para><link linkend="_class_adventure_assembly_1_1_units_1_1_abilities_1_1_ability">Ability</link> <link linkend="_class_adventure_assembly_1_1_units_1_1_abilities_1_1_ability_1a720aa4b9d9ce12d3ce9dc0672c2e09bb">GetClone</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Protected Attributes inherited from <link linkend="_class_adventure_assembly_1_1_units_1_1_abilities_1_1_ability">AdventureAssembly.Units.Abilities.Ability</link>        <itemizedlist>
+            <listitem><para>float <link linkend="_class_adventure_assembly_1_1_units_1_1_abilities_1_1_ability_1a915b3150562955757d4dca3dfa551b30">_currentTime</link></para>
+</listitem>
+            <listitem><para><link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero">Hero</link> <link linkend="_class_adventure_assembly_1_1_units_1_1_abilities_1_1_ability_1a11cd1eb21886e3c08b9564f60090125f">_hero</link></para>
+</listitem>
+        </itemizedlist>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_adventure_assembly_1_1_units_1_1_abilities_1_1_spell_thief_ability_1a34d1371ed4f26ca2944340f33a1cec28"/><section>
+    <title>Execute()</title>
+<indexterm><primary>Execute</primary><secondary>AdventureAssembly.Units.Abilities.SpellThiefAbility</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Units.Abilities.SpellThiefAbility</primary><secondary>Execute</secondary></indexterm>
+<para><computeroutput>override void AdventureAssembly.Units.Abilities.SpellThiefAbility.Execute ( )<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Abilities/<link linkend="__spell_thief_ability_8cs">SpellThiefAbility.cs</link></section>
+</section>

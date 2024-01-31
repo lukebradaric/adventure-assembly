@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_adventure_assembly_1_1_interface_1_1_gold_interface" xml:lang="en-US">
+<title>AdventureAssembly.Interface.GoldInterface Class Reference</title>
+<indexterm><primary>AdventureAssembly.Interface.GoldInterface</primary></indexterm>
+<para>Inheritance diagram for AdventureAssembly.Interface.GoldInterface:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_adventure_assembly_1_1_interface_1_1_gold_interface.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<para>
+The documentation for this class was generated from the following file:</para>
+D:/Unity/Projects/adventure-assembly/Assets/Scripts/Interface/<link linkend="__gold_interface_8cs">GoldInterface.cs</link></section>

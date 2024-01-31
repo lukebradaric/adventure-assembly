@@ -1,0 +1,150 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_adventure_assembly_1_1_units_1_1_unit" xml:lang="en-US">
+<title>AdventureAssembly.Units.Unit Class Reference</title>
+<indexterm><primary>AdventureAssembly.Units.Unit</primary></indexterm>
+<para>Inheritance diagram for AdventureAssembly.Units.Unit:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_adventure_assembly_1_1_units_1_1_unit.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>virtual void <link linkend="_class_adventure_assembly_1_1_units_1_1_unit_1acf5840ae70dc7d8b514b1d48e3ae906f">Initialize</link> (<link linkend="_class_adventure_assembly_1_1_units_1_1_unit_data">UnitData</link> unitData, Vector2Int position)</para>
+</listitem>
+            <listitem><para>virtual void <link linkend="_class_adventure_assembly_1_1_units_1_1_unit_1aea72e9754ddba7da62420b73a621b419">OnUpdate</link> (float time)</para>
+</listitem>
+            <listitem><para>virtual void <link linkend="_class_adventure_assembly_1_1_units_1_1_unit_1a2ff1fb6e8c612f7a7aa681d67c652b1a">Move</link> (Vector2Int direction)</para>
+</listitem>
+            <listitem><para>virtual void <link linkend="_class_adventure_assembly_1_1_units_1_1_unit_1a45f62d207097560cd028e3c5eab7c091">Damage</link> (<link linkend="_class_adventure_assembly_1_1_units_1_1_damage_data">DamageData</link> damageData)</para>
+</listitem>
+            <listitem><para>virtual void <link linkend="_class_adventure_assembly_1_1_units_1_1_unit_1a4ffdf49e62850ce9e51d669004a4b499">Die</link> ()</para>
+</listitem>
+            <listitem><para>virtual void <link linkend="_class_adventure_assembly_1_1_units_1_1_unit_1aed49f829ffff64b58847a7c158a57392">FlipSprite</link> (int x)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para>SpriteRenderer <link linkend="_class_adventure_assembly_1_1_units_1_1_unit_1a11257e3c8dcfb967d85212aa41485da4">SpriteRenderer</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>virtual <link linkend="_class_adventure_assembly_1_1_units_1_1_unit_stats">UnitStats</link> <link linkend="_class_adventure_assembly_1_1_units_1_1_unit_1a133db396ea3ad3cc73c7c9de8538c975">Stats</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+            <listitem><para><link linkend="_class_adventure_assembly_1_1_units_1_1_unit_data">UnitData</link> <link linkend="_class_adventure_assembly_1_1_units_1_1_unit_1a6e4837996ced88e06efa04f108246617">UnitData</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>int <link linkend="_class_adventure_assembly_1_1_units_1_1_unit_1abe54923d5a5d0f38c84454dd7d61e19d">CurrentHealth</link><computeroutput> [get, protected set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>Vector2Int <link linkend="_class_adventure_assembly_1_1_units_1_1_unit_1ac0ba4f9e48f1e5054b8e5c9912c1e86a">Position</link> = Vector2Int.zero<computeroutput> [get, protected set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>Vector2Int <link linkend="_class_adventure_assembly_1_1_units_1_1_unit_1a9afb5a52cef8d77760a0b7472fa71424">LastPosition</link><computeroutput> [get, protected set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_adventure_assembly_1_1_units_1_1_unit_1aeb6dedf5a847c7da814b16195cca0c48">IsDead</link> = false<computeroutput> [get, protected set]</computeroutput>
+</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Events    </title>
+        <itemizedlist>
+            <listitem><para>Action&lt; <link linkend="_class_adventure_assembly_1_1_units_1_1_unit">Unit</link> &gt; <link linkend="_class_adventure_assembly_1_1_units_1_1_unit_1aedb81657370d6a615ea461e04ee9ed89">Died</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_adventure_assembly_1_1_units_1_1_unit_1a45f62d207097560cd028e3c5eab7c091"/><section>
+    <title>Damage()</title>
+<indexterm><primary>Damage</primary><secondary>AdventureAssembly.Units.Unit</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Units.Unit</primary><secondary>Damage</secondary></indexterm>
+<para><computeroutput>virtual void AdventureAssembly.Units.Unit.Damage (<link linkend="_class_adventure_assembly_1_1_units_1_1_damage_data">DamageData</link> damageData)<computeroutput>[virtual]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_adventure_assembly_1_1_units_1_1_unit_1a4ffdf49e62850ce9e51d669004a4b499"/><section>
+    <title>Die()</title>
+<indexterm><primary>Die</primary><secondary>AdventureAssembly.Units.Unit</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Units.Unit</primary><secondary>Die</secondary></indexterm>
+<para><computeroutput>virtual void AdventureAssembly.Units.Unit.Die ( )<computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Reimplemented in <link linkend="_class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_1a4f23dfed60ba1b400f1aeb88eaad251c">AdventureAssembly.Units.Enemies.Enemy</link>, and <link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_1aea23a411b8f806212073a7187cabf8e4">AdventureAssembly.Units.Heroes.Hero</link>.</para>
+</section>
+<anchor xml:id="_class_adventure_assembly_1_1_units_1_1_unit_1aed49f829ffff64b58847a7c158a57392"/><section>
+    <title>FlipSprite()</title>
+<indexterm><primary>FlipSprite</primary><secondary>AdventureAssembly.Units.Unit</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Units.Unit</primary><secondary>FlipSprite</secondary></indexterm>
+<para><computeroutput>virtual void AdventureAssembly.Units.Unit.FlipSprite (int x)<computeroutput>[virtual]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_adventure_assembly_1_1_units_1_1_unit_1acf5840ae70dc7d8b514b1d48e3ae906f"/><section>
+    <title>Initialize()</title>
+<indexterm><primary>Initialize</primary><secondary>AdventureAssembly.Units.Unit</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Units.Unit</primary><secondary>Initialize</secondary></indexterm>
+<para><computeroutput>virtual void AdventureAssembly.Units.Unit.Initialize (<link linkend="_class_adventure_assembly_1_1_units_1_1_unit_data">UnitData</link> unitData, Vector2Int position)<computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Reimplemented in <link linkend="_class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_1a4b320d4e4e24ca4a2fc3484d54f131ea">AdventureAssembly.Units.Enemies.Enemy</link>, and <link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_1ab4f1154d51a9c8910966ab1b716885eb">AdventureAssembly.Units.Heroes.Hero</link>.</para>
+</section>
+<anchor xml:id="_class_adventure_assembly_1_1_units_1_1_unit_1a2ff1fb6e8c612f7a7aa681d67c652b1a"/><section>
+    <title>Move()</title>
+<indexterm><primary>Move</primary><secondary>AdventureAssembly.Units.Unit</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Units.Unit</primary><secondary>Move</secondary></indexterm>
+<para><computeroutput>virtual void AdventureAssembly.Units.Unit.Move (Vector2Int direction)<computeroutput>[virtual]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_adventure_assembly_1_1_units_1_1_unit_1aea72e9754ddba7da62420b73a621b419"/><section>
+    <title>OnUpdate()</title>
+<indexterm><primary>OnUpdate</primary><secondary>AdventureAssembly.Units.Unit</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Units.Unit</primary><secondary>OnUpdate</secondary></indexterm>
+<para><computeroutput>virtual void AdventureAssembly.Units.Unit.OnUpdate (float time)<computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Reimplemented in <link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_1a42378eba3287f826ffe33cc27021cf6e">AdventureAssembly.Units.Heroes.Hero</link>.</para>
+</section>
+</section>
+<section>
+<title>Property Documentation</title>
+<anchor xml:id="_class_adventure_assembly_1_1_units_1_1_unit_1abe54923d5a5d0f38c84454dd7d61e19d"/><section>
+    <title>CurrentHealth</title>
+<indexterm><primary>CurrentHealth</primary><secondary>AdventureAssembly.Units.Unit</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Units.Unit</primary><secondary>CurrentHealth</secondary></indexterm>
+<para><computeroutput>int AdventureAssembly.Units.Unit.CurrentHealth<computeroutput>[get]</computeroutput>, <computeroutput>[protected set]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_adventure_assembly_1_1_units_1_1_unit_1aeb6dedf5a847c7da814b16195cca0c48"/><section>
+    <title>IsDead</title>
+<indexterm><primary>IsDead</primary><secondary>AdventureAssembly.Units.Unit</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Units.Unit</primary><secondary>IsDead</secondary></indexterm>
+<para><computeroutput>bool AdventureAssembly.Units.Unit.IsDead = false<computeroutput>[get]</computeroutput>, <computeroutput>[protected set]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_adventure_assembly_1_1_units_1_1_unit_1a9afb5a52cef8d77760a0b7472fa71424"/><section>
+    <title>LastPosition</title>
+<indexterm><primary>LastPosition</primary><secondary>AdventureAssembly.Units.Unit</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Units.Unit</primary><secondary>LastPosition</secondary></indexterm>
+<para><computeroutput>Vector2Int AdventureAssembly.Units.Unit.LastPosition<computeroutput>[get]</computeroutput>, <computeroutput>[protected set]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_adventure_assembly_1_1_units_1_1_unit_1ac0ba4f9e48f1e5054b8e5c9912c1e86a"/><section>
+    <title>Position</title>
+<indexterm><primary>Position</primary><secondary>AdventureAssembly.Units.Unit</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Units.Unit</primary><secondary>Position</secondary></indexterm>
+<para><computeroutput>Vector2Int AdventureAssembly.Units.Unit.Position = Vector2Int.zero<computeroutput>[get]</computeroutput>, <computeroutput>[protected set]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_adventure_assembly_1_1_units_1_1_unit_1a11257e3c8dcfb967d85212aa41485da4"/><section>
+    <title>SpriteRenderer</title>
+<indexterm><primary>SpriteRenderer</primary><secondary>AdventureAssembly.Units.Unit</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Units.Unit</primary><secondary>SpriteRenderer</secondary></indexterm>
+<para><computeroutput>SpriteRenderer AdventureAssembly.Units.Unit.SpriteRenderer<computeroutput>[get]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_adventure_assembly_1_1_units_1_1_unit_1a133db396ea3ad3cc73c7c9de8538c975"/><section>
+    <title>Stats</title>
+<indexterm><primary>Stats</primary><secondary>AdventureAssembly.Units.Unit</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Units.Unit</primary><secondary>Stats</secondary></indexterm>
+<para><computeroutput>virtual <link linkend="_class_adventure_assembly_1_1_units_1_1_unit_stats">UnitStats</link> AdventureAssembly.Units.Unit.Stats<computeroutput>[get]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_adventure_assembly_1_1_units_1_1_unit_1a6e4837996ced88e06efa04f108246617"/><section>
+    <title>UnitData</title>
+<indexterm><primary>UnitData</primary><secondary>AdventureAssembly.Units.Unit</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Units.Unit</primary><secondary>UnitData</secondary></indexterm>
+<para><computeroutput><link linkend="_class_adventure_assembly_1_1_units_1_1_unit_data">UnitData</link> AdventureAssembly.Units.Unit.UnitData<computeroutput>[get]</computeroutput></computeroutput></para></section>
+</section>
+<section>
+<title>Event Documentation</title>
+<anchor xml:id="_class_adventure_assembly_1_1_units_1_1_unit_1aedb81657370d6a615ea461e04ee9ed89"/><section>
+    <title>Died</title>
+<indexterm><primary>Died</primary><secondary>AdventureAssembly.Units.Unit</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Units.Unit</primary><secondary>Died</secondary></indexterm>
+<para><computeroutput>Action&lt;<link linkend="_class_adventure_assembly_1_1_units_1_1_unit">Unit</link>&gt; AdventureAssembly.Units.Unit.Died</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/<link linkend="__unit_8cs">Unit.cs</link></section>
+</section>

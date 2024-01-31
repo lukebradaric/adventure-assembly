@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="_projectile_ability_8cs" kind="file" language="C#">
+    <compoundname>ProjectileAbility.cs</compoundname>
+    <innerclass refid="class_adventure_assembly_1_1_units_1_1_abilities_1_1_projectile_ability" prot="public">AdventureAssembly::Units::Abilities::ProjectileAbility</innerclass>
+    <innernamespace refid="namespace_adventure_assembly">AdventureAssembly</innernamespace>
+    <innernamespace refid="namespace_adventure_assembly_1_1_units">AdventureAssembly::Units</innernamespace>
+    <innernamespace refid="namespace_adventure_assembly_1_1_units_1_1_abilities">AdventureAssembly::Units::Abilities</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespace_adventure_assembly_1_1_units_1_1_enemies" kindref="compound">AdventureAssembly.Units.Enemies</ref>;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">UnityEngine;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_adventure_assembly_1_1_units_1_1_abilities" kindref="compound">AdventureAssembly.Units.Abilities</ref></highlight></codeline>
+<codeline lineno="5"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>[System.Serializable]</highlight></codeline>
+<codeline lineno="7" refid="class_adventure_assembly_1_1_units_1_1_abilities_1_1_projectile_ability" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_adventure_assembly_1_1_units_1_1_abilities_1_1_projectile_ability" kindref="compound">ProjectileAbility</ref><sp/>:<sp/><ref refid="class_adventure_assembly_1_1_units_1_1_abilities_1_1_ability" kindref="compound">Ability</ref></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[SerializeField]<sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_baseDamage;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[SerializeField]<sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/><ref refid="class_adventure_assembly_1_1_units_1_1_projectile" kindref="compound">Projectile</ref><sp/>_projectilePrefab;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_adventure_assembly_1_1_units_1_1_abilities_1_1_projectile_ability_1ac727e4221751d93c12fee7822a579523" kindref="member">Execute</ref>()</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy" kindref="compound">Enemy</ref><sp/>enemy<sp/>=<sp/><ref refid="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_manager" kindref="compound">EnemyManager</ref>.<ref refid="class_adventure_assembly_1_1_units_1_1_unit_manager_1a9c20545856d094b8ffb7d74276f865ca" kindref="member">GetNearestUnit</ref>(<ref refid="class_adventure_assembly_1_1_units_1_1_abilities_1_1_ability_1a11cd1eb21886e3c08b9564f60090125f" kindref="member">_hero</ref>.Position);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(enemy<sp/>==<sp/></highlight><highlight class="keyword">null</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_adventure_assembly_1_1_units_1_1_projectile" kindref="compound">Projectile</ref><sp/>projectile<sp/>=<sp/>GameObject.Instantiate(_projectilePrefab,<sp/><ref refid="class_adventure_assembly_1_1_units_1_1_abilities_1_1_ability_1a11cd1eb21886e3c08b9564f60090125f" kindref="member">_hero</ref>.transform.position,<sp/>Quaternion.identity);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>projectile.<ref refid="class_adventure_assembly_1_1_units_1_1_projectile_1aab40fe31e75c17a6486c5d9fd7339ce3" kindref="member">Initialize</ref>(<ref refid="class_adventure_assembly_1_1_units_1_1_abilities_1_1_ability_1a11cd1eb21886e3c08b9564f60090125f" kindref="member">_hero</ref>,<sp/>_baseDamage,<sp/>enemy);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Abilities/ProjectileAbility.cs"/>
+  </compounddef>
+</doxygen>

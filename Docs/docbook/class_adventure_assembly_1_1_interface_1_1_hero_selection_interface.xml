@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_adventure_assembly_1_1_interface_1_1_hero_selection_interface" xml:lang="en-US">
+<title>AdventureAssembly.Interface.HeroSelectionInterface Class Reference</title>
+<indexterm><primary>AdventureAssembly.Interface.HeroSelectionInterface</primary></indexterm>
+<para>Inheritance diagram for AdventureAssembly.Interface.HeroSelectionInterface:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_adventure_assembly_1_1_interface_1_1_hero_selection_interface.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_adventure_assembly_1_1_interface_1_1_hero_selection_interface_1a04d5f4ffec2c885a55817ffa4223df4a">Show</link> (List&lt; <link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_data">HeroData</link> &gt; heroData)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_adventure_assembly_1_1_interface_1_1_hero_selection_interface_1a8103d143f4ba25ac18494514f6805b39">Hide</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_adventure_assembly_1_1_interface_1_1_hero_selection_interface_1a17d42e49b612636fbacae81943ef64cc">ShowSelections</link> (List&lt; <link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_data">HeroData</link> &gt; heroData)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_adventure_assembly_1_1_interface_1_1_hero_selection_interface_1a454bdbc0442447de56128697457c090d">OnHeroSelected</link> (<link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_data">HeroData</link> heroData)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_adventure_assembly_1_1_interface_1_1_hero_selection_interface_1a8103d143f4ba25ac18494514f6805b39"/><section>
+    <title>Hide()</title>
+<indexterm><primary>Hide</primary><secondary>AdventureAssembly.Interface.HeroSelectionInterface</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Interface.HeroSelectionInterface</primary><secondary>Hide</secondary></indexterm>
+<para><computeroutput>void AdventureAssembly.Interface.HeroSelectionInterface.Hide ( )</computeroutput></para></section>
+<anchor xml:id="_class_adventure_assembly_1_1_interface_1_1_hero_selection_interface_1a454bdbc0442447de56128697457c090d"/><section>
+    <title>OnHeroSelected()</title>
+<indexterm><primary>OnHeroSelected</primary><secondary>AdventureAssembly.Interface.HeroSelectionInterface</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Interface.HeroSelectionInterface</primary><secondary>OnHeroSelected</secondary></indexterm>
+<para><computeroutput>void AdventureAssembly.Interface.HeroSelectionInterface.OnHeroSelected (<link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_data">HeroData</link> heroData)</computeroutput></para></section>
+<anchor xml:id="_class_adventure_assembly_1_1_interface_1_1_hero_selection_interface_1a04d5f4ffec2c885a55817ffa4223df4a"/><section>
+    <title>Show()</title>
+<indexterm><primary>Show</primary><secondary>AdventureAssembly.Interface.HeroSelectionInterface</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Interface.HeroSelectionInterface</primary><secondary>Show</secondary></indexterm>
+<para><computeroutput>void AdventureAssembly.Interface.HeroSelectionInterface.Show (List&lt; <link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_data">HeroData</link> &gt; heroData)</computeroutput></para></section>
+<anchor xml:id="_class_adventure_assembly_1_1_interface_1_1_hero_selection_interface_1a17d42e49b612636fbacae81943ef64cc"/><section>
+    <title>ShowSelections()</title>
+<indexterm><primary>ShowSelections</primary><secondary>AdventureAssembly.Interface.HeroSelectionInterface</secondary></indexterm>
+<indexterm><primary>AdventureAssembly.Interface.HeroSelectionInterface</primary><secondary>ShowSelections</secondary></indexterm>
+<para><computeroutput>void AdventureAssembly.Interface.HeroSelectionInterface.ShowSelections (List&lt; <link linkend="_class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_data">HeroData</link> &gt; heroData)</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+D:/Unity/Projects/adventure-assembly/Assets/Scripts/Interface/<link linkend="__hero_selection_interface_8cs">HeroSelectionInterface.cs</link></section>
+</section>

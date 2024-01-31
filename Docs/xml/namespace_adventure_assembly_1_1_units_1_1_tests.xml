@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="namespace_adventure_assembly_1_1_units_1_1_tests" kind="namespace" language="C#">
+    <compoundname>AdventureAssembly::Units::Tests</compoundname>
+    <innerclass refid="class_adventure_assembly_1_1_units_1_1_tests_1_1_damage_modifier" prot="public">AdventureAssembly::Units::Tests::DamageModifier</innerclass>
+    <innerclass refid="class_adventure_assembly_1_1_units_1_1_tests_1_1_default_stat_modifier" prot="public">AdventureAssembly::Units::Tests::DefaultStatModifier</innerclass>
+    <innerclass refid="class_adventure_assembly_1_1_units_1_1_tests_1_1_health_modifier" prot="public">AdventureAssembly::Units::Tests::HealthModifier</innerclass>
+    <innerclass refid="class_adventure_assembly_1_1_units_1_1_tests_1_1_test_class_modifier" prot="public">AdventureAssembly::Units::Tests::TestClassModifier</innerclass>
+    <innerclass refid="class_adventure_assembly_1_1_units_1_1_tests_1_1_test_enemy_modifier" prot="public">AdventureAssembly::Units::Tests::TestEnemyModifier</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/Unity/Projects/adventure-assembly/Assets/Scripts/Units/Tests/DamageModifier.cs" line="4" column="1"/>
+  </compounddef>
+</doxygen>
