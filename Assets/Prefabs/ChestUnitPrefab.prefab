@@ -94,9 +94,9 @@ GameObject:
   m_Component:
   - component: {fileID: 586262653192793706}
   - component: {fileID: 7972294613685365167}
-  - component: {fileID: -3298782368573719313}
+  - component: {fileID: 5411363518447056152}
   m_Layer: 0
-  m_Name: ChestPrefab
+  m_Name: ChestUnitPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -170,7 +170,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &-3298782368573719313
+--- !u!114 &5411363518447056152
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -179,7 +179,44 @@ MonoBehaviour:
   m_GameObject: {fileID: 5654425973595697671}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8c6fdd5592913df4b88ea53bd9e2951e, type: 3}
+  m_Script: {fileID: 11500000, guid: 9ee153fcf1334ff4499603670e946a1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _chestOpenScriptableEvent: {fileID: 11400000, guid: cccd2151a7ff8de4fa9cce831ede2159, type: 2}
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  _interactEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: cccd2151a7ff8de4fa9cce831ede2159, type: 2}
+        m_TargetAssemblyTypeName: TinyTools.ScriptableEvents.VoidScriptableEvent,
+          TinyTools
+        m_MethodName: Invoke
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: 333f1769793ec2f48831b51e9e32c75d, type: 2}
+        m_TargetAssemblyTypeName: TinyTools.ScriptableSounds.ScriptableSound, TinyTools
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _destroyOnInteract: 1

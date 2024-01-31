@@ -1,7 +1,7 @@
 ﻿using TinyTools.ScriptableEvents;
 using UnityEngine;
 
-namespace AdventureAssembly.Core
+namespace AdventureAssembly.Units.Interactables
 {
     public class ChestManager : MonoBehaviour
     {
@@ -14,7 +14,7 @@ namespace AdventureAssembly.Core
 
         [Space]
         [Header("Prefabs")]
-        [SerializeField] private GameObject _chestPrefab;
+        [SerializeField] private InteractableUnit _chestUnitPrefab;
 
         [Space]
         [Header("Settings")]
@@ -33,10 +33,10 @@ namespace AdventureAssembly.Core
         private void OnLevelUp()
         {
             // Calculate random spawn position from spawn bounds
-            //Vector2 spawnPosition = new Vector2(Random.Range((int)_spawnBounds.x, (int)_spawnBounds.y), Random.Range((int)_spawnBounds.z, (int)_spawnBounds.w));
-            Vector2 spawnPosition = GridManager.GetRandomEmptyPosition(_spawnBounds);
+            Vector2Int spawnPosition = GridManager.GetRandomEmptyPosition(_spawnBounds);
 
-            Instantiate(_chestPrefab, spawnPosition, Quaternion.identity);
+            InteractableUnit chestUnit = Instantiate(_chestUnitPrefab, (Vector2)spawnPosition, Quaternion.identity);
+            chestUnit.Initialize(spawnPosition);
 
             _chestSpawnedScriptableEvent?.Invoke();
         }

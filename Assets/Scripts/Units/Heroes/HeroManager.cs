@@ -1,5 +1,7 @@
 ﻿using AdventureAssembly.Core;
 using AdventureAssembly.Input;
+using AdventureAssembly.Units.Characters;
+using AdventureAssembly.Units.Interactables;
 using DG.Tweening;
 using Sirenix.OdinInspector;
 using Sirenix.Serialization;
@@ -10,7 +12,7 @@ using UnityEngine;
 
 namespace AdventureAssembly.Units.Heroes
 {
-    public class HeroManager : UnitManager<Hero>
+    public class HeroManager : CharacterUnitManager<Hero>
     {
         [PropertySpace]
         [Title("Components")]
@@ -71,7 +73,7 @@ namespace AdventureAssembly.Units.Heroes
             NextMovementVector = direction;
         }
 
-        private void OnHeroDied(Unit unit)
+        private void OnHeroDied(CharacterUnit unit)
         {
             RemoveUnit((Hero)unit);
         }
@@ -93,9 +95,10 @@ namespace AdventureAssembly.Units.Heroes
                 startPosition = new Vector2Int((int)transform.position.x, (int)transform.position.y);
             }
 
-            if (GridManager.TryGetObject(startPosition, out GameObject gm) && gm.TryGetComponent<Chest>(out Chest chest))
+            // Check if player is moving into interactable unit
+            if (GridManager.TryGetUnit(startPosition, out Unit unit) && unit is InteractableUnit)
             {
-                chest.OnCollect();
+                ((InteractableUnit)unit).OnInteract();
             }
 
             // Move the head position

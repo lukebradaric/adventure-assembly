@@ -1,8 +1,9 @@
 ﻿using AdventureAssembly.Core;
+using AdventureAssembly.Units.Characters;
 
 namespace AdventureAssembly.Units.Enemies
 {
-    public class EnemyManager : UnitManager<Enemy>
+    public class EnemyManager : CharacterUnitManager<Enemy>
     {
         private void OnEnable()
         {

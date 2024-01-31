@@ -1,4 +1,5 @@
 ﻿using AdventureAssembly.Units;
+using AdventureAssembly.Units.Characters;
 using UnityEngine;
 
 namespace AdventureAssembly.Units.Animation
@@ -6,6 +7,6 @@ namespace AdventureAssembly.Units.Animation
     [System.Serializable]
     public abstract class UnitMovementTween
     {
-        public abstract void Animate(Unit unit, Vector2Int newPosition, float duration);
+        public abstract void Animate(CharacterUnit unit, Vector2Int newPosition, float duration);
     }
 }

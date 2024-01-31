@@ -1,5 +1,6 @@
 ﻿using AdventureAssembly.Core;
 using AdventureAssembly.Units.Abilities;
+using AdventureAssembly.Units.Characters;
 using Sirenix.OdinInspector;
 using Sirenix.Serialization;
 using System.Collections.Generic;
@@ -8,7 +9,7 @@ using UnityEngine;
 namespace AdventureAssembly.Units.Heroes
 {
     [CreateAssetMenu(menuName = Constants.ScriptableObjectRootPath + "HeroData")]
-    public class HeroData : UnitData
+    public class HeroData : CharacterUnitData
     {
         [PropertySpace]
         [Title("Hero")]

@@ -13,10 +13,8 @@ namespace AdventureAssembly.Core
         [Header("Events")]
         [SerializeField] private VoidScriptableEvent _leveledUpScriptableEvent;
 
-        [Space]
-        [Header("Debugging")]
-        [SerializeField] private int _currentExperience = 0;
-        [SerializeField] private int currentLevel = 0;
+        private int _currentExperience = 0;
+        private int currentLevel = 0;
 
         public void AddExperience(int experience)
         {

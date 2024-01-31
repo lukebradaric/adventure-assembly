@@ -1,4 +1,5 @@
-﻿using AdventureAssembly.Units.Enemies;
+﻿using AdventureAssembly.Units.Characters;
+using AdventureAssembly.Units.Enemies;
 using AdventureAssembly.Units.Heroes;
 using TinyTools.ScriptableVariables;
 using UnityEngine;
@@ -17,13 +18,13 @@ namespace AdventureAssembly.Units
         [SerializeField] private float _speed;
 
         public Hero Hero { get; protected set; }
-        public Unit TargetUnit { get; protected set; }
+        public CharacterUnit TargetUnit { get; protected set; }
         public int BaseDamage { get; protected set; }
 
         public Vector2 MoveDirection { get; protected set; }
 
         // This Ititalize homes to a set target.
-        public void Initialize(Hero hero, int baseDamage, Unit targetUnit)
+        public void Initialize(Hero hero, int baseDamage, CharacterUnit targetUnit)
         {
             this.Hero = hero;
             this.BaseDamage = baseDamage;

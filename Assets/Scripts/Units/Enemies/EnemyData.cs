@@ -1,4 +1,5 @@
 ﻿using AdventureAssembly.Core;
+using AdventureAssembly.Units.Characters;
 using Sirenix.OdinInspector;
 using Sirenix.Serialization;
 using UnityEngine;
@@ -6,7 +7,7 @@ using UnityEngine;
 namespace AdventureAssembly.Units.Enemies
 {
     [CreateAssetMenu(menuName = Constants.ScriptableObjectRootPath + "EnemyData")]
-    public class EnemyData : UnitData
+    public class EnemyData : CharacterUnitData
     {
         [PropertySpace]
         [Title("Enemy")]
