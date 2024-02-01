@@ -10,12 +10,12 @@ namespace AdventureAssembly.Units.Characters
     {
         public static List<T> Units { get; protected set; } = new List<T>();
 
-        public static List<UnitModifier> Modifiers { get; protected set; } = new List<UnitModifier>();
+        public static List<CharacterUnitModifier> Modifiers { get; protected set; } = new List<CharacterUnitModifier>();
 
         protected static void ApplyAllModifiers(T unit)
         {
             // Apply all modifiers to a single unit
-            foreach (UnitModifier modifier in Modifiers)
+            foreach (CharacterUnitModifier modifier in Modifiers)
             {
                 modifier.Apply(unit);
             }
@@ -37,7 +37,7 @@ namespace AdventureAssembly.Units.Characters
             Units.Remove(unit);
         }
 
-        public static void AddModifier(UnitModifier modifier)
+        public static void AddModifier(CharacterUnitModifier modifier)
         {
             //Debug.Log($"Adding new modifier: {modifier.GetType().Name}");
 
@@ -50,7 +50,7 @@ namespace AdventureAssembly.Units.Characters
             }
         }
 
-        public static void RemoveModifier(UnitModifier modifier)
+        public static void RemoveModifier(CharacterUnitModifier modifier)
         {
             foreach (T unit in Units)
             {

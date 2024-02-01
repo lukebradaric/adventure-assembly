@@ -1,6 +1,8 @@
 ﻿using AdventureAssembly.Units.Animation;
+using AdventureAssembly.Units.Modifiers;
 using Sirenix.OdinInspector;
 using Sirenix.Serialization;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace AdventureAssembly.Units.Characters
@@ -17,5 +19,7 @@ namespace AdventureAssembly.Units.Characters
         [OdinSerialize] public int MaxHealth { get; private set; }
 
         [OdinSerialize] public UnitMovementTween MovementTween { get; private set; } = new DefaultUnitMovementTween();
+
+        [OdinSerialize] public List<CharacterUnitModifier> Modifiers { get; private set; } = new List<CharacterUnitModifier>();
     }
 }

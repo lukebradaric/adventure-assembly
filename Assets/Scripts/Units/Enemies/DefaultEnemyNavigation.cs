@@ -44,7 +44,7 @@ namespace AdventureAssembly.Units.Enemies
             Vector2Int? movement = null;
             foreach (var position in positionDistances)
             {
-                if(!GridManager.IsUnitAtPosition(position.Item1))
+                if(!GridManager.HasUnitAtPosition(position.Item1))
                 {
                     movement = position.Item1;
                     break;

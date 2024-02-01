@@ -14,10 +14,15 @@ namespace AdventureAssembly.Units
         // Dictionary of each unit and their position
         private static Dictionary<Unit, Vector2Int> _units = new Dictionary<Unit, Vector2Int>();
 
+        private void Start()
+        {
+            _units.Clear();
+        }
+
         // Add a unit to the dictionary with their position
         public static void AddUnit(Unit unit, Vector2Int position)
         {
-            if (IsUnitAtPosition(position))
+            if (HasUnitAtPosition(position))
             {
                 Debug.LogError("There is already a unit at this position!");
                 return;
@@ -45,7 +50,7 @@ namespace AdventureAssembly.Units
         }
 
         // Returns if there is a unit at the position
-        public static bool IsUnitAtPosition(Vector2Int position)
+        public static bool HasUnitAtPosition(Vector2Int position)
         {
             foreach (Vector2Int pos in _units.Values)
             {

@@ -1,7 +1,9 @@
 ﻿using AdventureAssembly.Core;
+using AdventureAssembly.Units.Modifiers;
 using Sirenix.OdinInspector;
 using Sirenix.Serialization;
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace AdventureAssembly.Units.Characters
@@ -26,7 +28,10 @@ namespace AdventureAssembly.Units.Characters
 
         public Vector2Int LastPosition { get; protected set; }
 
+        public event Action<DamageData> Damaged;
         public event Action<CharacterUnit> Died;
+
+        public List<CharacterUnitModifier> Modifiers { get; protected set; } = new List<CharacterUnitModifier>();
 
         /// <summary>
         /// Initializes this unit with data and a position.
@@ -40,6 +45,13 @@ namespace AdventureAssembly.Units.Characters
             this.CharacterUnitData = unitData;
             this.Stats.Initialize(this);
             this.CurrentHealth = Stats.GetMaxHealth();
+
+            foreach (CharacterUnitModifier modifier in CharacterUnitData.Modifiers)
+            {
+                CharacterUnitModifier newModifier = modifier.GetClone();
+                newModifier.Apply(this);
+                Modifiers.Add(newModifier);
+            }
 
             SpriteRenderer.sprite = CharacterUnitData.Sprite;
             name = $"{CharacterUnitData.Name}";
@@ -56,8 +68,6 @@ namespace AdventureAssembly.Units.Characters
 
             // Update new position
             Position += direction;
-
-            GridManager.UpdateUnitPosition(this, Position);
 
             // Flip sprite to face movement
             this.FlipSprite(direction.x);
@@ -76,8 +86,17 @@ namespace AdventureAssembly.Units.Characters
                 return;
             }
 
+            // Assign this as the Unit that is taking damage
+            damageData.TargetCharacterUnit = this;
+
+            // Subtract from health
             CurrentHealth -= damageData.Value;
+
+            // Store damageData in last damage taken
             LastDamageTaken = damageData;
+
+            // Invoke event and call OnMethod
+            Damaged?.Invoke(damageData);
             OnTakeDamage(damageData);
 
             if (CurrentHealth <= 0)
@@ -134,5 +153,19 @@ namespace AdventureAssembly.Units.Characters
         /// Called when this unit dies. Called before destroying.
         /// </summary>
         protected virtual void OnDie() { }
+
+        /// <summary>
+        /// Called before this unit is destroyed.
+        /// </summary>
+        protected virtual void OnDestroy()
+        {
+            // Clear all modifiers
+            foreach (CharacterUnitModifier modifier in Modifiers)
+            {
+                modifier.Remove(this);
+            }
+
+            Modifiers.Clear();
+        }
     }
 }

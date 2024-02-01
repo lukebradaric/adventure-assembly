@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using AdventureAssembly.Units.Characters;
+using UnityEngine;
 
 namespace AdventureAssembly.Units
 {
@@ -31,5 +32,15 @@ namespace AdventureAssembly.Units
         /// The direction the damage was dealt in. Usually used for projectiles.
         /// </summary>
         public Vector2 Direction { get; set; } = Vector2.zero;
+
+        /// <summary>
+        /// The CharacterUnit that this damage was dealt to.
+        /// </summary>
+        public CharacterUnit TargetCharacterUnit { get; set; }
+
+        /// <summary>
+        /// The CharacterUnit that dealth this damage.
+        /// </summary>
+        public CharacterUnit SourceCharacterUnit { get; set; }
     }
 }

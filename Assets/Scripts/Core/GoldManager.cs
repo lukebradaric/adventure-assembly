@@ -1,6 +1,7 @@
 ﻿using DG.Tweening;
 using System.Collections;
 using TinyTools.Generics;
+using TinyTools.ScriptableSounds;
 using UnityEngine;
 
 namespace AdventureAssembly.Core
@@ -30,6 +31,10 @@ namespace AdventureAssembly.Core
         [SerializeField] private float _minTweenDuration;
         [Tooltip("When adding more than once gold at once, how long should the delay between spawning be?")]
         [SerializeField] private float _delayPerGold;
+
+        [Space]
+        [Header("Audio")]
+        [SerializeField] private ScriptableSound _addGoldSound;
 
         /// <summary>
         /// The amount of gold the player currently has.
@@ -72,6 +77,8 @@ namespace AdventureAssembly.Core
             {
                 CurrentGold.Value++;
             });
+
+            _addGoldSound?.Play();
         }
 
         /// <summary>

@@ -10,12 +10,12 @@ namespace AdventureAssembly.Units.Tests
     public class TestEnemyModifier : SerializedMonoBehaviour
     {
         public EnemyData enemyData;
-        [OdinSerialize] private List<UnitModifier> modifiers = new List<UnitModifier>();
+        [OdinSerialize] private List<CharacterUnitModifier> modifiers = new List<CharacterUnitModifier>();
         [OdinSerialize] private List<Enemy> enemies = new List<Enemy>();
 
         private void Awake()
         {
-            foreach (UnitModifier modifier in modifiers)
+            foreach (CharacterUnitModifier modifier in modifiers)
             {
                 EnemyManager.AddModifier(modifier);
             }

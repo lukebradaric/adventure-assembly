@@ -1,6 +1,7 @@
 ﻿using AdventureAssembly.Core;
 using AdventureAssembly.Units.Abilities;
 using AdventureAssembly.Units.Characters;
+using AdventureAssembly.Units.Modifiers;
 using Sirenix.OdinInspector;
 using Sirenix.Serialization;
 using System.Collections.Generic;

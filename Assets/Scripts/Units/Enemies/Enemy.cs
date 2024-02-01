@@ -13,11 +13,19 @@ namespace AdventureAssembly.Units.Enemies
         new public EnemyStats Stats => (EnemyStats)base.Stats;
         public EnemyData EnemyData { get; private set; }
 
+        private EnemyNavigation _navigation;
+
         public override void Initialize(CharacterUnitData unitData, Vector2Int position)
         {
             EnemyData = (EnemyData)unitData;
+            _navigation = EnemyData.Navigation.GetClone();
 
             base.Initialize(unitData, position);
+        }
+
+        public void OnNavigate()
+        {
+            _navigation.Update(this);
         }
 
         protected override void OnDie()

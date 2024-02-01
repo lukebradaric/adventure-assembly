@@ -20,7 +20,7 @@ namespace AdventureAssembly.Units.Enemies
             // Run the navigaton logic for each enemy
             foreach (Enemy enemy in Units)
             {
-                enemy.EnemyData.Navigation?.Update(enemy);
+                enemy.OnNavigate();
             }
         }
     }

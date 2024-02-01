@@ -23,6 +23,9 @@ namespace AdventureAssembly.Units.Characters
             damage *= DamageMultiplier.Value;
 
             damageData.Value = (int)Mathf.Ceil(damage);
+
+            damageData.SourceCharacterUnit = CharacterUnit;
+
             return damageData;
         }
 

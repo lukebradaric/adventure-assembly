@@ -7,7 +7,7 @@ namespace AdventureAssembly.Units.Tests
 {
     public class TestClassModifier : ClassModifier
     {
-        [OdinSerialize] private UnitModifier _unitModifier;
+        [OdinSerialize] private CharacterUnitModifier _unitModifier;
 
         public override void Apply()
         {

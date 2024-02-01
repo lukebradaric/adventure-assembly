@@ -512,7 +512,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 135.005, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &14056469532963394
@@ -1121,6 +1121,7 @@ MonoBehaviour:
   _tweenDistanceDuration: 0.035
   _minTweenDuration: 0.2
   _delayPerGold: 0.1
+  _addGoldSound: {fileID: 11400000, guid: cb61c999e00034848864a4c037e0ce3f, type: 2}
 --- !u!1 &7928889180614006079
 GameObject:
   m_ObjectHideFlags: 0

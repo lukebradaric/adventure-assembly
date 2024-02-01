@@ -5,7 +5,7 @@ using UnityEngine;
 namespace AdventureAssembly.Units.Tests
 {
     [System.Serializable]
-    public class HealthModifier : UnitModifier
+    public class HealthModifier : CharacterUnitModifier
     {
         [SerializeField] private StatModifier<float> _value = new DefaultStatModifier();
 

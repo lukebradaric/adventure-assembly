@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace AdventureAssembly.Units.Tests
 {
-    public class DamageModifier : UnitModifier
+    public class DamageModifier : CharacterUnitModifier
     {
         [SerializeField] private StatModifier<float> _statModifier = new DefaultStatModifier();
 
