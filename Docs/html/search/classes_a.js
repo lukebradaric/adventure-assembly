@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['testclassmodifier_0',['TestClassModifier',['../class_adventure_assembly_1_1_units_1_1_tests_1_1_test_class_modifier.html',1,'AdventureAssembly::Units::Tests']]],
-  ['testenemymodifier_1',['TestEnemyModifier',['../class_adventure_assembly_1_1_units_1_1_tests_1_1_test_enemy_modifier.html',1,'AdventureAssembly::Units::Tests']]],
-  ['tickmanager_2',['TickManager',['../class_adventure_assembly_1_1_core_1_1_tick_manager.html',1,'AdventureAssembly::Core']]],
-  ['timemanager_3',['TimeManager',['../class_adventure_assembly_1_1_core_1_1_time_manager.html',1,'AdventureAssembly::Core']]]
+  ['spellthiefability_0',['SpellThiefAbility',['../class_adventure_assembly_1_1_units_1_1_abilities_1_1_spell_thief_ability.html',1,'AdventureAssembly::Units::Abilities']]],
+  ['stat_1',['Stat',['../class_adventure_assembly_1_1_units_1_1_stat.html',1,'AdventureAssembly::Units']]],
+  ['statmodifier_2',['StatModifier',['../class_adventure_assembly_1_1_units_1_1_stat_modifier.html',1,'AdventureAssembly::Units']]],
+  ['statmodifier_3c_20float_20_3e_3',['StatModifier&lt; float &gt;',['../class_adventure_assembly_1_1_units_1_1_stat_modifier.html',1,'AdventureAssembly::Units']]]
 ];

@@ -15,11 +15,25 @@ static void {\bfseries Add\+Classes\+By\+Hero\+Data} (\mbox{\hyperlink{class_adv
 \Hypertarget{class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_manager_accc8ea33d23c274c535b6f47df5760c7}\label{class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_manager_accc8ea33d23c274c535b6f47df5760c7} 
 static void {\bfseries Remove\+Classes\+By\+Hero\+Data} (\mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_data}{Hero\+Data}} hero\+Data)
 \item 
+static int \mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_manager_af1ea2710271dbcbffd61f8956ce3f4fe}{Get\+Class\+Count}} (\mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_data}{Class\+Data}} class\+Data)
+\begin{DoxyCompactList}\small\item\em Returns the current amount of Heroes the player has of a Class. \end{DoxyCompactList}\item 
 \Hypertarget{class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_manager_a60d31086ee257ac0d19ad7be3198bb1b}\label{class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_manager_a60d31086ee257ac0d19ad7be3198bb1b} 
 static void {\bfseries Add\+Class} (\mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_data}{Class\+Data}} class\+Data)
 \item 
 \Hypertarget{class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_manager_a6b75c2fe0d5cb153b3627275255ed525}\label{class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_manager_a6b75c2fe0d5cb153b3627275255ed525} 
 static void {\bfseries Remove\+Class} (\mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_data}{Class\+Data}} class\+Data)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_manager_ab32eca3d28ad7c24a5ab77cd82a43df1}\label{class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_manager_ab32eca3d28ad7c24a5ab77cd82a43df1} 
+static Action$<$ \mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_data}{Class\+Data}} $>$ {\bfseries Class\+Data\+Added}
+\item 
+\Hypertarget{class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_manager_acb8a390d2f3c2996d963c73ae4f3ac3e}\label{class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_manager_acb8a390d2f3c2996d963c73ae4f3ac3e} 
+static Action$<$ \mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_data}{Class\+Data}} $>$ {\bfseries Class\+Data\+Removed}
+\item 
+\Hypertarget{class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_manager_ad51be6a195e878df39cc765de41e2cbe}\label{class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_manager_ad51be6a195e878df39cc765de41e2cbe} 
+static Action$<$ \mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_data}{Class\+Data}}, int $>$ {\bfseries Class\+Count\+Changed}
 \end{DoxyCompactItemize}
 \doxysubsubsection*{Properties}
 \begin{DoxyCompactItemize}
@@ -33,6 +47,24 @@ static Dictionary$<$ \mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_her
 \Hypertarget{class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_manager_ae484c2f9fa8d9305a3f8cf831f1c5c3f}\label{class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_manager_ae484c2f9fa8d9305a3f8cf831f1c5c3f} 
 static Dictionary$<$ \mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_data}{Class\+Data}}, List$<$ \mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_modifier}{Class\+Modifier}} $>$ $>$ {\bfseries Class\+Modifier\+Instances} = new Dictionary$<$\mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_data}{Class\+Data}}, List$<$\mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_modifier}{Class\+Modifier}}$>$$>$()\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
 \end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_manager_af1ea2710271dbcbffd61f8956ce3f4fe}\label{class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_manager_af1ea2710271dbcbffd61f8956ce3f4fe} 
+\index{AdventureAssembly.Units.Heroes.ClassManager@{AdventureAssembly.Units.Heroes.ClassManager}!GetClassCount@{GetClassCount}}
+\index{GetClassCount@{GetClassCount}!AdventureAssembly.Units.Heroes.ClassManager@{AdventureAssembly.Units.Heroes.ClassManager}}
+\doxysubsubsection{\texorpdfstring{GetClassCount()}{GetClassCount()}}
+{\footnotesize\ttfamily static int Adventure\+Assembly.\+Units.\+Heroes.\+Class\+Manager.\+Get\+Class\+Count (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_data}{Class\+Data}}}]{class\+Data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the current amount of Heroes the player has of a Class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em class\+Data} & The Class to check\\
+\hline
+\end{DoxyParams}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

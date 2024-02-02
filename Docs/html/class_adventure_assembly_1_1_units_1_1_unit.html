@@ -94,9 +94,7 @@ $(function(){initNavTree('class_adventure_assembly_1_1_units_1_1_unit.html','');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#properties">Properties</a> &#124;
-<a href="#events">Events</a> &#124;
 <a href="class_adventure_assembly_1_1_units_1_1_unit-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">AdventureAssembly.Units.Unit Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
 </div><!--header-->
@@ -107,79 +105,34 @@ Inheritance diagram for AdventureAssembly.Units.Unit:</div>
  <div class="center">
   <img src="class_adventure_assembly_1_1_units_1_1_unit.png" usemap="#AdventureAssembly.Units.Unit_map" alt=""/>
   <map id="AdventureAssembly.Units.Unit_map" name="AdventureAssembly.Units.Unit_map">
-<area href="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy.html" alt="AdventureAssembly.Units.Enemies.Enemy" shape="rect" coords="0,112,249,136"/>
-<area href="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero.html" alt="AdventureAssembly.Units.Heroes.Hero" shape="rect" coords="259,112,508,136"/>
+<area href="class_adventure_assembly_1_1_units_1_1_characters_1_1_character_unit.html" alt="AdventureAssembly.Units.Characters.CharacterUnit" shape="rect" coords="166,112,489,136"/>
+<area href="class_adventure_assembly_1_1_units_1_1_interactables_1_1_interactable_unit.html" alt="AdventureAssembly.Units.Interactables.InteractableUnit" shape="rect" coords="499,112,822,136"/>
+<area href="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy.html" alt="AdventureAssembly.Units.Enemies.Enemy" shape="rect" coords="0,168,323,192"/>
+<area href="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero.html" alt="AdventureAssembly.Units.Heroes.Hero" shape="rect" coords="333,168,656,192"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:acf5840ae70dc7d8b514b1d48e3ae906f" id="r_acf5840ae70dc7d8b514b1d48e3ae906f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acf5840ae70dc7d8b514b1d48e3ae906f">Initialize</a> (<a class="el" href="class_adventure_assembly_1_1_units_1_1_unit_data.html">UnitData</a> unitData, Vector2Int position)</td></tr>
-<tr class="memdesc:acf5840ae70dc7d8b514b1d48e3ae906f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes this unit with data and a position.  <br /></td></tr>
-<tr class="separator:acf5840ae70dc7d8b514b1d48e3ae906f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ff1fb6e8c612f7a7aa681d67c652b1a" id="r_a2ff1fb6e8c612f7a7aa681d67c652b1a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2ff1fb6e8c612f7a7aa681d67c652b1a">Move</a> (Vector2Int direction)</td></tr>
-<tr class="memdesc:a2ff1fb6e8c612f7a7aa681d67c652b1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Moves this unit in a direction.  <br /></td></tr>
-<tr class="separator:a2ff1fb6e8c612f7a7aa681d67c652b1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d21459bedf8307516c28a02a97e6f68" id="r_a9d21459bedf8307516c28a02a97e6f68"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9d21459bedf8307516c28a02a97e6f68">TakeDamage</a> (<a class="el" href="class_adventure_assembly_1_1_units_1_1_damage_data.html">DamageData</a> damageData)</td></tr>
-<tr class="memdesc:a9d21459bedf8307516c28a02a97e6f68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Causes this unit to take damage. DamageData must be calculate beforehand.  <br /></td></tr>
-<tr class="separator:a9d21459bedf8307516c28a02a97e6f68"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ffdf49e62850ce9e51d669004a4b499" id="r_a4ffdf49e62850ce9e51d669004a4b499"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4ffdf49e62850ce9e51d669004a4b499">Die</a> ()</td></tr>
-<tr class="memdesc:a4ffdf49e62850ce9e51d669004a4b499"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kills this unit.  <br /></td></tr>
-<tr class="separator:a4ffdf49e62850ce9e51d669004a4b499"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed49f829ffff64b58847a7c158a57392" id="r_aed49f829ffff64b58847a7c158a57392"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aed49f829ffff64b58847a7c158a57392">FlipSprite</a> (int x)</td></tr>
-<tr class="memdesc:aed49f829ffff64b58847a7c158a57392"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flips this units sprite to a specific direction.  <br /></td></tr>
-<tr class="separator:aed49f829ffff64b58847a7c158a57392"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea72e9754ddba7da62420b73a621b419" id="r_aea72e9754ddba7da62420b73a621b419"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aea72e9754ddba7da62420b73a621b419">OnUpdate</a> (float time)</td></tr>
-<tr class="memdesc:aea72e9754ddba7da62420b73a621b419"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called on the unit update interval.  <br /></td></tr>
-<tr class="separator:aea72e9754ddba7da62420b73a621b419"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:ae9ae0bfe01101a26aad5d2491d035b5e" id="r_ae9ae0bfe01101a26aad5d2491d035b5e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae9ae0bfe01101a26aad5d2491d035b5e">OnTakeDamage</a> (<a class="el" href="class_adventure_assembly_1_1_units_1_1_damage_data.html">DamageData</a> damageData)</td></tr>
-<tr class="memdesc:ae9ae0bfe01101a26aad5d2491d035b5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when this unit takes damage. Called after damage is applied.  <br /></td></tr>
-<tr class="separator:ae9ae0bfe01101a26aad5d2491d035b5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aafaa2562c1c70c472b56689907ee844f" id="r_aafaa2562c1c70c472b56689907ee844f"><td class="memItemLeft" align="right" valign="top"><a id="aafaa2562c1c70c472b56689907ee844f" name="aafaa2562c1c70c472b56689907ee844f"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnDie</b> ()</td></tr>
-<tr class="memdesc:aafaa2562c1c70c472b56689907ee844f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when this unit dies. Called after death event is invoked. <br /></td></tr>
-<tr class="separator:aafaa2562c1c70c472b56689907ee844f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09484c848c016827ed77966dcc2dd3c5" id="r_a09484c848c016827ed77966dcc2dd3c5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a09484c848c016827ed77966dcc2dd3c5">Initialize</a> (Vector2Int position)</td></tr>
+<tr class="memdesc:a09484c848c016827ed77966dcc2dd3c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes this Unit at position.  <br /></td></tr>
+<tr class="separator:a09484c848c016827ed77966dcc2dd3c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63aa4fd5b270a8b2442dc5963c8d39cd" id="r_a63aa4fd5b270a8b2442dc5963c8d39cd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a63aa4fd5b270a8b2442dc5963c8d39cd">SetPosition</a> (Vector2Int position)</td></tr>
+<tr class="memdesc:a63aa4fd5b270a8b2442dc5963c8d39cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets this units position directly. Will also move the actual transform of the object.  <br /></td></tr>
+<tr class="separator:a63aa4fd5b270a8b2442dc5963c8d39cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbe448ccc8026e56ffe554f8b48eabf3" id="r_adbe448ccc8026e56ffe554f8b48eabf3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adbe448ccc8026e56ffe554f8b48eabf3">Destroy</a> ()</td></tr>
+<tr class="memdesc:adbe448ccc8026e56ffe554f8b48eabf3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes this unit from the UnitManager and destroys the gameobject.  <br /></td></tr>
+<tr class="separator:adbe448ccc8026e56ffe554f8b48eabf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
 Properties</h2></td></tr>
-<tr class="memitem:a11257e3c8dcfb967d85212aa41485da4" id="r_a11257e3c8dcfb967d85212aa41485da4"><td class="memItemLeft" align="right" valign="top"><a id="a11257e3c8dcfb967d85212aa41485da4" name="a11257e3c8dcfb967d85212aa41485da4"></a>
-SpriteRenderer&#160;</td><td class="memItemRight" valign="bottom"><b>SpriteRenderer</b><code> [get]</code></td></tr>
-<tr class="separator:a11257e3c8dcfb967d85212aa41485da4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a133db396ea3ad3cc73c7c9de8538c975" id="r_a133db396ea3ad3cc73c7c9de8538c975"><td class="memItemLeft" align="right" valign="top"><a id="a133db396ea3ad3cc73c7c9de8538c975" name="a133db396ea3ad3cc73c7c9de8538c975"></a>
-virtual <a class="el" href="class_adventure_assembly_1_1_units_1_1_unit_stats.html">UnitStats</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Stats</b><code> [get]</code></td></tr>
-<tr class="separator:a133db396ea3ad3cc73c7c9de8538c975"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e4837996ced88e06efa04f108246617" id="r_a6e4837996ced88e06efa04f108246617"><td class="memItemLeft" align="right" valign="top"><a id="a6e4837996ced88e06efa04f108246617" name="a6e4837996ced88e06efa04f108246617"></a>
-<a class="el" href="class_adventure_assembly_1_1_units_1_1_unit_data.html">UnitData</a>&#160;</td><td class="memItemRight" valign="bottom"><b>UnitData</b><code> [get]</code></td></tr>
-<tr class="separator:a6e4837996ced88e06efa04f108246617"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe54923d5a5d0f38c84454dd7d61e19d" id="r_abe54923d5a5d0f38c84454dd7d61e19d"><td class="memItemLeft" align="right" valign="top"><a id="abe54923d5a5d0f38c84454dd7d61e19d" name="abe54923d5a5d0f38c84454dd7d61e19d"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>CurrentHealth</b><code> [get, protected set]</code></td></tr>
-<tr class="separator:abe54923d5a5d0f38c84454dd7d61e19d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb6dedf5a847c7da814b16195cca0c48" id="r_aeb6dedf5a847c7da814b16195cca0c48"><td class="memItemLeft" align="right" valign="top"><a id="aeb6dedf5a847c7da814b16195cca0c48" name="aeb6dedf5a847c7da814b16195cca0c48"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsDead</b> = false<code> [get, protected set]</code></td></tr>
-<tr class="separator:aeb6dedf5a847c7da814b16195cca0c48"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab89fa6afb04b9f78aef51217192b9af3" id="r_ab89fa6afb04b9f78aef51217192b9af3"><td class="memItemLeft" align="right" valign="top"><a id="ab89fa6afb04b9f78aef51217192b9af3" name="ab89fa6afb04b9f78aef51217192b9af3"></a>
-<a class="el" href="class_adventure_assembly_1_1_units_1_1_damage_data.html">DamageData</a>&#160;</td><td class="memItemRight" valign="bottom"><b>LastDamageTaken</b> = null<code> [get, protected set]</code></td></tr>
-<tr class="memdesc:ab89fa6afb04b9f78aef51217192b9af3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The last DamageData that this unit took. Null by default. <br /></td></tr>
-<tr class="separator:ab89fa6afb04b9f78aef51217192b9af3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac0ba4f9e48f1e5054b8e5c9912c1e86a" id="r_ac0ba4f9e48f1e5054b8e5c9912c1e86a"><td class="memItemLeft" align="right" valign="top"><a id="ac0ba4f9e48f1e5054b8e5c9912c1e86a" name="ac0ba4f9e48f1e5054b8e5c9912c1e86a"></a>
-Vector2Int&#160;</td><td class="memItemRight" valign="bottom"><b>Position</b> = Vector2Int.zero<code> [get, protected set]</code></td></tr>
+Vector2Int&#160;</td><td class="memItemRight" valign="bottom"><b>Position</b><code> [get, set]</code></td></tr>
 <tr class="separator:ac0ba4f9e48f1e5054b8e5c9912c1e86a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9afb5a52cef8d77760a0b7472fa71424" id="r_a9afb5a52cef8d77760a0b7472fa71424"><td class="memItemLeft" align="right" valign="top"><a id="a9afb5a52cef8d77760a0b7472fa71424" name="a9afb5a52cef8d77760a0b7472fa71424"></a>
-Vector2Int&#160;</td><td class="memItemRight" valign="bottom"><b>LastPosition</b><code> [get, protected set]</code></td></tr>
-<tr class="separator:a9afb5a52cef8d77760a0b7472fa71424"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="events" name="events"></a>
-Events</h2></td></tr>
-<tr class="memitem:aedb81657370d6a615ea461e04ee9ed89" id="r_aedb81657370d6a615ea461e04ee9ed89"><td class="memItemLeft" align="right" valign="top"><a id="aedb81657370d6a615ea461e04ee9ed89" name="aedb81657370d6a615ea461e04ee9ed89"></a>
-Action&lt; <a class="el" href="class_adventure_assembly_1_1_units_1_1_unit.html">Unit</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Died</b></td></tr>
-<tr class="separator:aedb81657370d6a615ea461e04ee9ed89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a4ffdf49e62850ce9e51d669004a4b499" name="a4ffdf49e62850ce9e51d669004a4b499"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4ffdf49e62850ce9e51d669004a4b499">&#9670;&#160;</a></span>Die()</h2>
+<a id="adbe448ccc8026e56ffe554f8b48eabf3" name="adbe448ccc8026e56ffe554f8b48eabf3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbe448ccc8026e56ffe554f8b48eabf3">&#9670;&#160;</a></span>Destroy()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -188,7 +141,7 @@ Action&lt; <a class="el" href="class_adventure_assembly_1_1_units_1_1_unit.html"
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void AdventureAssembly.Units.Unit.Die </td>
+          <td class="memname">virtual void AdventureAssembly.Units.Unit.Destroy </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td></td>
@@ -201,47 +154,14 @@ Action&lt; <a class="el" href="class_adventure_assembly_1_1_units_1_1_unit.html"
 </table>
 </div><div class="memdoc">
 
-<p>Kills this unit. </p>
+<p>Removes this unit from the UnitManager and destroys the gameobject. </p>
 
-<p>Reimplemented in <a class="el" href="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy.html#a4f23dfed60ba1b400f1aeb88eaad251c">AdventureAssembly.Units.Enemies.Enemy</a>, and <a class="el" href="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero.html#aea23a411b8f806212073a7187cabf8e4">AdventureAssembly.Units.Heroes.Hero</a>.</p>
-
-</div>
-</div>
-<a id="aed49f829ffff64b58847a7c158a57392" name="aed49f829ffff64b58847a7c158a57392"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aed49f829ffff64b58847a7c158a57392">&#9670;&#160;</a></span>FlipSprite()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void AdventureAssembly.Units.Unit.FlipSprite </td>
-          <td>(</td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>x</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Flips this units sprite to a specific direction. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">x</td><td>The direction to flip. x &gt; 0 = right, x &lt; 0 = left</td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Reimplemented in <a class="el" href="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero.html#a85224b416e5f938368e582d2520a462b">AdventureAssembly.Units.Heroes.Hero</a>.</p>
 
 </div>
 </div>
-<a id="acf5840ae70dc7d8b514b1d48e3ae906f" name="acf5840ae70dc7d8b514b1d48e3ae906f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acf5840ae70dc7d8b514b1d48e3ae906f">&#9670;&#160;</a></span>Initialize()</h2>
+<a id="a09484c848c016827ed77966dcc2dd3c5" name="a09484c848c016827ed77966dcc2dd3c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09484c848c016827ed77966dcc2dd3c5">&#9670;&#160;</a></span>Initialize()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -252,47 +172,7 @@ Action&lt; <a class="el" href="class_adventure_assembly_1_1_units_1_1_unit.html"
         <tr>
           <td class="memname">virtual void AdventureAssembly.Units.Unit.Initialize </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_adventure_assembly_1_1_units_1_1_unit_data.html">UnitData</a></td>          <td class="paramname"><span class="paramname"><em>unitData</em>, </span></td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Vector2Int</td>          <td class="paramname"><span class="paramname"><em>position</em></span>&#160;)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Initializes this unit with data and a position. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">unitData</td><td>The UnitData for this unit to use.</td></tr>
-    <tr><td class="paramname">position</td><td>The starting position of this unit</td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Reimplemented in <a class="el" href="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy.html#a4b320d4e4e24ca4a2fc3484d54f131ea">AdventureAssembly.Units.Enemies.Enemy</a>, and <a class="el" href="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero.html#ab4f1154d51a9c8910966ab1b716885eb">AdventureAssembly.Units.Heroes.Hero</a>.</p>
-
-</div>
-</div>
-<a id="a2ff1fb6e8c612f7a7aa681d67c652b1a" name="a2ff1fb6e8c612f7a7aa681d67c652b1a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2ff1fb6e8c612f7a7aa681d67c652b1a">&#9670;&#160;</a></span>Move()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void AdventureAssembly.Units.Unit.Move </td>
-          <td>(</td>
-          <td class="paramtype">Vector2Int</td>          <td class="paramname"><span class="paramname"><em>direction</em></span></td><td>)</td>
+          <td class="paramtype">Vector2Int</td>          <td class="paramname"><span class="paramname"><em>position</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -303,113 +183,35 @@ Action&lt; <a class="el" href="class_adventure_assembly_1_1_units_1_1_unit.html"
 </table>
 </div><div class="memdoc">
 
-<p>Moves this unit in a direction. </p>
+<p>Initializes this Unit at position. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">direction</td><td>The direction to move this unit.</td></tr>
+    <tr><td class="paramname">position</td><td></td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="ae9ae0bfe01101a26aad5d2491d035b5e" name="ae9ae0bfe01101a26aad5d2491d035b5e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae9ae0bfe01101a26aad5d2491d035b5e">&#9670;&#160;</a></span>OnTakeDamage()</h2>
+<a id="a63aa4fd5b270a8b2442dc5963c8d39cd" name="a63aa4fd5b270a8b2442dc5963c8d39cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63aa4fd5b270a8b2442dc5963c8d39cd">&#9670;&#160;</a></span>SetPosition()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void AdventureAssembly.Units.Unit.OnTakeDamage </td>
+          <td class="memname">void AdventureAssembly.Units.Unit.SetPosition </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_adventure_assembly_1_1_units_1_1_damage_data.html">DamageData</a></td>          <td class="paramname"><span class="paramname"><em>damageData</em></span></td><td>)</td>
+          <td class="paramtype">Vector2Int</td>          <td class="paramname"><span class="paramname"><em>position</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Called when this unit takes damage. Called after damage is applied. </p>
+<p>Sets this units position directly. Will also move the actual transform of the object. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">damageData</td><td>The DamageData that this unit took.</td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Reimplemented in <a class="el" href="class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy.html#a6c1a082e5af64ce2574e58cec0fb6328">AdventureAssembly.Units.Enemies.Enemy</a>.</p>
-
-</div>
-</div>
-<a id="aea72e9754ddba7da62420b73a621b419" name="aea72e9754ddba7da62420b73a621b419"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aea72e9754ddba7da62420b73a621b419">&#9670;&#160;</a></span>OnUpdate()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void AdventureAssembly.Units.Unit.OnUpdate </td>
-          <td>(</td>
-          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>time</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Called on the unit update interval. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">time</td><td>The time between updates.</td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Reimplemented in <a class="el" href="class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero.html#a42378eba3287f826ffe33cc27021cf6e">AdventureAssembly.Units.Heroes.Hero</a>.</p>
-
-</div>
-</div>
-<a id="a9d21459bedf8307516c28a02a97e6f68" name="a9d21459bedf8307516c28a02a97e6f68"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9d21459bedf8307516c28a02a97e6f68">&#9670;&#160;</a></span>TakeDamage()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void AdventureAssembly.Units.Unit.TakeDamage </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_adventure_assembly_1_1_units_1_1_damage_data.html">DamageData</a></td>          <td class="paramname"><span class="paramname"><em>damageData</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Causes this unit to take damage. DamageData must be calculate beforehand. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">damageData</td><td>The DamageData to deal to this unit.</td></tr>
+    <tr><td class="paramname">position</td><td>The position to move to</td></tr>
   </table>
   </dd>
 </dl>

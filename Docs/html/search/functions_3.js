@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['initialize_0',['Initialize',['../class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy.html#a4b320d4e4e24ca4a2fc3484d54f131ea',1,'AdventureAssembly.Units.Enemies.Enemy.Initialize()'],['../class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero.html#ab4f1154d51a9c8910966ab1b716885eb',1,'AdventureAssembly.Units.Heroes.Hero.Initialize()'],['../class_adventure_assembly_1_1_units_1_1_unit.html#acf5840ae70dc7d8b514b1d48e3ae906f',1,'AdventureAssembly.Units.Unit.Initialize()']]]
+  ['getclasscount_0',['GetClassCount',['../class_adventure_assembly_1_1_units_1_1_heroes_1_1_class_manager.html#af1ea2710271dbcbffd61f8956ce3f4fe',1,'AdventureAssembly::Units::Heroes::ClassManager']]],
+  ['getmovementdirections_1',['GetMovementDirections',['../class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_navigation.html#a73dea03928918538c3c7bcab0d629a5f',1,'AdventureAssembly::Units::Enemies::EnemyNavigation']]]
 ];

@@ -13,8 +13,10 @@ var searchData=
   ['adventureassembly_3a_3aunits_10',['Units',['../namespace_adventure_assembly_1_1_units.html',1,'AdventureAssembly']]],
   ['adventureassembly_3a_3aunits_3a_3aabilities_11',['Abilities',['../namespace_adventure_assembly_1_1_units_1_1_abilities.html',1,'AdventureAssembly::Units']]],
   ['adventureassembly_3a_3aunits_3a_3aanimation_12',['Animation',['../namespace_adventure_assembly_1_1_units_1_1_animation.html',1,'AdventureAssembly::Units']]],
-  ['adventureassembly_3a_3aunits_3a_3aenemies_13',['Enemies',['../namespace_adventure_assembly_1_1_units_1_1_enemies.html',1,'AdventureAssembly::Units']]],
-  ['adventureassembly_3a_3aunits_3a_3aheroes_14',['Heroes',['../namespace_adventure_assembly_1_1_units_1_1_heroes.html',1,'AdventureAssembly::Units']]],
-  ['adventureassembly_3a_3aunits_3a_3amodifiers_15',['Modifiers',['../namespace_adventure_assembly_1_1_units_1_1_modifiers.html',1,'AdventureAssembly::Units']]],
-  ['adventureassembly_3a_3aunits_3a_3atests_16',['Tests',['../namespace_adventure_assembly_1_1_units_1_1_tests.html',1,'AdventureAssembly::Units']]]
+  ['adventureassembly_3a_3aunits_3a_3acharacters_13',['Characters',['../namespace_adventure_assembly_1_1_units_1_1_characters.html',1,'AdventureAssembly::Units']]],
+  ['adventureassembly_3a_3aunits_3a_3aenemies_14',['Enemies',['../namespace_adventure_assembly_1_1_units_1_1_enemies.html',1,'AdventureAssembly::Units']]],
+  ['adventureassembly_3a_3aunits_3a_3aheroes_15',['Heroes',['../namespace_adventure_assembly_1_1_units_1_1_heroes.html',1,'AdventureAssembly::Units']]],
+  ['adventureassembly_3a_3aunits_3a_3ainteractables_16',['Interactables',['../namespace_adventure_assembly_1_1_units_1_1_interactables.html',1,'AdventureAssembly::Units']]],
+  ['adventureassembly_3a_3aunits_3a_3amodifiers_17',['Modifiers',['../namespace_adventure_assembly_1_1_units_1_1_modifiers.html',1,'AdventureAssembly::Units']]],
+  ['adventureassembly_3a_3aunits_3a_3atests_18',['Tests',['../namespace_adventure_assembly_1_1_units_1_1_tests.html',1,'AdventureAssembly::Units']]]
 ];

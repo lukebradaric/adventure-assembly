@@ -7,5 +7,6 @@ var namespace_adventure_assembly_1_1_units_1_1_enemies =
     [ "EnemyNavigation", "class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_navigation.html", null ],
     [ "EnemyScriptableEvent", "class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_scriptable_event.html", null ],
     [ "EnemySpawner", "class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_spawner.html", null ],
-    [ "EnemyStats", "class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_stats.html", null ]
+    [ "EnemyStats", "class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy_stats.html", null ],
+    [ "LinearEnemyNavigation", "class_adventure_assembly_1_1_units_1_1_enemies_1_1_linear_enemy_navigation.html", null ]
 ];
