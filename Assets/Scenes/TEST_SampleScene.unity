@@ -851,7 +851,7 @@ MonoBehaviour:
     m_RotationOrder: 4
   _spawnData:
   - EnemyData: {fileID: 11400000, guid: b930fad0151c80c4ebdf5bd12e71e15c, type: 2}
-    Weight: 10
+    Weight: 50
   - EnemyData: {fileID: 11400000, guid: 5485cf8b42f7ce94eb0cd1178dd55347, type: 2}
     Weight: 1
 --- !u!1 &1589670062

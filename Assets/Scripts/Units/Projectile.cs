@@ -88,7 +88,8 @@ namespace AdventureAssembly.Units
         private void OnEnemyCollision(Enemy enemy)
         {
             // Create new damagedata
-            DamageData damageData = Hero.Stats.GetDamageData(new DamageData(BaseDamage));
+            DamageData damageData = new DamageData(Hero, enemy, BaseDamage);
+            //DamageData damageData = Hero.Stats.GetDamageData(new DamageData(Hero, enemy, BaseDamage));
 
             // Assign the damage direction to the direction of this projectile
             damageData.Direction = MoveDirection;

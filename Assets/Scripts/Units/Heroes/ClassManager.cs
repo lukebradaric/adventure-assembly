@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace AdventureAssembly.Units.Heroes
@@ -13,6 +14,11 @@ namespace AdventureAssembly.Units.Heroes
 
         // Dictionary of classmodifier instances created for each class
         public static Dictionary<ClassData, List<ClassModifier>> ClassModifierInstances { get; private set; } = new Dictionary<ClassData, List<ClassModifier>>();
+
+        public static Action<ClassData> ClassDataAdded;
+        public static Action<ClassData> ClassDataRemoved;
+
+        public static Action<ClassData, int> ClassCountChanged;
 
         public static void AddClassesByHeroData(HeroData heroData)
         {
@@ -30,6 +36,20 @@ namespace AdventureAssembly.Units.Heroes
             }
         }
 
+        /// <summary>
+        /// Returns the current amount of Heroes the player has of a Class.
+        /// </summary>
+        /// <param name="classData">The Class to check</param>
+        public static int GetClassCount(ClassData classData)
+        {
+            if (!ClassCount.ContainsKey(classData))
+            {
+                return 0;
+            }
+
+            return ClassCount[classData];
+        }
+
         // When a new class is added from a hero
         public static void AddClass(ClassData classData)
         {
@@ -40,8 +60,13 @@ namespace AdventureAssembly.Units.Heroes
             else
             {
                 ClassCount.Add(classData, 1);
+
+                // Invoke event when class data is added
+                ClassDataAdded?.Invoke(classData);
             }
 
+            // Invoke class count changed event
+            ClassCountChanged?.Invoke(classData, ClassCount[classData]);
 
             UpdateClassModifiers(classData, ClassCount[classData]);
         }
@@ -57,10 +82,16 @@ namespace AdventureAssembly.Units.Heroes
             ClassCount[classData]--;
             UpdateClassModifiers(classData, ClassCount[classData]);
 
+            // Invoke class count changed event
+            ClassCountChanged?.Invoke(classData, ClassCount[classData]);
+
             // If class count hit zero, remove dict entry
             if (ClassCount[classData] == 0)
             {
                 ClassCount.Remove(classData);
+
+                // Invoke event when class data is completely removed
+                ClassDataRemoved(classData);
             }
         }
 
@@ -80,8 +111,13 @@ namespace AdventureAssembly.Units.Heroes
             if (!ClassModifiers.ContainsKey(classData) && classModifier != null)
             {
                 //Debug.Log("Adding a brand new modifier.");
+
+                // Add modifier to dictionary
                 ClassModifiers.Add(classData, classModifier);
+
+                // Apply modifier effect
                 classModifier.Apply();
+
                 return;
             }
 
@@ -89,7 +125,11 @@ namespace AdventureAssembly.Units.Heroes
             if (ClassModifiers.ContainsKey(classData) && classModifier == null)
             {
                 //Debug.Log("Completely removing a modifier");
+
+                // Remove modifier effects
                 ClassModifiers[classData].Remove();
+
+                // Remove modifier from dictionary
                 ClassModifiers.Remove(classData);
                 return;
             }
@@ -98,9 +138,16 @@ namespace AdventureAssembly.Units.Heroes
             if (ClassModifiers[classData].RequiredCount != classModifier.RequiredCount)
             {
                 //Debug.Log("Updating an existing modifier");
+
+                // Remove the old modifier effects
                 ClassModifiers[classData].Remove();
+
+                // Update the class modifier value in the dictionary
                 ClassModifiers[classData] = classModifier;
+
+                // Apply the new class modifier
                 classModifier.Apply();
+
                 return;
             }
         }

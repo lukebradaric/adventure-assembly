@@ -24,8 +24,6 @@ namespace AdventureAssembly.Units.Characters
 
             damageData.Value = (int)Mathf.Ceil(damage);
 
-            damageData.SourceCharacterUnit = CharacterUnit;
-
             return damageData;
         }
 

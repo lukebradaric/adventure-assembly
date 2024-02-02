@@ -20,7 +20,7 @@ namespace AdventureAssembly.Units.Modifiers
 
         private void OnDamaged(DamageData data)
         {
-            GoldManager.Instance.AddGold(data.TargetCharacterUnit.transform.position, data.Value);
+            GoldManager.Instance.AddGold(data.Target.transform.position, data.Value);
         }
     }
 }

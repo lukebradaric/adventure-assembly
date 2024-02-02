@@ -86,9 +86,6 @@ namespace AdventureAssembly.Units.Characters
                 return;
             }
 
-            // Assign this as the Unit that is taking damage
-            damageData.TargetCharacterUnit = this;
-
             // Subtract from health
             CurrentHealth -= damageData.Value;
 

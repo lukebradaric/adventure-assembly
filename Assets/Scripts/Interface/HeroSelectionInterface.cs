@@ -1,9 +1,9 @@
 ﻿using AdventureAssembly.Core;
 using AdventureAssembly.Units.Heroes;
 using DG.Tweening;
-using System;
 using System.Collections.Generic;
 using TinyTools.ScriptableEvents;
+using TinyTools.ScriptableVariables;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -24,6 +24,7 @@ namespace AdventureAssembly.Interface
 
         [Space]
         [Header("Components")]
+        [SerializeField] private ClassBuffInterface _classBuffInterface;
         [SerializeField] private HeroDataListScriptableVariable _heroDataList;
         [SerializeField] private RectTransform _horizontalLayoutTransform;
         [SerializeField] private HorizontalLayoutGroup _horizontalLayoutGroup;
@@ -31,7 +32,7 @@ namespace AdventureAssembly.Interface
 
         [Space]
         [Header("Settings")]
-        [SerializeField] private float _fadeTweenDuration = 0.5f;
+        [SerializeField] private FloatScriptableVariable _fadeTweenDuration;
         [SerializeField] private float _heroSelectionTweenPositionOffset = 1500;
         [SerializeField] private float _heroSelectionTweenDuration = 0.5f;
         [SerializeField] private float _heroSelectionTweenDurationOffset = 0.1f;
@@ -58,19 +59,24 @@ namespace AdventureAssembly.Interface
         {
             TimeManager.Pause();
 
+            _classBuffInterface.Show();
+
             ShowSelections(heroData);
 
-            _canvasGroup.DOFade(1f, _fadeTweenDuration).SetUpdate(true);
+            _canvasGroup.DOFade(1f, _fadeTweenDuration.Value).SetUpdate(true);
         }
 
         public void Hide()
         {
-            _canvasGroup.DOFade(0f, _fadeTweenDuration).SetUpdate(true).OnComplete(() =>
+            _classBuffInterface.Hide();
+
+            _canvasGroup.DOFade(0f, _fadeTweenDuration.Value).SetUpdate(true).OnComplete(() =>
             {
                 foreach (HeroSelectionElement element in _heroSelectionElements)
                 {
                     Destroy(element.gameObject);
                 }
+
                 _heroSelectionElements.Clear();
 
                 TimeManager.Unpause();
