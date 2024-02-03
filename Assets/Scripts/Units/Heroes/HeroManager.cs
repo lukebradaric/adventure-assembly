@@ -1,6 +1,7 @@
 ﻿using AdventureAssembly.Core;
 using AdventureAssembly.Input;
 using AdventureAssembly.Units.Characters;
+using AdventureAssembly.Units.Enemies;
 using AdventureAssembly.Units.Interactables;
 using DG.Tweening;
 using Sirenix.OdinInspector;
@@ -85,24 +86,53 @@ namespace AdventureAssembly.Units.Heroes
 
         private void UpdateUnitPositions()
         {
-            // Move the start of the party (Indicator and player root)
-            Vector2Int startPosition = new Vector2Int((int)transform.position.x, (int)transform.position.y) + NextMovementVector;
+            Hero firstHero = Units.First();
 
-            // Check if there is a hazard at the new position
-            if (IsHazardAtPosition(startPosition))
+            // Move the start of the party (Indicator and player root)
+            Vector2Int nextPosition = new Vector2Int((int)transform.position.x, (int)transform.position.y) + NextMovementVector;
+
+            void RecalculateNextPosition()
             {
-                Units.First().Die();
-                startPosition = new Vector2Int((int)transform.position.x, (int)transform.position.y);
+                nextPosition = new Vector2Int((int)transform.position.x, (int)transform.position.y);
             }
 
-            // Check if player is moving into interactable unit
-            if (GridManager.TryGetUnit(startPosition, out Unit unit) && unit is InteractableUnit)
+            // Check if there is a hazard at the new position
+            if (IsHazardAtPosition(nextPosition))
             {
-                ((InteractableUnit)unit).OnInteract();
+                firstHero.Die();
+                RecalculateNextPosition();
+            }
+
+            // Check if player is moving into another unit
+            if (GridManager.TryGetUnit(nextPosition, out Unit unit))
+            {
+                if (unit is InteractableUnit)
+                {
+                    ((InteractableUnit)unit).OnInteract();
+                }
+
+                // If player collided with enemy, deal damage to each other
+                if (unit is Enemy)
+                {
+                    Enemy enemy = (Enemy)unit;
+
+                    // If enemy has less health, kill enemy
+                    if (enemy.CurrentHealth <= firstHero.CurrentHealth)
+                    {
+                        enemy.Die();
+                    }
+                    // If hero has less health, kill hero, reset next pos
+                    else if (enemy.CurrentHealth > firstHero.CurrentHealth)
+                    {
+                        //enemy.TakeDamage(new DamageData(firstHero, enemy, firstHero.CurrentHealth));
+                        firstHero.Die();
+                        RecalculateNextPosition();
+                    }
+                }
             }
 
             // Move the head position
-            transform.DOMove((Vector2)startPosition, TickManager.Instance.TickInterval).SetEase(Ease.OutCubic);
+            transform.DOMove((Vector2)nextPosition, TickManager.Instance.TickInterval).SetEase(Ease.OutCubic);
 
             // Clear the dictionary of hero positions
             _heroPositions.Clear();
@@ -113,7 +143,7 @@ namespace AdventureAssembly.Units.Heroes
             HashSet<Hero> killHeroes = new HashSet<Hero>();
 
             // Loop through all heroes and move them towards the hero in front of them
-            Vector2Int position = startPosition;
+            Vector2Int position = nextPosition;
             foreach (Hero hero in Units)
             {
                 // If a self-collision occurred, kill remaining heroes

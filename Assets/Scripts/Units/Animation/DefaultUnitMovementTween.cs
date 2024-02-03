@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace AdventureAssembly.Units.Animation
 {
-    public class DefaultUnitMovementTween : UnitMovementTween
+    public class DefaultUnitMovementTween : UnitTween
     {
         public override void Animate(CharacterUnit unit, Vector2Int newPosition, float duration)
         {

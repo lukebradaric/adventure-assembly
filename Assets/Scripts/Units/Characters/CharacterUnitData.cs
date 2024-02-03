@@ -18,8 +18,10 @@ namespace AdventureAssembly.Units.Characters
 
         [OdinSerialize] public int MaxHealth { get; private set; }
 
-        [OdinSerialize] public UnitMovementTween MovementTween { get; private set; } = new DefaultUnitMovementTween();
+        [Tooltip("What animation should play when this unit moves?")]
+        [OdinSerialize] public UnitTween MovementTween { get; private set; } = new DefaultUnitMovementTween();
 
+        [Tooltip("What modifiers should be applied to this unit when it spawns?")]
         [OdinSerialize] public List<CharacterUnitModifier> Modifiers { get; private set; } = new List<CharacterUnitModifier>();
     }
 }

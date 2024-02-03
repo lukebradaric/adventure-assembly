@@ -44,13 +44,19 @@ namespace AdventureAssembly.Units.Enemies
             Vector2Int? movement = null;
             foreach (var position in positionDistances)
             {
-                if(!GridManager.HasUnitAtPosition(position.Item1))
+                // If there is a hero in the nearest position, attack it
+                if (GridManager.TryGetUnit(position.Item1, out Unit unit) && unit is Hero)
+                {
+                    enemy.Attack((Hero)unit);
+                    return;
+                }
+
+                // If the space was empty, set as next movement
+                if (!GridManager.HasUnitAtPosition(position.Item1))
                 {
                     movement = position.Item1;
                     break;
                 }
-
-                // TODO: If there is a hero at the position, attack
             }
 
             // If no valid movement was found, return

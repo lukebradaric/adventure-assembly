@@ -23,6 +23,25 @@ namespace AdventureAssembly.Units.Enemies
             base.Initialize(unitData, position);
         }
 
+        /// <summary>
+        /// Makes this enemy attack the target unit.
+        /// </summary>
+        /// <param name="targetUnit">The unit to attack</param>
+        public void Attack(CharacterUnit targetUnit)
+        {
+            if(IsDead)
+            {
+                Debug.Log("Attacking while dead!");
+            }
+
+            // Calculate and deal damage to the target unit
+            DamageData damageData = new DamageData(this, targetUnit, EnemyData.BaseDamage);
+            targetUnit.TakeDamage(damageData);
+
+            // Play the attack tween animation
+            EnemyData.AttackTween.Animate(this, targetUnit.Position, TickManager.Instance.TickInterval / 2f);
+        }
+
         public void OnNavigate()
         {
             _navigation.Update(this);

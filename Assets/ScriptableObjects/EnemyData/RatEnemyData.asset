@@ -37,15 +37,34 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
+    - Name: Modifiers
+      Entry: 7
+      Data: 1|System.Collections.Generic.List`1[[AdventureAssembly.Units.Modifiers.CharacterUnitModifier,
+        AdventureAssembly.Units]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
     - Name: KillExperience
       Entry: 3
       Data: 1
     - Name: BaseDamage
       Entry: 3
       Data: 5
+    - Name: AttackTween
+      Entry: 7
+      Data: 2|AdventureAssembly.Units.Animation.DefaultEnemyAttackTween, AdventureAssembly.Units
+    - Name: 
+      Entry: 8
+      Data: 
     - Name: Navigation
       Entry: 7
-      Data: 1|AdventureAssembly.Units.Enemies.DefaultEnemyNavigation, AdventureAssembly.Units
+      Data: 3|AdventureAssembly.Units.Enemies.DefaultEnemyNavigation, AdventureAssembly.Units
     - Name: 
       Entry: 8
       Data: 
