@@ -15,6 +15,7 @@ namespace AdventureAssembly.Interface
         [SerializeField] private TextMeshProUGUI _countText;
         [SerializeField] private TextMeshProUGUI _nameText;
         [SerializeField] private TextMeshProUGUI _progressionText;
+        [SerializeField] private Tooltip _descriptionTooltip;
 
         [Space]
         [Header("Settings")]
@@ -38,6 +39,8 @@ namespace AdventureAssembly.Interface
                 _backgroundImage.color = new Color(_classData.Color.r * 0.75f, _classData.Color.g * 0.75f, _classData.Color.b * 0.75f);
                 _countText.text = "1";
                 _nameText.text = _classData.Name;
+                _descriptionTooltip.Text = _classData.Description;
+                _descriptionTooltip.Color = _classData.Color;
             }
         }
 
