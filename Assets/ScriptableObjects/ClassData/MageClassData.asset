@@ -26,7 +26,7 @@ MonoBehaviour:
       Data: Mage
     - Name: Description
       Entry: 1
-      Data: 
+      Data: These guys are just so silly all around!
     - Name: Color
       Entry: 7
       Data: UnityEngine.Color, UnityEngine.CoreModule

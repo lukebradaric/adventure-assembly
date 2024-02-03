@@ -76,6 +76,7 @@ namespace AdventureAssembly.Core
             goldObject.transform.DOMove(tweenPosition, tweenDuration).SetEase(_tweenCurve).SetUpdate(true).OnComplete(() =>
             {
                 CurrentGold.Value++;
+                Destroy(goldObject);
             });
 
             _addGoldSound?.Play();

@@ -26,7 +26,8 @@ MonoBehaviour:
       Data: Guardian
     - Name: Description
       Entry: 1
-      Data: 
+      Data: The guardians will guard your units that need to be guarded in a very
+        guardly way.
     - Name: Color
       Entry: 7
       Data: UnityEngine.Color, UnityEngine.CoreModule
