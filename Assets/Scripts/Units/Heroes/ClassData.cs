@@ -11,7 +11,7 @@ namespace AdventureAssembly.Units.Heroes
     {
         [OdinSerialize] public string Name { get; private set; }
 
-        [MultiLineProperty]
+        [MultiLineProperty(10)]
         [OdinSerialize] public string Description { get; private set; }
 
         [OdinSerialize] public Color Color { get; private set; }

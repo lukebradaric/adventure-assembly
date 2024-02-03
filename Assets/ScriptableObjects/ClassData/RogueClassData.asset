@@ -28,8 +28,13 @@ MonoBehaviour:
       Entry: 1
       Data: 'Increase the critical strike chance of all heroes.
 
+
         (3) - 10%
-        | (5) - 20% | (10) - 50%'
+
+        (5)
+        - 20%
+
+        (10) - 50%'
     - Name: Color
       Entry: 7
       Data: UnityEngine.Color, UnityEngine.CoreModule

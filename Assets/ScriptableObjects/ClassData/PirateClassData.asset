@@ -28,8 +28,12 @@ MonoBehaviour:
       Entry: 1
       Data: 'Increased chance to gain currency from enemies.
 
-        (3) - 10% |
-        (5) - 20% | (10) - 50%'
+        (3) - 10%
+
+        (5)
+        - 20%
+
+        (10) - 50%'
     - Name: Color
       Entry: 7
       Data: UnityEngine.Color, UnityEngine.CoreModule

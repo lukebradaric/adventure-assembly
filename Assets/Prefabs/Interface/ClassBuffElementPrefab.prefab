@@ -415,6 +415,7 @@ GameObject:
   - component: {fileID: 5201395053218524564}
   - component: {fileID: 83197770081538662}
   - component: {fileID: 5994455279955042741}
+  - component: {fileID: 5121482370091306338}
   m_Layer: 5
   m_Name: ClassBuffElementPrefab
   m_TagString: Untagged
@@ -436,6 +437,7 @@ RectTransform:
   m_Children:
   - {fileID: 6555262849709038580}
   - {fileID: 3097964060132459761}
+  - {fileID: 3599354470745719121}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -511,8 +513,89 @@ MonoBehaviour:
   _countText: {fileID: 1950834247377960941}
   _nameText: {fileID: 2350187516233988584}
   _progressionText: {fileID: 4946647942893012879}
+  _descriptionTooltip: {fileID: 5121482370091306338}
   _tweenDuration: 0.35
   _startOffset: -55
+--- !u!114 &5121482370091306338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7174047846181542134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05a9a1c22c3829f4fb1719068c136e36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Text
+      Entry: 6
+      Data: 
+    - Name: Color
+      Entry: 7
+      Data: UnityEngine.Color, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+  _tooltipElementPrefab: {fileID: 8294981907120986917, guid: d1ee141b02c02424db2e14a590e0f36e, type: 3}
+  _tweenDuration: 0.25
+  _smartPosition: 1
+--- !u!1 &7408162609075138865
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3599354470745719121}
+  m_Layer: 5
+  m_Name: TooltipTransform
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &3599354470745719121
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7408162609075138865}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5266560737037065705}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -138, y: -50}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &8056849383171916022
 GameObject:
   m_ObjectHideFlags: 0
