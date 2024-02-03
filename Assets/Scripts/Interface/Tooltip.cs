@@ -10,7 +10,7 @@ namespace AdventureAssembly.Interface
     {
         [Space]
         [Header("Components")]
-        [SerializeField] private TooltipElement _textPrefab;
+        [SerializeField] private TooltipElement _tooltipElementPrefab = default;
 
         [Space]
         [Header("Settings")]
@@ -24,14 +24,13 @@ namespace AdventureAssembly.Interface
         [OdinSerialize] public Color Color { get; set; } = Color.white;
 
         private TooltipElement _tooltipElement = null;
-
         private bool _hovering = false;
 
         public void OnPointerEnter(PointerEventData eventData)
         {
             if (_tooltipElement == null)
             {
-                _tooltipElement = Instantiate(_textPrefab, InterfaceManager.Instance.transform);
+                _tooltipElement = Instantiate(_tooltipElementPrefab, InterfaceManager.Instance.transform);
                 _tooltipElement.Text.text = Text;
                 _tooltipElement.Image.color = Color;
             }
@@ -44,6 +43,17 @@ namespace AdventureAssembly.Interface
         {
             _hovering = false;
             _tooltipElement.CanvasGroup.DOFade(0f, _tweenDuration).SetUpdate(true);
+        }
+
+        // If this object is destroyed, destroy the created tooltip element
+        private void OnDestroy()
+        {
+            if (_tooltipElement == null)
+            {
+                return;
+            }
+
+            Destroy(_tooltipElement.gameObject);
         }
 
         private void Update()
