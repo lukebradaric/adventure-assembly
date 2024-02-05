@@ -1,4 +1,4 @@
-﻿using AdventureAssembly.Units.Heroes;
+﻿using AdventureAssembly.Units.Classes;
 using DG.Tweening;
 using TMPro;
 using UnityEngine;

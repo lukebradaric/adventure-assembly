@@ -1,4 +1,5 @@
 ﻿using AdventureAssembly.Core;
+using AdventureAssembly.Units.Classes;
 using AdventureAssembly.Units.Heroes;
 using DG.Tweening;
 using System;

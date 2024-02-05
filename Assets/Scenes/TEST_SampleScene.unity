@@ -288,7 +288,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.16037738, g: 0.08245818, b: 0.08245818, a: 0}
+  m_BackGroundColor: {r: 0.6698113, g: 0.6272618, b: 0.5023585, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -999,7 +999,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5428801609344274336, guid: e450e852feb5a7c41ad1cd4f12ff1f3e, type: 3}
       propertyPath: m_SortingLayer
-      value: -2
+      value: -3
       objectReference: {fileID: 0}
     - target: {fileID: 5428801609344274336, guid: e450e852feb5a7c41ad1cd4f12ff1f3e, type: 3}
       propertyPath: m_SortingOrder
@@ -1007,7 +1007,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5428801609344274336, guid: e450e852feb5a7c41ad1cd4f12ff1f3e, type: 3}
       propertyPath: m_SortingLayerID
-      value: 1217094329
+      value: -690112537
       objectReference: {fileID: 0}
     - target: {fileID: 5881971965238946979, guid: e450e852feb5a7c41ad1cd4f12ff1f3e, type: 3}
       propertyPath: m_LocalPosition.x

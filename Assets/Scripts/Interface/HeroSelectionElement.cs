@@ -1,4 +1,5 @@
-﻿using AdventureAssembly.Units.Heroes;
+﻿using AdventureAssembly.Units.Classes;
+using AdventureAssembly.Units.Heroes;
 using DG.Tweening;
 using Sirenix.Serialization;
 using TMPro;

@@ -39,6 +39,19 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
+    - Name: Modifiers
+      Entry: 7
+      Data: 1|System.Collections.Generic.List`1[[AdventureAssembly.Units.Modifiers.CharacterUnitModifier,
+        AdventureAssembly.Units]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
     - Name: BackgroundColor
       Entry: 7
       Data: UnityEngine.Color, UnityEngine.CoreModule
@@ -62,7 +75,7 @@ MonoBehaviour:
       Data: He does some silly tricks!
     - Name: ClassData
       Entry: 7
-      Data: 1|System.Collections.Generic.List`1[[AdventureAssembly.Units.Heroes.ClassData,
+      Data: 2|System.Collections.Generic.List`1[[AdventureAssembly.Units.Classes.ClassData,
         AdventureAssembly.Units]], mscorlib
     - Name: 
       Entry: 12
@@ -78,14 +91,14 @@ MonoBehaviour:
       Data: 
     - Name: Abilities
       Entry: 7
-      Data: 2|System.Collections.Generic.List`1[[AdventureAssembly.Units.Abilities.Ability,
+      Data: 3|System.Collections.Generic.List`1[[AdventureAssembly.Units.Abilities.Ability,
         AdventureAssembly.Units]], mscorlib
     - Name: 
       Entry: 12
       Data: 1
     - Name: 
       Entry: 7
-      Data: 3|AdventureAssembly.Units.Abilities.SpellThiefAbility, AdventureAssembly.Units
+      Data: 4|AdventureAssembly.Units.Abilities.SpellThiefAbility, AdventureAssembly.Units
     - Name: _baseSpeed
       Entry: 4
       Data: 1

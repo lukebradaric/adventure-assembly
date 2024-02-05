@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eecca23252d581e41bb6836e393a3370, type: 3}
+  m_Script: {fileID: 11500000, guid: 0c3c206d0d49fc649aaf06616edcc2af, type: 3}
   m_Name: PirateClassData
   m_EditorClassIdentifier: 
   serializationData:
@@ -54,7 +54,7 @@ MonoBehaviour:
       Data: 
     - Name: Modifiers
       Entry: 7
-      Data: 0|System.Collections.Generic.List`1[[AdventureAssembly.Units.Heroes.ClassModifier,
+      Data: 0|System.Collections.Generic.List`1[[AdventureAssembly.Units.Classes.ClassModifier,
         AdventureAssembly.Units]], mscorlib
     - Name: 
       Entry: 12

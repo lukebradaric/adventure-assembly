@@ -1,6 +1,7 @@
 ﻿using AdventureAssembly.Core;
 using AdventureAssembly.Input;
 using AdventureAssembly.Units.Characters;
+using AdventureAssembly.Units.Classes;
 using AdventureAssembly.Units.Enemies;
 using AdventureAssembly.Units.Interactables;
 using DG.Tweening;

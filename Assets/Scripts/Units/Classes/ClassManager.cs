@@ -1,8 +1,9 @@
-﻿using System;
+﻿using AdventureAssembly.Units.Heroes;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace AdventureAssembly.Units.Heroes
+namespace AdventureAssembly.Units.Classes
 {
     public class ClassManager : MonoBehaviour
     {

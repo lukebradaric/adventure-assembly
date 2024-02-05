@@ -37,7 +37,11 @@ namespace AdventureAssembly.Units.Characters
             Units.Remove(unit);
         }
 
-        public static void AddModifier(CharacterUnitModifier modifier)
+        /// <summary>
+        /// Adds a modifier to all units and future units in this manager.
+        /// </summary>
+        /// <param name="modifier">The modifier to add.</param>
+        public static void AddGlobalModifier(CharacterUnitModifier modifier)
         {
             //Debug.Log($"Adding new modifier: {modifier.GetType().Name}");
 
@@ -50,7 +54,23 @@ namespace AdventureAssembly.Units.Characters
             }
         }
 
-        public static void RemoveModifier(CharacterUnitModifier modifier)
+        /// <summary>
+        /// Adds a list of modifiers to all units and future units in this manager.
+        /// </summary>
+        /// <param name="modifiers">The list of modifiers to add.</param>
+        public static void AddGlobalModifiers(List<CharacterUnitModifier> modifiers)
+        {
+            foreach (CharacterUnitModifier modifier in Modifiers)
+            {
+                AddGlobalModifier(modifier);
+            }
+        }
+
+        /// <summary>
+        /// Removes a modifier from all units and future units in this manager.
+        /// </summary>
+        /// <param name="modifier">The modifier to remove. Must be a reference to the modifier that was applied.</param>
+        public static void RemoveGlobalModifier(CharacterUnitModifier modifier)
         {
             foreach (T unit in Units)
             {
@@ -58,6 +78,18 @@ namespace AdventureAssembly.Units.Characters
             }
 
             Modifiers.Remove(modifier);
+        }
+
+        /// <summary>
+        /// Removes a list of modifiers from all units and future units in this manager.
+        /// </summary>
+        /// <param name="modifiers">The list of modifiers to remove. Must be references to the modifiers that were applied.</param>
+        public static void RemoveGlobalModifiers(List<CharacterUnitModifier> modifiers)
+        {
+            foreach (CharacterUnitModifier modifier in Modifiers)
+            {
+                RemoveGlobalModifier(modifier);
+            }
         }
 
         public static T GetNearestUnit(Vector2Int position)

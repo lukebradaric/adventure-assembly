@@ -1,4 +1,5 @@
-﻿using AdventureAssembly.Units.Heroes;
+﻿using AdventureAssembly.Units.Classes;
+using AdventureAssembly.Units.Heroes;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
