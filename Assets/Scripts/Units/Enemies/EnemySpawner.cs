@@ -115,7 +115,7 @@ namespace AdventureAssembly.Units.Enemies
             enemy.Died += OnEnemyDied;
         }
 
-        private void OnEnemyDied(CharacterUnit unit)
+        private void OnEnemyDied(Character unit)
         {
             unit.Died -= OnEnemyDied;
             EnemyManager.Instance.RemoveUnit((Enemy)unit);

@@ -288,7 +288,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.16037738, g: 0.08245818, b: 0.08245818, a: 0}
+  m_BackGroundColor: {r: 0.6698113, g: 0.6272618, b: 0.5023585, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -755,10 +755,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8afb61f623e0ae46a4db6835a378a5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  heroData:
-  - {fileID: 11400000, guid: 45d296dc0520eba4294511ed092eca5f, type: 2}
-  - {fileID: 11400000, guid: 634ae0fe27a4606498e364ed387ab4e3, type: 2}
-  - {fileID: 11400000, guid: 54f52912655b6c140bb6eeaffe9731bc, type: 2}
+  _heroDataListScriptableVariable: {fileID: 11400000, guid: 2ff3b874a7fa18943a841ec56bbb6a53, type: 2}
+  _startingHeroSelectionCount: 3
 --- !u!1 &1539494112
 GameObject:
   m_ObjectHideFlags: 0
@@ -853,7 +851,53 @@ MonoBehaviour:
   - EnemyData: {fileID: 11400000, guid: b930fad0151c80c4ebdf5bd12e71e15c, type: 2}
     Weight: 50
   - EnemyData: {fileID: 11400000, guid: 5485cf8b42f7ce94eb0cd1178dd55347, type: 2}
-    Weight: 1
+    Weight: 0
+--- !u!1 &1545723460
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1545723462}
+  - component: {fileID: 1545723463}
+  m_Layer: 0
+  m_Name: DebugSpawnGold
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1545723462
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1545723460}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1545723463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1545723460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2e628711deb66e4abfe39c7a801f0fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _key: 103
+  _inputMode: 1
 --- !u!1 &1589670062
 GameObject:
   m_ObjectHideFlags: 0
@@ -999,7 +1043,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5428801609344274336, guid: e450e852feb5a7c41ad1cd4f12ff1f3e, type: 3}
       propertyPath: m_SortingLayer
-      value: -2
+      value: -3
       objectReference: {fileID: 0}
     - target: {fileID: 5428801609344274336, guid: e450e852feb5a7c41ad1cd4f12ff1f3e, type: 3}
       propertyPath: m_SortingOrder
@@ -1007,7 +1051,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5428801609344274336, guid: e450e852feb5a7c41ad1cd4f12ff1f3e, type: 3}
       propertyPath: m_SortingLayerID
-      value: 1217094329
+      value: -690112537
       objectReference: {fileID: 0}
     - target: {fileID: 5881971965238946979, guid: e450e852feb5a7c41ad1cd4f12ff1f3e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1061,6 +1105,7 @@ SceneRoots:
   - {fileID: 1589670063}
   - {fileID: 695264163}
   - {fileID: 640131564}
+  - {fileID: 1545723462}
   - {fileID: 1113050847}
   - {fileID: 1539494113}
   - {fileID: 1197066623}

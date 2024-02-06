@@ -3,12 +3,12 @@ using System;
 
 namespace AdventureAssembly.Units.Heroes
 {
-    public class HeroStats : CharacterUnitStats
+    public class HeroStats : CharacterStats
     {
         public HeroData HeroData { get; protected set; }
         public Hero Hero { get; protected set; }
 
-        public override void Initialize(CharacterUnit unit)
+        public override void Initialize(Character unit)
         {
             base.Initialize(unit);
         }

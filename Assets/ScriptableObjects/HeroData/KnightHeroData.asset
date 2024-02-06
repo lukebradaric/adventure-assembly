@@ -74,7 +74,7 @@ MonoBehaviour:
       Data: Grants nearby heroes resistance to damge.
     - Name: ClassData
       Entry: 7
-      Data: 2|System.Collections.Generic.List`1[[AdventureAssembly.Units.Heroes.ClassData,
+      Data: 2|System.Collections.Generic.List`1[[AdventureAssembly.Units.Classes.ClassData,
         AdventureAssembly.Units]], mscorlib
     - Name: 
       Entry: 12

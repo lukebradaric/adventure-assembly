@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd6116a0a08944e488d68a75cc239f1a, type: 3}
   m_Name: TinyToolsSettings
   m_EditorClassIdentifier: 
-  _enablePlayRateLimit: 0
-  _maxPlayRatePerSecond: 10
+  _enablePlayRateLimit: 1
+  _maxPlayRatePerSecond: 25
   _audioPlaytimeBuffer: 0.15

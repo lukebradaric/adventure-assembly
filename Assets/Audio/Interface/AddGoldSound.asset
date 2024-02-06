@@ -16,6 +16,6 @@ MonoBehaviour:
   _audioMixerGroup: {fileID: 0}
   _audioPriority: 0
   _volume: 0.25
-  _pitch: 2
+  _pitch: 1.5
   _pitchVariation: 0.1
   _ignorePlayRateLimit: 0

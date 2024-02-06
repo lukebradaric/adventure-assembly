@@ -1,6 +1,7 @@
 ﻿using AdventureAssembly.Core;
 using AdventureAssembly.Input;
 using AdventureAssembly.Units.Characters;
+using AdventureAssembly.Units.Classes;
 using AdventureAssembly.Units.Enemies;
 using AdventureAssembly.Units.Interactables;
 using DG.Tweening;
@@ -13,7 +14,7 @@ using UnityEngine;
 
 namespace AdventureAssembly.Units.Heroes
 {
-    public class HeroManager : CharacterUnitManager<Hero>
+    public class HeroManager : CharacterManager<Hero>
     {
         [PropertySpace]
         [Title("Components")]
@@ -74,7 +75,7 @@ namespace AdventureAssembly.Units.Heroes
             NextMovementVector = direction;
         }
 
-        private void OnHeroDied(CharacterUnit unit)
+        private void OnHeroDied(Character unit)
         {
             RemoveUnit((Hero)unit);
         }
@@ -192,16 +193,16 @@ namespace AdventureAssembly.Units.Heroes
 
             // Instantiate new hero gameobject
             Hero hero = Instantiate(_heroPrefab, (Vector2)spawnPosition, Quaternion.identity);
-            //hero.transform.SetParent(transform);
+            hero.HeroData = heroData;
 
             // Add hero to this unit manager
             AddUnit(hero);
 
-            // Add all the heroes classes to the class manager
-            ClassManager.AddClassesByHeroData(heroData);
-
             // Initialize the spawned hero
             hero.Initialize(heroData, spawnPosition);
+
+            // Add all the heroes classes to the class manager
+            ClassManager.AddClassesByHeroData(heroData);
         }
 
         public override void AddUnit(Hero hero)

@@ -6,7 +6,7 @@ using UnityEngine;
 
 namespace AdventureAssembly.Units.Heroes
 {
-    public class Hero : CharacterUnit
+    public class Hero : Character
     {
         new public HeroStats Stats => (HeroStats)base.Stats;
         public HeroData HeroData { get; set; }
@@ -18,7 +18,7 @@ namespace AdventureAssembly.Units.Heroes
         /// </summary>
         /// <param name="unitData">The HeroData of this hero</param>
         /// <param name="position">The starting position of this unit</param>
-        public override void Initialize(CharacterUnitData unitData, Vector2Int position)
+        public override void Initialize(CharacterData unitData, Vector2Int position)
         {
             base.Initialize(unitData, position);
             this.HeroData = (HeroData)unitData;
