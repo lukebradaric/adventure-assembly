@@ -7,12 +7,8 @@ namespace AdventureAssembly.Units.Abilities
     [System.Serializable]
     public class ProjectileAbility : Ability
     {
-        [BoxGroup("Settings")]
-        [SerializeField] private int _baseDamage;
-        [BoxGroup("Settings")]
-        [SerializeField] private float _baseSpeed;
-        [BoxGroup("Prefabs")]
-        [SerializeField] private Projectile _projectilePrefab;
+        [BoxGroup("Data")]
+        [SerializeField] private ProjectileData _projectileData;
 
         protected override void Execute()
         {
@@ -23,8 +19,7 @@ namespace AdventureAssembly.Units.Abilities
                 return;
             }
 
-            Projectile projectile = GameObject.Instantiate(_projectilePrefab, _hero.transform.position, Quaternion.identity);
-            projectile.Initialize(_baseDamage, _baseSpeed, _hero, enemy);
+            _projectileData.Create(_hero, enemy);
         }
     }
 }
