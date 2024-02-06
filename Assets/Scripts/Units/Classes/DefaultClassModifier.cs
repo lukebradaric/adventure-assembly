@@ -1,4 +1,5 @@
-﻿using AdventureAssembly.Units.Heroes;
+﻿using AdventureAssembly.Units.Enemies;
+using AdventureAssembly.Units.Heroes;
 using AdventureAssembly.Units.Modifiers;
 using Sirenix.OdinInspector;
 using System.Collections.Generic;
@@ -9,37 +10,34 @@ namespace AdventureAssembly.Units.Classes
     public class DefaultClassModifier : ClassModifier
     {
         [BoxGroup("Settings")]
-        [Tooltip("Do we want to apply a list of modifiers to heroes instead of a single one?")]
-        [SerializeField] private bool _listOfModifiers = false;
+        [Tooltip("Do you also want the option to add modifiers to enemies using this class?")]
+        [SerializeField] private bool _enableEnemyModifiers = false;
 
-        [BoxGroup("Modifiers")]
-        [HideIf((nameof(_listOfModifiers)))]
-        [SerializeField] private CharacterUnitModifier _characterUnitModifier = new SmartHeroModifier();
+        [BoxGroup("Hero Modifiers")]
+        [SerializeField] private List<CharacterUnitModifier> _heroModifiers = new List<CharacterUnitModifier>();
 
-        [BoxGroup("Modifiers")]
-        [ShowIf((nameof(_listOfModifiers)))]
-        [SerializeField] private List<CharacterUnitModifier> _characterUnitModifiers = new List<CharacterUnitModifier>();
+        [BoxGroup("Enemy Modifiers")]
+        [ShowIf(nameof(_enableEnemyModifiers))]
+        [SerializeField] private List<CharacterUnitModifier> _enemyModifiers = new List<CharacterUnitModifier>();
 
         public override void Apply()
         {
-            if (_listOfModifiers)
-            {
-                HeroManager.AddGlobalModifiers(_characterUnitModifiers);
-                return;
-            }
+            HeroManager.AddGlobalModifiers(_heroModifiers);
 
-            HeroManager.AddGlobalModifier(_characterUnitModifier);
+            if (_enableEnemyModifiers)
+            {
+                EnemyManager.AddGlobalModifiers(_enemyModifiers);
+            }
         }
 
         public override void Remove()
         {
-            if (_listOfModifiers)
-            {
-                HeroManager.RemoveGlobalModifiers(_characterUnitModifiers);
-                return;
-            }
+            HeroManager.RemoveGlobalModifiers(_heroModifiers);
 
-            HeroManager.RemoveGlobalModifier(_characterUnitModifier);
+            if (_enableEnemyModifiers)
+            {
+                EnemyManager.RemoveGlobalModifiers(_enemyModifiers);
+            }
         }
     }
 }

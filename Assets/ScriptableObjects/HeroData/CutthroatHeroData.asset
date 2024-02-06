@@ -106,10 +106,10 @@ MonoBehaviour:
       Data: 4|AdventureAssembly.Units.Abilities.ProjectileAbility, AdventureAssembly.Units
     - Name: _baseSpeed
       Entry: 4
-      Data: 0.4
+      Data: 0.5
     - Name: _baseDamage
       Entry: 3
-      Data: 1
+      Data: 100
     - Name: _projectilePrefab
       Entry: 10
       Data: 3

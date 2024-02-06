@@ -12,6 +12,9 @@ namespace AdventureAssembly.Units.Characters
 
         public static List<CharacterUnitModifier> Modifiers { get; protected set; } = new List<CharacterUnitModifier>();
 
+        // Current applied modifiers, ID and List of modifiers applied from that ID
+        private static Dictionary<int, List<CharacterUnitModifier>> _appliedModifiers;
+
         protected static void ApplyAllModifiers(T unit)
         {
             // Apply all modifiers to a single unit
@@ -60,7 +63,7 @@ namespace AdventureAssembly.Units.Characters
         /// <param name="modifiers">The list of modifiers to add.</param>
         public static void AddGlobalModifiers(List<CharacterUnitModifier> modifiers)
         {
-            foreach (CharacterUnitModifier modifier in Modifiers)
+            foreach (CharacterUnitModifier modifier in modifiers)
             {
                 AddGlobalModifier(modifier);
             }
@@ -86,7 +89,7 @@ namespace AdventureAssembly.Units.Characters
         /// <param name="modifiers">The list of modifiers to remove. Must be references to the modifiers that were applied.</param>
         public static void RemoveGlobalModifiers(List<CharacterUnitModifier> modifiers)
         {
-            foreach (CharacterUnitModifier modifier in Modifiers)
+            foreach (CharacterUnitModifier modifier in modifiers)
             {
                 RemoveGlobalModifier(modifier);
             }

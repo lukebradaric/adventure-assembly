@@ -29,7 +29,7 @@ namespace AdventureAssembly.Units.Enemies
         /// <param name="targetUnit">The unit to attack</param>
         public void Attack(CharacterUnit targetUnit)
         {
-            if(IsDead)
+            if (IsDead)
             {
                 Debug.Log("Attacking while dead!");
             }
@@ -50,6 +50,15 @@ namespace AdventureAssembly.Units.Enemies
         protected override void OnDie()
         {
             base.OnDie();
+
+            Debug.Log(this.Stats.GoldDropChance.Value);
+            // Enemy chance to spawn gold on death
+            if (this.Stats.GoldDropChance.Value > Random.value)
+            {
+                GoldManager.Instance.AddGold(Position);
+            }
+
+            // Enemy add experience on death
             ExperienceManager.Instance.AddExperience(EnemyData.KillExperience);
         }
 

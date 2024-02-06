@@ -12,5 +12,12 @@ namespace AdventureAssembly.Units.Modifiers
         }
 
         public abstract void Apply(Hero hero);
+
+        public override void Remove(CharacterUnit unit)
+        {
+            Remove((Hero)unit);
+        }
+
+        public abstract void Remove(Hero hero);
     }
 }

@@ -38,7 +38,6 @@ namespace AdventureAssembly.Units
         public void AddModifier(StatModifier<T> modifier)
         {
             _statModifiers.Add(modifier);
-            Debug.Log(modifier.GetHashCode());
         }
 
         public void RemoveModifier(StatModifier<T> modifier)
