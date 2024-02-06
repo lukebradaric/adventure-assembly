@@ -16,8 +16,7 @@ MonoBehaviour:
     SerializedFormat: 2
     SerializedBytes: 
     ReferencedUnityObjects:
-    - {fileID: 21300000, guid: 3c4bcb2ce8d0a47448823c34f63a875c, type: 3}
-    - {fileID: 11400000, guid: b86db4235a294c244b0964df39ff7556, type: 2}
+    - {fileID: 21300000, guid: 8a23df2a35200d94c80be85f227f8711, type: 3}
     - {fileID: 11400000, guid: 2e538e609051b984e97f90d488607820, type: 2}
     - {fileID: 9053408658122590034, guid: 085e97eae184f7b4fa66d86f4c2f31c9, type: 3}
     SerializedBytesString: 
@@ -58,13 +57,13 @@ MonoBehaviour:
       Data: UnityEngine.Color, UnityEngine.CoreModule
     - Name: 
       Entry: 4
-      Data: 0.7019608
+      Data: 0.41568628
     - Name: 
       Entry: 4
-      Data: 0.21960786
+      Data: 0.266666681
     - Name: 
       Entry: 4
-      Data: 0.192156881
+      Data: 0.141176477
     - Name: 
       Entry: 4
       Data: 1
@@ -80,13 +79,10 @@ MonoBehaviour:
         AdventureAssembly.Units]], mscorlib
     - Name: 
       Entry: 12
-      Data: 2
-    - Name: 
-      Entry: 10
       Data: 1
     - Name: 
       Entry: 10
-      Data: 2
+      Data: 1
     - Name: 
       Entry: 13
       Data: 
@@ -111,7 +107,7 @@ MonoBehaviour:
       Data: 8
     - Name: _projectilePrefab
       Entry: 10
-      Data: 3
+      Data: 2
     - Name: 
       Entry: 8
       Data: 

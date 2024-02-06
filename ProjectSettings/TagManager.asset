@@ -49,6 +49,9 @@ TagManager:
   - name: Shadow
     uniqueID: 3160959633
     locked: 0
+  - name: Particles
+    uniqueID: 1356429603
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
