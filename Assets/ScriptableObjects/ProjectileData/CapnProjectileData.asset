@@ -17,6 +17,7 @@ MonoBehaviour:
     SerializedBytes: 
     ReferencedUnityObjects:
     - {fileID: -1015276828, guid: 5786dd6c780f0764ea71761afd8ad28d, type: 3}
+    - {fileID: 1702708558535293886, guid: 731630f23e270704fbe8f9aa18955c1c, type: 3}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -73,11 +74,14 @@ MonoBehaviour:
       Data: 
     - Name: ParticlePrefabs
       Entry: 7
-      Data: 1|System.Collections.Generic.List`1[[UnityEngine.GameObject, UnityEngine.CoreModule]],
+      Data: 1|System.Collections.Generic.List`1[[UnityEngine.ParticleSystem, UnityEngine.ParticleSystemModule]],
         mscorlib
     - Name: 
       Entry: 12
-      Data: 0
+      Data: 1
+    - Name: 
+      Entry: 10
+      Data: 1
     - Name: 
       Entry: 13
       Data: 

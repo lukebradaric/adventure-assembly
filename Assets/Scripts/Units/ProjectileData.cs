@@ -49,7 +49,7 @@ namespace AdventureAssembly.Units
 
         [BoxGroup("Components")]
         [Tooltip("What particle prefabs should be instantiated under this projectile?")]
-        [OdinSerialize] public List<GameObject> ParticlePrefabs { get; protected set; } = new List<GameObject>();
+        [OdinSerialize] public List<ParticleSystem> ParticlePrefabs { get; protected set; } = new List<ParticleSystem>();
 
         /// <summary>
         /// Creates a projectile from this ProjectileData and fires it towards a target.

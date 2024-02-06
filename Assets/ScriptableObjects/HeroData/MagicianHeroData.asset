@@ -18,7 +18,8 @@ MonoBehaviour:
     ReferencedUnityObjects:
     - {fileID: 21300000, guid: 4dd486577d5d81e41a3a63c2de611470, type: 3}
     - {fileID: 11400000, guid: a18450eb18ab7534dbbf8719cb77aaba, type: 2}
-    - {fileID: 9053408658122590034, guid: 7124a280086ee934aabce4c1be34af96, type: 3}
+    - {fileID: 11400000, guid: dd525721dc6339840af88d02c844c890, type: 2}
+    - {fileID: 11400000, guid: fd5a7f5335ae88d4894b76ea03e3a55f, type: 2}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -41,7 +42,7 @@ MonoBehaviour:
       Data: 
     - Name: Modifiers
       Entry: 7
-      Data: 1|System.Collections.Generic.List`1[[AdventureAssembly.Units.Modifiers.CharacterUnitModifier,
+      Data: 1|System.Collections.Generic.List`1[[AdventureAssembly.Units.Modifiers.CharacterModifier,
         AdventureAssembly.Units]], mscorlib
     - Name: 
       Entry: 12
@@ -102,12 +103,12 @@ MonoBehaviour:
     - Name: _baseSpeed
       Entry: 4
       Data: 1
-    - Name: _projectilePrefab
+    - Name: _sound
       Entry: 10
       Data: 2
-    - Name: _baseDamage
-      Entry: 3
-      Data: 4
+    - Name: _projectileData
+      Entry: 10
+      Data: 3
     - Name: _enemiesPerExtraProjectile
       Entry: 3
       Data: 3

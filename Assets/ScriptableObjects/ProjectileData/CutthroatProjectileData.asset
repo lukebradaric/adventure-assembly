@@ -25,6 +25,39 @@ MonoBehaviour:
     - Name: Sprite
       Entry: 10
       Data: 0
+    - Name: Color
+      Entry: 7
+      Data: UnityEngine.Color, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: BaseDamage
+      Entry: 3
+      Data: 4
+    - Name: Speed
+      Entry: 4
+      Data: 10
+    - Name: DestroyOnCollision
+      Entry: 5
+      Data: true
+    - Name: ColliderRadius
+      Entry: 4
+      Data: 0.25
+    - Name: MaxLifetime
+      Entry: 4
+      Data: 5
     - Name: Components
       Entry: 7
       Data: 0|System.Collections.Generic.List`1[[AdventureAssembly.Units.ProjectileComponent,
@@ -52,7 +85,7 @@ MonoBehaviour:
       Data: 
     - Name: ParticlePrefabs
       Entry: 7
-      Data: 2|System.Collections.Generic.List`1[[UnityEngine.GameObject, UnityEngine.CoreModule]],
+      Data: 2|System.Collections.Generic.List`1[[UnityEngine.ParticleSystem, UnityEngine.ParticleSystemModule]],
         mscorlib
     - Name: 
       Entry: 12
@@ -63,19 +96,4 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-    - Name: BaseDamage
-      Entry: 3
-      Data: 4
-    - Name: Speed
-      Entry: 4
-      Data: 10
-    - Name: DestroyOnCollision
-      Entry: 5
-      Data: true
-    - Name: ColliderRadius
-      Entry: 4
-      Data: 0.25
-    - Name: MaxLifetime
-      Entry: 4
-      Data: 5
   _prefab: {fileID: 9053408658122590034, guid: e87ea7110971b8948a8daa42f53fbecc, type: 3}

@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using TinyTools.ScriptableVariables;
 using UnityEngine;
+using static UnityEngine.ParticleSystem;
 
 namespace AdventureAssembly.Units
 {
@@ -18,9 +19,10 @@ namespace AdventureAssembly.Units
         [SerializeField] private StringScriptableVariable _enemyTag;
 
         public ProjectileData ProjectileData { get; protected set; }
+        public Hero Hero { get; protected set; }
 
         public List<ProjectileComponent> Components { get; protected set; } = new List<ProjectileComponent>();
-        public Hero Hero { get; protected set; }
+        public List<ParticleSystem> ParticlePrefabs { get; protected set; } = new List<ParticleSystem>();
 
         private Character _targetCharacter = null;
         public Character TargetCharacter
@@ -33,7 +35,7 @@ namespace AdventureAssembly.Units
             {
                 _targetCharacter = value;
 
-                if(_targetCharacter == null)
+                if (_targetCharacter == null)
                 {
                     return;
                 }
@@ -78,6 +80,12 @@ namespace AdventureAssembly.Units
                 newComponent.OnEnable();
             }
 
+            // Instantiate particle prefabs on this projectile
+            foreach (ParticleSystem particlePrefab in ProjectileData.ParticlePrefabs)
+            {
+                ParticlePrefabs.Add(Instantiate(particlePrefab, this.transform));
+            }
+
             Destroy(gameObject, ProjectileData.MaxLifetime);
         }
 
@@ -87,6 +95,17 @@ namespace AdventureAssembly.Units
             foreach (ProjectileComponent component in Components)
             {
                 component.OnDisable();
+            }
+        }
+
+        private void OnDestroy()
+        {
+            foreach (ParticleSystem particleSystem in ParticlePrefabs)
+            {
+                particleSystem.transform.parent = null;
+                MainModule mainModule = particleSystem.main;
+                mainModule.stopAction = ParticleSystemStopAction.Destroy;
+                particleSystem.Stop();
             }
         }
 
