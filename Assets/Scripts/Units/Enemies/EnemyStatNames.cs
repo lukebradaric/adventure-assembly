@@ -4,6 +4,8 @@
     {
         DamageMultiplier,
         MaxHealthMultiplier,
+        CriticalChance,
+        CriticalMultiplier,
         GoldDropChance,
     }
 }

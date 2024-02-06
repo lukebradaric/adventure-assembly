@@ -9,5 +9,7 @@ namespace AdventureAssembly.Units.Heroes
     {
         DamageMultiplier,
         MaxHealthMultiplier,
+        CriticalChance,
+        CriticalMultiplier,
     }
 }

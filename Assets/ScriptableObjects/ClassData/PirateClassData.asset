@@ -118,7 +118,7 @@ MonoBehaviour:
       Data: 0
     - Name: _enemyStatName
       Entry: 3
-      Data: 2
+      Data: 4
     - Name: _statProcess
       Entry: 7
       Data: 7|AdventureAssembly.Units.Stats.FloatAddStatProcess, AdventureAssembly.Units

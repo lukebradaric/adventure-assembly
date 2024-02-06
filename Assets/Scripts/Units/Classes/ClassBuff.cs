@@ -19,6 +19,15 @@ namespace AdventureAssembly.Units.Classes
         [Tooltip("Do you also want the option to add modifiers to enemies using this class?")]
         [SerializeField] private bool _enableEnemyModifiers = false;
 
+        [BoxGroup("Class Settings")]
+        [Tooltip("Do you want to apply this buff to only specific classes?")]
+        [SerializeField] private bool _specificClasses;
+
+        [BoxGroup("Class Settings")]
+        [Tooltip("What classes should this buff be applied to?")]
+        [ShowIf(nameof(_specificClasses))]
+        [SerializeField] private List<ClassData> _classes = new List<ClassData>();
+
         [BoxGroup("Hero Modifiers")]
         [SerializeField] private List<CharacterModifier> _heroModifiers = new List<CharacterModifier>();
 

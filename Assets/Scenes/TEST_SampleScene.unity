@@ -755,10 +755,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8afb61f623e0ae46a4db6835a378a5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  heroData:
-  - {fileID: 11400000, guid: 45d296dc0520eba4294511ed092eca5f, type: 2}
-  - {fileID: 11400000, guid: 634ae0fe27a4606498e364ed387ab4e3, type: 2}
-  - {fileID: 11400000, guid: 54f52912655b6c140bb6eeaffe9731bc, type: 2}
+  _heroDataListScriptableVariable: {fileID: 11400000, guid: 2ff3b874a7fa18943a841ec56bbb6a53, type: 2}
+  _startingHeroSelectionCount: 3
 --- !u!1 &1539494112
 GameObject:
   m_ObjectHideFlags: 0
