@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace AdventureAssembly.Units.Enemies
 {
-    public class Enemy : CharacterUnit
+    public class Enemy : Character
     {
         [Space]
         [Header("Events")]
@@ -15,7 +15,7 @@ namespace AdventureAssembly.Units.Enemies
 
         private EnemyNavigation _navigation;
 
-        public override void Initialize(CharacterUnitData unitData, Vector2Int position)
+        public override void Initialize(CharacterData unitData, Vector2Int position)
         {
             EnemyData = (EnemyData)unitData;
             _navigation = EnemyData.Navigation.GetClone();
@@ -27,7 +27,7 @@ namespace AdventureAssembly.Units.Enemies
         /// Makes this enemy attack the target unit.
         /// </summary>
         /// <param name="targetUnit">The unit to attack</param>
-        public void Attack(CharacterUnit targetUnit)
+        public void Attack(Character targetUnit)
         {
             if (IsDead)
             {

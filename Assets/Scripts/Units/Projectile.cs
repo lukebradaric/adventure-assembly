@@ -20,13 +20,13 @@ namespace AdventureAssembly.Units
         [SerializeField] private float _speed;
 
         public Hero Hero { get; protected set; }
-        public CharacterUnit TargetUnit { get; protected set; }
+        public Character TargetUnit { get; protected set; }
         public int BaseDamage { get; protected set; }
 
         public Vector2 MoveDirection { get; protected set; }
 
         // This Ititalize homes to a set target.
-        public void Initialize(Hero hero, int baseDamage, CharacterUnit targetUnit)
+        public void Initialize(Hero hero, int baseDamage, Character targetUnit)
         {
             this.Hero = hero;
             this.BaseDamage = baseDamage;

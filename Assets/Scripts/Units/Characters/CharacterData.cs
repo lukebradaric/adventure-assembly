@@ -7,7 +7,7 @@ using UnityEngine;
 
 namespace AdventureAssembly.Units.Characters
 {
-    public abstract class CharacterUnitData : SerializedScriptableObject
+    public abstract class CharacterData : SerializedScriptableObject
     {
         [PropertySpace]
         [Title("Unit")]
@@ -22,6 +22,6 @@ namespace AdventureAssembly.Units.Characters
         [OdinSerialize] public UnitTween MovementTween { get; private set; } = new DefaultUnitMovementTween();
 
         [Tooltip("What modifiers should be applied to this unit when it spawns?")]
-        [OdinSerialize] public List<CharacterUnitModifier> Modifiers { get; private set; } = new List<CharacterUnitModifier>();
+        [OdinSerialize] public List<CharacterModifier> Modifiers { get; private set; } = new List<CharacterModifier>();
     }
 }

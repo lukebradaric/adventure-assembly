@@ -47,35 +47,50 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-    - Name: Modifiers
+    - Name: Buffs
       Entry: 7
-      Data: 0|System.Collections.Generic.List`1[[AdventureAssembly.Units.Classes.ClassModifier,
+      Data: 0|System.Collections.Generic.List`1[[AdventureAssembly.Units.Classes.ClassBuff,
         AdventureAssembly.Units]], mscorlib
     - Name: 
       Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 1|AdventureAssembly.Units.Classes.ClassBuff, AdventureAssembly.Units
+    - Name: RequiredCount
+      Entry: 3
       Data: 3
-    - Name: 
-      Entry: 7
-      Data: 1|AdventureAssembly.Units.Classes.DefaultClassModifier, AdventureAssembly.Units
-    - Name: RequiredCount
-      Entry: 3
-      Data: 4
     - Name: _enableEnemyModifiers
       Entry: 5
       Data: true
     - Name: _heroModifiers
       Entry: 7
-      Data: 2|System.Collections.Generic.List`1[[AdventureAssembly.Units.Modifiers.CharacterUnitModifier,
+      Data: 2|System.Collections.Generic.List`1[[AdventureAssembly.Units.Modifiers.CharacterModifier,
         AdventureAssembly.Units]], mscorlib
     - Name: 
       Entry: 12
       Data: 1
     - Name: 
       Entry: 7
-      Data: 3|AdventureAssembly.Units.Modifiers.PirateHeroModifier, AdventureAssembly.Units
+      Data: 3|AdventureAssembly.Units.Modifiers.CharacterStatModifier, AdventureAssembly.Units
+    - Name: _targetType
+      Entry: 3
+      Data: 0
+    - Name: _heroStatName
+      Entry: 3
+      Data: 0
+    - Name: _enemyStatName
+      Entry: 3
+      Data: 0
+    - Name: _statProcess
+      Entry: 7
+      Data: 4|AdventureAssembly.Units.Stats.FloatMultiplierPerGoldStatProcess, AdventureAssembly.Units
     - Name: _damageMultiplierPerGold
       Entry: 4
       Data: 0.01
+    - Name: 
+      Entry: 8
+      Data: 
     - Name: 
       Entry: 8
       Data: 
@@ -87,14 +102,14 @@ MonoBehaviour:
       Data: 
     - Name: _enemyModifiers
       Entry: 7
-      Data: 4|System.Collections.Generic.List`1[[AdventureAssembly.Units.Modifiers.CharacterUnitModifier,
+      Data: 5|System.Collections.Generic.List`1[[AdventureAssembly.Units.Modifiers.CharacterModifier,
         AdventureAssembly.Units]], mscorlib
     - Name: 
       Entry: 12
       Data: 1
     - Name: 
       Entry: 7
-      Data: 5|AdventureAssembly.Units.Modifiers.SmartCharacterUnitModifier, AdventureAssembly.Units
+      Data: 6|AdventureAssembly.Units.Modifiers.CharacterStatModifier, AdventureAssembly.Units
     - Name: _targetType
       Entry: 3
       Data: 1
@@ -104,139 +119,15 @@ MonoBehaviour:
     - Name: _enemyStatName
       Entry: 3
       Data: 2
+    - Name: _statProcess
+      Entry: 7
+      Data: 7|AdventureAssembly.Units.Stats.FloatAddStatProcess, AdventureAssembly.Units
     - Name: _value
       Entry: 4
-      Data: 0.01
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 6|AdventureAssembly.Units.Classes.DefaultClassModifier, AdventureAssembly.Units
-    - Name: RequiredCount
-      Entry: 3
-      Data: 8
-    - Name: _enableEnemyModifiers
-      Entry: 5
-      Data: true
-    - Name: _heroModifiers
-      Entry: 7
-      Data: 7|System.Collections.Generic.List`1[[AdventureAssembly.Units.Modifiers.CharacterUnitModifier,
-        AdventureAssembly.Units]], mscorlib
-    - Name: 
-      Entry: 12
       Data: 1
     - Name: 
-      Entry: 7
-      Data: 8|AdventureAssembly.Units.Modifiers.PirateHeroModifier, AdventureAssembly.Units
-    - Name: _damageMultiplierPerGold
-      Entry: 4
-      Data: 0.01
-    - Name: 
       Entry: 8
       Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: _enemyModifiers
-      Entry: 7
-      Data: 9|System.Collections.Generic.List`1[[AdventureAssembly.Units.Modifiers.CharacterUnitModifier,
-        AdventureAssembly.Units]], mscorlib
-    - Name: 
-      Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 7
-      Data: 10|AdventureAssembly.Units.Modifiers.SmartCharacterUnitModifier, AdventureAssembly.Units
-    - Name: _targetType
-      Entry: 3
-      Data: 1
-    - Name: _heroStatName
-      Entry: 3
-      Data: 0
-    - Name: _enemyStatName
-      Entry: 3
-      Data: 2
-    - Name: _value
-      Entry: 4
-      Data: 0.02
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 11|AdventureAssembly.Units.Classes.DefaultClassModifier, AdventureAssembly.Units
-    - Name: RequiredCount
-      Entry: 3
-      Data: 16
-    - Name: _enableEnemyModifiers
-      Entry: 5
-      Data: true
-    - Name: _heroModifiers
-      Entry: 7
-      Data: 12|System.Collections.Generic.List`1[[AdventureAssembly.Units.Modifiers.CharacterUnitModifier,
-        AdventureAssembly.Units]], mscorlib
-    - Name: 
-      Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 7
-      Data: 13|AdventureAssembly.Units.Modifiers.PirateHeroModifier, AdventureAssembly.Units
-    - Name: _damageMultiplierPerGold
-      Entry: 4
-      Data: 0.01
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: _enemyModifiers
-      Entry: 7
-      Data: 14|System.Collections.Generic.List`1[[AdventureAssembly.Units.Modifiers.CharacterUnitModifier,
-        AdventureAssembly.Units]], mscorlib
-    - Name: 
-      Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 7
-      Data: 15|AdventureAssembly.Units.Modifiers.SmartCharacterUnitModifier, AdventureAssembly.Units
-    - Name: _targetType
-      Entry: 3
-      Data: 1
-    - Name: _heroStatName
-      Entry: 3
-      Data: 0
-    - Name: _enemyStatName
-      Entry: 3
-      Data: 2
-    - Name: _value
-      Entry: 4
-      Data: 0.03
     - Name: 
       Entry: 8
       Data: 

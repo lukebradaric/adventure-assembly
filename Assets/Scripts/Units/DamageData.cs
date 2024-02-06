@@ -8,7 +8,7 @@ namespace AdventureAssembly.Units
     /// </summary>
     public class DamageData
     {
-        public DamageData(CharacterUnit source, CharacterUnit target, int baseValue)
+        public DamageData(Character source, Character target, int baseValue)
         {
             Source = source;
             Target = target;
@@ -38,13 +38,13 @@ namespace AdventureAssembly.Units
         public Vector2 Direction { get; set; } = Vector2.zero;
 
         /// <summary>
-        /// The CharacterUnit that is dealing this damage.
+        /// The Character that is dealing this damage.
         /// </summary>
-        public CharacterUnit Source { get; set; }
+        public Character Source { get; set; }
 
         /// <summary>
-        /// The CharacterUnit that this damage is being dealt to.
+        /// The Character that this damage is being dealt to.
         /// </summary>
-        public CharacterUnit Target { get; set; }
+        public Character Target { get; set; }
     }
 }

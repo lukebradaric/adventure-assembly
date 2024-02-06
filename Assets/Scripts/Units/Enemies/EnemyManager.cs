@@ -3,7 +3,7 @@ using AdventureAssembly.Units.Characters;
 
 namespace AdventureAssembly.Units.Enemies
 {
-    public class EnemyManager : CharacterUnitManager<Enemy>
+    public class EnemyManager : CharacterManager<Enemy>
     {
         private void OnEnable()
         {

@@ -10,7 +10,7 @@ using UnityEngine;
 namespace AdventureAssembly.Units.Heroes
 {
     [CreateAssetMenu(menuName = Constants.ScriptableObjectRootPath + "HeroData")]
-    public class HeroData : CharacterUnitData
+    public class HeroData : CharacterData
     {
         [PropertySpace]
         [Title("Hero")]

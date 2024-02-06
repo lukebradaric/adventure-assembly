@@ -16,6 +16,6 @@ namespace AdventureAssembly.Units.Classes
 
         [OdinSerialize] public Color Color { get; private set; }
 
-        [OdinSerialize] public List<ClassModifier> Modifiers { get; private set; } = new List<ClassModifier>();
+        [OdinSerialize] public List<ClassBuff> Buffs { get; private set; } = new List<ClassBuff>();
     }
 }

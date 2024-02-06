@@ -1,16 +1,16 @@
 ﻿using AdventureAssembly.Units.Heroes;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace AdventureAssembly.Interface
 {
     public class HeroSelectionStart : MonoBehaviour
     {
-        public List<HeroData> heroData = new List<HeroData>();
+        [SerializeField] private HeroDataListScriptableVariable _heroDataListScriptableVariable;
+        [SerializeField] private int _startingHeroSelectionCount;
 
         private void Start()
         {
-            InterfaceManager.Instance.HeroSelectionInterface.Show(heroData);
+            InterfaceManager.Instance.HeroSelectionInterface.Show(_heroDataListScriptableVariable.GetRandom(_startingHeroSelectionCount));
         }
     }
 }

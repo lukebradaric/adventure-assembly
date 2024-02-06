@@ -1,6 +1,6 @@
 ﻿namespace AdventureAssembly.Units.Characters
 {
-    public enum CharacterUnitType
+    public enum CharacterType
     {
         Hero,
         Enemy

@@ -2,25 +2,31 @@
 using AdventureAssembly.Units.Heroes;
 using AdventureAssembly.Units.Modifiers;
 using Sirenix.OdinInspector;
+using Sirenix.Serialization;
 using System.Collections.Generic;
 using UnityEngine;
 
 namespace AdventureAssembly.Units.Classes
 {
-    public class DefaultClassModifier : ClassModifier
+    [System.Serializable]
+    public class ClassBuff
     {
+        [BoxGroup("Settings")]
+        [Tooltip("How many Heroes of this class type are required for this buff to be active?")]
+        [OdinSerialize] public int RequiredCount { get; protected set; }
+
         [BoxGroup("Settings")]
         [Tooltip("Do you also want the option to add modifiers to enemies using this class?")]
         [SerializeField] private bool _enableEnemyModifiers = false;
 
         [BoxGroup("Hero Modifiers")]
-        [SerializeField] private List<CharacterUnitModifier> _heroModifiers = new List<CharacterUnitModifier>();
+        [SerializeField] private List<CharacterModifier> _heroModifiers = new List<CharacterModifier>();
 
         [BoxGroup("Enemy Modifiers")]
         [ShowIf(nameof(_enableEnemyModifiers))]
-        [SerializeField] private List<CharacterUnitModifier> _enemyModifiers = new List<CharacterUnitModifier>();
+        [SerializeField] private List<CharacterModifier> _enemyModifiers = new List<CharacterModifier>();
 
-        public override void Apply()
+        public virtual void Apply()
         {
             HeroManager.AddGlobalModifiers(_heroModifiers);
 
@@ -30,7 +36,7 @@ namespace AdventureAssembly.Units.Classes
             }
         }
 
-        public override void Remove()
+        public virtual void Remove()
         {
             HeroManager.RemoveGlobalModifiers(_heroModifiers);
 
@@ -38,6 +44,11 @@ namespace AdventureAssembly.Units.Classes
             {
                 EnemyManager.RemoveGlobalModifiers(_enemyModifiers);
             }
+        }
+
+        public ClassBuff GetClone()
+        {
+            return (ClassBuff)this.MemberwiseClone();
         }
     }
 }

@@ -6,7 +6,7 @@ namespace AdventureAssembly.Units.Animation
 {
     public class DefaultEnemyAttackTween : UnitTween
     {
-        public override void Animate(CharacterUnit unit, Vector2Int newPosition, float duration)
+        public override void Animate(Character unit, Vector2Int newPosition, float duration)
         {
             Sequence sequence = DOTween.Sequence();
 

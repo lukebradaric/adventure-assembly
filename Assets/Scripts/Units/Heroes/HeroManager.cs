@@ -14,7 +14,7 @@ using UnityEngine;
 
 namespace AdventureAssembly.Units.Heroes
 {
-    public class HeroManager : CharacterUnitManager<Hero>
+    public class HeroManager : CharacterManager<Hero>
     {
         [PropertySpace]
         [Title("Components")]
@@ -75,7 +75,7 @@ namespace AdventureAssembly.Units.Heroes
             NextMovementVector = direction;
         }
 
-        private void OnHeroDied(CharacterUnit unit)
+        private void OnHeroDied(Character unit)
         {
             RemoveUnit((Hero)unit);
         }

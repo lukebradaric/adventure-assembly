@@ -8,7 +8,7 @@ using UnityEngine;
 namespace AdventureAssembly.Units.Enemies
 {
     [CreateAssetMenu(menuName = Constants.ScriptableObjectRootPath + "EnemyData")]
-    public class EnemyData : CharacterUnitData
+    public class EnemyData : CharacterData
     {
         [PropertySpace]
         [Title("Enemy")]

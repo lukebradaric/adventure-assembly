@@ -6,19 +6,19 @@ using UnityEngine;
 
 namespace AdventureAssembly.Units.Characters
 {
-    public abstract class CharacterUnitManager<T> : Singleton<CharacterUnitManager<T>> where T : CharacterUnit
+    public abstract class CharacterManager<T> : Singleton<CharacterManager<T>> where T : Character
     {
         public static List<T> Units { get; protected set; } = new List<T>();
 
-        public static List<CharacterUnitModifier> Modifiers { get; protected set; } = new List<CharacterUnitModifier>();
+        public static List<CharacterModifier> Modifiers { get; protected set; } = new List<CharacterModifier>();
 
         // Current applied modifiers, ID and List of modifiers applied from that ID
-        private static Dictionary<int, List<CharacterUnitModifier>> _appliedModifiers;
+        private static Dictionary<int, List<CharacterModifier>> _appliedModifiers;
 
         protected static void ApplyAllModifiers(T unit)
         {
             // Apply all modifiers to a single unit
-            foreach (CharacterUnitModifier modifier in Modifiers)
+            foreach (CharacterModifier modifier in Modifiers)
             {
                 modifier.Apply(unit);
             }
@@ -44,7 +44,7 @@ namespace AdventureAssembly.Units.Characters
         /// Adds a modifier to all units and future units in this manager.
         /// </summary>
         /// <param name="modifier">The modifier to add.</param>
-        public static void AddGlobalModifier(CharacterUnitModifier modifier)
+        public static void AddGlobalModifier(CharacterModifier modifier)
         {
             //Debug.Log($"Adding new modifier: {modifier.GetType().Name}");
 
@@ -61,9 +61,9 @@ namespace AdventureAssembly.Units.Characters
         /// Adds a list of modifiers to all units and future units in this manager.
         /// </summary>
         /// <param name="modifiers">The list of modifiers to add.</param>
-        public static void AddGlobalModifiers(List<CharacterUnitModifier> modifiers)
+        public static void AddGlobalModifiers(List<CharacterModifier> modifiers)
         {
-            foreach (CharacterUnitModifier modifier in modifiers)
+            foreach (CharacterModifier modifier in modifiers)
             {
                 AddGlobalModifier(modifier);
             }
@@ -73,7 +73,7 @@ namespace AdventureAssembly.Units.Characters
         /// Removes a modifier from all units and future units in this manager.
         /// </summary>
         /// <param name="modifier">The modifier to remove. Must be a reference to the modifier that was applied.</param>
-        public static void RemoveGlobalModifier(CharacterUnitModifier modifier)
+        public static void RemoveGlobalModifier(CharacterModifier modifier)
         {
             foreach (T unit in Units)
             {
@@ -87,9 +87,9 @@ namespace AdventureAssembly.Units.Characters
         /// Removes a list of modifiers from all units and future units in this manager.
         /// </summary>
         /// <param name="modifiers">The list of modifiers to remove. Must be references to the modifiers that were applied.</param>
-        public static void RemoveGlobalModifiers(List<CharacterUnitModifier> modifiers)
+        public static void RemoveGlobalModifiers(List<CharacterModifier> modifiers)
         {
-            foreach (CharacterUnitModifier modifier in modifiers)
+            foreach (CharacterModifier modifier in modifiers)
             {
                 RemoveGlobalModifier(modifier);
             }

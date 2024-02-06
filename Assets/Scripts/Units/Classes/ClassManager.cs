@@ -10,11 +10,11 @@ namespace AdventureAssembly.Units.Classes
         // The count of how many Heroes there are for each class type
         public static Dictionary<ClassData, int> ClassCount { get; private set; } = new Dictionary<ClassData, int>();
 
-        // Dictionary of the class modifiers currently applied for each class
-        public static Dictionary<ClassData, ClassModifier> ClassModifiers { get; private set; } = new Dictionary<ClassData, ClassModifier>();
+        // Dictionary of the class buffs currently applied for each class
+        public static Dictionary<ClassData, ClassBuff> ClassBuffs { get; private set; } = new Dictionary<ClassData, ClassBuff>();
 
-        // Dictionary of classmodifier instances created for each class
-        public static Dictionary<ClassData, List<ClassModifier>> ClassModifierInstances { get; private set; } = new Dictionary<ClassData, List<ClassModifier>>();
+        // Dictionary of ClassBuff instances created for each class
+        public static Dictionary<ClassData, List<ClassBuff>> ClassBuffInstances { get; private set; } = new Dictionary<ClassData, List<ClassBuff>>();
 
         public static Action<ClassData> ClassDataAdded;
         public static Action<ClassData> ClassDataRemoved;
@@ -69,7 +69,7 @@ namespace AdventureAssembly.Units.Classes
             // Invoke class count changed event
             ClassCountChanged?.Invoke(classData, ClassCount[classData]);
 
-            UpdateClassModifiers(classData, ClassCount[classData]);
+            UpdateClassBuffs(classData, ClassCount[classData]);
         }
 
         public static void RemoveClass(ClassData classData)
@@ -81,7 +81,7 @@ namespace AdventureAssembly.Units.Classes
             }
 
             ClassCount[classData]--;
-            UpdateClassModifiers(classData, ClassCount[classData]);
+            UpdateClassBuffs(classData, ClassCount[classData]);
 
             // Invoke class count changed event
             ClassCountChanged?.Invoke(classData, ClassCount[classData]);
@@ -96,90 +96,90 @@ namespace AdventureAssembly.Units.Classes
             }
         }
 
-        // Update the modifiers applied from each class buff
-        private static void UpdateClassModifiers(ClassData classData, int currentCount)
+        // Update the buffs applied from each class buff
+        private static void UpdateClassBuffs(ClassData classData, int currentCount)
         {
-            ClassModifier classModifier = GetClassModifier(classData, currentCount);
+            ClassBuff classBuff = GetClassBuff(classData, currentCount);
 
-            // If no modifier found and new modifier is null, return
-            if (!ClassModifiers.ContainsKey(classData) && classModifier == null)
+            // If no buff found and new buff is null, return
+            if (!ClassBuffs.ContainsKey(classData) && classBuff == null)
             {
                 //Debug.Log("No class update.");
                 return;
             }
 
-            // If no modifier found and new modifier is valid, add clone
-            if (!ClassModifiers.ContainsKey(classData) && classModifier != null)
+            // If no buff found and new buff is valid, add clone
+            if (!ClassBuffs.ContainsKey(classData) && classBuff != null)
             {
-                //Debug.Log("Adding a brand new modifier.");
+                //Debug.Log("Adding a brand new buff.");
 
-                // Add modifier to dictionary
-                ClassModifiers.Add(classData, classModifier);
+                // Add buff to dictionary
+                ClassBuffs.Add(classData, classBuff);
 
-                // Apply modifier effect
-                classModifier.Apply();
+                // Apply buff effect
+                classBuff.Apply();
 
                 return;
             }
 
-            // If modifier is found and new modifier is null, remove old
-            if (ClassModifiers.ContainsKey(classData) && classModifier == null)
+            // If buff is found and new buff is null, remove old
+            if (ClassBuffs.ContainsKey(classData) && classBuff == null)
             {
-                //Debug.Log("Completely removing a modifier");
+                //Debug.Log("Completely removing a buff");
 
-                // Remove modifier effects
-                ClassModifiers[classData].Remove();
+                // Remove buff effects
+                ClassBuffs[classData].Remove();
 
-                // Remove modifier from dictionary
-                ClassModifiers.Remove(classData);
+                // Remove buff from dictionary
+                ClassBuffs.Remove(classData);
                 return;
             }
 
-            // If modifier is found and new modifier does not match, remove old, add new
-            if (ClassModifiers[classData].RequiredCount != classModifier.RequiredCount)
+            // If buff is found and new buff does not match, remove old, add new
+            if (ClassBuffs[classData].RequiredCount != classBuff.RequiredCount)
             {
-                //Debug.Log("Updating an existing modifier");
+                //Debug.Log("Updating an existing buff");
 
-                // Remove the old modifier effects
-                ClassModifiers[classData].Remove();
+                // Remove the old buff effects
+                ClassBuffs[classData].Remove();
 
-                // Update the class modifier value in the dictionary
-                ClassModifiers[classData] = classModifier;
+                // Update the class buff value in the dictionary
+                ClassBuffs[classData] = classBuff;
 
-                // Apply the new class modifier
-                classModifier.Apply();
+                // Apply the new class buff
+                classBuff.Apply();
 
                 return;
             }
         }
 
-        // Get the ClassModifier that should be applied based on the current class count
-        private static ClassModifier GetClassModifier(ClassData classData, int currentCount)
+        // Get the ClassBuff that should be applied based on the current class count
+        private static ClassBuff GetClassBuff(ClassData classData, int currentCount)
         {
-            ClassModifier classModifier = null;
+            ClassBuff classBuff = null;
 
-            // Create cloned instances for each class modifier so they can be added/removed with .Equals()
-            if (!ClassModifierInstances.ContainsKey(classData))
+            // Create cloned instances for each class buff so they can be added/removed with .Equals()
+            if (!ClassBuffInstances.ContainsKey(classData))
             {
-                List<ClassModifier> instances = new List<ClassModifier>();
+                List<ClassBuff> instances = new List<ClassBuff>();
 
-                foreach (ClassModifier modifier in classData.Modifiers)
+                foreach (ClassBuff buff in classData.Buffs)
                 {
-                    instances.Add(modifier.GetClone());
+                    instances.Add(buff.GetClone());
                 }
 
-                ClassModifierInstances.Add(classData, instances);
+                ClassBuffInstances.Add(classData, instances);
             }
 
-            foreach (ClassModifier modifier in ClassModifierInstances[classData])
+            foreach (ClassBuff buff in ClassBuffInstances[classData])
             {
-                if (currentCount >= modifier.RequiredCount)
+                if (currentCount >= buff.RequiredCount)
                 {
-                    classModifier = modifier;
+                    classBuff = buff;
                 }
             }
 
-            return classModifier;
+            return classBuff;
         }
     }
 }

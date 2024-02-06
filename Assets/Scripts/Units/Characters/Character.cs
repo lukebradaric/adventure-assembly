@@ -9,14 +9,14 @@ using UnityEngine;
 namespace AdventureAssembly.Units.Characters
 {
     [SelectionBase]
-    public abstract class CharacterUnit : Unit
+    public abstract class Character : Unit
     {
         [PropertySpace]
         [Title("Components")]
         [OdinSerialize] public SpriteRenderer SpriteRenderer { get; private set; }
-        [OdinSerialize] public virtual CharacterUnitStats Stats { get; private set; }
+        [OdinSerialize] public virtual CharacterStats Stats { get; private set; }
 
-        public CharacterUnitData CharacterUnitData { get; private set; }
+        public CharacterData CharacterData { get; private set; }
 
         public int CurrentHealth { get; protected set; }
         public bool IsDead { get; protected set; } = false;
@@ -29,32 +29,32 @@ namespace AdventureAssembly.Units.Characters
         public Vector2Int LastPosition { get; protected set; }
 
         public event Action<DamageData> Damaged;
-        public event Action<CharacterUnit> Died;
+        public event Action<Character> Died;
 
-        public List<CharacterUnitModifier> Modifiers { get; protected set; } = new List<CharacterUnitModifier>();
+        public List<CharacterModifier> Modifiers { get; protected set; } = new List<CharacterModifier>();
 
         /// <summary>
         /// Initializes this unit with data and a position.
         /// </summary>
         /// <param name="unitData">The UnitData for this unit to use.</param>
         /// <param name="position">The starting position of this unit</param>
-        public virtual void Initialize(CharacterUnitData unitData, Vector2Int position)
+        public virtual void Initialize(CharacterData unitData, Vector2Int position)
         {
             base.Initialize(position);
 
-            this.CharacterUnitData = unitData;
+            this.CharacterData = unitData;
             this.Stats.Initialize(this);
             this.CurrentHealth = Stats.GetMaxHealth();
 
-            foreach (CharacterUnitModifier modifier in CharacterUnitData.Modifiers)
+            foreach (CharacterModifier modifier in CharacterData.Modifiers)
             {
-                CharacterUnitModifier newModifier = modifier.GetClone();
+                CharacterModifier newModifier = modifier.GetClone();
                 newModifier.Apply(this);
                 Modifiers.Add(newModifier);
             }
 
-            SpriteRenderer.sprite = CharacterUnitData.Sprite;
-            name = $"{CharacterUnitData.Name}";
+            SpriteRenderer.sprite = CharacterData.Sprite;
+            name = $"{CharacterData.Name}";
         }
 
         /// <summary>
@@ -72,7 +72,7 @@ namespace AdventureAssembly.Units.Characters
             // Flip sprite to face movement
             this.FlipSprite(direction.x);
 
-            CharacterUnitData.MovementTween.Animate(this, Position, TickManager.Instance.TickInterval);
+            CharacterData.MovementTween.Animate(this, Position, TickManager.Instance.TickInterval);
         }
 
         /// <summary>
@@ -157,7 +157,7 @@ namespace AdventureAssembly.Units.Characters
         protected virtual void OnDestroy()
         {
             // Clear all modifiers
-            foreach (CharacterUnitModifier modifier in Modifiers)
+            foreach (CharacterModifier modifier in Modifiers)
             {
                 modifier.Remove(this);
             }

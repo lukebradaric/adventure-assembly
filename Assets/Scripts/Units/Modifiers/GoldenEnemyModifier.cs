@@ -1,21 +1,21 @@
 ﻿using AdventureAssembly.Core;
-using AdventureAssembly.Units.Enemies;
+using AdventureAssembly.Units.Characters;
 
 namespace AdventureAssembly.Units.Modifiers
 {
     /// <summary>
     /// EnemyModifier that will spawn gold whenever an enemy takes damage.
     /// </summary>
-    public class GoldenEnemyModifier : EnemyModifier
+    public class GoldenEnemyModifier : CharacterModifier
     {
-        public override void Apply(Enemy enemy)
+        public override void Apply(Character character)
         {
-            enemy.Damaged += OnDamaged;
+            character.Damaged += OnDamaged;
         }
 
-        public override void Remove(Enemy enemy)
+        public override void Remove(Character character)
         {
-            enemy.Damaged -= OnDamaged;
+            character.Damaged -= OnDamaged;
         }
 
         private void OnDamaged(DamageData data)

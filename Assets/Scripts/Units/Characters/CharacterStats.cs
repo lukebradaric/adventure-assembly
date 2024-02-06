@@ -1,17 +1,18 @@
-﻿using Sirenix.OdinInspector;
+﻿using AdventureAssembly.Units.Stats;
+using Sirenix.OdinInspector;
 using UnityEngine;
 
 namespace AdventureAssembly.Units.Characters
 {
-    public class CharacterUnitStats : SerializedMonoBehaviour
+    public class CharacterStats : SerializedMonoBehaviour
     {
-        public CharacterUnit CharacterUnit { get; protected set; }
-        public CharacterUnitData CharacterUnitData { get; protected set; }
+        public Character Character { get; protected set; }
+        public CharacterData CharacterData { get; protected set; }
 
-        public virtual void Initialize(CharacterUnit unit)
+        public virtual void Initialize(Character unit)
         {
-            this.CharacterUnit = unit;
-            this.CharacterUnitData = unit.CharacterUnitData;
+            this.Character = unit;
+            this.CharacterData = unit.CharacterData;
         }
 
         public Stat<float> DamageMultiplier { get; set; } = new Stat<float>(1f);
@@ -29,7 +30,7 @@ namespace AdventureAssembly.Units.Characters
 
         public virtual int GetMaxHealth()
         {
-            return (int)Mathf.Ceil(CharacterUnitData.MaxHealth * MaxHealthMultiplier.Value);
+            return (int)Mathf.Ceil(CharacterData.MaxHealth * MaxHealthMultiplier.Value);
         }
     }
 }
