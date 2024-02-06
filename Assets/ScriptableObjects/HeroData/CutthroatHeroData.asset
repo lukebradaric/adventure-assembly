@@ -103,9 +103,15 @@ MonoBehaviour:
     - Name: _baseSpeed
       Entry: 4
       Data: 0.5
+    - Name: _sound
+      Entry: 6
+      Data: 
     - Name: _baseDamage
       Entry: 3
-      Data: 100
+      Data: 4
+    - Name: ProjectileAbility+_baseSpeed
+      Entry: 4
+      Data: 12
     - Name: _projectilePrefab
       Entry: 10
       Data: 2

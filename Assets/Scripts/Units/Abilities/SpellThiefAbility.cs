@@ -1,18 +1,22 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using AdventureAssembly.Units.Enemies;
+using Sirenix.OdinInspector;
 using UnityEngine;
 
 namespace AdventureAssembly.Units.Abilities
 {
-    
+
     public class SpellThiefAbility : Ability
     {
         // Prefab of the Projectile
         [SerializeField] private Projectile _projectilePrefab;
 
+        [BoxGroup("Settings")]
         [Tooltip("The base damage of the projectile.")]
         [SerializeField] private int _baseDamage;
+        [BoxGroup("Settings")]
+        [SerializeField] private float _speed;
 
         [Tooltip("How many enemies should there be er extra projectile?")]
         [SerializeField] private int _enemiesPerExtraProjectile;
@@ -36,9 +40,9 @@ namespace AdventureAssembly.Units.Abilities
                 }
 
                 // Initialize projectile
-                projectile.Initialize(_hero, _baseDamage, direction);
+                projectile.Initialize(_baseDamage, _speed, _hero, direction);
             }
         }
     }
-    
+
 }

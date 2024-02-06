@@ -51,7 +51,6 @@ namespace AdventureAssembly.Units.Enemies
         {
             base.OnDie();
 
-            Debug.Log(this.Stats.GoldDropChance.Value);
             // Enemy chance to spawn gold on death
             if (this.Stats.GoldDropChance.Value > Random.value)
             {

@@ -76,10 +76,10 @@ MonoBehaviour:
       Data: 0
     - Name: _statProcess
       Entry: 7
-      Data: 4|AdventureAssembly.Units.Stats.FloatAddStatProcess, AdventureAssembly.Units
-    - Name: _value
+      Data: 4|AdventureAssembly.Units.Stats.FloatMultiplierPerGoldStatProcess, AdventureAssembly.Units
+    - Name: _damageMultiplierPerGold
       Entry: 4
-      Data: 1
+      Data: 0.01
     - Name: 
       Entry: 8
       Data: 
@@ -119,16 +119,16 @@ MonoBehaviour:
       Data: 7|AdventureAssembly.Units.Stats.FloatAddStatProcess, AdventureAssembly.Units
     - Name: _value
       Entry: 4
-      Data: 1
+      Data: 0.5
     - Name: 
       Entry: 8
       Data: 
     - Name: CharacterType
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: SpecificClasses
       Entry: 5
-      Data: true
+      Data: false
     - Name: ClassData
       Entry: 7
       Data: 8|System.Collections.Generic.List`1[[AdventureAssembly.Units.Classes.ClassData,

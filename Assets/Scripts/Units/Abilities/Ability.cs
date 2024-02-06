@@ -1,4 +1,6 @@
 ﻿using AdventureAssembly.Units.Heroes;
+using Sirenix.OdinInspector;
+using TinyTools.ScriptableSounds;
 using UnityEngine;
 
 namespace AdventureAssembly.Units.Abilities
@@ -6,8 +8,13 @@ namespace AdventureAssembly.Units.Abilities
     [System.Serializable]
     public abstract class Ability
     {
+        [BoxGroup("Settings")]
         [Tooltip("How often should this ability occur? Measured in seconds.")]
         [SerializeField] private float _baseSpeed;
+
+        [BoxGroup("Audio")]
+        [Tooltip("What sound should play when this ability occurs?")]
+        [SerializeField] private ScriptableSound _sound;
 
         // Current ticks until ability is executed
         protected float _currentTime;
@@ -28,6 +35,7 @@ namespace AdventureAssembly.Units.Abilities
             if (_currentTime <= 0)
             {
                 Execute();
+                _sound?.Play();
                 _currentTime = _hero.Stats.GetAbilitySpeed(_baseSpeed);
             }
         }
