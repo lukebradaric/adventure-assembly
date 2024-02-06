@@ -1,8 +1,9 @@
 ﻿using AdventureAssembly.Units.Characters;
-using AdventureAssembly.Units.Enemies;
 using AdventureAssembly.Units.Heroes;
 using AdventureAssembly.Units.Stats;
 using Sirenix.OdinInspector;
+using Sirenix.Serialization;
+using System.Reflection;
 using UnityEngine;
 
 namespace AdventureAssembly.Units.Modifiers
@@ -12,20 +13,18 @@ namespace AdventureAssembly.Units.Modifiers
     /// </summary>
     public class CharacterStatModifier : CharacterModifier
     {
-        [SerializeField] private CharacterType _targetType;
+        [Tooltip("What is the name of the stat to modify?")]
+        [BoxGroup("Modifier")]
+        [OdinSerialize] private StatNames _statName;
 
-        [ShowIf(nameof(_targetType), CharacterType.Hero)]
-        [SerializeField] private HeroStatNames _heroStatName;
-
-        [ShowIf(nameof(_targetType), CharacterType.Enemy)]
-        [SerializeField] private EnemyStatNames _enemyStatName;
-
-        [SerializeField] private StatProcess _statProcess = new FloatAddStatProcess();
+        [Tooltip("What stat process should be applied to the stat?")]
+        [BoxGroup("Modifier")]
+        [OdinSerialize] private StatProcess _statProcess = new FloatAddStatProcess();
 
         public override void Apply(Character character)
         {
             // If we are able to get stat property, add modifier
-            if (TryGetStatProperty(character, GetStatName(), out Stat<float> stat))
+            if (TryGetStatProperty(character, _statName.ToString(), out Stat<float> stat))
             {
                 stat.AddProcess(_statProcess);
             }
@@ -33,27 +32,10 @@ namespace AdventureAssembly.Units.Modifiers
 
         public override void Remove(Character character)
         {
-            if (TryGetStatProperty(character, GetStatName(), out Stat<float> stat))
+            if (TryGetStatProperty(character, _statName.ToString(), out Stat<float> stat))
             {
-                stat.AddProcess(_statProcess);
+                stat.RemoveProcess(_statProcess);
             }
-        }
-
-        /// <summary>
-        /// Returns the stat name based on selected CharacterType.
-        /// </summary>
-        /// <returns></returns>
-        private string GetStatName()
-        {
-            switch (_targetType)
-            {
-                case CharacterType.Hero:
-                    return _heroStatName.ToString();
-                case CharacterType.Enemy:
-                    return _enemyStatName.ToString();
-            }
-
-            return string.Empty;
         }
 
         /// <summary>
@@ -67,9 +49,14 @@ namespace AdventureAssembly.Units.Modifiers
         {
             stat = null;
 
-            Debug.Log(character.Stats.GetType().GetProperty(statName).Name);
+            PropertyInfo propertyInfo = character.Stats.GetType().GetProperty(statName);
+            if (propertyInfo == null)
+            {
+                Debug.LogError($"Could not find stat of name {statName} on {character.CharacterData.Name}");
+                return false;
+            }
 
-            object statObject = character.Stats.GetType().GetProperty(statName).GetValue(character.Stats);
+            object statObject = propertyInfo.GetValue(character.Stats);
             if (statObject is not Stat<float>)
             {
                 Debug.LogError($"Could not find Stat<float> using name: {statName}. Modifier was not removed.");

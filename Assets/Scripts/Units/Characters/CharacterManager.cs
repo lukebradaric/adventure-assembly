@@ -12,9 +12,6 @@ namespace AdventureAssembly.Units.Characters
 
         public static List<CharacterModifier> Modifiers { get; protected set; } = new List<CharacterModifier>();
 
-        // Current applied modifiers, ID and List of modifiers applied from that ID
-        private static Dictionary<int, List<CharacterModifier>> _appliedModifiers;
-
         protected static void ApplyAllModifiers(T unit)
         {
             // Apply all modifiers to a single unit
@@ -57,17 +54,17 @@ namespace AdventureAssembly.Units.Characters
             }
         }
 
-        /// <summary>
-        /// Adds a list of modifiers to all units and future units in this manager.
-        /// </summary>
-        /// <param name="modifiers">The list of modifiers to add.</param>
-        public static void AddGlobalModifiers(List<CharacterModifier> modifiers)
-        {
-            foreach (CharacterModifier modifier in modifiers)
-            {
-                AddGlobalModifier(modifier);
-            }
-        }
+        ///// <summary>
+        ///// Adds a list of modifiers to all units and future units in this manager.
+        ///// </summary>
+        ///// <param name="modifiers">The list of modifiers to add.</param>
+        //public static void AddGlobalModifiers(List<CharacterModifier> modifiers)
+        //{
+        //    foreach (CharacterModifier modifier in modifiers)
+        //    {
+        //        AddGlobalModifier(modifier);
+        //    }
+        //}
 
         /// <summary>
         /// Removes a modifier from all units and future units in this manager.
@@ -83,17 +80,17 @@ namespace AdventureAssembly.Units.Characters
             Modifiers.Remove(modifier);
         }
 
-        /// <summary>
-        /// Removes a list of modifiers from all units and future units in this manager.
-        /// </summary>
-        /// <param name="modifiers">The list of modifiers to remove. Must be references to the modifiers that were applied.</param>
-        public static void RemoveGlobalModifiers(List<CharacterModifier> modifiers)
-        {
-            foreach (CharacterModifier modifier in modifiers)
-            {
-                RemoveGlobalModifier(modifier);
-            }
-        }
+        ///// <summary>
+        ///// Removes a list of modifiers from all units and future units in this manager.
+        ///// </summary>
+        ///// <param name="modifiers">The list of modifiers to remove. Must be references to the modifiers that were applied.</param>
+        //public static void RemoveGlobalModifiers(List<CharacterModifier> modifiers)
+        //{
+        //    foreach (CharacterModifier modifier in modifiers)
+        //    {
+        //        RemoveGlobalModifier(modifier);
+        //    }
+        //}
 
         public static T GetNearestUnit(Vector2Int position)
         {

@@ -1,4 +1,5 @@
-﻿using AdventureAssembly.Units.Enemies;
+﻿using AdventureAssembly.Units.Characters;
+using AdventureAssembly.Units.Enemies;
 using AdventureAssembly.Units.Heroes;
 using AdventureAssembly.Units.Modifiers;
 using Sirenix.OdinInspector;
@@ -15,43 +16,57 @@ namespace AdventureAssembly.Units.Classes
         [Tooltip("How many Heroes of this class type are required for this buff to be active?")]
         [OdinSerialize] public int RequiredCount { get; protected set; }
 
-        [BoxGroup("Settings")]
-        [Tooltip("Do you also want the option to add modifiers to enemies using this class?")]
-        [SerializeField] private bool _enableEnemyModifiers = false;
+        [BoxGroup("Modifiers")]
+        [Tooltip("List of modifiers that will be applied.")]
+        [OdinSerialize] public List<GlobalCharacterStatModifier> GlobalCharacterModifiers { get; protected set; } = new List<GlobalCharacterStatModifier>();
 
-        [BoxGroup("Class Settings")]
-        [Tooltip("Do you want to apply this buff to only specific classes?")]
-        [SerializeField] private bool _specificClasses;
+        //[BoxGroup("Settings")]
+        //[Tooltip("Do you also want the option to add modifiers to enemies using this class?")]
+        //[SerializeField] private bool _enableEnemyModifiers = false;
 
-        [BoxGroup("Class Settings")]
-        [Tooltip("What classes should this buff be applied to?")]
-        [ShowIf(nameof(_specificClasses))]
-        [SerializeField] private List<ClassData> _classes = new List<ClassData>();
+        //[BoxGroup("Class Settings")]
+        //[Tooltip("Do you want to apply this buff to only specific classes?")]
+        //[SerializeField] private bool _specificClasses;
 
-        [BoxGroup("Hero Modifiers")]
-        [SerializeField] private List<CharacterModifier> _heroModifiers = new List<CharacterModifier>();
+        //[BoxGroup("Class Settings")]
+        //[Tooltip("What classes should this buff be applied to?")]
+        //[ShowIf(nameof(_specificClasses))]
+        //[SerializeField] private List<ClassData> _classes = new List<ClassData>();
 
-        [BoxGroup("Enemy Modifiers")]
-        [ShowIf(nameof(_enableEnemyModifiers))]
-        [SerializeField] private List<CharacterModifier> _enemyModifiers = new List<CharacterModifier>();
+        //[BoxGroup("Hero Modifiers")]
+        //[SerializeField] private List<CharacterModifier> _heroModifiers = new List<CharacterModifier>();
+
+        //[BoxGroup("Enemy Modifiers")]
+        //[ShowIf(nameof(_enableEnemyModifiers))]
+        //[SerializeField] private List<CharacterModifier> _enemyModifiers = new List<CharacterModifier>();
 
         public virtual void Apply()
         {
-            HeroManager.AddGlobalModifiers(_heroModifiers);
-
-            if (_enableEnemyModifiers)
+            foreach (GlobalCharacterStatModifier modifier in GlobalCharacterModifiers)
             {
-                EnemyManager.AddGlobalModifiers(_enemyModifiers);
+                if (modifier.CharacterType == CharacterType.Hero)
+                {
+                    HeroManager.AddGlobalModifier(modifier);
+                }
+                else if (modifier.CharacterType == CharacterType.Enemy)
+                {
+                    EnemyManager.AddGlobalModifier(modifier);
+                }
             }
         }
 
         public virtual void Remove()
         {
-            HeroManager.RemoveGlobalModifiers(_heroModifiers);
-
-            if (_enableEnemyModifiers)
+            foreach (GlobalCharacterStatModifier modifier in GlobalCharacterModifiers)
             {
-                EnemyManager.RemoveGlobalModifiers(_enemyModifiers);
+                if (modifier.CharacterType == CharacterType.Hero)
+                {
+                    HeroManager.RemoveGlobalModifier(modifier);
+                }
+                else if (modifier.CharacterType == CharacterType.Enemy)
+                {
+                    EnemyManager.RemoveGlobalModifier(modifier);
+                }
             }
         }
 

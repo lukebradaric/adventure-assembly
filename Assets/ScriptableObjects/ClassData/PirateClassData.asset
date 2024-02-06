@@ -15,7 +15,8 @@ MonoBehaviour:
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 
-    ReferencedUnityObjects: []
+    ReferencedUnityObjects:
+    - {fileID: 11400000}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -59,64 +60,58 @@ MonoBehaviour:
       Data: 1|AdventureAssembly.Units.Classes.ClassBuff, AdventureAssembly.Units
     - Name: RequiredCount
       Entry: 3
-      Data: 3
-    - Name: _enableEnemyModifiers
+      Data: 2
+    - Name: GlobalCharacterModifiers
+      Entry: 7
+      Data: 2|System.Collections.Generic.List`1[[AdventureAssembly.Units.Modifiers.GlobalCharacterStatModifier,
+        AdventureAssembly.Units]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 3|AdventureAssembly.Units.Modifiers.GlobalCharacterStatModifier, AdventureAssembly.Units
+    - Name: _statName
+      Entry: 3
+      Data: 0
+    - Name: _statProcess
+      Entry: 7
+      Data: 4|AdventureAssembly.Units.Stats.FloatAddStatProcess, AdventureAssembly.Units
+    - Name: _value
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: CharacterType
+      Entry: 3
+      Data: 0
+    - Name: SpecificClasses
       Entry: 5
       Data: true
-    - Name: _heroModifiers
+    - Name: ClassData
       Entry: 7
-      Data: 2|System.Collections.Generic.List`1[[AdventureAssembly.Units.Modifiers.CharacterModifier,
+      Data: 5|System.Collections.Generic.List`1[[AdventureAssembly.Units.Classes.ClassData,
         AdventureAssembly.Units]], mscorlib
     - Name: 
       Entry: 12
       Data: 1
     - Name: 
-      Entry: 7
-      Data: 3|AdventureAssembly.Units.Modifiers.CharacterStatModifier, AdventureAssembly.Units
-    - Name: _targetType
-      Entry: 3
+      Entry: 10
       Data: 0
-    - Name: _heroStatName
-      Entry: 3
-      Data: 0
-    - Name: _enemyStatName
-      Entry: 3
-      Data: 0
-    - Name: _statProcess
-      Entry: 7
-      Data: 4|AdventureAssembly.Units.Stats.FloatMultiplierPerGoldStatProcess, AdventureAssembly.Units
-    - Name: _damageMultiplierPerGold
-      Entry: 4
-      Data: 0.01
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
     - Name: 
       Entry: 13
       Data: 
     - Name: 
       Entry: 8
       Data: 
-    - Name: _enemyModifiers
-      Entry: 7
-      Data: 5|System.Collections.Generic.List`1[[AdventureAssembly.Units.Modifiers.CharacterModifier,
-        AdventureAssembly.Units]], mscorlib
     - Name: 
-      Entry: 12
-      Data: 1
+      Entry: 8
+      Data: 
     - Name: 
       Entry: 7
-      Data: 6|AdventureAssembly.Units.Modifiers.CharacterStatModifier, AdventureAssembly.Units
-    - Name: _targetType
-      Entry: 3
-      Data: 1
-    - Name: _heroStatName
-      Entry: 3
-      Data: 0
-    - Name: _enemyStatName
+      Data: 6|AdventureAssembly.Units.Modifiers.GlobalCharacterStatModifier, AdventureAssembly.Units
+    - Name: _statName
       Entry: 3
       Data: 4
     - Name: _statProcess
@@ -125,6 +120,25 @@ MonoBehaviour:
     - Name: _value
       Entry: 4
       Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: CharacterType
+      Entry: 3
+      Data: 0
+    - Name: SpecificClasses
+      Entry: 5
+      Data: true
+    - Name: ClassData
+      Entry: 7
+      Data: 8|System.Collections.Generic.List`1[[AdventureAssembly.Units.Classes.ClassData,
+        AdventureAssembly.Units]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
     - Name: 
       Entry: 8
       Data: 
