@@ -9,5 +9,7 @@ var namespace_adventure_assembly_1_1_interface =
     [ "HeroSelectionElement", "class_adventure_assembly_1_1_interface_1_1_hero_selection_element.html", null ],
     [ "HeroSelectionInterface", "class_adventure_assembly_1_1_interface_1_1_hero_selection_interface.html", null ],
     [ "HeroSelectionStart", "class_adventure_assembly_1_1_interface_1_1_hero_selection_start.html", null ],
-    [ "InterfaceManager", "class_adventure_assembly_1_1_interface_1_1_interface_manager.html", null ]
+    [ "InterfaceManager", "class_adventure_assembly_1_1_interface_1_1_interface_manager.html", null ],
+    [ "Tooltip", "class_adventure_assembly_1_1_interface_1_1_tooltip.html", null ],
+    [ "TooltipElement", "class_adventure_assembly_1_1_interface_1_1_tooltip_element.html", null ]
 ];

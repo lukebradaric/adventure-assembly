@@ -9,8 +9,6 @@ namespace AdventureAssembly.Units
     /// </summary>
     public class GridManager : MonoBehaviour
     {
-        // TODO: Optimize this class by using a dictionar for <Unit, Vector2Int> AND <Vector2Int, Unit>
-
         // Dictionary of each unit and their position
         private static Dictionary<Unit, Vector2Int> _units = new Dictionary<Unit, Vector2Int>();
 
@@ -43,13 +41,21 @@ namespace AdventureAssembly.Units
             _units.Remove(unit);
         }
 
-        // Updates a units position in the dictionary
+        /// <summary>
+        /// Updates a units position on the grid.
+        /// </summary>
+        /// <param name="unit">The unit to update</param>
+        /// <param name="position">The new position</param>
         public static void UpdateUnitPosition(Unit unit, Vector2Int position)
         {
             _units[unit] = position;
         }
 
-        // Returns if there is a unit at the position
+        /// <summary>
+        /// Returns true if there is a unit at the position
+        /// </summary>
+        /// <param name="position">The position to check</param>
+        /// <returns></returns>
         public static bool HasUnitAtPosition(Vector2Int position)
         {
             foreach (Vector2Int pos in _units.Values)
@@ -63,7 +69,12 @@ namespace AdventureAssembly.Units
             return false;
         }
 
-        // Tries to get a unit at the position
+        /// <summary>
+        /// Tries to get a unit from a positon
+        /// </summary>
+        /// <param name="position">The position to check for a unit</param>
+        /// <param name="unit">The unit found, Null if no unit was found</param>
+        /// <returns></returns>
         public static bool TryGetUnit(Vector2Int position, out Unit unit)
         {
             unit = null;
@@ -80,7 +91,11 @@ namespace AdventureAssembly.Units
             return false;
         }
 
-        // Returns a random empty position within the bounds
+        /// <summary>
+        /// Returns a random empty position on the grid
+        /// </summary>
+        /// <param name="bounds">The boundaries of the grid to check</param>
+        /// <returns></returns>
         public static Vector2Int GetRandomEmptyPosition(Vector4 bounds)
         {
             List<Vector2Int> positions = new List<Vector2Int>();

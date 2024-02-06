@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['projectile_0',['Projectile',['../class_adventure_assembly_1_1_units_1_1_projectile.html',1,'AdventureAssembly::Units']]],
-  ['projectileability_1',['ProjectileAbility',['../class_adventure_assembly_1_1_units_1_1_abilities_1_1_projectile_ability.html',1,'AdventureAssembly::Units::Abilities']]]
+  ['linearenemynavigation_0',['LinearEnemyNavigation',['../class_adventure_assembly_1_1_units_1_1_enemies_1_1_linear_enemy_navigation.html',1,'AdventureAssembly::Units::Enemies']]]
 ];

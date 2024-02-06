@@ -9,12 +9,12 @@ Inheritance diagram for Adventure\+Assembly.\+Units.\+Heroes.\+Hero\+Stats\+:\be
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-override void \mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_stats_a647fa89f71435e751899c4c13e4e2ce5}{Initialize}} (\mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_characters_1_1_character_unit}{Character\+Unit}} unit)
+override void \mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_stats_a847c02de238d503eab9796bc3d2914b9}{Initialize}} (\mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_characters_1_1_character}{Character}} unit)
 \item 
 \Hypertarget{class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_stats_a3783aafd6929a20faeeb0ba3e2fed330}\label{class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_stats_a3783aafd6929a20faeeb0ba3e2fed330} 
 float {\bfseries Get\+Ability\+Speed} (float base\+Speed)
 \end{DoxyCompactItemize}
-\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_characters_1_1_character_unit_stats}{Adventure\+Assembly.\+Units.\+Characters.\+Character\+Unit\+Stats}}}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_characters_1_1_character_stats}{Adventure\+Assembly.\+Units.\+Characters.\+Character\+Stats}}}
 \begin{DoxyCompactItemize}
 \item 
 virtual \mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_damage_data}{Damage\+Data}} {\bfseries Get\+Damage\+Data} (\mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_damage_data}{Damage\+Data}} damage\+Data)
@@ -30,29 +30,33 @@ virtual int {\bfseries Get\+Max\+Health} ()
 \Hypertarget{class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_stats_aae7b6446e470f3c71b6da63885e2460a}\label{class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_stats_aae7b6446e470f3c71b6da63885e2460a} 
 \mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero}{Hero}} {\bfseries Hero}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
 \end{DoxyCompactItemize}
-\doxysubsection*{Properties inherited from \mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_characters_1_1_character_unit_stats}{Adventure\+Assembly.\+Units.\+Characters.\+Character\+Unit\+Stats}}}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_characters_1_1_character_stats}{Adventure\+Assembly.\+Units.\+Characters.\+Character\+Stats}}}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_characters_1_1_character_unit}{Character\+Unit}} {\bfseries Character\+Unit}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_characters_1_1_character}{Character}} {\bfseries Character}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
 \item 
-\mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_characters_1_1_character_unit_data}{Character\+Unit\+Data}} {\bfseries Character\+Unit\+Data}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_characters_1_1_character_data}{Character\+Data}} {\bfseries Character\+Data}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
 \item 
-\mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_stat}{Stat}}$<$ float $>$ {\bfseries Damage\+Multiplier} = new \mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_stat}{Stat}}$<$float$>$(1f)\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_stats_1_1_stat}{Stat}}$<$ float $>$ {\bfseries Damage\+Multiplier} = new \mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_stats_1_1_stat}{Stat}}$<$float$>$(1f)\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
 \item 
-\mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_stat}{Stat}}$<$ float $>$ {\bfseries Max\+Health\+Multiplier} = new \mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_stat}{Stat}}$<$float$>$(1f)\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_stats_1_1_stat}{Stat}}$<$ float $>$ {\bfseries Max\+Health\+Multiplier} = new \mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_stats_1_1_stat}{Stat}}$<$float$>$(1f)\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_stats_1_1_stat}{Stat}}$<$ float $>$ {\bfseries Critical\+Chance} = new \mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_stats_1_1_stat}{Stat}}$<$float$>$(0f)\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_stats_1_1_stat}{Stat}}$<$ float $>$ {\bfseries Critical\+Multiplier} = new \mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_stats_1_1_stat}{Stat}}$<$float$>$(2f)\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
 \end{DoxyCompactItemize}
 
 
 \doxysubsection{Member Function Documentation}
-\Hypertarget{class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_stats_a647fa89f71435e751899c4c13e4e2ce5}\label{class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_stats_a647fa89f71435e751899c4c13e4e2ce5} 
+\Hypertarget{class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_stats_a847c02de238d503eab9796bc3d2914b9}\label{class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero_stats_a847c02de238d503eab9796bc3d2914b9} 
 \index{AdventureAssembly.Units.Heroes.HeroStats@{AdventureAssembly.Units.Heroes.HeroStats}!Initialize@{Initialize}}
 \index{Initialize@{Initialize}!AdventureAssembly.Units.Heroes.HeroStats@{AdventureAssembly.Units.Heroes.HeroStats}}
 \doxysubsubsection{\texorpdfstring{Initialize()}{Initialize()}}
-{\footnotesize\ttfamily override void Adventure\+Assembly.\+Units.\+Heroes.\+Hero\+Stats.\+Initialize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_characters_1_1_character_unit}{Character\+Unit}}}]{unit }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily override void Adventure\+Assembly.\+Units.\+Heroes.\+Hero\+Stats.\+Initialize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_characters_1_1_character}{Character}}}]{unit }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 
 
-Reimplemented from \mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_characters_1_1_character_unit_stats}{Adventure\+Assembly.\+Units.\+Characters.\+Character\+Unit\+Stats}}.
+Reimplemented from \mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_characters_1_1_character_stats}{Adventure\+Assembly.\+Units.\+Characters.\+Character\+Stats}}.
 
 
 

@@ -20,22 +20,94 @@ static void {\bfseries Add\+Unit} (\mbox{\hyperlink{class_adventure_assembly_1_1
 \Hypertarget{class_adventure_assembly_1_1_units_1_1_grid_manager_a0e381098485562bf035c7e369152152c}\label{class_adventure_assembly_1_1_units_1_1_grid_manager_a0e381098485562bf035c7e369152152c} 
 static void {\bfseries Remove\+Unit} (\mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_unit}{Unit}} unit)
 \item 
-\Hypertarget{class_adventure_assembly_1_1_units_1_1_grid_manager_a1756bf96991edeeeb5043359f52e82e2}\label{class_adventure_assembly_1_1_units_1_1_grid_manager_a1756bf96991edeeeb5043359f52e82e2} 
-static void {\bfseries Update\+Unit\+Position} (\mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_unit}{Unit}} unit, Vector2\+Int position)
-\item 
-\Hypertarget{class_adventure_assembly_1_1_units_1_1_grid_manager_a3d1ff2a6e2b30836832e6e0833385ecc}\label{class_adventure_assembly_1_1_units_1_1_grid_manager_a3d1ff2a6e2b30836832e6e0833385ecc} 
-static bool {\bfseries Has\+Unit\+At\+Position} (Vector2\+Int position)
-\item 
-\Hypertarget{class_adventure_assembly_1_1_units_1_1_grid_manager_a757f81722355c432a907069fa0b6df43}\label{class_adventure_assembly_1_1_units_1_1_grid_manager_a757f81722355c432a907069fa0b6df43} 
-static bool {\bfseries Try\+Get\+Unit} (Vector2\+Int position, out \mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_unit}{Unit}} unit)
-\item 
-\Hypertarget{class_adventure_assembly_1_1_units_1_1_grid_manager_a4c3318e3cffaad47cf68b8feaa80d9e6}\label{class_adventure_assembly_1_1_units_1_1_grid_manager_a4c3318e3cffaad47cf68b8feaa80d9e6} 
-static Vector2\+Int {\bfseries Get\+Random\+Empty\+Position} (Vector4 bounds)
-\end{DoxyCompactItemize}
+static void \mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_grid_manager_a1756bf96991edeeeb5043359f52e82e2}{Update\+Unit\+Position}} (\mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_unit}{Unit}} unit, Vector2\+Int position)
+\begin{DoxyCompactList}\small\item\em Updates a units position on the grid. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_grid_manager_a3d1ff2a6e2b30836832e6e0833385ecc}{Has\+Unit\+At\+Position}} (Vector2\+Int position)
+\begin{DoxyCompactList}\small\item\em Returns true if there is a unit at the position. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_grid_manager_a757f81722355c432a907069fa0b6df43}{Try\+Get\+Unit}} (Vector2\+Int position, out \mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_unit}{Unit}} unit)
+\begin{DoxyCompactList}\small\item\em Tries to get a unit from a positon. \end{DoxyCompactList}\item 
+static Vector2\+Int \mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_grid_manager_a4c3318e3cffaad47cf68b8feaa80d9e6}{Get\+Random\+Empty\+Position}} (Vector4 bounds)
+\begin{DoxyCompactList}\small\item\em Returns a random empty position on the grid. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
 Handles all of the Units and their position on the grid. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_adventure_assembly_1_1_units_1_1_grid_manager_a4c3318e3cffaad47cf68b8feaa80d9e6}\label{class_adventure_assembly_1_1_units_1_1_grid_manager_a4c3318e3cffaad47cf68b8feaa80d9e6} 
+\index{AdventureAssembly.Units.GridManager@{AdventureAssembly.Units.GridManager}!GetRandomEmptyPosition@{GetRandomEmptyPosition}}
+\index{GetRandomEmptyPosition@{GetRandomEmptyPosition}!AdventureAssembly.Units.GridManager@{AdventureAssembly.Units.GridManager}}
+\doxysubsubsection{\texorpdfstring{GetRandomEmptyPosition()}{GetRandomEmptyPosition()}}
+{\footnotesize\ttfamily static Vector2\+Int Adventure\+Assembly.\+Units.\+Grid\+Manager.\+Get\+Random\+Empty\+Position (\begin{DoxyParamCaption}\item[{Vector4}]{bounds }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns a random empty position on the grid. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bounds} & The boundaries of the grid to check\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{class_adventure_assembly_1_1_units_1_1_grid_manager_a3d1ff2a6e2b30836832e6e0833385ecc}\label{class_adventure_assembly_1_1_units_1_1_grid_manager_a3d1ff2a6e2b30836832e6e0833385ecc} 
+\index{AdventureAssembly.Units.GridManager@{AdventureAssembly.Units.GridManager}!HasUnitAtPosition@{HasUnitAtPosition}}
+\index{HasUnitAtPosition@{HasUnitAtPosition}!AdventureAssembly.Units.GridManager@{AdventureAssembly.Units.GridManager}}
+\doxysubsubsection{\texorpdfstring{HasUnitAtPosition()}{HasUnitAtPosition()}}
+{\footnotesize\ttfamily static bool Adventure\+Assembly.\+Units.\+Grid\+Manager.\+Has\+Unit\+At\+Position (\begin{DoxyParamCaption}\item[{Vector2\+Int}]{position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns true if there is a unit at the position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & The position to check\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{class_adventure_assembly_1_1_units_1_1_grid_manager_a757f81722355c432a907069fa0b6df43}\label{class_adventure_assembly_1_1_units_1_1_grid_manager_a757f81722355c432a907069fa0b6df43} 
+\index{AdventureAssembly.Units.GridManager@{AdventureAssembly.Units.GridManager}!TryGetUnit@{TryGetUnit}}
+\index{TryGetUnit@{TryGetUnit}!AdventureAssembly.Units.GridManager@{AdventureAssembly.Units.GridManager}}
+\doxysubsubsection{\texorpdfstring{TryGetUnit()}{TryGetUnit()}}
+{\footnotesize\ttfamily static bool Adventure\+Assembly.\+Units.\+Grid\+Manager.\+Try\+Get\+Unit (\begin{DoxyParamCaption}\item[{Vector2\+Int}]{position,  }\item[{out \mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_unit}{Unit}}}]{unit }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Tries to get a unit from a positon. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & The position to check for a unit\\
+\hline
+{\em unit} & The unit found, Null if no unit was found\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{class_adventure_assembly_1_1_units_1_1_grid_manager_a1756bf96991edeeeb5043359f52e82e2}\label{class_adventure_assembly_1_1_units_1_1_grid_manager_a1756bf96991edeeeb5043359f52e82e2} 
+\index{AdventureAssembly.Units.GridManager@{AdventureAssembly.Units.GridManager}!UpdateUnitPosition@{UpdateUnitPosition}}
+\index{UpdateUnitPosition@{UpdateUnitPosition}!AdventureAssembly.Units.GridManager@{AdventureAssembly.Units.GridManager}}
+\doxysubsubsection{\texorpdfstring{UpdateUnitPosition()}{UpdateUnitPosition()}}
+{\footnotesize\ttfamily static void Adventure\+Assembly.\+Units.\+Grid\+Manager.\+Update\+Unit\+Position (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_unit}{Unit}}}]{unit,  }\item[{Vector2\+Int}]{position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Updates a units position on the grid. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em unit} & The unit to update\\
+\hline
+{\em position} & The new position\\
+\hline
+\end{DoxyParams}
+
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 

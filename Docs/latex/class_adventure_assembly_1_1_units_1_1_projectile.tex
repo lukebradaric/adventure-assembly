@@ -9,11 +9,11 @@ Inheritance diagram for Adventure\+Assembly.\+Units.\+Projectile\+:\begin{figure
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{class_adventure_assembly_1_1_units_1_1_projectile_a497083e57787b2cd8121cea553b1f474}\label{class_adventure_assembly_1_1_units_1_1_projectile_a497083e57787b2cd8121cea553b1f474} 
-void {\bfseries Initialize} (\mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero}{Hero}} hero, int base\+Damage, \mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_characters_1_1_character_unit}{Character\+Unit}} target\+Unit)
+\Hypertarget{class_adventure_assembly_1_1_units_1_1_projectile_a8a138deb9da97f8c1502c759d9816427}\label{class_adventure_assembly_1_1_units_1_1_projectile_a8a138deb9da97f8c1502c759d9816427} 
+void {\bfseries Initialize} (int base\+Damage, float speed, \mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero}{Hero}} hero, \mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_characters_1_1_character}{Character}} target\+Unit)
 \item 
-\Hypertarget{class_adventure_assembly_1_1_units_1_1_projectile_a1583574ebeb5030e95abf044e4354b7e}\label{class_adventure_assembly_1_1_units_1_1_projectile_a1583574ebeb5030e95abf044e4354b7e} 
-void {\bfseries Initialize} (\mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero}{Hero}} hero, int base\+Damage, Vector2 direction)
+\Hypertarget{class_adventure_assembly_1_1_units_1_1_projectile_afdb7e610121b8caa52a3528f57251510}\label{class_adventure_assembly_1_1_units_1_1_projectile_afdb7e610121b8caa52a3528f57251510} 
+void {\bfseries Initialize} (int base\+Damage, float speed, \mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero}{Hero}} hero, Vector2 direction)
 \item 
 \Hypertarget{class_adventure_assembly_1_1_units_1_1_projectile_ab3645e3be49495742ec05a84485fce53}\label{class_adventure_assembly_1_1_units_1_1_projectile_ab3645e3be49495742ec05a84485fce53} 
 void {\bfseries Set\+Move\+Direction} (Vector2 direction)
@@ -21,14 +21,17 @@ void {\bfseries Set\+Move\+Direction} (Vector2 direction)
 \doxysubsubsection*{Properties}
 \begin{DoxyCompactItemize}
 \item 
+\Hypertarget{class_adventure_assembly_1_1_units_1_1_projectile_a11ef92af7d58149ff0f85c748d40d49c}\label{class_adventure_assembly_1_1_units_1_1_projectile_a11ef92af7d58149ff0f85c748d40d49c} 
+int {\bfseries Base\+Damage}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\item 
+\Hypertarget{class_adventure_assembly_1_1_units_1_1_projectile_aa0525464cc77137c2a7ad31105094335}\label{class_adventure_assembly_1_1_units_1_1_projectile_aa0525464cc77137c2a7ad31105094335} 
+float {\bfseries Speed}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\item 
 \Hypertarget{class_adventure_assembly_1_1_units_1_1_projectile_a4f3d3676110d97a1bdf5a322e5bae70c}\label{class_adventure_assembly_1_1_units_1_1_projectile_a4f3d3676110d97a1bdf5a322e5bae70c} 
 \mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero}{Hero}} {\bfseries Hero}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
 \item 
-\Hypertarget{class_adventure_assembly_1_1_units_1_1_projectile_a3447aa444159f4042208de47f82417ba}\label{class_adventure_assembly_1_1_units_1_1_projectile_a3447aa444159f4042208de47f82417ba} 
-\mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_characters_1_1_character_unit}{Character\+Unit}} {\bfseries Target\+Unit}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
-\item 
-\Hypertarget{class_adventure_assembly_1_1_units_1_1_projectile_a11ef92af7d58149ff0f85c748d40d49c}\label{class_adventure_assembly_1_1_units_1_1_projectile_a11ef92af7d58149ff0f85c748d40d49c} 
-int {\bfseries Base\+Damage}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\Hypertarget{class_adventure_assembly_1_1_units_1_1_projectile_a89678f5eff9e249bb48a4038ff361803}\label{class_adventure_assembly_1_1_units_1_1_projectile_a89678f5eff9e249bb48a4038ff361803} 
+\mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_characters_1_1_character}{Character}} {\bfseries Target\+Unit}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
 \item 
 \Hypertarget{class_adventure_assembly_1_1_units_1_1_projectile_af7f28dc202046996fbf6bd35f54e3993}\label{class_adventure_assembly_1_1_units_1_1_projectile_af7f28dc202046996fbf6bd35f54e3993} 
 Vector2 {\bfseries Move\+Direction}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}

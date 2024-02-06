@@ -5,7 +5,7 @@
 %%For: 
 %Magnification: 1.00
 %%Orientation: Portrait
-%%BoundingBox: 0 0 500 171.428574
+%%BoundingBox: 0 0 500 114.285713
 %%Pages: 0
 %%BeginSetup
 %%EndSetup
@@ -19,12 +19,12 @@
 /marginwidth 10 def
 /distx 20 def
 /disty 40 def
-/boundaspect 2.916667 def  % aspect ratio of the BoundingBox (width/height)
+/boundaspect 4.375000 def  % aspect ratio of the BoundingBox (width/height)
 /boundx 500 def
 /boundy boundx boundaspect div def
 /xspacing 0 def
 /yspacing 0 def
-/rows 3 def
+/rows 2 def
 /cols 1 def
 /scalefactor 0 def
 /boxfont /Times-Roman findfont fontheight scalefont def
@@ -174,8 +174,7 @@
 boxfont setfont
 1 boundaspect scale
 (AdventureAssembly.Units.Modifiers.GoldenEnemyModifier) cw
-(AdventureAssembly.Units.Modifiers.EnemyModifier) cw
-(AdventureAssembly.Units.Modifiers.CharacterUnitModifier) cw
+(AdventureAssembly.Units.Modifiers.CharacterModifier) cw
 /boxwidth boxwidth marginwidth 2 mul add def
 /xspacing boxwidth distx add def
 /yspacing boxheight disty add def
@@ -188,8 +187,7 @@ boundx scalefactor div boundy scalefactor div scale
 % ----- classes -----
 
  (AdventureAssembly.Units.Modifiers.GoldenEnemyModifier) 0.000000 0.000000 box
- (AdventureAssembly.Units.Modifiers.EnemyModifier) 0.000000 1.000000 box
- (AdventureAssembly.Units.Modifiers.CharacterUnitModifier) 0.000000 2.000000 box
+ (AdventureAssembly.Units.Modifiers.CharacterModifier) 0.000000 1.000000 box
 
 % ----- relations -----
 
@@ -197,7 +195,3 @@ solid
 0 0.000000 0.000000 out
 solid
 1 0.000000 1.000000 in
-solid
-0 0.000000 1.000000 out
-solid
-1 0.000000 2.000000 in

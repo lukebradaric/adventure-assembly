@@ -1,0 +1,83 @@
+\doxysection{Adventure\+Assembly.\+Units.\+Characters.\+Character\+Manager\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>} Class Template Reference}
+\hypertarget{class_adventure_assembly_1_1_units_1_1_characters_1_1_character_manager}{}\label{class_adventure_assembly_1_1_units_1_1_characters_1_1_character_manager}\index{AdventureAssembly.Units.Characters.CharacterManager$<$ T $>$@{AdventureAssembly.Units.Characters.CharacterManager$<$ T $>$}}
+Inheritance diagram for Adventure\+Assembly.\+Units.\+Characters.\+Character\+Manager\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>}\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_adventure_assembly_1_1_units_1_1_characters_1_1_character_manager}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_adventure_assembly_1_1_units_1_1_characters_1_1_character_manager_aeb6e790c1432e106713e2a542aab2083}\label{class_adventure_assembly_1_1_units_1_1_characters_1_1_character_manager_aeb6e790c1432e106713e2a542aab2083} 
+virtual void {\bfseries Add\+Unit} (T unit)
+\item 
+\Hypertarget{class_adventure_assembly_1_1_units_1_1_characters_1_1_character_manager_a724ea24d44b951008395cdc5a5c705d0}\label{class_adventure_assembly_1_1_units_1_1_characters_1_1_character_manager_a724ea24d44b951008395cdc5a5c705d0} 
+virtual void {\bfseries Remove\+Unit} (T unit)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_characters_1_1_character_manager_a6b7d8ec0c37e6834f7b2de5dbcb77055}{Add\+Global\+Modifier}} (\mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_modifiers_1_1_character_modifier}{Character\+Modifier}} modifier)
+\begin{DoxyCompactList}\small\item\em Adds a modifier to all units and future units in this manager. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_characters_1_1_character_manager_aeb7f5b9a2d4b6e7bd5c503bc78951c5e}{Remove\+Global\+Modifier}} (\mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_modifiers_1_1_character_modifier}{Character\+Modifier}} modifier)
+\begin{DoxyCompactList}\small\item\em Removes a modifier from all units and future units in this manager. \end{DoxyCompactList}\item 
+\Hypertarget{class_adventure_assembly_1_1_units_1_1_characters_1_1_character_manager_a9adbfdc44d6128468d63669ebcb3bf1c}\label{class_adventure_assembly_1_1_units_1_1_characters_1_1_character_manager_a9adbfdc44d6128468d63669ebcb3bf1c} 
+static T {\bfseries Get\+Nearest\+Unit} (Vector2\+Int position)
+\item 
+\Hypertarget{class_adventure_assembly_1_1_units_1_1_characters_1_1_character_manager_abf55e03e52ff3b97bd27f5f048a84dbb}\label{class_adventure_assembly_1_1_units_1_1_characters_1_1_character_manager_abf55e03e52ff3b97bd27f5f048a84dbb} 
+static bool {\bfseries Has\+Unit\+At\+Position} (Vector2\+Int position)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_adventure_assembly_1_1_units_1_1_characters_1_1_character_manager_aafd7f5e366fe54b88e0f15c894edd076}\label{class_adventure_assembly_1_1_units_1_1_characters_1_1_character_manager_aafd7f5e366fe54b88e0f15c894edd076} 
+static void {\bfseries Apply\+All\+Modifiers} (T unit)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_adventure_assembly_1_1_units_1_1_characters_1_1_character_manager_a23b64183cdd9b5a623832f907c8f30a1}\label{class_adventure_assembly_1_1_units_1_1_characters_1_1_character_manager_a23b64183cdd9b5a623832f907c8f30a1} 
+static List$<$ T $>$ {\bfseries Units} = new List$<$T$>$()\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\item 
+\Hypertarget{class_adventure_assembly_1_1_units_1_1_characters_1_1_character_manager_a06d37715cfc92db9ba9361dde7e9ca94}\label{class_adventure_assembly_1_1_units_1_1_characters_1_1_character_manager_a06d37715cfc92db9ba9361dde7e9ca94} 
+static List$<$ \mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_modifiers_1_1_character_modifier}{Character\+Modifier}} $>$ {\bfseries Modifiers} = new List$<$\mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_modifiers_1_1_character_modifier}{Character\+Modifier}}$>$()\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_adventure_assembly_1_1_units_1_1_characters_1_1_character_manager_a6b7d8ec0c37e6834f7b2de5dbcb77055}\label{class_adventure_assembly_1_1_units_1_1_characters_1_1_character_manager_a6b7d8ec0c37e6834f7b2de5dbcb77055} 
+\index{AdventureAssembly.Units.Characters.CharacterManager$<$ T $>$@{AdventureAssembly.Units.Characters.CharacterManager$<$ T $>$}!AddGlobalModifier@{AddGlobalModifier}}
+\index{AddGlobalModifier@{AddGlobalModifier}!AdventureAssembly.Units.Characters.CharacterManager$<$ T $>$@{AdventureAssembly.Units.Characters.CharacterManager$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{AddGlobalModifier()}{AddGlobalModifier()}}
+{\footnotesize\ttfamily static void \mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_characters_1_1_character_manager}{Adventure\+Assembly.\+Units.\+Characters.\+Character\+Manager}}$<$ T $>$.Add\+Global\+Modifier (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_modifiers_1_1_character_modifier}{Character\+Modifier}}}]{modifier }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Adds a modifier to all units and future units in this manager. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em modifier} & The modifier to add.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_adventure_assembly_1_1_units_1_1_characters_1_1_character_manager_aeb7f5b9a2d4b6e7bd5c503bc78951c5e}\label{class_adventure_assembly_1_1_units_1_1_characters_1_1_character_manager_aeb7f5b9a2d4b6e7bd5c503bc78951c5e} 
+\index{AdventureAssembly.Units.Characters.CharacterManager$<$ T $>$@{AdventureAssembly.Units.Characters.CharacterManager$<$ T $>$}!RemoveGlobalModifier@{RemoveGlobalModifier}}
+\index{RemoveGlobalModifier@{RemoveGlobalModifier}!AdventureAssembly.Units.Characters.CharacterManager$<$ T $>$@{AdventureAssembly.Units.Characters.CharacterManager$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{RemoveGlobalModifier()}{RemoveGlobalModifier()}}
+{\footnotesize\ttfamily static void \mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_characters_1_1_character_manager}{Adventure\+Assembly.\+Units.\+Characters.\+Character\+Manager}}$<$ T $>$.Remove\+Global\+Modifier (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_adventure_assembly_1_1_units_1_1_modifiers_1_1_character_modifier}{Character\+Modifier}}}]{modifier }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Removes a modifier from all units and future units in this manager. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em modifier} & The modifier to remove. Must be a reference to the modifier that was applied.\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Unity/\+Projects/adventure-\/assembly/\+Assets/\+Scripts/\+Units/\+Characters/Character\+Manager.\+cs\end{DoxyCompactItemize}

@@ -1,4 +1,7 @@
 var searchData=
 [
-  ['setposition_0',['SetPosition',['../class_adventure_assembly_1_1_units_1_1_unit.html#a63aa4fd5b270a8b2442dc5963c8d39cd',1,'AdventureAssembly::Units::Unit']]]
+  ['ondestroy_0',['OnDestroy',['../class_adventure_assembly_1_1_units_1_1_characters_1_1_character.html#a341ce9556b33095d22bdecd51d41a71f',1,'AdventureAssembly::Units::Characters::Character']]],
+  ['ondie_1',['OnDie',['../class_adventure_assembly_1_1_units_1_1_characters_1_1_character.html#a3a41e63895057ea3fd368b2770ead23c',1,'AdventureAssembly.Units.Characters.Character.OnDie()'],['../class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy.html#a4ca17e3805dbfa6567dda407113b3af5',1,'AdventureAssembly.Units.Enemies.Enemy.OnDie()'],['../class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero.html#af734440c99fc861f1eba8305204dd41b',1,'AdventureAssembly.Units.Heroes.Hero.OnDie()']]],
+  ['ontakedamage_2',['OnTakeDamage',['../class_adventure_assembly_1_1_units_1_1_characters_1_1_character.html#a3373b248a932afbd6f0be20edbcb00e7',1,'AdventureAssembly.Units.Characters.Character.OnTakeDamage()'],['../class_adventure_assembly_1_1_units_1_1_enemies_1_1_enemy.html#a6c1a082e5af64ce2574e58cec0fb6328',1,'AdventureAssembly.Units.Enemies.Enemy.OnTakeDamage()']]],
+  ['onupdate_3',['OnUpdate',['../class_adventure_assembly_1_1_units_1_1_characters_1_1_character.html#a1357988634dc53be6710b00a80c785fe',1,'AdventureAssembly.Units.Characters.Character.OnUpdate()'],['../class_adventure_assembly_1_1_units_1_1_heroes_1_1_hero.html#a42378eba3287f826ffe33cc27021cf6e',1,'AdventureAssembly.Units.Heroes.Hero.OnUpdate()']]]
 ];

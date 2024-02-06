@@ -1,11 +1,10 @@
 var searchData=
 [
-  ['takedamage_0',['TakeDamage',['../class_adventure_assembly_1_1_units_1_1_characters_1_1_character_unit.html#a4fc4064edb45078683694f97a36c6120',1,'AdventureAssembly::Units::Characters::CharacterUnit']]],
-  ['target_1',['Target',['../class_adventure_assembly_1_1_units_1_1_damage_data.html#ac80270a85d4b1912ef23025d1ebaf3a3',1,'AdventureAssembly::Units::DamageData']]],
-  ['testclassmodifier_2',['TestClassModifier',['../class_adventure_assembly_1_1_units_1_1_tests_1_1_test_class_modifier.html',1,'AdventureAssembly::Units::Tests']]],
-  ['testenemymodifier_3',['TestEnemyModifier',['../class_adventure_assembly_1_1_units_1_1_tests_1_1_test_enemy_modifier.html',1,'AdventureAssembly::Units::Tests']]],
-  ['text_4',['Text',['../class_adventure_assembly_1_1_interface_1_1_damage_text_element.html#a1e6e97aa3e04f6928a9f6e5ca6da6f93',1,'AdventureAssembly::Interface::DamageTextElement']]],
-  ['tickmanager_5',['TickManager',['../class_adventure_assembly_1_1_core_1_1_tick_manager.html',1,'AdventureAssembly::Core']]],
-  ['timemanager_6',['TimeManager',['../class_adventure_assembly_1_1_core_1_1_time_manager.html',1,'AdventureAssembly::Core']]],
-  ['tryspend_7',['TrySpend',['../class_adventure_assembly_1_1_core_1_1_gold_manager.html#acfc23b01a393f04b5da265df90d90ec8',1,'AdventureAssembly::Core::GoldManager']]]
+  ['setposition_0',['SetPosition',['../class_adventure_assembly_1_1_units_1_1_unit.html#a63aa4fd5b270a8b2442dc5963c8d39cd',1,'AdventureAssembly::Units::Unit']]],
+  ['source_1',['Source',['../class_adventure_assembly_1_1_units_1_1_damage_data.html#a95b3fe1a35998e15d50eebad57e53bdf',1,'AdventureAssembly::Units::DamageData']]],
+  ['spellthiefability_2',['SpellThiefAbility',['../class_adventure_assembly_1_1_units_1_1_abilities_1_1_spell_thief_ability.html',1,'AdventureAssembly::Units::Abilities']]],
+  ['stat_3',['Stat',['../class_adventure_assembly_1_1_units_1_1_stats_1_1_stat.html',1,'AdventureAssembly::Units::Stats']]],
+  ['statnames_4',['StatNames',['../namespace_adventure_assembly_1_1_units_1_1_heroes.html#a453a9314b3b4376b1ce09d802f229653',1,'AdventureAssembly::Units::Heroes']]],
+  ['statprocess_5',['StatProcess',['../class_adventure_assembly_1_1_units_1_1_stats_1_1_stat_process.html',1,'AdventureAssembly::Units::Stats']]],
+  ['statprocess_3c_20float_20_3e_6',['StatProcess&lt; float &gt;',['../class_adventure_assembly_1_1_units_1_1_stats_1_1_stat_process.html',1,'AdventureAssembly::Units::Stats']]]
 ];
