@@ -19,7 +19,7 @@ MonoBehaviour:
     - {fileID: 21300000, guid: 8a23df2a35200d94c80be85f227f8711, type: 3}
     - {fileID: 11400000, guid: 2e538e609051b984e97f90d488607820, type: 2}
     - {fileID: 11400000, guid: 09ae199153cebc142ae2ed6551a8fdec, type: 2}
-    - {fileID: 9053408658122590034, guid: 085e97eae184f7b4fa66d86f4c2f31c9, type: 3}
+    - {fileID: 11400000, guid: 997c2803b4f61f94b92d8e7d30b8a83b, type: 2}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -106,13 +106,7 @@ MonoBehaviour:
     - Name: _sound
       Entry: 10
       Data: 2
-    - Name: _baseDamage
-      Entry: 3
-      Data: 8
-    - Name: ProjectileAbility+_baseSpeed
-      Entry: 4
-      Data: 10
-    - Name: _projectilePrefab
+    - Name: _projectileData
       Entry: 10
       Data: 3
     - Name: 

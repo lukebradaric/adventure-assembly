@@ -1,0 +1,87 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8296864c3dec2164e985ec5ce6d0f527, type: 3}
+  m_Name: CapnProjectileData
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: -1015276828, guid: 5786dd6c780f0764ea71761afd8ad28d, type: 3}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Sprite
+      Entry: 10
+      Data: 0
+    - Name: Color
+      Entry: 7
+      Data: UnityEngine.Color, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0.254717
+    - Name: 
+      Entry: 4
+      Data: 0.254717
+    - Name: 
+      Entry: 4
+      Data: 0.254717
+    - Name: 
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: BaseDamage
+      Entry: 3
+      Data: 4
+    - Name: Speed
+      Entry: 4
+      Data: 10
+    - Name: DestroyOnCollision
+      Entry: 5
+      Data: true
+    - Name: ColliderRadius
+      Entry: 4
+      Data: 0.25
+    - Name: MaxLifetime
+      Entry: 4
+      Data: 5
+    - Name: Components
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[AdventureAssembly.Units.ProjectileComponent,
+        AdventureAssembly.Units]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: ParticlePrefabs
+      Entry: 7
+      Data: 1|System.Collections.Generic.List`1[[UnityEngine.GameObject, UnityEngine.CoreModule]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  _prefab: {fileID: 9053408658122590034, guid: e87ea7110971b8948a8daa42f53fbecc, type: 3}

@@ -1,6 +1,8 @@
 ﻿using AdventureAssembly.Units.Characters;
 using AdventureAssembly.Units.Enemies;
 using AdventureAssembly.Units.Heroes;
+using System;
+using System.Collections.Generic;
 using TinyTools.ScriptableVariables;
 using UnityEngine;
 
@@ -8,65 +10,95 @@ namespace AdventureAssembly.Units
 {
     public class Projectile : MonoBehaviour
     {
-        private const float MaxLifetime = 5.0f;
-
         [Space]
         [Header("Components")]
+        [SerializeField] private SpriteRenderer _spriteRenderer;
+        [SerializeField] private CircleCollider2D _circleCollider;
         [SerializeField] private Rigidbody2D _rigidbody;
         [SerializeField] private StringScriptableVariable _enemyTag;
 
-        public int BaseDamage { get; protected set; }
-        public float Speed { get; protected set; }
+        public ProjectileData ProjectileData { get; protected set; }
+
+        public List<ProjectileComponent> Components { get; protected set; } = new List<ProjectileComponent>();
         public Hero Hero { get; protected set; }
-        public Character TargetUnit { get; protected set; }
 
-        public Vector2 MoveDirection { get; protected set; }
-
-        // This Ititalize homes to a set target.
-        public void Initialize(int baseDamage, float speed, Hero hero, Character targetUnit)
+        private Character _targetCharacter = null;
+        public Character TargetCharacter
         {
-            this.BaseDamage = baseDamage;
-            this.Speed = speed;
+            get
+            {
+                return _targetCharacter;
+            }
+            set
+            {
+                _targetCharacter = value;
+
+                if(_targetCharacter == null)
+                {
+                    return;
+                }
+
+                MoveDirection = (_targetCharacter.transform.position - transform.position);
+            }
+        }
+
+        private Vector2 _moveDirection;
+        public Vector2 MoveDirection
+        {
+            get
+            {
+                return _moveDirection;
+            }
+            set
+            {
+                _moveDirection = value.normalized;
+                transform.up = _moveDirection;
+                _rigidbody.velocity = _moveDirection * ProjectileData.Speed;
+            }
+        }
+
+        public Action EnemyCollision;
+
+        public void Initialize(ProjectileData projectileData, Hero hero, Vector2 direction)
+        {
+            this.ProjectileData = projectileData;
             this.Hero = hero;
-            this.TargetUnit = targetUnit;
+            this.MoveDirection = direction;
+
+            _spriteRenderer.sprite = ProjectileData.Sprite;
+            _spriteRenderer.color = ProjectileData.Color;
+            _circleCollider.radius = ProjectileData.ColliderRadius;
+
+            // Add projectile components to this object to listen to events
+            foreach (ProjectileComponent component in ProjectileData.Components)
+            {
+                ProjectileComponent newComponent = component.GetClone();
+                Components.Add(newComponent);
+                newComponent.Initialize(this);
+                newComponent.OnEnable();
+            }
+
+            Destroy(gameObject, ProjectileData.MaxLifetime);
         }
 
-        // This Intialize doesn't need a target, instead it moves in the direction we give it.
-        public void Initialize(int baseDamage, float speed, Hero hero, Vector2 direction)
+        private void OnDisable()
         {
-            this.BaseDamage = baseDamage;
-            this.Speed = speed;
-            this.Hero = hero;
-            this.TargetUnit = null;
-
-            SetMoveDirection(direction);
-        }
-
-        public void SetMoveDirection(Vector2 direction)
-        {
-            MoveDirection = direction.normalized;
-
-            // Face the top of the projectile towards the direction we want it to go
-            transform.up = MoveDirection;
-
-            // Set projectile speed
-            _rigidbody.velocity = MoveDirection * Speed;
-        }
-
-        private void Start()
-        {
-            // Destroy projectile after maxlifetime
-            Destroy(gameObject, MaxLifetime);
+            // Disable all components on this projectile
+            foreach (ProjectileComponent component in Components)
+            {
+                component.OnDisable();
+            }
         }
 
         private void FixedUpdate()
         {
-            if (TargetUnit == null)
+            // If we have a specific target character, continously move towards it
+            if (TargetCharacter == null)
             {
                 return;
             }
 
-            SetMoveDirection((TargetUnit.transform.position - transform.position));
+            MoveDirection = (TargetCharacter.transform.position - transform.position);
         }
 
         private void OnTriggerEnter2D(Collider2D collider)
@@ -87,14 +119,21 @@ namespace AdventureAssembly.Units
         private void OnEnemyCollision(Enemy enemy)
         {
             // Create new damagedata
-            DamageData damageData = new DamageData(Hero, enemy, BaseDamage);
+            DamageData damageData = new DamageData(Hero, enemy, ProjectileData.BaseDamage);
 
             // Assign the damage direction to the direction of this projectile
             damageData.Direction = MoveDirection;
 
             enemy.TakeDamage(damageData);
 
-            Destroy(gameObject);
+            EnemyCollision?.Invoke();
+
+            if (ProjectileData.DestroyOnCollision)
+            {
+                Destroy(gameObject);
+            }
+
+            TargetCharacter = null;
         }
     }
 }
