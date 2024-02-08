@@ -54,18 +54,6 @@ namespace AdventureAssembly.Units.Characters
             }
         }
 
-        ///// <summary>
-        ///// Adds a list of modifiers to all units and future units in this manager.
-        ///// </summary>
-        ///// <param name="modifiers">The list of modifiers to add.</param>
-        //public static void AddGlobalModifiers(List<CharacterModifier> modifiers)
-        //{
-        //    foreach (CharacterModifier modifier in modifiers)
-        //    {
-        //        AddGlobalModifier(modifier);
-        //    }
-        //}
-
         /// <summary>
         /// Removes a modifier from all units and future units in this manager.
         /// </summary>
@@ -80,25 +68,25 @@ namespace AdventureAssembly.Units.Characters
             Modifiers.Remove(modifier);
         }
 
-        ///// <summary>
-        ///// Removes a list of modifiers from all units and future units in this manager.
-        ///// </summary>
-        ///// <param name="modifiers">The list of modifiers to remove. Must be references to the modifiers that were applied.</param>
-        //public static void RemoveGlobalModifiers(List<CharacterModifier> modifiers)
-        //{
-        //    foreach (CharacterModifier modifier in modifiers)
-        //    {
-        //        RemoveGlobalModifier(modifier);
-        //    }
-        //}
-
-        public static T GetNearestUnit(Vector2Int position)
+        /// <summary>
+        /// Returns the unit nearest to a position, null if none found.
+        /// </summary>
+        /// <param name="position">The position to check from</param>
+        /// <param name="visibleUnitsOnly">Should the search include only visible units?</param>
+        /// <returns></returns>
+        public static T GetNearestUnit(Vector2Int position, bool visibleUnitsOnly = true)
         {
-            T nearestUnit = Units.FirstOrDefault();
+            T nearestUnit = null;
             float currentDistance = float.MaxValue;
 
             foreach (T unit in Units)
             {
+                // If the unit is not visible on screen, ignore
+                if (visibleUnitsOnly && !unit.SpriteRenderer.isVisible)
+                {
+                    continue;
+                }
+
                 float distance = Vector2Int.Distance(position, unit.Position);
                 if (distance < currentDistance)
                 {

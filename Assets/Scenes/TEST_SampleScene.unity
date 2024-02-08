@@ -288,7 +288,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.6698113, g: 0.6272618, b: 0.5023585, a: 0}
+  m_BackGroundColor: {r: 0.08321468, g: 0.20754719, b: 0.17786755, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -811,24 +811,24 @@ MonoBehaviour:
     - serializedVersion: 3
       time: 0
       value: 0
-      inSlope: 0.017913511
-      outSlope: 0.017913511
+      inSlope: 0.025
+      outSlope: 0.025
       tangentMode: 34
       weightedMode: 0
       inWeight: 0
       outWeight: 0.33333334
     - serializedVersion: 3
-      time: 143.962
-      value: 2.578865
-      inSlope: -0.035059366
-      outSlope: -0.035059366
+      time: 40
+      value: 1
+      inSlope: 0.049838666
+      outSlope: 0.049838666
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
+      inWeight: 0.21714732
       outWeight: 0.09805335
     - serializedVersion: 3
-      time: 426.32437
-      value: 9.746985
+      time: 344.98016
+      value: 7.5228205
       inSlope: -0.028188
       outSlope: -0.028188
       tangentMode: 0
@@ -849,9 +849,9 @@ MonoBehaviour:
     m_RotationOrder: 4
   _spawnData:
   - EnemyData: {fileID: 11400000, guid: b930fad0151c80c4ebdf5bd12e71e15c, type: 2}
-    Weight: 50
+    Weight: 100
   - EnemyData: {fileID: 11400000, guid: 5485cf8b42f7ce94eb0cd1178dd55347, type: 2}
-    Weight: 0
+    Weight: 1
 --- !u!1 &1545723460
 GameObject:
   m_ObjectHideFlags: 0
