@@ -76,10 +76,10 @@ MonoBehaviour:
       Data: 0
     - Name: _statProcess
       Entry: 7
-      Data: 4|AdventureAssembly.Units.Stats.FloatMultiplierPerGoldStatProcess, AdventureAssembly.Units
-    - Name: _damageMultiplierPerGold
+      Data: 4|AdventureAssembly.Units.Stats.FloatAddStatProcess, AdventureAssembly.Units
+    - Name: _value
       Entry: 4
-      Data: 0.01
+      Data: 1
     - Name: 
       Entry: 8
       Data: 

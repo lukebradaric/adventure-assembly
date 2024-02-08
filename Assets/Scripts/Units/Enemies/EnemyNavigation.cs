@@ -1,9 +1,10 @@
-﻿using System.Collections.Generic;
+﻿using AdventureAssembly.Core;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace AdventureAssembly.Units.Enemies
 {
-    public abstract class EnemyNavigation
+    public abstract class EnemyNavigation : CloneObject<EnemyNavigation>
     {
         public abstract void Update(Enemy enemy);
 
@@ -20,11 +21,6 @@ namespace AdventureAssembly.Units.Enemies
                 Vector2Int.down,
                 Vector2Int.left,
             };
-        }
-
-        public EnemyNavigation GetClone()
-        {
-            return (EnemyNavigation)this.MemberwiseClone();
         }
     }
 }

@@ -5,8 +5,7 @@ using UnityEngine;
 
 namespace AdventureAssembly.Units.Abilities
 {
-    [System.Serializable]
-    public abstract class Ability
+    public abstract class Ability : CloneObject<Ability>
     {
         private const float MinTimeBetweenExecute = 0.1f;
 
@@ -59,11 +58,6 @@ namespace AdventureAssembly.Units.Abilities
                 yield return new WaitForSeconds(MinTimeBetweenExecute);
                 OnExecute();
             }
-        }
-
-        public Ability GetClone()
-        {
-            return (Ability)this.MemberwiseClone();
         }
     }
 }

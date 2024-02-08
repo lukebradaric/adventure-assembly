@@ -1,7 +1,8 @@
-﻿namespace AdventureAssembly.Units.Stats
+﻿using AdventureAssembly.Core;
+
+namespace AdventureAssembly.Units.Stats
 {
-    [System.Serializable]
-    public abstract class StatProcess
+    public abstract class StatProcess : CloneObject<StatProcess>
     {
         public abstract object Process(object value);
     }
