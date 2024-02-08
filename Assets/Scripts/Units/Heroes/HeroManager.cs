@@ -87,6 +87,12 @@ namespace AdventureAssembly.Units.Heroes
 
         private void UpdateUnitPositions()
         {
+            // If there are no Hero units left, you lose :)
+            if (Units.Count == 0)
+            {
+                return;
+            }
+
             Hero firstHero = Units.First();
 
             // Move the start of the party (Indicator and player root)

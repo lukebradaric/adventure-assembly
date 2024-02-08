@@ -10,16 +10,17 @@ namespace AdventureAssembly.Units.Abilities
         [BoxGroup("Data")]
         [SerializeField] private ProjectileData _projectileData;
 
-        protected override void Execute()
+        protected override bool Execute()
         {
             Enemy enemy = EnemyManager.GetNearestUnit(_hero.Position);
 
             if (enemy == null)
             {
-                return;
+                return false;
             }
 
             _projectileData.Create(_hero, enemy);
+            return true;
         }
     }
 }

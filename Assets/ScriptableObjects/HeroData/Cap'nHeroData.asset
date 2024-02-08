@@ -65,25 +65,7 @@ MonoBehaviour:
         AdventureAssembly.Units]], mscorlib
     - Name: 
       Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 7
-      Data: 2|AdventureAssembly.Units.Modifiers.CharacterStatModifier, AdventureAssembly.Units
-    - Name: _statName
-      Entry: 3
-      Data: 5
-    - Name: _statProcess
-      Entry: 7
-      Data: 3|AdventureAssembly.Units.Stats.FloatAddStatProcess, AdventureAssembly.Units
-    - Name: _value
-      Entry: 4
-      Data: 1
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
+      Data: 0
     - Name: 
       Entry: 13
       Data: 
@@ -119,7 +101,7 @@ MonoBehaviour:
       Data: 2
     - Name: ClassData
       Entry: 7
-      Data: 4|System.Collections.Generic.List`1[[AdventureAssembly.Units.Classes.ClassData,
+      Data: 2|System.Collections.Generic.List`1[[AdventureAssembly.Units.Classes.ClassData,
         AdventureAssembly.Units]], mscorlib
     - Name: 
       Entry: 12
@@ -135,14 +117,14 @@ MonoBehaviour:
       Data: 
     - Name: Abilities
       Entry: 7
-      Data: 5|System.Collections.Generic.List`1[[AdventureAssembly.Units.Abilities.Ability,
+      Data: 3|System.Collections.Generic.List`1[[AdventureAssembly.Units.Abilities.Ability,
         AdventureAssembly.Units]], mscorlib
     - Name: 
       Entry: 12
       Data: 1
     - Name: 
       Entry: 7
-      Data: 6|AdventureAssembly.Units.Abilities.ProjectileAbility, AdventureAssembly.Units
+      Data: 4|AdventureAssembly.Units.Abilities.ProjectileAbility, AdventureAssembly.Units
     - Name: _projectileData
       Entry: 10
       Data: 4

@@ -45,11 +45,14 @@ namespace AdventureAssembly.Units.Abilities
 
         protected virtual void OnExecute()
         {
-            Execute();
-            _hero.HeroData.AbilitySound?.Play();
+            // If the ability successfully executed, play audio
+            if (Execute())
+            {
+                _hero.HeroData.AbilitySound?.Play();
+            }
         }
 
-        protected abstract void Execute();
+        protected abstract bool Execute();
 
         private IEnumerator ExecuteCoroutine(int bonusCount)
         {

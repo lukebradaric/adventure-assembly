@@ -11,7 +11,7 @@ namespace AdventureAssembly.Units.Abilities
         [Tooltip("How many enemies should there be er extra projectile?")]
         [SerializeField] private int _enemiesPerExtraProjectile;
 
-        protected override void Execute()
+        protected override bool Execute()
         {
             // Calculate how many times to fire the projectile and add one to always have at least one projectile
             int count = (int)(EnemyManager.Units.Count / _enemiesPerExtraProjectile) + 1;
@@ -30,6 +30,8 @@ namespace AdventureAssembly.Units.Abilities
                 // Fire the projectile in direction
                 _projectileData.Create(_hero, direction);
             }
+
+            return true;
         }
     }
 

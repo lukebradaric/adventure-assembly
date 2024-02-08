@@ -16,6 +16,8 @@ namespace AdventureAssembly.Units.Enemies
 
     public class EnemySpawner : MonoBehaviour
     {
+        private const float MaxFindSpawnPositionAttempts = 5;
+
         [Space]
         [Header("Components")]
         [SerializeField] private Enemy _enemyPrefab;
@@ -29,7 +31,6 @@ namespace AdventureAssembly.Units.Enemies
         [SerializeField] private List<EnemySpawnData> _spawnData;
 
         private float _currentTime = 0f;
-
         private Coroutine _updateCoroutine = null;
 
         private void OnEnable()
@@ -85,16 +86,32 @@ namespace AdventureAssembly.Units.Enemies
 
         private Vector2Int GetSpawnPosition()
         {
-            Vector2 center = transform.position;
+            Vector2Int GetRandomSpawnPosition()
+            {
+                Vector2 center = transform.position;
 
-            Vector2 randomDirection = new Vector2(Random.Range(-1f, 1f), Random.Range(-1f, 1f)).normalized;
-            if (randomDirection == Vector2.zero) randomDirection = Vector2.right;
+                Vector2 randomDirection = new Vector2(Random.Range(-1f, 1f), Random.Range(-1f, 1f)).normalized;
+                if (randomDirection == Vector2.zero) randomDirection = Vector2.right;
 
-            float radius = Random.Range(_spawnRadius.x, _spawnRadius.y);
+                float radius = Random.Range(_spawnRadius.x, _spawnRadius.y);
 
-            Vector2 spawnPosition = center + (randomDirection * radius);
+                Vector2 position = center + (randomDirection * radius);
 
-            return new Vector2Int((int)spawnPosition.x, (int)spawnPosition.y);
+                return new Vector2Int((int)position.x, (int)position.y);
+            }
+
+            Vector2Int spawnPosition = GetRandomSpawnPosition();
+
+            // If spawn position is already occupied, try to find new position
+            int attempts = 0;
+            while (GridManager.HasUnitAtPosition(spawnPosition) && attempts < MaxFindSpawnPositionAttempts)
+            {
+                spawnPosition = GetRandomSpawnPosition();
+                attempts++;
+            }
+
+            // TODO: Return null or something instead of the possibility of this being an already occupied position
+            return spawnPosition;
         }
 
         private void SpawnEnemy(EnemyData enemyData)
