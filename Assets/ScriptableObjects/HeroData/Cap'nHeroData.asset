@@ -77,7 +77,7 @@ MonoBehaviour:
       Data: 3|AdventureAssembly.Units.Stats.FloatAddStatProcess, AdventureAssembly.Units
     - Name: _value
       Entry: 4
-      Data: 4
+      Data: 1
     - Name: 
       Entry: 8
       Data: 
