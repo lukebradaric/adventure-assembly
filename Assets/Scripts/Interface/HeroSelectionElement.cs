@@ -44,6 +44,8 @@ namespace AdventureAssembly.Interface
 
         public HeroSelectionInterface HeroSelectionInterface { get; set; }
 
+        public bool Interactable { get; set; } = true;
+
         private HeroData _heroData = null;
         public HeroData HeroData
         {
@@ -86,6 +88,11 @@ namespace AdventureAssembly.Interface
 
         public void OnPointerDown(PointerEventData eventData)
         {
+            if (!Interactable)
+            {
+                return;
+            }
+
             HeroSelectionInterface.OnHeroSelected(_heroData);
         }
     }

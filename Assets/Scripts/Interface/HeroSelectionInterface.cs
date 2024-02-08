@@ -121,6 +121,12 @@ namespace AdventureAssembly.Interface
 
         public void OnHeroSelected(HeroData heroData)
         {
+            // Disable interacting with all other selection elements
+            foreach (HeroSelectionElement element in _heroSelectionElements)
+            {
+                element.Interactable = false;
+            }
+
             ((HeroManager)HeroManager.Instance).SpawnHero(heroData);
             Hide();
         }
