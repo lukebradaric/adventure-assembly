@@ -1,4 +1,5 @@
-﻿using AdventureAssembly.Units.Characters;
+﻿using AdventureAssembly.Core;
+using AdventureAssembly.Units.Characters;
 using AdventureAssembly.Units.Enemies;
 using AdventureAssembly.Units.Heroes;
 using AdventureAssembly.Units.Modifiers;
@@ -9,8 +10,7 @@ using UnityEngine;
 
 namespace AdventureAssembly.Units.Classes
 {
-    [System.Serializable]
-    public class ClassBuff
+    public class ClassBuff : CloneObject<ClassBuff>
     {
         [BoxGroup("Settings")]
         [Tooltip("How many Heroes of this class type are required for this buff to be active?")]
@@ -19,26 +19,6 @@ namespace AdventureAssembly.Units.Classes
         [BoxGroup("Modifiers")]
         [Tooltip("List of modifiers that will be applied.")]
         [OdinSerialize] public List<GlobalCharacterStatModifier> GlobalCharacterModifiers { get; protected set; } = new List<GlobalCharacterStatModifier>();
-
-        //[BoxGroup("Settings")]
-        //[Tooltip("Do you also want the option to add modifiers to enemies using this class?")]
-        //[SerializeField] private bool _enableEnemyModifiers = false;
-
-        //[BoxGroup("Class Settings")]
-        //[Tooltip("Do you want to apply this buff to only specific classes?")]
-        //[SerializeField] private bool _specificClasses;
-
-        //[BoxGroup("Class Settings")]
-        //[Tooltip("What classes should this buff be applied to?")]
-        //[ShowIf(nameof(_specificClasses))]
-        //[SerializeField] private List<ClassData> _classes = new List<ClassData>();
-
-        //[BoxGroup("Hero Modifiers")]
-        //[SerializeField] private List<CharacterModifier> _heroModifiers = new List<CharacterModifier>();
-
-        //[BoxGroup("Enemy Modifiers")]
-        //[ShowIf(nameof(_enableEnemyModifiers))]
-        //[SerializeField] private List<CharacterModifier> _enemyModifiers = new List<CharacterModifier>();
 
         public virtual void Apply()
         {
@@ -70,9 +50,21 @@ namespace AdventureAssembly.Units.Classes
             }
         }
 
-        public ClassBuff GetClone()
+        public override void OnClone(ClassBuff obj)
         {
-            return (ClassBuff)this.MemberwiseClone();
+            base.OnClone(obj);
+
+            // Create temporary list copy
+            List<GlobalCharacterStatModifier> temp = new List<GlobalCharacterStatModifier>(obj.GlobalCharacterModifiers);
+
+            // Set clone object list to empty
+            obj.GlobalCharacterModifiers = new List<GlobalCharacterStatModifier>();
+
+            // Clone each object from the old list into the new clone object
+            foreach (GlobalCharacterStatModifier modifier in temp)
+            {
+                obj.GlobalCharacterModifiers.Add((GlobalCharacterStatModifier)modifier.GetClone());
+            }
         }
     }
 }

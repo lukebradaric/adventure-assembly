@@ -66,5 +66,11 @@ namespace AdventureAssembly.Units.Modifiers
             stat = (Stat<float>)statObject;
             return true;
         }
+
+        public override void OnClone(CharacterModifier obj)
+        {
+            base.OnClone(obj);
+            ((CharacterStatModifier)obj)._statProcess = _statProcess.GetClone();
+        }
     }
 }

@@ -1,7 +1,8 @@
-﻿namespace AdventureAssembly.Units
+﻿using AdventureAssembly.Core;
+
+namespace AdventureAssembly.Units
 {
-    [System.Serializable]
-    public abstract class ProjectileComponent
+    public abstract class ProjectileComponent : CloneObject<ProjectileComponent>
     {
         protected Projectile _projectile;
 
@@ -12,10 +13,5 @@
 
         public abstract void OnEnable();
         public abstract void OnDisable();
-
-        public ProjectileComponent GetClone()
-        {
-            return (ProjectileComponent)this.MemberwiseClone();
-        }
     }
 }
