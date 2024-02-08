@@ -11,8 +11,10 @@ namespace AdventureAssembly.Units.Heroes
         public HeroData HeroData { get; protected set; }
         public Hero Hero { get; protected set; }
 
+        public Stat<float> CriticalChance { get; set; } = new Stat<float>(0f);
+        public Stat<float> CriticalMultiplier { get; set; } = new Stat<float>(2f);
+        public Stat<float> CriticalBonus { get; set; } = new Stat<float>(0f);
         public Stat<float> AbilityExecuteBonus { get; protected set; } = new Stat<float>(0f);
-        public Stat<float> MaxHealthBonus { get; protected set; } = new Stat<float>(0f);
 
         public override void Initialize(Character unit)
         {
@@ -22,9 +24,32 @@ namespace AdventureAssembly.Units.Heroes
             this.HeroData = Hero.HeroData;
         }
 
-        public override int GetMaxHealth()
+        public override DamageData GetDamageData(DamageData damageData)
         {
-            return base.GetMaxHealth() + (int)MaxHealthBonus.Value;
+            damageData = base.GetDamageData(damageData);
+
+            float damage = damageData.Value;
+
+            // Check if critical chance hit
+            if (CriticalChance.Value > Random.value)
+            {
+                damageData.IsCritical = true;
+            }
+            
+            // If attack is critical
+            if (damageData.IsCritical)
+            {
+                // Add crit damage bonus
+                damage += CriticalBonus.Value;
+
+                // Multiply by crit multiplier
+                damage *= CriticalMultiplier.Value;
+            }
+
+            // Cast calculated value to integer
+            damageData.Value = (int)Mathf.Ceil(damage);
+
+            return damageData;
         }
 
         public float GetAbilitySpeed()

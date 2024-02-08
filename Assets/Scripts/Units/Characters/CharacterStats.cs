@@ -16,27 +16,21 @@ namespace AdventureAssembly.Units.Characters
         }
 
         public Stat<float> DamageMultiplier { get; set; } = new Stat<float>(1f);
+        public Stat<float> DamageBonus { get; set; } = new Stat<float>(0f);
         public Stat<float> MaxHealthMultiplier { get; set; } = new Stat<float>(1f);
-        public Stat<float> CriticalChance { get; set; } = new Stat<float>(0f);
-        public Stat<float> CriticalMultiplier { get; set; } = new Stat<float>(2f);
+        public Stat<float> MaxHealthBonus { get; set; } = new Stat<float>(0f);
 
         public virtual DamageData GetDamageData(DamageData damageData)
         {
-            // TODO: Run DamageData through all DamageDataProcesses
-
             float damage = damageData.BaseValue;
+
+            // Add damage bonus
+            damage += DamageBonus.Value;
+
+            // Multiply by damage multiplier
             damage *= DamageMultiplier.Value;
 
-            if (CriticalChance.Value > Random.value)
-            {
-                damageData.IsCritical = true;
-            }
-
-            if (damageData.IsCritical)
-            {
-                damage *= CriticalMultiplier.Value;
-            }
-
+            // Ceil damage to integer
             damageData.Value = (int)Mathf.Ceil(damage);
 
             return damageData;
@@ -44,7 +38,7 @@ namespace AdventureAssembly.Units.Characters
 
         public virtual int GetMaxHealth()
         {
-            return (int)Mathf.Ceil(CharacterData.MaxHealth * MaxHealthMultiplier.Value);
+            return (int)Mathf.Ceil(CharacterData.MaxHealth * MaxHealthMultiplier.Value) + (int)MaxHealthBonus.Value;
         }
     }
 }

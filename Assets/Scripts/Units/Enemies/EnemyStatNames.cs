@@ -6,7 +6,7 @@
     public enum EnemyStatNames
     {
         DamageMultiplier,
-        DamageBonus, // Not Implemented
+        DamageBonus,
         MaxHealthMultiplier,
         MaxHealthBonus,
         GoldDropChance,

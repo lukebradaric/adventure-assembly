@@ -6,12 +6,12 @@
     public enum HeroStatNames
     {
         DamageMultiplier,
-        DamageBonus, // Not Implemented
+        DamageBonus,
         MaxHealthMultiplier,
         MaxHealthBonus,
         CriticalChance,
         CriticalMultiplier,
-        CriticalBonus, // Not Implemented
+        CriticalBonus,
         AbilityExecuteBonus,
     }
 }
