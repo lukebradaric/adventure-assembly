@@ -88,6 +88,7 @@ MonoBehaviour:
     SerializedBytes: 
     ReferencedUnityObjects:
     - {fileID: 8315645397188149435}
+    - {fileID: 8711210509025312269}
     - {fileID: -890123428954646306}
     SerializedBytesString: 
     Prefab: {fileID: 0}
@@ -97,9 +98,12 @@ MonoBehaviour:
     - Name: SpriteRenderer
       Entry: 10
       Data: 0
-    - Name: Stats
+    - Name: ShadowSpriteRenderer
       Entry: 10
       Data: 1
+    - Name: Stats
+      Entry: 10
+      Data: 2
     - Name: Abilities
       Entry: 7
       Data: 0|System.Collections.Generic.List`1[[AdventureAssembly.Units.Abilities.Ability,
@@ -205,7 +209,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1134007663
-  m_SortingLayer: -1
+  m_SortingLayer: -2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 9711b0dce12d11f4cb5ef3daeed63baf, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 0.39215687}

@@ -14,6 +14,7 @@ namespace AdventureAssembly.Units.Characters
         [PropertySpace]
         [Title("Components")]
         [OdinSerialize] public SpriteRenderer SpriteRenderer { get; private set; }
+        [OdinSerialize] public SpriteRenderer ShadowSpriteRenderer { get; private set; }
         [OdinSerialize] public virtual CharacterStats Stats { get; private set; }
 
         public CharacterData CharacterData { get; private set; }
@@ -54,6 +55,8 @@ namespace AdventureAssembly.Units.Characters
             }
 
             SpriteRenderer.sprite = CharacterData.Sprite;
+            ShadowSpriteRenderer.sprite = CharacterData.ShadowSprite;
+            ShadowSpriteRenderer.transform.localPosition = CharacterData.ShadowOffset;
             name = $"{CharacterData.Name}";
         }
 
@@ -144,7 +147,10 @@ namespace AdventureAssembly.Units.Characters
         /// Called when this unit takes damage. Called after damage is applied.
         /// </summary>
         /// <param name="damageData">The DamageData that this unit took.</param>
-        protected virtual void OnTakeDamage(DamageData damageData) { }
+        protected virtual void OnTakeDamage(DamageData damageData)
+        {
+            CharacterData.HurtSound?.Play();
+        }
 
         /// <summary>
         /// Called when this unit dies. Called before destroying.

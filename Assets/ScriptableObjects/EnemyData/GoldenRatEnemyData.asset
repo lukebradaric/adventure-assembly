@@ -17,6 +17,8 @@ MonoBehaviour:
     SerializedBytes: 
     ReferencedUnityObjects:
     - {fileID: 21300000, guid: be950adc435ec134fb13292a2027cea9, type: 3}
+    - {fileID: 21300000, guid: 9711b0dce12d11f4cb5ef3daeed63baf, type: 3}
+    - {fileID: 11400000, guid: 2138459d0bf80524cbb69bce43708a97, type: 2}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -28,15 +30,33 @@ MonoBehaviour:
     - Name: Sprite
       Entry: 10
       Data: 0
-    - Name: MaxHealth
-      Entry: 3
-      Data: 100
+    - Name: ShadowSprite
+      Entry: 10
+      Data: 1
+    - Name: ShadowOffset
+      Entry: 7
+      Data: UnityEngine.Vector2, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: -0.225
+    - Name: 
+      Entry: 8
+      Data: 
     - Name: MovementTween
       Entry: 7
       Data: 0|AdventureAssembly.Units.Animation.DefaultUnitMovementTween, AdventureAssembly.Units
     - Name: 
       Entry: 8
       Data: 
+    - Name: HurtSound
+      Entry: 10
+      Data: 2
+    - Name: MaxHealth
+      Entry: 3
+      Data: 100
     - Name: Modifiers
       Entry: 7
       Data: 1|System.Collections.Generic.List`1[[AdventureAssembly.Units.Modifiers.CharacterModifier,

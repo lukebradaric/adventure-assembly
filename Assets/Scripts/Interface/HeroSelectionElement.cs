@@ -57,8 +57,7 @@ namespace AdventureAssembly.Interface
 
                 _nameText.text = _heroData.Name;
                 _descriptionText.text = _heroData.Description;
-                // TODO: Set ability speed text to ability speed
-                //_abilitySpeedText = _heroData.AbilitySpeed;
+                _abilitySpeedText.text = _heroData.AbilitySpeed.ToString();
                 _maxHealthText.text = _heroData.MaxHealth.ToString();
 
                 _heroImage.sprite = _heroData.Sprite;

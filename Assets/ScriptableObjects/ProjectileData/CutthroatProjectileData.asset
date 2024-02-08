@@ -17,6 +17,7 @@ MonoBehaviour:
     SerializedBytes: 
     ReferencedUnityObjects:
     - {fileID: 21300000, guid: 41fc199562bc13648ab930a438b37b2e, type: 3}
+    - {fileID: 7792896061547679105, guid: b9b617996a4e2ce42bd9f0d21f30847d, type: 3}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -48,7 +49,7 @@ MonoBehaviour:
       Data: 4
     - Name: Speed
       Entry: 4
-      Data: 10
+      Data: 14
     - Name: DestroyOnCollision
       Entry: 5
       Data: true
@@ -64,19 +65,7 @@ MonoBehaviour:
         AdventureAssembly.Units]], mscorlib
     - Name: 
       Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 7
-      Data: 1|AdventureAssembly.Units.ExplodingProjectileComponent, AdventureAssembly.Units
-    - Name: _radius
-      Entry: 4
-      Data: 3
-    - Name: _baseDamage
-      Entry: 4
-      Data: 5
-    - Name: 
-      Entry: 8
-      Data: 
+      Data: 0
     - Name: 
       Entry: 13
       Data: 
@@ -85,11 +74,27 @@ MonoBehaviour:
       Data: 
     - Name: ParticlePrefabs
       Entry: 7
-      Data: 2|System.Collections.Generic.List`1[[UnityEngine.ParticleSystem, UnityEngine.ParticleSystemModule]],
+      Data: 1|System.Collections.Generic.List`1[[UnityEngine.ParticleSystem, UnityEngine.ParticleSystemModule]],
         mscorlib
     - Name: 
       Entry: 12
       Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: TrailPrefabs
+      Entry: 7
+      Data: 2|System.Collections.Generic.List`1[[UnityEngine.TrailRenderer, UnityEngine.CoreModule]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 10
+      Data: 1
     - Name: 
       Entry: 13
       Data: 

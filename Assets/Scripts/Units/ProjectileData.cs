@@ -51,6 +51,10 @@ namespace AdventureAssembly.Units
         [Tooltip("What particle prefabs should be instantiated under this projectile?")]
         [OdinSerialize] public List<ParticleSystem> ParticlePrefabs { get; protected set; } = new List<ParticleSystem>();
 
+        [BoxGroup("Components")]
+        [Tooltip("What trail renderer prefabs should be instantiated under this projectile?")]
+        [OdinSerialize] public List<TrailRenderer> TrailPrefabs { get; protected set; } = new List<TrailRenderer>();
+
         /// <summary>
         /// Creates a projectile from this ProjectileData and fires it towards a target.
         /// </summary>

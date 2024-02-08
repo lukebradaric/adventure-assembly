@@ -2,6 +2,7 @@
 using AdventureAssembly.Units.Enemies;
 using AdventureAssembly.Units.Heroes;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using TinyTools.ScriptableVariables;
 using UnityEngine;
@@ -23,6 +24,7 @@ namespace AdventureAssembly.Units
 
         public List<ProjectileComponent> Components { get; protected set; } = new List<ProjectileComponent>();
         public List<ParticleSystem> ParticlePrefabs { get; protected set; } = new List<ParticleSystem>();
+        public List<TrailRenderer> TrailPrefabs { get; protected set; } = new List<TrailRenderer>();
 
         private Character _targetCharacter = null;
         public Character TargetCharacter
@@ -86,20 +88,50 @@ namespace AdventureAssembly.Units
                 ParticlePrefabs.Add(Instantiate(particlePrefab, this.transform));
             }
 
-            Destroy(gameObject, ProjectileData.MaxLifetime);
+            // Instantiate trail renderer prefabs on this projectile
+            foreach (TrailRenderer trailPrefab in ProjectileData.TrailPrefabs)
+            {
+                TrailPrefabs.Add(Instantiate(trailPrefab, this.transform));
+            }
+
+            Destroy(ProjectileData.MaxLifetime);
         }
 
-        private void OnDisable()
+        /// <summary>
+        /// Destroys this projectile.
+        /// </summary>
+        /// <param name="seconds">The amount of seconds to wait before destroying.</param>
+        private void Destroy(float seconds = 0f)
+        {
+            if (seconds != 0f)
+            {
+                StartCoroutine(DestroyCoroutine(seconds));
+                return;
+            }
+
+            OnBeforeDestroy();
+            Destroy(gameObject);
+        }
+
+        private IEnumerator DestroyCoroutine(float seconds)
+        {
+            yield return new WaitForSeconds(seconds);
+
+            OnBeforeDestroy();
+            Destroy(gameObject);
+        }
+
+        /// <summary>
+        /// Called right before projectile is destroyed. Do not change this. It is a weird hacky solution due to the order of hierarchy calls.
+        /// </summary>
+        private void OnBeforeDestroy()
         {
             // Disable all components on this projectile
             foreach (ProjectileComponent component in Components)
             {
                 component.OnDisable();
             }
-        }
 
-        private void OnDestroy()
-        {
             foreach (ParticleSystem particleSystem in ParticlePrefabs)
             {
                 particleSystem.transform.parent = null;
@@ -149,7 +181,7 @@ namespace AdventureAssembly.Units
 
             if (ProjectileData.DestroyOnCollision)
             {
-                Destroy(gameObject);
+                Destroy();
             }
 
             TargetCharacter = null;

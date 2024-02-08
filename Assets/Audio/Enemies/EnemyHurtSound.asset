@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: eeaf3900e8f5acf4aa7fdcca3b5af590, type: 3}
-  m_Name: CapnAbilitySound
+  m_Name: EnemyHurtSound
   m_EditorClassIdentifier: 
-  _audioClip: {fileID: 8300000, guid: 076c5e7a5c1d95745b97e8f653ee79e2, type: 3}
+  _audioClip: {fileID: 8300000, guid: d4878eb5a74f89540acd4fef27f1d783, type: 3}
   _audioMixerGroup: {fileID: 0}
   _audioPriority: 128
-  _volume: 0.03
-  _pitch: 0.9
+  _volume: 0.2
+  _pitch: 1.4
   _pitchVariation: 0.1
   _ignorePlayRateLimit: 0

@@ -1,6 +1,6 @@
-﻿using AdventureAssembly.Units.Heroes;
-using Sirenix.OdinInspector;
-using TinyTools.ScriptableSounds;
+﻿using AdventureAssembly.Core;
+using AdventureAssembly.Units.Heroes;
+using System.Collections;
 using UnityEngine;
 
 namespace AdventureAssembly.Units.Abilities
@@ -8,13 +8,7 @@ namespace AdventureAssembly.Units.Abilities
     [System.Serializable]
     public abstract class Ability
     {
-        [BoxGroup("Settings")]
-        [Tooltip("How often should this ability occur? Measured in seconds.")]
-        [SerializeField] private float _baseSpeed;
-
-        [BoxGroup("Audio")]
-        [Tooltip("What sound should play when this ability occurs?")]
-        [SerializeField] private ScriptableSound _sound;
+        private const float MinTimeBetweenExecute = 0.1f;
 
         // Current ticks until ability is executed
         protected float _currentTime;
@@ -25,22 +19,47 @@ namespace AdventureAssembly.Units.Abilities
         public void Initialize(Hero hero)
         {
             _hero = hero;
-            _currentTime = _baseSpeed;
+            _currentTime = _hero.Stats.GetAbilitySpeed();
         }
 
         public void OnUpdate(float time)
         {
             _currentTime -= time;
 
-            if (_currentTime <= 0)
+            if (_currentTime > 0)
             {
-                Execute();
-                _sound?.Play();
-                _currentTime = _hero.Stats.GetAbilitySpeed(_baseSpeed);
+                return;
             }
+
+            OnExecute();
+
+            // If bonus execution count is greater than zero, start execute coroutine
+            int bonusCount = (int)_hero.Stats.AbilityExecuteBonus.Value;
+            if (bonusCount > 0)
+            {
+                CoroutineManager.Instance.StartCoroutine(ExecuteCoroutine(bonusCount));
+            }
+
+            // Reset ability time
+            _currentTime = _hero.Stats.GetAbilitySpeed();
+        }
+
+        protected virtual void OnExecute()
+        {
+            Execute();
+            _hero.HeroData.AbilitySound?.Play();
         }
 
         protected abstract void Execute();
+
+        private IEnumerator ExecuteCoroutine(int bonusCount)
+        {
+            for (int i = 0; i < bonusCount; i++)
+            {
+                yield return new WaitForSeconds(MinTimeBetweenExecute);
+                OnExecute();
+            }
+        }
 
         public Ability GetClone()
         {

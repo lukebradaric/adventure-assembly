@@ -17,8 +17,8 @@ MonoBehaviour:
     SerializedBytes: 
     ReferencedUnityObjects:
     - {fileID: 21300000, guid: 4dd486577d5d81e41a3a63c2de611470, type: 3}
+    - {fileID: 21300000, guid: 9711b0dce12d11f4cb5ef3daeed63baf, type: 3}
     - {fileID: 11400000, guid: a18450eb18ab7534dbbf8719cb77aaba, type: 2}
-    - {fileID: 11400000, guid: dd525721dc6339840af88d02c844c890, type: 2}
     - {fileID: 11400000, guid: fd5a7f5335ae88d4894b76ea03e3a55f, type: 2}
     SerializedBytesString: 
     Prefab: {fileID: 0}
@@ -31,15 +31,33 @@ MonoBehaviour:
     - Name: Sprite
       Entry: 10
       Data: 0
-    - Name: MaxHealth
-      Entry: 3
-      Data: 12
+    - Name: ShadowSprite
+      Entry: 10
+      Data: 1
+    - Name: ShadowOffset
+      Entry: 7
+      Data: UnityEngine.Vector2, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: -0.225
+    - Name: 
+      Entry: 8
+      Data: 
     - Name: MovementTween
       Entry: 7
       Data: 0|AdventureAssembly.Units.Animation.DefaultUnitMovementTween, AdventureAssembly.Units
     - Name: 
       Entry: 8
       Data: 
+    - Name: HurtSound
+      Entry: 6
+      Data: 
+    - Name: MaxHealth
+      Entry: 3
+      Data: 12
     - Name: Modifiers
       Entry: 7
       Data: 1|System.Collections.Generic.List`1[[AdventureAssembly.Units.Modifiers.CharacterModifier,
@@ -74,6 +92,12 @@ MonoBehaviour:
     - Name: Description
       Entry: 1
       Data: He does some silly tricks!
+    - Name: AbilitySpeed
+      Entry: 4
+      Data: 1
+    - Name: AbilitySound
+      Entry: 6
+      Data: 
     - Name: ClassData
       Entry: 7
       Data: 2|System.Collections.Generic.List`1[[AdventureAssembly.Units.Classes.ClassData,
@@ -83,7 +107,7 @@ MonoBehaviour:
       Data: 1
     - Name: 
       Entry: 10
-      Data: 1
+      Data: 2
     - Name: 
       Entry: 13
       Data: 
@@ -100,18 +124,12 @@ MonoBehaviour:
     - Name: 
       Entry: 7
       Data: 4|AdventureAssembly.Units.Abilities.SpellThiefAbility, AdventureAssembly.Units
-    - Name: _baseSpeed
-      Entry: 4
-      Data: 1
-    - Name: _sound
-      Entry: 10
-      Data: 2
     - Name: _projectileData
       Entry: 10
       Data: 3
     - Name: _enemiesPerExtraProjectile
       Entry: 3
-      Data: 3
+      Data: 8
     - Name: 
       Entry: 8
       Data: 

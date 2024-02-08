@@ -88,6 +88,7 @@ MonoBehaviour:
     SerializedBytes: 
     ReferencedUnityObjects:
     - {fileID: 8120395992605780396}
+    - {fileID: 7635150495067849036}
     - {fileID: -2632185598829885803}
     SerializedBytesString: 
     Prefab: {fileID: 0}
@@ -97,9 +98,12 @@ MonoBehaviour:
     - Name: SpriteRenderer
       Entry: 10
       Data: 0
-    - Name: Stats
+    - Name: ShadowSpriteRenderer
       Entry: 10
       Data: 1
+    - Name: Stats
+      Entry: 10
+      Data: 2
   _enemyDamagedScriptableEvent: {fileID: 11400000, guid: d23af1a85d093574f9a36a60a8115834, type: 2}
 --- !u!114 &-2632185598829885803
 MonoBehaviour:
@@ -193,7 +197,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -690112537
-  m_SortingLayer: -1
+  m_SortingLayer: -4
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 9711b0dce12d11f4cb5ef3daeed63baf, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 0.39215687}

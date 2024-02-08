@@ -1,6 +1,4 @@
-﻿using UnityEngine;
-
-namespace AdventureAssembly.Units.Heroes
+﻿namespace AdventureAssembly.Units.Heroes
 {
     /// <summary>
     /// An enum containing the names of all the hero stats.
@@ -12,5 +10,6 @@ namespace AdventureAssembly.Units.Heroes
         CriticalChance,
         CriticalMultiplier,
         GoldDropChance,
+        AbilityExecuteBonus
     }
 }
