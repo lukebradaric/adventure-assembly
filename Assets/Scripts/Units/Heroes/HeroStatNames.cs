@@ -3,13 +3,15 @@
     /// <summary>
     /// An enum containing the names of all the hero stats.
     /// </summary>
-    public enum StatNames
+    public enum HeroStatNames
     {
         DamageMultiplier,
+        DamageBonus, // Not Implemented
         MaxHealthMultiplier,
+        MaxHealthBonus,
         CriticalChance,
         CriticalMultiplier,
-        GoldDropChance,
-        AbilityExecuteBonus
+        CriticalBonus, // Not Implemented
+        AbilityExecuteBonus,
     }
 }

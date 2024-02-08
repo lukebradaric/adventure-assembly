@@ -12,6 +12,7 @@ namespace AdventureAssembly.Units.Heroes
         public Hero Hero { get; protected set; }
 
         public Stat<float> AbilityExecuteBonus { get; protected set; } = new Stat<float>(0f);
+        public Stat<float> MaxHealthBonus { get; protected set; } = new Stat<float>(0f);
 
         public override void Initialize(Character unit)
         {
@@ -19,6 +20,11 @@ namespace AdventureAssembly.Units.Heroes
 
             this.Hero = (Hero)unit;
             this.HeroData = Hero.HeroData;
+        }
+
+        public override int GetMaxHealth()
+        {
+            return base.GetMaxHealth() + (int)MaxHealthBonus.Value;
         }
 
         public float GetAbilitySpeed()

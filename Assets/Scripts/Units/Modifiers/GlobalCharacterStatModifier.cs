@@ -10,10 +10,6 @@ namespace AdventureAssembly.Units.Modifiers
 {
     public class GlobalCharacterStatModifier : CharacterStatModifier
     {
-        [Tooltip("What type of character is this modifier targeting?")]
-        [BoxGroup("Target Settings", Order = -1)]
-        [OdinSerialize] public CharacterType CharacterType { get; protected set; } = CharacterType.Hero;
-
         [Tooltip("Should this hero modifier only be applied to certain classes?")]
         [BoxGroup("Target Settings")]
         [ShowIf(nameof(CharacterType), CharacterType.Hero)]

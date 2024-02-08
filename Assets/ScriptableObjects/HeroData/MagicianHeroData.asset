@@ -91,7 +91,8 @@ MonoBehaviour:
       Data: 
     - Name: Description
       Entry: 1
-      Data: He does some silly tricks!
+      Data: Fires projectiles in random directions. The amount of projectiles fired
+        increases by 1 for each 8 enemies alive.
     - Name: AbilitySpeed
       Entry: 4
       Data: 1

@@ -77,9 +77,15 @@ MonoBehaviour:
     - Name: 
       Entry: 7
       Data: 3|AdventureAssembly.Units.Modifiers.GlobalCharacterStatModifier, AdventureAssembly.Units
-    - Name: _statName
+    - Name: CharacterType
       Entry: 3
-      Data: 5
+      Data: 0
+    - Name: _heroStatName
+      Entry: 3
+      Data: 7
+    - Name: _enemyStatName
+      Entry: 3
+      Data: 0
     - Name: _statProcess
       Entry: 7
       Data: 4|AdventureAssembly.Units.Stats.FloatAddStatProcess, AdventureAssembly.Units
@@ -89,9 +95,6 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-    - Name: CharacterType
-      Entry: 3
-      Data: 0
     - Name: SpecificClasses
       Entry: 5
       Data: true
@@ -139,9 +142,15 @@ MonoBehaviour:
     - Name: 
       Entry: 7
       Data: 8|AdventureAssembly.Units.Modifiers.GlobalCharacterStatModifier, AdventureAssembly.Units
-    - Name: _statName
+    - Name: CharacterType
       Entry: 3
-      Data: 5
+      Data: 0
+    - Name: _heroStatName
+      Entry: 3
+      Data: 7
+    - Name: _enemyStatName
+      Entry: 3
+      Data: 0
     - Name: _statProcess
       Entry: 7
       Data: 9|AdventureAssembly.Units.Stats.FloatAddStatProcess, AdventureAssembly.Units
@@ -151,9 +160,6 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-    - Name: CharacterType
-      Entry: 3
-      Data: 0
     - Name: SpecificClasses
       Entry: 5
       Data: true
@@ -201,9 +207,15 @@ MonoBehaviour:
     - Name: 
       Entry: 7
       Data: 13|AdventureAssembly.Units.Modifiers.GlobalCharacterStatModifier, AdventureAssembly.Units
-    - Name: _statName
+    - Name: CharacterType
       Entry: 3
-      Data: 5
+      Data: 0
+    - Name: _heroStatName
+      Entry: 3
+      Data: 7
+    - Name: _enemyStatName
+      Entry: 3
+      Data: 0
     - Name: _statProcess
       Entry: 7
       Data: 14|AdventureAssembly.Units.Stats.FloatAddStatProcess, AdventureAssembly.Units
@@ -213,9 +225,6 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-    - Name: CharacterType
-      Entry: 3
-      Data: 0
     - Name: SpecificClasses
       Entry: 5
       Data: true

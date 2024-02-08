@@ -1,4 +1,5 @@
 ﻿using AdventureAssembly.Units.Characters;
+using AdventureAssembly.Units.Enemies;
 using AdventureAssembly.Units.Heroes;
 using AdventureAssembly.Units.Stats;
 using Sirenix.OdinInspector;
@@ -13,9 +14,19 @@ namespace AdventureAssembly.Units.Modifiers
     /// </summary>
     public class CharacterStatModifier : CharacterModifier
     {
+        [Tooltip("What type of character is this modifier targeting?")]
+        [BoxGroup("Target Settings", Order = -1)]
+        [OdinSerialize] public CharacterType CharacterType { get; protected set; } = CharacterType.Hero;
+
         [Tooltip("What is the name of the stat to modify?")]
         [BoxGroup("Modifier")]
-        [OdinSerialize] private StatNames _statName;
+        [ShowIf(nameof(CharacterType), CharacterType.Hero)]
+        [OdinSerialize] private HeroStatNames _heroStatName;
+
+        [Tooltip("What is the name of the stat to modify?")]
+        [BoxGroup("Modifier")]
+        [ShowIf(nameof(CharacterType), CharacterType.Enemy)]
+        [OdinSerialize] private EnemyStatNames _enemyStatName;
 
         [Tooltip("What stat process should be applied to the stat?")]
         [BoxGroup("Modifier")]
@@ -24,7 +35,7 @@ namespace AdventureAssembly.Units.Modifiers
         public override void Apply(Character character)
         {
             // If we are able to get stat property, add modifier
-            if (TryGetStatProperty(character, _statName.ToString(), out Stat<float> stat))
+            if (TryGetStatProperty(character, GetStatName(), out Stat<float> stat))
             {
                 stat.AddProcess(_statProcess);
             }
@@ -32,10 +43,23 @@ namespace AdventureAssembly.Units.Modifiers
 
         public override void Remove(Character character)
         {
-            if (TryGetStatProperty(character, _statName.ToString(), out Stat<float> stat))
+            if (TryGetStatProperty(character, GetStatName(), out Stat<float> stat))
             {
                 stat.RemoveProcess(_statProcess);
             }
+        }
+
+        private string GetStatName()
+        {
+            switch (CharacterType)
+            {
+                case CharacterType.Hero:
+                    return _heroStatName.ToString();
+                case CharacterType.Enemy:
+                    return _enemyStatName.ToString();
+            }
+
+            return string.Empty;
         }
 
         /// <summary>

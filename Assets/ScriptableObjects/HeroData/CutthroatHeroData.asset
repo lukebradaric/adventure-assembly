@@ -70,9 +70,15 @@ MonoBehaviour:
     - Name: 
       Entry: 7
       Data: 2|AdventureAssembly.Units.Modifiers.CharacterStatModifier, AdventureAssembly.Units
-    - Name: _statName
+    - Name: CharacterType
       Entry: 3
-      Data: 3
+      Data: 0
+    - Name: _heroStatName
+      Entry: 3
+      Data: 5
+    - Name: _enemyStatName
+      Entry: 3
+      Data: 0
     - Name: _statProcess
       Entry: 7
       Data: 3|AdventureAssembly.Units.Stats.FloatAddStatProcess, AdventureAssembly.Units

@@ -83,21 +83,24 @@ MonoBehaviour:
     - Name: 
       Entry: 7
       Data: 3|AdventureAssembly.Units.Modifiers.GlobalCharacterStatModifier, AdventureAssembly.Units
-    - Name: _statName
+    - Name: CharacterType
+      Entry: 3
+      Data: 0
+    - Name: _heroStatName
+      Entry: 3
+      Data: 0
+    - Name: _enemyStatName
       Entry: 3
       Data: 0
     - Name: _statProcess
       Entry: 7
-      Data: 4|AdventureAssembly.Units.Stats.FloatAddStatProcess, AdventureAssembly.Units
-    - Name: _value
+      Data: 4|AdventureAssembly.Units.Stats.FloatMultiplierPerGoldStatProcess, AdventureAssembly.Units
+    - Name: _damageMultiplierPerGold
       Entry: 4
       Data: 0.01
     - Name: 
       Entry: 8
       Data: 
-    - Name: CharacterType
-      Entry: 3
-      Data: 0
     - Name: SpecificClasses
       Entry: 5
       Data: true
@@ -123,7 +126,13 @@ MonoBehaviour:
     - Name: 
       Entry: 7
       Data: 6|AdventureAssembly.Units.Modifiers.GlobalCharacterStatModifier, AdventureAssembly.Units
-    - Name: _statName
+    - Name: CharacterType
+      Entry: 3
+      Data: 1
+    - Name: _heroStatName
+      Entry: 3
+      Data: 0
+    - Name: _enemyStatName
       Entry: 3
       Data: 4
     - Name: _statProcess
@@ -135,9 +144,6 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-    - Name: CharacterType
-      Entry: 3
-      Data: 1
     - Name: SpecificClasses
       Entry: 5
       Data: false
@@ -182,21 +188,24 @@ MonoBehaviour:
     - Name: 
       Entry: 7
       Data: 11|AdventureAssembly.Units.Modifiers.GlobalCharacterStatModifier, AdventureAssembly.Units
-    - Name: _statName
+    - Name: CharacterType
+      Entry: 3
+      Data: 0
+    - Name: _heroStatName
+      Entry: 3
+      Data: 0
+    - Name: _enemyStatName
       Entry: 3
       Data: 0
     - Name: _statProcess
       Entry: 7
-      Data: 12|AdventureAssembly.Units.Stats.FloatAddStatProcess, AdventureAssembly.Units
-    - Name: _value
+      Data: 12|AdventureAssembly.Units.Stats.FloatMultiplierPerGoldStatProcess, AdventureAssembly.Units
+    - Name: _damageMultiplierPerGold
       Entry: 4
       Data: 0.01
     - Name: 
       Entry: 8
       Data: 
-    - Name: CharacterType
-      Entry: 3
-      Data: 0
     - Name: SpecificClasses
       Entry: 5
       Data: true
@@ -222,7 +231,13 @@ MonoBehaviour:
     - Name: 
       Entry: 7
       Data: 14|AdventureAssembly.Units.Modifiers.GlobalCharacterStatModifier, AdventureAssembly.Units
-    - Name: _statName
+    - Name: CharacterType
+      Entry: 3
+      Data: 1
+    - Name: _heroStatName
+      Entry: 3
+      Data: 0
+    - Name: _enemyStatName
       Entry: 3
       Data: 4
     - Name: _statProcess
@@ -234,9 +249,6 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-    - Name: CharacterType
-      Entry: 3
-      Data: 1
     - Name: SpecificClasses
       Entry: 5
       Data: false
@@ -281,21 +293,24 @@ MonoBehaviour:
     - Name: 
       Entry: 7
       Data: 19|AdventureAssembly.Units.Modifiers.GlobalCharacterStatModifier, AdventureAssembly.Units
-    - Name: _statName
+    - Name: CharacterType
+      Entry: 3
+      Data: 0
+    - Name: _heroStatName
+      Entry: 3
+      Data: 0
+    - Name: _enemyStatName
       Entry: 3
       Data: 0
     - Name: _statProcess
       Entry: 7
-      Data: 20|AdventureAssembly.Units.Stats.FloatAddStatProcess, AdventureAssembly.Units
-    - Name: _value
+      Data: 20|AdventureAssembly.Units.Stats.FloatMultiplierPerGoldStatProcess, AdventureAssembly.Units
+    - Name: _damageMultiplierPerGold
       Entry: 4
       Data: 0.01
     - Name: 
       Entry: 8
       Data: 
-    - Name: CharacterType
-      Entry: 3
-      Data: 0
     - Name: SpecificClasses
       Entry: 5
       Data: true
@@ -321,7 +336,13 @@ MonoBehaviour:
     - Name: 
       Entry: 7
       Data: 22|AdventureAssembly.Units.Modifiers.GlobalCharacterStatModifier, AdventureAssembly.Units
-    - Name: _statName
+    - Name: CharacterType
+      Entry: 3
+      Data: 1
+    - Name: _heroStatName
+      Entry: 3
+      Data: 0
+    - Name: _enemyStatName
       Entry: 3
       Data: 4
     - Name: _statProcess
@@ -333,9 +354,6 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-    - Name: CharacterType
-      Entry: 3
-      Data: 1
     - Name: SpecificClasses
       Entry: 5
       Data: false
