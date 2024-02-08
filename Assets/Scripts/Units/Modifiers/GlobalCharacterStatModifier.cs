@@ -72,7 +72,6 @@ namespace AdventureAssembly.Units.Modifiers
                 }
             }
 
-            Debug.Log($"{hero.name} will not have modifier applied!");
             return false;
         }
     }

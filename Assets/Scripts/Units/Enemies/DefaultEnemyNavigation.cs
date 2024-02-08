@@ -20,7 +20,15 @@ namespace AdventureAssembly.Units.Enemies
             };
 
             // Get the position of the nearest hero
-            Vector2Int nearestHeroPosition = HeroManager.GetNearestUnit(enemy.Position).Position;
+            Hero nearestHero = HeroManager.GetNearestUnit(enemy.Position);
+
+            // If no hero found, return
+            if(nearestHero == null)
+            {
+                return;
+            }
+
+            Vector2Int nearestHeroPosition = nearestHero.Position;
 
             List<Tuple<Vector2Int, float>> positionDistances = new List<Tuple<Vector2Int, float>>();
             float currentDistance = Vector2Int.Distance(enemy.Position, nearestHeroPosition);
