@@ -27,19 +27,27 @@ MonoBehaviour:
       Data: Mage
     - Name: Description
       Entry: 1
-      Data: These guys are just so silly all around!
+      Data: 'All mages cast their ability extra times.
+
+
+        (6) - 1 Extra Cast
+
+        (12)
+        - 2 Extra Casts
+
+        (20) - 3 Extra Casts'
     - Name: Color
       Entry: 7
       Data: UnityEngine.Color, UnityEngine.CoreModule
     - Name: 
       Entry: 4
+      Data: 0.5921569
+    - Name: 
+      Entry: 4
       Data: 0
     - Name: 
       Entry: 4
-      Data: 0.8169582
-    - Name: 
-      Entry: 4
-      Data: 0.9245283
+      Data: 0.2627451
     - Name: 
       Entry: 4
       Data: 1
@@ -52,13 +60,13 @@ MonoBehaviour:
         AdventureAssembly.Units]], mscorlib
     - Name: 
       Entry: 12
-      Data: 2
+      Data: 3
     - Name: 
       Entry: 7
       Data: 1|AdventureAssembly.Units.Classes.ClassBuff, AdventureAssembly.Units
     - Name: RequiredCount
       Entry: 3
-      Data: 2
+      Data: 6
     - Name: GlobalCharacterModifiers
       Entry: 7
       Data: 2|System.Collections.Generic.List`1[[AdventureAssembly.Units.Modifiers.GlobalCharacterStatModifier,
@@ -120,7 +128,7 @@ MonoBehaviour:
       Data: 6|AdventureAssembly.Units.Classes.ClassBuff, AdventureAssembly.Units
     - Name: RequiredCount
       Entry: 3
-      Data: 3
+      Data: 12
     - Name: GlobalCharacterModifiers
       Entry: 7
       Data: 7|System.Collections.Generic.List`1[[AdventureAssembly.Units.Modifiers.GlobalCharacterStatModifier,
@@ -152,6 +160,68 @@ MonoBehaviour:
     - Name: ClassData
       Entry: 7
       Data: 10|System.Collections.Generic.List`1[[AdventureAssembly.Units.Classes.ClassData,
+        AdventureAssembly.Units]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 10
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 11|AdventureAssembly.Units.Classes.ClassBuff, AdventureAssembly.Units
+    - Name: RequiredCount
+      Entry: 3
+      Data: 20
+    - Name: GlobalCharacterModifiers
+      Entry: 7
+      Data: 12|System.Collections.Generic.List`1[[AdventureAssembly.Units.Modifiers.GlobalCharacterStatModifier,
+        AdventureAssembly.Units]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 13|AdventureAssembly.Units.Modifiers.GlobalCharacterStatModifier, AdventureAssembly.Units
+    - Name: _statName
+      Entry: 3
+      Data: 5
+    - Name: _statProcess
+      Entry: 7
+      Data: 14|AdventureAssembly.Units.Stats.FloatAddStatProcess, AdventureAssembly.Units
+    - Name: _value
+      Entry: 4
+      Data: 3
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: CharacterType
+      Entry: 3
+      Data: 0
+    - Name: SpecificClasses
+      Entry: 5
+      Data: true
+    - Name: ClassData
+      Entry: 7
+      Data: 15|System.Collections.Generic.List`1[[AdventureAssembly.Units.Classes.ClassData,
         AdventureAssembly.Units]], mscorlib
     - Name: 
       Entry: 12

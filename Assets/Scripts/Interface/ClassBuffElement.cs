@@ -41,6 +41,18 @@ namespace AdventureAssembly.Interface
                 _nameText.text = _classData.Name;
                 _descriptionTooltip.Text = _classData.Description;
                 _descriptionTooltip.Color = _classData.Color;
+
+                // Create progression text based on classbuff required count
+                _progressionText.text = string.Empty;
+                for (int i = 0; i < _classData.Buffs.Count; i++)
+                {
+                    string progressionText = _classData.Buffs[i].RequiredCount.ToString();
+                    if (i != _classData.Buffs.Count - 1)
+                    {
+                        progressionText += " > ";
+                    }
+                    _progressionText.text += progressionText;
+                }
             }
         }
 

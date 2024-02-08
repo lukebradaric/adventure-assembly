@@ -27,9 +27,21 @@ MonoBehaviour:
       Data: Pirate
     - Name: Description
       Entry: 1
-      Data: "Enemies killed have a 5% increased chance to drop currency.\r\n\nPirates
-        have an increased damage for each gold the player has.  \n\n(4) - 0.1%\n(8)
-        - 0.5%\n(16) - 1%\n"
+      Data: 'Pirates have 1% increased damage for each gold the player has.
+
+
+        Enemies
+        killed have an increased chance to drop currency.
+
+
+        (3) - 1%
+
+        (6)
+        - 2%
+
+        (9) - 3%
+
+'
     - Name: Color
       Entry: 7
       Data: UnityEngine.Color, UnityEngine.CoreModule
@@ -54,13 +66,13 @@ MonoBehaviour:
         AdventureAssembly.Units]], mscorlib
     - Name: 
       Entry: 12
-      Data: 1
+      Data: 3
     - Name: 
       Entry: 7
       Data: 1|AdventureAssembly.Units.Classes.ClassBuff, AdventureAssembly.Units
     - Name: RequiredCount
       Entry: 3
-      Data: 2
+      Data: 3
     - Name: GlobalCharacterModifiers
       Entry: 7
       Data: 2|System.Collections.Generic.List`1[[AdventureAssembly.Units.Modifiers.GlobalCharacterStatModifier,
@@ -79,7 +91,7 @@ MonoBehaviour:
       Data: 4|AdventureAssembly.Units.Stats.FloatAddStatProcess, AdventureAssembly.Units
     - Name: _value
       Entry: 4
-      Data: 1
+      Data: 0.01
     - Name: 
       Entry: 8
       Data: 
@@ -132,6 +144,204 @@ MonoBehaviour:
     - Name: ClassData
       Entry: 7
       Data: 8|System.Collections.Generic.List`1[[AdventureAssembly.Units.Classes.ClassData,
+        AdventureAssembly.Units]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 9|AdventureAssembly.Units.Classes.ClassBuff, AdventureAssembly.Units
+    - Name: RequiredCount
+      Entry: 3
+      Data: 6
+    - Name: GlobalCharacterModifiers
+      Entry: 7
+      Data: 10|System.Collections.Generic.List`1[[AdventureAssembly.Units.Modifiers.GlobalCharacterStatModifier,
+        AdventureAssembly.Units]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 11|AdventureAssembly.Units.Modifiers.GlobalCharacterStatModifier, AdventureAssembly.Units
+    - Name: _statName
+      Entry: 3
+      Data: 0
+    - Name: _statProcess
+      Entry: 7
+      Data: 12|AdventureAssembly.Units.Stats.FloatAddStatProcess, AdventureAssembly.Units
+    - Name: _value
+      Entry: 4
+      Data: 0.01
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: CharacterType
+      Entry: 3
+      Data: 0
+    - Name: SpecificClasses
+      Entry: 5
+      Data: true
+    - Name: ClassData
+      Entry: 7
+      Data: 13|System.Collections.Generic.List`1[[AdventureAssembly.Units.Classes.ClassData,
+        AdventureAssembly.Units]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 10
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 14|AdventureAssembly.Units.Modifiers.GlobalCharacterStatModifier, AdventureAssembly.Units
+    - Name: _statName
+      Entry: 3
+      Data: 4
+    - Name: _statProcess
+      Entry: 7
+      Data: 15|AdventureAssembly.Units.Stats.FloatAddStatProcess, AdventureAssembly.Units
+    - Name: _value
+      Entry: 4
+      Data: 0.02
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: CharacterType
+      Entry: 3
+      Data: 1
+    - Name: SpecificClasses
+      Entry: 5
+      Data: false
+    - Name: ClassData
+      Entry: 7
+      Data: 16|System.Collections.Generic.List`1[[AdventureAssembly.Units.Classes.ClassData,
+        AdventureAssembly.Units]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 17|AdventureAssembly.Units.Classes.ClassBuff, AdventureAssembly.Units
+    - Name: RequiredCount
+      Entry: 3
+      Data: 9
+    - Name: GlobalCharacterModifiers
+      Entry: 7
+      Data: 18|System.Collections.Generic.List`1[[AdventureAssembly.Units.Modifiers.GlobalCharacterStatModifier,
+        AdventureAssembly.Units]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 19|AdventureAssembly.Units.Modifiers.GlobalCharacterStatModifier, AdventureAssembly.Units
+    - Name: _statName
+      Entry: 3
+      Data: 0
+    - Name: _statProcess
+      Entry: 7
+      Data: 20|AdventureAssembly.Units.Stats.FloatAddStatProcess, AdventureAssembly.Units
+    - Name: _value
+      Entry: 4
+      Data: 0.01
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: CharacterType
+      Entry: 3
+      Data: 0
+    - Name: SpecificClasses
+      Entry: 5
+      Data: true
+    - Name: ClassData
+      Entry: 7
+      Data: 21|System.Collections.Generic.List`1[[AdventureAssembly.Units.Classes.ClassData,
+        AdventureAssembly.Units]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 10
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 22|AdventureAssembly.Units.Modifiers.GlobalCharacterStatModifier, AdventureAssembly.Units
+    - Name: _statName
+      Entry: 3
+      Data: 4
+    - Name: _statProcess
+      Entry: 7
+      Data: 23|AdventureAssembly.Units.Stats.FloatAddStatProcess, AdventureAssembly.Units
+    - Name: _value
+      Entry: 4
+      Data: 0.03
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: CharacterType
+      Entry: 3
+      Data: 1
+    - Name: SpecificClasses
+      Entry: 5
+      Data: false
+    - Name: ClassData
+      Entry: 7
+      Data: 24|System.Collections.Generic.List`1[[AdventureAssembly.Units.Classes.ClassData,
         AdventureAssembly.Units]], mscorlib
     - Name: 
       Entry: 12
