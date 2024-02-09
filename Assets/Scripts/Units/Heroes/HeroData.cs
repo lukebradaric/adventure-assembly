@@ -17,7 +17,7 @@ namespace AdventureAssembly.Units.Heroes
         [OdinSerialize] public Color BackgroundColor { get; set; } = Color.magenta;
 
         [BoxGroup("General")]
-        [MultiLineProperty]
+        [MultiLineProperty(5)]
         [OdinSerialize] public string Description { get; private set; }
 
         [BoxGroup("Stats")]

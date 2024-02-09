@@ -15,7 +15,7 @@ namespace AdventureAssembly.Units.Abilities
         // The hero this ability is on
         protected Hero _hero;
 
-        public void Initialize(Hero hero)
+        public virtual void Initialize(Hero hero)
         {
             _hero = hero;
             _currentTime = _hero.Stats.GetAbilitySpeed();
@@ -33,7 +33,7 @@ namespace AdventureAssembly.Units.Abilities
             OnExecute();
 
             // If bonus execution count is greater than zero, start execute coroutine
-            int bonusCount = (int)_hero.Stats.AbilityExecuteBonus.Value;
+            int bonusCount = _hero.Stats.GetAbilityExecuteCount() - 1;
             if (bonusCount > 0)
             {
                 CoroutineManager.Instance.StartCoroutine(ExecuteCoroutine(bonusCount));

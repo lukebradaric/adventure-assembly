@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: eeaf3900e8f5acf4aa7fdcca3b5af590, type: 3}
-  m_Name: SorcererAbilityAudio
+  m_Name: SorcererExplosionSound
   m_EditorClassIdentifier: 
-  _audioClip: {fileID: 8300000, guid: ea6ef4550c6bf3048aae41c6add54329, type: 3}
+  _audioClip: {fileID: 8300000, guid: 356f1058234a3dd4994687e400b06dd7, type: 3}
   _audioMixerGroup: {fileID: 0}
   _audioPriority: 128
-  _volume: 0.4
-  _pitch: 1.2
+  _volume: 0.36
+  _pitch: 1
   _pitchVariation: 0.1
   _ignorePlayRateLimit: 0

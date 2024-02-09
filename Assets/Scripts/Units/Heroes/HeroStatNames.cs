@@ -13,5 +13,6 @@
         CriticalMultiplier,
         CriticalBonus,
         AbilityExecuteBonus,
+        LuckMultiplier,
     }
 }

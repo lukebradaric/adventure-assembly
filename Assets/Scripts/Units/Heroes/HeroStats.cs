@@ -15,6 +15,7 @@ namespace AdventureAssembly.Units.Heroes
         public Stat<float> CriticalMultiplier { get; set; } = new Stat<float>(2f);
         public Stat<float> CriticalBonus { get; set; } = new Stat<float>(0f);
         public Stat<float> AbilityExecuteBonus { get; protected set; } = new Stat<float>(0f);
+        public Stat<float> LuckMultiplier { get; set; } = new Stat<float>(1f);
 
         public override void Initialize(Character unit)
         {
@@ -35,7 +36,7 @@ namespace AdventureAssembly.Units.Heroes
             {
                 damageData.IsCritical = true;
             }
-            
+
             // If attack is critical
             if (damageData.IsCritical)
             {
@@ -56,6 +57,16 @@ namespace AdventureAssembly.Units.Heroes
         {
             // Clamp ability speed to min ability speed
             return Mathf.Max(HeroData.AbilitySpeed, MinAbilitySpeed);
+        }
+
+        public int GetAbilityExecuteCount()
+        {
+            return 1 + (int)AbilityExecuteBonus.Value;
+        }
+
+        public float GetLuck(float luck)
+        {
+            return luck * LuckMultiplier.Value;
         }
     }
 }

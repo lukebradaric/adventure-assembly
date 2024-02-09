@@ -52,7 +52,7 @@ MonoBehaviour:
       Data: 10
     - Name: DestroyOnCollision
       Entry: 5
-      Data: false
+      Data: true
     - Name: ColliderRadius
       Entry: 4
       Data: 0.25
