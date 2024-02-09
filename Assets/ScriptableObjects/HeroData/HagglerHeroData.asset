@@ -10,15 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1eac94dc4647e3d4e8f45f4a3ed18890, type: 3}
-  m_Name: KnightHeroData
+  m_Name: HagglerHeroData
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 
     ReferencedUnityObjects:
-    - {fileID: 21300000, guid: 9c0a16dccfff82d4aaef9b7f0ba1afcf, type: 3}
+    - {fileID: 21300000, guid: a37a155c7b9769243961b9a668d46e3c, type: 3}
     - {fileID: 21300000, guid: 9711b0dce12d11f4cb5ef3daeed63baf, type: 3}
-    - {fileID: 11400000, guid: e46f9e6862677864280a67a35bf94ab2, type: 2}
+    - {fileID: 11400000, guid: 2e538e609051b984e97f90d488607820, type: 2}
+    - {fileID: 11400000, guid: bcee77103c840a1479adeb91ef6c6c34, type: 2}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -26,7 +27,7 @@ MonoBehaviour:
     SerializationNodes:
     - Name: Name
       Entry: 1
-      Data: Knight
+      Data: Haggler
     - Name: Sprite
       Entry: 10
       Data: 0
@@ -56,7 +57,7 @@ MonoBehaviour:
       Data: 
     - Name: MaxHealth
       Entry: 3
-      Data: 25
+      Data: 15
     - Name: Modifiers
       Entry: 7
       Data: 1|System.Collections.Generic.List`1[[AdventureAssembly.Units.Modifiers.CharacterModifier,
@@ -75,13 +76,13 @@ MonoBehaviour:
       Data: UnityEngine.Color, UnityEngine.CoreModule
     - Name: 
       Entry: 4
-      Data: 0
+      Data: 0.41568628
     - Name: 
       Entry: 4
-      Data: 0.6
+      Data: 0.266666681
     - Name: 
       Entry: 4
-      Data: 0.8588236
+      Data: 0.141176477
     - Name: 
       Entry: 4
       Data: 1
@@ -90,10 +91,11 @@ MonoBehaviour:
       Data: 
     - Name: Description
       Entry: 1
-      Data: He doesn't do anything yet. Kinda balls lowkey.
+      Data: Throws 1-5 coins at an enemy. (If the shop existed) when entering the
+        shop, get a free refresh.
     - Name: AbilitySpeed
       Entry: 4
-      Data: 1
+      Data: 0.5
     - Name: AbilitySound
       Entry: 6
       Data: 
@@ -119,7 +121,16 @@ MonoBehaviour:
         AdventureAssembly.Units]], mscorlib
     - Name: 
       Entry: 12
-      Data: 0
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 4|AdventureAssembly.Units.Abilities.ProjectileAbility, AdventureAssembly.Units
+    - Name: _projectileData
+      Entry: 10
+      Data: 3
+    - Name: 
+      Entry: 8
+      Data: 
     - Name: 
       Entry: 13
       Data: 
