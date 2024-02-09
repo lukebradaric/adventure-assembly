@@ -785,10 +785,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _key: 98
   _inputMode: 0
-  _specificHeroData: 0
+  _specificHeroData: 1
   _heroDataList: {fileID: 11400000, guid: 2ff3b874a7fa18943a841ec56bbb6a53, type: 2}
   _heroData:
-  - {fileID: 11400000, guid: 9a07ec281ac8aac479382708e48db83c, type: 2}
+  - {fileID: 11400000, guid: 0c47aa73b599e214cb44a6b411c1c748, type: 2}
 --- !u!1 &1066458580
 GameObject:
   m_ObjectHideFlags: 0

@@ -186,5 +186,13 @@ namespace AdventureAssembly.Units
 
             TargetCharacter = null;
         }
+
+        private void OnDrawGizmos()
+        {
+            foreach (ProjectileComponent component in Components)
+            {
+                component.OnDrawGizmos();
+            }
+        }
     }
 }

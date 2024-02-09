@@ -31,5 +31,18 @@ namespace AdventureAssembly.Units.Heroes
 
         [BoxGroup("Components")]
         [OdinSerialize] public List<Ability> Abilities { get; private set; } = new List<Ability>();
+
+        [BoxGroup("Tools")]
+        [Button]
+        public void Spawn()
+        {
+            if(HeroManager.Instance == null)
+            {
+                Debug.LogWarning("Game must be running!");
+                return;
+            }
+
+            ((HeroManager)HeroManager.Instance).SpawnHero(this);
+        }
     }
 }

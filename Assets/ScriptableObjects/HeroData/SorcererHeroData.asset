@@ -1,0 +1,140 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1eac94dc4647e3d4e8f45f4a3ed18890, type: 3}
+  m_Name: SorcererHeroData
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 21300000, guid: b9d7efcd39c2f184a92c5be398b6fcec, type: 3}
+    - {fileID: 21300000, guid: 9711b0dce12d11f4cb5ef3daeed63baf, type: 3}
+    - {fileID: 11400000, guid: f8befc5f6a835e24a855648d72e43ff8, type: 2}
+    - {fileID: 11400000, guid: a18450eb18ab7534dbbf8719cb77aaba, type: 2}
+    - {fileID: 11400000, guid: b257150db5c47fc4eab93f09d3de10b6, type: 2}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Name
+      Entry: 1
+      Data: Sorcerer
+    - Name: Sprite
+      Entry: 10
+      Data: 0
+    - Name: ShadowSprite
+      Entry: 10
+      Data: 1
+    - Name: ShadowOffset
+      Entry: 7
+      Data: UnityEngine.Vector2, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: -0.225
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: MovementTween
+      Entry: 7
+      Data: 0|AdventureAssembly.Units.Animation.DefaultUnitMovementTween, AdventureAssembly.Units
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: HurtSound
+      Entry: 6
+      Data: 
+    - Name: MaxHealth
+      Entry: 3
+      Data: 12
+    - Name: Modifiers
+      Entry: 7
+      Data: 1|System.Collections.Generic.List`1[[AdventureAssembly.Units.Modifiers.CharacterModifier,
+        AdventureAssembly.Units]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: BackgroundColor
+      Entry: 7
+      Data: UnityEngine.Color, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0.6509434
+    - Name: 
+      Entry: 4
+      Data: 0.218135282
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: Description
+      Entry: 1
+      Data: Flings a destructive fireball that explodes on impact, damaging enemies
+        hit and within a small radius.
+    - Name: AbilitySpeed
+      Entry: 4
+      Data: 1
+    - Name: AbilitySound
+      Entry: 10
+      Data: 2
+    - Name: ClassData
+      Entry: 7
+      Data: 2|System.Collections.Generic.List`1[[AdventureAssembly.Units.Classes.ClassData,
+        AdventureAssembly.Units]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 10
+      Data: 3
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: Abilities
+      Entry: 7
+      Data: 3|System.Collections.Generic.List`1[[AdventureAssembly.Units.Abilities.Ability,
+        AdventureAssembly.Units]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 4|AdventureAssembly.Units.Abilities.ProjectileAbility, AdventureAssembly.Units
+    - Name: _projectileData
+      Entry: 10
+      Data: 4
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 

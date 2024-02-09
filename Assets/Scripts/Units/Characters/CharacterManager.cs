@@ -98,6 +98,28 @@ namespace AdventureAssembly.Units.Characters
             return nearestUnit;
         }
 
+        /// <summary>
+        /// Returns a list of units within a radius from a position.
+        /// </summary>
+        /// <param name="position">The position to check</param>
+        /// <param name="radius">The radius to check</param>
+        /// <returns></returns>
+        public static List<T> GetUnitsInRadius(Vector2 position, float radius)
+        {
+            List<T> units = new List<T>();
+
+            foreach (T unit in Units)
+            {
+                if (Vector2.Distance(position, unit.Position) <= radius)
+                {
+                    units.Add(unit);
+                }
+            }
+
+            return units;
+
+        }
+
         public static bool HasUnitAtPosition(Vector2Int position)
         {
             // TODO: Optimize this using a dictionary?

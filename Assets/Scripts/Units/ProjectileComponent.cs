@@ -13,5 +13,7 @@ namespace AdventureAssembly.Units
 
         public abstract void OnEnable();
         public abstract void OnDisable();
+
+        public virtual void OnDrawGizmos() { }
     }
 }
