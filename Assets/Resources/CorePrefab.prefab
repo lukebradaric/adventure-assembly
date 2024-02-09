@@ -997,7 +997,8 @@ MonoBehaviour:
   _leveledUpScriptableEvent: {fileID: 11400000, guid: 58f59860885d82c4181d3cdb7d22325d, type: 2}
   _chestSpawnedScriptableEvent: {fileID: 11400000, guid: be6c83750e985ea47a10a795ca4289a2, type: 2}
   _chestUnitPrefab: {fileID: 5411363518447056152, guid: fdc6bb102eb87a049a2c5a85d0e4438c, type: 3}
-  _spawnBounds: {x: -13, y: 13, z: -7, w: 7}
+  _spawnBounds: {x: -6, y: 6, z: -5, w: 5}
+  _maxConcurrentChestCount: 5
 --- !u!1 &7295226944604647430
 GameObject:
   m_ObjectHideFlags: 0

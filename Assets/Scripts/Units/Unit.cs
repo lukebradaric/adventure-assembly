@@ -1,4 +1,5 @@
 ﻿using Sirenix.OdinInspector;
+using System;
 using UnityEngine;
 
 namespace AdventureAssembly.Units
@@ -18,6 +19,8 @@ namespace AdventureAssembly.Units
                 GridManager.UpdateUnitPosition(this, _position);
             }
         }
+
+        public event Action Destroyed;
 
         /// <summary>
         /// Initializes this Unit at position.
@@ -45,6 +48,7 @@ namespace AdventureAssembly.Units
         public virtual void Destroy()
         {
             GridManager.RemoveUnit(this);
+            Destroyed?.Invoke();
             Destroy(gameObject);
         }
     }

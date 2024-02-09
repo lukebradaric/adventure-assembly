@@ -98,7 +98,10 @@ MonoBehaviour:
         dies instantly.
 
 
-        Success chance: 10%, affected by luck'
+        Success chance: 5%
+
+        Success is affect by
+        Luck'
     - Name: AbilitySpeed
       Entry: 4
       Data: 1
@@ -139,7 +142,7 @@ MonoBehaviour:
       Data: 1
     - Name: _disappearChance
       Entry: 4
-      Data: 0.1
+      Data: 0.05
     - Name: _disappearDamage
       Entry: 3
       Data: 999
