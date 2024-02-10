@@ -165,3 +165,4 @@ MonoBehaviour:
   _circleCollider: {fileID: 3335121298453384356}
   _rigidbody: {fileID: 4204750353231459359}
   _enemyTag: {fileID: 11400000, guid: 831dc26f87f145d459817ba25be27793, type: 2}
+  _heroTag: {fileID: 11400000, guid: 8933cb286d22a4e429fd53a1a9fbd1cc, type: 2}
