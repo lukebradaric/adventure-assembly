@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using AdventureAssembly.Core.Events;
+using UnityEngine;
 using UnityEngine.Events;
 
 namespace AdventureAssembly.Units.Interactables

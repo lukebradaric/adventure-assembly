@@ -1,4 +1,4 @@
-﻿using TinyTools.ScriptableEvents;
+﻿using AdventureAssembly.Core.Events;
 using UnityEngine;
 
 namespace AdventureAssembly.Units.Interactables
@@ -7,10 +7,8 @@ namespace AdventureAssembly.Units.Interactables
     {
         [Space]
         [Header("Events")]
-        [Tooltip("Event called when the player levels up.")]
-        [SerializeField] private VoidScriptableEvent _leveledUpScriptableEvent;
         [Tooltip("Event called when a new chest has spawned.")]
-        [SerializeField] private VoidScriptableEvent _chestSpawnedScriptableEvent;
+        [SerializeField] private GameEvent _onChestSpawned;
 
         [Space]
         [Header("Prefabs")]
@@ -24,17 +22,7 @@ namespace AdventureAssembly.Units.Interactables
 
         private int _currentChestCount = 0;
 
-        private void OnEnable()
-        {
-            _leveledUpScriptableEvent.VoidEvent += OnLevelUp;
-        }
-
-        private void OnDisable()
-        {
-            _leveledUpScriptableEvent.VoidEvent -= OnLevelUp;
-        }
-
-        private void OnLevelUp()
+        public void OnPlayerLeveledUp()
         {
             if (_currentChestCount >= _maxConcurrentChestCount)
             {
@@ -49,7 +37,7 @@ namespace AdventureAssembly.Units.Interactables
             chestUnit.Destroyed += OnChestDestroyed;
             _currentChestCount++;
 
-            _chestSpawnedScriptableEvent?.Invoke();
+            _onChestSpawned?.Invoke(this, chestUnit);
         }
 
         private void OnChestDestroyed()

@@ -9,9 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3cf0ad7a70d53f041905c401917a91f2, type: 3}
-  m_Name: EnemyTagStringVariable
+  m_Script: {fileID: 11500000, guid: 003f1be5dcd3dc946b4d52ed5e1ac0f5, type: 3}
+  m_Name: OnChestOpened
   m_EditorClassIdentifier: 
-  _value: Enemy
-  _readOnly: 1
-  _description: The gameobject tag applied to Enemies.
+  _description: '(InteractabelUnit, null)
+
+
+    When a chest is opened on the grid.'

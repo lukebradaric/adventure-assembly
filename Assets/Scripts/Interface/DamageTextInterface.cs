@@ -1,4 +1,5 @@
-﻿using AdventureAssembly.Units.Enemies;
+﻿using AdventureAssembly.Units;
+using AdventureAssembly.Units.Enemies;
 using DG.Tweening;
 using UnityEngine;
 
@@ -9,10 +10,6 @@ namespace AdventureAssembly.Interface
     /// </summary>
     public class DamageTextInterface : MonoBehaviour
     {
-        [Space]
-        [Header("Events")]
-        [SerializeField] private EnemyScriptableEvent _enemyDamagedScriptableEvent;
-
         [Space]
         [Header("Prefabs")]
         [SerializeField] private DamageTextElement _damageTextPrefab;
@@ -27,17 +24,12 @@ namespace AdventureAssembly.Interface
         [SerializeField] private Ease _movementEase;
         [SerializeField] private Ease _fadeEase;
 
-        private void OnEnable()
+        public void OnEnemyDamaged(Component sender, object data)
         {
-            _enemyDamagedScriptableEvent.Event += OnEnemyDamaged;
+            OnEnemyDamaged((Enemy)sender, (DamageData)data);
         }
 
-        private void OnDisable()
-        {
-            _enemyDamagedScriptableEvent.Event += OnEnemyDamaged;
-        }
-
-        private void OnEnemyDamaged(Enemy enemy)
+        private void OnEnemyDamaged(Enemy enemy, DamageData damageData)
         {
             // TODO: We should probably pool these because its easy
 
@@ -47,14 +39,14 @@ namespace AdventureAssembly.Interface
             // Spawn damage text
             DamageTextElement damageText = Instantiate(_damageTextPrefab, spawnPosition, Quaternion.identity);
             damageText.transform.SetParent(this.transform);
-            damageText.Text = enemy.LastDamageTaken.Value.ToString();
-            if (enemy.LastDamageTaken.IsCritical)
+            damageText.Text = damageData.Value.ToString();
+            if (damageData.IsCritical)
             {
                 damageText.Color = _criticalColor;
             }
 
             // Get random direction to move damage text
-            Vector2 movement = enemy.LastDamageTaken.Direction;
+            Vector2 movement = damageData.Direction;
             while (movement == Vector2.zero)
             {
                 movement = new Vector2(Random.Range(-1f, 1f), Random.Range(-1f, 1f));
