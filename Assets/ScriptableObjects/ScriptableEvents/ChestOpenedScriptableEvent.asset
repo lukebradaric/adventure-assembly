@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f57bfac30102d0a40a60ebf2c1edbe93, type: 3}
   m_Name: ChestOpenedScriptableEvent
   m_EditorClassIdentifier: 
-  _description: The event fired when a chest spawns on the map.
+  _description: The event fired when a chest is opened.

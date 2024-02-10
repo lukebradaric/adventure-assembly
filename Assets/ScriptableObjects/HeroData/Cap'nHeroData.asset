@@ -95,7 +95,7 @@ MonoBehaviour:
       Data: Fire a high damage musket ball that pierces enemies.
     - Name: AbilitySpeed
       Entry: 4
-      Data: 1
+      Data: 2
     - Name: AbilitySound
       Entry: 10
       Data: 2

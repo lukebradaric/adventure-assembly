@@ -95,7 +95,7 @@ MonoBehaviour:
         shop, get a free refresh.
     - Name: AbilitySpeed
       Entry: 4
-      Data: 0.5
+      Data: 1
     - Name: AbilitySound
       Entry: 6
       Data: 

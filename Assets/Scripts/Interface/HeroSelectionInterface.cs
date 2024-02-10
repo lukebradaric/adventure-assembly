@@ -17,6 +17,7 @@ namespace AdventureAssembly.Interface
         [Space]
         [Header("Events")]
         [SerializeField] private VoidScriptableEvent _chestOpenedScriptableEvent;
+        [SerializeField] private VoidScriptableEvent _heroSelectedScriptableEvent;
 
         [Space]
         [Header("Prefabs")]
@@ -128,6 +129,9 @@ namespace AdventureAssembly.Interface
             }
 
             ((HeroManager)HeroManager.Instance).SpawnHero(heroData);
+
+            _heroSelectedScriptableEvent?.Invoke();
+
             Hide();
         }
     }

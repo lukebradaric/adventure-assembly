@@ -121,7 +121,7 @@ MonoBehaviour:
         strike damage.
     - Name: AbilitySpeed
       Entry: 4
-      Data: 0.5
+      Data: 1
     - Name: AbilitySound
       Entry: 10
       Data: 2

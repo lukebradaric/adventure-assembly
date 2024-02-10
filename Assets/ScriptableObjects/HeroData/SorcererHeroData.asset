@@ -77,13 +77,13 @@ MonoBehaviour:
       Data: UnityEngine.Color, UnityEngine.CoreModule
     - Name: 
       Entry: 4
-      Data: 0.6509434
+      Data: 0.8396226
     - Name: 
       Entry: 4
-      Data: 0.218135282
+      Data: 0.3880442
     - Name: 
       Entry: 4
-      Data: 0
+      Data: 0.186142743
     - Name: 
       Entry: 4
       Data: 1
@@ -96,7 +96,7 @@ MonoBehaviour:
         hit and within a small radius.
     - Name: AbilitySpeed
       Entry: 4
-      Data: 1
+      Data: 2
     - Name: AbilitySound
       Entry: 10
       Data: 2
