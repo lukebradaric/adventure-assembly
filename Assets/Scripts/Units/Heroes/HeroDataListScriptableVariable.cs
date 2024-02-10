@@ -17,18 +17,31 @@ namespace AdventureAssembly.Units.Heroes
             return _value.Random();
         }
 
-        public List<HeroData> GetRandom(int count)
+        public List<HeroData> GetRandom(int count, bool allowDuplicate = false)
         {
-            if(count == 0)
+            if (count == 0)
             {
                 Debug.LogWarning("Trying to get list of 0 elements.");
             }
 
             List<HeroData> heroData = new List<HeroData>();
-            for (int i = 0; i < count; i++)
+
+            if (allowDuplicate)
             {
-                heroData.Add(_value.Random());
+                for (int i = 0; i < count; i++)
+                {
+                    heroData.Add(_value.Random());
+                }
             }
+            else
+            {
+                List<HeroData> tempList = new List<HeroData>(_value);
+                for (int i = 0; i < count; i++)
+                {
+                    heroData.Add(tempList.RemoveRandom());
+                }
+            }
+
             return heroData;
         }
     }
