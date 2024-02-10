@@ -785,7 +785,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _key: 98
   _inputMode: 0
-  _specificHeroData: 1
+  _specificHeroData: 0
   _heroDataList: {fileID: 11400000, guid: 2ff3b874a7fa18943a841ec56bbb6a53, type: 2}
   _heroData:
   - {fileID: 11400000, guid: 0c47aa73b599e214cb44a6b411c1c748, type: 2}
@@ -1043,6 +1043,12 @@ MonoBehaviour:
   _spawnData:
   - EnemyData: {fileID: 11400000, guid: b930fad0151c80c4ebdf5bd12e71e15c, type: 2}
     Weight: 100
+  - EnemyData: {fileID: 11400000, guid: 15ea173c77e3bc343a2a3239eba22126, type: 2}
+    Weight: 50
+  - EnemyData: {fileID: 11400000, guid: 03d06a9321706ae4595dbf0c8663a2ba, type: 2}
+    Weight: 20
+  - EnemyData: {fileID: 11400000, guid: 9fd457d9fcdcfd44f96b9e874df6b8aa, type: 2}
+    Weight: 5
   - EnemyData: {fileID: 11400000, guid: 5485cf8b42f7ce94eb0cd1178dd55347, type: 2}
     Weight: 1
 --- !u!1 &1545723460

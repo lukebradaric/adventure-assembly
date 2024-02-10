@@ -15,7 +15,7 @@ MonoBehaviour:
   _audioClip: {fileID: 8300000, guid: 076c5e7a5c1d95745b97e8f653ee79e2, type: 3}
   _audioMixerGroup: {fileID: 0}
   _audioPriority: 128
-  _volume: 0.12
+  _volume: 0.08
   _pitch: 0.9
   _pitchVariation: 0.1
   _ignorePlayRateLimit: 0

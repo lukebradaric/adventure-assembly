@@ -1,5 +1,6 @@
 ﻿using AdventureAssembly.Core;
 using AdventureAssembly.Units.Characters;
+using UnityEngine;
 
 namespace AdventureAssembly.Units.Modifiers
 {
@@ -8,6 +9,8 @@ namespace AdventureAssembly.Units.Modifiers
     /// </summary>
     public class GoldenEnemyModifier : CharacterModifier
     {
+        [SerializeField] private float _goldPerHealthLost = 0.2f;
+
         public override void Apply(Character character)
         {
             character.Damaged += OnDamaged;
@@ -20,7 +23,9 @@ namespace AdventureAssembly.Units.Modifiers
 
         private void OnDamaged(DamageData data)
         {
-            GoldManager.Instance.AddGold(data.Target.transform.position, data.Value);
+            // Gold earned = Max between damaged taken and current health times goldperhealth lost
+            int gold = (int)Mathf.Round(Mathf.Min(data.Value, data.Target.CurrentHealth) * _goldPerHealthLost);
+            GoldManager.Instance.AddGold(data.Target.transform.position, gold);
         }
     }
 }

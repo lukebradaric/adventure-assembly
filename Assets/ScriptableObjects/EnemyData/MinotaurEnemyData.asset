@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8c3d5c0a35e457f4fbbb24c3a1552ab2, type: 3}
-  m_Name: GoldenRatEnemyData
+  m_Name: MinotaurEnemyData
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 
     ReferencedUnityObjects:
-    - {fileID: 21300000, guid: be950adc435ec134fb13292a2027cea9, type: 3}
+    - {fileID: 21300000, guid: 3ec3847967d0cfa48ad1a02f0c345e7e, type: 3}
     - {fileID: 21300000, guid: 9711b0dce12d11f4cb5ef3daeed63baf, type: 3}
     - {fileID: 11400000, guid: 2138459d0bf80524cbb69bce43708a97, type: 2}
     SerializedBytesString: 
@@ -26,7 +26,7 @@ MonoBehaviour:
     SerializationNodes:
     - Name: Name
       Entry: 1
-      Data: Golden Rat
+      Data: Minotaur
     - Name: Sprite
       Entry: 10
       Data: 0
@@ -56,23 +56,14 @@ MonoBehaviour:
       Data: 2
     - Name: MaxHealth
       Entry: 3
-      Data: 50
+      Data: 25
     - Name: Modifiers
       Entry: 7
       Data: 1|System.Collections.Generic.List`1[[AdventureAssembly.Units.Modifiers.CharacterModifier,
         AdventureAssembly.Units]], mscorlib
     - Name: 
       Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 7
-      Data: 2|AdventureAssembly.Units.Modifiers.GoldenEnemyModifier, AdventureAssembly.Units
-    - Name: _goldPerHealthLost
-      Entry: 4
-      Data: 0.2
-    - Name: 
-      Entry: 8
-      Data: 
+      Data: 0
     - Name: 
       Entry: 13
       Data: 
@@ -81,19 +72,19 @@ MonoBehaviour:
       Data: 
     - Name: KillExperience
       Entry: 3
-      Data: 10
+      Data: 1
     - Name: BaseDamage
       Entry: 3
-      Data: 0
+      Data: 5
     - Name: AttackTween
       Entry: 7
-      Data: 3|AdventureAssembly.Units.Animation.DefaultEnemyAttackTween, AdventureAssembly.Units
+      Data: 2|AdventureAssembly.Units.Animation.DefaultEnemyAttackTween, AdventureAssembly.Units
     - Name: 
       Entry: 8
       Data: 
     - Name: Navigation
       Entry: 7
-      Data: 4|AdventureAssembly.Units.Enemies.LinearEnemyNavigation, AdventureAssembly.Units
+      Data: 3|AdventureAssembly.Units.Enemies.DefaultEnemyNavigation, AdventureAssembly.Units
     - Name: 
       Entry: 8
       Data: 
