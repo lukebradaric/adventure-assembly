@@ -28,9 +28,15 @@ namespace AdventureAssembly.Units.Characters
         /// </summary>
         public DamageData LastDamageTaken { get; protected set; } = null;
 
+        /// <summary>
+        /// The last HealData that this unit took. Null by default.
+        /// </summary>
+        public HealData LastHealTaken { get; protected set; } = null;
+
         public Vector2Int LastPosition { get; protected set; }
 
         public event Action<DamageData> Damaged;
+        public event Action<HealData> Healed;
         public event Action<Character> Died;
 
         public List<CharacterModifier> Modifiers { get; protected set; } = new List<CharacterModifier>();
@@ -107,6 +113,30 @@ namespace AdventureAssembly.Units.Characters
         }
 
         /// <summary>
+        /// Heals this unit. HealData calculated beforehand.
+        /// </summary>
+        /// <param name="healData">The HealData to heal this unit</param>
+        public virtual void Heal(HealData healData)
+        {
+            if (IsDead)
+            {
+                return;
+            }
+
+            CurrentHealth += healData.Value;
+
+            LastHealTaken = healData;
+
+            Healed?.Invoke(healData);
+            OnHealed(healData);
+
+            if (CurrentHealth > CharacterData.MaxHealth)
+            {
+                CurrentHealth = CharacterData.MaxHealth;
+            }
+        }
+
+        /// <summary>
         /// Kills this unit.
         /// </summary>
         public virtual void Die()
@@ -151,6 +181,15 @@ namespace AdventureAssembly.Units.Characters
         protected virtual void OnTakeDamage(DamageData damageData)
         {
             CharacterData.HurtSound?.Play();
+        }
+
+        /// <summary>
+        /// Called when this unit is healed.
+        /// </summary>
+        /// <param name="healData">The HealData that this unit took.</param>
+        protected virtual void OnHealed(HealData healData)
+        {
+
         }
 
         /// <summary>

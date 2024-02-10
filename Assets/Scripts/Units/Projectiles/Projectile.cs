@@ -18,6 +18,7 @@ namespace AdventureAssembly.Units.Projectiles
         [SerializeField] private CircleCollider2D _circleCollider;
         [SerializeField] private Rigidbody2D _rigidbody;
         [SerializeField] private StringScriptableVariable _enemyTag;
+        [SerializeField] private StringScriptableVariable _heroTag;
 
         public ProjectileData ProjectileData { get; protected set; }
         public Hero Hero { get; protected set; }
@@ -62,7 +63,16 @@ namespace AdventureAssembly.Units.Projectiles
         }
 
         public Action Collision;
+        
+        /// <summary>
+        /// When this projectile colliders with an enemy.
+        /// </summary>
         public Action<Enemy> EnemyCollision;
+
+        /// <summary>
+        /// When this projectile overlaps with a hero.
+        /// </summary>
+        public Action<Hero> HeroTrigger;
 
         public void Initialize(ProjectileData projectileData, Hero hero, Vector2 direction)
         {
@@ -155,17 +165,17 @@ namespace AdventureAssembly.Units.Projectiles
 
         private void OnTriggerEnter2D(Collider2D collider)
         {
-            if (!collider.CompareTag(_enemyTag.Value))
+            // When this projectile overlaps with a hero
+            if (collider.CompareTag(_heroTag.Value) && TryGetComponent<Hero>(out Hero hero))
             {
-                return;
+                HeroTrigger?.Invoke(hero);
             }
 
-            if (!collider.TryGetComponent<Enemy>(out Enemy enemy))
+            // When this projectile collides with an enemy
+            if (collider.CompareTag(_enemyTag.Value) && collider.TryGetComponent<Enemy>(out Enemy enemy))
             {
-                return;
+                OnEnemyCollision(enemy);
             }
-
-            OnEnemyCollision(enemy);
         }
 
         private void OnEnemyCollision(Enemy enemy)
