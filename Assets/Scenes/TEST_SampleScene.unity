@@ -1465,7 +1465,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _enemyPrefab: {fileID: 3098733434465147185, guid: e861db9d7b4f5af43aa07f6ec4431335, type: 3}
-  _updateInterval: 1
+  _updateInterval: 1.3
   _maxEnemyCount: 300
   _spawnRadius: {x: 18, y: 22}
   _spawnCurve:
@@ -1490,7 +1490,7 @@ MonoBehaviour:
       inWeight: 0.21714732
       outWeight: 0.30428374
     - serializedVersion: 3
-      time: 45
+      time: 55
       value: 3
       inSlope: -0.097537644
       outSlope: -0.097537644
@@ -1523,11 +1523,11 @@ MonoBehaviour:
   - EnemyData: {fileID: 11400000, guid: b930fad0151c80c4ebdf5bd12e71e15c, type: 2}
     Weight: 100
   - EnemyData: {fileID: 11400000, guid: 15ea173c77e3bc343a2a3239eba22126, type: 2}
-    Weight: 50
+    Weight: 40
   - EnemyData: {fileID: 11400000, guid: 03d06a9321706ae4595dbf0c8663a2ba, type: 2}
-    Weight: 20
+    Weight: 16
   - EnemyData: {fileID: 11400000, guid: 9fd457d9fcdcfd44f96b9e874df6b8aa, type: 2}
-    Weight: 5
+    Weight: 3
   - EnemyData: {fileID: 11400000, guid: 5485cf8b42f7ce94eb0cd1178dd55347, type: 2}
     Weight: 1
 --- !u!1 &1545723460

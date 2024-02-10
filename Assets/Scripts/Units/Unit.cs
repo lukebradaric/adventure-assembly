@@ -33,13 +33,18 @@ namespace AdventureAssembly.Units
         }
 
         /// <summary>
-        /// Sets this units position directly. Will also move the actual transform of the object.
+        /// Sets this units position directly.
         /// </summary>
         /// <param name="position">The position to move to</param>
-        public void SetPosition(Vector2Int position)
+        /// <param name="teleport">Should the unit teleport to the new position</param>
+        public void SetPosition(Vector2Int position, bool teleport = true)
         {
             Position = position;
-            transform.position = (Vector2)Position;
+
+            if (teleport)
+            {
+                transform.position = (Vector2)Position;
+            }
         }
 
         /// <summary>

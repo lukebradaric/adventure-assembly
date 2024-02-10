@@ -82,6 +82,8 @@ namespace AdventureAssembly.Units.Heroes
 
         private void OnHeroDied(Character unit)
         {
+            RepairUnitPositions((Hero)unit);
+
             RemoveUnit((Hero)unit);
         }
 
@@ -185,6 +187,7 @@ namespace AdventureAssembly.Units.Heroes
 
                 // Move hero to new position
                 hero.Move(movement);
+
                 position = hero.LastPosition;
             }
 
@@ -196,6 +199,18 @@ namespace AdventureAssembly.Units.Heroes
 
             // Store last movement vector
             LastMovementVector = NextMovementVector;
+        }
+
+        /// <summary>
+        /// Repairs the empty spaces in the snake by setting Hero positions to the empty space in front of them.
+        /// </summary>
+        /// <param name="hero">The hero that died</param>
+        private void RepairUnitPositions(Hero hero)
+        {
+            for (int i = Units.Count - 1; i > Units.IndexOf(hero); i--)
+            {
+                Units[i].SetPosition(Units[i - 1].Position, false);
+            }
         }
 
         private bool IsHazardAtPosition(Vector2Int position)
