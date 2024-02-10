@@ -9,7 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f57bfac30102d0a40a60ebf2c1edbe93, type: 3}
-  m_Name: ChestOpenedScriptableEvent
+  m_Script: {fileID: 11500000, guid: adc268886b32f7f4baa1998317966600, type: 3}
+  m_Name: InterfaceTweenDuration
   m_EditorClassIdentifier: 
-  _description: The event fired when a chest is opened.
+  _value: 0.5
+  _readOnly: 1
+  _description: The time it takes for interface elements to show/hide.

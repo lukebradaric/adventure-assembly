@@ -1,5 +1,6 @@
 ﻿using AdventureAssembly.Core;
 using AdventureAssembly.Units.Characters;
+using TinyTools.ScriptableEvents;
 using UnityEngine;
 
 namespace AdventureAssembly.Units.Enemies
@@ -8,7 +9,7 @@ namespace AdventureAssembly.Units.Enemies
     {
         [Space]
         [Header("Events")]
-        [SerializeField] private EnemyScriptableEvent _enemyDamagedScriptableEvent;
+        [SerializeField] private GameScriptableEvent _onEnemyDamaged;
 
         new public EnemyStats Stats => (EnemyStats)base.Stats;
         public EnemyData EnemyData { get; private set; }
@@ -45,7 +46,7 @@ namespace AdventureAssembly.Units.Enemies
         public void OnNavigate()
         {
             // If this enemy is stunned, do not navigate
-            if(StatusEffects.Contains(StatusEffect.Stunned))
+            if (StatusEffects.Contains(StatusEffect.Stunned))
             {
                 return;
             }
@@ -70,7 +71,7 @@ namespace AdventureAssembly.Units.Enemies
         protected override void OnTakeDamage(DamageData damageData)
         {
             base.OnTakeDamage(damageData);
-            _enemyDamagedScriptableEvent?.Invoke(this);
+            _onEnemyDamaged?.Invoke(this, damageData);
         }
     }
 }

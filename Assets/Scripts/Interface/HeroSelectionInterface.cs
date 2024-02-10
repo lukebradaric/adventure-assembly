@@ -16,8 +16,7 @@ namespace AdventureAssembly.Interface
     {
         [Space]
         [Header("Events")]
-        [SerializeField] private VoidScriptableEvent _chestOpenedScriptableEvent;
-        [SerializeField] private VoidScriptableEvent _heroSelectedScriptableEvent;
+        [SerializeField] private GameScriptableEvent _onHeroSelected;
 
         [Space]
         [Header("Prefabs")]
@@ -41,17 +40,7 @@ namespace AdventureAssembly.Interface
 
         private List<HeroSelectionElement> _heroSelectionElements = new List<HeroSelectionElement>();
 
-        private void OnEnable()
-        {
-            _chestOpenedScriptableEvent.VoidEvent += OnOpenHeroChest;
-        }
-
-        private void OnDisable()
-        {
-            _chestOpenedScriptableEvent.VoidEvent -= OnOpenHeroChest;
-        }
-
-        private void OnOpenHeroChest()
+        public void OnChestOpened(GameEventData gameEventData)
         {
             Show(_heroDataList.GetRandom(3));
         }
@@ -130,7 +119,7 @@ namespace AdventureAssembly.Interface
 
             ((HeroManager)HeroManager.Instance).SpawnHero(heroData);
 
-            _heroSelectedScriptableEvent?.Invoke();
+            _onHeroSelected.Invoke(this, heroData);
 
             Hide();
         }

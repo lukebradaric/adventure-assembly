@@ -9,8 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ddb34ae5cb24e75478f8e1a408878a3e, type: 3}
-  m_Name: EnemyDamagedScriptableEvent
+  m_Script: {fileID: 11500000, guid: 3cf0ad7a70d53f041905c401917a91f2, type: 3}
+  m_Name: EnemyTagString
   m_EditorClassIdentifier: 
-  _description: The event fired when an enemy takes damage. The enemy that took damage
-    is provided as an argument.
+  _value: Enemy
+  _readOnly: 1
+  _description: The gameobject tag applied to Enemies.

@@ -50,6 +50,11 @@ namespace AdventureAssembly.Units.Heroes
         {
             TickManager.TickUpdate -= OnTurnUpdate;
             InputManager.MovementVector.ValueChanged -= OnMovementVectorChanged;
+
+            if (_updateCoroutine != null)
+            {
+                StopCoroutine(_updateCoroutine);
+            }
         }
 
         private IEnumerator UpdateCoroutine()
@@ -80,19 +85,28 @@ namespace AdventureAssembly.Units.Heroes
             RemoveUnit((Hero)unit);
         }
 
+        private void OnGameLost()
+        {
+            StopCoroutine(_updateCoroutine);
+            _updateCoroutine = null;
+            Debug.Log("You lost the game!");
+            this.enabled = false;
+        }
+
         private void OnTurnUpdate()
         {
+            // If there are no Hero units left, you lose :)
+            if (Units.Count == 0)
+            {
+                OnGameLost();
+                return;
+            }
+
             UpdateUnitPositions();
         }
 
         private void UpdateUnitPositions()
         {
-            // If there are no Hero units left, you lose :)
-            if (Units.Count == 0)
-            {
-                return;
-            }
-
             Hero firstHero = Units.First();
 
             // Move the start of the party (Indicator and player root)

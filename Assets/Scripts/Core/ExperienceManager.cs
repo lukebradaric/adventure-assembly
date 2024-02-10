@@ -11,7 +11,7 @@ namespace AdventureAssembly.Core
     {
         [Space]
         [Header("Events")]
-        [SerializeField] private VoidScriptableEvent _leveledUpScriptableEvent;
+        [SerializeField] private GameScriptableEvent _onPlayerLeveledUp;
 
         private int _currentExperience = 0;
         private int currentLevel = 0;
@@ -29,7 +29,7 @@ namespace AdventureAssembly.Core
             if (newLevel != currentLevel)
             {
                 currentLevel = newLevel;
-                _leveledUpScriptableEvent?.Invoke();
+                _onPlayerLeveledUp?.Invoke(this, newLevel);
             }
         }
     }

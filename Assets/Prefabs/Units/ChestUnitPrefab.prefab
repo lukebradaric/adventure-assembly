@@ -194,14 +194,14 @@ MonoBehaviour:
   _interactEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11400000, guid: cccd2151a7ff8de4fa9cce831ede2159, type: 2}
-        m_TargetAssemblyTypeName: TinyTools.ScriptableEvents.VoidScriptableEvent,
+      - m_Target: {fileID: 11400000, guid: 9cfd809d50b474b4d91b8982db7bf90f, type: 2}
+        m_TargetAssemblyTypeName: TinyTools.ScriptableEvents.GameScriptableEvent,
           TinyTools
         m_MethodName: Invoke
-        m_Mode: 1
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 5411363518447056152}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Component, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
