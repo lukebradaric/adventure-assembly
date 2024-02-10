@@ -124,10 +124,25 @@ MonoBehaviour:
       Data: 1
     - Name: 
       Entry: 7
-      Data: 4|AdventureAssembly.Units.Abilities.ProjectileAbility, AdventureAssembly.Units
+      Data: 4|AdventureAssembly.Units.Abilities.BurstProjectileAbility, AdventureAssembly.Units
     - Name: _projectileData
       Entry: 10
       Data: 3
+    - Name: _secondsBetweenShots
+      Entry: 4
+      Data: 0.075
+    - Name: _randomBetweenTwoConstants
+      Entry: 5
+      Data: true
+    - Name: _projectileCount
+      Entry: 3
+      Data: 3
+    - Name: _minProjectiles
+      Entry: 3
+      Data: 1
+    - Name: _maxProjectiles
+      Entry: 3
+      Data: 5
     - Name: 
       Entry: 8
       Data: 
