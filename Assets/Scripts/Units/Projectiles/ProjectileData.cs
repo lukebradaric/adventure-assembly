@@ -6,7 +6,7 @@ using Sirenix.Serialization;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace AdventureAssembly.Units
+namespace AdventureAssembly.Units.Projectiles
 {
     [CreateAssetMenu(menuName = Constants.ScriptableObjectRootPath + "ProjectileData")]
     public class ProjectileData : SerializedScriptableObject

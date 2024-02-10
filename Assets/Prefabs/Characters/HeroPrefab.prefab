@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 214437068386957152}
   - component: {fileID: 721636767718559845}
   - component: {fileID: -890123428954646306}
+  - component: {fileID: -7689209720288723052}
   m_Layer: 0
   m_Name: HeroPrefab
   m_TagString: Hero
@@ -90,6 +91,7 @@ MonoBehaviour:
     - {fileID: 8315645397188149435}
     - {fileID: 8711210509025312269}
     - {fileID: -890123428954646306}
+    - {fileID: -7689209720288723052}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -104,6 +106,9 @@ MonoBehaviour:
     - Name: Stats
       Entry: 10
       Data: 2
+    - Name: StatusEffects
+      Entry: 10
+      Data: 3
     - Name: Abilities
       Entry: 7
       Data: 0|System.Collections.Generic.List`1[[AdventureAssembly.Units.Abilities.Ability,
@@ -138,6 +143,18 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes: []
+--- !u!114 &-7689209720288723052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3871126958874214877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba39efd8e625a26499eb7eb4f9211c06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7816698915213867670
 GameObject:
   m_ObjectHideFlags: 0

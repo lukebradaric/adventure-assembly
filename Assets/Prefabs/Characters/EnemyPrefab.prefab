@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: -2141143125498980962}
   - component: {fileID: 3098733434465147185}
   - component: {fileID: -2632185598829885803}
+  - component: {fileID: -6561852131461057103}
   m_Layer: 0
   m_Name: EnemyPrefab
   m_TagString: Enemy
@@ -90,6 +91,7 @@ MonoBehaviour:
     - {fileID: 8120395992605780396}
     - {fileID: 7635150495067849036}
     - {fileID: -2632185598829885803}
+    - {fileID: -6561852131461057103}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -104,6 +106,9 @@ MonoBehaviour:
     - Name: Stats
       Entry: 10
       Data: 2
+    - Name: StatusEffects
+      Entry: 10
+      Data: 3
   _enemyDamagedScriptableEvent: {fileID: 11400000, guid: d23af1a85d093574f9a36a60a8115834, type: 2}
 --- !u!114 &-2632185598829885803
 MonoBehaviour:
@@ -126,6 +131,18 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes: []
+--- !u!114 &-6561852131461057103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 639080517317335966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba39efd8e625a26499eb7eb4f9211c06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5824801624664947533
 GameObject:
   m_ObjectHideFlags: 0
