@@ -11,7 +11,7 @@ namespace AdventureAssembly.Units.Projectiles
     public class StatusEffectProjectileComponent : ProjectileComponent
     {
         [BoxGroup("Settings")]
-        [SerializeField] private StatusEffects _statusEffect;
+        [SerializeField] private StatusEffect _statusEffect;
 
         [BoxGroup("Settings")]
         [SerializeField] private bool _isTemporary;

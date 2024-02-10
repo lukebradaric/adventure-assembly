@@ -6,19 +6,33 @@ namespace AdventureAssembly.Units.Characters
 {
     public class CharacterStatusEffects : MonoBehaviour
     {
-        private HashSet<StatusEffects> _permanentEffects = new HashSet<StatusEffects>();
-        private Dictionary<StatusEffects, Coroutine> _temporaryEffects = new Dictionary<StatusEffects, Coroutine>();
+        private HashSet<StatusEffect> _permanentEffects = new HashSet<StatusEffect>();
+        private Dictionary<StatusEffect, Coroutine> _temporaryEffects = new Dictionary<StatusEffect, Coroutine>();
 
-        public bool Contains(StatusEffects statusEffect)
+        public bool Contains(StatusEffect statusEffect)
         {
             return _permanentEffects.Contains(statusEffect) || _temporaryEffects.ContainsKey(statusEffect);
         }
 
-        public void Add(StatusEffects statusEffect, float duration = -1)
+        public void Add(StatusEffect statusEffect, float duration = -1)
         {
             if (duration == -1)
             {
+                // If already in permanent, return
+                if (_permanentEffects.Contains(statusEffect))
+                {
+                    return;
+                }
+
                 _permanentEffects.Add(statusEffect);
+                return;
+            }
+
+            // If effect already in temporary, restart coroutine with new duration
+            if (_temporaryEffects.ContainsKey(statusEffect))
+            {
+                StopCoroutine(_temporaryEffects[statusEffect]);
+                _temporaryEffects[statusEffect] = StartCoroutine(StatusEffectCoroutine(statusEffect, duration));
                 return;
             }
 
@@ -26,7 +40,7 @@ namespace AdventureAssembly.Units.Characters
             _temporaryEffects.Add(statusEffect, StartCoroutine(StatusEffectCoroutine(statusEffect, duration)));
         }
 
-        public void Remove(StatusEffects statusEffect)
+        public void Remove(StatusEffect statusEffect)
         {
             if (_permanentEffects.Contains(statusEffect))
             {
@@ -43,7 +57,7 @@ namespace AdventureAssembly.Units.Characters
             }
         }
 
-        private IEnumerator StatusEffectCoroutine(StatusEffects statusEffect, float duration)
+        private IEnumerator StatusEffectCoroutine(StatusEffect statusEffect, float duration)
         {
             yield return new WaitForSeconds(duration);
             _temporaryEffects.Remove(statusEffect);
