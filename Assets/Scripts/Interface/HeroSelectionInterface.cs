@@ -1,8 +1,8 @@
 ﻿using AdventureAssembly.Core;
-using AdventureAssembly.Core.Events;
 using AdventureAssembly.Units.Heroes;
 using DG.Tweening;
 using System.Collections.Generic;
+using TinyTools.ScriptableEvents;
 using TinyTools.ScriptableVariables;
 using UnityEngine;
 using UnityEngine.UI;
@@ -16,7 +16,7 @@ namespace AdventureAssembly.Interface
     {
         [Space]
         [Header("Events")]
-        [SerializeField] private GameEvent _onHeroSelected;
+        [SerializeField] private GameScriptableEvent _onHeroSelected;
 
         [Space]
         [Header("Prefabs")]
@@ -40,7 +40,7 @@ namespace AdventureAssembly.Interface
 
         private List<HeroSelectionElement> _heroSelectionElements = new List<HeroSelectionElement>();
 
-        private void OnChestOpened()
+        public void OnChestOpened(GameEventData gameEventData)
         {
             Show(_heroDataList.GetRandom(3));
         }

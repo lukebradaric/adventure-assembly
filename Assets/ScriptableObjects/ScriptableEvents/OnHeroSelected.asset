@@ -9,7 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 003f1be5dcd3dc946b4d52ed5e1ac0f5, type: 3}
-  m_Name: OnPlayerLost
+  m_Script: {fileID: 11500000, guid: 9a6c2b13f06e63147b735fa74337e1c1, type: 3}
+  m_Name: OnHeroSelected
   m_EditorClassIdentifier: 
-  _description: When the player runs out of heroes and loses a run.
+  _description: '(HeroSelectionInterface, HeroData)
+
+
+    When the player selects
+    a hero from the selection interface.'

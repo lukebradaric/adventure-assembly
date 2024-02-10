@@ -25,7 +25,7 @@ namespace TinyTools.ScriptableEvents
     {
         [Space]
         [Header("Options")]
-        [TextArea][SerializeField] private string _description;
+        [TextArea(5, 10)][SerializeField] private string _description;
 
         protected readonly List<Action<object>> _listeners = new List<Action<object>>();
 

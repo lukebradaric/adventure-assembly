@@ -1,6 +1,6 @@
 ﻿using AdventureAssembly.Core;
-using AdventureAssembly.Core.Events;
 using AdventureAssembly.Units.Characters;
+using TinyTools.ScriptableEvents;
 using UnityEngine;
 
 namespace AdventureAssembly.Units.Enemies
@@ -9,7 +9,7 @@ namespace AdventureAssembly.Units.Enemies
     {
         [Space]
         [Header("Events")]
-        [SerializeField] private GameEvent _onEnemyDamaged;
+        [SerializeField] private GameScriptableEvent _onEnemyDamaged;
 
         new public EnemyStats Stats => (EnemyStats)base.Stats;
         public EnemyData EnemyData { get; private set; }

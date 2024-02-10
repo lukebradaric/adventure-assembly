@@ -1,6 +1,7 @@
 ﻿using AdventureAssembly.Units;
 using AdventureAssembly.Units.Enemies;
 using DG.Tweening;
+using TinyTools.ScriptableEvents;
 using UnityEngine;
 
 namespace AdventureAssembly.Interface
@@ -24,9 +25,9 @@ namespace AdventureAssembly.Interface
         [SerializeField] private Ease _movementEase;
         [SerializeField] private Ease _fadeEase;
 
-        public void OnEnemyDamaged(Component sender, object data)
+        public void OnEnemyDamaged(GameEventData gameEventData)
         {
-            OnEnemyDamaged((Enemy)sender, (DamageData)data);
+            OnEnemyDamaged((Enemy)gameEventData.Sender, (DamageData)gameEventData.Data);
         }
 
         private void OnEnemyDamaged(Enemy enemy, DamageData damageData)

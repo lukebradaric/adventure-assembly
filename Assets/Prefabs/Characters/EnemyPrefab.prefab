@@ -109,7 +109,7 @@ MonoBehaviour:
     - Name: StatusEffects
       Entry: 10
       Data: 3
-  _onEnemyDamaged: {fileID: 11400000, guid: 8fa40f4a356caea4d94311188e650a79, type: 2}
+  _onEnemyDamaged: {fileID: 11400000, guid: 3d57707407b0ed64385333b5b78ad981, type: 2}
 --- !u!114 &-2632185598829885803
 MonoBehaviour:
   m_ObjectHideFlags: 0

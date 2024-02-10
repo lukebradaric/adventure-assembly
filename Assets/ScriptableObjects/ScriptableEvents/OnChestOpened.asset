@@ -9,11 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 003f1be5dcd3dc946b4d52ed5e1ac0f5, type: 3}
-  m_Name: OnPlayerLeveledUp
+  m_Script: {fileID: 11500000, guid: 9a6c2b13f06e63147b735fa74337e1c1, type: 3}
+  m_Name: OnChestOpened
   m_EditorClassIdentifier: 
-  _description: '(ExperienceManager, Int newLevel)
+  _description: '(InteractableUnit, null)
 
 
-    When the player levels up
-    from experience. (Used for determining when to spawn chests)'
+    When a chest is opened on the grid.'

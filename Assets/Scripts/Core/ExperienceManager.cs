@@ -1,5 +1,5 @@
-﻿using AdventureAssembly.Core.Events;
-using TinyTools.Generics;
+﻿using TinyTools.Generics;
+using TinyTools.ScriptableEvents;
 using UnityEngine;
 
 namespace AdventureAssembly.Core
@@ -11,7 +11,7 @@ namespace AdventureAssembly.Core
     {
         [Space]
         [Header("Events")]
-        [SerializeField] private GameEvent _onPlayerLeveledUp;
+        [SerializeField] private GameScriptableEvent _onPlayerLeveledUp;
 
         private int _currentExperience = 0;
         private int currentLevel = 0;
