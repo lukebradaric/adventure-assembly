@@ -130,10 +130,13 @@ MonoBehaviour:
       Data: 3
     - Name: _secondsBetweenShots
       Entry: 4
-      Data: 0.1
+      Data: 0.075
     - Name: _randomBetweenTwoConstants
       Entry: 5
       Data: true
+    - Name: _projectileCount
+      Entry: 3
+      Data: 3
     - Name: _minProjectiles
       Entry: 3
       Data: 1

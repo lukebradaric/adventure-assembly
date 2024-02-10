@@ -19,9 +19,13 @@ namespace AdventureAssembly.Units.Abilities
         [SerializeField] private bool _randomBetweenTwoConstants;
 
         [BoxGroup("Settings")]
+        [HideIf(nameof(_randomBetweenTwoConstants))]
+        [SerializeField] private int _projectileCount;
+
+        [BoxGroup("Settings")]
         [ShowIf(nameof(_randomBetweenTwoConstants))]
         [SerializeField] private int _minProjectiles;
-        
+
         [BoxGroup("Settings")]
         [ShowIf(nameof(_randomBetweenTwoConstants))]
         [SerializeField] private int _maxProjectiles;
@@ -41,17 +45,25 @@ namespace AdventureAssembly.Units.Abilities
 
         private IEnumerator FireCoroutine(Enemy enemy)
         {
+            Vector2 direction = (enemy.transform.position - _hero.transform.position).normalized;
+
+            int count = _randomBetweenTwoConstants ? Random.Range(_minProjectiles, _maxProjectiles + 1) : _projectileCount;
+
             // number of times to shoot
-            for (int i = 0; i < Random.Range(_minProjectiles, _maxProjectiles + 1); i++)
+            for (int i = 0; i < count; i++)
             {
                 // If there's no enemy left, stop shooting
-                if (enemy == null)
+                if (enemy != null)
                 {
-                    yield break;
+                    _projectileData.Create(_hero, enemy);
                 }
-                _projectileData.Create(_hero, enemy);
+                else
+                {
+                    _projectileData.Create(_hero, direction);
+                }
+
                 yield return new WaitForSeconds(_secondsBetweenShots);
-                
+
             }
         }
     }
