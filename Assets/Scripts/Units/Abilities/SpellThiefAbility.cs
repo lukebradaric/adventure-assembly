@@ -1,9 +1,9 @@
 ﻿using AdventureAssembly.Units.Enemies;
+using AdventureAssembly.Units.Projectiles;
 using UnityEngine;
 
 namespace AdventureAssembly.Units.Abilities
 {
-
     public class SpellThiefAbility : Ability
     {
         [SerializeField] private ProjectileData _projectileData;

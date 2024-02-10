@@ -1,6 +1,6 @@
 ﻿using AdventureAssembly.Core;
 
-namespace AdventureAssembly.Units
+namespace AdventureAssembly.Units.Projectiles
 {
     public abstract class ProjectileComponent : CloneObject<ProjectileComponent>
     {

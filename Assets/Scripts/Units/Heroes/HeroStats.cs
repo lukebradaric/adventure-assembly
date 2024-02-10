@@ -37,6 +37,13 @@ namespace AdventureAssembly.Units.Heroes
                 damageData.IsCritical = true;
             }
 
+            // If target is marked, consume mark to gain guaranteed crit
+            if (damageData.Target.StatusEffects.Contains(StatusEffect.Marked))
+            {
+                damageData.IsCritical = true;
+                damageData.Target.StatusEffects.Remove(StatusEffect.Marked);
+            }
+
             // If attack is critical
             if (damageData.IsCritical)
             {

@@ -4,7 +4,7 @@ using Sirenix.OdinInspector;
 using TinyTools.ScriptableSounds;
 using UnityEngine;
 
-namespace AdventureAssembly.Units
+namespace AdventureAssembly.Units.Projectiles
 {
     public class ExplodingProjectileComponent : ProjectileComponent
     {
@@ -21,15 +21,15 @@ namespace AdventureAssembly.Units
 
         public override void OnEnable()
         {
-            _projectile.EnemyCollision += OnEnemyCollision;
+            _projectile.Collision += OnCollision;
         }
 
         public override void OnDisable()
         {
-            _projectile.EnemyCollision -= OnEnemyCollision;
+            _projectile.Collision -= OnCollision;
         }
 
-        private void OnEnemyCollision()
+        private void OnCollision()
         {
             GameObject.Instantiate(_particlePrefab, _projectile.transform.position, Quaternion.identity);
             _explosionSound?.Play();

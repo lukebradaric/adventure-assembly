@@ -8,7 +8,7 @@ using TinyTools.ScriptableVariables;
 using UnityEngine;
 using static UnityEngine.ParticleSystem;
 
-namespace AdventureAssembly.Units
+namespace AdventureAssembly.Units.Projectiles
 {
     public class Projectile : MonoBehaviour
     {
@@ -61,7 +61,8 @@ namespace AdventureAssembly.Units
             }
         }
 
-        public Action EnemyCollision;
+        public Action Collision;
+        public Action<Enemy> EnemyCollision;
 
         public void Initialize(ProjectileData projectileData, Hero hero, Vector2 direction)
         {
@@ -177,7 +178,8 @@ namespace AdventureAssembly.Units
 
             enemy.TakeDamage(damageData);
 
-            EnemyCollision?.Invoke();
+            Collision?.Invoke();
+            EnemyCollision?.Invoke(enemy);
 
             if (ProjectileData.DestroyOnCollision)
             {

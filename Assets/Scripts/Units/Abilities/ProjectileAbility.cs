@@ -1,4 +1,5 @@
 ﻿using AdventureAssembly.Units.Enemies;
+using AdventureAssembly.Units.Projectiles;
 using Sirenix.OdinInspector;
 using UnityEngine;
 

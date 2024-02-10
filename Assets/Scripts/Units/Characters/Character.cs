@@ -16,6 +16,7 @@ namespace AdventureAssembly.Units.Characters
         [OdinSerialize] public SpriteRenderer SpriteRenderer { get; private set; }
         [OdinSerialize] public SpriteRenderer ShadowSpriteRenderer { get; private set; }
         [OdinSerialize] public virtual CharacterStats Stats { get; private set; }
+        [OdinSerialize] public virtual CharacterStatusEffects StatusEffects { get; private set; }
 
         public CharacterData CharacterData { get; private set; }
 

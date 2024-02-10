@@ -29,6 +29,21 @@ namespace AdventureAssembly.Interface
         }
 
         /// <summary>
+        /// The color of the top level text.
+        /// </summary>
+        public Color Color
+        {
+            get
+            {
+                return text.color;
+            }
+            set
+            {
+                text.color = value;
+            }
+        }
+
+        /// <summary>
         /// Fades the text over time.
         /// </summary>
         /// <param name="alpha">The alpha value to fade to</param>

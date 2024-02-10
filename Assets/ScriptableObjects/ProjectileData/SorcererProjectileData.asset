@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8296864c3dec2164e985ec5ce6d0f527, type: 3}
+  m_Script: {fileID: 11500000, guid: 914080b4ebec0cb45bcf357568b4c6a2, type: 3}
   m_Name: SorcererProjectileData
   m_EditorClassIdentifier: 
   serializationData:
@@ -63,14 +63,14 @@ MonoBehaviour:
       Data: 6
     - Name: Components
       Entry: 7
-      Data: 0|System.Collections.Generic.List`1[[AdventureAssembly.Units.ProjectileComponent,
+      Data: 0|System.Collections.Generic.List`1[[AdventureAssembly.Units.Projectiles.ProjectileComponent,
         AdventureAssembly.Units]], mscorlib
     - Name: 
       Entry: 12
       Data: 1
     - Name: 
       Entry: 7
-      Data: 1|AdventureAssembly.Units.ExplodingProjectileComponent, AdventureAssembly.Units
+      Data: 1|AdventureAssembly.Units.Projectiles.ExplodingProjectileComponent, AdventureAssembly.Units
     - Name: _particlePrefab
       Entry: 10
       Data: 1
@@ -79,7 +79,7 @@ MonoBehaviour:
       Data: 6
     - Name: _baseRadius
       Entry: 4
-      Data: 1.75
+      Data: 2
     - Name: _explosionSound
       Entry: 10
       Data: 2

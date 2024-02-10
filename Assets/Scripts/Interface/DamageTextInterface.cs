@@ -19,6 +19,7 @@ namespace AdventureAssembly.Interface
 
         [Space]
         [Header("Settings")]
+        [SerializeField] private Color _criticalColor;
         [Tooltip("How far away should the damage text move from its origin?")]
         [SerializeField] private float _tweenDistance;
         [Tooltip("How long should the tween animation be?")]
@@ -47,6 +48,10 @@ namespace AdventureAssembly.Interface
             DamageTextElement damageText = Instantiate(_damageTextPrefab, spawnPosition, Quaternion.identity);
             damageText.transform.SetParent(this.transform);
             damageText.Text = enemy.LastDamageTaken.Value.ToString();
+            if (enemy.LastDamageTaken.IsCritical)
+            {
+                damageText.Color = _criticalColor;
+            }
 
             // Get random direction to move damage text
             Vector2 movement = enemy.LastDamageTaken.Direction;
