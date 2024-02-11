@@ -10,16 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 914080b4ebec0cb45bcf357568b4c6a2, type: 3}
-  m_Name: SorcererProjectileData
+  m_Name: InquisitorProjectileData
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 
     ReferencedUnityObjects:
-    - {fileID: -1015276828, guid: 5786dd6c780f0764ea71761afd8ad28d, type: 3}
-    - {fileID: 4270207200347640816, guid: 26895035944a42849ab7afdcd537605a, type: 3}
-    - {fileID: 11400000, guid: 50fda1d235a87fe4fa682f5dd372373a, type: 2}
-    - {fileID: 1702708558535293886, guid: 2cacdce6290f8874584f44e72bc9cd96, type: 3}
+    - {fileID: 498832367, guid: 5786dd6c780f0764ea71761afd8ad28d, type: 3}
+    - {fileID: 11400000, guid: 333f1769793ec2f48831b51e9e32c75d, type: 2}
+    - {fileID: 1702708558535293886, guid: a751c713cf8a6af40b6cb03d2420cb30, type: 3}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -33,13 +32,13 @@ MonoBehaviour:
       Data: UnityEngine.Color, UnityEngine.CoreModule
     - Name: 
       Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
       Data: 1
     - Name: 
       Entry: 4
-      Data: 0.639499843
-    - Name: 
-      Entry: 4
-      Data: 0.2971698
+      Data: 0.7615442
     - Name: 
       Entry: 4
       Data: 1
@@ -48,22 +47,25 @@ MonoBehaviour:
       Data: 
     - Name: BaseDamage
       Entry: 3
-      Data: 4
+      Data: 3
     - Name: Speed
       Entry: 4
-      Data: 5
-    - Name: AngularSpeed
+      Data: 7.5
+    - Name: RotationMode
+      Entry: 3
+      Data: 2
+    - Name: RotationSpeed
       Entry: 4
-      Data: 0
+      Data: 10
     - Name: DestroyOnCollision
       Entry: 5
       Data: true
     - Name: ColliderRadius
       Entry: 4
-      Data: 0.35
+      Data: 0.3
     - Name: MaxLifetime
       Entry: 4
-      Data: 6
+      Data: 5
     - Name: Components
       Entry: 7
       Data: 0|System.Collections.Generic.List`1[[AdventureAssembly.Units.Projectiles.ProjectileComponent,
@@ -73,19 +75,13 @@ MonoBehaviour:
       Data: 1
     - Name: 
       Entry: 7
-      Data: 1|AdventureAssembly.Units.Projectiles.ExplodingProjectileComponent, AdventureAssembly.Units
-    - Name: _particlePrefab
+      Data: 1|AdventureAssembly.Units.Projectiles.HealingProjectileComponent, AdventureAssembly.Units
+    - Name: _baseHeal
+      Entry: 3
+      Data: 1
+    - Name: _healSound
       Entry: 10
       Data: 1
-    - Name: _baseDamage
-      Entry: 3
-      Data: 4
-    - Name: _baseRadius
-      Entry: 4
-      Data: 2
-    - Name: _explosionSound
-      Entry: 10
-      Data: 2
     - Name: 
       Entry: 8
       Data: 
@@ -104,7 +100,7 @@ MonoBehaviour:
       Data: 1
     - Name: 
       Entry: 10
-      Data: 3
+      Data: 2
     - Name: 
       Entry: 13
       Data: 

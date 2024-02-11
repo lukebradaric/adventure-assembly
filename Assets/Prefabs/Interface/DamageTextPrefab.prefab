@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2783221303396533012}
   - component: {fileID: 6462857245451907486}
   m_Layer: 5
-  m_Name: DamageTextUnderlay
+  m_Name: DamageTextBackground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -65,7 +65,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 123123123
+  m_text: 23
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ff0c6e678c010474ca8ea5559b2259ed, type: 2}
   m_sharedMaterial: {fileID: 3726230450693776446, guid: ff0c6e678c010474ca8ea5559b2259ed, type: 2}
@@ -199,7 +199,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 123123123
+  m_text: 23
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e098f2397ddc72d43859b46441a0b24f, type: 2}
   m_sharedMaterial: {fileID: 3726230450693776446, guid: e098f2397ddc72d43859b46441a0b24f, type: 2}
@@ -318,5 +318,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 341f7488aec146f4587164f9c4af43b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: {fileID: 7686038948234867266}
-  underlayText: {fileID: 6462857245451907486}
+  _text: {fileID: 7686038948234867266}
+  _backgroundText: {fileID: 6462857245451907486}

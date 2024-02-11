@@ -92,6 +92,8 @@ MonoBehaviour:
     - {fileID: 7635150495067849036}
     - {fileID: -2632185598829885803}
     - {fileID: -6561852131461057103}
+    - {fileID: 11400000, guid: 5b882efbc2e09fd4f84afad4e414c71d, type: 2}
+    - {fileID: 11400000, guid: 10798cf0627cf854d85b3c3970c6fcdf, type: 2}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -109,6 +111,12 @@ MonoBehaviour:
     - Name: StatusEffects
       Entry: 10
       Data: 3
+    - Name: _onCharacterDamaged
+      Entry: 10
+      Data: 4
+    - Name: _onCharacterHealed
+      Entry: 10
+      Data: 5
   _onEnemyDamaged: {fileID: 11400000, guid: 3d57707407b0ed64385333b5b78ad981, type: 2}
 --- !u!114 &-2632185598829885803
 MonoBehaviour:

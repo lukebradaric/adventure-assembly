@@ -122,6 +122,7 @@ namespace AdventureAssembly.Units.Heroes
             // Check if there is a hazard at the new position
             if (IsHazardAtPosition(nextPosition))
             {
+                firstHero.CollisionDeath = true;
                 firstHero.Die();
                 RecalculateNextPosition();
             }
@@ -207,6 +208,12 @@ namespace AdventureAssembly.Units.Heroes
         /// <param name="hero">The hero that died</param>
         private void RepairUnitPositions(Hero hero)
         {
+            // Don't repair the snake if the front unit died in a hazard collision
+            if (hero.CollisionDeath)
+            {
+                return;
+            }
+
             for (int i = Units.Count - 1; i > Units.IndexOf(hero); i--)
             {
                 Units[i].SetPosition(Units[i - 1].Position, false);

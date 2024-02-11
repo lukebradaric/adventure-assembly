@@ -1,4 +1,5 @@
 ﻿using AdventureAssembly.Units.Characters;
+using UnityEngine;
 
 namespace AdventureAssembly.Units
 {
@@ -21,7 +22,21 @@ namespace AdventureAssembly.Units
         /// <summary>
         /// The calculate value of the damage.
         /// </summary>
-        public int Value { get; set; }
+        public int Value
+        {
+            get
+            {
+                return _value;
+            }
+            set
+            {
+                _value = value;
+
+                // Ensure damage value does not drop below 0
+                _value = Mathf.Max(_value, 1);
+            }
+        }
+        private int _value;
 
         /// <summary>
         /// The Character that is dealing this damage.

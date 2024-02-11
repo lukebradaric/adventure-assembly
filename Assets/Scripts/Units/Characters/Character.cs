@@ -4,6 +4,7 @@ using Sirenix.OdinInspector;
 using Sirenix.Serialization;
 using System;
 using System.Collections.Generic;
+using TinyTools.ScriptableEvents;
 using UnityEngine;
 
 namespace AdventureAssembly.Units.Characters
@@ -11,6 +12,11 @@ namespace AdventureAssembly.Units.Characters
     [SelectionBase]
     public abstract class Character : Unit
     {
+        [PropertySpace]
+        [Title("Events")]
+        [OdinSerialize] private GameScriptableEvent _onCharacterDamaged;
+        [OdinSerialize] private GameScriptableEvent _onCharacterHealed;
+
         [PropertySpace]
         [Title("Components")]
         [OdinSerialize] public SpriteRenderer SpriteRenderer { get; private set; }
@@ -105,6 +111,7 @@ namespace AdventureAssembly.Units.Characters
             // Invoke event and call OnMethod
             Damaged?.Invoke(damageData);
             OnTakeDamage(damageData);
+            _onCharacterDamaged?.Invoke(this, damageData);
 
             if (CurrentHealth <= 0)
             {
@@ -129,6 +136,7 @@ namespace AdventureAssembly.Units.Characters
 
             Healed?.Invoke(healData);
             OnHealed(healData);
+            _onCharacterHealed?.Invoke(this, healData);
 
             if (CurrentHealth > CharacterData.MaxHealth)
             {

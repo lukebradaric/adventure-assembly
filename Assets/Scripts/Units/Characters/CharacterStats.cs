@@ -19,7 +19,7 @@ namespace AdventureAssembly.Units.Characters
         public Stat<float> DamageBonus { get; set; } = new Stat<float>(0f);
         public Stat<float> MaxHealthMultiplier { get; set; } = new Stat<float>(1f);
         public Stat<float> MaxHealthBonus { get; set; } = new Stat<float>(0f);
-        public Stat<float> HealMultiplier { get; set; } = new Stat<float>(0f);
+        public Stat<float> HealMultiplier { get; set; } = new Stat<float>(1f);
         public Stat<float> HealBonus { get; set; } = new Stat<float>(0f);
 
         public virtual DamageData GetDamageData(DamageData damageData)
@@ -32,8 +32,8 @@ namespace AdventureAssembly.Units.Characters
             // Multiply by damage multiplier
             damage *= DamageMultiplier.Value;
 
-            // Ceil damage to integer
-            damageData.Value = (int)Mathf.Ceil(damage);
+            // Round damage to nearest integer
+            damageData.Value = (int)Mathf.Round(damage);
 
             return damageData;
         }
@@ -46,7 +46,7 @@ namespace AdventureAssembly.Units.Characters
 
             heal *= HealMultiplier.Value;
 
-            healData.Value = (int)Mathf.Ceil(heal);
+            healData.Value = (int)Mathf.Round(heal);
 
             return healData;
         }

@@ -9,8 +9,8 @@ namespace AdventureAssembly.Interface
     /// </summary>
     public class DamageTextElement : MonoBehaviour
     {
-        [SerializeField] private TextMeshProUGUI text;
-        [SerializeField] private TextMeshProUGUI underlayText;
+        [SerializeField] private TextMeshProUGUI _text;
+        [SerializeField] private TextMeshProUGUI _backgroundText;
 
         /// <summary>
         /// The text value of this element.
@@ -19,12 +19,12 @@ namespace AdventureAssembly.Interface
         {
             get
             {
-                return text.text;
+                return _text.text;
             }
             set
             {
-                text.text = value;
-                underlayText.text = value;
+                _text.text = value;
+                _backgroundText.text = value;
             }
         }
 
@@ -35,11 +35,23 @@ namespace AdventureAssembly.Interface
         {
             get
             {
-                return text.color;
+                return _text.color;
             }
             set
             {
-                text.color = value;
+                _text.color = value;
+            }
+        }
+
+        public Color BackgroundColor
+        {
+            get
+            {
+                return _backgroundText.color;
+            }
+            set
+            {
+                _backgroundText.color = value;
             }
         }
 
@@ -49,10 +61,18 @@ namespace AdventureAssembly.Interface
         /// <param name="alpha">The alpha value to fade to</param>
         /// <param name="duration">The duration of the fade</param>
         /// <returns>Fade tween</returns>
-        public Tween DOFade(float alpha, float duration)
+        public Tween DOFade(float alpha, float duration, float backgroundDuration)
         {
-            text.DOFade(alpha, duration);
-            return underlayText.DOFade(alpha, duration * 1.1f);
+            Tween textTween = _text.DOFade(alpha, duration);
+            Tween backgroundTextTween = _backgroundText.DOFade(alpha, backgroundDuration);
+
+            // Return whichever tween will finish last
+            if(duration > backgroundDuration)
+            {
+                return textTween;
+            }
+            
+            return backgroundTextTween;
         }
     }
 }

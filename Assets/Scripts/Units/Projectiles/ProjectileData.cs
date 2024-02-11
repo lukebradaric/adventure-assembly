@@ -32,6 +32,15 @@ namespace AdventureAssembly.Units.Projectiles
         [Tooltip("What is the speed of this projectile?")]
         [OdinSerialize] public float Speed { get; protected set; } = 10f;
 
+        [BoxGroup("Game Settings")]
+        [Tooltip("How should the projectile determine its rotation?")]
+        [OdinSerialize] public ProjectileRotationMode RotationMode { get; protected set; }
+
+        [BoxGroup("Game Settings")]
+        [Tooltip("What is the angular speed of this projectile?")]
+        [ShowIf(nameof(RotationMode), ProjectileRotationMode.Free)]
+        [OdinSerialize] public float RotationSpeed { get; protected set; } = 0f;
+
         [BoxGroup("Extra Settings")]
         [Tooltip("What is the collision radius of this projectiles circle collider?")]
         [OdinSerialize] public bool DestroyOnCollision { get; protected set; } = true;

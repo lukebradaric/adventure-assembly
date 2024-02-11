@@ -69,7 +69,7 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.2}
   serializedVersion: 2
   m_Radius: 0.4
 --- !u!114 &721636767718559845
@@ -92,6 +92,8 @@ MonoBehaviour:
     - {fileID: 8711210509025312269}
     - {fileID: -890123428954646306}
     - {fileID: -7689209720288723052}
+    - {fileID: 11400000, guid: 10798cf0627cf854d85b3c3970c6fcdf, type: 2}
+    - {fileID: 11400000, guid: 5b882efbc2e09fd4f84afad4e414c71d, type: 2}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -109,6 +111,12 @@ MonoBehaviour:
     - Name: StatusEffects
       Entry: 10
       Data: 3
+    - Name: _onCharacterHealed
+      Entry: 10
+      Data: 4
+    - Name: _onCharacterDamaged
+      Entry: 10
+      Data: 5
     - Name: Abilities
       Entry: 7
       Data: 0|System.Collections.Generic.List`1[[AdventureAssembly.Units.Abilities.Ability,

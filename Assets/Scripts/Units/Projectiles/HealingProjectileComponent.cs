@@ -1,4 +1,6 @@
 ﻿using AdventureAssembly.Units.Heroes;
+using Sirenix.OdinInspector;
+using TinyTools.ScriptableSounds;
 using UnityEngine;
 
 namespace AdventureAssembly.Units.Projectiles
@@ -8,6 +10,7 @@ namespace AdventureAssembly.Units.Projectiles
     /// </summary>
     public class HealingProjectileComponent : ProjectileComponent
     {
+        [BoxGroup("Settings")]
         [SerializeField] private int _baseHeal;
 
         public override void OnEnable()

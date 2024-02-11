@@ -14,6 +14,11 @@ namespace AdventureAssembly.Units.Heroes
         [OdinSerialize] public List<Ability> Abilities { get; protected set; } = new List<Ability>();
 
         /// <summary>
+        /// Did this unit die due to a hazard collision?
+        /// </summary>
+        public bool CollisionDeath { get; set; } = false;
+
+        /// <summary>
         /// Initializes this unit at position and registers all abilities.
         /// </summary>
         /// <param name="unitData">The HeroData of this hero</param>

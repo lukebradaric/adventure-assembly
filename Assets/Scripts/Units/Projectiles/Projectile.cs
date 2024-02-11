@@ -57,22 +57,32 @@ namespace AdventureAssembly.Units.Projectiles
             set
             {
                 _moveDirection = value.normalized;
-                transform.up = _moveDirection;
                 _rigidbody.velocity = _moveDirection * ProjectileData.Speed;
+
+                // Orient projectile based on rotation mode
+                switch (ProjectileData.RotationMode)
+                {
+                    case ProjectileRotationMode.TransformUp:
+                        transform.up = _moveDirection;
+                        break;
+                    case ProjectileRotationMode.TransformRight:
+                        transform.right = _moveDirection;
+                        break;
+                }
             }
         }
 
         public Action Collision;
-        
+
         /// <summary>
         /// When this projectile colliders with an enemy.
         /// </summary>
-        public Action<Enemy> EnemyCollision;
+        public event Action<Enemy> EnemyCollision;
 
         /// <summary>
         /// When this projectile overlaps with a hero.
         /// </summary>
-        public Action<Hero> HeroTrigger;
+        public event Action<Hero> HeroTrigger;
 
         public void Initialize(ProjectileData projectileData, Hero hero, Vector2 direction)
         {
@@ -83,6 +93,12 @@ namespace AdventureAssembly.Units.Projectiles
             _spriteRenderer.sprite = ProjectileData.Sprite;
             _spriteRenderer.color = ProjectileData.Color;
             _circleCollider.radius = ProjectileData.ColliderRadius;
+
+            // If projectile has free rotate mode, apply angular velocity
+            if (ProjectileData.RotationMode == ProjectileRotationMode.Free)
+            {
+                _rigidbody.angularVelocity = ProjectileData.RotationSpeed * 100f;
+            }
 
             // Add projectile components to this object to listen to events
             foreach (ProjectileComponent component in ProjectileData.Components)
@@ -166,7 +182,7 @@ namespace AdventureAssembly.Units.Projectiles
         private void OnTriggerEnter2D(Collider2D collider)
         {
             // When this projectile overlaps with a hero
-            if (collider.CompareTag(_heroTag.Value) && TryGetComponent<Hero>(out Hero hero))
+            if (collider.CompareTag(_heroTag.Value) && collider.TryGetComponent<Hero>(out Hero hero))
             {
                 HeroTrigger?.Invoke(hero);
             }
