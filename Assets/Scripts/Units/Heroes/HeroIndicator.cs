@@ -80,11 +80,11 @@ namespace AdventureAssembly.Units.Heroes
 
         private void UpdateIndicatorLineRenderer()
         {
-            _indicatorLineRenderer.positionCount = HeroManager.Units.Count + 1;
+            _indicatorLineRenderer.positionCount = HeroManager.Instance.Units.Count + 1;
             _indicatorLineRenderer.SetPosition(0, _indicatorSpriteTransform.position);
 
             int count = 1;
-            foreach (Hero hero in HeroManager.Units)
+            foreach (Hero hero in HeroManager.Instance.Units)
             {
                 Vector3 pos = hero.transform.position;
                 pos.y -= 0.4f;

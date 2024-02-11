@@ -20,7 +20,7 @@ namespace AdventureAssembly.Units.Enemies
             };
 
             // Get the position of the nearest hero
-            Hero nearestHero = HeroManager.GetNearestUnit(enemy.Position);
+            Hero nearestHero = HeroManager.Instance.GetNearestUnit(enemy.Position);
 
             // If no hero found, return
             if(nearestHero == null)

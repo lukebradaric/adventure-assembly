@@ -14,7 +14,7 @@ namespace AdventureAssembly.Units.Abilities
         protected override bool Execute()
         {
             // Calculate how many times to fire the projectile and add one to always have at least one projectile
-            int count = (int)(EnemyManager.Units.Count / _enemiesPerExtraProjectile) + 1;
+            int count = (int)(EnemyManager.Instance.Units.Count / _enemiesPerExtraProjectile) + 1;
 
             for (int i = 0; i < count; i++)
             {

@@ -8,11 +8,11 @@ namespace AdventureAssembly.Units.Characters
 {
     public abstract class CharacterManager<T> : Singleton<CharacterManager<T>> where T : Character
     {
-        public static List<T> Units { get; protected set; } = new List<T>();
+        public List<T> Units { get; protected set; } = new List<T>();
 
-        public static List<CharacterModifier> Modifiers { get; protected set; } = new List<CharacterModifier>();
+        public List<CharacterModifier> Modifiers { get; protected set; } = new List<CharacterModifier>();
 
-        protected static void ApplyAllModifiers(T unit)
+        protected void ApplyAllModifiers(T unit)
         {
             // Apply all modifiers to a single unit
             foreach (CharacterModifier modifier in Modifiers)
@@ -41,7 +41,7 @@ namespace AdventureAssembly.Units.Characters
         /// Adds a modifier to all units and future units in this manager.
         /// </summary>
         /// <param name="modifier">The modifier to add.</param>
-        public static void AddGlobalModifier(CharacterModifier modifier)
+        public void AddGlobalModifier(CharacterModifier modifier)
         {
             //Debug.Log($"Adding new modifier: {modifier.GetType().Name}");
 
@@ -58,7 +58,7 @@ namespace AdventureAssembly.Units.Characters
         /// Removes a modifier from all units and future units in this manager.
         /// </summary>
         /// <param name="modifier">The modifier to remove. Must be a reference to the modifier that was applied.</param>
-        public static void RemoveGlobalModifier(CharacterModifier modifier)
+        public void RemoveGlobalModifier(CharacterModifier modifier)
         {
             foreach (T unit in Units)
             {
@@ -74,7 +74,7 @@ namespace AdventureAssembly.Units.Characters
         /// <param name="position">The position to check from</param>
         /// <param name="visibleUnitsOnly">Should the search include only visible units?</param>
         /// <returns></returns>
-        public static T GetNearestUnit(Vector2Int position, bool visibleUnitsOnly = true)
+        public T GetNearestUnit(Vector2Int position, bool visibleUnitsOnly = true)
         {
             T nearestUnit = null;
             float currentDistance = float.MaxValue;
@@ -104,7 +104,7 @@ namespace AdventureAssembly.Units.Characters
         /// <param name="position">The position to check</param>
         /// <param name="radius">The radius to check</param>
         /// <returns></returns>
-        public static List<T> GetUnitsInRadius(Vector2 position, float radius)
+        public List<T> GetUnitsInRadius(Vector2 position, float radius)
         {
             List<T> units = new List<T>();
 
@@ -120,7 +120,7 @@ namespace AdventureAssembly.Units.Characters
 
         }
 
-        public static bool HasUnitAtPosition(Vector2Int position)
+        public bool HasUnitAtPosition(Vector2Int position)
         {
             // TODO: Optimize this using a dictionary?
             foreach (T unit in Units)

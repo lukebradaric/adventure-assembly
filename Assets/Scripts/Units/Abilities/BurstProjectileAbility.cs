@@ -32,7 +32,7 @@ namespace AdventureAssembly.Units.Abilities
 
         protected override bool Execute()
         {
-            Enemy enemy = EnemyManager.GetNearestUnit(_hero.Position);
+            Enemy enemy = EnemyManager.Instance.GetNearestUnit(_hero.Position);
 
             if (enemy == null)
             {

@@ -1,6 +1,7 @@
 ﻿using DG.Tweening;
 using System.Collections;
 using TinyTools.Generics;
+using TinyTools.ScriptableEvents;
 using TinyTools.ScriptableSounds;
 using UnityEngine;
 
@@ -12,14 +13,13 @@ namespace AdventureAssembly.Core
     public class GoldManager : Singleton<GoldManager>
     {
         [Space]
+        [Header("Events")]
+        [SerializeField] private GameScriptableEvent _onGoldCountChanged;
+
+        [Space]
         [Header("Prefabs")]
         [Tooltip("What should be instantiated when spawning gold?")]
         [SerializeField] private GameObject _goldPrefab;
-
-        [Space]
-        [Header("Components")]
-        [Tooltip("What position should gold be tweened towards?")]
-        [SerializeField] private RectTransform _goldTweenTransform;
 
         [Space]
         [Header("Settings")]
@@ -39,7 +39,25 @@ namespace AdventureAssembly.Core
         /// <summary>
         /// The amount of gold the player currently has.
         /// </summary>
-        public static Observable<int> CurrentGold { get; private set; } = new Observable<int>(0);
+        private int _goldCount;
+        public int GoldCount
+        {
+            get
+            {
+                return _goldCount;
+            }
+            set
+            {
+                _goldCount = value;
+                _onGoldCountChanged?.Invoke(this, _goldCount);
+            }
+        }
+
+        protected override void Awake()
+        {
+            base.Awake();
+            GoldCount = 0;
+        }
 
         /// <summary>
         /// Tries to spend an amount of gold.
@@ -47,14 +65,14 @@ namespace AdventureAssembly.Core
         /// <param name="amount">The amount of gold to spend.</param>
         /// <returns>True if the gold was succesfully spent.
         /// False if the gold was not spent.</returns>
-        public static bool TrySpend(int amount)
+        public bool TrySpend(int amount)
         {
-            if (CurrentGold.Value < amount)
+            if (GoldCount < amount)
             {
                 return false;
             }
 
-            CurrentGold.Value -= amount;
+            GoldCount -= amount;
             return true;
         }
 
@@ -65,7 +83,7 @@ namespace AdventureAssembly.Core
         public void AddGold(Vector2 position)
         {
             GameObject goldObject = Instantiate(_goldPrefab, position, Quaternion.identity);
-            Vector3 tweenPosition = Camera.main.ScreenToWorldPoint(_goldTweenTransform.position);
+            Vector3 tweenPosition = Camera.main.ScreenToWorldPoint(new Vector2(0 + (Screen.width * 0.05f), Screen.height - (Screen.height * 0.05f)));
             float tweenDuration = Vector2.Distance(goldObject.transform.position, tweenPosition) * _tweenDistanceDuration;
 
             if (tweenDuration < _minTweenDuration)
@@ -75,7 +93,7 @@ namespace AdventureAssembly.Core
 
             goldObject.transform.DOMove(tweenPosition, tweenDuration).SetEase(_tweenCurve).SetUpdate(true).OnComplete(() =>
             {
-                CurrentGold.Value++;
+                GoldCount++;
                 Destroy(goldObject);
             });
 

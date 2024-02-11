@@ -7,7 +7,7 @@ namespace AdventureAssembly.Debug
     {
         public override void DebugKeyPressed()
         {
-            HeroManager.Units.Random().Die();
+            HeroManager.Instance.Units.Random().Die();
         }
     }
 }

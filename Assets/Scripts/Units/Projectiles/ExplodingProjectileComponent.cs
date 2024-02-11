@@ -33,7 +33,7 @@ namespace AdventureAssembly.Units.Projectiles
         {
             GameObject.Instantiate(_particlePrefab, _projectile.transform.position, Quaternion.identity);
             _explosionSound?.Play();
-            foreach (Character character in EnemyManager.GetUnitsInRadius(_projectile.transform.position, _baseRadius))
+            foreach (Character character in EnemyManager.Instance.GetUnitsInRadius(_projectile.transform.position, _baseRadius))
             {
                 DamageData damageData = new DamageData(_projectile.Hero, character, _baseDamage);
                 character.TakeDamage(damageData);

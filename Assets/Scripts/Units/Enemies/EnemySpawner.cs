@@ -116,7 +116,7 @@ namespace AdventureAssembly.Units.Enemies
 
         private void SpawnEnemy(EnemyData enemyData)
         {
-            if (EnemyManager.Units.Count >= _maxEnemyCount)
+            if (EnemyManager.Instance.Units.Count >= _maxEnemyCount)
             {
                 Debug.LogWarning("Reach max enemy count. Skipping spawn.");
                 return;

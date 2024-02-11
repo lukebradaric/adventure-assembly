@@ -26,11 +26,11 @@ namespace AdventureAssembly.Units.Classes
             {
                 if (modifier.CharacterType == CharacterType.Hero)
                 {
-                    HeroManager.AddGlobalModifier(modifier);
+                    HeroManager.Instance.AddGlobalModifier(modifier);
                 }
                 else if (modifier.CharacterType == CharacterType.Enemy)
                 {
-                    EnemyManager.AddGlobalModifier(modifier);
+                    EnemyManager.Instance.AddGlobalModifier(modifier);
                 }
             }
         }
@@ -41,11 +41,11 @@ namespace AdventureAssembly.Units.Classes
             {
                 if (modifier.CharacterType == CharacterType.Hero)
                 {
-                    HeroManager.RemoveGlobalModifier(modifier);
+                    HeroManager.Instance.RemoveGlobalModifier(modifier);
                 }
                 else if (modifier.CharacterType == CharacterType.Enemy)
                 {
-                    EnemyManager.RemoveGlobalModifier(modifier);
+                    EnemyManager.Instance.RemoveGlobalModifier(modifier);
                 }
             }
         }

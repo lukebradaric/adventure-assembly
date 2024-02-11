@@ -1,4 +1,4 @@
-﻿using AdventureAssembly.Core;
+﻿using TinyTools.ScriptableEvents;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -15,19 +15,14 @@ namespace AdventureAssembly.Interface
         [SerializeField] private RectTransform _layoutTransform;
         [SerializeField] private TextMeshProUGUI _goldText;
 
-        private void OnEnable()
+        public void OnGoldCountChanged(GameEventData gameEventData)
         {
-            GoldManager.CurrentGold.ValueChanged += OnCurrentGoldChanged;
+            OnGoldCountChanged((int)gameEventData.Data);
         }
 
-        private void OnDisable()
+        private void OnGoldCountChanged(int goldCount)
         {
-            GoldManager.CurrentGold.ValueChanged -= OnCurrentGoldChanged;
-        }
-
-        private void OnCurrentGoldChanged(int newGold)
-        {
-            _goldText.text = newGold.ToString();
+            _goldText.text = goldCount.ToString();
             LayoutRebuilder.ForceRebuildLayoutImmediate(_layoutTransform);
         }
     }

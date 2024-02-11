@@ -12,7 +12,7 @@ namespace AdventureAssembly.Units.Stats
 
         public override float Process(float value)
         {
-            return value * (1 + (GoldManager.CurrentGold.Value * _damageMultiplierPerGold));
+            return value * (1 + (GoldManager.Instance.GoldCount * _damageMultiplierPerGold));
         }
     }
 }
