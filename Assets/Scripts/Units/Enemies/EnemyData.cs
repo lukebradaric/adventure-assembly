@@ -23,5 +23,12 @@ namespace AdventureAssembly.Units.Enemies
         [BoxGroup("Pathfinding")]
         [Tooltip("What navigation method should this Enemy use for moving?")]
         [OdinSerialize] public EnemyNavigation Navigation { get; private set; } = new DefaultEnemyNavigation();
+
+        public virtual Enemy Create(Vector2Int position)
+        {
+            Enemy enemy = (Enemy)Instantiate(Prefab, (Vector2)position, Quaternion.identity);
+            enemy.Initialize(this, position);
+            return enemy;
+        }
     }
 }

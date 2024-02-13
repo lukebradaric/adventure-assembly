@@ -1,8 +1,5 @@
-﻿using AdventureAssembly.Core;
-using AdventureAssembly.Units.Classes;
-using AdventureAssembly.Units.Heroes;
+﻿using AdventureAssembly.Units.Classes;
 using DG.Tweening;
-using System;
 using System.Collections.Generic;
 using TinyTools.ScriptableVariables;
 using UnityEngine;
@@ -71,7 +68,7 @@ namespace AdventureAssembly.Interface
         private void OnClassCountChanged(ClassData classData, int count)
         {
             // Update the current count of a class buff interface element
-            _classBuffElements[classData].SetCountText(ClassManager.GetClassCount(classData).ToString());
+            _classBuffElements[classData].SetCountText(ClassManager.Instance.GetClassCount(classData).ToString());
         }
 
         private void OnClassDataRemoved(ClassData classData)

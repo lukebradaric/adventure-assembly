@@ -2,6 +2,7 @@
 using AdventureAssembly.Units.Heroes;
 using DG.Tweening;
 using System.Collections.Generic;
+using TinyTools.Generics;
 using TinyTools.ScriptableEvents;
 using TinyTools.ScriptableVariables;
 using UnityEngine;
@@ -12,7 +13,7 @@ namespace AdventureAssembly.Interface
     /// <summary>
     /// Interface for handling new hero selections.
     /// </summary>
-    public class HeroSelectionInterface : MonoBehaviour
+    public class HeroSelectionInterface : Singleton<HeroSelectionInterface>
     {
         [Space]
         [Header("Events")]
@@ -117,7 +118,7 @@ namespace AdventureAssembly.Interface
                 element.Interactable = false;
             }
 
-            ((HeroManager)HeroManager.Instance).SpawnHero(heroData);
+            ((HeroManager)HeroManager.Instance).AddHeroToSnake(heroData);
 
             _onHeroSelected.Invoke(this, heroData);
 

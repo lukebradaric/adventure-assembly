@@ -11,6 +11,9 @@ namespace AdventureAssembly.Units.Characters
     public abstract class CharacterData : SerializedScriptableObject
     {
         [BoxGroup("General")]
+        [OdinSerialize] public Character Prefab { get; private set; } = default;
+
+        [BoxGroup("General")]
         [OdinSerialize] public string Name { get; private set; }
 
         [BoxGroup("General")]

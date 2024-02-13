@@ -21,11 +21,11 @@ namespace AdventureAssembly.Debug
         {
             if (_specificHeroData)
             {
-                InterfaceManager.Instance.HeroSelectionInterface.Show(_heroData);
+                HeroSelectionInterface.Instance.Show(_heroData);
             }
             else
             {
-                InterfaceManager.Instance.HeroSelectionInterface.Show(_heroDataList.GetRandom(3));
+                HeroSelectionInterface.Instance.Show(_heroDataList.GetRandom(3));
             }
         }
     }

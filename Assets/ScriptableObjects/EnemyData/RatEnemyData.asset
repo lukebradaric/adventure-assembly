@@ -16,6 +16,7 @@ MonoBehaviour:
     SerializedFormat: 2
     SerializedBytes: 
     ReferencedUnityObjects:
+    - {fileID: 3098733434465147185, guid: e861db9d7b4f5af43aa07f6ec4431335, type: 3}
     - {fileID: 21300000, guid: 890ef19f9785b7347ad14c8442a08837, type: 3}
     - {fileID: 21300000, guid: 9711b0dce12d11f4cb5ef3daeed63baf, type: 3}
     - {fileID: 11400000, guid: 2138459d0bf80524cbb69bce43708a97, type: 2}
@@ -24,15 +25,18 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes:
+    - Name: Prefab
+      Entry: 10
+      Data: 0
     - Name: Name
       Entry: 1
       Data: Rat
     - Name: Sprite
       Entry: 10
-      Data: 0
+      Data: 1
     - Name: ShadowSprite
       Entry: 10
-      Data: 1
+      Data: 2
     - Name: ShadowOffset
       Entry: 7
       Data: UnityEngine.Vector2, UnityEngine.CoreModule
@@ -53,7 +57,7 @@ MonoBehaviour:
       Data: 
     - Name: HurtSound
       Entry: 10
-      Data: 2
+      Data: 3
     - Name: MaxHealth
       Entry: 3
       Data: 5
@@ -63,31 +67,7 @@ MonoBehaviour:
         AdventureAssembly.Units]], mscorlib
     - Name: 
       Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 7
-      Data: 2|AdventureAssembly.Units.Modifiers.CharacterStatModifier, AdventureAssembly.Units
-    - Name: CharacterType
-      Entry: 3
-      Data: 1
-    - Name: _heroStatName
-      Entry: 3
       Data: 0
-    - Name: _enemyStatName
-      Entry: 3
-      Data: 2
-    - Name: _statProcess
-      Entry: 7
-      Data: 3|AdventureAssembly.Units.Stats.FloatAddStatProcess, AdventureAssembly.Units
-    - Name: _value
-      Entry: 4
-      Data: 5
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
     - Name: 
       Entry: 13
       Data: 
@@ -102,13 +82,13 @@ MonoBehaviour:
       Data: 5
     - Name: AttackTween
       Entry: 7
-      Data: 4|AdventureAssembly.Units.Animation.DefaultEnemyAttackTween, AdventureAssembly.Units
+      Data: 2|AdventureAssembly.Units.Animation.DefaultEnemyAttackTween, AdventureAssembly.Units
     - Name: 
       Entry: 8
       Data: 
     - Name: Navigation
       Entry: 7
-      Data: 5|AdventureAssembly.Units.Enemies.DefaultEnemyNavigation, AdventureAssembly.Units
+      Data: 3|AdventureAssembly.Units.Enemies.DefaultEnemyNavigation, AdventureAssembly.Units
     - Name: 
       Entry: 8
       Data: 

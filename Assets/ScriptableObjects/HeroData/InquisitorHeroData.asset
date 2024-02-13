@@ -16,6 +16,7 @@ MonoBehaviour:
     SerializedFormat: 2
     SerializedBytes: 
     ReferencedUnityObjects:
+    - {fileID: 721636767718559845, guid: 8be2b1e5f38b3a74e86db347dc21dea5, type: 3}
     - {fileID: 21300000, guid: 1e4d28bb7669a1b40b9e668030048e71, type: 3}
     - {fileID: 21300000, guid: 9711b0dce12d11f4cb5ef3daeed63baf, type: 3}
     - {fileID: 11400000, guid: e46f9e6862677864280a67a35bf94ab2, type: 2}
@@ -26,15 +27,18 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes:
+    - Name: Prefab
+      Entry: 10
+      Data: 0
     - Name: Name
       Entry: 1
       Data: Inquisitor
     - Name: Sprite
       Entry: 10
-      Data: 0
+      Data: 1
     - Name: ShadowSprite
       Entry: 10
-      Data: 1
+      Data: 2
     - Name: ShadowOffset
       Entry: 7
       Data: UnityEngine.Vector2, UnityEngine.CoreModule
@@ -112,10 +116,10 @@ MonoBehaviour:
       Data: 2
     - Name: 
       Entry: 10
-      Data: 2
+      Data: 3
     - Name: 
       Entry: 10
-      Data: 3
+      Data: 4
     - Name: 
       Entry: 13
       Data: 
@@ -134,7 +138,7 @@ MonoBehaviour:
       Data: 4|AdventureAssembly.Units.Abilities.ProjectileAbility, AdventureAssembly.Units
     - Name: _projectileData
       Entry: 10
-      Data: 4
+      Data: 5
     - Name: 
       Entry: 8
       Data: 

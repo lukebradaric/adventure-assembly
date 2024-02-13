@@ -1,27 +1,28 @@
 ﻿using AdventureAssembly.Units.Heroes;
 using System;
 using System.Collections.Generic;
+using TinyTools.Generics;
 using UnityEngine;
 
 namespace AdventureAssembly.Units.Classes
 {
-    public class ClassManager : MonoBehaviour
+    public class ClassManager : Singleton<ClassManager>
     {
         // The count of how many Heroes there are for each class type
-        public static Dictionary<ClassData, int> ClassCount { get; private set; } = new Dictionary<ClassData, int>();
+        public Dictionary<ClassData, int> ClassCount { get; private set; } = new Dictionary<ClassData, int>();
 
         // Dictionary of the class buffs currently applied for each class
-        public static Dictionary<ClassData, ClassBuff> ClassBuffs { get; private set; } = new Dictionary<ClassData, ClassBuff>();
+        public Dictionary<ClassData, ClassBuff> ClassBuffs { get; private set; } = new Dictionary<ClassData, ClassBuff>();
 
         // Dictionary of ClassBuff instances created for each class
-        public static Dictionary<ClassData, List<ClassBuff>> ClassBuffInstances { get; private set; } = new Dictionary<ClassData, List<ClassBuff>>();
+        public Dictionary<ClassData, List<ClassBuff>> ClassBuffInstances { get; private set; } = new Dictionary<ClassData, List<ClassBuff>>();
 
-        public static Action<ClassData> ClassDataAdded;
-        public static Action<ClassData> ClassDataRemoved;
+        public static event Action<ClassData> ClassDataAdded;
+        public static event Action<ClassData> ClassDataRemoved;
 
-        public static Action<ClassData, int> ClassCountChanged;
+        public static event Action<ClassData, int> ClassCountChanged;
 
-        public static void AddClassesByHeroData(HeroData heroData)
+        public void AddClassesByHeroData(HeroData heroData)
         {
             foreach (ClassData classData in heroData.ClassData)
             {
@@ -29,7 +30,7 @@ namespace AdventureAssembly.Units.Classes
             }
         }
 
-        public static void RemoveClassesByHeroData(HeroData heroData)
+        public void RemoveClassesByHeroData(HeroData heroData)
         {
             foreach (ClassData classData in heroData.ClassData)
             {
@@ -41,7 +42,7 @@ namespace AdventureAssembly.Units.Classes
         /// Returns the current amount of Heroes the player has of a Class.
         /// </summary>
         /// <param name="classData">The Class to check</param>
-        public static int GetClassCount(ClassData classData)
+        public int GetClassCount(ClassData classData)
         {
             if (!ClassCount.ContainsKey(classData))
             {
@@ -52,7 +53,7 @@ namespace AdventureAssembly.Units.Classes
         }
 
         // When a new class is added from a hero
-        public static void AddClass(ClassData classData)
+        public void AddClass(ClassData classData)
         {
             if (ClassCount.ContainsKey(classData))
             {
@@ -72,7 +73,7 @@ namespace AdventureAssembly.Units.Classes
             UpdateClassBuffs(classData, ClassCount[classData]);
         }
 
-        public static void RemoveClass(ClassData classData)
+        public void RemoveClass(ClassData classData)
         {
             if (!ClassCount.ContainsKey(classData))
             {
@@ -97,7 +98,7 @@ namespace AdventureAssembly.Units.Classes
         }
 
         // Update the buffs applied from each class buff
-        private static void UpdateClassBuffs(ClassData classData, int currentCount)
+        private void UpdateClassBuffs(ClassData classData, int currentCount)
         {
             ClassBuff classBuff = GetClassBuff(classData, currentCount);
 
@@ -154,7 +155,7 @@ namespace AdventureAssembly.Units.Classes
         }
 
         // Get the ClassBuff that should be applied based on the current class count
-        private static ClassBuff GetClassBuff(ClassData classData, int currentCount)
+        private ClassBuff GetClassBuff(ClassData classData, int currentCount)
         {
             ClassBuff classBuff = null;
 

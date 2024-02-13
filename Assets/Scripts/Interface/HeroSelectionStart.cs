@@ -10,7 +10,7 @@ namespace AdventureAssembly.Interface
 
         private void Start()
         {
-            InterfaceManager.Instance.HeroSelectionInterface.Show(_heroDataListScriptableVariable.GetRandom(_startingHeroSelectionCount));
+            HeroSelectionInterface.Instance.Show(_heroDataListScriptableVariable.GetRandom(_startingHeroSelectionCount));
         }
     }
 }

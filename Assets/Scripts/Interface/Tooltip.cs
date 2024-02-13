@@ -30,7 +30,7 @@ namespace AdventureAssembly.Interface
         {
             if (_tooltipElement == null)
             {
-                _tooltipElement = Instantiate(_tooltipElementPrefab, InterfaceManager.Instance.transform);
+                _tooltipElement = Instantiate(_tooltipElementPrefab, GameplayInterface.Instance.transform);
                 _tooltipElement.Text.text = Text;
                 _tooltipElement.Image.color = Color;
             }

@@ -82,9 +82,9 @@ namespace AdventureAssembly.Units.Heroes
 
         private void OnHeroDied(Character unit)
         {
-            RepairUnitPositions((Hero)unit);
+            unit.Died -= OnHeroDied;
 
-            RemoveUnit((Hero)unit);
+            RepairUnitPositions((Hero)unit);
         }
 
         private void OnGameLost()
@@ -225,7 +225,7 @@ namespace AdventureAssembly.Units.Heroes
             return Physics2D.OverlapCircleAll(position, 0.1f, HazardLayerMask).Length > 0;
         }
 
-        public void SpawnHero(HeroData heroData)
+        public void AddHeroToSnake(HeroData heroData)
         {
             // Calculate hero spawn position
             Hero lastHero = Units.LastOrDefault();
@@ -234,30 +234,8 @@ namespace AdventureAssembly.Units.Heroes
                 lastHero.LastPosition;
 
             // Instantiate new hero gameobject
-            Hero hero = Instantiate(_heroPrefab, (Vector2)spawnPosition, Quaternion.identity);
-            hero.HeroData = heroData;
-
-            // Add hero to this unit manager
-            AddUnit(hero);
-
-            // Initialize the spawned hero
-            hero.Initialize(heroData, spawnPosition);
-
-            // Add all the heroes classes to the class manager
-            ClassManager.AddClassesByHeroData(heroData);
-        }
-
-        public override void AddUnit(Hero hero)
-        {
-            base.AddUnit(hero);
+            Hero hero = heroData.Create(spawnPosition);
             hero.Died += OnHeroDied;
-        }
-
-        public override void RemoveUnit(Hero hero)
-        {
-            ClassManager.RemoveClassesByHeroData(hero.HeroData);
-            base.RemoveUnit(hero);
-            hero.Died -= OnHeroDied;
         }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using AdventureAssembly.Units.Abilities;
 using AdventureAssembly.Units.Characters;
+using AdventureAssembly.Units.Classes;
 using Sirenix.Serialization;
 using System.Collections.Generic;
 using UnityEngine;
@@ -25,9 +26,12 @@ namespace AdventureAssembly.Units.Heroes
         /// <param name="position">The starting position of this unit</param>
         public override void Initialize(CharacterData unitData, Vector2Int position)
         {
-            base.Initialize(unitData, position);
-
             this.HeroData = (HeroData)unitData;
+
+            HeroManager.Instance.AddUnit(this);
+            ClassManager.Instance.AddClassesByHeroData((HeroData)unitData);
+
+            base.Initialize(unitData, position);
 
             // Clone abilities and register to this hero
             foreach (Ability ability in HeroData.Abilities)
@@ -44,6 +48,9 @@ namespace AdventureAssembly.Units.Heroes
         protected override void OnDie()
         {
             base.OnDie();
+
+            ClassManager.Instance.RemoveClassesByHeroData(this.HeroData);
+            HeroManager.Instance.RemoveUnit(this);
 
             Rigidbody2D rigidbody = gameObject.AddComponent<Rigidbody2D>();
             rigidbody.interpolation = RigidbodyInterpolation2D.Interpolate;

@@ -42,7 +42,14 @@ namespace AdventureAssembly.Units.Heroes
                 return;
             }
 
-            ((HeroManager)HeroManager.Instance).SpawnHero(this);
+            ((HeroManager)HeroManager.Instance).AddHeroToSnake(this);
+        }
+
+        public Hero Create(Vector2Int position)
+        {
+            Hero hero = (Hero)Instantiate(Prefab, (Vector2)position, Quaternion.identity);
+            hero.Initialize(this, position);
+            return hero;
         }
     }
 }
