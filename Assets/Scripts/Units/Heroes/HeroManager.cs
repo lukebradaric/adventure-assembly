@@ -24,8 +24,6 @@ namespace AdventureAssembly.Units.Heroes
         [Title("Settings")]
         [Tooltip("How much time between each Hero Ability update? Measured in seconds.")]
         [OdinSerialize] public float UpdateInterval { get; private set; }
-        [Tooltip("What LayerMask are Hazard objects placed on?")]
-        [OdinSerialize] public LayerMask HazardLayerMask { get; private set; }
 
         public Vector2Int NextMovementVector { get; private set; } = Vector2Int.up;
         public Vector2Int LastMovementVector { get; private set; } = Vector2Int.zero;
@@ -126,8 +124,8 @@ namespace AdventureAssembly.Units.Heroes
                 RecalculateNextPosition();
             }
 
-            // Check if there is a hazard at the new position
-            if (IsHazardAtPosition(nextPosition))
+            // Check if the next position is within the level bounds
+            if (!LevelMap.Instance.IsWithinPlayerBounds(nextPosition))
             {
                 FirstHeroCollisionDeath();
             }
@@ -222,11 +220,6 @@ namespace AdventureAssembly.Units.Heroes
             {
                 Units[i].SetPosition(Units[i - 1].Position, false);
             }
-        }
-
-        private bool IsHazardAtPosition(Vector2Int position)
-        {
-            return Physics2D.OverlapCircleAll(position, 0.1f, HazardLayerMask).Length > 0;
         }
 
         public void AddHeroToSnake(HeroData heroData)

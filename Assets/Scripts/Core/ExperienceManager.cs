@@ -24,7 +24,7 @@ namespace AdventureAssembly.Core
 
         public void UpdateLevel()
         {
-            int newLevel = (int)Mathf.Sqrt(_currentExperience);
+            int newLevel = (int)Mathf.Round(Mathf.Sqrt(_currentExperience));
 
             if (newLevel != currentLevel)
             {

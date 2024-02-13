@@ -73,15 +73,15 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 31622243, guid: e9eaeff65d5e010469a99a848ad29760, type: 3}
+  m_Sprite: {fileID: 934165579, guid: e9eaeff65d5e010469a99a848ad29760, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 3.4166667, y: 3.3333333}
+  m_Size: {x: 3.9166667, y: 3.5833333}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &2395069384479269607
@@ -308,7 +308,6 @@ MonoBehaviour:
       Entry: 10
       Data: 5
   _onEnemyDamaged: {fileID: 11400000, guid: 3d57707407b0ed64385333b5b78ad981, type: 2}
-  moveCounter: 4
 --- !u!114 &8160321373793916526
 MonoBehaviour:
   m_ObjectHideFlags: 0
