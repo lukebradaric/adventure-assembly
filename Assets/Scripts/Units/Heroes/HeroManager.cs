@@ -119,17 +119,23 @@ namespace AdventureAssembly.Units.Heroes
                 nextPosition = new Vector2Int((int)transform.position.x, (int)transform.position.y);
             }
 
-            // Check if there is a hazard at the new position
-            if (IsHazardAtPosition(nextPosition))
+            void FirstHeroCollisionDeath()
             {
                 firstHero.CollisionDeath = true;
                 firstHero.Die();
                 RecalculateNextPosition();
             }
 
+            // Check if there is a hazard at the new position
+            if (IsHazardAtPosition(nextPosition))
+            {
+                FirstHeroCollisionDeath();
+            }
+
             // Check if player is moving into another unit
             if (GridManager.TryGetUnit(nextPosition, out Unit unit))
             {
+                // Interact with interactable units
                 if (unit is InteractableUnit)
                 {
                     ((InteractableUnit)unit).OnInteract();
@@ -148,9 +154,7 @@ namespace AdventureAssembly.Units.Heroes
                     // If hero has less health, kill hero, reset next pos
                     else if (enemy.CurrentHealth > firstHero.CurrentHealth)
                     {
-                        //enemy.TakeDamage(new DamageData(firstHero, enemy, firstHero.CurrentHealth));
-                        firstHero.Die();
-                        RecalculateNextPosition();
+                        FirstHeroCollisionDeath();
                     }
                 }
             }
