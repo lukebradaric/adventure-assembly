@@ -62,7 +62,7 @@ MonoBehaviour:
       Data: 
     - Name: MaxHealth
       Entry: 3
-      Data: 12
+      Data: 20
     - Name: Modifiers
       Entry: 7
       Data: 1|System.Collections.Generic.List`1[[AdventureAssembly.Units.Modifiers.CharacterModifier,
@@ -100,7 +100,7 @@ MonoBehaviour:
         hit and within a small radius.
     - Name: AbilitySpeed
       Entry: 4
-      Data: 2
+      Data: 3
     - Name: AbilitySound
       Entry: 10
       Data: 3

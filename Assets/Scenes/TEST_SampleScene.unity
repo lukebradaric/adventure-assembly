@@ -464,10 +464,10 @@ Camera:
   m_LensShift: {x: 0, y: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
+    x: 0.00234375
+    y: 0.0023677978
+    width: 0.9953125
+    height: 0.9944751
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 34
@@ -1469,7 +1469,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3441227645781506034, guid: e505c28e24c2eb4448ee8c7fac906d0e, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 72.505
       objectReference: {fileID: 0}
     - target: {fileID: 3441227645781506034, guid: e505c28e24c2eb4448ee8c7fac906d0e, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -1653,29 +1653,29 @@ MonoBehaviour:
     - serializedVersion: 3
       time: 0
       value: 0
-      inSlope: 0.06666667
-      outSlope: 0.06666667
-      tangentMode: 34
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
       weightedMode: 0
       inWeight: 0
-      outWeight: 0.33333334
+      outWeight: 0
     - serializedVersion: 3
-      time: 15
-      value: 1
-      inSlope: 0.55789477
-      outSlope: 0.55789477
-      tangentMode: 34
+      time: 59.81391
+      value: 51.68952
+      inSlope: 0.008747561
+      outSlope: 0.008747561
+      tangentMode: 0
       weightedMode: 0
       inWeight: 0.33333334
       outWeight: 0.33333334
     - serializedVersion: 3
-      time: 300
-      value: 300
-      inSlope: 1.0491228
-      outSlope: 1.0491228
-      tangentMode: 34
+      time: 900.0355
+      value: 500.6663
+      inSlope: 0.980042
+      outSlope: 0.980042
+      tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
+      inWeight: 0.06529308
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2

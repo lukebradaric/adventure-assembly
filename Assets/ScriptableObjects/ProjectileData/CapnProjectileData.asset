@@ -46,10 +46,16 @@ MonoBehaviour:
       Data: 
     - Name: BaseDamage
       Entry: 3
-      Data: 10
+      Data: 25
     - Name: Speed
       Entry: 4
       Data: 8
+    - Name: RotationMode
+      Entry: 3
+      Data: 0
+    - Name: RotationSpeed
+      Entry: 4
+      Data: 0
     - Name: DestroyOnCollision
       Entry: 5
       Data: false

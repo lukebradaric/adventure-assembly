@@ -61,7 +61,7 @@ MonoBehaviour:
       Data: 
     - Name: MaxHealth
       Entry: 3
-      Data: 15
+      Data: 20
     - Name: Modifiers
       Entry: 7
       Data: 1|System.Collections.Generic.List`1[[AdventureAssembly.Units.Modifiers.CharacterModifier,
@@ -99,7 +99,7 @@ MonoBehaviour:
         shop, get a free refresh.
     - Name: AbilitySpeed
       Entry: 4
-      Data: 1
+      Data: 2
     - Name: AbilitySound
       Entry: 6
       Data: 

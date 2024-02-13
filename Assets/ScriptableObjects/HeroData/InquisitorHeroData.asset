@@ -103,7 +103,7 @@ MonoBehaviour:
         the star kills an enemy, a random hero is healed.'
     - Name: AbilitySpeed
       Entry: 4
-      Data: 1.5
+      Data: 2
     - Name: AbilitySound
       Entry: 6
       Data: 

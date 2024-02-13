@@ -62,7 +62,7 @@ MonoBehaviour:
       Data: 
     - Name: MaxHealth
       Entry: 3
-      Data: 12
+      Data: 20
     - Name: Modifiers
       Entry: 7
       Data: 1|System.Collections.Generic.List`1[[AdventureAssembly.Units.Modifiers.CharacterModifier,
@@ -108,7 +108,7 @@ MonoBehaviour:
         Luck'
     - Name: AbilitySpeed
       Entry: 4
-      Data: 1.5
+      Data: 3
     - Name: AbilitySound
       Entry: 6
       Data: 
