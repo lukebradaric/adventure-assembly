@@ -1644,7 +1644,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _enemyPrefab: {fileID: 3098733434465147185, guid: e861db9d7b4f5af43aa07f6ec4431335, type: 3}
-  _updateInterval: 1.3
+  _updateInterval: 1
   _maxEnemyCount: 300
   _spawnRadius: {x: 18, y: 22}
   _spawnCurve:
@@ -1653,47 +1653,29 @@ MonoBehaviour:
     - serializedVersion: 3
       time: 0
       value: 0
-      inSlope: 0.033333335
-      outSlope: 0.033333335
+      inSlope: 0.06666667
+      outSlope: 0.06666667
       tangentMode: 34
       weightedMode: 0
       inWeight: 0
       outWeight: 0.33333334
     - serializedVersion: 3
-      time: 30
+      time: 15
       value: 1
-      inSlope: -0.027019918
-      outSlope: -0.027019918
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.21714732
-      outWeight: 0.30428374
-    - serializedVersion: 3
-      time: 55
-      value: 3
-      inSlope: -0.097537644
-      outSlope: -0.097537644
-      tangentMode: 0
+      inSlope: 0.55789477
+      outSlope: 0.55789477
+      tangentMode: 34
       weightedMode: 0
       inWeight: 0.33333334
-      outWeight: 0.16375242
+      outWeight: 0.33333334
     - serializedVersion: 3
       time: 300
-      value: 40
-      inSlope: 0.010641498
-      outSlope: 0.010641498
-      tangentMode: 0
+      value: 300
+      inSlope: 1.0491228
+      outSlope: 1.0491228
+      tangentMode: 34
       weightedMode: 0
-      inWeight: 0.29602057
-      outWeight: 0.27991536
-    - serializedVersion: 3
-      time: 600
-      value: 75
-      inSlope: 0.14063646
-      outSlope: 0.14063646
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.21459071
+      inWeight: 0.33333334
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
@@ -1709,6 +1691,25 @@ MonoBehaviour:
     Weight: 3
   - EnemyData: {fileID: 11400000, guid: 5485cf8b42f7ce94eb0cd1178dd55347, type: 2}
     Weight: 1
+  _amountData:
+  - Time: 0
+    Count: 1
+  - Time: 5
+    Count: 2
+  - Time: 10
+    Count: 3
+  - Time: 20
+    Count: 5
+  - Time: 30
+    Count: 10
+  - Time: 45
+    Count: 18
+  - Time: 60
+    Count: 25
+  - Time: 75
+    Count: 30
+  - Time: 90
+    Count: 40
 --- !u!1 &1545723460
 GameObject:
   m_ObjectHideFlags: 0

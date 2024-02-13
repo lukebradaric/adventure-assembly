@@ -1,7 +1,4 @@
-﻿using AdventureAssembly.Core;
-using AdventureAssembly.Units.Bosses;
-using AdventureAssembly.Units.Characters;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using TinyTools.Generics;
 using UnityEngine;
@@ -13,6 +10,13 @@ namespace AdventureAssembly.Units.Enemies
     {
         public EnemyData EnemyData;
         public int Weight;
+    }
+
+    [System.Serializable]
+    internal struct EnemySpawnAmountData
+    {
+        public float Time;
+        public int Count;
     }
 
     public class EnemySpawner : MonoBehaviour
@@ -30,6 +34,11 @@ namespace AdventureAssembly.Units.Enemies
         [SerializeField] private Vector2 _spawnRadius;
         [SerializeField] private AnimationCurve _spawnCurve;
         [SerializeField] private List<EnemySpawnData> _spawnData;
+        [SerializeField] private List<EnemySpawnAmountData> _amountData;
+
+        [Space]
+        [Header("Debugging")]
+        [SerializeField] private EnemySpawnAmountData _lastSpawnData;
 
         private float _currentTime = 0f;
         private Coroutine _updateCoroutine = null;
@@ -55,7 +64,19 @@ namespace AdventureAssembly.Units.Enemies
 
         private int GetEnemySpawnCount()
         {
-            return (int)Mathf.Ceil(_spawnCurve.Evaluate(_currentTime));
+            //return (int)Mathf.Ceil(_spawnCurve.Evaluate(_currentTime));
+            int count = 0;
+            for (int i = _amountData.Count - 1; i >= 0; i--)
+            {
+                if (_currentTime >= _amountData[i].Time)
+                {
+                    count = _amountData[i].Count;
+                    _lastSpawnData = _amountData[i];
+                    break;
+                }
+            }
+
+            return Mathf.Max(count - EnemyManager.Instance.Units.Count, 0);
         }
 
         private List<EnemyData> GetRandomEnemyData(int count)
