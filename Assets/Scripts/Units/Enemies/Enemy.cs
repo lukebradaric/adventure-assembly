@@ -62,7 +62,7 @@ namespace AdventureAssembly.Units.Enemies
             EnemyManager.Instance.RemoveUnit(this);
 
             // Enemy chance to spawn gold on death
-            if (this.Stats.GoldDropChance.Value > Random.value)
+            if (this.Stats.GetGoldDropChance() > Random.value)
             {
                 GoldManager.Instance.AddGold(Position);
             }

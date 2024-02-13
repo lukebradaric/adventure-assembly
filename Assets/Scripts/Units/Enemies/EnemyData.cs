@@ -16,6 +16,9 @@ namespace AdventureAssembly.Units.Enemies
         [BoxGroup("Stats")]
         [OdinSerialize] public int BaseDamage { get; private set; }
 
+        [BoxGroup("Stats")]
+        [OdinSerialize] public float BaseGoldDropChance { get; private set; } = 0.05f;
+
         [BoxGroup("Animation")]
         [Tooltip("What animation should play when this Enemy attacks?")]
         [OdinSerialize] public UnitTween AttackTween { get; private set; } = new DefaultEnemyAttackTween();

@@ -89,6 +89,9 @@ MonoBehaviour:
     - Name: BaseDamage
       Entry: 3
       Data: 0
+    - Name: BaseGoldDropChance
+      Entry: 4
+      Data: 0.05
     - Name: AttackTween
       Entry: 7
       Data: 3|AdventureAssembly.Units.Animation.DefaultEnemyAttackTween, AdventureAssembly.Units

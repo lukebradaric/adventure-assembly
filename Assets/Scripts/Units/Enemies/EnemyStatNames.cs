@@ -9,6 +9,6 @@
         DamageBonus,
         MaxHealthMultiplier,
         MaxHealthBonus,
-        GoldDropChance,
+        GoldDropChanceBonus,
     }
 }
