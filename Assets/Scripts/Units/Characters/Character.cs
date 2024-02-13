@@ -56,10 +56,10 @@ namespace AdventureAssembly.Units.Characters
         {
             base.Initialize(position);
 
+            // Set characterdata
             this.CharacterData = unitData;
-            this.Stats.Initialize(this);
-            this.CurrentHealth = Stats.GetMaxHealth();
 
+            // Apply starting modifiers
             foreach (CharacterModifier modifier in CharacterData.Modifiers)
             {
                 CharacterModifier newModifier = modifier.GetClone();
@@ -67,6 +67,11 @@ namespace AdventureAssembly.Units.Characters
                 Modifiers.Add(newModifier);
             }
 
+            // Setup stats
+            this.Stats.Initialize(this);
+            this.CurrentHealth = Stats.GetMaxHealth();
+
+            // Setup components
             SpriteRenderer.sprite = CharacterData.Sprite;
             ShadowSpriteRenderer.sprite = CharacterData.ShadowSprite;
             ShadowSpriteRenderer.transform.localPosition = CharacterData.ShadowOffset;

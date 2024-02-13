@@ -6,12 +6,13 @@ using UnityEngine;
 namespace AdventureAssembly.Units.Projectiles
 {
     /// <summary>
-    /// Heals all heroes that this projectile overlaps with.
+    /// Heals all heroes that this projectile trigger overlaps with
     /// </summary>
-    public class HealingProjectileComponent : ProjectileComponent
+    public class HealOnTriggerProjectileComponent : ProjectileComponent
     {
         [BoxGroup("Settings")]
         [SerializeField] private int _baseHeal;
+        
 
         public override void OnEnable()
         {

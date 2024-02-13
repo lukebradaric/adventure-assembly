@@ -18,7 +18,6 @@ MonoBehaviour:
     ReferencedUnityObjects:
     - {fileID: 21300000, guid: 1e4d28bb7669a1b40b9e668030048e71, type: 3}
     - {fileID: 21300000, guid: 9711b0dce12d11f4cb5ef3daeed63baf, type: 3}
-    - {fileID: 11400000, guid: f8befc5f6a835e24a855648d72e43ff8, type: 2}
     - {fileID: 11400000, guid: e46f9e6862677864280a67a35bf94ab2, type: 2}
     - {fileID: 11400000, guid: a18450eb18ab7534dbbf8719cb77aaba, type: 2}
     - {fileID: 11400000, guid: de6e1a58fffdcd64b9e5c125c0f03d75, type: 2}
@@ -93,14 +92,17 @@ MonoBehaviour:
       Data: 
     - Name: Description
       Entry: 1
-      Data: Fires a glistening bolt at a nearby enemy, dealing low damage and healing
-        any heroes it collides with for a small amount.
+      Data: 'Fires a spinning star at a nearby enemy, dealing damage.
+
+
+        If
+        the star kills an enemy, a random hero is healed.'
     - Name: AbilitySpeed
       Entry: 4
       Data: 1.5
     - Name: AbilitySound
-      Entry: 10
-      Data: 2
+      Entry: 6
+      Data: 
     - Name: ClassData
       Entry: 7
       Data: 2|System.Collections.Generic.List`1[[AdventureAssembly.Units.Classes.ClassData,
@@ -110,10 +112,10 @@ MonoBehaviour:
       Data: 2
     - Name: 
       Entry: 10
-      Data: 3
+      Data: 2
     - Name: 
       Entry: 10
-      Data: 4
+      Data: 3
     - Name: 
       Entry: 13
       Data: 
@@ -132,7 +134,7 @@ MonoBehaviour:
       Data: 4|AdventureAssembly.Units.Abilities.ProjectileAbility, AdventureAssembly.Units
     - Name: _projectileData
       Entry: 10
-      Data: 5
+      Data: 4
     - Name: 
       Entry: 8
       Data: 

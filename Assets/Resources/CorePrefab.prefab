@@ -270,7 +270,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &728598097416917458
 Transform:
   m_ObjectHideFlags: 0
@@ -1060,15 +1060,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _damageTextPrefab: {fileID: 3196603857852863306, guid: 300406fbfe971c540bdaf7a777cf49c1, type: 3}
-  _damageColor: {r: 1, g: 1, b: 1, a: 1}
-  _damageBackgroundColor: {r: 0, g: 0, b: 0, a: 1}
-  _criticalDamageColor: {r: 1, g: 0.7637062, b: 0, a: 1}
-  _healColor: {r: 0, g: 1, b: 0.5084171, a: 1}
-  _healBackgroundColor: {r: 0, g: 0, b: 0, a: 1}
+  _criticalDamageTextPrefab: {fileID: 3196603857852863306, guid: 4ba7cca688d81ae459b3c9a9edbc01f3, type: 3}
+  _healTextPrefab: {fileID: 3196603857852863306, guid: 4f677a43f424bf143997c4242d5ff6aa, type: 3}
   _tweenDistance: 75
   _tweenDuration: 0.6
   _movementEase: 9
-  _fadeEase: 14
 --- !u!1 &5623354147406594485
 GameObject:
   m_ObjectHideFlags: 0

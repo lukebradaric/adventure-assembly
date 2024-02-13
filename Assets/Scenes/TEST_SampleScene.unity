@@ -1653,6 +1653,7 @@ MonoBehaviour:
     Weight: 3
   - EnemyData: {fileID: 11400000, guid: 5485cf8b42f7ce94eb0cd1178dd55347, type: 2}
     Weight: 1
+  bossData: {fileID: 11400000, guid: 08127800eedd726459749bd93a040063, type: 2}
 --- !u!1 &1545723460
 GameObject:
   m_ObjectHideFlags: 0

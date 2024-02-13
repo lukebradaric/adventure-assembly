@@ -18,10 +18,11 @@ namespace AdventureAssembly.Units.Enemies
 
         public override void Initialize(CharacterData unitData, Vector2Int position)
         {
-            EnemyData = (EnemyData)unitData;
-            _navigation = EnemyData.Navigation.GetClone();
-
+            EnemyManager.Instance.AddUnit(this);
             base.Initialize(unitData, position);
+
+            EnemyData = (EnemyData)unitData;
+            _navigation = EnemyData.Navigation?.GetClone();
         }
 
         /// <summary>
@@ -43,7 +44,7 @@ namespace AdventureAssembly.Units.Enemies
             EnemyData.AttackTween.Animate(this, targetUnit.Position, TickManager.Instance.TickInterval / 2f);
         }
 
-        public void OnNavigate()
+        public virtual void OnNavigate()
         {
             // If this enemy is stunned, do not navigate
             if (StatusEffects.Contains(StatusEffect.Stunned))
@@ -51,12 +52,14 @@ namespace AdventureAssembly.Units.Enemies
                 return;
             }
 
-            _navigation.Update(this);
+            _navigation?.Update(this);
         }
 
         protected override void OnDie()
         {
             base.OnDie();
+
+            EnemyManager.Instance.RemoveUnit(this);
 
             // Enemy chance to spawn gold on death
             if (this.Stats.GoldDropChance.Value > Random.value)

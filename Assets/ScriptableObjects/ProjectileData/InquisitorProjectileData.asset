@@ -17,7 +17,7 @@ MonoBehaviour:
     SerializedBytes: 
     ReferencedUnityObjects:
     - {fileID: 498832367, guid: 5786dd6c780f0764ea71761afd8ad28d, type: 3}
-    - {fileID: 11400000, guid: 333f1769793ec2f48831b51e9e32c75d, type: 2}
+    - {fileID: 11400000, guid: a71d629df4148ca4ea72781bc03849f6, type: 2}
     - {fileID: 1702708558535293886, guid: a751c713cf8a6af40b6cb03d2420cb30, type: 3}
     SerializedBytesString: 
     Prefab: {fileID: 0}
@@ -75,10 +75,11 @@ MonoBehaviour:
       Data: 1
     - Name: 
       Entry: 7
-      Data: 1|AdventureAssembly.Units.Projectiles.HealingProjectileComponent, AdventureAssembly.Units
+      Data: 1|AdventureAssembly.Units.Projectiles.HealOnKillProjectileComponent,
+        AdventureAssembly.Units
     - Name: _baseHeal
       Entry: 3
-      Data: 1
+      Data: 2
     - Name: _healSound
       Entry: 10
       Data: 1

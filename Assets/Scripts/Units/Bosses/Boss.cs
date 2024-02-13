@@ -2,5 +2,8 @@
 
 namespace AdventureAssembly.Units.Bosses
 {
-    public class Boss : Enemy { }
+    public class Boss : Enemy
+    {
+
+    }
 }

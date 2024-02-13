@@ -26,6 +26,7 @@ namespace AdventureAssembly.Units.Heroes
         public override void Initialize(CharacterData unitData, Vector2Int position)
         {
             base.Initialize(unitData, position);
+
             this.HeroData = (HeroData)unitData;
 
             // Clone abilities and register to this hero

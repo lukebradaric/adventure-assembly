@@ -15,14 +15,8 @@ namespace AdventureAssembly.Interface
         [Space]
         [Header("Prefabs")]
         [SerializeField] private DamageTextElement _damageTextPrefab;
-
-        [Space]
-        [Header("Colors")]
-        [SerializeField] private Color _damageColor;
-        [SerializeField] private Color _damageBackgroundColor;
-        [SerializeField] private Color _criticalDamageColor;
-        [SerializeField] private Color _healColor;
-        [SerializeField] private Color _healBackgroundColor;
+        [SerializeField] private DamageTextElement _criticalDamageTextPrefab;
+        [SerializeField] private DamageTextElement _healTextPrefab;
 
         [Space]
         [Header("Settings")]
@@ -31,7 +25,6 @@ namespace AdventureAssembly.Interface
         [Tooltip("How long should the tween animation be?")]
         [SerializeField] private float _tweenDuration;
         [SerializeField] private Ease _movementEase;
-        [SerializeField] private Ease _fadeEase;
 
         public void OnEnemyDamaged(GameEventData gameEventData)
         {
@@ -46,10 +39,9 @@ namespace AdventureAssembly.Interface
         private void OnEnemyDamaged(Enemy enemy, DamageData damageData)
         {
             CreateText(
-                enemy.transform.position,
+                damageData.IsCritical ? _criticalDamageTextPrefab : _damageTextPrefab,
                 damageData.IsCritical ? damageData.Value.ToString() + "!" : damageData.Value.ToString(),
-                damageData.IsCritical ? _criticalDamageColor : _damageColor,
-                _damageBackgroundColor,
+                enemy.transform.position,
                 damageData.Direction == Vector2.zero ? GetRandomDirection() : damageData.Direction
                 );
         }
@@ -57,10 +49,9 @@ namespace AdventureAssembly.Interface
         private void OnCharacterHealed(Character character, HealData healData)
         {
             CreateText(
-                character.transform.position,
+                _healTextPrefab,
                 healData.Value.ToString(),
-                _healColor,
-                _healBackgroundColor,
+                character.transform.position,
                 GetRandomDirection()
                 );
         }
@@ -70,7 +61,7 @@ namespace AdventureAssembly.Interface
             return new Vector2(Random.Range(-1f, 1f), Random.Range(-1f, 1f)).normalized;
         }
 
-        private void CreateText(Vector2 position, string text, Color color, Color backgroundColor, Vector2 movement)
+        private void CreateText(DamageTextElement prefab, string text, Vector2 position, Vector2 movement)
         {
             // TODO: We should probably pool these because its easy
 
@@ -78,15 +69,14 @@ namespace AdventureAssembly.Interface
             Vector2 spawnPosition = Camera.main.WorldToScreenPoint(position);
 
             // Spawn text and set properties
-            DamageTextElement damageText = Instantiate(_damageTextPrefab, spawnPosition, Quaternion.identity);
+            DamageTextElement damageText = Instantiate(prefab, spawnPosition, Quaternion.identity);
             damageText.transform.SetParent(this.transform);
             damageText.Text = text;
-            damageText.BackgroundColor = backgroundColor;
-            damageText.Color = color;
 
             // Tween text
             damageText.transform.DOMove(movement * _tweenDistance, _tweenDuration).SetEase(_movementEase).SetRelative(true);
-            damageText.DOFade(0f, _tweenDuration, _tweenDuration * 1.1f).SetEase(_fadeEase).OnComplete(() =>
+
+            damageText.DoFadeOutTween().OnComplete(() =>
             {
                 Destroy(damageText.gameObject);
             });

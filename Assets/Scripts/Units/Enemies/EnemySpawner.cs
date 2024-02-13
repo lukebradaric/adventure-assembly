@@ -1,4 +1,5 @@
 ﻿using AdventureAssembly.Core;
+using AdventureAssembly.Units.Bosses;
 using AdventureAssembly.Units.Characters;
 using System.Collections;
 using System.Collections.Generic;
@@ -126,16 +127,7 @@ namespace AdventureAssembly.Units.Enemies
 
             Enemy enemy = Instantiate(_enemyPrefab, (Vector2)spawnPosition, Quaternion.identity);
 
-            EnemyManager.Instance.AddUnit(enemy);
-
             enemy.Initialize(enemyData, spawnPosition);
-            enemy.Died += OnEnemyDied;
-        }
-
-        private void OnEnemyDied(Character unit)
-        {
-            unit.Died -= OnEnemyDied;
-            EnemyManager.Instance.RemoveUnit((Enemy)unit);
         }
 
         private void OnDrawGizmos()

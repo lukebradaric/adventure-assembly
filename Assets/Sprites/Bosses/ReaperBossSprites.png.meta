@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Sprites_ReaperBoss_0
+      name: ReaperBossSprites_0
       rect:
         serializedVersion: 2
-        x: 4
-        y: 2
-        width: 41
-        height: 40
+        x: 0
+        y: 0
+        width: 47
+        height: 43
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 357a274aec00c924eb864739cb796c1c
-      internalID: 31622243
+      spriteID: 767c08f0d9d5a7544b8a05a89d8f47a5
+      internalID: 934165579
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprites_ReaperBoss_1
+      name: ReaperBossSprites_1
       rect:
         serializedVersion: 2
-        x: 49
-        y: 2
-        width: 42
-        height: 39
+        x: 47
+        y: 0
+        width: 47
+        height: 43
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,20 +145,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0a9f9925eb7533647adccaee6f50288e
-      internalID: -121229733
+      spriteID: 4631971104490b740907d8746ee040a8
+      internalID: 1590748706
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprites_ReaperBoss_2
+      name: ReaperBossSprites_2
       rect:
         serializedVersion: 2
-        x: 96
-        y: 2
-        width: 42
-        height: 39
+        x: 94
+        y: 0
+        width: 47
+        height: 43
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,20 +166,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dd5d7b094f92356428862e742678d63b
-      internalID: 680028685
+      spriteID: b667c55ddd247944aa26cff22628e8bb
+      internalID: 78588866
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprites_ReaperBoss_3
+      name: ReaperBossSprites_3
       rect:
         serializedVersion: 2
-        x: 142
-        y: 3
-        width: 44
-        height: 38
+        x: 141
+        y: 0
+        width: 47
+        height: 43
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,20 +187,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 59350d20b88912c44a0edcdbe0ce1a35
-      internalID: 1015090928
+      spriteID: d95f6f3c2b33cd241ad915deef0dde0c
+      internalID: 2072859240
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprites_ReaperBoss_4
+      name: ReaperBossSprites_4
       rect:
         serializedVersion: 2
-        x: 190
-        y: 4
-        width: 44
-        height: 36
+        x: 188
+        y: 0
+        width: 47
+        height: 43
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -208,20 +208,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 069aa76e94d1ea34f931c7ec9148823e
-      internalID: -1330397413
+      spriteID: 8d27169ab8a51e9448e926f94ded1b3c
+      internalID: 779579363
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprites_ReaperBoss_5
+      name: ReaperBossSprites_5
       rect:
         serializedVersion: 2
-        x: 237
-        y: 3
-        width: 44
-        height: 37
+        x: 235
+        y: 0
+        width: 47
+        height: 43
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -229,20 +229,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0d4d54894fe971144ae91f61b7218c96
-      internalID: -69473397
+      spriteID: a5cc64855989c304db3b73a1712aa258
+      internalID: 868234809
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprites_ReaperBoss_6
+      name: ReaperBossSprites_6
       rect:
         serializedVersion: 2
-        x: 284
-        y: 2
-        width: 42
-        height: 39
+        x: 282
+        y: 0
+        width: 47
+        height: 43
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -250,20 +250,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 903abec960ece6b419fa71ca49709a9b
-      internalID: 2019494426
+      spriteID: 0cc5b2cefb4fdf74b8ef0ac4cbdf6588
+      internalID: 1415512228
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprites_ReaperBoss_7
+      name: ReaperBossSprites_7
       rect:
         serializedVersion: 2
-        x: 332
-        y: 1
-        width: 40
-        height: 40
+        x: 329
+        y: 0
+        width: 47
+        height: 43
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -271,8 +271,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e4e82a2866ea3d04686de72d70616b93
-      internalID: 2100582105
+      spriteID: ea6c2297e9210a447a138ec1c2b6582a
+      internalID: 1476035439
       vertices: []
       indices: 
       edges: []
@@ -288,14 +288,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Sprites_ReaperBoss_0: 31622243
-      Sprites_ReaperBoss_1: -121229733
-      Sprites_ReaperBoss_2: 680028685
-      Sprites_ReaperBoss_3: 1015090928
-      Sprites_ReaperBoss_4: -1330397413
-      Sprites_ReaperBoss_5: -69473397
-      Sprites_ReaperBoss_6: 2019494426
-      Sprites_ReaperBoss_7: 2100582105
+      ReaperBossSprites_0: 934165579
+      ReaperBossSprites_1: 1590748706
+      ReaperBossSprites_2: 78588866
+      ReaperBossSprites_3: 2072859240
+      ReaperBossSprites_4: 779579363
+      ReaperBossSprites_5: 868234809
+      ReaperBossSprites_6: 1415512228
+      ReaperBossSprites_7: 1476035439
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

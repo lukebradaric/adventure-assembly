@@ -74,8 +74,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4278593024
+  m_fontColor: {r: 0, g: 0.1509434, b: 0.023222078, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -208,8 +208,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4279880192
+  m_fontColor: {r: 0, g: 0.7924528, b: 0.09723696, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -280,7 +280,7 @@ GameObject:
   - component: {fileID: 419267069062346315}
   - component: {fileID: 3196603857852863306}
   m_Layer: 5
-  m_Name: DamageTextPrefab
+  m_Name: HealTextPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -334,8 +334,8 @@ MonoBehaviour:
   _text: {fileID: 7686038948234867266}
   _backgroundText: {fileID: 6462857245451907486}
   _canvasGroup: {fileID: 419267069062346315}
-  _tweenCanvasGroup: 0
-  _tweenDuration: 0.6
-  _backgroundTweenDuration: 0.7
-  _ease: 14
+  _tweenCanvasGroup: 1
+  _tweenDuration: 0.7
+  _backgroundTweenDuration: 1.1
+  _ease: 17
   _backgroundEase: 14

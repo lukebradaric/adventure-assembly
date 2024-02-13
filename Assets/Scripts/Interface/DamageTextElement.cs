@@ -1,4 +1,5 @@
 ﻿using DG.Tweening;
+using Sirenix.OdinInspector;
 using TMPro;
 using UnityEngine;
 
@@ -9,8 +10,21 @@ namespace AdventureAssembly.Interface
     /// </summary>
     public class DamageTextElement : MonoBehaviour
     {
+        [Space]
+        [Header("Components")]
         [SerializeField] private TextMeshProUGUI _text;
         [SerializeField] private TextMeshProUGUI _backgroundText;
+        [SerializeField] private CanvasGroup _canvasGroup;
+
+        [Space]
+        [Header("Settings")]
+        [SerializeField] private bool _tweenCanvasGroup = false;
+        [SerializeField] private float _tweenDuration = 1f;
+        [HideIf(nameof(_tweenCanvasGroup))]
+        [SerializeField] private float _backgroundTweenDuration = 1f;
+        [SerializeField] private Ease _ease = Ease.Linear;
+        [HideIf(nameof(_tweenCanvasGroup))]
+        [SerializeField] private Ease _backgroundEase = Ease.Linear;
 
         /// <summary>
         /// The text value of this element.
@@ -43,6 +57,9 @@ namespace AdventureAssembly.Interface
             }
         }
 
+        /// <summary>
+        /// The background underlay color of the text.
+        /// </summary>
         public Color BackgroundColor
         {
             get
@@ -56,23 +73,24 @@ namespace AdventureAssembly.Interface
         }
 
         /// <summary>
-        /// Fades the text over time.
+        /// Tweens the damage text to fade out over time.
         /// </summary>
-        /// <param name="alpha">The alpha value to fade to</param>
-        /// <param name="duration">The duration of the fade</param>
-        /// <returns>Fade tween</returns>
-        public Tween DOFade(float alpha, float duration, float backgroundDuration)
+        /// <returns></returns>
+        public Tween DoFadeOutTween()
         {
-            Tween textTween = _text.DOFade(alpha, duration);
-            Tween backgroundTextTween = _backgroundText.DOFade(alpha, backgroundDuration);
-
-            // Return whichever tween will finish last
-            if(duration > backgroundDuration)
+            if (_tweenCanvasGroup)
             {
-                return textTween;
+                return _canvasGroup.DOFade(0f, _tweenDuration).SetEase(_ease);
             }
-            
-            return backgroundTextTween;
+
+            if (_tweenDuration > _backgroundTweenDuration)
+            {
+                _backgroundText.DOFade(0f, _backgroundTweenDuration).SetEase(_backgroundEase);
+                return _text.DOFade(0f, _tweenDuration).SetEase(_ease);
+            }
+
+            _text.DOFade(0f, _tweenDuration).SetEase(_ease);
+            return _backgroundText.DOFade(0, _backgroundTweenDuration).SetEase(_backgroundEase);
         }
     }
 }

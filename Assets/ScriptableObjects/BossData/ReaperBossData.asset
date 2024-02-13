@@ -9,16 +9,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8c3d5c0a35e457f4fbbb24c3a1552ab2, type: 3}
-  m_Name: RatEnemyData
+  m_Script: {fileID: 11500000, guid: 398381b366b33ef45bf9a55b3a95b29b, type: 3}
+  m_Name: ReaperBossData
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 
     ReferencedUnityObjects:
-    - {fileID: 21300000, guid: 890ef19f9785b7347ad14c8442a08837, type: 3}
-    - {fileID: 21300000, guid: 9711b0dce12d11f4cb5ef3daeed63baf, type: 3}
+    - {fileID: 31622243, guid: e9eaeff65d5e010469a99a848ad29760, type: 3}
+    - {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
     - {fileID: 11400000, guid: 2138459d0bf80524cbb69bce43708a97, type: 2}
+    - {fileID: 5828034734628742044, guid: 0eee6be5ee132674d9046ffdd09ed112, type: 3}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -26,7 +27,7 @@ MonoBehaviour:
     SerializationNodes:
     - Name: Name
       Entry: 1
-      Data: Rat
+      Data: Reaper
     - Name: Sprite
       Entry: 10
       Data: 0
@@ -38,10 +39,10 @@ MonoBehaviour:
       Data: UnityEngine.Vector2, UnityEngine.CoreModule
     - Name: 
       Entry: 4
-      Data: 0
+      Data: -0.6
     - Name: 
       Entry: 4
-      Data: -0.225
+      Data: -1.35
     - Name: 
       Entry: 8
       Data: 
@@ -56,38 +57,14 @@ MonoBehaviour:
       Data: 2
     - Name: MaxHealth
       Entry: 3
-      Data: 5
+      Data: 300
     - Name: Modifiers
       Entry: 7
       Data: 1|System.Collections.Generic.List`1[[AdventureAssembly.Units.Modifiers.CharacterModifier,
         AdventureAssembly.Units]], mscorlib
     - Name: 
       Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 7
-      Data: 2|AdventureAssembly.Units.Modifiers.CharacterStatModifier, AdventureAssembly.Units
-    - Name: CharacterType
-      Entry: 3
-      Data: 1
-    - Name: _heroStatName
-      Entry: 3
       Data: 0
-    - Name: _enemyStatName
-      Entry: 3
-      Data: 2
-    - Name: _statProcess
-      Entry: 7
-      Data: 3|AdventureAssembly.Units.Stats.FloatAddStatProcess, AdventureAssembly.Units
-    - Name: _value
-      Entry: 4
-      Data: 5
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
     - Name: 
       Entry: 13
       Data: 
@@ -96,19 +73,22 @@ MonoBehaviour:
       Data: 
     - Name: KillExperience
       Entry: 3
-      Data: 1
+      Data: 10
     - Name: BaseDamage
       Entry: 3
-      Data: 5
+      Data: 0
     - Name: AttackTween
       Entry: 7
-      Data: 4|AdventureAssembly.Units.Animation.DefaultEnemyAttackTween, AdventureAssembly.Units
+      Data: 2|AdventureAssembly.Units.Animation.DefaultEnemyAttackTween, AdventureAssembly.Units
     - Name: 
       Entry: 8
       Data: 
     - Name: Navigation
       Entry: 7
-      Data: 5|AdventureAssembly.Units.Enemies.DefaultEnemyNavigation, AdventureAssembly.Units
+      Data: 3|AdventureAssembly.Units.Enemies.DefaultEnemyNavigation, AdventureAssembly.Units
     - Name: 
       Entry: 8
       Data: 
+    - Name: Prefab
+      Entry: 10
+      Data: 3
