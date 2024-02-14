@@ -19,6 +19,7 @@ MonoBehaviour:
     - {fileID: 11400000, guid: b930fad0151c80c4ebdf5bd12e71e15c, type: 2}
     - {fileID: 11400000, guid: 15ea173c77e3bc343a2a3239eba22126, type: 2}
     - {fileID: 11400000, guid: 03d06a9321706ae4595dbf0c8663a2ba, type: 2}
+    - {fileID: 11400000, guid: 9fd457d9fcdcfd44f96b9e874df6b8aa, type: 2}
     - {fileID: 11400000, guid: 08127800eedd726459749bd93a040063, type: 2}
     SerializedBytesString: 
     Prefab: {fileID: 0}
@@ -34,7 +35,7 @@ MonoBehaviour:
         AdventureAssembly.Units]], mscorlib
     - Name: 
       Entry: 12
-      Data: 4
+      Data: 5
     - Name: 
       Entry: 7
       Data: AdventureAssembly.Units.Enemies.EnemySpawnWeight, AdventureAssembly.Units
@@ -64,10 +65,10 @@ MonoBehaviour:
       Data: 10
     - Name: MinSpawnTime
       Entry: 4
-      Data: 40
+      Data: 20
     - Name: MaxSpawnTime
       Entry: 4
-      Data: 180
+      Data: 120
     - Name: 
       Entry: 8
       Data: 
@@ -82,10 +83,10 @@ MonoBehaviour:
       Data: 10
     - Name: MinSpawnTime
       Entry: 4
-      Data: 120
+      Data: 35
     - Name: MaxSpawnTime
       Entry: 4
-      Data: 240
+      Data: 120
     - Name: 
       Entry: 8
       Data: 
@@ -97,13 +98,31 @@ MonoBehaviour:
       Data: 3
     - Name: Weight
       Entry: 3
-      Data: 1
+      Data: 10
     - Name: MinSpawnTime
       Entry: 4
-      Data: 180
+      Data: 50
     - Name: MaxSpawnTime
       Entry: 4
-      Data: 240
+      Data: 120
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: AdventureAssembly.Units.Enemies.EnemySpawnWeight, AdventureAssembly.Units
+    - Name: EnemyData
+      Entry: 10
+      Data: 4
+    - Name: Weight
+      Entry: 3
+      Data: 3
+    - Name: MinSpawnTime
+      Entry: 4
+      Data: 65
+    - Name: MaxSpawnTime
+      Entry: 4
+      Data: 120
     - Name: 
       Entry: 8
       Data: 
@@ -177,24 +196,6 @@ MonoBehaviour:
     - serializedVersion: 3
       time: 45
       value: 18
-      inSlope: 0.5
-      outSlope: 0.5
-      tangentMode: 34
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 60
-      value: 25
-      inSlope: 0.46666667
-      outSlope: 0.46666667
-      tangentMode: 34
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 75
-      value: 32
       inSlope: 0.6666667
       outSlope: 0.6666667
       tangentMode: 34
@@ -202,28 +203,37 @@ MonoBehaviour:
       inWeight: 0.33333334
       outWeight: 0.33333334
     - serializedVersion: 3
-      time: 90
-      value: 45
-      inSlope: 0.76666665
-      outSlope: 0.76666665
+      time: 60
+      value: 30
+      inSlope: 1.0666667
+      outSlope: 1.0666667
       tangentMode: 34
       weightedMode: 0
       inWeight: 0.33333334
       outWeight: 0.33333334
     - serializedVersion: 3
-      time: 105
-      value: 55
-      inSlope: 1
-      outSlope: 1
+      time: 75
+      value: 50
+      inSlope: 1.9483106
+      outSlope: 1.9483106
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 104.34588
+      value: 125.22193
+      inSlope: 3.6700904
+      outSlope: 3.6700904
       tangentMode: 34
       weightedMode: 0
       inWeight: 0.33333334
       outWeight: 0.33333334
     - serializedVersion: 3
       time: 120
-      value: 75
-      inSlope: 1.3333334
-      outSlope: 1.3333334
+      value: 200
+      inSlope: 4.776893
+      outSlope: 4.776893
       tangentMode: 34
       weightedMode: 0
       inWeight: 0.33333334
