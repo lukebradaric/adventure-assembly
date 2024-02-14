@@ -17,7 +17,7 @@ namespace AdventureAssembly.Units.Heroes
         {
             foreach (var modifier in Modifiers)
             {
-                HeroManager.Instance.AddGlobalModifier(modifier);
+                modifier.Apply();
             }
         }
     }

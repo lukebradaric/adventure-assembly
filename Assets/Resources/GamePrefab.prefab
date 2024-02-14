@@ -252,8 +252,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 941d7734160e0f84aa9c82f188b16733, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemySpawnData: {fileID: 0}
-  _currentTime: 0
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: EnemySpawnData
+      Entry: 6
+      Data: 
+    - Name: CurrentTime
+      Entry: 4
+      Data: 0
 --- !u!1 &828789508746458741
 GameObject:
   m_ObjectHideFlags: 0

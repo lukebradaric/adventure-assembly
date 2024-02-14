@@ -5,7 +5,7 @@ namespace AdventureAssembly.Units.Modifiers
 {
     public abstract class CharacterModifier : CloneObject<CharacterModifier>
     {
-        public abstract void Apply(Character character);
-        public abstract void Remove(Character character);
+        public abstract void ApplyToCharacter(Character character);
+        public abstract void RemoveFromCharacter(Character character);
     }
 }

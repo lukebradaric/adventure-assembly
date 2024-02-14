@@ -1,5 +1,6 @@
 ﻿using AdventureAssembly.Units.Characters;
 using AdventureAssembly.Units.Classes;
+using AdventureAssembly.Units.Enemies;
 using AdventureAssembly.Units.Heroes;
 using Sirenix.OdinInspector;
 using Sirenix.Serialization;
@@ -21,36 +22,68 @@ namespace AdventureAssembly.Units.Modifiers
 
         private bool _showClassList => CharacterType == CharacterType.Hero && SpecificClasses;
 
-        public override void Apply(Character character)
+        /// <summary>
+        /// Applies this modifiers to all characters of the target type.
+        /// </summary>
+        public void Apply()
         {
-            // If targeting specific hero classes
-            if (CharacterType == CharacterType.Hero && SpecificClasses)
+            switch (CharacterType)
             {
-                if (HeroHasClass((Hero)character))
-                {
-                    base.Apply(character);
-                }
-
-                return;
+                case CharacterType.Hero:
+                    HeroManager.Instance.AddModifierToAll(this);
+                    break;
+                case CharacterType.Enemy:
+                    EnemyManager.Instance.AddModifierToAll(this);
+                    break;
             }
-
-            base.Apply(character);
         }
 
-        public override void Remove(Character character)
+        /// <summary>
+        /// Removes this modifiers from all characters of the target type.
+        /// </summary>
+        public void Remove()
+        {
+            switch (CharacterType)
+            {
+                case CharacterType.Hero:
+                    HeroManager.Instance.RemoveModifierFromAll(this);
+                    break;
+                case CharacterType.Enemy:
+                    EnemyManager.Instance.RemoveModifierFromAll(this);
+                    break;
+            }
+        }
+
+        public override void ApplyToCharacter(Character character)
         {
             // If targeting specific hero classes
             if (CharacterType == CharacterType.Hero && SpecificClasses)
             {
                 if (HeroHasClass((Hero)character))
                 {
-                    base.Remove((Hero)character);
+                    base.ApplyToCharacter(character);
                 }
 
                 return;
             }
 
-            base.Remove(character);
+            base.ApplyToCharacter(character);
+        }
+
+        public override void RemoveFromCharacter(Character character)
+        {
+            // If targeting specific hero classes
+            if (CharacterType == CharacterType.Hero && SpecificClasses)
+            {
+                if (HeroHasClass((Hero)character))
+                {
+                    base.RemoveFromCharacter((Hero)character);
+                }
+
+                return;
+            }
+
+            base.RemoveFromCharacter(character);
         }
 
         /// <summary>

@@ -17,7 +17,7 @@ namespace AdventureAssembly.Units.Characters
             // Apply all modifiers to a single unit
             foreach (CharacterModifier modifier in Modifiers)
             {
-                modifier.Apply(unit);
+                modifier.ApplyToCharacter(unit);
             }
         }
 
@@ -41,7 +41,7 @@ namespace AdventureAssembly.Units.Characters
         /// Adds a modifier to all units and future units in this manager.
         /// </summary>
         /// <param name="modifier">The modifier to add.</param>
-        public void AddGlobalModifier(CharacterModifier modifier)
+        public void AddModifierToAll(CharacterModifier modifier)
         {
             //Debug.Log($"Adding new modifier: {modifier.GetType().Name}");
 
@@ -50,7 +50,7 @@ namespace AdventureAssembly.Units.Characters
             // Apply the new modifier to all existing units
             foreach (T unit in Units)
             {
-                modifier.Apply(unit);
+                modifier.ApplyToCharacter(unit);
             }
         }
 
@@ -58,11 +58,11 @@ namespace AdventureAssembly.Units.Characters
         /// Removes a modifier from all units and future units in this manager.
         /// </summary>
         /// <param name="modifier">The modifier to remove. Must be a reference to the modifier that was applied.</param>
-        public void RemoveGlobalModifier(CharacterModifier modifier)
+        public void RemoveModifierFromAll(CharacterModifier modifier)
         {
             foreach (T unit in Units)
             {
-                modifier.Remove(unit);
+                modifier.RemoveFromCharacter(unit);
             }
 
             Modifiers.Remove(modifier);

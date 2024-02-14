@@ -82,7 +82,7 @@ MonoBehaviour:
       Data: 0
     - Name: _heroStatName
       Entry: 3
-      Data: 7
+      Data: 8
     - Name: _enemyStatName
       Entry: 3
       Data: 0
@@ -147,7 +147,7 @@ MonoBehaviour:
       Data: 0
     - Name: _heroStatName
       Entry: 3
-      Data: 7
+      Data: 8
     - Name: _enemyStatName
       Entry: 3
       Data: 0
@@ -212,7 +212,7 @@ MonoBehaviour:
       Data: 0
     - Name: _heroStatName
       Entry: 3
-      Data: 7
+      Data: 8
     - Name: _enemyStatName
       Entry: 3
       Data: 0

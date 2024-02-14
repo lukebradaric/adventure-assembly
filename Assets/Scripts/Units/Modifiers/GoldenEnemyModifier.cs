@@ -11,12 +11,12 @@ namespace AdventureAssembly.Units.Modifiers
     {
         [SerializeField] private float _goldPerHealthLost = 0.2f;
 
-        public override void Apply(Character character)
+        public override void ApplyToCharacter(Character character)
         {
             character.Damaged += OnDamaged;
         }
 
-        public override void Remove(Character character)
+        public override void RemoveFromCharacter(Character character)
         {
             character.Damaged -= OnDamaged;
         }

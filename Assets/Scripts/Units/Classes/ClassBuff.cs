@@ -24,14 +24,7 @@ namespace AdventureAssembly.Units.Classes
         {
             foreach (GlobalCharacterStatModifier modifier in GlobalCharacterModifiers)
             {
-                if (modifier.CharacterType == CharacterType.Hero)
-                {
-                    HeroManager.Instance.AddGlobalModifier(modifier);
-                }
-                else if (modifier.CharacterType == CharacterType.Enemy)
-                {
-                    EnemyManager.Instance.AddGlobalModifier(modifier);
-                }
+                modifier.Apply();
             }
         }
 
@@ -39,14 +32,7 @@ namespace AdventureAssembly.Units.Classes
         {
             foreach (GlobalCharacterStatModifier modifier in GlobalCharacterModifiers)
             {
-                if (modifier.CharacterType == CharacterType.Hero)
-                {
-                    HeroManager.Instance.RemoveGlobalModifier(modifier);
-                }
-                else if (modifier.CharacterType == CharacterType.Enemy)
-                {
-                    EnemyManager.Instance.RemoveGlobalModifier(modifier);
-                }
+                modifier.Remove();
             }
         }
 

@@ -14,6 +14,7 @@ namespace AdventureAssembly.Units.Heroes
         public Stat<float> CriticalChance { get; set; } = new Stat<float>(0f);
         public Stat<float> CriticalMultiplier { get; set; } = new Stat<float>(2f);
         public Stat<float> CriticalBonus { get; set; } = new Stat<float>(0f);
+        public Stat<float> AbilitySpeedMultiplier { get; set; } = new Stat<float>(1f);
         public Stat<float> AbilityExecuteBonus { get; protected set; } = new Stat<float>(0f);
         public Stat<float> LuckMultiplier { get; set; } = new Stat<float>(1f);
 
@@ -63,7 +64,7 @@ namespace AdventureAssembly.Units.Heroes
         public float GetAbilitySpeed()
         {
             // Clamp ability speed to min ability speed
-            return Mathf.Max(HeroData.AbilitySpeed, MinAbilitySpeed);
+            return Mathf.Max(HeroData.AbilitySpeed / AbilitySpeedMultiplier.Value, MinAbilitySpeed);
         }
 
         public int GetAbilityExecuteCount()

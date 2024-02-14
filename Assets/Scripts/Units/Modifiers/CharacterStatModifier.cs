@@ -32,7 +32,7 @@ namespace AdventureAssembly.Units.Modifiers
         [BoxGroup("Modifier")]
         [OdinSerialize] private StatProcess _statProcess = new FloatAddStatProcess();
 
-        public override void Apply(Character character)
+        public override void ApplyToCharacter(Character character)
         {
             // If we are able to get stat property, add modifier
             if (TryGetStatProperty(character, GetStatName(), out Stat<float> stat))
@@ -41,7 +41,7 @@ namespace AdventureAssembly.Units.Modifiers
             }
         }
 
-        public override void Remove(Character character)
+        public override void RemoveFromCharacter(Character character)
         {
             if (TryGetStatProperty(character, GetStatName(), out Stat<float> stat))
             {

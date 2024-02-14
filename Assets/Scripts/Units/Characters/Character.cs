@@ -63,7 +63,7 @@ namespace AdventureAssembly.Units.Characters
             foreach (CharacterModifier modifier in CharacterData.Modifiers)
             {
                 CharacterModifier newModifier = modifier.GetClone();
-                newModifier.Apply(this);
+                newModifier.ApplyToCharacter(this);
                 Modifiers.Add(newModifier);
             }
 
@@ -218,7 +218,7 @@ namespace AdventureAssembly.Units.Characters
             // Clear all modifiers
             foreach (CharacterModifier modifier in Modifiers)
             {
-                modifier.Remove(this);
+                modifier.RemoveFromCharacter(this);
             }
 
             Modifiers.Clear();
