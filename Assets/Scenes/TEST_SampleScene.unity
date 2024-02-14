@@ -5372,7 +5372,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3441227645781506034, guid: e505c28e24c2eb4448ee8c7fac906d0e, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 72.505
       objectReference: {fileID: 0}
     - target: {fileID: 3441227645781506034, guid: e505c28e24c2eb4448ee8c7fac906d0e, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -5850,7 +5850,7 @@ PrefabInstance:
       objectReference: {fileID: 3213923293646680723, guid: e450e852feb5a7c41ad1cd4f12ff1f3e, type: 3}
     - target: {fileID: 3213923293646680723, guid: e450e852feb5a7c41ad1cd4f12ff1f3e, type: 3}
       propertyPath: serializationData.PrefabModifications.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3213923293646680723, guid: e450e852feb5a7c41ad1cd4f12ff1f3e, type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
@@ -5915,8 +5915,122 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2721008306345571318, guid: e450e852feb5a7c41ad1cd4f12ff1f3e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 626106776973342900}
+    - targetCorrespondingSourceObject: {fileID: 2721008306345571318, guid: e450e852feb5a7c41ad1cd4f12ff1f3e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 626106776973342899}
   m_SourcePrefab: {fileID: 100100000, guid: e450e852feb5a7c41ad1cd4f12ff1f3e, type: 3}
+--- !u!1 &626106776973342898 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2721008306345571318, guid: e450e852feb5a7c41ad1cd4f12ff1f3e, type: 3}
+  m_PrefabInstance: {fileID: 626106776973342897}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &626106776973342899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 626106776973342898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db0f159137d986840a82b01a6b2c534e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Modifiers
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[AdventureAssembly.Units.Modifiers.GlobalCharacterStatModifier,
+        AdventureAssembly.Units]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 1|AdventureAssembly.Units.Modifiers.GlobalCharacterStatModifier, AdventureAssembly.Units
+    - Name: CharacterType
+      Entry: 3
+      Data: 0
+    - Name: _heroStatName
+      Entry: 3
+      Data: 0
+    - Name: _enemyStatName
+      Entry: 3
+      Data: 0
+    - Name: _statProcess
+      Entry: 7
+      Data: 2|AdventureAssembly.Units.Stats.FloatAddStatProcess, AdventureAssembly.Units
+    - Name: _value
+      Entry: 4
+      Data: 0.03
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: SpecificClasses
+      Entry: 5
+      Data: false
+    - Name: ClassData
+      Entry: 7
+      Data: 3|System.Collections.Generic.List`1[[AdventureAssembly.Units.Classes.ClassData,
+        AdventureAssembly.Units]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+--- !u!114 &626106776973342900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 626106776973342898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 928d5c788f9a80c4597ed05077757ec0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _scriptableEvent: {fileID: 11400000, guid: 7fd4daf00f8e8cc4aacb7412aeea9269, type: 2}
+  _onRaised:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 626106776973342899}
+        m_TargetAssemblyTypeName: AdventureAssembly.Units.Heroes.HeroLevelUpModifiers,
+          AdventureAssembly.Units
+        m_MethodName: OnPlayerLeveledUp
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

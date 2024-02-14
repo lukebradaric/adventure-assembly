@@ -1,4 +1,5 @@
-﻿using TinyTools.Generics;
+﻿using Sirenix.Serialization;
+using TinyTools.Generics;
 using TinyTools.ScriptableEvents;
 using UnityEngine;
 
