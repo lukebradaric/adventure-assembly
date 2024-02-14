@@ -20,6 +20,7 @@ MonoBehaviour:
     - {fileID: 934165579, guid: e9eaeff65d5e010469a99a848ad29760, type: 3}
     - {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
     - {fileID: 11400000, guid: 2138459d0bf80524cbb69bce43708a97, type: 2}
+    - {fileID: 1702708558535293886, guid: e929e15696b5060448476839b7a871fc, type: 3}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -60,7 +61,7 @@ MonoBehaviour:
       Data: 3
     - Name: MaxHealth
       Entry: 3
-      Data: 300
+      Data: 10
     - Name: Modifiers
       Entry: 7
       Data: 1|System.Collections.Generic.List`1[[AdventureAssembly.Units.Modifiers.CharacterModifier,
@@ -80,12 +81,18 @@ MonoBehaviour:
     - Name: BaseDamage
       Entry: 3
       Data: 0
+    - Name: BaseGoldDropChance
+      Entry: 4
+      Data: 0.05
     - Name: AttackTween
       Entry: 7
       Data: 2|AdventureAssembly.Units.Animation.DefaultEnemyAttackTween, AdventureAssembly.Units
     - Name: 
       Entry: 8
       Data: 
+    - Name: DeathParticles
+      Entry: 10
+      Data: 4
     - Name: Navigation
       Entry: 7
       Data: 3|AdventureAssembly.Units.Enemies.DefaultEnemyNavigation, AdventureAssembly.Units

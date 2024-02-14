@@ -16,10 +16,9 @@ MonoBehaviour:
     SerializedFormat: 2
     SerializedBytes: 
     ReferencedUnityObjects:
-    - {fileID: 11400000, guid: b930fad0151c80c4ebdf5bd12e71e15c, type: 2}
+    - {fileID: 11400000, guid: 08127800eedd726459749bd93a040063, type: 2}
     - {fileID: 11400000, guid: 15ea173c77e3bc343a2a3239eba22126, type: 2}
     - {fileID: 11400000, guid: 03d06a9321706ae4595dbf0c8663a2ba, type: 2}
-    - {fileID: 11400000, guid: 08127800eedd726459749bd93a040063, type: 2}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -94,7 +93,7 @@ MonoBehaviour:
       Data: AdventureAssembly.Units.Enemies.EnemySpawnWeight, AdventureAssembly.Units
     - Name: EnemyData
       Entry: 10
-      Data: 3
+      Data: 0
     - Name: Weight
       Entry: 3
       Data: 1

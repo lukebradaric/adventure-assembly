@@ -11,6 +11,7 @@ namespace AdventureAssembly.Units.Characters
     public abstract class CharacterData : SerializedScriptableObject
     {
         [BoxGroup("General")]
+        [Tooltip("The base prefab for spawning this enemy. This should likely never change.")]
         [OdinSerialize] public Character Prefab { get; private set; } = default;
 
         [BoxGroup("General")]
@@ -33,9 +34,11 @@ namespace AdventureAssembly.Units.Characters
         [OdinSerialize] public UnitTween MovementTween { get; private set; } = new DefaultUnitMovementTween();
 
         [BoxGroup("Audio")]
+        [Tooltip("What sound should play when this enemy is hurt?")]
         [OdinSerialize] public ScriptableSound HurtSound { get; private set; } = default;
 
         [BoxGroup("Stats")]
+        [Tooltip("What is the max health of this enemy?")]
         [OdinSerialize] public int MaxHealth { get; private set; }
 
         [BoxGroup("Components")]

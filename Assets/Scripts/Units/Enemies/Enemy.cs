@@ -61,14 +61,19 @@ namespace AdventureAssembly.Units.Enemies
 
             EnemyManager.Instance.RemoveUnit(this);
 
+            ExperienceManager.Instance.AddExperience(EnemyData.KillExperience);
+
+            // If this enemy has death particles, spawn them
+            if (EnemyData.DeathParticles != null)
+            {
+                Instantiate(EnemyData.DeathParticles, transform.position, Quaternion.identity);
+            }
+
             // Enemy chance to spawn gold on death
             if (this.Stats.GetGoldDropChance() > Random.value)
             {
                 GoldManager.Instance.AddGold(Position);
             }
-
-            // Enemy add experience on death
-            ExperienceManager.Instance.AddExperience(EnemyData.KillExperience);
         }
 
         protected override void OnTakeDamage(DamageData damageData)
