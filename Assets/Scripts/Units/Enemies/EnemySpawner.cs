@@ -47,7 +47,7 @@ namespace AdventureAssembly.Units.Enemies
             List<EnemyData> enemiesToSpawn = EnemySpawnData.GetEnemiesToSpawn(CurrentTime, spawnCount);
             foreach (EnemyData enemyData in enemiesToSpawn)
             {
-                enemyData.Create(LevelMap.Instance.GetRandomEnemyTile());
+                enemyData.Create(LevelMap.Instance.GetRandomPositionWithinEnemyMap());
             }
         }
     }

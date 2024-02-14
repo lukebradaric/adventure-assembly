@@ -124,7 +124,7 @@ namespace AdventureAssembly.Units.Heroes
             }
 
             // Check if the next position is within the level bounds
-            if (!LevelMap.Instance.IsWithinPlayerBounds(nextPosition))
+            if (!LevelMap.Instance.IsWithinPlayerMap(nextPosition))
             {
                 FirstHeroCollisionDeath();
             }

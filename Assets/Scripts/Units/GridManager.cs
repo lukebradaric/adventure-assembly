@@ -96,17 +96,9 @@ namespace AdventureAssembly.Units
         /// </summary>
         /// <param name="bounds">The boundaries of the grid to check</param>
         /// <returns></returns>
-        public static Vector2Int GetRandomEmptyPosition(Vector4 bounds)
+        public static Vector2Int GetRandomEmptyPosition()
         {
-            List<Vector2Int> positions = new List<Vector2Int>();
-
-            for (int x = (int)bounds.x; x < (int)bounds.y; x++)
-            {
-                for (int y = (int)bounds.z; y < (int)bounds.w; y++)
-                {
-                    positions.Add(new Vector2Int(x, y));
-                }
-            }
+            List<Vector2Int> positions = LevelMap.Instance.GetPlayerMapPositions();
 
             foreach (Vector2Int takenPosition in _units.Values)
             {

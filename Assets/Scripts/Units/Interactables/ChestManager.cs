@@ -16,7 +16,6 @@ namespace AdventureAssembly.Units.Interactables
 
         [Space]
         [Header("Settings")]
-        [SerializeField] private Vector4 _spawnBounds;
         [Tooltip("What is the max amount of chests that can be active at once?")]
         [SerializeField] private int _maxConcurrentChestCount = 5;
 
@@ -30,7 +29,7 @@ namespace AdventureAssembly.Units.Interactables
             }
 
             // Calculate random spawn position from spawn bounds
-            Vector2Int spawnPosition = GridManager.GetRandomEmptyPosition(_spawnBounds);
+            Vector2Int spawnPosition = GridManager.GetRandomEmptyPosition();
 
             InteractableUnit chestUnit = Instantiate(_chestUnitPrefab, (Vector2)spawnPosition, Quaternion.identity);
             chestUnit.Initialize(spawnPosition);

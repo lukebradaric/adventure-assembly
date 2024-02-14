@@ -6667,8 +6667,8 @@ TilemapRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1134007663
+  m_SortingLayer: -2
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -7294,7 +7294,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _onChestSpawned: {fileID: 11400000, guid: bd2d11bfca4a57745834954031e8234d, type: 2}
   _chestUnitPrefab: {fileID: 5411363518447056152, guid: fdc6bb102eb87a049a2c5a85d0e4438c, type: 3}
-  _spawnBounds: {x: -5, y: 5, z: -4, w: 4}
   _maxConcurrentChestCount: 3
 --- !u!1 &8510685046602691889
 GameObject:

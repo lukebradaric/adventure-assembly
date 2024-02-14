@@ -79,25 +79,38 @@ namespace AdventureAssembly.Units
         }
 
         /// <summary>
-        /// Returns if the position is within the player bounds.
+        /// Returns a new list of all positions in the player map.
+        /// </summary>
+        /// <returns></returns>
+        public List<Vector2Int> GetPlayerMapPositions()
+        {
+            return new List<Vector2Int>(_playerPositions);
+        }
+
+        /// <summary>
+        /// Returns if the position is within the player map positions.
         /// </summary>
         /// <param name="position">The position to check</param>
         /// <returns></returns>
-        public bool IsWithinPlayerBounds(Vector2Int position)
+        public bool IsWithinPlayerMap(Vector2Int position)
         {
             return _playerPositions.Contains(position);
         }
 
         /// <summary>
-        /// Returns a random position within the player bounds.
+        /// Returns a random position within the player map.
         /// </summary>
         /// <returns></returns>
-        public Vector2Int GetRandomPlayerBoundsPosition()
+        public Vector2Int GetRandomPositionWithinPlayerMap()
         {
             return _playerPositions.Random();
         }
 
-        public Vector2Int GetRandomEnemyTile()
+        /// <summary>
+        /// Returns a random position witin the enemy map.
+        /// </summary>
+        /// <returns></returns>
+        public Vector2Int GetRandomPositionWithinEnemyMap()
         {
             return _enemyPositions.Random();
         }
