@@ -61,7 +61,7 @@ MonoBehaviour:
       Data: 3
     - Name: MaxHealth
       Entry: 3
-      Data: 10
+      Data: 500
     - Name: Modifiers
       Entry: 7
       Data: 1|System.Collections.Generic.List`1[[AdventureAssembly.Units.Modifiers.CharacterModifier,
