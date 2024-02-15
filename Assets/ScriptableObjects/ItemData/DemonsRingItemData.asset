@@ -30,8 +30,11 @@ MonoBehaviour:
       Data: 'This wing is fweakin scawy.
 
 
-        Increases the ability speed of
-        all Heroes by 100%'
+        Increase ability speed of all
+        heroes by 25%
+
+
+        Decrease damage of all heroes by 45% for 15 seconds.'
     - Name: Sprite
       Entry: 10
       Data: 0
@@ -53,10 +56,62 @@ MonoBehaviour:
         AdventureAssembly.Units]], mscorlib
     - Name: 
       Entry: 12
-      Data: 1
+      Data: 2
     - Name: 
       Entry: 7
       Data: 1|AdventureAssembly.Units.Modifiers.GlobalCharacterStatModifier, AdventureAssembly.Units
+    - Name: IsTemporary
+      Entry: 5
+      Data: true
+    - Name: Duration
+      Entry: 4
+      Data: 15
+    - Name: CharacterType
+      Entry: 3
+      Data: 0
+    - Name: _heroStatName
+      Entry: 3
+      Data: 0
+    - Name: _enemyStatName
+      Entry: 3
+      Data: 0
+    - Name: _statProcess
+      Entry: 7
+      Data: 2|AdventureAssembly.Units.Stats.FloatAddStatProcess, AdventureAssembly.Units
+    - Name: _value
+      Entry: 4
+      Data: -0.45
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: SpecificClasses
+      Entry: 5
+      Data: false
+    - Name: ClassData
+      Entry: 7
+      Data: 3|System.Collections.Generic.List`1[[AdventureAssembly.Units.Classes.ClassData,
+        AdventureAssembly.Units]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 4|AdventureAssembly.Units.Modifiers.GlobalCharacterStatModifier, AdventureAssembly.Units
+    - Name: IsTemporary
+      Entry: 5
+      Data: false
+    - Name: Duration
+      Entry: 4
+      Data: 1
     - Name: CharacterType
       Entry: 3
       Data: 0
@@ -68,10 +123,10 @@ MonoBehaviour:
       Data: 0
     - Name: _statProcess
       Entry: 7
-      Data: 2|AdventureAssembly.Units.Stats.FloatAddStatProcess, AdventureAssembly.Units
+      Data: 5|AdventureAssembly.Units.Stats.FloatAddStatProcess, AdventureAssembly.Units
     - Name: _value
       Entry: 4
-      Data: 1
+      Data: 0.25
     - Name: 
       Entry: 8
       Data: 
@@ -80,7 +135,7 @@ MonoBehaviour:
       Data: false
     - Name: ClassData
       Entry: 7
-      Data: 3|System.Collections.Generic.List`1[[AdventureAssembly.Units.Classes.ClassData,
+      Data: 6|System.Collections.Generic.List`1[[AdventureAssembly.Units.Classes.ClassData,
         AdventureAssembly.Units]], mscorlib
     - Name: 
       Entry: 12

@@ -1,7 +1,4 @@
 ﻿using AdventureAssembly.Core;
-using AdventureAssembly.Units.Characters;
-using AdventureAssembly.Units.Enemies;
-using AdventureAssembly.Units.Heroes;
 using AdventureAssembly.Units.Modifiers;
 using Sirenix.OdinInspector;
 using Sirenix.Serialization;
@@ -20,7 +17,7 @@ namespace AdventureAssembly.Units.Classes
         [Tooltip("List of modifiers that will be applied.")]
         [OdinSerialize] public List<GlobalCharacterStatModifier> GlobalCharacterModifiers { get; protected set; } = new List<GlobalCharacterStatModifier>();
 
-        public virtual void Apply()
+        public virtual void Add()
         {
             foreach (GlobalCharacterStatModifier modifier in GlobalCharacterModifiers)
             {

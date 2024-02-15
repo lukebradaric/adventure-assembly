@@ -148,6 +148,7 @@ Transform:
   - {fileID: 2117749182924350031}
   - {fileID: 6918378835166378600}
   - {fileID: 9171414302681263429}
+  - {fileID: 5855090122342304977}
   - {fileID: 2425014979586945739}
   - {fileID: 3504737427594976736}
   - {fileID: 4394102258941612561}
@@ -7295,6 +7296,59 @@ MonoBehaviour:
   _onChestSpawned: {fileID: 11400000, guid: bd2d11bfca4a57745834954031e8234d, type: 2}
   _chestUnitPrefab: {fileID: 5411363518447056152, guid: fdc6bb102eb87a049a2c5a85d0e4438c, type: 3}
   _maxConcurrentChestCount: 3
+--- !u!1 &7798845157747300041
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5855090122342304977}
+  - component: {fileID: 8473014375292750555}
+  m_Layer: 0
+  m_Name: ItemManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5855090122342304977
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7798845157747300041}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8984588140358390520}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8473014375292750555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7798845157747300041}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9739d251b554ec04b8b2b452094b6226, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
 --- !u!1 &8510685046602691889
 GameObject:
   m_ObjectHideFlags: 0

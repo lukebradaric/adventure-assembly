@@ -118,7 +118,7 @@ namespace AdventureAssembly.Units.Classes
                 ClassBuffs.Add(classData, classBuff);
 
                 // Apply buff effect
-                classBuff.Apply();
+                classBuff.Add();
 
                 return;
             }
@@ -148,7 +148,7 @@ namespace AdventureAssembly.Units.Classes
                 ClassBuffs[classData] = classBuff;
 
                 // Apply the new class buff
-                classBuff.Apply();
+                classBuff.Add();
 
                 return;
             }

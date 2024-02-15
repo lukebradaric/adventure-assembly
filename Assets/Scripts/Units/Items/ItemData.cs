@@ -14,7 +14,7 @@ namespace AdventureAssembly.Units.Items
         [OdinSerialize] public string Name { get; protected set; }
 
         [BoxGroup("General")]
-        [MultiLineProperty(5)]
+        [MultiLineProperty(8)]
         [OdinSerialize] public string Description { get; protected set; }
 
         [BoxGroup("General")]
@@ -26,5 +26,19 @@ namespace AdventureAssembly.Units.Items
 
         [BoxGroup("Modifiers")]
         [OdinSerialize] public List<GlobalCharacterStatModifier> Modifiers { get; protected set; } = new List<GlobalCharacterStatModifier>();
+
+        [BoxGroup("Tools")]
+        [Button]
+        private void Add()
+        {
+            ItemManager.Instance.Add(this);
+        }
+
+        [BoxGroup("Tools")]
+        [Button]
+        private void Remove()
+        {
+            ItemManager.Instance.RemoveByName(this);
+        }
     }
 }

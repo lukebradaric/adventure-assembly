@@ -12178,6 +12178,10 @@ PrefabInstance:
       propertyPath: serializationData.Prefab
       value: 
       objectReference: {fileID: 7631503552784493588, guid: e505c28e24c2eb4448ee8c7fac906d0e, type: 3}
+    - target: {fileID: 8473014375292750555, guid: e505c28e24c2eb4448ee8c7fac906d0e, type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 8473014375292750555, guid: e505c28e24c2eb4448ee8c7fac906d0e, type: 3}
     - target: {fileID: 8593421879053346662, guid: e505c28e24c2eb4448ee8c7fac906d0e, type: 3}
       propertyPath: serializationData.Prefab
       value: 
@@ -12502,9 +12506,13 @@ PrefabInstance:
       propertyPath: serializationData.SerializationNodes.Array.data[0].Data
       value: 0.1
       objectReference: {fileID: 0}
+    - target: {fileID: 4588363591565895384, guid: e450e852feb5a7c41ad1cd4f12ff1f3e, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5428801609344274336, guid: e450e852feb5a7c41ad1cd4f12ff1f3e, type: 3}
       propertyPath: m_SortingLayer
-      value: -3
+      value: -4
       objectReference: {fileID: 0}
     - target: {fileID: 5428801609344274336, guid: e450e852feb5a7c41ad1cd4f12ff1f3e, type: 3}
       propertyPath: m_SortingOrder
@@ -12513,6 +12521,18 @@ PrefabInstance:
     - target: {fileID: 5428801609344274336, guid: e450e852feb5a7c41ad1cd4f12ff1f3e, type: 3}
       propertyPath: m_SortingLayerID
       value: -690112537
+      objectReference: {fileID: 0}
+    - target: {fileID: 5428801609344274336, guid: e450e852feb5a7c41ad1cd4f12ff1f3e, type: 3}
+      propertyPath: m_Parameters.colorGradient.key0.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5428801609344274336, guid: e450e852feb5a7c41ad1cd4f12ff1f3e, type: 3}
+      propertyPath: m_Parameters.colorGradient.key1.a
+      value: 0.39215687
+      objectReference: {fileID: 0}
+    - target: {fileID: 5428801609344274336, guid: e450e852feb5a7c41ad1cd4f12ff1f3e, type: 3}
+      propertyPath: m_Parameters.colorGradient.key2.a
+      value: 0.039215688
       objectReference: {fileID: 0}
     - target: {fileID: 5881971965238946979, guid: e450e852feb5a7c41ad1cd4f12ff1f3e, type: 3}
       propertyPath: m_LocalPosition.x

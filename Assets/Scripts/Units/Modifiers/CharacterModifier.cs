@@ -18,6 +18,8 @@ namespace AdventureAssembly.Units.Modifiers
         [ShowIf(nameof(IsTemporary))]
         [OdinSerialize] public float Duration { get; protected set; } = 1f;
 
+        private bool _isExpired = false;
+
         protected abstract void OnApplyToCharacter(Character character);
         protected abstract void OnRemoveFromCharacter(Character character);
 
@@ -25,7 +27,7 @@ namespace AdventureAssembly.Units.Modifiers
 
         ~CharacterModifier()
         {
-            if(_removeCoroutine != null )
+            if (_removeCoroutine != null)
             {
                 CoroutineManager.Instance.StopCoroutine(_removeCoroutine);
                 _removeCoroutine = null;
@@ -45,13 +47,35 @@ namespace AdventureAssembly.Units.Modifiers
 
         public void RemoveFromCharacter(Character character)
         {
+            if (IsTemporary)
+            {
+                // If this is has already expired, return
+                if (_isExpired)
+                {
+                    return;
+                }
+
+                // If this was removed before it expired, stop the coroutine
+                if (_removeCoroutine != null)
+                {
+                    CoroutineManager.Instance.StopCoroutine(_removeCoroutine);
+                    _removeCoroutine = null;
+                }
+
+                // Set expired when removing this
+                _isExpired = true;
+            }
+
+
             OnRemoveFromCharacter(character);
         }
 
         private IEnumerator RemoveCoroutine(Character character)
         {
             yield return new WaitForSeconds(Duration);
+
             RemoveFromCharacter(character);
+            _removeCoroutine = null;
         }
     }
 }
