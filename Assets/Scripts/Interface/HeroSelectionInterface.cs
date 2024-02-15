@@ -30,6 +30,7 @@ namespace AdventureAssembly.Interface
         [SerializeField] private RectTransform _horizontalLayoutTransform;
         [SerializeField] private HorizontalLayoutGroup _horizontalLayoutGroup;
         [SerializeField] private CanvasGroup _canvasGroup;
+        [SerializeField] private Image _backgroundImage;
 
         [Space]
         [Header("Settings")]
@@ -55,12 +56,14 @@ namespace AdventureAssembly.Interface
             ShowSelections(heroData);
 
             _canvasGroup.DOFade(1f, _fadeTweenDuration.Value).SetUpdate(true);
+            _backgroundImage.DOFade(0.95f, _fadeTweenDuration.Value).SetUpdate(true);
         }
 
         public void Hide()
         {
             _classBuffInterface.Hide();
 
+            _backgroundImage.DOFade(0f, _fadeTweenDuration.Value).SetUpdate(true);
             _canvasGroup.DOFade(0f, _fadeTweenDuration.Value).SetUpdate(true).OnComplete(() =>
             {
                 foreach (HeroSelectionElement element in _heroSelectionElements)

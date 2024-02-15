@@ -1,4 +1,5 @@
 ﻿using AdventureAssembly.Units.Modifiers;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using TinyTools.Generics;
@@ -43,7 +44,11 @@ namespace AdventureAssembly.Units.Characters
         /// <param name="modifier">The modifier to add.</param>
         public void AddModifierToAll(CharacterModifier modifier)
         {
-            //Debug.Log($"Adding new modifier: {modifier.GetType().Name}");
+            // If modifier is global and temporary, start remove coroutine
+            if (modifier is GlobalCharacterStatModifier && ((GlobalCharacterStatModifier)(modifier)).IsTemporary)
+            {
+                StartCoroutine(RemoveModifierCoroutine(modifier, modifier.Duration));
+            }
 
             Modifiers.Add(modifier);
 
@@ -66,6 +71,17 @@ namespace AdventureAssembly.Units.Characters
             }
 
             Modifiers.Remove(modifier);
+        }
+
+        private IEnumerator RemoveModifierCoroutine(CharacterModifier modifier, float duration)
+        {
+            yield return new WaitForSeconds(duration);
+
+            // If the modifier wasn't already removed, remove from all
+            if (Modifiers.Contains(modifier))
+            {
+                RemoveModifierFromAll(modifier);
+            }
         }
 
         /// <summary>

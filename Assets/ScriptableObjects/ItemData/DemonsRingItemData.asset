@@ -34,10 +34,28 @@ MonoBehaviour:
         heroes by 25%
 
 
-        Decrease damage of all heroes by 45% for 15 seconds.'
+        Decrease damage of all heroes by 35% for 15 seconds.'
     - Name: Sprite
       Entry: 10
       Data: 0
+    - Name: TooltipColor
+      Entry: 7
+      Data: UnityEngine.Color, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0.235849082
+    - Name: 
+      Entry: 4
+      Data: 0.0856621638
+    - Name: 
+      Entry: 4
+      Data: 0.0993155
+    - Name: 
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
     - Name: PriceRange
       Entry: 7
       Data: UnityEngine.Vector2, UnityEngine.CoreModule
@@ -80,7 +98,7 @@ MonoBehaviour:
       Data: 2|AdventureAssembly.Units.Stats.FloatAddStatProcess, AdventureAssembly.Units
     - Name: _value
       Entry: 4
-      Data: -0.45
+      Data: -0.35
     - Name: 
       Entry: 8
       Data: 

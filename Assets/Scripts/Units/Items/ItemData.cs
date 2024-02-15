@@ -21,6 +21,9 @@ namespace AdventureAssembly.Units.Items
         [PreviewField(128, ObjectFieldAlignment.Left)]
         [OdinSerialize] public Sprite Sprite { get; protected set; }
 
+        [BoxGroup("General")]
+        [OdinSerialize] public Color TooltipColor { get; protected set; } = Color.white;
+
         [BoxGroup("Settings")]
         [OdinSerialize] public Vector2 PriceRange { get; protected set; }
 

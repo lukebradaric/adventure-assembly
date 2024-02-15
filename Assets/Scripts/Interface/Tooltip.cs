@@ -22,6 +22,7 @@ namespace AdventureAssembly.Interface
         [Title("Debugging")]
         [OdinSerialize] public string Text { get; set; }
         [OdinSerialize] public Color Color { get; set; } = Color.white;
+        [OdinSerialize] public Vector2 Pivot { get; set; } = new Vector2(0, 1);
 
         private TooltipElement _tooltipElement = null;
         private bool _hovering = false;
@@ -33,6 +34,7 @@ namespace AdventureAssembly.Interface
                 _tooltipElement = Instantiate(_tooltipElementPrefab, GameplayInterface.Instance.transform);
                 _tooltipElement.Text.text = Text;
                 _tooltipElement.Image.color = Color;
+                _tooltipElement.RectTransform.pivot = Pivot;
             }
 
             _hovering = true;

@@ -1,7 +1,10 @@
 ﻿using AdventureAssembly.Units.Modifiers;
+using Sirenix.OdinInspector;
+using Sirenix.Serialization;
 using System.Collections.Generic;
 using TinyTools.Extensions;
 using TinyTools.Generics;
+using TinyTools.ScriptableEvents;
 using UnityEngine;
 
 namespace AdventureAssembly.Units.Items
@@ -11,6 +14,11 @@ namespace AdventureAssembly.Units.Items
     /// </summary>
     public class ItemManager : Singleton<ItemManager>
     {
+        [BoxGroup("Events")]
+        [SerializeField] private GameScriptableEvent _onItemAdded;
+        [BoxGroup("Events")]
+        [SerializeField] private GameScriptableEvent _onItemRemoved;
+
         /// <summary>
         /// List of items the player currently has equipped.
         /// </summary>
@@ -41,6 +49,9 @@ namespace AdventureAssembly.Units.Items
             // Add item to list and dictionary
             Items.Add(newItem);
             _itemModifiers.Add(newItem, modifiers);
+
+            // Invoke event, this as sender, new item as data
+            _onItemAdded.Invoke(this, newItem);
         }
 
         /// <summary>
@@ -64,6 +75,9 @@ namespace AdventureAssembly.Units.Items
             // Remove the entry from the dictionary
             Items.Remove(itemData);
             _itemModifiers.Remove(itemData);
+
+            // Invoke event, this as sender, old item as data
+            _onItemRemoved?.Invoke(this, itemData);
         }
 
         /// <summary>

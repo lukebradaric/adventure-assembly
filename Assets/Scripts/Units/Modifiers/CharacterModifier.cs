@@ -18,28 +18,17 @@ namespace AdventureAssembly.Units.Modifiers
         [ShowIf(nameof(IsTemporary))]
         [OdinSerialize] public float Duration { get; protected set; } = 1f;
 
-        private bool _isExpired = false;
+        private bool _isRemoved = false;
 
         protected abstract void OnApplyToCharacter(Character character);
         protected abstract void OnRemoveFromCharacter(Character character);
 
-        private Coroutine _removeCoroutine = null;
-
-        ~CharacterModifier()
-        {
-            if (_removeCoroutine != null)
-            {
-                CoroutineManager.Instance.StopCoroutine(_removeCoroutine);
-                _removeCoroutine = null;
-            }
-        }
-
         public void ApplyToCharacter(Character character)
         {
-            // If modifier is temporary, start remove coroutine
-            if (IsTemporary)
+            // If this is not a global modifier and is temporary, remove after duration
+            if (this is not GlobalCharacterStatModifier)
             {
-                CoroutineManager.Instance.StartCoroutine(RemoveCoroutine(character));
+                CoroutineManager.Instance.StartCoroutine(RemoveCoroutine(character, Duration));
             }
 
             OnApplyToCharacter(character);
@@ -47,35 +36,20 @@ namespace AdventureAssembly.Units.Modifiers
 
         public void RemoveFromCharacter(Character character)
         {
-            if (IsTemporary)
-            {
-                // If this is has already expired, return
-                if (_isExpired)
-                {
-                    return;
-                }
-
-                // If this was removed before it expired, stop the coroutine
-                if (_removeCoroutine != null)
-                {
-                    CoroutineManager.Instance.StopCoroutine(_removeCoroutine);
-                    _removeCoroutine = null;
-                }
-
-                // Set expired when removing this
-                _isExpired = true;
-            }
-
-
+            _isRemoved = true;
             OnRemoveFromCharacter(character);
         }
 
-        private IEnumerator RemoveCoroutine(Character character)
+        private IEnumerator RemoveCoroutine(Character character, float duration)
         {
-            yield return new WaitForSeconds(Duration);
+            yield return new WaitForSeconds(duration);
 
-            RemoveFromCharacter(character);
-            _removeCoroutine = null;
+            if (_isRemoved)
+            {
+                yield break;
+            }
+
+            this.RemoveFromCharacter(character);
         }
     }
 }
