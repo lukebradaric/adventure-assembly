@@ -30,10 +30,10 @@ namespace AdventureAssembly.Units.Modifiers
             switch (CharacterType)
             {
                 case CharacterType.Hero:
-                    HeroManager.Instance.AddModifierToAll(this);
+                    HeroManager.Instance.AddGlobalModifier(this);
                     break;
                 case CharacterType.Enemy:
-                    EnemyManager.Instance.AddModifierToAll(this);
+                    EnemyManager.Instance.AddGlobalModifier(this);
                     break;
             }
         }
@@ -46,10 +46,10 @@ namespace AdventureAssembly.Units.Modifiers
             switch (CharacterType)
             {
                 case CharacterType.Hero:
-                    HeroManager.Instance.RemoveModifierFromAll(this);
+                    HeroManager.Instance.RemoveGlobalModifier(this);
                     break;
                 case CharacterType.Enemy:
-                    EnemyManager.Instance.RemoveModifierFromAll(this);
+                    EnemyManager.Instance.RemoveGlobalModifier(this);
                     break;
             }
         }
