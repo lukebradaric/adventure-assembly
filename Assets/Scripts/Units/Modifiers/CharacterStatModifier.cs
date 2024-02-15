@@ -15,7 +15,7 @@ namespace AdventureAssembly.Units.Modifiers
     public class CharacterStatModifier : CharacterModifier
     {
         [Tooltip("What type of character is this modifier targeting?")]
-        [BoxGroup("Target Settings", Order = -1)]
+        [BoxGroup("Target", Order = -1)]
         [OdinSerialize] public CharacterType CharacterType { get; protected set; } = CharacterType.Hero;
 
         [Tooltip("What is the name of the stat to modify?")]
@@ -32,7 +32,7 @@ namespace AdventureAssembly.Units.Modifiers
         [BoxGroup("Modifier")]
         [OdinSerialize] private StatProcess _statProcess = new FloatAddStatProcess();
 
-        public override void ApplyToCharacter(Character character)
+        protected override void OnApplyToCharacter(Character character)
         {
             // If we are able to get stat property, add modifier
             if (TryGetStatProperty(character, GetStatName(), out Stat<float> stat))
@@ -41,7 +41,7 @@ namespace AdventureAssembly.Units.Modifiers
             }
         }
 
-        public override void RemoveFromCharacter(Character character)
+        protected override void OnRemoveFromCharacter(Character character)
         {
             if (TryGetStatProperty(character, GetStatName(), out Stat<float> stat))
             {

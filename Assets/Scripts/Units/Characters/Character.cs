@@ -45,8 +45,6 @@ namespace AdventureAssembly.Units.Characters
         public event Action<HealData> Healed;
         public event Action<Character> Died;
 
-        public List<CharacterModifier> Modifiers { get; protected set; } = new List<CharacterModifier>();
-
         /// <summary>
         /// Initializes this unit with data and a position.
         /// </summary>
@@ -64,7 +62,6 @@ namespace AdventureAssembly.Units.Characters
             {
                 CharacterModifier newModifier = modifier.GetClone();
                 newModifier.ApplyToCharacter(this);
-                Modifiers.Add(newModifier);
             }
 
             // Setup stats
@@ -213,15 +210,6 @@ namespace AdventureAssembly.Units.Characters
         /// <summary>
         /// Called before this unit is destroyed.
         /// </summary>
-        protected virtual void OnDestroy()
-        {
-            // Clear all modifiers
-            foreach (CharacterModifier modifier in Modifiers)
-            {
-                modifier.RemoveFromCharacter(this);
-            }
-
-            Modifiers.Clear();
-        }
+        protected virtual void OnDestroy() { }
     }
 }

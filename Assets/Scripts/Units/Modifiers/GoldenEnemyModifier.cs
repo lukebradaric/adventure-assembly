@@ -1,5 +1,6 @@
 ﻿using AdventureAssembly.Core;
 using AdventureAssembly.Units.Characters;
+using Sirenix.OdinInspector;
 using UnityEngine;
 
 namespace AdventureAssembly.Units.Modifiers
@@ -9,14 +10,15 @@ namespace AdventureAssembly.Units.Modifiers
     /// </summary>
     public class GoldenEnemyModifier : CharacterModifier
     {
+        [BoxGroup("Settings")]
         [SerializeField] private float _goldPerHealthLost = 0.2f;
 
-        public override void ApplyToCharacter(Character character)
+        protected override void OnApplyToCharacter(Character character)
         {
             character.Damaged += OnDamaged;
         }
 
-        public override void RemoveFromCharacter(Character character)
+        protected override void OnRemoveFromCharacter(Character character)
         {
             character.Damaged -= OnDamaged;
         }

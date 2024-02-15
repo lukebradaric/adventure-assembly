@@ -12,11 +12,11 @@ namespace AdventureAssembly.Units.Modifiers
     public class GlobalCharacterStatModifier : CharacterStatModifier
     {
         [Tooltip("Should this hero modifier only be applied to certain classes?")]
-        [BoxGroup("Target Settings")]
+        [BoxGroup("Target")]
         [ShowIf(nameof(CharacterType), CharacterType.Hero)]
         [OdinSerialize] public bool SpecificClasses { get; protected set; } = false;
 
-        [BoxGroup("Target Settings")]
+        [BoxGroup("Target")]
         [ShowIf(nameof(_showClassList))]
         [OdinSerialize] public List<ClassData> ClassData { get; protected set; } = new List<ClassData>();
 
@@ -54,36 +54,36 @@ namespace AdventureAssembly.Units.Modifiers
             }
         }
 
-        public override void ApplyToCharacter(Character character)
+        protected override void OnApplyToCharacter(Character character)
         {
             // If targeting specific hero classes
             if (CharacterType == CharacterType.Hero && SpecificClasses)
             {
                 if (HeroHasClass((Hero)character))
                 {
-                    base.ApplyToCharacter(character);
+                    base.OnApplyToCharacter(character);
                 }
 
                 return;
             }
 
-            base.ApplyToCharacter(character);
+            base.OnApplyToCharacter(character);
         }
 
-        public override void RemoveFromCharacter(Character character)
+        protected override void OnRemoveFromCharacter(Character character)
         {
             // If targeting specific hero classes
             if (CharacterType == CharacterType.Hero && SpecificClasses)
             {
                 if (HeroHasClass((Hero)character))
                 {
-                    base.RemoveFromCharacter((Hero)character);
+                    base.OnRemoveFromCharacter((Hero)character);
                 }
 
                 return;
             }
 
-            base.RemoveFromCharacter(character);
+            base.OnRemoveFromCharacter(character);
         }
 
         /// <summary>
