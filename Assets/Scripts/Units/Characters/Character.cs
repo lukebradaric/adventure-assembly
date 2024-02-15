@@ -1,5 +1,6 @@
 ﻿using AdventureAssembly.Core;
 using AdventureAssembly.Units.Modifiers;
+using DG.Tweening;
 using Sirenix.OdinInspector;
 using Sirenix.Serialization;
 using System;

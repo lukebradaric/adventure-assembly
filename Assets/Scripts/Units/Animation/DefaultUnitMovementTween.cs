@@ -6,9 +6,9 @@ namespace AdventureAssembly.Units.Animation
 {
     public class DefaultUnitMovementTween : UnitTween
     {
-        public override void Animate(Character unit, Vector2Int newPosition, float duration)
+        public override Tween Animate(Character unit, Vector2Int newPosition, float duration)
         {
-            unit.transform.DOMove((Vector2)newPosition, duration).SetEase(Ease.OutCubic);
+            return unit.transform.DOMove((Vector2)newPosition, duration).SetEase(Ease.OutCubic);
         }
     }
 }

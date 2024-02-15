@@ -1,4 +1,5 @@
 ﻿using AdventureAssembly.Units.Characters;
+using DG.Tweening;
 using UnityEngine;
 
 namespace AdventureAssembly.Units.Animation
@@ -6,6 +7,6 @@ namespace AdventureAssembly.Units.Animation
     [System.Serializable]
     public abstract class UnitTween
     {
-        public abstract void Animate(Character unit, Vector2Int newPosition, float duration);
+        public abstract Tween Animate(Character unit, Vector2Int newPosition, float duration);
     }
 }
