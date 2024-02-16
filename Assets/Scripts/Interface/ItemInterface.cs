@@ -1,8 +1,6 @@
 ﻿using AdventureAssembly.Units.Items;
-using DG.Tweening;
 using System.Collections.Generic;
 using TinyTools.ScriptableEvents;
-using TinyTools.ScriptableVariables;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -16,9 +14,7 @@ namespace AdventureAssembly.Interface
 
         [Space]
         [Header("Components")]
-        [SerializeField] private CanvasGroup _canvasGroup;
         [SerializeField] private GridLayoutGroup _gridLayoutGroup;
-        [SerializeField] private FloatScriptableVariable _fadeTweenDuration;
 
         // The item element associated with each item data
         private Dictionary<ItemData, ItemElement> _itemElements = new Dictionary<ItemData, ItemElement>();
@@ -31,28 +27,6 @@ namespace AdventureAssembly.Interface
         public void OnItemRemoved(GameEventData gameEventData)
         {
             RemoveItemElement((ItemData)gameEventData.Data);
-        }
-
-        public void OnInterfaceOpened(GameEventData gameEventData)
-        {
-            Show();
-        }
-
-        public void OnInterfaceClosed(GameEventData gameEventData)
-        {
-            Hide();
-        }
-
-        public void Show()
-        {
-            _canvasGroup.blocksRaycasts = true;
-            _canvasGroup.DOFade(1f, _fadeTweenDuration.Value).SetUpdate(true);
-        }
-
-        public void Hide()
-        {
-            _canvasGroup.blocksRaycasts = false;
-            _canvasGroup.DOFade(0f, _fadeTweenDuration.Value).SetUpdate(true);
         }
 
         public void AddItemElement(ItemData itemData)

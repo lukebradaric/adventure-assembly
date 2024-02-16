@@ -29,12 +29,30 @@ MonoBehaviour:
     - Name: Sprite
       Entry: 10
       Data: 0
+    - Name: RerollPriceRange
+      Entry: 7
+      Data: UnityEngine.Vector2, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 8
+    - Name: 
+      Entry: 4
+      Data: 12
+    - Name: 
+      Entry: 8
+      Data: 
     - Name: ItemData
       Entry: 7
       Data: 0|System.Collections.Generic.List`1[[AdventureAssembly.Units.Items.ItemData,
         AdventureAssembly.Units]], mscorlib
     - Name: 
       Entry: 12
+      Data: 3
+    - Name: 
+      Entry: 10
+      Data: 1
+    - Name: 
+      Entry: 10
       Data: 1
     - Name: 
       Entry: 10

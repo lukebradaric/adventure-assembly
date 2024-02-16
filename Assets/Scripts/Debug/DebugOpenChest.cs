@@ -1,32 +1,15 @@
-﻿using AdventureAssembly.Interface;
-using AdventureAssembly.Units.Heroes;
-using Sirenix.OdinInspector;
-using System.Collections.Generic;
+﻿using TinyTools.ScriptableEvents;
 using UnityEngine;
 
 namespace AdventureAssembly.Debug
 {
     public class DebugOpenChest : DebugKeyPress
     {
-        [Space]
-        [SerializeField] private bool _specificHeroData = false;
-
-        [HideIf(nameof(_specificHeroData))]
-        [SerializeField] private HeroDataListScriptableVariable _heroDataList;
-
-        [ShowIf(nameof(_specificHeroData))]
-        [SerializeField] private List<HeroData> _heroData = new List<HeroData>();
+        [SerializeField] private GameScriptableEvent _onHeroSelection;
 
         public override void DebugKeyPressed()
         {
-            if (_specificHeroData)
-            {
-                HeroSelectionInterface.Instance.Show(_heroData);
-            }
-            else
-            {
-                HeroSelectionInterface.Instance.Show(_heroDataList.GetRandom(3));
-            }
+            _onHeroSelection?.Invoke();
         }
     }
 }

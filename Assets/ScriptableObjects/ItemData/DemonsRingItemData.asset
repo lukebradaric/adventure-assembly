@@ -61,10 +61,10 @@ MonoBehaviour:
       Data: UnityEngine.Vector2, UnityEngine.CoreModule
     - Name: 
       Entry: 4
-      Data: 16
+      Data: 14
     - Name: 
       Entry: 4
-      Data: 22
+      Data: 24
     - Name: 
       Entry: 8
       Data: 
@@ -98,7 +98,7 @@ MonoBehaviour:
       Data: 2|AdventureAssembly.Units.Stats.FloatAddStatProcess, AdventureAssembly.Units
     - Name: _value
       Entry: 4
-      Data: 0
+      Data: -0.35
     - Name: 
       Entry: 8
       Data: 

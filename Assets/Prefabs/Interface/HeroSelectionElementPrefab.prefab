@@ -672,7 +672,7 @@ GameObject:
   - component: {fileID: 564945758572410987}
   - component: {fileID: 9108679556771777142}
   m_Layer: 5
-  m_Name: HeroSelectionPrefab
+  m_Name: HeroSelectionElementPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -731,8 +731,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82b4d943f49442642aa070ed58212abd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: TweenOnHover
+      Entry: 5
+      Data: true
+    - Name: TweenScale
+      Entry: 4
+      Data: 1.2
+    - Name: TweenDuration
+      Entry: 4
+      Data: 0.25
   _heroClassElementPrefab: {fileID: 930279301715283100, guid: 8dfa77862dfc885438c9775c46d09592, type: 3}
-  _canvasGroup: {fileID: 564945758572410987}
   _verticalLayoutTransform: {fileID: 2202024126929095843}
   _classVerticalLayoutTransform: {fileID: 5553184790983995052}
   _nameText: {fileID: 2475287868849266497}
@@ -743,9 +760,6 @@ MonoBehaviour:
   _shadowImage: {fileID: 3960418596820163885}
   _heroBackgroundImage: {fileID: 4951774173666909453}
   _hoverBackgroundImage: {fileID: 5368263235971108209}
-  _otherHoverCanvasGroupAlpha: 0.3
-  _hoverTweenDuration: 0.2
-  _hoverScale: 1.15
   _hoverBackgroundImageAlpha: 0.8
 --- !u!1 &5050911063706024814
 GameObject:

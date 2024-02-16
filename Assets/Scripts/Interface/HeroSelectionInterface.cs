@@ -1,8 +1,6 @@
-﻿using AdventureAssembly.Core;
-using AdventureAssembly.Units.Heroes;
+﻿using AdventureAssembly.Units.Heroes;
 using DG.Tweening;
 using System.Collections.Generic;
-using TinyTools.Generics;
 using TinyTools.ScriptableEvents;
 using TinyTools.ScriptableVariables;
 using UnityEngine;
@@ -13,7 +11,7 @@ namespace AdventureAssembly.Interface
     /// <summary>
     /// Interface for handling new hero selections.
     /// </summary>
-    public class HeroSelectionInterface : Singleton<HeroSelectionInterface>
+    public class HeroSelectionInterface : SelectionInterface
     {
         [Space]
         [Header("Events")]
@@ -25,12 +23,10 @@ namespace AdventureAssembly.Interface
 
         [Space]
         [Header("Components")]
-        [SerializeField] private ClassBuffInterface _classBuffInterface;
         [SerializeField] private HeroDataListScriptableVariable _heroDataList;
         [SerializeField] private RectTransform _horizontalLayoutTransform;
         [SerializeField] private HorizontalLayoutGroup _horizontalLayoutGroup;
         [SerializeField] private CanvasGroup _canvasGroup;
-        [SerializeField] private Image _backgroundImage;
 
         [Space]
         [Header("Settings")]
@@ -40,40 +36,30 @@ namespace AdventureAssembly.Interface
         [SerializeField] private float _heroSelectionTweenDurationOffset = 0.1f;
         [SerializeField] private Ease _tweenEase = Ease.OutBack;
 
-        private List<HeroSelectionElement> _heroSelectionElements = new List<HeroSelectionElement>();
-
-        public void OnChestOpened(GameEventData gameEventData)
+        // Called when a new hero selection should start
+        public void OnHeroSelection(GameEventData gameEventData)
         {
             Show(_heroDataList.GetRandom(3));
         }
 
         public void Show(List<HeroData> heroData)
         {
-            TimeManager.Pause();
-
-            _classBuffInterface.Show();
-
             ShowSelections(heroData);
 
+            GameplayInterface.Instance.Show();
+
+            _canvasGroup.blocksRaycasts = true;
             _canvasGroup.DOFade(1f, _fadeTweenDuration.Value).SetUpdate(true);
-            _backgroundImage.DOFade(0.95f, _fadeTweenDuration.Value).SetUpdate(true);
         }
 
         public void Hide()
         {
-            _classBuffInterface.Hide();
+            GameplayInterface.Instance.Hide();
 
-            _backgroundImage.DOFade(0f, _fadeTweenDuration.Value).SetUpdate(true);
+            _canvasGroup.blocksRaycasts = false;
             _canvasGroup.DOFade(0f, _fadeTweenDuration.Value).SetUpdate(true).OnComplete(() =>
             {
-                foreach (HeroSelectionElement element in _heroSelectionElements)
-                {
-                    Destroy(element.gameObject);
-                }
-
-                _heroSelectionElements.Clear();
-
-                TimeManager.Unpause();
+                DestroyAllSelectionElements();
             });
         }
 
@@ -84,8 +70,7 @@ namespace AdventureAssembly.Interface
             {
                 HeroSelectionElement heroSelectionElement = Instantiate(_heroSelectionElementPrefab, _horizontalLayoutTransform);
                 heroSelectionElement.HeroData = hero;
-                heroSelectionElement.HeroSelectionInterface = this;
-                _heroSelectionElements.Add(heroSelectionElement);
+                this.OnAddElement(heroSelectionElement);
             }
 
             // Force update horizontal layout
@@ -94,8 +79,9 @@ namespace AdventureAssembly.Interface
 
             // Tween each selection element into view
             float tweenDuration = _heroSelectionTweenDuration;
-            foreach (HeroSelectionElement element in _heroSelectionElements)
+            foreach (HeroSelectionElement element in _selectionElements)
             {
+                // Force uppdate layout to fix buggy layout
                 LayoutRebuilder.ForceRebuildLayoutImmediate(element.VerticalLayoutTransform);
 
                 Vector3 position = element.transform.position;
@@ -113,19 +99,20 @@ namespace AdventureAssembly.Interface
             });
         }
 
-        public void OnHeroSelected(HeroData heroData)
+        public override void OnElementSelected(SelectionElement selectionElement)
         {
-            // Disable interacting with all other selection elements
-            foreach (HeroSelectionElement element in _heroSelectionElements)
+            base.OnElementSelected(selectionElement);
+
+            foreach (SelectionElement element in _selectionElements)
             {
                 element.Interactable = false;
             }
 
+            HeroData heroData = ((HeroSelectionElement)selectionElement).HeroData;
+
             ((HeroManager)HeroManager.Instance).AddHeroToSnake(heroData);
-
             _onHeroSelected.Invoke(this, heroData);
-
-            Hide();
+            this.Hide();
         }
     }
 }

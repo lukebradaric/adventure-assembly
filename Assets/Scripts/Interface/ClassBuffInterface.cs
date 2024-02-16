@@ -6,7 +6,7 @@ using UnityEngine;
 
 namespace AdventureAssembly.Interface
 {
-    public class ClassBuffInterface : MonoBehaviour
+    public class ClassBuffInterface : Interface
     {
         [Space]
         [Header("Prefabs")]
@@ -15,7 +15,6 @@ namespace AdventureAssembly.Interface
         [Space]
         [Header("Components")]
         [SerializeField] private RectTransform _verticalLayoutTransform;
-        [SerializeField] private CanvasGroup _canvasGroup;
 
         [Space]
         [Header("Settings")]
@@ -38,18 +37,18 @@ namespace AdventureAssembly.Interface
             ClassManager.ClassDataRemoved -= OnClassDataRemoved;
         }
 
-        public void Show()
+        public override void OnShow()
         {
-            _canvasGroup.DOFade(1f, _tweenDuration.Value).SetUpdate(true);
+            base.OnShow();
             foreach (var element in _classBuffElements.Values)
             {
                 element.Show();
             }
         }
 
-        public void Hide()
+        public override void OnHide()
         {
-            _canvasGroup.DOFade(0f, _tweenDuration.Value).SetUpdate(true);
+            base.OnHide();
             foreach (var element in _classBuffElements.Values)
             {
                 element.Hide();

@@ -43,5 +43,10 @@ namespace AdventureAssembly.Units.Items
         {
             ItemManager.Instance.RemoveByName(this);
         }
+
+        public int GetPrice()
+        {
+            return Random.Range((int)PriceRange.x, (int)PriceRange.y);
+        }
     }
 }

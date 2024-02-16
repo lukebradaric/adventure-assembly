@@ -1,7 +1,6 @@
 ﻿using AdventureAssembly.Units.Classes;
 using AdventureAssembly.Units.Heroes;
 using DG.Tweening;
-using Sirenix.Serialization;
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -9,7 +8,7 @@ using UnityEngine.UI;
 
 namespace AdventureAssembly.Interface
 {
-    public class HeroSelectionElement : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerDownHandler
+    public class HeroSelectionElement : SelectionElement
     {
         [Space]
         [Header("Prefabs")]
@@ -17,7 +16,6 @@ namespace AdventureAssembly.Interface
 
         [Space]
         [Header("Components")]
-        [SerializeField] private CanvasGroup _canvasGroup;
         [SerializeField] private RectTransform _verticalLayoutTransform;
         [SerializeField] private RectTransform _classVerticalLayoutTransform;
         [SerializeField] private TextMeshProUGUI _nameText;
@@ -31,20 +29,10 @@ namespace AdventureAssembly.Interface
 
         [Space]
         [Header("Settings")]
-        [Tooltip("What should the alpha of this element be when a different element is hovered?")]
-        [SerializeField] private float _otherHoverCanvasGroupAlpha;
-        [Tooltip("How long should the tween animation for hovering be?")]
-        [SerializeField] private float _hoverTweenDuration;
-        [Tooltip("How large should this element scale to when hovered?")]
-        [SerializeField] private float _hoverScale;
         [Tooltip("What should the alpha of the background image be when this is hovered?")]
         [SerializeField] private float _hoverBackgroundImageAlpha;
 
         public RectTransform VerticalLayoutTransform => _verticalLayoutTransform;
-
-        public HeroSelectionInterface HeroSelectionInterface { get; set; }
-
-        public bool Interactable { get; set; } = true;
 
         private HeroData _heroData = null;
         public HeroData HeroData
@@ -74,26 +62,16 @@ namespace AdventureAssembly.Interface
             }
         }
 
-        public void OnPointerEnter(PointerEventData eventData)
+        public override void OnPointerEnter(PointerEventData eventData)
         {
-            transform.DOScale(_hoverScale, _hoverTweenDuration).SetUpdate(true);
-            _hoverBackgroundImage.DOFade(_hoverBackgroundImageAlpha, _hoverTweenDuration).SetUpdate(true);
+            base.OnPointerEnter(eventData);
+            _hoverBackgroundImage.DOFade(_hoverBackgroundImageAlpha, this.TweenDuration).SetUpdate(true);
         }
 
-        public void OnPointerExit(PointerEventData eventData)
+        public override void OnPointerExit(PointerEventData eventData)
         {
-            transform.DOScale(Vector3.one, _hoverTweenDuration).SetUpdate(true);
-            _hoverBackgroundImage.DOFade(0f, _hoverTweenDuration).SetUpdate(true);
-        }
-
-        public void OnPointerDown(PointerEventData eventData)
-        {
-            if (!Interactable)
-            {
-                return;
-            }
-
-            HeroSelectionInterface.OnHeroSelected(_heroData);
+            base.OnPointerExit(eventData);
+            _hoverBackgroundImage.DOFade(0f, TweenDuration).SetUpdate(true);
         }
     }
 }
