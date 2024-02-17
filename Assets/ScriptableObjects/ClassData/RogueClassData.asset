@@ -26,15 +26,15 @@ MonoBehaviour:
       Data: Rogue
     - Name: Description
       Entry: 1
-      Data: 'Increases the critical strike chance of all heroes.
+      Data: 'Increases the Critical Strike Chance of All Heroes.
 
 
         (5) -
-        10%
+        10%+
 
-        (10) - 25%
+        (10) - 25%+
 
-        (15) - 50%'
+        (15) - 50%+'
     - Name: Color
       Entry: 7
       Data: UnityEngine.Color, UnityEngine.CoreModule
@@ -76,6 +76,12 @@ MonoBehaviour:
     - Name: 
       Entry: 7
       Data: 3|AdventureAssembly.Units.Modifiers.GlobalCharacterStatModifier, AdventureAssembly.Units
+    - Name: IsTemporary
+      Entry: 5
+      Data: false
+    - Name: Duration
+      Entry: 4
+      Data: 0
     - Name: CharacterType
       Entry: 3
       Data: 0
@@ -138,6 +144,12 @@ MonoBehaviour:
     - Name: 
       Entry: 7
       Data: 8|AdventureAssembly.Units.Modifiers.GlobalCharacterStatModifier, AdventureAssembly.Units
+    - Name: IsTemporary
+      Entry: 5
+      Data: false
+    - Name: Duration
+      Entry: 4
+      Data: 0
     - Name: CharacterType
       Entry: 3
       Data: 0
@@ -200,6 +212,12 @@ MonoBehaviour:
     - Name: 
       Entry: 7
       Data: 13|AdventureAssembly.Units.Modifiers.GlobalCharacterStatModifier, AdventureAssembly.Units
+    - Name: IsTemporary
+      Entry: 5
+      Data: false
+    - Name: Duration
+      Entry: 4
+      Data: 0
     - Name: CharacterType
       Entry: 3
       Data: 0

@@ -10,19 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1eac94dc4647e3d4e8f45f4a3ed18890, type: 3}
-  m_Name: MagicianHeroData
+  m_Name: RangerHeroData
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 
     ReferencedUnityObjects:
     - {fileID: 721636767718559845, guid: 8be2b1e5f38b3a74e86db347dc21dea5, type: 3}
-    - {fileID: 21300000, guid: 4dd486577d5d81e41a3a63c2de611470, type: 3}
+    - {fileID: 21300000, guid: 2f1e58baeb1fa2d45847813085769b0e, type: 3}
     - {fileID: 21300000, guid: 9711b0dce12d11f4cb5ef3daeed63baf, type: 3}
-    - {fileID: 11400000, guid: a18450eb18ab7534dbbf8719cb77aaba, type: 2}
-    - {fileID: 11400000, guid: 6a312cf3da1ee1f4a95145609f73e706, type: 2}
-    - {fileID: 4270207200347640816, guid: 27450db1b6c57234e87d351b6e685d6a, type: 3}
-    - {fileID: 11400000, guid: 54eb6356523261a42931c7bd7fdddb6e, type: 2}
+    - {fileID: 11400000, guid: 09ae199153cebc142ae2ed6551a8fdec, type: 2}
+    - {fileID: 11400000, guid: 91e9a434013e1e24da2859a4fcb337b4, type: 2}
+    - {fileID: 11400000, guid: 9cc5e722d2e9ad745b29dc368546e998, type: 2}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -33,7 +32,7 @@ MonoBehaviour:
       Data: 0
     - Name: Name
       Entry: 1
-      Data: Magician
+      Data: Cap'n
     - Name: Sprite
       Entry: 10
       Data: 1
@@ -82,13 +81,13 @@ MonoBehaviour:
       Data: UnityEngine.Color, UnityEngine.CoreModule
     - Name: 
       Entry: 4
-      Data: 0.407843173
+      Data: 0.113725483
     - Name: 
       Entry: 4
-      Data: 0.21960786
+      Data: 0.5372549
     - Name: 
       Entry: 4
-      Data: 0.423529446
+      Data: 0.2630417
     - Name: 
       Entry: 4
       Data: 1
@@ -97,32 +96,21 @@ MonoBehaviour:
       Data: 
     - Name: Description
       Entry: 1
-      Data: 'Tries to make a nearby enemy disappear.
-
-        On success, the target
-        dies instantly.
-
-
-        Success chance: 5%
-
-        Success is affect by
-        Luck'
+      Data: Fires an arrow that pierces through enemies. Further away enemies take
+        more damage.
     - Name: AbilitySpeed
       Entry: 4
-      Data: 3
+      Data: 1
     - Name: AbilitySound
-      Entry: 6
-      Data: 
+      Entry: 10
+      Data: 3
     - Name: ClassData
       Entry: 7
       Data: 2|System.Collections.Generic.List`1[[AdventureAssembly.Units.Classes.ClassData,
         AdventureAssembly.Units]], mscorlib
     - Name: 
       Entry: 12
-      Data: 2
-    - Name: 
-      Entry: 10
-      Data: 3
+      Data: 1
     - Name: 
       Entry: 10
       Data: 4
@@ -141,22 +129,10 @@ MonoBehaviour:
       Data: 1
     - Name: 
       Entry: 7
-      Data: 4|AdventureAssembly.Units.Abilities.MagicianAbility, AdventureAssembly.Units
-    - Name: _disappearParticlePrefab
+      Data: 4|AdventureAssembly.Units.Abilities.ProjectileAbility, AdventureAssembly.Units
+    - Name: _projectileData
       Entry: 10
       Data: 5
-    - Name: _baseDamage
-      Entry: 3
-      Data: 1
-    - Name: _disappearChance
-      Entry: 4
-      Data: 0.05
-    - Name: _disappearDamage
-      Entry: 3
-      Data: 999
-    - Name: _disappearSound
-      Entry: 10
-      Data: 6
     - Name: 
       Entry: 8
       Data: 
