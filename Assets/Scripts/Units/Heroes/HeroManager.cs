@@ -1,5 +1,6 @@
 ﻿using AdventureAssembly.Core;
 using AdventureAssembly.Input;
+using AdventureAssembly.Units.Bosses;
 using AdventureAssembly.Units.Characters;
 using AdventureAssembly.Units.Enemies;
 using AdventureAssembly.Units.Interactables;
@@ -144,7 +145,7 @@ namespace AdventureAssembly.Units.Heroes
                     Enemy enemy = (Enemy)unit;
 
                     // If enemy has less health, kill enemy
-                    if (enemy.CurrentHealth <= firstHero.CurrentHealth)
+                    if (enemy is not Boss || enemy.CurrentHealth <= firstHero.CurrentHealth)
                     {
                         enemy.Die();
                     }
