@@ -10,12 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0c3c206d0d49fc649aaf06616edcc2af, type: 3}
-  m_Name: FoolClassData
+  m_Name: HunterClassData
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 
-    ReferencedUnityObjects: []
+    ReferencedUnityObjects:
+    - {fileID: 11400000}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -23,32 +24,33 @@ MonoBehaviour:
     SerializationNodes:
     - Name: Name
       Entry: 1
-      Data: Fool
+      Data: Hunter
     - Name: Description
       Entry: 1
-      Data: 'Increases Luck.
+      Data: 'Increases the Attack Speed of Hunters.
 
 
-        (4) - 25%+
+        (6) - 10%+
 
-        (8) - 50%+
+        (12)
+        - 20%+
 
-        (16)
-        - 100%+
+        (24) - 40%+
 
-'
+        (36) - 50%+; All Other Heroes Gain 10%
+        Increased Attack Speed'
     - Name: Color
       Entry: 7
       Data: UnityEngine.Color, UnityEngine.CoreModule
     - Name: 
       Entry: 4
-      Data: 0.8490566
+      Data: 0.270514846
     - Name: 
       Entry: 4
-      Data: 0.1481844
+      Data: 0.8509804
     - Name: 
       Entry: 4
-      Data: 0.7271665
+      Data: 0.149019569
     - Name: 
       Entry: 4
       Data: 1
@@ -61,13 +63,13 @@ MonoBehaviour:
         AdventureAssembly.Units]], mscorlib
     - Name: 
       Entry: 12
-      Data: 3
+      Data: 4
     - Name: 
       Entry: 7
       Data: 1|AdventureAssembly.Units.Classes.ClassBuff, AdventureAssembly.Units
     - Name: RequiredCount
       Entry: 3
-      Data: 4
+      Data: 6
     - Name: GlobalCharacterModifiers
       Entry: 7
       Data: 2|System.Collections.Generic.List`1[[AdventureAssembly.Units.Modifiers.GlobalCharacterStatModifier,
@@ -89,7 +91,7 @@ MonoBehaviour:
       Data: 0
     - Name: _heroStatName
       Entry: 3
-      Data: 9
+      Data: 7
     - Name: _enemyStatName
       Entry: 3
       Data: 0
@@ -98,19 +100,22 @@ MonoBehaviour:
       Data: 4|AdventureAssembly.Units.Stats.FloatAddStatProcess, AdventureAssembly.Units
     - Name: _value
       Entry: 4
-      Data: 0.25
+      Data: 0.1
     - Name: 
       Entry: 8
       Data: 
     - Name: SpecificClasses
       Entry: 5
-      Data: false
+      Data: true
     - Name: ClassData
       Entry: 7
       Data: 5|System.Collections.Generic.List`1[[AdventureAssembly.Units.Classes.ClassData,
         AdventureAssembly.Units]], mscorlib
     - Name: 
       Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 10
       Data: 0
     - Name: 
       Entry: 13
@@ -135,7 +140,7 @@ MonoBehaviour:
       Data: 6|AdventureAssembly.Units.Classes.ClassBuff, AdventureAssembly.Units
     - Name: RequiredCount
       Entry: 3
-      Data: 8
+      Data: 12
     - Name: GlobalCharacterModifiers
       Entry: 7
       Data: 7|System.Collections.Generic.List`1[[AdventureAssembly.Units.Modifiers.GlobalCharacterStatModifier,
@@ -157,7 +162,7 @@ MonoBehaviour:
       Data: 0
     - Name: _heroStatName
       Entry: 3
-      Data: 9
+      Data: 7
     - Name: _enemyStatName
       Entry: 3
       Data: 0
@@ -166,19 +171,22 @@ MonoBehaviour:
       Data: 9|AdventureAssembly.Units.Stats.FloatAddStatProcess, AdventureAssembly.Units
     - Name: _value
       Entry: 4
-      Data: 0.5
+      Data: 0.2
     - Name: 
       Entry: 8
       Data: 
     - Name: SpecificClasses
       Entry: 5
-      Data: false
+      Data: true
     - Name: ClassData
       Entry: 7
       Data: 10|System.Collections.Generic.List`1[[AdventureAssembly.Units.Classes.ClassData,
         AdventureAssembly.Units]], mscorlib
     - Name: 
       Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 10
       Data: 0
     - Name: 
       Entry: 13
@@ -203,7 +211,7 @@ MonoBehaviour:
       Data: 11|AdventureAssembly.Units.Classes.ClassBuff, AdventureAssembly.Units
     - Name: RequiredCount
       Entry: 3
-      Data: 16
+      Data: 24
     - Name: GlobalCharacterModifiers
       Entry: 7
       Data: 12|System.Collections.Generic.List`1[[AdventureAssembly.Units.Modifiers.GlobalCharacterStatModifier,
@@ -225,7 +233,7 @@ MonoBehaviour:
       Data: 0
     - Name: _heroStatName
       Entry: 3
-      Data: 9
+      Data: 7
     - Name: _enemyStatName
       Entry: 3
       Data: 0
@@ -234,7 +242,127 @@ MonoBehaviour:
       Data: 14|AdventureAssembly.Units.Stats.FloatAddStatProcess, AdventureAssembly.Units
     - Name: _value
       Entry: 4
+      Data: 0.4
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: SpecificClasses
+      Entry: 5
+      Data: true
+    - Name: ClassData
+      Entry: 7
+      Data: 15|System.Collections.Generic.List`1[[AdventureAssembly.Units.Classes.ClassData,
+        AdventureAssembly.Units]], mscorlib
+    - Name: 
+      Entry: 12
       Data: 1
+    - Name: 
+      Entry: 10
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 16|AdventureAssembly.Units.Classes.ClassBuff, AdventureAssembly.Units
+    - Name: RequiredCount
+      Entry: 3
+      Data: 36
+    - Name: GlobalCharacterModifiers
+      Entry: 7
+      Data: 17|System.Collections.Generic.List`1[[AdventureAssembly.Units.Modifiers.GlobalCharacterStatModifier,
+        AdventureAssembly.Units]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 18|AdventureAssembly.Units.Modifiers.GlobalCharacterStatModifier, AdventureAssembly.Units
+    - Name: IsTemporary
+      Entry: 5
+      Data: false
+    - Name: Duration
+      Entry: 4
+      Data: 1
+    - Name: CharacterType
+      Entry: 3
+      Data: 0
+    - Name: _heroStatName
+      Entry: 3
+      Data: 7
+    - Name: _enemyStatName
+      Entry: 3
+      Data: 0
+    - Name: _statProcess
+      Entry: 7
+      Data: 19|AdventureAssembly.Units.Stats.FloatAddStatProcess, AdventureAssembly.Units
+    - Name: _value
+      Entry: 4
+      Data: 0.4
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: SpecificClasses
+      Entry: 5
+      Data: true
+    - Name: ClassData
+      Entry: 7
+      Data: 20|System.Collections.Generic.List`1[[AdventureAssembly.Units.Classes.ClassData,
+        AdventureAssembly.Units]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 10
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 21|AdventureAssembly.Units.Modifiers.GlobalCharacterStatModifier, AdventureAssembly.Units
+    - Name: IsTemporary
+      Entry: 5
+      Data: false
+    - Name: Duration
+      Entry: 4
+      Data: 1
+    - Name: CharacterType
+      Entry: 3
+      Data: 0
+    - Name: _heroStatName
+      Entry: 3
+      Data: 7
+    - Name: _enemyStatName
+      Entry: 3
+      Data: 0
+    - Name: _statProcess
+      Entry: 7
+      Data: 22|AdventureAssembly.Units.Stats.FloatAddStatProcess, AdventureAssembly.Units
+    - Name: _value
+      Entry: 4
+      Data: 0.1
     - Name: 
       Entry: 8
       Data: 
@@ -243,7 +371,7 @@ MonoBehaviour:
       Data: false
     - Name: ClassData
       Entry: 7
-      Data: 15|System.Collections.Generic.List`1[[AdventureAssembly.Units.Classes.ClassData,
+      Data: 23|System.Collections.Generic.List`1[[AdventureAssembly.Units.Classes.ClassData,
         AdventureAssembly.Units]], mscorlib
     - Name: 
       Entry: 12
