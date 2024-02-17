@@ -4,6 +4,7 @@ using DG.Tweening;
 using Sirenix.OdinInspector;
 using Sirenix.Serialization;
 using System;
+using System.Collections.Generic;
 using TinyTools.ScriptableEvents;
 using UnityEngine;
 
@@ -28,6 +29,7 @@ namespace AdventureAssembly.Units.Characters
 
         public int CurrentHealth { get; protected set; }
         public bool IsDead { get; protected set; } = false;
+        public bool IsFullHealth { get; protected set; } = true;
 
         /// <summary>
         /// The last DamageData that this unit took. Null by default.
@@ -39,7 +41,12 @@ namespace AdventureAssembly.Units.Characters
         /// </summary>
         public HealData LastHealTaken { get; protected set; } = null;
 
+        /// <summary>
+        /// The last position this character was at, before moving.
+        /// </summary>
         public Vector2Int LastPosition { get; protected set; }
+
+        private List<CharacterModifier> _modifiers = new List<CharacterModifier>();
 
         public event Action<DamageData> Damaged;
         public event Action<HealData> Healed;
@@ -60,19 +67,32 @@ namespace AdventureAssembly.Units.Characters
             // Apply starting modifiers
             foreach (CharacterModifier modifier in CharacterData.Modifiers)
             {
-                CharacterModifier newModifier = modifier.GetClone();
-                newModifier.ApplyToCharacter(this);
+                AddModifier(modifier);
             }
 
             // Setup stats
             this.Stats.Initialize(this);
             this.CurrentHealth = Stats.GetMaxHealth();
+            this.IsFullHealth = true;
 
             // Setup components
             SpriteRenderer.sprite = CharacterData.Sprite;
             ShadowSpriteRenderer.sprite = CharacterData.ShadowSprite;
             ShadowSpriteRenderer.transform.localPosition = CharacterData.ShadowOffset;
             name = $"{CharacterData.Name}";
+        }
+
+        /// <summary>
+        /// Adds a character modifier to this character. Modifier will be cloned.
+        /// </summary>
+        /// <param name="modifier">The modifier to clone and add.</param>
+        /// <returns>The cloned modifier that was added.</returns>
+        public virtual CharacterModifier AddModifier(CharacterModifier modifier)
+        {
+            CharacterModifier newModifier = modifier.GetClone();
+            newModifier.ApplyToCharacter(this);
+            _modifiers.Add(newModifier);
+            return newModifier;
         }
 
         /// <summary>
@@ -103,6 +123,9 @@ namespace AdventureAssembly.Units.Characters
             {
                 return;
             }
+
+            // Mark this character as no longer having full health
+            this.IsFullHealth = false;
 
             // Subtract from health
             CurrentHealth -= damageData.Value;

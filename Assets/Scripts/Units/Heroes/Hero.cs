@@ -79,5 +79,13 @@ namespace AdventureAssembly.Units.Heroes
                 ability.OnUpdate(time);
             }
         }
+
+        private void OnDrawGizmos()
+        {
+            foreach (Ability ability in Abilities)
+            {
+                ability.OnDrawGizmos();
+            }
+        }
     }
 }

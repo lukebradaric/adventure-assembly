@@ -62,5 +62,7 @@ namespace AdventureAssembly.Units.Abilities
                 OnExecute();
             }
         }
+
+        public virtual void OnDrawGizmos() { }
     }
 }
