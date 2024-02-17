@@ -1,0 +1,144 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1eac94dc4647e3d4e8f45f4a3ed18890, type: 3}
+  m_Name: RangerHeroData
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 721636767718559845, guid: 8be2b1e5f38b3a74e86db347dc21dea5, type: 3}
+    - {fileID: 21300000, guid: 2f1e58baeb1fa2d45847813085769b0e, type: 3}
+    - {fileID: 21300000, guid: 9711b0dce12d11f4cb5ef3daeed63baf, type: 3}
+    - {fileID: 11400000, guid: 09ae199153cebc142ae2ed6551a8fdec, type: 2}
+    - {fileID: 11400000, guid: 91e9a434013e1e24da2859a4fcb337b4, type: 2}
+    - {fileID: 11400000, guid: 9cc5e722d2e9ad745b29dc368546e998, type: 2}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Prefab
+      Entry: 10
+      Data: 0
+    - Name: Name
+      Entry: 1
+      Data: Cap'n
+    - Name: Sprite
+      Entry: 10
+      Data: 1
+    - Name: ShadowSprite
+      Entry: 10
+      Data: 2
+    - Name: ShadowOffset
+      Entry: 7
+      Data: UnityEngine.Vector2, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: -0.225
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: MovementTween
+      Entry: 7
+      Data: 0|AdventureAssembly.Units.Animation.DefaultUnitMovementTween, AdventureAssembly.Units
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: HurtSound
+      Entry: 6
+      Data: 
+    - Name: MaxHealth
+      Entry: 3
+      Data: 20
+    - Name: Modifiers
+      Entry: 7
+      Data: 1|System.Collections.Generic.List`1[[AdventureAssembly.Units.Modifiers.CharacterModifier,
+        AdventureAssembly.Units]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: BackgroundColor
+      Entry: 7
+      Data: UnityEngine.Color, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0.113725483
+    - Name: 
+      Entry: 4
+      Data: 0.5372549
+    - Name: 
+      Entry: 4
+      Data: 0.2630417
+    - Name: 
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: Description
+      Entry: 1
+      Data: Fires an arrow that pierces through enemies. Further away enemies take
+        more damage.
+    - Name: AbilitySpeed
+      Entry: 4
+      Data: 1
+    - Name: AbilitySound
+      Entry: 10
+      Data: 3
+    - Name: ClassData
+      Entry: 7
+      Data: 2|System.Collections.Generic.List`1[[AdventureAssembly.Units.Classes.ClassData,
+        AdventureAssembly.Units]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 10
+      Data: 4
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: Abilities
+      Entry: 7
+      Data: 3|System.Collections.Generic.List`1[[AdventureAssembly.Units.Abilities.Ability,
+        AdventureAssembly.Units]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 4|AdventureAssembly.Units.Abilities.ProjectileAbility, AdventureAssembly.Units
+    - Name: _projectileData
+      Entry: 10
+      Data: 5
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 

@@ -1,0 +1,110 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 914080b4ebec0cb45bcf357568b4c6a2, type: 3}
+  m_Name: RangerProjectileData
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 21300000, guid: 35c93153a3fed5c49b4089b5978a483c, type: 3}
+    - {fileID: 7792896061547679105, guid: b9b617996a4e2ce42bd9f0d21f30847d, type: 3}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Sprite
+      Entry: 10
+      Data: 0
+    - Name: Color
+      Entry: 7
+      Data: UnityEngine.Color, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: BaseDamage
+      Entry: 3
+      Data: 8
+    - Name: Speed
+      Entry: 4
+      Data: 10
+    - Name: RotationMode
+      Entry: 3
+      Data: 0
+    - Name: RotationSpeed
+      Entry: 4
+      Data: 0
+    - Name: DestroyOnCollision
+      Entry: 5
+      Data: true
+    - Name: ColliderRadius
+      Entry: 4
+      Data: 0.25
+    - Name: MaxLifetime
+      Entry: 4
+      Data: 5
+    - Name: Components
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[AdventureAssembly.Units.Projectiles.ProjectileComponent,
+        AdventureAssembly.Units]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: ParticlePrefabs
+      Entry: 7
+      Data: 1|System.Collections.Generic.List`1[[UnityEngine.ParticleSystem, UnityEngine.ParticleSystemModule]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: TrailPrefabs
+      Entry: 7
+      Data: 2|System.Collections.Generic.List`1[[UnityEngine.TrailRenderer, UnityEngine.CoreModule]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 10
+      Data: 1
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  _prefab: {fileID: 9053408658122590034, guid: e87ea7110971b8948a8daa42f53fbecc, type: 3}
