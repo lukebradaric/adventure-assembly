@@ -72,6 +72,12 @@ MonoBehaviour:
     - Name: 
       Entry: 7
       Data: 2|AdventureAssembly.Units.Modifiers.GoldenEnemyModifier, AdventureAssembly.Units
+    - Name: IsTemporary
+      Entry: 5
+      Data: false
+    - Name: Duration
+      Entry: 4
+      Data: 0
     - Name: _goldPerHealthLost
       Entry: 4
       Data: 0.2
@@ -92,7 +98,7 @@ MonoBehaviour:
       Data: 0
     - Name: BaseGoldDropChance
       Entry: 4
-      Data: 0.05
+      Data: 0.1
     - Name: AttackTween
       Entry: 7
       Data: 3|AdventureAssembly.Units.Animation.DefaultEnemyAttackTween, AdventureAssembly.Units

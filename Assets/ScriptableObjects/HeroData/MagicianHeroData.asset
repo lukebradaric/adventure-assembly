@@ -20,6 +20,7 @@ MonoBehaviour:
     - {fileID: 21300000, guid: 4dd486577d5d81e41a3a63c2de611470, type: 3}
     - {fileID: 21300000, guid: 9711b0dce12d11f4cb5ef3daeed63baf, type: 3}
     - {fileID: 11400000, guid: a18450eb18ab7534dbbf8719cb77aaba, type: 2}
+    - {fileID: 11400000, guid: 6a312cf3da1ee1f4a95145609f73e706, type: 2}
     - {fileID: 4270207200347640816, guid: 27450db1b6c57234e87d351b6e685d6a, type: 3}
     - {fileID: 11400000, guid: 54eb6356523261a42931c7bd7fdddb6e, type: 2}
     SerializedBytesString: 
@@ -118,10 +119,13 @@ MonoBehaviour:
         AdventureAssembly.Units]], mscorlib
     - Name: 
       Entry: 12
-      Data: 1
+      Data: 2
     - Name: 
       Entry: 10
       Data: 3
+    - Name: 
+      Entry: 10
+      Data: 4
     - Name: 
       Entry: 13
       Data: 
@@ -140,7 +144,7 @@ MonoBehaviour:
       Data: 4|AdventureAssembly.Units.Abilities.MagicianAbility, AdventureAssembly.Units
     - Name: _disappearParticlePrefab
       Entry: 10
-      Data: 4
+      Data: 5
     - Name: _baseDamage
       Entry: 3
       Data: 1
@@ -152,7 +156,7 @@ MonoBehaviour:
       Data: 999
     - Name: _disappearSound
       Entry: 10
-      Data: 5
+      Data: 6
     - Name: 
       Entry: 8
       Data: 
