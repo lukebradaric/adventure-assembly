@@ -27,6 +27,11 @@ namespace AdventureAssembly.Units.Projectiles
         public List<ParticleSystem> ParticlePrefabs { get; protected set; } = new List<ParticleSystem>();
         public List<TrailRenderer> TrailPrefabs { get; protected set; } = new List<TrailRenderer>();
 
+        /// <summary>
+        /// The damage multiplier to apply to this projectile when calculating damage.
+        /// </summary>
+        public float DamageMultiplier { get; set; } = 1f;
+
         private Character _targetCharacter = null;
         public Character TargetCharacter
         {
@@ -72,7 +77,15 @@ namespace AdventureAssembly.Units.Projectiles
             }
         }
 
+        /// <summary>
+        /// Event called right after a collision happens.
+        /// </summary>
         public Action Collision;
+
+        /// <summary>
+        /// Event called right before collision logic is processed.
+        /// </summary>
+        public Action BeforeCollision;
 
         /// <summary>
         /// When this projectile colliders with an enemy.
@@ -196,8 +209,10 @@ namespace AdventureAssembly.Units.Projectiles
 
         private void OnEnemyCollision(Enemy enemy)
         {
+            BeforeCollision?.Invoke();
+
             // Create new damagedata
-            DamageData damageData = new DamageData(Hero, enemy, ProjectileData.BaseDamage);
+            DamageData damageData = new DamageData(Hero, enemy, (int)Mathf.Round(ProjectileData.BaseDamage * DamageMultiplier));
 
             // Assign the damage direction to the direction of this projectile
             damageData.Direction = MoveDirection;

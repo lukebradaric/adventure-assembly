@@ -71,7 +71,17 @@ MonoBehaviour:
         AdventureAssembly.Units]], mscorlib
     - Name: 
       Entry: 12
-      Data: 0
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 1|AdventureAssembly.Units.Projectiles.DistanceDamageProjectileComponent,
+        AdventureAssembly.Units
+    - Name: _damageMultiplierPerUnitTraveled
+      Entry: 4
+      Data: 0.25
+    - Name: 
+      Entry: 8
+      Data: 
     - Name: 
       Entry: 13
       Data: 
@@ -80,7 +90,7 @@ MonoBehaviour:
       Data: 
     - Name: ParticlePrefabs
       Entry: 7
-      Data: 1|System.Collections.Generic.List`1[[UnityEngine.ParticleSystem, UnityEngine.ParticleSystemModule]],
+      Data: 2|System.Collections.Generic.List`1[[UnityEngine.ParticleSystem, UnityEngine.ParticleSystemModule]],
         mscorlib
     - Name: 
       Entry: 12
@@ -93,7 +103,7 @@ MonoBehaviour:
       Data: 
     - Name: TrailPrefabs
       Entry: 7
-      Data: 2|System.Collections.Generic.List`1[[UnityEngine.TrailRenderer, UnityEngine.CoreModule]],
+      Data: 3|System.Collections.Generic.List`1[[UnityEngine.TrailRenderer, UnityEngine.CoreModule]],
         mscorlib
     - Name: 
       Entry: 12
