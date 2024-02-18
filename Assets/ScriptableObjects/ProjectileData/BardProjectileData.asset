@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 914080b4ebec0cb45bcf357568b4c6a2, type: 3}
-  m_Name: CapnProjectileData
+  m_Name: BardProjectileData
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 
     ReferencedUnityObjects:
-    - {fileID: -1015276828, guid: 5786dd6c780f0764ea71761afd8ad28d, type: 3}
-    - {fileID: 1702708558535293886, guid: 731630f23e270704fbe8f9aa18955c1c, type: 3}
+    - {fileID: 604249089, guid: 5786dd6c780f0764ea71761afd8ad28d, type: 3}
+    - {fileID: 1702708558535293886, guid: c31bad87f150a814da807b338507bf58, type: 3}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -31,13 +31,13 @@ MonoBehaviour:
       Data: UnityEngine.Color, UnityEngine.CoreModule
     - Name: 
       Entry: 4
-      Data: 0.254717
+      Data: 0.5714457
     - Name: 
       Entry: 4
-      Data: 0.254717
+      Data: 0.184313715
     - Name: 
       Entry: 4
-      Data: 0.254717
+      Data: 1
     - Name: 
       Entry: 4
       Data: 1
@@ -46,7 +46,7 @@ MonoBehaviour:
       Data: 
     - Name: BaseDamage
       Entry: 3
-      Data: 25
+      Data: 4
     - Name: Speed
       Entry: 4
       Data: 8
@@ -58,10 +58,10 @@ MonoBehaviour:
       Data: 0
     - Name: DestroyOnCollision
       Entry: 5
-      Data: false
+      Data: true
     - Name: ColliderRadius
       Entry: 4
-      Data: 0.35
+      Data: 0.25
     - Name: MaxLifetime
       Entry: 4
       Data: 5

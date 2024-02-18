@@ -10,16 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1eac94dc4647e3d4e8f45f4a3ed18890, type: 3}
-  m_Name: PaladinHeroData
+  m_Name: BardHeroData
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 
     ReferencedUnityObjects:
     - {fileID: 721636767718559845, guid: 8be2b1e5f38b3a74e86db347dc21dea5, type: 3}
-    - {fileID: 21300000, guid: 032c985e2a1a5754183c53699c5e2bac, type: 3}
+    - {fileID: 21300000, guid: 9fb9b348d8f71c240a0ec5506f15a97a, type: 3}
     - {fileID: 21300000, guid: 9711b0dce12d11f4cb5ef3daeed63baf, type: 3}
-    - {fileID: 11400000, guid: e46f9e6862677864280a67a35bf94ab2, type: 2}
+    - {fileID: 11400000, guid: 6a312cf3da1ee1f4a95145609f73e706, type: 2}
+    - {fileID: 11400000, guid: f206ea6d5542d1b4c97811c8f8429d74, type: 2}
+    - {fileID: 11400000, guid: 0210aa89f2f7f354cbb571381d8307c3, type: 2}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -30,7 +32,7 @@ MonoBehaviour:
       Data: 0
     - Name: Name
       Entry: 1
-      Data: Paladin
+      Data: Bard
     - Name: Sprite
       Entry: 10
       Data: 1
@@ -79,13 +81,13 @@ MonoBehaviour:
       Data: UnityEngine.Color, UnityEngine.CoreModule
     - Name: 
       Entry: 4
-      Data: 0
+      Data: 0.407843143
     - Name: 
       Entry: 4
-      Data: 0.6
+      Data: 0.219607845
     - Name: 
       Entry: 4
-      Data: 0.8588236
+      Data: 0.423529416
     - Name: 
       Entry: 4
       Data: 1
@@ -94,14 +96,12 @@ MonoBehaviour:
       Data: 
     - Name: Description
       Entry: 1
-      Data: 'Heals nearby heroes within a radius.
-
-
-        Full health heroes instead
-        receive a temporary damage buff.'
+      Data: "Plays one of three notes to the nearest enemy: \r\n- Damage it\n- Damage
+        & stun it \n- Nnothing\n\nLuck increases the chance of stunning and decreases
+        the chance of nothing.\r"
     - Name: AbilitySpeed
       Entry: 4
-      Data: 4
+      Data: 1
     - Name: AbilitySound
       Entry: 6
       Data: 
@@ -130,43 +130,28 @@ MonoBehaviour:
       Data: 1
     - Name: 
       Entry: 7
-      Data: 4|AdventureAssembly.Units.Abilities.PaladinAbility, AdventureAssembly.Units
-    - Name: _radius
-      Entry: 4
-      Data: 1.5
-    - Name: _baseHeal
-      Entry: 3
-      Data: 5
-    - Name: _damageBuffModifier
-      Entry: 7
-      Data: 5|AdventureAssembly.Units.Modifiers.CharacterStatModifier, AdventureAssembly.Units
-    - Name: IsTemporary
+      Data: 4|AdventureAssembly.Units.Abilities.BardProjectileAbility, AdventureAssembly.Units
+    - Name: _has5Projectiles
       Entry: 5
-      Data: true
-    - Name: Duration
+      Data: false
+    - Name: _projectile1Data
+      Entry: 10
+      Data: 4
+    - Name: _projectile2Data
+      Entry: 10
+      Data: 4
+    - Name: _projectile1Weight
       Entry: 4
-      Data: 3
-    - Name: CharacterType
-      Entry: 3
-      Data: 0
-    - Name: _heroStatName
-      Entry: 3
-      Data: 0
-    - Name: _enemyStatName
-      Entry: 3
-      Data: 0
-    - Name: _statProcess
-      Entry: 7
-      Data: 6|AdventureAssembly.Units.Stats.FloatAddStatProcess, AdventureAssembly.Units
-    - Name: _value
+      Data: 0.6
+    - Name: _projectile2Weight
       Entry: 4
       Data: 0.2
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
+    - Name: _projectile3Weight
+      Entry: 4
+      Data: 0.2
+    - Name: _nothingSound
+      Entry: 10
+      Data: 5
     - Name: 
       Entry: 8
       Data: 
