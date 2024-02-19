@@ -92,11 +92,10 @@ namespace AdventureAssembly.Units
         }
 
         /// <summary>
-        /// Returns a random empty position on the grid
+        /// Returns a random empty position within the player map.
         /// </summary>
-        /// <param name="bounds">The boundaries of the grid to check</param>
         /// <returns></returns>
-        public static Vector2Int GetRandomEmptyPosition()
+        public static Vector2Int GetRandomEmptyPlayerMapPosition()
         {
             List<Vector2Int> positions = LevelMap.Instance.GetPlayerMapPositions();
 

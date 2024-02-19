@@ -75,7 +75,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 04b167bcba40c404fbbbae68174236a6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c158e7c8e3ef3d24cb2695c26481d1a3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -95,7 +95,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2265463970575343840}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b1f3357c57d85594aa06f48a19525287, type: 3}
+  m_Script: {fileID: 11500000, guid: 34c9f07f9a3047b429ad9c20112b7dce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   serializationData:
@@ -109,20 +109,10 @@ MonoBehaviour:
     SerializationNodes: []
   _interactEvent:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 11400000, guid: dd525721dc6339840af88d02c844c890, type: 2}
-        m_TargetAssemblyTypeName: TinyTools.ScriptableSounds.ScriptableSound, TinyTools
-        m_MethodName: Play
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   _destroyOnInteract: 1
+  _onOpenShop: {fileID: 11400000, guid: 0f23a1bef69ceea43b1080a4acf45811, type: 2}
+  _spriteRenderer: {fileID: 1568653700796483970}
 --- !u!1 &3796303985636241106
 GameObject:
   m_ObjectHideFlags: 0

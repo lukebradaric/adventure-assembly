@@ -1,4 +1,5 @@
-﻿using AdventureAssembly.Units.Bosses;
+﻿using AdventureAssembly.Core.Extensions;
+using AdventureAssembly.Units.Bosses;
 using AdventureAssembly.Units.Enemies;
 using Sirenix.OdinInspector;
 using TinyTools.ScriptableSounds;
@@ -33,7 +34,7 @@ namespace AdventureAssembly.Units.Abilities
             DamageData damageData = new DamageData(_hero, enemy, _baseDamage);
 
             // If the enemy is not a boss, and disappear chance hits, change damage value
-            if (enemy is not Boss && _hero.Stats.GetLuck(_disappearChance) > Random.value)
+            if (enemy is not Boss && _hero.Stats.GetLuck(_disappearChance).Chance())
             {
                 _disappearSound?.Play();
                 GameObject.Instantiate(_disappearParticlePrefab, enemy.transform.position, Quaternion.identity);

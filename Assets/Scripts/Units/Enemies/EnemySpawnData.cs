@@ -11,9 +11,6 @@ namespace AdventureAssembly.Units.Enemies
     [CreateAssetMenu(menuName = Constants.ScriptableObjectRootPath + "EnemySpawnData")]
     public class EnemySpawnData : SerializedScriptableObject
     {
-        [BoxGroup("Settings")]
-        [OdinSerialize] public float SpawnInterval { get; protected set; } = 1f;
-
         [BoxGroup("Spawning")]
         [Tooltip("How many enemies should be alive at any second of the level?")]
         [SerializeField] private AnimationCurve _spawnCurve;

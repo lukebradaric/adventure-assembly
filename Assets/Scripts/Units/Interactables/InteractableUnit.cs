@@ -13,14 +13,17 @@ namespace AdventureAssembly.Units.Interactables
         [Header("Settings")]
         [SerializeField] private bool _destroyOnInteract = true;
 
-        public virtual void OnInteract()
+        public virtual void Interact()
         {
             _interactEvent?.Invoke();
+            OnInteract();
 
             if (_destroyOnInteract)
             {
                 Destroy();
             }
         }
+
+        public virtual void OnInteract() { }
     }
 }

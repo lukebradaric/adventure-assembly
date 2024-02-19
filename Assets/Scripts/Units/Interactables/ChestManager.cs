@@ -29,7 +29,7 @@ namespace AdventureAssembly.Units.Interactables
             }
 
             // Calculate random spawn position from spawn bounds
-            Vector2Int spawnPosition = GridManager.GetRandomEmptyPosition();
+            Vector2Int spawnPosition = GridManager.GetRandomEmptyPlayerMapPosition();
 
             InteractableUnit chestUnit = Instantiate(_chestUnitPrefab, (Vector2)spawnPosition, Quaternion.identity);
             chestUnit.Initialize(spawnPosition);

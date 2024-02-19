@@ -6,11 +6,13 @@ using System.Collections.Generic;
 using TinyTools.Extensions;
 using UnityEngine;
 
-namespace AdventureAssembly.Units.Interactables
+namespace AdventureAssembly.Units.Shops
 {
     [CreateAssetMenu(menuName = Constants.ScriptableObjectRootPath + "ShopData")]
     public class ShopData : SerializedScriptableObject
     {
+        [OdinSerialize] public ShopUnit Prefab { get; protected set; } = default;
+
         [OdinSerialize] public string Name { get; protected set; }
 
         [OdinSerialize] public Sprite Sprite { get; protected set; }
@@ -35,6 +37,13 @@ namespace AdventureAssembly.Units.Interactables
             }
 
             return items;
+        }
+
+        public ShopUnit Create(Vector2Int position)
+        {
+            ShopUnit shopUnit = Instantiate(Prefab, (Vector2)position, Quaternion.identity);
+            shopUnit.Initialize(this, position);
+            return shopUnit;
         }
     }
 }

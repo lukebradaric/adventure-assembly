@@ -1,4 +1,5 @@
-﻿using AdventureAssembly.Units.Characters;
+﻿using AdventureAssembly.Core.Extensions;
+using AdventureAssembly.Units.Characters;
 using AdventureAssembly.Units.Stats;
 using UnityEngine;
 
@@ -33,7 +34,7 @@ namespace AdventureAssembly.Units.Heroes
             float damage = damageData.Value;
 
             // Check if critical chance hit
-            if (CriticalChance.Value > Random.value)
+            if (CriticalChance.Value.Chance())
             {
                 damageData.IsCritical = true;
             }

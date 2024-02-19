@@ -1,8 +1,7 @@
-﻿using Sirenix.OdinInspector;
+﻿using AdventureAssembly.Core;
+using Sirenix.OdinInspector;
 using Sirenix.Serialization;
-using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 
 namespace AdventureAssembly.Units.Enemies
 {
@@ -11,40 +10,32 @@ namespace AdventureAssembly.Units.Enemies
         [BoxGroup("Components")]
         [OdinSerialize] public EnemySpawnData EnemySpawnData { get; protected set; }
 
-        [BoxGroup("Debugging")]
-        [OdinSerialize] public float CurrentTime { get; protected set; } = 0;
-
-        private Coroutine _spawnCoroutine = null;
-
-        private void Start()
+        private void OnEnable()
         {
-            _spawnCoroutine = StartCoroutine(SpawnCoroutine());
+            TimeManager.CurrentTimeUpdated += OnCurrentTimeUpdate;
         }
 
         private void OnDisable()
         {
-            StopCoroutine(_spawnCoroutine);
+            TimeManager.CurrentTimeUpdated -= OnCurrentTimeUpdate;
         }
 
-        private IEnumerator SpawnCoroutine()
+        private void OnCurrentTimeUpdate(int currentTime)
         {
-            yield return new WaitForSeconds(EnemySpawnData.SpawnInterval);
-            CurrentTime += EnemySpawnData.SpawnInterval;
-            TrySpawnEnemies();
-            _spawnCoroutine = StartCoroutine(SpawnCoroutine());
+            TrySpawnEnemies(currentTime);
         }
 
-        private void TrySpawnEnemies()
+        private void TrySpawnEnemies(int currentTime)
         {
             // Calculate the amount of enemies to spawn
-            int spawnCount = EnemySpawnData.GetEnemySpawnCount(CurrentTime) - EnemyManager.Instance.Units.Count;
+            int spawnCount = EnemySpawnData.GetEnemySpawnCount(currentTime) - EnemyManager.Instance.Units.Count;
             if (spawnCount <= 0)
             {
                 return;
             }
 
             // Spawn enemies
-            List<EnemyData> enemiesToSpawn = EnemySpawnData.GetEnemiesToSpawn(CurrentTime, spawnCount);
+            List<EnemyData> enemiesToSpawn = EnemySpawnData.GetEnemiesToSpawn(currentTime, spawnCount);
             foreach (EnemyData enemyData in enemiesToSpawn)
             {
                 enemyData.Create(LevelMap.Instance.GetRandomPositionWithinEnemyMap());

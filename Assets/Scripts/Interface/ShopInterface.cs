@@ -1,6 +1,7 @@
 ﻿using AdventureAssembly.Core;
 using AdventureAssembly.Units.Interactables;
 using AdventureAssembly.Units.Items;
+using AdventureAssembly.Units.Shops;
 using DG.Tweening;
 using TinyTools.Extensions;
 using TinyTools.ScriptableEvents;
@@ -30,7 +31,7 @@ namespace AdventureAssembly.Interface
         private ShopData _currentShopData;
         private int _rerollPrice;
 
-        public void OnShopOpened(GameEventData gameEventData)
+        public void OnOpenShop(GameEventData gameEventData)
         {
             Show((ShopData)gameEventData.Data);
         }

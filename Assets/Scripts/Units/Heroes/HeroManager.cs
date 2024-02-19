@@ -136,7 +136,7 @@ namespace AdventureAssembly.Units.Heroes
                 // Interact with interactable units
                 if (unit is InteractableUnit)
                 {
-                    ((InteractableUnit)unit).OnInteract();
+                    ((InteractableUnit)unit).Interact();
                 }
 
                 // If player collided with enemy, deal damage to each other

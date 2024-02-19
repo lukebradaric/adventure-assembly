@@ -9,13 +9,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6044a472587272642a567919a189a26b, type: 3}
+  m_Script: {fileID: 11500000, guid: e92bd051a64229349b127f6ec53cfb72, type: 3}
   m_Name: JewelerShopData
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 
     ReferencedUnityObjects:
+    - {fileID: 3172942042473435549, guid: 158c0c542137ed5428ab73889f2ab884, type: 3}
     - {fileID: 21300000, guid: 04b167bcba40c404fbbbae68174236a6, type: 3}
     - {fileID: 11400000, guid: 71c27534154f52b4aa85ff121c061fe2, type: 2}
     SerializedBytesString: 
@@ -23,12 +24,15 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes:
+    - Name: Prefab
+      Entry: 10
+      Data: 0
     - Name: Name
       Entry: 1
       Data: The Jeweler
     - Name: Sprite
       Entry: 10
-      Data: 0
+      Data: 1
     - Name: RerollPriceRange
       Entry: 7
       Data: UnityEngine.Vector2, UnityEngine.CoreModule
@@ -50,13 +54,13 @@ MonoBehaviour:
       Data: 3
     - Name: 
       Entry: 10
-      Data: 1
+      Data: 2
     - Name: 
       Entry: 10
-      Data: 1
+      Data: 2
     - Name: 
       Entry: 10
-      Data: 1
+      Data: 2
     - Name: 
       Entry: 13
       Data: 

@@ -1,4 +1,4 @@
-﻿using AdventureAssembly.Units.Interactables;
+﻿using AdventureAssembly.Units.Shops;
 using TinyTools.ScriptableEvents;
 using UnityEngine;
 

@@ -1,4 +1,5 @@
 ﻿using AdventureAssembly.Core;
+using AdventureAssembly.Core.Extensions;
 using AdventureAssembly.Units.Characters;
 using TinyTools.ScriptableEvents;
 using UnityEngine;
@@ -70,7 +71,7 @@ namespace AdventureAssembly.Units.Enemies
             }
 
             // Enemy chance to spawn gold on death
-            if (this.Stats.GetGoldDropChance() > Random.value)
+            if (this.Stats.GetGoldDropChance().Chance())
             {
                 GoldManager.Instance.AddGold(Position);
             }
