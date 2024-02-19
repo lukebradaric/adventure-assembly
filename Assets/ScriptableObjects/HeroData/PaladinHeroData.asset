@@ -19,7 +19,9 @@ MonoBehaviour:
     - {fileID: 721636767718559845, guid: 8be2b1e5f38b3a74e86db347dc21dea5, type: 3}
     - {fileID: 21300000, guid: 032c985e2a1a5754183c53699c5e2bac, type: 3}
     - {fileID: 21300000, guid: 9711b0dce12d11f4cb5ef3daeed63baf, type: 3}
+    - {fileID: 11400000, guid: f6443201f2f8c7b4f9d5111764bc3948, type: 2}
     - {fileID: 11400000, guid: e46f9e6862677864280a67a35bf94ab2, type: 2}
+    - {fileID: 4270207200347640816, guid: 7912f69bd3e8d604a90d30cf9f50f6fb, type: 3}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -103,8 +105,8 @@ MonoBehaviour:
       Entry: 4
       Data: 4
     - Name: AbilitySound
-      Entry: 6
-      Data: 
+      Entry: 10
+      Data: 3
     - Name: ClassData
       Entry: 7
       Data: 2|System.Collections.Generic.List`1[[AdventureAssembly.Units.Classes.ClassData,
@@ -114,7 +116,7 @@ MonoBehaviour:
       Data: 1
     - Name: 
       Entry: 10
-      Data: 3
+      Data: 4
     - Name: 
       Entry: 13
       Data: 
@@ -167,6 +169,9 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
+    - Name: _particlePrefab
+      Entry: 10
+      Data: 5
     - Name: 
       Entry: 8
       Data: 

@@ -10,10 +10,15 @@ namespace AdventureAssembly.Units.Abilities
     {
         [BoxGroup("Settings")]
         [SerializeField] private float _radius;
+
         [BoxGroup("Settings")]
         [SerializeField] private int _baseHeal;
+
         [BoxGroup("Settings")]
         [SerializeField] private CharacterStatModifier _damageBuffModifier;
+
+        [BoxGroup("Prefabs")]
+        [SerializeField] private GameObject _particlePrefab;
 
         protected override bool Execute()
         {
@@ -23,6 +28,8 @@ namespace AdventureAssembly.Units.Abilities
             {
                 return false;
             }
+
+            GameObject.Instantiate(_particlePrefab, _hero.transform);
 
             foreach (Hero hero in heroes)
             {
