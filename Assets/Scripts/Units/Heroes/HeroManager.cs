@@ -147,7 +147,7 @@ namespace AdventureAssembly.Units.Heroes
                     // If enemy has less health, kill enemy
                     if (enemy is not Boss || enemy.CurrentHealth <= firstHero.CurrentHealth)
                     {
-                        enemy.Die();
+                        enemy.Die(true);
                     }
                     // If hero has less health, kill hero, reset next pos
                     else if (enemy.CurrentHealth > firstHero.CurrentHealth)

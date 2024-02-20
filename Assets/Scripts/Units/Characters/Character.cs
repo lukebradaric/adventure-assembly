@@ -172,10 +172,16 @@ namespace AdventureAssembly.Units.Characters
         /// <summary>
         /// Kills this unit.
         /// </summary>
-        public virtual void Die()
+        public virtual void Die(bool playHurtSound = false)
         {
             IsDead = true;
             Died?.Invoke(this);
+
+            if (playHurtSound)
+            {
+                CharacterData.HurtSound?.Play();
+            }
+
             OnDie();
             Destroy();
         }
