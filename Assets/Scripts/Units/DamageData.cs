@@ -14,7 +14,11 @@ namespace AdventureAssembly.Units
             Target = target;
             BaseValue = baseValue;
 
-            source.Stats.GetDamageData(this);
+            // If source is not null, calculate damage using source
+            if (source != null)
+            {
+                source.Stats.GetDamageData(this);
+            }
         }
 
         /// <summary>

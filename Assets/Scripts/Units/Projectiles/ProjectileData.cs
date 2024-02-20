@@ -4,6 +4,7 @@ using AdventureAssembly.Units.Heroes;
 using Sirenix.OdinInspector;
 using Sirenix.Serialization;
 using System.Collections.Generic;
+using TinyTools.ScriptableSounds;
 using UnityEngine;
 
 namespace AdventureAssembly.Units.Projectiles
@@ -52,6 +53,10 @@ namespace AdventureAssembly.Units.Projectiles
         [BoxGroup("Extra Settings")]
         [Tooltip("After how long should this projectile be forcibly destroye? Measured in seconds.")]
         [OdinSerialize] public float MaxLifetime { get; protected set; } = 5.0f;
+
+        [BoxGroup("Audio")]
+        [Tooltip("What sound should play when this projectile collides with enemy?")]
+        [OdinSerialize] public ScriptableSound CollisionSound { get; protected set; } = null;
 
         [BoxGroup("Components")]
         [OdinSerialize] public List<ProjectileComponent> Components { get; protected set; } = new List<ProjectileComponent>();

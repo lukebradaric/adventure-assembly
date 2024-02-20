@@ -34,7 +34,7 @@ MonoBehaviour:
       Data: AdventureAssembly.Units.Shops.ShopSpawnEntry, AdventureAssembly.Units
     - Name: Time
       Entry: 4
-      Data: 60
+      Data: 10
     - Name: Shops
       Entry: 7
       Data: 1|System.Collections.Generic.List`1[[AdventureAssembly.Units.Shops.ShopDataWeighted,

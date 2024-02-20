@@ -17,6 +17,7 @@ namespace AdventureAssembly.Units.Projectiles
         public override void OnEnable()
         {
             _startPosition = _projectile.transform.position;
+
             _projectile.BeforeCollision += OnBeforeCollision;
         }
 

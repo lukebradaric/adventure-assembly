@@ -222,6 +222,9 @@ namespace AdventureAssembly.Units.Projectiles
             Collision?.Invoke();
             EnemyCollision?.Invoke(enemy);
 
+            // Play projectile collision sound if it exists
+            ProjectileData.CollisionSound?.Play();
+
             if (ProjectileData.DestroyOnCollision)
             {
                 Destroy();

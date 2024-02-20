@@ -6,6 +6,9 @@ using UnityEngine;
 
 namespace AdventureAssembly.Units.Projectiles
 {
+    /// <summary>
+    /// Projectile component that explodes on impact, dealing immediate damage to nearby enemies.
+    /// </summary>
     public class ExplodingProjectileComponent : ProjectileComponent
     {
         [BoxGroup("Prefabs")]
@@ -15,9 +18,6 @@ namespace AdventureAssembly.Units.Projectiles
         [SerializeField] private int _baseDamage;
         [BoxGroup("Settings")]
         [SerializeField] private float _baseRadius;
-
-        [BoxGroup("Audio")]
-        [SerializeField] private ScriptableSound _explosionSound;
 
         public override void OnEnable()
         {
@@ -32,7 +32,6 @@ namespace AdventureAssembly.Units.Projectiles
         private void OnCollision()
         {
             GameObject.Instantiate(_particlePrefab, _projectile.transform.position, Quaternion.identity);
-            _explosionSound?.Play();
             foreach (Character character in EnemyManager.Instance.GetUnitsInRadius(_projectile.transform.position, _baseRadius))
             {
                 DamageData damageData = new DamageData(_projectile.Hero, character, _baseDamage);

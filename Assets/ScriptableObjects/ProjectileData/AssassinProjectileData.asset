@@ -10,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 914080b4ebec0cb45bcf357568b4c6a2, type: 3}
-  m_Name: SorcererProjectileData
+  m_Name: AssassinProjectileData
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 
     ReferencedUnityObjects:
-    - {fileID: -1015276828, guid: 5786dd6c780f0764ea71761afd8ad28d, type: 3}
-    - {fileID: 11400000, guid: 50fda1d235a87fe4fa682f5dd372373a, type: 2}
-    - {fileID: 4270207200347640816, guid: 26895035944a42849ab7afdcd537605a, type: 3}
-    - {fileID: 1702708558535293886, guid: 2cacdce6290f8874584f44e72bc9cd96, type: 3}
+    - {fileID: 21300000, guid: 03f0f9963fedb0a4c91d97ff78a14e2b, type: 3}
+    - {fileID: 11400000, guid: 9e6cb49c467365542a3a5c1d17d0bc14, type: 2}
+    - {fileID: 2384731327145473613, guid: a43ff3e79ab74634a8babd260d7e550a, type: 3}
+    - {fileID: 7792896061547679105, guid: bf486f29be4a4f24ebef14b20dd7f779, type: 3}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -36,10 +36,10 @@ MonoBehaviour:
       Data: 1
     - Name: 
       Entry: 4
-      Data: 0.639499843
+      Data: 1
     - Name: 
       Entry: 4
-      Data: 0.2971698
+      Data: 1
     - Name: 
       Entry: 4
       Data: 1
@@ -48,10 +48,10 @@ MonoBehaviour:
       Data: 
     - Name: BaseDamage
       Entry: 3
-      Data: 10
+      Data: 5
     - Name: Speed
       Entry: 4
-      Data: 5
+      Data: 8
     - Name: RotationMode
       Entry: 3
       Data: 0
@@ -63,7 +63,7 @@ MonoBehaviour:
       Data: true
     - Name: ColliderRadius
       Entry: 4
-      Data: 0.35
+      Data: 0.3
     - Name: MaxLifetime
       Entry: 4
       Data: 6
@@ -79,15 +79,10 @@ MonoBehaviour:
       Data: 1
     - Name: 
       Entry: 7
-      Data: 1|AdventureAssembly.Units.Projectiles.ExplodingProjectileComponent, AdventureAssembly.Units
-    - Name: _particlePrefab
+      Data: 1|AdventureAssembly.Units.Projectiles.AreaDamageProjectileComponent,
+        AdventureAssembly.Units
+    - Name: _areaDamagePrefab
       Entry: 10
-      Data: 2
-    - Name: _baseDamage
-      Entry: 3
-      Data: 10
-    - Name: _baseRadius
-      Entry: 4
       Data: 2
     - Name: 
       Entry: 8
@@ -104,10 +99,7 @@ MonoBehaviour:
         mscorlib
     - Name: 
       Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 10
-      Data: 3
+      Data: 0
     - Name: 
       Entry: 13
       Data: 
@@ -120,7 +112,10 @@ MonoBehaviour:
         mscorlib
     - Name: 
       Entry: 12
-      Data: 0
+      Data: 1
+    - Name: 
+      Entry: 10
+      Data: 3
     - Name: 
       Entry: 13
       Data: 
