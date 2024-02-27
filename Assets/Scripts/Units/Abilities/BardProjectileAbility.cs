@@ -56,7 +56,7 @@ namespace AdventureAssembly.Units.Abilities
                 // do nothing!!! :D
                 _nothingSound?.Play();
             }
-
+            Debug.Log(random);
             return true;
         }
     }
