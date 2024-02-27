@@ -21,6 +21,9 @@ namespace AdventureAssembly.Units.Abilities
             _currentTime = _hero.Stats.GetAbilitySpeed();
         }
 
+        public virtual void OnEnable() { }
+        public virtual void OnDisable() { }
+
         public void OnUpdate(float time)
         {
             _currentTime -= time;

@@ -38,6 +38,7 @@ namespace AdventureAssembly.Units.Heroes
             {
                 Ability newAbility = ability.GetClone();
                 newAbility.Initialize(this);
+                newAbility.OnEnable();
                 Abilities.Add(newAbility);
             }
         }
@@ -48,6 +49,12 @@ namespace AdventureAssembly.Units.Heroes
         protected override void OnDie()
         {
             base.OnDie();
+
+            // Disable all abilities
+            foreach (Ability ability in Abilities)
+            {
+                ability.OnDisable();
+            }
 
             ClassManager.Instance.RemoveClassesByHeroData(this.HeroData);
             HeroManager.Instance.RemoveUnit(this);
