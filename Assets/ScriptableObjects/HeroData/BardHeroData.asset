@@ -146,10 +146,10 @@ MonoBehaviour:
       Data: 0.6
     - Name: _projectile2Weight
       Entry: 4
-      Data: 0.2
+      Data: 0.3
     - Name: _projectile3Weight
       Entry: 4
-      Data: 0.2
+      Data: 0.1
     - Name: _nothingSound
       Entry: 10
       Data: 6

@@ -46,7 +46,7 @@ namespace AdventureAssembly.Units.Abilities
                 // shoot projectile 1
                 _projectile1Data.Create(_hero, enemy);
 
-            } else if ((random > _projectile1Weight) && (random <= _projectile2Weight))
+            } else if ((random > _projectile1Weight) && (random <= _projectile1Weight + _projectile2Weight))
             {
                 // shoot projectile 2
                 _projectile2Data.Create(_hero, enemy);
