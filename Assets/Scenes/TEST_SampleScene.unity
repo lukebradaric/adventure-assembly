@@ -12587,9 +12587,13 @@ PrefabInstance:
       value: PlayerPrefab
       objectReference: {fileID: 0}
     - target: {fileID: 3213923293646680723, guid: e450e852feb5a7c41ad1cd4f12ff1f3e, type: 3}
+      propertyPath: _onHeroDied
+      value: 
+      objectReference: {fileID: 11400000, guid: 44863a249c6967b4daf55b2ca3978b2f, type: 2}
+    - target: {fileID: 3213923293646680723, guid: e450e852feb5a7c41ad1cd4f12ff1f3e, type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 3213923293646680723, guid: e450e852feb5a7c41ad1cd4f12ff1f3e, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 3213923293646680723, guid: e450e852feb5a7c41ad1cd4f12ff1f3e, type: 3}
       propertyPath: serializationData.PrefabModifications.Array.size
       value: 0

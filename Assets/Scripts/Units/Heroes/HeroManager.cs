@@ -10,18 +10,21 @@ using Sirenix.Serialization;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using TinyTools.ScriptableEvents;
 using UnityEngine;
 
 namespace AdventureAssembly.Units.Heroes
 {
     public class HeroManager : CharacterManager<Hero>
     {
-        [PropertySpace]
-        [Title("Components")]
+        [BoxGroup("Events")]
+        [SerializeField] private GameScriptableEvent _onHeroDied;
+
+        [BoxGroup("Components")]
         [SerializeField] private Hero _heroPrefab;
 
         [PropertySpace]
-        [Title("Settings")]
+        [BoxGroup("Settings")]
         [Tooltip("How much time between each Hero Ability update? Measured in seconds.")]
         [OdinSerialize] public float UpdateInterval { get; private set; }
 
@@ -83,6 +86,8 @@ namespace AdventureAssembly.Units.Heroes
             unit.Died -= OnHeroDied;
 
             RepairUnitPositions((Hero)unit);
+
+            _onHeroDied?.Invoke(this, unit);
         }
 
         private void OnGameLost()

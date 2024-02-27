@@ -24,6 +24,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: cc2fc8261b1ea0c469a5422c9c6f918e, type: 2}
   - {fileID: 11400000, guid: f2c63eb1d2555a241a375dcaa2e9ac96, type: 2}
   - {fileID: 11400000, guid: 98a2f6fc45f8ea24098989b3f2aabf87, type: 2}
+  - {fileID: 11400000, guid: 60c6da9f43e26784d93e8379763e71c2, type: 2}
   _readOnly: 1
   _description: The list of all HeroData in the game. Contains functions for retreiving
     specific heroes or groups of heroes.
