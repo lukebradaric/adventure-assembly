@@ -46,7 +46,7 @@ MonoBehaviour:
       Data: 
     - Name: BaseDamage
       Entry: 3
-      Data: 4
+      Data: 6
     - Name: Speed
       Entry: 4
       Data: 12

@@ -23,6 +23,8 @@ MonoBehaviour:
     - {fileID: 11400000, guid: f206ea6d5542d1b4c97811c8f8429d74, type: 2}
     - {fileID: 11400000, guid: 96ea921d8eaa0874cb29b724beef28e8, type: 2}
     - {fileID: 11400000, guid: 0210aa89f2f7f354cbb571381d8307c3, type: 2}
+    - {fileID: 11400000, guid: 908a75c36eb31514db335440c0a6bc91, type: 2}
+    - {fileID: 11400000, guid: def487685ebe6e945b320b7497b07ebe, type: 2}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -132,24 +134,46 @@ MonoBehaviour:
     - Name: 
       Entry: 7
       Data: 4|AdventureAssembly.Units.Abilities.BardProjectileAbility, AdventureAssembly.Units
-    - Name: _has5Projectiles
-      Entry: 5
-      Data: false
-    - Name: _projectile1Data
+    - Name: _normalProjectileData
       Entry: 10
       Data: 4
-    - Name: _projectile2Data
+    - Name: _specialProjectileData
       Entry: 10
       Data: 5
-    - Name: _projectile1Weight
-      Entry: 4
-      Data: 0.6
-    - Name: _projectile2Weight
-      Entry: 4
-      Data: 0.3
-    - Name: _projectile3Weight
-      Entry: 4
-      Data: 0.1
+    - Name: _normalProjectileWeight
+      Entry: 3
+      Data: 12
+    - Name: _specialProjectileWeight
+      Entry: 3
+      Data: 5
+    - Name: _nothingWeight
+      Entry: 3
+      Data: 5
+    - Name: _normalProjectileSounds
+      Entry: 7
+      Data: 5|System.Collections.Generic.List`1[[TinyTools.ScriptableSounds.ScriptableSound,
+        TinyTools]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 3
+    - Name: 
+      Entry: 10
+      Data: 6
+    - Name: 
+      Entry: 10
+      Data: 7
+    - Name: 
+      Entry: 10
+      Data: 8
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: _specialProjectileSound
+      Entry: 6
+      Data: 
     - Name: _nothingSound
       Entry: 10
       Data: 6

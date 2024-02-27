@@ -33,8 +33,10 @@ MonoBehaviour:
 
         (8) - 50%+
 
-        (16)
-        - 100%+
+        (12)
+        - 75%+
+
+        (16) - 100%+
 
 '
     - Name: Color
@@ -61,7 +63,7 @@ MonoBehaviour:
         AdventureAssembly.Units]], mscorlib
     - Name: 
       Entry: 12
-      Data: 3
+      Data: 4
     - Name: 
       Entry: 7
       Data: 1|AdventureAssembly.Units.Classes.ClassBuff, AdventureAssembly.Units
@@ -234,7 +236,7 @@ MonoBehaviour:
       Data: 14|AdventureAssembly.Units.Stats.FloatAddStatProcess, AdventureAssembly.Units
     - Name: _value
       Entry: 4
-      Data: 1
+      Data: 0.75
     - Name: 
       Entry: 8
       Data: 
@@ -244,6 +246,74 @@ MonoBehaviour:
     - Name: ClassData
       Entry: 7
       Data: 15|System.Collections.Generic.List`1[[AdventureAssembly.Units.Classes.ClassData,
+        AdventureAssembly.Units]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 16|AdventureAssembly.Units.Classes.ClassBuff, AdventureAssembly.Units
+    - Name: RequiredCount
+      Entry: 3
+      Data: 16
+    - Name: GlobalCharacterModifiers
+      Entry: 7
+      Data: 17|System.Collections.Generic.List`1[[AdventureAssembly.Units.Modifiers.GlobalCharacterStatModifier,
+        AdventureAssembly.Units]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 18|AdventureAssembly.Units.Modifiers.GlobalCharacterStatModifier, AdventureAssembly.Units
+    - Name: IsTemporary
+      Entry: 5
+      Data: false
+    - Name: Duration
+      Entry: 4
+      Data: 0
+    - Name: CharacterType
+      Entry: 3
+      Data: 0
+    - Name: _heroStatName
+      Entry: 3
+      Data: 9
+    - Name: _enemyStatName
+      Entry: 3
+      Data: 0
+    - Name: _statProcess
+      Entry: 7
+      Data: 19|AdventureAssembly.Units.Stats.FloatAddStatProcess, AdventureAssembly.Units
+    - Name: _value
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: SpecificClasses
+      Entry: 5
+      Data: false
+    - Name: ClassData
+      Entry: 7
+      Data: 20|System.Collections.Generic.List`1[[AdventureAssembly.Units.Classes.ClassData,
         AdventureAssembly.Units]], mscorlib
     - Name: 
       Entry: 12

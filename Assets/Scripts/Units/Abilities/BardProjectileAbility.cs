@@ -4,27 +4,31 @@ using Sirenix.OdinInspector;
 using TinyTools.Generics;
 using TinyTools.ScriptableSounds;
 using UnityEngine;
+using System.Collections.Generic;
+using TinyTools.Extensions;
 
 namespace AdventureAssembly.Units.Abilities
 {
     public class BardProjectileAbility : Ability
     {
         [BoxGroup("Settings")]
-        [SerializeField] private ProjectileData _projectile1Data;
+        [SerializeField] private ProjectileData _normalProjectileData;
 
         [BoxGroup("Settings")]
-        [SerializeField] private ProjectileData _projectile2Data;
+        [SerializeField] private ProjectileData _specialProjectileData;
 
         [BoxGroup("Settings")]
-        [SerializeField] private int _projectile1Weight;
+        [SerializeField] private int _normalProjectileWeight;
 
         [BoxGroup("Settings")]
-        [SerializeField] private int _projectile2Weight;
+        [SerializeField] private int _specialProjectileWeight;
 
         [BoxGroup("Settings")]
-        [SerializeField] private int _projectile3Weight;
+        [SerializeField] private int _nothingWeight;
 
         [BoxGroup("Audio")]
+        [SerializeField] private List<ScriptableSound> _normalProjectileSounds = new List<ScriptableSound>();
+        [SerializeField] private ScriptableSound _specialProjectileSound;
         [SerializeField] private ScriptableSound _nothingSound;
 
         protected override bool Execute()
@@ -38,11 +42,19 @@ namespace AdventureAssembly.Units.Abilities
 
             WeightedList<ProjectileData> weightedProjectiles = new WeightedList<ProjectileData>();
 
-            weightedProjectiles.Add(_projectile1Data, _projectile1Weight);
-            weightedProjectiles.Add(_projectile2Data, (int)_hero.Stats.GetLuck(_projectile2Weight));
-            weightedProjectiles.Add(null, (int)(_projectile3Weight / _hero.Stats.LuckMultiplier.Value * 2));
+            weightedProjectiles.Add(_normalProjectileData, _normalProjectileWeight);
+            weightedProjectiles.Add(_specialProjectileData, (int)_hero.Stats.GetLuck(_specialProjectileWeight));
+            weightedProjectiles.Add(null, (int)(_nothingWeight / (_hero.Stats.LuckMultiplier.Value)));
 
             ProjectileData projectileData = weightedProjectiles.GetRandom();
+
+            if (projectileData == _normalProjectileData)
+            {
+                _normalProjectileSounds.Random()?.Play();
+            } else if (projectileData == _specialProjectileData)
+            {
+                _specialProjectileSound?.Play();
+            }
 
             if (projectileData == null)
             {

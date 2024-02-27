@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: eeaf3900e8f5acf4aa7fdcca3b5af590, type: 3}
-  m_Name: BardAbilitySound
+  m_Name: BardNormalSound2
   m_EditorClassIdentifier: 
-  _audioClip: {fileID: 8300000, guid: 9bd8f251e0a30754bbcca0d4935a61e2, type: 3}
+  _audioClip: {fileID: 8300000, guid: 81b52c413a2cae04e9cd7ffe923d02c9, type: 3}
   _audioMixerGroup: {fileID: 0}
   _audioPriority: 128
-  _volume: 0.08
+  _volume: 0.04
   _pitch: 0.9
-  _pitchVariation: 0.1
+  _pitchVariation: 0
   _ignorePlayRateLimit: 0
