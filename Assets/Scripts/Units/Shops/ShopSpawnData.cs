@@ -69,7 +69,7 @@ namespace AdventureAssembly.Units.Shops
                         return null;
                     }
 
-                    return shops.Random();
+                    return shops.GetRandom();
                 }
             }
 

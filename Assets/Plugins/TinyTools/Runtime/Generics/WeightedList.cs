@@ -30,7 +30,7 @@ namespace TinyTools.Generics
         /// (Calculated based on item weight)
         /// </summary>
         /// <returns></returns>
-        public T Random()
+        public T GetRandom()
         {
             int randomWeight = UnityEngine.Random.Range(0, _weightTotal + 1);
 

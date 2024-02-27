@@ -1,7 +1,7 @@
-﻿using AdventureAssembly.Core;
-using AdventureAssembly.Units.Enemies;
+﻿using AdventureAssembly.Units.Enemies;
 using AdventureAssembly.Units.Projectiles;
 using Sirenix.OdinInspector;
+using TinyTools.Generics;
 using TinyTools.ScriptableSounds;
 using UnityEngine;
 
@@ -9,8 +9,6 @@ namespace AdventureAssembly.Units.Abilities
 {
     public class BardProjectileAbility : Ability
     {
-        [SerializeField] private bool _has5Projectiles;
-
         [BoxGroup("Settings")]
         [SerializeField] private ProjectileData _projectile1Data;
 
@@ -18,13 +16,13 @@ namespace AdventureAssembly.Units.Abilities
         [SerializeField] private ProjectileData _projectile2Data;
 
         [BoxGroup("Settings")]
-        [SerializeField] private float _projectile1Weight;
+        [SerializeField] private int _projectile1Weight;
 
         [BoxGroup("Settings")]
-        [SerializeField] private float _projectile2Weight;
+        [SerializeField] private int _projectile2Weight;
 
         [BoxGroup("Settings")]
-        [SerializeField] private float _projectile3Weight;
+        [SerializeField] private int _projectile3Weight;
 
         [BoxGroup("Audio")]
         [SerializeField] private ScriptableSound _nothingSound;
@@ -38,25 +36,21 @@ namespace AdventureAssembly.Units.Abilities
                 return false;
             }
 
-            // this should hopefully add up to 1
-            float random = Random.Range(0.0f, _projectile1Weight + _projectile2Weight + _projectile3Weight);
-            
-            if (random <= _projectile1Weight)
-            {
-                // shoot projectile 1
-                _projectile1Data.Create(_hero, enemy);
+            WeightedList<ProjectileData> weightedProjectiles = new WeightedList<ProjectileData>();
 
-            } else if ((random > _projectile1Weight) && (random <= _projectile1Weight + _projectile2Weight))
-            {
-                // shoot projectile 2
-                _projectile2Data.Create(_hero, enemy);
+            weightedProjectiles.Add(_projectile1Data, _projectile1Weight);
+            weightedProjectiles.Add(_projectile2Data, (int)_hero.Stats.GetLuck(_projectile2Weight));
+            weightedProjectiles.Add(null, (int)(_projectile3Weight / _hero.Stats.LuckMultiplier.Value * 2));
 
-            } else 
+            ProjectileData projectileData = weightedProjectiles.GetRandom();
+
+            if (projectileData == null)
             {
-                // do nothing!!! :D
                 _nothingSound?.Play();
+                return true;
             }
-            Debug.Log(random);
+
+            projectileData.Create(_hero, enemy);
             return true;
         }
     }

@@ -42,7 +42,7 @@ namespace AdventureAssembly.Units.Enemies
             List<EnemyData> enemies = new List<EnemyData>();
             for (int i = 0; i < count; i++)
             {
-                enemies.Add(weightedList.Random());
+                enemies.Add(weightedList.GetRandom());
             }
 
             return enemies;

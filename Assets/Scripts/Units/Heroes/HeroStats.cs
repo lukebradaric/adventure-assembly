@@ -73,9 +73,9 @@ namespace AdventureAssembly.Units.Heroes
             return 1 + (int)AbilityExecuteBonus.Value;
         }
 
-        public float GetLuck(float luck)
+        public float GetLuck(float baseLuck)
         {
-            return luck * LuckMultiplier.Value;
+            return baseLuck * LuckMultiplier.Value;
         }
     }
 }
